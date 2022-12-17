@@ -118,3 +118,19 @@ button#ssDoSearch {
 #github-logo:hover {
     transform: scale(1.05);
 }
+
+/*** calendar ***/
+
+
+#years-table .btn-light:focus, #years-table .btn-light.focus {
+    text-decoration: underline;
+    text-decoration-color: #A63437;
+    text-decoration-thickness: 4px
+}
+
+.yearbtn {
+    padding: 2px;
+    font-size: 0.9rem;
+    border: none;
+    background-color: transparent;
+}
