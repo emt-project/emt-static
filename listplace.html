@@ -1,0 +1,550 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-title" content="Ortsregister" />
+      <link rel="profile" href="http://gmpg.org/xfn/11" />
+      <title>Ortsregister</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" id="fundament-styles" href="dist/fundament/css/fundament.min.css" type="text/css" />
+      <link rel="stylesheet" href="css/style.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jq-3.3.1/jszip-2.5.0/dt-1.11.0/b-2.0.0/b-html5-2.0.0/cr-1.5.4/r-2.2.9/sp-1.4.0/datatables.min.css" /><script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/openseadragon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/typesense-instantsearch-adapter@2/dist/typesense-instantsearch-adapter.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.5.1/dist/algoliasearch-lite.umd.js" integrity="sha256-EXPXz4W6pQgfYY3yTpnDa3OH8/EPn16ciVsPQ/ypsjk=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.8.3/dist/instantsearch.production.min.js" integrity="sha256-LAGhRRdtVoD6RLo2qDQsU2mp+XVSciKRC8XPOBWmofM=" crossorigin="anonymous"></script><script type="text/javascript">
+                var _paq = _paq || [];
+                /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+                _paq.push(['trackPageView']);
+                _paq.push(['enableLinkTracking']);
+                (function() {
+                var u="https://matomo.acdh.oeaw.ac.at/";
+                _paq.push(['setTrackerUrl', u+'piwik.php']);
+                _paq.push(['setSiteId', '226']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+                })();
+            </script></head>
+   <body class="page">
+      <div class="hfeed site" id="page">
+         <div class="wrapper-fluid wrapper-navbar sticky-navbar" id="wrapper-navbar"><a class="skip-link screen-reader-text sr-only" href="#content">Skip to content</a><nav class="navbar navbar-expand-lg navbar-light">
+               <div class="container"><a href="index.html" class="navbar-brand custom-logo-link" rel="home" itemprop="url"><img src="dist/fundament/images/fundament_logo.svg" class="img-fluid" title="EMT" alt="EMT" itemprop="logo" /></a><a class="navbar-brand site-title-with-logo" rel="home" href="index.html" title="EMT" itemprop="url">EMT</a><span style="margin-left:-1.7em;" class="badge bg-light text-dark">in development</span><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                     <ul id="main-menu" class="navbar-nav">
+                        <li class="nav-item dropdown"><a title="Papers" href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Projekt <span class="caret"></span></a><ul class=" dropdown-menu" role="menu">
+                              <li class="nav-item dropdown-submenu"><a title="Auden-Musulin Correspondence" href="about.html" class="nav-link">Über das Projekt</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="calendar.html">Kalender</a></li>
+                        <li class="nav-item"><a title="Briefverzeichnis" href="toc.html" class="nav-link">Briefverzeichnis</a></li>
+                        <li class="nav-item dropdown"><a title="Indexes" href="#" data-toggle="dropdown" class="nav-link dropdown-toggle">Register <span class="caret"></span></a><ul class=" dropdown-menu" role="menu">
+                              <li class="nav-item dropdown-submenu"><a title="Personen" href="listperson.html" class="nav-link">Personen</a></li>
+                              <li class="nav-item dropdown-submenu"><a title="Orte" href="listplace.html" class="nav-link">Orte</a></li>
+                           </ul>
+                        </li>
+                     </ul><a title="Editionseinheiten" href="search.html" class="nav-link"><i class="fas fa-search"></i>Suche</a></div>
+               </div>
+            </nav>
+         </div>
+         <div class="container-fluid">
+            <div class="card">
+               <div class="card-header">
+                  <h1>Ortsregister</h1>
+               </div>
+               <div class="card-body">
+                  <table class="table table-striped display" id="tocTable" style="width:100%">
+                     <thead>
+                        <tr>
+                           <th scope="col">Ortsname</th>
+                           <th scope="col">Erwähnungen</th>
+                           <th scope="col">Geonames</th>
+                           <th scope="col">ID</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td><a href="emt_place_id__1.html">im Schiff</a></td>
+                           <td>0</td>
+                           <td>
+                              keine ID
+                              </td>
+                           <td><a href="emt_place_id__1.html">emt_place_id__1</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__2.html">?</a></td>
+                           <td>0</td>
+                           <td>
+                              keine ID
+                              </td>
+                           <td><a href="emt_place_id__2.html">emt_place_id__2</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__3.html">Aachen</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3247449/">https://sws.geonames.org/3247449/</a></td>
+                           <td><a href="emt_place_id__3.html">emt_place_id__3</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__4.html">Altötting</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2956940/">https://sws.geonames.org/2956940/</a></td>
+                           <td><a href="emt_place_id__4.html">emt_place_id__4</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__5.html">Augsburg</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/6557107/">https://sws.geonames.org/6557107/</a></td>
+                           <td><a href="emt_place_id__5.html">emt_place_id__5</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__6.html">Benrath</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/6947823/">https://sws.geonames.org/6947823/</a></td>
+                           <td><a href="emt_place_id__6.html">emt_place_id__6</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__7.html">Bensberg</a></td>
+                           <td>22</td>
+                           <td><a href="https://sws.geonames.org/2950990/">https://sws.geonames.org/2950990/</a></td>
+                           <td><a href="emt_place_id__7.html">emt_place_id__7</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__8.html">Brandeis / Brandýs nad Labem</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3078838/">https://sws.geonames.org/3078838/</a></td>
+                           <td><a href="emt_place_id__8.html">emt_place_id__8</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__9.html">Budweis / České Budějovice</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3077916/">https://sws.geonames.org/3077916/</a></td>
+                           <td><a href="emt_place_id__9.html">emt_place_id__9</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__10.html">Madrid, Buen Retiro</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/6255078/">https://sws.geonames.org/6255078/</a></td>
+                           <td><a href="emt_place_id__10.html">emt_place_id__10</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__11.html">Burglengenfeld</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2941190/">https://sws.geonames.org/2941190/</a></td>
+                           <td><a href="emt_place_id__11.html">emt_place_id__11</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__12.html">Den Haag</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2747373/">https://sws.geonames.org/2747373/</a></td>
+                           <td><a href="emt_place_id__12.html">emt_place_id__12</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__13.html">Düsseldorf</a></td>
+                           <td>262</td>
+                           <td><a href="https://sws.geonames.org/2934246/">https://sws.geonames.org/2934246/</a></td>
+                           <td><a href="emt_place_id__13.html">emt_place_id__13</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__14.html">Ebersberg</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2933945/">https://sws.geonames.org/2933945/</a></td>
+                           <td><a href="emt_place_id__14.html">emt_place_id__14</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__15.html">Wien, Ebersdorf</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3322696/">https://sws.geonames.org/3322696/</a></td>
+                           <td><a href="emt_place_id__15.html">emt_place_id__15</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__16.html">Erfurt</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2929670/">https://sws.geonames.org/2929670/</a></td>
+                           <td><a href="emt_place_id__16.html">emt_place_id__16</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__17.html">Eschwege</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2928967/">https://sws.geonames.org/2928967/</a></td>
+                           <td><a href="emt_place_id__17.html">emt_place_id__17</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__18.html">Wien, Favorita</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/12500694/">https://sws.geonames.org/12500694/</a></td>
+                           <td><a href="emt_place_id__18.html">emt_place_id__18</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__19.html">Feldlager bei Ofen / Buda</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3054643/">https://sws.geonames.org/3054643/</a></td>
+                           <td><a href="emt_place_id__19.html">emt_place_id__19</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__20.html">Frankfurt</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2925533/">https://sws.geonames.org/2925533/</a></td>
+                           <td><a href="emt_place_id__20.html">emt_place_id__20</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__21.html">Friedrichsburg</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/8629938/">https://sws.geonames.org/8629938/</a></td>
+                           <td><a href="emt_place_id__21.html">emt_place_id__21</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__22.html">Geldrop</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2755619/">https://sws.geonames.org/2755619/</a></td>
+                           <td><a href="emt_place_id__22.html">emt_place_id__22</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__23.html">Grünau ?</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/11996450/">https://sws.geonames.org/11996450/</a></td>
+                           <td><a href="emt_place_id__23.html">emt_place_id__23</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__24.html">Hambach</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2911360/">https://sws.geonames.org/2911360/</a></td>
+                           <td><a href="emt_place_id__24.html">emt_place_id__24</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__25.html">Heidelberg</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2907911/">https://sws.geonames.org/2907911/</a></td>
+                           <td><a href="emt_place_id__25.html">emt_place_id__25</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__26.html">Heiligenkreuz</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2776586/">https://sws.geonames.org/2776586/</a></td>
+                           <td><a href="emt_place_id__26.html">emt_place_id__26</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__27.html">Innsbruck</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2775220/">https://sws.geonames.org/2775220/</a></td>
+                           <td><a href="emt_place_id__27.html">emt_place_id__27</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__28.html">Jenieau</a></td>
+                           <td>0</td>
+                           <td>
+                              keine ID
+                              </td>
+                           <td><a href="emt_place_id__28.html">emt_place_id__28</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__29.html">Korneuburg</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2773698/">https://sws.geonames.org/2773698/</a></td>
+                           <td><a href="emt_place_id__29.html">emt_place_id__29</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__30.html">Lambach</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/7872188/">https://sws.geonames.org/7872188/</a></td>
+                           <td><a href="emt_place_id__30.html">emt_place_id__30</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__31.html">Laxenburg</a></td>
+                           <td>53</td>
+                           <td><a href="https://sws.geonames.org/2772810/">https://sws.geonames.org/2772810/</a></td>
+                           <td><a href="emt_place_id__31.html">emt_place_id__31</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__32.html">Linz</a></td>
+                           <td>55</td>
+                           <td><a href="https://sws.geonames.org/2772400/">https://sws.geonames.org/2772400/</a></td>
+                           <td><a href="emt_place_id__32.html">emt_place_id__32</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__33.html">Lissabon</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2267057/">https://sws.geonames.org/2267057/</a></td>
+                           <td><a href="emt_place_id__33.html">emt_place_id__33</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__34.html">Luzzara</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3174416/">https://sws.geonames.org/3174416/</a></td>
+                           <td><a href="emt_place_id__34.html">emt_place_id__34</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__35.html">Maastricht</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2751283/">https://sws.geonames.org/2751283/</a></td>
+                           <td><a href="emt_place_id__35.html">emt_place_id__35</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__36.html">Madrid</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3117735/">https://sws.geonames.org/3117735/</a></td>
+                           <td><a href="emt_place_id__36.html">emt_place_id__36</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__37.html">Mainz</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2874225/">https://sws.geonames.org/2874225/</a></td>
+                           <td><a href="emt_place_id__37.html">emt_place_id__37</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__38.html">Nassau</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2867037/">https://sws.geonames.org/2867037/</a></td>
+                           <td><a href="emt_place_id__38.html">emt_place_id__38</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__39.html">Neuburg</a></td>
+                           <td>29</td>
+                           <td><a href="https://sws.geonames.org/2866070/">https://sws.geonames.org/2866070/</a></td>
+                           <td><a href="emt_place_id__39.html">emt_place_id__39</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__40.html">Neustadt an der Haardt?</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2864054/">https://sws.geonames.org/2864054/</a></td>
+                           <td><a href="emt_place_id__40.html">emt_place_id__40</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__41.html">Pardubice</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3068582/">https://sws.geonames.org/3068582/</a></td>
+                           <td><a href="emt_place_id__41.html">emt_place_id__41</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__42.html">Paris</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2988507/">https://sws.geonames.org/2988507/</a></td>
+                           <td><a href="emt_place_id__42.html">emt_place_id__42</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__43.html">Parma</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3171457/">https://sws.geonames.org/3171457/</a></td>
+                           <td><a href="emt_place_id__43.html">emt_place_id__43</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__44.html">Passau</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2855328/">https://sws.geonames.org/2855328/</a></td>
+                           <td><a href="emt_place_id__44.html">emt_place_id__44</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__45.html">Pisa</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3170647/">https://sws.geonames.org/3170647/</a></td>
+                           <td><a href="emt_place_id__45.html">emt_place_id__45</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__46.html">Pottendorf</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2768472/">https://sws.geonames.org/2768472/</a></td>
+                           <td><a href="emt_place_id__46.html">emt_place_id__46</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__47.html">Prag</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3067696/">https://sws.geonames.org/3067696/</a></td>
+                           <td><a href="emt_place_id__47.html">emt_place_id__47</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__48.html">Preßburg</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3060972/">https://sws.geonames.org/3060972/</a></td>
+                           <td><a href="emt_place_id__48.html">emt_place_id__48</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__49.html">Reichstadt</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/6550513/">https://sws.geonames.org/6550513/</a></td>
+                           <td><a href="emt_place_id__49.html">emt_place_id__49</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__50.html">Rom</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3169070/">https://sws.geonames.org/3169070/</a></td>
+                           <td><a href="emt_place_id__50.html">emt_place_id__50</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__51.html">Sagan / Żagań</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3080944/">https://sws.geonames.org/3080944/</a></td>
+                           <td><a href="emt_place_id__51.html">emt_place_id__51</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__52.html">Schwetzingen</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2834240/">https://sws.geonames.org/2834240/</a></td>
+                           <td><a href="emt_place_id__52.html">emt_place_id__52</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__53.html">Schwetzingen im Fasans Haus</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2834240/">https://sws.geonames.org/2834240/</a></td>
+                           <td><a href="emt_place_id__53.html">emt_place_id__53</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__54.html">Schöntal</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2836466/">https://sws.geonames.org/2836466/</a></td>
+                           <td><a href="emt_place_id__54.html">emt_place_id__54</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__55.html">Siegburg</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2832521/">https://sws.geonames.org/2832521/</a></td>
+                           <td><a href="emt_place_id__55.html">emt_place_id__55</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__56.html">Steyr</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2764359/">https://sws.geonames.org/2764359/</a></td>
+                           <td><a href="emt_place_id__56.html">emt_place_id__56</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__57.html">Strengberg</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/7872827/">https://sws.geonames.org/7872827/</a></td>
+                           <td><a href="emt_place_id__57.html">emt_place_id__57</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__58.html">Swolinewetz?</a></td>
+                           <td>0</td>
+                           <td>
+                              keine ID
+                              </td>
+                           <td><a href="emt_place_id__58.html">emt_place_id__58</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__59.html">Warschau</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/756135/">https://sws.geonames.org/756135/</a></td>
+                           <td><a href="emt_place_id__59.html">emt_place_id__59</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__60.html">Weinheim</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2812174/">https://sws.geonames.org/2812174/</a></td>
+                           <td><a href="emt_place_id__60.html">emt_place_id__60</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__61.html">Welz</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2811359/">https://sws.geonames.org/2811359/</a></td>
+                           <td><a href="emt_place_id__61.html">emt_place_id__61</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__62.html">Wesel</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2810678/">https://sws.geonames.org/2810678/</a></td>
+                           <td><a href="emt_place_id__62.html">emt_place_id__62</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__63.html">Wien</a></td>
+                           <td>606</td>
+                           <td><a href="https://sws.geonames.org/2761369/">https://sws.geonames.org/2761369/</a></td>
+                           <td><a href="emt_place_id__63.html">emt_place_id__63</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__64.html">Wien, Königinkloster</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2761369/">https://sws.geonames.org/2761369/</a></td>
+                           <td><a href="emt_place_id__64.html">emt_place_id__64</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__65.html">Wien ?</a></td>
+                           <td>0</td>
+                           <td>
+                              keine ID
+                              </td>
+                           <td><a href="emt_place_id__65.html">emt_place_id__65</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__66.html">Wiener Neustadt</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2761353/">https://sws.geonames.org/2761353/</a></td>
+                           <td><a href="emt_place_id__66.html">emt_place_id__66</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__67.html">Wolfenbüttel</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2806914/">https://sws.geonames.org/2806914/</a></td>
+                           <td><a href="emt_place_id__67.html">emt_place_id__67</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__68.html">Zangberg</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2805261/">https://sws.geonames.org/2805261/</a></td>
+                           <td><a href="emt_place_id__68.html">emt_place_id__68</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__69.html">auf der beis</a></td>
+                           <td>0</td>
+                           <td>
+                              keine ID
+                              </td>
+                           <td><a href="emt_place_id__69.html">emt_place_id__69</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__70.html">Traunsee</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/2763413/">https://sws.geonames.org/2763413/</a></td>
+                           <td><a href="emt_place_id__70.html">emt_place_id__70</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__71.html">o.O.</a></td>
+                           <td>0</td>
+                           <td>
+                              keine ID
+                              </td>
+                           <td><a href="emt_place_id__71.html">emt_place_id__71</a></td>
+                        </tr>
+                        <tr>
+                           <td><a href="emt_place_id__72.html">Ödenburg / Sopron</a></td>
+                           <td>0</td>
+                           <td><a href="https://sws.geonames.org/3045190/">https://sws.geonames.org/3045190/</a></td>
+                           <td><a href="emt_place_id__72.html">emt_place_id__72</a></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class="wrapper fundament-default-footer" id="wrapper-footer-full" style="margin-top: 4em;">
+            <div class="container" id="footer-full-content" tabindex="-1">
+               <div class="footer-separator">
+                  CONTACT
+                  </div>
+               <div class="row">
+                  <div class="footer-widget col-lg-1 col-md-2 col-sm-2 col-xs-6  ml-auto  text-center ">
+                     <div class="textwidget custom-html-widget"><a href="/"><img src="https://fundament.acdh.oeaw.ac.at/common-assets/images/acdh_logo.svg" class="image" alt="ACDH Logo" style="max-width: 100%; height: auto;" title="ACDH Logo" /></a></div>
+                  </div>
+                  <div class="footer-widget col-lg-4 col-md-3 col-sm-3"></div>
+                  <div class="footer-widget col-lg-4 col-md-3 col-sm-4">
+                     <h6 class="font-weight-bold">PROJECT PARTNERS</h6>
+                     <div class="container"></div>
+                  </div>
+                  <div class="footer-widget col-lg-3 col-md-4 col-sm-3 ml-auto">
+                     <div class="row">
+                        <div class="footer-widget col-lg-3 col-md-4 col-sm-3 ml-auto" style="margin-left:0 !important;">
+                           <div class="textwidget custom-html-widget">
+                              <p style="margin-bottom:0 !important;">Social: </p>
+                           </div>
+                           <div class="row">
+                              <div class="textwidget custom-html-widget col-md-4"><a id="github-logo" title="GitHub" href="https://github.com/emt-project/emt-static" class="nav-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                       <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"></path></svg></a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-imprint-bar" id="wrapper-footer-secondary" style="text-align:center; padding:0.4rem 0; font-size: 0.9rem;"><a href="imprint.html">Impressum/Imprint</a></div><script type="text/javascript" src="dist/fundament/vendor/jquery/jquery.min.js"></script><script type="text/javascript" src="dist/fundament/js/fundament.min.js"></script><script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.0/b-2.0.0/b-html5-2.0.0/cr-1.5.4/r-2.2.9/sp-1.4.0/datatables.min.js"></script><script type="text/javascript" src="js/dt.js"></script><script>
+                        $(document).ready(function () {
+                        createDataTable('tocTable')
+                        });
+                    </script></div>
+   </body>
+</html>

@@ -167,5 +167,9 @@
   </div>
 </body>
 
-   </text>
+   <back><listPerson><person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson></back></text>
 </TEI>
