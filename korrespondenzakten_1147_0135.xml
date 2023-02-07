@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1253" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1253px"/>
+    <graphic url="Korrespondenzakten_1147_0135.jpg" width="800px" height="1253px"/>
     <zone points="16,37 16,1239 747,1239 747,37" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="16,72 40,81 54,75 70,83 84,77 104,84 114,75 120,77 138,69 149,72 151,27 139,28 125,19 116,23 106,17 67,27 32,19 27,24 18,21" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="134,486 404,516 501,480 573,492 610,522 745,502 746,448 673,452 640,431 593,453 529,422 377,439 319,417 134,454" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -117,11 +119,11 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="84 r" xml:id="Korrespondenzakten_1147_0135.jpg" ed="57 r"/>
     <ab facs="#facs_1_r1">
-      <lb facs="#facs_1_r1l1" n="N001"/><unclear>5. jan 95</unclear>
+      <lb facs="#facs_1_r1l1" n="N001"/><unclear>5. Januarij 95</unclear>
       <lb facs="#facs_1_r1l2" n="N002"/>Durchleüchtiger Cuhrfürst, mein herzallerlibster
       <lb facs="#facs_1_r1l3" n="N003"/><choice><expan>herr</expan><abbr>h</abbr></choice> bruder. Weil ich gestren nit können mehr den
       <lb facs="#facs_1_r1l4" n="N004"/>brif an mein <choice><expan>herrn</expan><abbr>h</abbr></choice> <choice><expan>bruder</expan><abbr>b</abbr></choice> Carl überschiken aus kürze
@@ -144,11 +146,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -156,5 +154,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

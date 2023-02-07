@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1176" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1176px"/>
+    <graphic url="Kasten_blau_45_15_0287.jpg" width="800px" height="1176px"/>
     <zone points="12,210 12,1160 761,1160 761,210" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="109,254 184,243 214,264 242,243 339,265 400,243 455,265 532,231 569,256 622,232 672,261 704,242 743,258 766,253 766,179 717,166 613,196 578,174 492,190 418,160 331,179 218,157 109,186" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="59,299 355,317 535,278 606,299 719,289 719,246 672,262 623,232 580,257 532,231 456,265 403,242 342,265 239,242 138,266 59,219" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1154" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1154px"/>
+    <graphic url="Kasten_blau_45_15_0288.jpg" width="800px" height="1154px"/>
     <zone points="41,56 41,1077 784,1077 784,56" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="39,90 223,84 291,112 573,78 648,100 727,82 727,19 39,29" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="36,136 256,119 286,147 324,125 378,149 454,124 742,129 742,95 680,82 648,100 573,78 419,82 291,112 216,88 36,89" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -141,7 +143,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1167" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1167px"/>
+    <graphic url="Kasten_blau_45_15_0289.jpg" width="800px" height="1167px"/>
     <zone points="20,61 20,1095 758,1095 758,61" rendition="TextRegion" xml:id="facs_3_r2">
         <zone points="34,112 80,89 295,120 365,90 540,115 615,86 754,86 753,46 577,69 366,39 295,65 33,41" rendition="Line" xml:id="facs_3_line_1642417120399_678"/>
         <zone points="31,150 190,134 248,159 339,140 478,161 656,128 741,150 740,87 612,86 546,112 325,86 263,116 30,114" rendition="Line" xml:id="facs_3_r2l3"/>
@@ -154,9 +156,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="152 r" xml:id="Kasten_blau_45_15_0287.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schr<supplied>e</supplied>iben vom 7ten dis hab mit <choice><expan>vnterdehnigstem</expan><abbr>vd</abbr></choice>
@@ -177,7 +179,7 @@
       <lb facs="#facs_1_r1l17" n="N017"/>Durchlaucht sehen, das niks recht purgirets drin gewesen.
       <lb facs="#facs_1_r1l18" n="N018"/>Das consilium wi<supplied>r</supplied>t mihr gahr lieb sein, wan er
       <lb facs="#facs_1_r1l20" n="N019"/>nuhr gesunt wirt, so ist alles guet. Der Bischoff</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="152 v" xml:id="Kasten_blau_45_15_0288.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/><supplied>ist</supplied> vohrgeste<supplied>r</supplied>n kommen, ist gottlob woll auf, mit
       <lb facs="#facs_2_r1l2" n="N002"/><choice><expan>bruder</expan><abbr>b</abbr></choice> Allexander, sagt er, sey wider aus der gefahr. Ich
@@ -201,14 +203,14 @@
       <lb facs="#facs_2_r1l20" n="N020"/>kan aber nit alles schreiben, die histo<supplied>r</supplied>i ist zue la<supplied>n</supplied>g
       <lb facs="#facs_2_r1l21" n="N021"/>vnd derfs der feder nit recht trawen. Wegen
       <lb facs="#facs_2_r1l22" n="N022"/>des Seylers vnd <unclear>Holos</unclear> werd ich ihr Mayestät vohrdragen,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="153 r" xml:id="Kasten_blau_45_15_0289.jpg"/>
     <ab facs="#facs_3_r2">
       <lb facs="#facs_3_line_1642417120399_678" n="N001"/>hab ewer Durchlaucht <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schr<supplied>e</supplied>iben heünt gahr schpaht empfangen.
       <lb facs="#facs_3_r2l3" n="N002"/>Mit disem due mich <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> b<supplied>e</supplied>fehlen vnd werde ste<supplied>r</supplied>ben
       <lb facs="#facs_3_r2l4" n="N003"/>ewer Durchlaucht
       <lb facs="#facs_3_r2l6" n="N004"/><choice><expan>vnterdehnigste</expan><abbr>vnt</abbr></choice> trewg<supplied>e</supplied>horsa<supplied>m</supplied>ste d<supplied>o</supplied>chter
       <lb facs="#facs_3_line_1642417130662_684" n="N005"/>EMT
-      <lb facs="#facs_3_r2l5" n="N006"/>Wien den 18ten <choice><expan>feber</expan><abbr>feb</abbr></choice> 1688</ab>
+      <lb facs="#facs_3_r2l5" n="N006"/>Wien den 18ten <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1688</ab>
   </div>
 </body>
 

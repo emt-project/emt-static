@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">zweite Follierung durch Knick verdeckt</ab>
+         <ab type="notes">zweite Follierung durch Knick verdeckt</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1224" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1224px"/>
+    <graphic url="Kasten_blau_44_7_0350.jpg" width="800px" height="1224px"/>
     <zone points="49,92 49,1216 768,1216 768,92" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="113,448 142,432 207,462 250,443 296,462 457,426 535,460 624,430 760,423 759,372 557,397 521,378 475,400 219,343 167,377 111,363" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="79,521 116,535 171,493 456,502 555,474 713,492 713,428 554,462 451,447 397,470 338,452 283,471 246,447 225,468 142,432 76,447" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1241" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1241px"/>
+    <graphic url="Kasten_blau_44_7_0351.jpg" width="800px" height="1241px"/>
     <zone points="41,37 41,532 707,532 707,37" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="59,130 247,168 312,133 387,167 480,152 535,174 650,141 712,147 712,73 686,68 525,70 468,108 371,76 235,86 132,59 59,81" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="86,227 155,231 226,201 324,235 353,216 371,223 370,158 356,152 319,161 275,152 244,170 217,150 164,161 85,129" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -124,9 +126,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="192 r" xml:id="Kasten_blau_44_7_0350.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/>Durchleüchtiger Curfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l3" n="N002"/>Ich hab nit vnterlasen wollen, in dem heündt die
@@ -141,7 +143,7 @@
       <lb facs="#facs_1_r1l13" n="N011"/>vns dise große victori widerumb verlihen. Dero Liebden vergeben
       <lb facs="#facs_1_r1l14" n="N012"/>mihr, das dero sch<supplied>rei</supplied>ben nit beantwort, wirt mitt nechsten
       <lb facs="#facs_1_line_1649337898725_306" n="N013"/>geschen mit dem <unclear>P</unclear>. Bitt mich auch b<supplied>e</supplied>y meiner <choice><expan>fraw</expan><abbr>fr</abbr></choice> schweg<supplied>r</supplied>in</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="192 v" xml:id="Kasten_blau_44_7_0351.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>zue entschuldigen, mitt negsten wi<supplied>r</supplied>ts geschen. Ist schon sehr
       <lb facs="#facs_2_r1l3" n="N002"/>schpaht, ich werde st<supplied>er</supplied>ben

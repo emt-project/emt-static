@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Ebersdorf</ab>
+         <ab type="notes">Ebersdorf</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1184" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1184px"/>
+    <graphic url="Kasten_blau_44_6_0078.jpg" width="800px" height="1184px"/>
     <zone points="68,110 68,1080 762,1080 762,110" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="124,463 263,449 321,484 500,443 567,471 593,453 662,466 702,447 745,460 765,421 700,402 603,410 576,387 437,410 345,388 123,389" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="92,533 212,507 352,544 418,517 636,533 740,504 739,449 634,473 607,453 568,472 377,458 240,495 181,454 90,459" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1149" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1149px"/>
+    <graphic url="Kasten_blau_44_6_0079.jpg" width="800px" height="1149px"/>
     <zone points="65,73 65,1047 752,1047 752,73" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="74,136 140,103 278,132 397,109 611,124 653,99 733,124 739,69 683,56 72,63" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="83,168 225,190 297,155 385,182 538,152 616,170 730,155 729,127 649,138 573,109 395,111 278,144 224,113 82,135" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -132,7 +134,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1191" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1191px"/>
+    <graphic url="Kasten_blau_44_6_0080.jpg" width="800px" height="1191px"/>
     <zone points="20,96 20,1167 750,1167 750,96" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="32,124 105,148 147,126 232,158 260,141 312,157 360,126 585,155 696,132 690,82 425,78 378,100 261,63 32,91" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="18,196 124,193 148,180 189,199 270,196 269,161 236,168 217,158 202,168 195,162 171,168 140,155 134,160 115,146 72,147 49,128 20,138" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -156,9 +158,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="55 r" xml:id="Kasten_blau_44_6_0078.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l3" n="N002"/>Ich hab mit großen freüden dero liebstes schreiben vom
@@ -172,7 +174,7 @@
       <lb facs="#facs_1_r1l11" n="N010"/>er recusirt in die conferenz zue kommen. Es
       <lb facs="#facs_1_r1l12" n="N011"/>gehört darumb auf den reichshoffraht, das ihr
       <lb facs="#facs_1_r1l13" n="N012"/>Mayestät mein Keiser dise erlaubnus nit geben kan</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="55 v" xml:id="Kasten_blau_44_6_0079.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>ohne vohrwißen vnd consens der agnaten, welche
       <lb facs="#facs_2_r1l2" n="N002"/>darwider beym reichshoffraht ein kommen sein.
@@ -193,7 +195,7 @@
       <lb facs="#facs_2_r1l17" n="N017"/>obs können die conterfet zusammen bringen.
       <lb facs="#facs_2_r1l18" n="N018"/>Das <choice><expan>schwester</expan><abbr>schw</abbr></choice> <choice><expan>Leopoldine</expan><abbr>Leopold</abbr></choice> sich so woll halt, freüt mich
       <lb facs="#facs_2_r1l19" n="N019"/>von he<supplied>r</supplied>zen. Wegen des Cerini ist schon als gahr</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="56 r" xml:id="Kasten_blau_44_6_0080.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>recht. Mus schlißen in eil, b<supplied>e</supplied>f<supplied>e</supplied>hl mich dero Liebden
       <lb facs="#facs_3_r1l2" n="N002"/>vnd werd st<supplied>er</supplied>ben

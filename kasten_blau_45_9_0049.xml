@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1207" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1207px"/>
+    <graphic url="Kasten_blau_45_9_0049.jpg" width="800px" height="1207px"/>
     <zone points="16,119 16,1206 781,1206 781,119" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="69,172 95,180 119,161 183,179 243,151 362,148 440,178 531,153 640,168 642,116 606,103 513,129 469,102 333,117 221,97 130,113 72,88" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="71,206 245,221 340,201 435,228 507,207 674,211 738,239 747,162 72,169" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1194" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1194px"/>
+    <graphic url="Kasten_blau_45_9_0050.jpg" width="800px" height="1194px"/>
     <zone points="36,52 36,1191 798,1191 798,52" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="51,98 309,81 533,110 618,80 680,105 764,82 763,-4 401,-1 51,57" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="40,164 191,133 301,164 517,138 657,160 745,137 745,100 709,85 680,104 333,113 293,87 195,113 148,88 40,109" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -139,7 +141,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1227" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1227px"/>
+    <graphic url="Kasten_blau_45_9_0051.jpg" width="800px" height="1227px"/>
     <zone points="21,54 21,1222 784,1222 784,54" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="18,114 65,92 116,121 298,78 712,101 777,85 777,44 641,20 457,36 436,15 288,47 207,25 17,36" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="28,160 70,142 109,171 182,134 360,170 427,140 527,154 600,134 776,171 776,104 740,118 693,92 28,110" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -164,7 +166,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1226" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1226px"/>
+    <graphic url="Kasten_blau_45_9_0052.jpg" width="800px" height="1226px"/>
     <zone points="22,52 22,651 769,651 769,52" rendition="TextRegion" xml:id="facs_4_r2">
         <zone points="40,113 198,85 326,112 401,87 625,85 656,111 678,91 760,96 760,39 470,24 403,48 202,20 40,45" rendition="Line" xml:id="facs_4_r2l1"/>
         <zone points="43,165 159,153 240,174 280,145 320,173 375,142 502,157 555,131 604,154 714,144 751,135 751,94 680,120 556,88 327,112 255,86 167,116 136,94 43,116" rendition="Line" xml:id="facs_4_r2l2"/>
@@ -182,9 +184,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="30 r" xml:id="Kasten_blau_45_9_0049.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich kan ewer Durchlaucht nit genuechsammen <choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> dankh
@@ -205,7 +207,7 @@
       <lb facs="#facs_1_r1l17" n="N017"/>auch mihr die zeit, das <choice><expan>Doctor</expan><abbr>Doc</abbr></choice> Hueber zue Lins geweßen,
       <lb facs="#facs_1_r1l18" n="N018"/>woll gedient vnd niks als des <choice><expan>Doctor</expan><abbr>Doc</abbr></choice> Hueber seine
       <lb facs="#facs_1_r1l19" n="N019"/>sachen gebraucht. Ist auch mit ihm woll aus kommen,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="30 v" xml:id="Kasten_blau_45_9_0050.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>so woll in der ruer als bey des Josephl seinem fieber.
       <lb facs="#facs_2_r1l2" n="N002"/>Dah hatt er mit dem <choice><expan>Doctor</expan><abbr>Doct</abbr></choice> Hueber allein verhindert, das
@@ -227,7 +229,7 @@
       <lb facs="#facs_2_r1l19" n="N018"/>bedienen, dan es ist balt einer krankh oder nit in
       <lb facs="#facs_2_r1l20" n="N019"/>gegenwart, das dan ein anderer gleichwoll wehre,
       <lb facs="#facs_2_r1l21" n="N020"/>der einwehnich wust den metodum mitt mihr vmb</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="31 r" xml:id="Kasten_blau_45_9_0051.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>zue gehn. Ich bitt ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vntt</abbr></choice>, <supplied>sie</supplied> wollen dises mit ihr
       <lb facs="#facs_3_r1l2" n="N002"/>Durchlaucht <choice><expan>fraw</expan><abbr>f</abbr></choice> <choice><expan>mutter</expan><abbr>m</abbr></choice> <choice><expan>gnädigst</expan><abbr>g</abbr></choice> vberlegen. Gefalt ewer Durchlaucht diser vohrschlag,
@@ -249,7 +251,7 @@
       <lb facs="#facs_3_r1l19" n="N018"/>mihr etwas der gleichen zue exitirung der beschleünigung
       <lb facs="#facs_3_r1l20" n="N019"/>dißer sach in einem schreiben meldeten, welches
       <lb facs="#facs_3_r1l21" n="N020"/>ich kunte <seg type="blackening">gehörigs sachen</seg> gehöriger orten zeigen. Der prister</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="31 v" xml:id="Kasten_blau_45_9_0052.jpg"/>
     <ab facs="#facs_4_r2">
       <lb facs="#facs_4_r2l1" n="N001"/>ist eifrich vnd erlich, ich wünschte aber, das er ewer Durchlaucht
       <lb facs="#facs_4_r2l2" n="N002"/>in diesen sachen nit so klar schreibet. Es möcht

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Ebersdorf. Datierung: "2ter oct 1697" Tintenvermerk 2 8bris (mit liegender 8) oder 10bris (mit x) 97; Bleistiftvermerk 2. Dec. 1697.</ab>
+         <ab type="notes">Ebersdorf. Datierung: "2ter oct 1697" Tintenvermerk 2 8bris (mit liegender 8) oder 10bris (mit x) 97; Bleistiftvermerk 2. Dec. 1697.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1247" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1247px"/>
+    <graphic url="Kasten_blau_44_7_0358.jpg" width="800px" height="1247px"/>
     <zone points="33,25 33,1180 752,1180 752,25" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="27,71 55,71 84,83 115,65 132,75 139,72 158,90 206,82 211,9 185,11 153,1 121,19 57,9 30,15" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="84,627 191,584 252,602 348,588 388,615 484,579 528,605 626,608 757,582 756,503 650,525 599,497 524,532 485,508 427,529 361,511 83,528" rendition="Line" xml:id="facs_1_r1l4"/>
@@ -106,7 +108,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1249" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1249px"/>
+    <graphic url="Kasten_blau_44_7_0359.jpg" width="800px" height="1249px"/>
     <zone points="65,70 65,963 797,963 797,70" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="75,119 93,107 130,134 225,96 299,125 359,104 461,131 540,105 664,144 766,127 767,88 636,46 505,68 403,20 77,32" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="71,181 115,169 153,203 235,166 269,192 305,164 450,167 488,196 600,203 661,180 779,184 780,130 635,152 486,116 445,143 377,113 341,135 257,118 222,142 175,113 141,133 72,122" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -125,7 +127,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1257" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1257px"/>
+    <graphic url="Kasten_blau_44_7_0360.jpg" width="800px" height="1257px"/>
     <zone points="211,457 532,457 532,829 211,829" rendition="TextRegion" xml:id="facs_3_region_1647875818304_1095">
         <zone points="355,776 367,703 353,656 383,604 368,551 381,520 360,476 305,475 296,499 293,584 275,609 295,647 292,681 267,731 266,774" rendition="Line" xml:id="facs_3_line_1647875823573_1098"/>
         <zone points="452,788 428,733 437,692 408,649 409,559 424,532 423,494 409,465 369,467 385,491 368,551 384,621 359,688 369,741 394,763 395,791" rendition="Line" xml:id="facs_3_line_1647875827904_1103"/>
@@ -135,9 +137,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="197 r" xml:id="Kasten_blau_44_7_0358.jpg" ed="73 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/><unclear>2 xbris 97</unclear>
       <lb facs="#facs_1_r1l4" n="N002"/>Durchleüchtiger Cuhrfürst, mein h<supplied>er</supplied>zallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
@@ -149,7 +151,7 @@
       <lb facs="#facs_1_r1l10" n="N008"/>dero Liebden auch berichten, was vohr ein große anda<supplied>c</supplied>ht
       <lb facs="#facs_1_r1l11" n="N009"/>hier zu dem gnaden bildt annoch continuiret,
       <lb facs="#facs_1_r1l12" n="N010"/>also hab mich vnterstanden, dero Liebden auch ein copei</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="197 v" xml:id="Kasten_blau_44_7_0359.jpg" ed="73 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>dauon zue vberschiken, nit zweiflendt, das auch dorten
       <lb facs="#facs_2_r1l2" n="N002"/>bey bey selb<supplied>i</supplied>gem die andacht gegen vnser liben
@@ -165,7 +167,7 @@
       <lb facs="#facs_2_line_1649342001138_552" n="N012"/>getr<supplied>e</supplied>wste schw<supplied>e</supplied>ster
       <lb facs="#facs_2_r1l13" n="N013"/>Eleonora
       <lb facs="#facs_2_line_1649342001138_553" n="N014"/>Eberstorf den 2ten <choice><expan>octobris</expan><abbr>oct</abbr></choice> 1697</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="198 r" xml:id="Kasten_blau_44_7_0360.jpg"/>
     <ab facs="#facs_3_region_1647875818304_1095">
       <lb facs="#facs_3_line_1647875823573_1098" n="N001"/>Ihr <choice><expan>Liebden</expan><abbr>Ld</abbr></choice> herrn Cuhrfürsten
       <lb facs="#facs_3_line_1647875827904_1103" n="N002"/>zu Pfalz, meinem herzaller

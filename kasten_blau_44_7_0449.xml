@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1184" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1184px"/>
+    <graphic url="Kasten_blau_44_7_0449.jpg" width="800px" height="1184px"/>
     <zone points="30,38 30,1107 755,1107 755,38" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="29,521 760,495 760,427 599,457 515,428 421,454 304,429 185,442 106,397 28,400" rendition="Line" xml:id="facs_1_r1l3"/>
         <zone points="44,569 83,549 256,566 301,540 433,588 510,549 677,567 708,554 708,516 554,503 470,530 440,508 388,535 343,503 264,521 203,503 44,521" rendition="Line" xml:id="facs_1_r1l4"/>
@@ -109,9 +111,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="248 r" xml:id="Kasten_blau_44_7_0449.jpg" ed="34 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l3" n="N001"/>Durchleüchtiger Cuhrfürst, mein h<supplied>er</supplied>zallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l4" n="N002"/>In dem der <choice><expan>Pater</expan><abbr>P</abbr></choice> Lucas bey seiner hinabreis
@@ -124,15 +126,11 @@
       <lb facs="#facs_1_r1l11" n="N009"/>dero Liebden
       <lb facs="#facs_1_line_1650275392083_177" n="N010"/>getre<supplied>w</supplied>ste schw<supplied>e</supplied>ster
       <lb facs="#facs_1_r1l13" n="N011"/>Eleonora
-      <lb facs="#facs_1_line_1650275392083_178" n="N012"/>Wien den 26 <choice><expan>feber</expan><abbr>feb</abbr></choice> 1698</ab>
+      <lb facs="#facs_1_line_1650275392083_178" n="N012"/>Wien den 26 <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1698</ab>
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -140,5 +138,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

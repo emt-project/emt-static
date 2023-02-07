@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">rechts oben zusätzliche Foliierung: 60 korrigiert aus ?</ab>
+         <ab type="notes">rechts oben zusätzliche Foliierung: 60 korrigiert aus ?</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1128" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1128px"/>
+    <graphic url="Kasten_blau_44_6_0422.jpg" width="800px" height="1128px"/>
     <zone points="4,77 4,1089 761,1089 761,77" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="12,433 92,448 183,423 260,446 317,422 464,452 521,425 587,448 721,420 721,387 623,391 596,370 195,374 136,405 68,361 12,376" rendition="Line" xml:id="facs_1_r1l5"/>
         <zone points="12,506 92,482 275,499 365,480 720,508 720,458 644,446 489,459 302,431 227,457 150,425 90,447 12,436" rendition="Line" xml:id="facs_1_r1l6"/>
@@ -116,9 +118,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="266 r" xml:id="Kasten_blau_44_6_0422.jpg" ed="60 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l5" n="N001"/>Durchleüchtiger Curfü<supplied>r</supplied>st, mein h<supplied>er</supplied>zallerlibs<supplied>ter</supplied> <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l6" n="N002"/>Weil der <unclear>G</unclear> Wa<supplied>c</supplied>htendonk wider zu dero bedienung

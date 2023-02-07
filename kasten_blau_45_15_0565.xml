@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1209" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1209px"/>
+    <graphic url="Kasten_blau_45_15_0565.jpg" width="800px" height="1209px"/>
     <zone points="37,470 37,1108 771,1108 771,470" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="32,492 200,523 762,517 762,473 532,468 489,435 333,445 289,414 105,481 33,454" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="60,565 109,581 187,558 270,589 355,561 431,579 722,568 705,508 652,530 220,510 162,537 108,501 60,504" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -107,7 +109,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1238" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1238px"/>
+    <graphic url="Kasten_blau_45_15_0566.jpg" width="800px" height="1238px"/>
     <zone points="38,75 38,1189 797,1189 797,75" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="49,124 136,133 205,108 380,129 518,101 606,128 766,122 765,17 460,19 275,81 108,36 48,49" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="49,187 286,161 336,187 514,157 634,186 755,173 743,126 606,128 547,102 503,122 406,114 361,146 273,122 196,145 48,120" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -131,7 +133,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1241" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1241px"/>
+    <graphic url="Kasten_blau_45_15_0567.jpg" width="800px" height="1241px"/>
     <zone points="8,71 8,1231 774,1231 774,71" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="27,102 195,127 315,96 430,117 574,98 634,128 666,102 725,110 726,67 667,80 626,55 570,75 488,39 356,69 284,26 28,14" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="31,168 114,183 148,153 186,175 232,161 269,192 316,163 536,161 577,183 779,162 773,120 637,141 568,114 528,141 319,97 195,128 31,103" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -153,9 +155,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="8 r" xml:id="Kasten_blau_45_15_0565.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Bede ewer Durchlaucht <choice><expan>gnädige</expan><abbr>g</abbr></choice> schreiben vom 2ten eigenhendich vnd vom
@@ -169,7 +171,7 @@
       <lb facs="#facs_1_r1l11" n="N010"/>wollen doch dero gesuntheit beßer in obacht nemmen
       <lb facs="#facs_1_r1l12" n="N011"/>vnd sich mit eigenhendigen schreiben nit bemühen,
       <lb facs="#facs_1_r1l13" n="N012"/>dan an dero conservation alles gelegen ist.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="8 v" xml:id="Kasten_blau_45_15_0566.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Woh ewer Durchlaucht anherokunft anbelangt, so kan ich
       <lb facs="#facs_2_r1l2" n="N002"/>ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> versichern, das nit allein ich als
@@ -190,7 +192,7 @@
       <lb facs="#facs_2_r1l18" n="N017"/>Wegen des Deütschmeister, so bericht <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice>, das in
       <lb facs="#facs_2_r1l19" n="N018"/>dem haubt werkh mit Beyren noch nichts geschloßen,
       <lb facs="#facs_2_r1l20" n="N019"/>er auch schwere pretensiones macht. Mit dem Herzoch</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="9 r" xml:id="Kasten_blau_45_15_0567.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>von Lotring ist auch noch nichts adiustirt, dan der
       <lb facs="#facs_3_r1l2" n="N002"/>Cuhrfürst noch drauf behart, die parola zue geben vnd

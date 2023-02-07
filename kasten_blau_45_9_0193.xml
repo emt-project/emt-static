@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1221" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1221px"/>
+    <graphic url="Kasten_blau_45_9_0193.jpg" width="800px" height="1221px"/>
     <zone points="21,47 21,1220 776,1220 776,47" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="54,223 110,228 149,197 261,213 331,185 379,209 552,191 587,207 722,179 721,125 654,149 54,147" rendition="Line" xml:id="facs_1_r1l4"/>
         <zone points="50,263 78,277 168,236 247,260 521,239 615,259 637,238 753,234 752,192 389,209 331,185 262,213 202,198 111,228 49,220" rendition="Line" xml:id="facs_1_r1l5"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1212" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1212px"/>
+    <graphic url="Kasten_blau_45_9_0194.jpg" width="800px" height="1212px"/>
     <zone points="33,96 33,1209 790,1209 790,96" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="80,143 141,154 231,123 363,160 409,136 443,152 504,129 557,150 606,125 629,141 765,124 764,75 591,102 471,70 289,110 234,85 191,108 80,85" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="68,191 115,210 144,186 195,205 226,183 282,206 476,185 538,208 686,189 717,207 782,184 782,161 715,146 670,169 620,137 555,149 504,129 362,159 332,132 68,150" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -138,7 +140,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1239" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1239px"/>
+    <graphic url="Kasten_blau_45_9_0195.jpg" width="800px" height="1239px"/>
     <zone points="15,48 15,558 761,558 761,48" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="31,99 170,81 215,103 312,74 386,104 460,82 557,98 610,74 651,91 715,81 714,21 608,55 427,16 271,28 208,60 135,37 30,52" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="33,146 82,133 117,159 324,120 363,146 527,126 715,164 747,150 747,93 644,111 542,86 372,104 284,85 172,115 33,108" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -154,9 +156,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="111 r" xml:id="Kasten_blau_45_9_0193.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l4" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l5" n="N002"/>Ewer Durchlaucht bitt ich <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> vmb vergebung, das ich heünt
@@ -176,7 +178,7 @@
       <lb facs="#facs_1_r1l19" n="N016"/>ment kan eingericht werden, werd ich, wans möglich, mit
       <lb facs="#facs_1_r1l20" n="N017"/>der extra post ewer Durchlaucht es über schiken vnd ausfürlich
       <lb facs="#facs_1_r1l21" n="N018"/>schreiben. Bericht ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> in eil dise guette zeitung,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="111 v" xml:id="Kasten_blau_45_9_0194.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>das zwar vewichenen freitag der König in Polen mitt
       <lb facs="#facs_2_r1l2" n="N002"/>den seinigen etwas zue weit vohraus gangen, ob zwar
@@ -198,7 +200,7 @@
       <lb facs="#facs_2_r1l18" n="N018"/>worden, <supplied>und als</supplied> sie über die bruken retiriren wollen, welche
       <lb facs="#facs_2_r1l19" n="N019"/>mit <unclear>kein</unclear> <unclear>eingangen</unclear> vnd also 6000 geblieben, 2 baßa
       <lb facs="#facs_2_r1l20" n="N020"/>gefangen, der newe visir von Offen vnd noch ein baßa doht</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="112 r" xml:id="Kasten_blau_45_9_0195.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>vnd Baracon sich darauf gleich ergeben, worin sie
       <lb facs="#facs_3_r1l2" n="N002"/>800 gefangen bekommen. Seint also auf Gran gangen,
@@ -212,7 +214,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__32">
+                  <placeName>Linz</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -220,9 +226,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__32">
-                  <placeName>Linz</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

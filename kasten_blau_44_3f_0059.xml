@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,14 +62,16 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Abschrift</term>
             <term>Schreiber</term>
             <term>Dechiffrierung</term>
          </ab>
-         <ab type="abstract-terms">ist Transkription der chiffrierten Passage aus 44_3f_60</ab>
+         <ab type="notes">ist Transkription der chiffrierten Passage aus 44_3f_60</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -87,12 +89,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="1622" lry="2588" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpg" width="1622px" height="2588px"/>
+    <graphic url="Kasten_blau_44_3f_0059.jpg" width="1622px" height="2588px"/>
     <zone points="64,2315 64,2360 84,2360 84,2315" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="73,2345 83,2347 83,2317 73,2315" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="64,2360 84,2360 84,2330 64,2330" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -120,9 +122,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="1" xml:id="Kasten_blau_44_3f_0059.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/></ab>

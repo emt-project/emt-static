@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1196" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1196px"/>
+    <graphic url="Kasten_blau_45_9_0400.jpg" width="800px" height="1196px"/>
     <zone points="34,182 34,968 784,968 784,182" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="115,243 154,263 255,236 296,258 351,232 411,253 466,225 507,241 579,218 717,234 741,219 740,187 598,163 480,177 373,157 287,188 114,162" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="89,290 151,279 227,309 354,292 410,319 518,285 628,293 662,271 714,291 732,285 732,229 445,261 355,231 297,257 258,239 154,262 89,244" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -111,9 +113,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="237 r" xml:id="Kasten_blau_45_9_0400.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Mit der gelegenheit des <choice><expan>Graven</expan><abbr>Gr</abbr></choice> von Starenberg hab ich

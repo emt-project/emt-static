@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datierung: "1686", aber geht wieder um Portugal, sie hat sich also wahrscheinlich verschrieben. Foliierung: 53 r-v fehlt</ab>
+         <ab type="notes">Datierung: "1686", aber geht wieder um Portugal, sie hat sich also wahrscheinlich verschrieben. Foliierung: 53 r-v fehlt</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1208" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1208px"/>
+    <graphic url="Kasten_blau_45_15_0131.jpg" width="800px" height="1208px"/>
     <zone points="32,176 32,1176 784,1176 784,176" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="103,218 200,235 277,204 375,230 430,204 609,229 789,196 788,149 689,137 647,171 367,158 236,177 102,153" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="88,289 171,259 300,286 489,243 535,264 758,262 785,255 784,211 376,230 339,208 234,243 86,214" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1208" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1208px"/>
+    <graphic url="Kasten_blau_45_15_0132.jpg" width="800px" height="1208px"/>
     <zone points="45,90 45,1146 783,1146 783,90" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="75,136 291,140 340,118 412,146 484,116 656,112 721,131 740,124 740,74 646,56 524,83 396,78 368,98 273,70 74,94" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="64,206 137,169 254,190 455,167 502,186 628,158 727,180 740,126 615,119 557,139 488,119 410,146 157,131 63,161" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -140,7 +142,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1243" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1243px"/>
+    <graphic url="Kasten_blau_45_15_0133.jpg" width="800px" height="1243px"/>
     <zone points="25,116 25,1200 784,1200 784,116" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="71,178 195,146 259,163 371,142 479,177 605,170 668,138 783,158 782,109 736,97 695,117 559,87 457,117 301,88 196,116 132,89 70,103" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="55,244 71,239 79,229 94,229 105,222 117,232 128,224 143,225 140,160 125,163 117,159 110,165 95,165 75,180 58,175 52,177" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -156,9 +158,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="54 r2" xml:id="Kasten_blau_45_15_0131.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich hab dero genädiges schreiben vom 14ten dis mit schuldigstem
@@ -178,7 +180,7 @@
       <lb facs="#facs_1_r1l18" n="N016"/>glaubt hette, das er fast eben so balt die
       <lb facs="#facs_1_r1l19" n="N017"/>loretanische reis vericht hette, wan er sich nirge<supplied>n</supplied>s
       <lb facs="#facs_1_r1l20" n="N018"/>sonst aufgehalten hette. Ich hab aber ein consolation</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="54 v2" xml:id="Kasten_blau_45_15_0132.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>darbey, dan ich hoff, wan er so nahet kombt, wirt er
       <lb facs="#facs_2_r1l2" n="N002"/>gahr ein tusch her duen, das ich noch einmahl ihn
@@ -201,7 +203,7 @@
       <lb facs="#facs_2_r1l19" n="N019"/>weib sich vohrnimbt zue rechnen. Weiters derf
       <lb facs="#facs_2_r1l20" n="N020"/>nit schreiben, vnd weil es sonst hier niks gibt
       <lb facs="#facs_2_r1l21" n="N021"/>ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> zue berichten, also due ich mich</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="55 r2" xml:id="Kasten_blau_45_15_0133.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> in dero <choice><expan>gnade</expan><abbr>g</abbr></choice> bef<supplied>e</supplied>hlen vnd werde
       <lb facs="#facs_3_r1l2" n="N002"/>sterben

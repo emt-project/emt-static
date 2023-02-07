@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1225" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1225px"/>
+    <graphic url="Kasten_blau_45_15_0015.jpg" width="800px" height="1225px"/>
     <zone points="46,198 46,1187 773,1187 773,198" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="124,250 173,253 211,228 292,257 345,230 379,245 458,227 521,249 570,223 618,240 748,229 748,197 601,203 480,173 385,183 322,145 198,159 125,142" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="41,294 325,275 457,298 566,275 618,298 753,278 753,230 595,253 469,229 240,247 212,228 176,252 41,253" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1222" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1222px"/>
+    <graphic url="Kasten_blau_45_15_0016.jpg" width="800px" height="1222px"/>
     <zone points="76,137 76,825 788,825 788,137" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="98,177 190,173 250,206 348,178 384,201 483,185 527,207 646,180 730,205 756,190 753,164 734,150 713,161 677,163 662,147 641,163 584,156 536,162 469,150 421,130 371,139 232,123 203,116 101,133" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="91,245 339,226 682,258 769,240 770,203 628,204 594,184 478,209 419,186 364,209 92,180" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -134,9 +136,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="9r" xml:id="Kasten_blau_45_15_0015.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich sage ewer Durchlaucht <choice><expan>vnterdehnigsten</expan><abbr>vt</abbr></choice> dankh vohr bede dero <choice><expan>gnädigen</expan><abbr>g</abbr></choice> schreiben vom
@@ -156,7 +158,7 @@
       <lb facs="#facs_1_r1l16" n="N016"/>das vnglükh der Erzherzogin dem knofloch zueschreiben,
       <lb facs="#facs_1_r1l17" n="N017"/>so hatts woll dismahl kein schuld dan sie woll
       <lb facs="#facs_1_r1l18" n="N018"/>gahr niks geßen, so ihr hette schaden können. Die schoken</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="9 v" xml:id="Kasten_blau_45_15_0016.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>vnd vnlusten seindt schuldich daran geweßen, weiber geschwez,
       <lb facs="#facs_2_r1l2" n="N002"/>haben ihr weis nit was vohrgesagt. Es ist ein geschene
@@ -171,7 +173,7 @@
       <lb facs="#facs_2_r1l12" n="N011"/>g<supplied>e</supplied>trewste vnd dienstwilligste
       <lb facs="#facs_2_line_1638552338043_500" n="N012"/>do<supplied>c</supplied>hter
       <lb facs="#facs_2_line_1638552338043_499" n="N013"/>EMT
-      <lb facs="#facs_2_r1l11" n="N014"/>Wien den 14 <choice><expan>feber</expan><abbr>feb</abbr></choice> 1685</ab>
+      <lb facs="#facs_2_r1l11" n="N014"/>Wien den 14 <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1685</ab>
   </div>
 </body>
 

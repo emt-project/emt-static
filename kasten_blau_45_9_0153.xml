@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">wg. Türkengefahr Kaiserhof ab 17.07.1683 in Passau (Kaps S. 60f.)</ab>
+         <ab type="notes">wg. Türkengefahr Kaiserhof ab 17.07.1683 in Passau (Kaps S. 60f.)</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1258" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1258px"/>
+    <graphic url="Kasten_blau_45_9_0153.jpg" width="800px" height="1258px"/>
     <zone points="32,135 32,1257 779,1257 779,135" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="95,210 778,174 777,125 684,113 534,136 378,101 303,134 211,116 94,147" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="72,262 364,251 423,282 512,254 734,263 785,245 784,201 586,216 531,195 444,212 295,193 246,216 194,192 153,222 71,220" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1266" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1266px"/>
+    <graphic url="Kasten_blau_45_9_0154.jpg" width="800px" height="1266px"/>
     <zone points="29,108 29,1262 797,1262 797,108" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="66,159 120,186 334,140 491,161 561,133 713,160 713,88 584,82 537,101 492,80 446,109 296,92 243,113 179,96 127,121 66,106" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="64,229 116,201 209,227 361,199 410,218 501,191 716,222 715,174 625,148 420,156 379,178 340,156 243,185 63,159" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -140,9 +142,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="88 r" xml:id="Kasten_blau_45_9_0153.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleuchtiger Fürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Bitt <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> vmb vergebung, das ich bey vohrige
@@ -162,7 +164,7 @@
       <lb facs="#facs_1_r1l16" n="N016"/>sich wegen des starken mar<supplied>sc</supplied>h etwas übel
       <lb facs="#facs_1_line_1637063738761_2287" n="N017"/>befind, meint aber der doctor, wan ein
       <lb facs="#facs_1_line_1637063751585_2308" n="N018"/>dag etlig werd gerut haben, werd <unclear>sehen</unclear> beße<supplied>r</supplied> werden.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="88 v" xml:id="Kasten_blau_45_9_0154.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Wegen Beyrn werden ihr Mayestät e<supplied>h</supplied>istens resoluiren.
       <lb facs="#facs_2_r1l2" n="N002"/>Den Rusenstein will auch recomendiren, wan

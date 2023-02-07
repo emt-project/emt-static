@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1177" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1177px"/>
+    <graphic url="Kasten_blau_45_9_0363.jpg" width="800px" height="1177px"/>
     <zone points="13,150 13,1176 775,1176 775,150" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="120,201 224,232 390,192 697,193 761,176 759,136 348,141 292,170 179,159 119,182" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="74,260 118,245 218,276 517,228 705,229 753,250 763,175 418,207 391,190 223,232 71,179" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -164,9 +166,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="215 r" xml:id="Kasten_blau_45_9_0363.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ewer Durchlaucht sag ich <choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> dankh, das sie mein <choice><expan>gehorsamen</expan><abbr>g</abbr></choice> wuntsch
@@ -174,7 +176,7 @@
       <lb facs="#facs_1_r1l4" n="N004"/>das aus trewesten herzen herkommen vnd mihr kein
       <lb facs="#facs_1_r1l5" n="N005"/>größere freüdt sein kan, als wan ich solches durch mein
       <lb facs="#facs_1_r1l6" n="N006"/><choice><expan>vnterdehnigste</expan><abbr>vd</abbr></choice> diensten zue bezeigen. Ich kan mihr nit einbilden,
-      <lb facs="#facs_1_r1l7" n="N007"/>woh der <choice><expan>Graf</expan><abbr>G</abbr></choice> von Ötingen bleibt, vermein aber, er soll
+      <lb facs="#facs_1_r1l7" n="N007"/>woh der <choice><expan>Grav</expan><abbr>G</abbr></choice> von Ötingen bleibt, vermein aber, er soll
       <lb facs="#facs_1_r1l8" n="N008"/>balt kommen. Ihr Mayestät werden gahr gern alles möglige
       <lb facs="#facs_1_r1l9" n="N009"/>duen in der pfalzischen sach. Mein bruder, der
       <lb facs="#facs_1_r1l10" n="N010"/>Deütschmeister, wirt nuhnmehr schon bey ewer Durchlaucht sein
@@ -215,7 +217,7 @@
       <lb facs="#facs_3_line_1671033272516_1045" n="N006"/>balt beßerung. Due mich hirmit in ewer
       <lb facs="#facs_3_line_1671033277193_1050" n="N007"/>Durchlaucht g vnt befehlen, die ich sterben werde
       <lb facs="#facs_3_line_1671033280377_1055" n="N008"/>ewer Durchlaucht
-      <lb facs="#facs_3_line_1671033499198_1139" n="N009"/>Wien den 14ten 10br 1684
+       <lb facs="#facs_3_line_1671033499198_1139" n="N009"/>Wien den 14ten <choice><expan>decembris</expan><abbr>10br</abbr></choice> 1684
       <lb facs="#facs_3_line_1671033499198_1138" n="N010"/>vnt trew gehorsamste
       <lb facs="#facs_3_line_1671033301718_1065" n="N011"/>dochter
       <lb facs="#facs_3_line_1671033308084_1070" n="N012"/>Herbey schike ewer Durchlaucht vnt widerumb

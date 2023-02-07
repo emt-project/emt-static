@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">eingelegt in Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg 15.12.1704; enthält Chiffre (mehrere Zeilen), eventuell könnten zu diesem Brief die Entwürfe auf Bild 52 und 53 gehören?</ab>
+         <ab type="notes">eingelegt in Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg 15.12.1704; enthält Chiffre (mehrere Zeilen), eventuell könnten zu diesem Brief die Entwürfe auf Bild 52 und 53 gehören?</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1226" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1226px"/>
+    <graphic url="Kasten_blau_45_7_0047.jpg" width="800px" height="1226px"/>
     <zone points="15,23 15,1155 763,1155 763,23" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="91,457 251,418 315,438 338,416 430,426 593,388 730,389 760,376 758,345 667,324 589,351 463,338 413,367 335,337 264,374 155,365 87,397" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="32,493 111,507 204,467 458,485 754,453 749,387 585,419 446,412 351,451 153,430 29,465" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -110,7 +112,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1215" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1215px"/>
+    <graphic url="Kasten_blau_45_7_0048.jpg" width="800px" height="1215px"/>
     <zone points="58,35 58,1150 797,1150 797,35" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="72,119 393,104 453,137 519,136 604,95 752,133 767,41 607,82 507,53 405,81 343,48 299,77 235,51 71,77" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="68,169 223,157 440,200 487,168 553,194 638,156 771,170 771,134 735,121 524,144 453,138 407,106 323,127 282,105 233,141 185,121 68,129" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -134,9 +136,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="24 r" xml:id="Kasten_blau_45_7_0047.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/>Durchleüchtiger Curfü<supplied>r</supplied>st, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l3" n="N002"/>Das ich dero liebste sch<supplied>rei</supplied>ben vom 3ten <supplied>und</supplied> 22ten passato nit
@@ -152,7 +154,7 @@
       <lb facs="#facs_1_r1l13" n="N012"/>vnd hab ich dem <choice><expan>Bischof</expan><abbr>Bisch</abbr></choice> von Rab geschriben, er soll sich
       <lb facs="#facs_1_r1l14" n="N013"/><seg type="comment">bemüehen, abstrahendo von aller <unclear>reluguon</unclear>, die</seg>
       <lb facs="#facs_1_r1l15" n="N014"/>düßeldorfer reis zu persuadirn. Mich verlangt</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="24 v" xml:id="Kasten_blau_45_7_0048.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>mich zu hören, was der <unclear>Burpan</unclear> müntlich refferiren
       <lb facs="#facs_2_r1l3" n="N002"/>wirt. Was die beyrische sach anlangt, werden dero Liebden von
@@ -174,11 +176,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -186,5 +184,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

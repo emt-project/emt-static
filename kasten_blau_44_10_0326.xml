@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Liegt zwischen 1711.07.23-1711.08.01</ab>
+         <ab type="notes">Liegt zwischen 1711.07.23-1711.08.01</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1259" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1259px"/>
+    <graphic url="Kasten_blau_44_10_0326.jpg" width="800px" height="1259px"/>
     <zone points="41,0 41,1194 736,1194 736,0" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="135,505 196,477 319,509 427,494 453,470 655,480 741,446 738,392 625,424 560,407 521,429 398,407 252,436 131,423" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="55,546 189,561 321,537 434,559 490,521 667,533 710,515 707,465 689,464 331,504 259,504 216,476 145,503 52,496" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,12 +115,12 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="58 r" xml:id="Kasten_blau_44_10_0326.jpg" ed="201 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Curfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> <choice><expan>bruder</expan><abbr>brd</abbr></choice>
-      <lb facs="#facs_1_r1l2" n="N002"/>Der <choice><expan>heilige</expan><abbr>h</abbr></choice> nahms patron gibt mihr <unclear>ahnlaß</unclear>,
+      <lb facs="#facs_1_r1l2" n="N002"/>Der <choice><expan>heilige</expan><abbr>h</abbr></choice> nahms patron gibt mihr <unclear reason="unsichere Lesart">ahnlaß</unclear>,
       <lb facs="#facs_1_r1l3" n="N003"/>ihnen zu desen <choice><expan>heiligen</expan><abbr>h</abbr></choice> festiuiet von gott allen
       <lb facs="#facs_1_r1l4" n="N004"/>segen <supplied>und</supplied> wollergehn an sehl vndt leib mitt allen
       <lb facs="#facs_1_r1l5" n="N005"/>selbst erwünschten glükselichkeiten aus grundt

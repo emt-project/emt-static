@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift. Friedrichsburg ist Festung bei Mannheim (Kaps, PW S.4)</ab>
+         <ab type="notes">Konzept mit Unterschrift. Friedrichsburg ist Festung bei Mannheim (Kaps, PW S.4)</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1251" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1251px"/>
+    <graphic url="Kasten_blau_45_15_0052.jpg" width="800px" height="1251px"/>
     <zone points="59,74 359,74 780,93 780,1192 386,1192 59,1062" rendition="TextRegion" xml:id="facs_1_TextRegion_1638788317861_1236">
         <zone points="167,100 173,98 179,103 191,103 199,96 209,96 204,-1 197,1 190,-1 186,3 177,-1 162,-1" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="108,144 182,124 236,130 255,142 303,125 328,139 361,132 360,95 352,92 343,100 329,95 254,111 216,96 178,103 168,95 156,104 131,90 107,92" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -141,7 +143,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1256" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1256px"/>
+    <graphic url="Kasten_blau_45_15_0053.jpg" width="800px" height="1256px"/>
     <zone points="307,96 307,458 787,458 787,96" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="420,133 629,131 647,118 722,130 739,117 764,131 785,124 785,91 676,77 626,96 589,78 500,102 437,85 420,92" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="404,178 472,155 509,165 526,154 546,166 636,144 669,159 715,143 765,153 785,148 784,122 709,130 654,119 637,131 535,125 402,139" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -160,9 +162,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="32 r" xml:id="Kasten_blau_45_15_0052.jpg"/>
     <ab facs="#facs_1_TextRegion_1638788317861_1236">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/>sr Mst dis rde
@@ -209,7 +211,7 @@
       <lb facs="#facs_1_r2l37" n="N043"/>me  bey seih m aehich sterb
       <lb facs="#facs_1_r2l38" n="N044"/>venot heibn zu hi li in kmm
       <lb facs="#facs_1_r2l39" n="N045"/>vndt die se libe das hein gerheosab so v</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="32 v" xml:id="Kasten_blau_45_15_0053.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>ioh wollen die gricßem hebe her
       <lb facs="#facs_2_r1l2" n="N002"/>fich verrmieglich se verm n vng lb

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">ebenfalls nach der Foliierung ursprünglich in Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg 02.02.1709 gelegen. Liegt zwischen 1708.12.29-1709.01.19</ab>
+         <ab type="notes">ebenfalls nach der Foliierung ursprünglich in Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg 02.02.1709 gelegen. Liegt zwischen 1708.12.29-1709.01.19</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1256" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1256px"/>
+    <graphic url="Kasten_blau_44_10_0009.jpg" width="800px" height="1256px"/>
     <zone points="96,2 96,968 798,968 798,2" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="178,396 350,402 388,374 715,365 770,351 769,304 585,325 527,302 412,298 352,323 264,302 227,335 176,340" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="101,438 153,455 266,420 366,447 532,422 555,441 586,412 616,428 761,402 760,376 696,365 528,389 427,370 350,402 232,406 141,356 99,371" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -109,9 +111,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="8 r" xml:id="Kasten_blau_44_10_0009.jpg" ed="6 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/>Durchleüchtiger Curfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> brueder
       <lb facs="#facs_1_r1l3" n="N002"/>Vohr dero guette wuntsch zue den newen iahr vndt <choice><expan>heiligen</expan><abbr>h</abbr></choice>

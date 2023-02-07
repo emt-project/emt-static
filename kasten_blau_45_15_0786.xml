@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Augsburg</ab>
+         <ab type="notes">Augsburg</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1260" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1260px"/>
+    <graphic url="Kasten_blau_45_15_0786.jpg" width="800px" height="1260px"/>
     <zone points="18,400 18,1249 763,1249 763,400" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="87,449 222,465 285,440 361,461 435,442 481,458 563,428 768,441 767,357 661,391 535,368 339,375 295,397 86,358" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="53,512 115,540 284,501 373,523 449,500 496,523 694,502 705,451 439,446 384,483 306,483 242,461 222,476 182,447 128,461 50,422" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -110,7 +112,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1280" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1280px"/>
+    <graphic url="Kasten_blau_45_15_0787.jpg" width="800px" height="1280px"/>
     <zone points="27,118 27,1257 775,1257 775,118" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="47,163 304,145 443,190 629,146 716,151 716,102 314,117 243,94 145,124 47,109" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="36,216 195,205 277,225 313,203 467,228 557,203 618,229 749,208 749,161 656,150 475,188 338,156 36,180" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -138,9 +140,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="143 r" xml:id="Kasten_blau_45_15_0786.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein he<supplied>r</supplied>zall<supplied>e</supplied>rlibster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Die guette zeitungen, so allerseits so woll
@@ -156,7 +158,7 @@
       <lb facs="#facs_1_r1l12" n="N012"/>gott geb weiters sein gnad vnd behüte ihn
       <lb facs="#facs_1_r1l13" n="N013"/>vohr allem vnglükh. Der Castell kombt auß
       <lb facs="#facs_1_r1l14" n="N014"/>Vngern, bringt, das zwey mahl zwey dag noch</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="143 v" xml:id="Kasten_blau_45_15_0787.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>der Prinz Louis mit ihnen getroffen vnd beide
       <lb facs="#facs_2_r1l2" n="N002"/>mahl in die flucht gesch<supplied>l</supplied>agen, 105 stukh <unclear>vollno</unclear>

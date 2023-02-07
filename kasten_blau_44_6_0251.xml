@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Bleistiftvermerk "Aug. 1694" Liegt zwischen 1694.08.24-1694.08.05</ab>
+         <ab type="notes">Bleistiftvermerk "Aug. 1694" Liegt zwischen 1694.08.24-1694.08.05</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1222" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1222px"/>
+    <graphic url="Kasten_blau_44_6_0251.jpg" width="800px" height="1222px"/>
     <zone points="42,39 42,1117 751,1117 751,39" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="77,393 269,441 749,405 736,342 665,367 553,350 500,379 354,346 316,367 200,354 148,382 77,348" rendition="Line" xml:id="facs_1_r1l3"/>
         <zone points="54,472 110,458 189,488 228,467 410,464 485,503 560,472 604,490 756,475 756,428 696,422 519,443 452,421 270,441 195,419 147,443 54,422" rendition="Line" xml:id="facs_1_r1l4"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1220" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1220px"/>
+    <graphic url="Kasten_blau_44_6_0252.jpg" width="800px" height="1220px"/>
     <zone points="432,726 432,880 732,880 732,726" rendition="TextRegion" xml:id="facs_2_r2">
         <zone points="426,767 457,779 481,768 496,778 553,759 578,774 600,766 618,778 681,758 712,784 734,775 729,724 676,721 653,739 623,738 568,707 542,717 520,699 428,720" rendition="Line" xml:id="facs_2_r2l1"/>
         <zone points="432,801 510,801 542,826 668,826 694,800 737,813 738,769 713,787 699,773 671,778 658,768 613,781 554,759 492,785 460,788 432,776" rendition="Line" xml:id="facs_2_r2l2"/>
@@ -118,9 +120,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="160 r" xml:id="Kasten_blau_44_6_0251.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l3" n="N001"/>Durchleüchtiger Cuhrfürst, mein h<supplied>er</supplied>zallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l4" n="N002"/>Der <choice><expan>Grav</expan><abbr>G</abbr></choice> Hamilton wirt mitt merhen dero Liebden mein herzinigl<supplied>iste</supplied>
@@ -134,7 +136,7 @@
       <lb facs="#facs_1_line_1644585141976_710" n="N010"/>dero Liebden
       <lb facs="#facs_1_r1l12" n="N011"/>getr<supplied>e</supplied>wste schwester
       <lb facs="#facs_1_r1l13" n="N012"/>Eleonora</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="161 v" xml:id="Kasten_blau_44_6_0252.jpg"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l1" n="N001"/>herz allerliebsten <choice><expan>herrn</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_2_r2l2" n="N002"/>fürsten zue Pfalz, meinem

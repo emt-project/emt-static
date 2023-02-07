@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1258" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1258px"/>
+    <graphic url="Kasten_blau_45_15_0829.jpg" width="800px" height="1258px"/>
     <zone points="41,425 41,1230 764,1230 764,425" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="133,462 361,473 406,441 585,482 691,449 769,458 769,420 636,383 572,404 549,387 294,381 133,427" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="75,521 132,507 202,529 231,505 336,526 438,498 470,525 510,507 600,525 648,501 757,501 757,477 710,462 593,487 553,463 522,482 394,448 272,485 75,439" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -111,7 +113,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1278" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1278px"/>
+    <graphic url="Kasten_blau_45_15_0830.jpg" width="800px" height="1278px"/>
     <zone points="45,61 45,1264 783,1264 783,61" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="52,124 124,87 401,114 498,82 593,110 700,94 767,121 779,12 376,6 310,45 120,33 52,56" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="50,150 256,164 295,143 381,168 459,140 515,165 625,145 678,163 761,132 761,106 549,110 492,85 399,115 227,97 192,117 100,91 50,120" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -139,7 +141,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1292" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1292px"/>
+    <graphic url="Kasten_blau_45_15_0831.jpg" width="800px" height="1292px"/>
     <zone points="20,66 20,1245 735,1245 735,66" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="21,119 103,126 182,98 247,142 291,100 417,92 516,138 588,110 718,123 721,50 25,50" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="15,166 91,159 164,183 247,160 312,197 404,150 472,181 636,156 659,149 659,113 572,112 516,138 426,103 375,118 311,100 258,131 165,137 119,114 90,139 15,135" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -152,9 +154,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="167 r" xml:id="Kasten_blau_45_15_0829.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ewer Durchlaucht sage <choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> dankh vohr dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom
@@ -172,14 +174,14 @@
       <lb facs="#facs_1_r1l15" n="N014"/><supplied>haben</supplied> etlige haßen, elster vnd enten gefangen. Kein krah noch
       <lb facs="#facs_1_r1l16" n="N015"/>milan haben kommen wollen, vnd die reiger vögel haben
       <lb facs="#facs_1_line_1652264959893_203" n="N016"/>ihr Mayestät in Mähren geschikt einzuebeißen. Ewer Durchlaucht</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="167 v" xml:id="Kasten_blau_45_15_0830.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/><choice><expan>gnädigste</expan><abbr>g</abbr></choice> recomendationen wißen sie, das mihr bef<supplied>e</supplied>hl sein vnd
       <lb facs="#facs_2_r1l2" n="N002"/><supplied>ich</supplied> allezeit süechen werde, selbigen möglist nachzue-
       <lb facs="#facs_2_r1l3" n="N003"/>leben, auch mihr die gröste gnad, wan mich ewer Durchlaucht
       <lb facs="#facs_2_r1l4" n="N004"/>deren würdigen. Von der Königin, meiner <choice><expan>fraw</expan><abbr>f</abbr></choice> schwester, hab
       <lb facs="#facs_2_r1l5" n="N005"/>ich heünt ein, wie auch vom Deütschmeister 2 brif bekomen,
-      <lb facs="#facs_2_r1l6" n="N006"/>die einen aber vom 13ten <choice><expan>feber</expan><abbr>feb</abbr></choice> vnd der andre vom 13ten merz.
+      <lb facs="#facs_2_r1l6" n="N006"/>die einen aber vom 13ten <choice><expan>Februarij</expan><abbr>feb</abbr></choice> vnd der andre vom 13ten merz.
       <lb facs="#facs_2_r1l7" n="N007"/>Dahr schreibt er mihr auch des Mansfelt vnpeß-
       <lb facs="#facs_2_r1l8" n="N008"/>lichkeit vnd ist gut, das euentualiter ordre er-
       <lb facs="#facs_2_r1l9" n="N009"/>gangen, das ein andrer in Portugal solle. Ich hab
@@ -197,7 +199,7 @@
       <lb facs="#facs_2_r1l21" n="N021"/>zue vernemmen. Sonst gibt hier ganz niks,
       <lb facs="#facs_2_r1l22" n="N022"/>das mertiret, ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> zue berichten,
       <lb facs="#facs_2_r1l23" n="N023"/>also will ich auch nit lenger mit mein lehren</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="168 r" xml:id="Kasten_blau_45_15_0831.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>schreiben ewer Durchlaucht aufhalten. Due mich ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice>
       <lb facs="#facs_3_r1l2" n="N002"/>in dero gnad befehlen, die ich sterben werde

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift</ab>
+         <ab type="notes">Konzept mit Unterschrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1276" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1276px"/>
+    <graphic url="Kasten_blau_45_15_0447.jpg" width="800px" height="1276px"/>
     <zone points="52,1140 52,1275 124,1275 124,1140" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="47,1243 58,1244 79,1255 105,1256 107,1259 115,1256 120,1262 128,1262 133,1211 116,1210 105,1218 97,1215 78,1218 66,1211 50,1208" rendition="Line" xml:id="facs_1_r1l1"/>
       </zone>
@@ -146,7 +148,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1271" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1271px"/>
+    <graphic url="Kasten_blau_45_15_0448.jpg" width="800px" height="1271px"/>
     <zone points="109,74 109,1198 778,1198 778,74" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="381,116 521,104 565,116 586,97 602,110 667,96 764,105 752,64 707,76 691,62 667,75 552,62 517,90 450,66 379,73" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="396,153 415,144 438,153 464,137 491,157 524,134 572,146 609,130 625,138 692,123 716,139 739,122 756,126 755,104 667,96 565,116 523,103 394,115" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -196,9 +198,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="251 r" xml:id="Kasten_blau_45_15_0447.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/></ab>
     <ab facs="#facs_1_r2">
@@ -248,7 +250,7 @@
       <lb facs="#facs_1_r3l36" n="N036"/>rd beg mmirnin allengisten ehigsagn tedt
       <lb facs="#facs_1_r3l37" n="N037"/>hernen mrire fursprasiren sein dan in fahl
       <lb facs="#facs_1_r3l38" n="N038"/>E</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="251 v" xml:id="Kasten_blau_45_15_0448.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>bender ihr    Ma Mm
       <lb facs="#facs_2_r1l2" n="N002"/>die hedt von min alzihen woli ih gen

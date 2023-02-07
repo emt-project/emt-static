@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1240" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1240px"/>
+    <graphic url="Kasten_blau_44_11_0135.jpg" width="800px" height="1240px"/>
     <zone points="36,355 36,1217 761,1217 761,355" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="124,430 550,433 601,402 764,388 762,321 567,308 428,350 328,327 269,345 241,324 150,378 122,368" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="55,477 472,508 609,449 741,455 738,392 713,390 345,452 279,427 186,445 148,421 54,441" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1260" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1260px"/>
+    <graphic url="Kasten_blau_44_11_0136.jpg" width="800px" height="1260px"/>
     <zone points="31,24 31,1229 783,1229 783,24" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="27,114 192,89 425,131 550,100 744,119 764,61 687,84 413,52 225,81 74,39 28,59" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="28,147 75,169 260,158 292,179 327,156 375,175 534,150 648,178 709,150 710,119 483,108 425,130 366,105 301,129 240,107 208,128 153,99 29,116" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -133,7 +135,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1261" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1261px"/>
+    <graphic url="Kasten_blau_44_11_0137.jpg" width="800px" height="1261px"/>
     <zone points="13,99 13,1211 763,1211 763,99" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="28,156 72,132 209,126 446,172 541,136 601,158 739,153 739,101 697,86 607,110 550,83 497,108 443,77 394,103 142,80 28,96" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="23,195 181,193 214,224 288,199 342,223 441,207 507,229 556,200 688,226 700,157 444,178 344,143 269,165 123,138 54,139 24,164" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -162,9 +164,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="38 r" xml:id="Kasten_blau_44_11_0135.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtigster Curfürst, mein herzalle<supplied>r</supplied>libster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l2" n="N002"/>Ich bitte vmb vergebung, das ich nit ehnder
@@ -180,7 +182,7 @@
       <lb facs="#facs_1_r1l12" n="N012"/>Bin dero Liebden hochst obligirt vohr alle vertreülige
       <lb facs="#facs_1_r1l13" n="N013"/>nachrichten, die sie mihr wegen Rohm geben
       <lb facs="#facs_1_r1l14" n="N014"/>wollen, gottlob, izt ist wider beßer, hoff,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="38 v" xml:id="Kasten_blau_44_11_0136.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>gott werd in noch erhalten. Vohr alles aber erfre<supplied>u</supplied>dt
       <lb facs="#facs_2_r1l3" n="N002"/>mich dero Liebden gutte gesuntheit vndt das sie so
@@ -201,7 +203,7 @@
       <lb facs="#facs_2_r1l19" n="N017"/>ration bey allen cur vndt fürsten dahin brengen,
       <lb facs="#facs_2_r1l20" n="N018"/>das das ga<supplied>n</supplied>ze Reich zuesammen halt, so
       <lb facs="#facs_2_r1l21" n="N019"/>werden mitt der gnad gottes noch dem</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="39 r" xml:id="Kasten_blau_44_11_0137.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>feindt woll resistiren können. Dero Liebden angelegenheiten
       <lb facs="#facs_3_r1l2" n="N002"/>due ich mihr schuldigst angelegen sein laßen,
@@ -228,11 +230,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -240,5 +238,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

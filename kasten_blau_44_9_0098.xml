@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1245" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1245px"/>
+    <graphic url="Kasten_blau_44_9_0098.jpg" width="800px" height="1245px"/>
     <zone points="46,360 46,1179 748,1179 748,360" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="171,407 338,431 494,420 521,442 550,418 674,414 724,440 737,370 696,354 645,379 573,357 404,366 350,335 278,345 177,296" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="104,458 175,441 223,445 261,485 295,466 453,463 538,485 726,474 742,444 571,417 516,443 428,418 336,435 284,411 207,420 156,379 107,377" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -110,7 +112,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1211" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1211px"/>
+    <graphic url="Kasten_blau_44_9_0099.jpg" width="800px" height="1211px"/>
     <zone points="80,41 80,1140 798,1140 798,41" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="95,124 198,157 444,115 622,147 650,126 693,149 760,124 760,77 663,98 578,66 475,98 307,79 203,99 148,69 95,97" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="93,167 154,164 239,200 285,168 334,187 542,164 590,191 645,174 767,202 767,147 675,148 649,126 621,146 350,118 202,154 93,129" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -135,7 +137,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1275" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1275px"/>
+    <graphic url="Kasten_blau_44_9_0100.jpg" width="800px" height="1275px"/>
     <zone points="21,45 21,1217 759,1217 759,45" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="29,148 481,173 521,155 557,174 612,144 654,165 737,155 737,126 614,104 538,118 370,91 187,117 155,95 30,92" rendition="Line" xml:id="facs_3_r1l3"/>
         <zone points="40,212 387,231 452,203 556,225 668,201 711,219 735,211 735,158 428,183 312,159 213,173 69,154 40,172" rendition="Line" xml:id="facs_3_r1l4"/>
@@ -163,7 +165,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1220" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1220px"/>
+    <graphic url="Kasten_blau_44_9_0101.jpg" width="800px" height="1220px"/>
     <zone points="340,829 607,829 607,414 340,414" rendition="TextRegion" xml:id="facs_4_region_1656425972724_3108">
         <zone points="550,451 570,551 566,633 566,697 563,777 513,775 516,696 516,632 520,554 501,461" rendition="Line" xml:id="facs_4_line_1656425979988_3111"/>
         <zone points="498,461 496,576 505,683 511,768 461,771 455,686 446,577 448,460" rendition="Line" xml:id="facs_4_line_1656425984158_3116"/>
@@ -173,9 +175,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="51 r" xml:id="Kasten_blau_44_9_0098.jpg" ed="57 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Curfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l2" n="N002"/>Nach dem dero Liebden schon werden vernommen haben, das vnser armée
@@ -192,7 +194,7 @@
       <lb facs="#facs_1_r1l13" n="N013"/>vndt duet mein son, der Keiser, es auf sich nemmen, mit
       <lb facs="#facs_1_r1l14" n="N014"/>ihnen alles zu aijustiren wie auch die spesen des transpo<supplied>r</supplied>t
       <lb facs="#facs_1_r1l15" n="N015"/>vnd in Schpanien die verpflegung vnd sold über sich zu <supplied>nehmen</supplied>,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="51 v" xml:id="Kasten_blau_44_9_0099.jpg" ed="57 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>westw<supplied>e</supplied>gen eben dißer courir an bede potentien abgeschikt
       <lb facs="#facs_2_r1l3" n="N002"/>wirt. Die proposition der redoucirung der troupen, so man dero Liebden gedan,
@@ -214,7 +216,7 @@
       <lb facs="#facs_2_r1l19" n="N018"/>abandoniren werden vnd dise zu so villen ande<supplied>r</supplied>n obligationen,
       <lb facs="#facs_2_r1l20" n="N019"/>so mihr dero Liebden <supplied>bereits getan haben</supplied>, zuesezen werden. Ich hab alle mein vetr<supplied>a</supplied>wen
       <lb facs="#facs_2_r1l21" n="N020"/>vnd gä<supplied>n</supplied>zlige hoffnung auf dero Liebden, sonst wär ich vntröstlich,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="52 r" xml:id="Kasten_blau_44_9_0100.jpg" ed="58 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l3" n="N001"/>mein sohn in so großer gefahr zu wißen, welcher mihr
       <lb facs="#facs_3_r1l4" n="N002"/>schreibt, resoluirt zu sein, seine trewen vnterdahnen
@@ -239,7 +241,7 @@
       <lb facs="#facs_3_line_1656348788129_378" n="N021"/>Wien den 17ten <choice><expan>septembris</expan><abbr>7br</abbr></choice> 1707
       <lb facs="#facs_3_line_1656348925908_385" n="N022"/>Bitt mich bey meinder liebsten <choice><expan>fraw</expan><abbr>f</abbr></choice> schw<supplied>e</supplied>ge<supplied>ri</supplied>n zu entschuldigen, der
       <lb facs="#facs_3_line_1656348925907_384" n="N023"/>courir geht gah<supplied>r</supplied> zu eilich, bitt ihr vill schöns auszuri<supplied>c</supplied>hten.</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="4" xml:id="Kasten_blau_44_9_0101.jpg"/>
     <ab facs="#facs_4_region_1656425972724_3108">
       <lb facs="#facs_4_line_1656425979988_3111" n="N001"/>Ihr <choice><expan>Liebden</expan><abbr>Ld</abbr></choice> <choice><expan>herrn</expan><abbr>h</abbr></choice> Curfürsten
       <lb facs="#facs_4_line_1656425984158_3116" n="N002"/>zu Pfalz, meinem herz
@@ -247,11 +249,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -259,5 +257,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

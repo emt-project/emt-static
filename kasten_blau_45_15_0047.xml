@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept. Heidelberg; PW nicht ausdrücklich, normale Schrift</ab>
+         <ab type="notes">Konzept. Heidelberg; PW nicht ausdrücklich, normale Schrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1248" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1248px"/>
+    <graphic url="Kasten_blau_45_15_0047.jpg" width="800px" height="1248px"/>
     <zone points="32,27 344,27 792,43 792,1190 364,1190 32,898" rendition="TextRegion" xml:id="facs_1_TextRegion_1638787866266_1163">
         <zone points="173,70 179,70 184,68 188,64 193,64 193,-1 186,-1 178,3 173,3" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="80,91 122,85 152,108 171,91 215,81 234,88 252,78 282,79 296,91 334,81 332,43 304,37 268,47 234,40 183,68 151,51 79,48" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -141,7 +143,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1235" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1235px"/>
+    <graphic url="Kasten_blau_45_15_0048.jpg" width="800px" height="1235px"/>
     <zone points="101,212 101,280 323,280 323,212" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="97,258 154,245 195,260 230,236 269,240 279,234 305,248 329,238 326,205 316,211 274,201 241,218 191,206 165,216 126,203 93,210" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="198,276 209,275 234,287 250,273 268,281 275,277 292,281 304,276 301,241 258,237 240,242 237,239 232,245 214,250 195,247" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -158,9 +160,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="29 r" xml:id="Kasten_blau_45_15_0047.jpg"/>
     <ab facs="#facs_1_TextRegion_1638787866266_1163">
       <lb facs="#facs_1_r1l1" n="N001"/>e
       <lb facs="#facs_1_r1l2" n="N002"/>dien schensimendte von
@@ -207,7 +209,7 @@
       <lb facs="#facs_1_r2l30" n="N043"/>reduntern ohne welche sinsonsten in groseb been
       <lb facs="#facs_1_r2l31" n="N044"/>dorben taarshuldten dengen gesteeeget munden
       <lb facs="#facs_1_r2l32" n="N045"/>mit schrn alle berd h tredt gedrrünsten derohstein</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="29 v" xml:id="Kasten_blau_45_15_0048.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Hardalbang de 2ai
       <lb facs="#facs_2_r1l2" n="N002"/></ab>

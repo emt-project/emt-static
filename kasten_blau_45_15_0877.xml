@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1269" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1269px"/>
+    <graphic url="Kasten_blau_45_15_0877.jpg" width="800px" height="1269px"/>
     <zone points="12,421 12,1250 751,1250 751,421" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="27,490 136,477 186,496 259,451 328,480 438,452 503,472 537,451 575,468 738,459 752,406 581,420 503,389 456,411 128,399 26,368" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="23,520 238,550 320,513 454,531 583,505 722,527 721,484 645,456 615,477 404,457 328,480 260,450 185,496 135,477 85,502 23,489" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1284" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1284px"/>
+    <graphic url="Kasten_blau_45_15_0878.jpg" width="800px" height="1284px"/>
     <zone points="40,85 40,1267 775,1267 775,85" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="52,146 315,116 375,162 432,161 522,119 599,153 638,121 764,121 762,34 740,31 568,78 481,65 344,89 308,67 252,97 108,59 51,76" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="53,189 173,177 241,202 279,176 419,201 505,181 619,209 741,177 740,132 603,152 543,122 376,163 340,142 264,161 175,138 87,164 52,146" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -134,7 +136,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1284" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1284px"/>
+    <graphic url="Kasten_blau_45_15_0879.jpg" width="800px" height="1284px"/>
     <zone points="39,97 39,1263 701,1263 701,97" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="35,160 145,137 199,158 304,134 527,154 577,133 706,140 706,111 609,118 475,78 412,111 35,100" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="34,225 133,200 440,228 534,189 617,217 647,209 646,151 596,133 533,155 380,143 294,175 145,137 78,176 33,172" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -147,7 +149,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1264" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1264px"/>
+    <graphic url="Kasten_blau_45_15_0880.jpg" width="800px" height="1264px"/>
     <zone points="450,685 450,753 765,753 765,685" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="444,719 475,722 503,704 520,717 536,708 595,727 607,717 633,726 695,714 769,728 770,682 720,684 674,670 646,680 561,650 445,682" rendition="Line" xml:id="facs_4_r1l1"/>
         <zone points="447,754 510,757 545,746 564,754 582,744 610,762 637,763 672,744 732,745 732,712 664,726 607,718 592,727 573,715 553,721 539,709 503,728 469,718 446,728" rendition="Line" xml:id="facs_4_r1l2"/>
@@ -156,9 +158,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="197 r" xml:id="Kasten_blau_45_15_0877.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster her vatter
       <lb facs="#facs_1_r1l2" n="N002"/><supplied>Aus</supplied> ewer Durchlaucht <choice><expan>gnädiges</expan><abbr>g</abbr></choice> <unclear>schreiben</unclear> vom 2ten dis hab mit großen
@@ -174,7 +176,7 @@
       <lb facs="#facs_1_r1l12" n="N012"/>betten vnd betten zu laßen vohr ewer Durchlaucht bestendige
       <lb facs="#facs_1_r1l13" n="N013"/>gesuntheit. Indeßen werden die antwort von vnsren
       <lb facs="#facs_1_r1l15" n="N014"/>doctoren hinauf kommen sein, welche, weil sie</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="197 v" xml:id="Kasten_blau_45_15_0878.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>ewer Durchlaucht natur nit genuegsam kennen, noch auch,
       <lb facs="#facs_2_r1l2" n="N002"/>wie sich ewer Durchlaucht anizt befinden, haben niks
@@ -196,7 +198,7 @@
       <lb facs="#facs_2_r1l18" n="N018"/>leidt, das die b<supplied>e</supplied>is so schlecht abg<supplied>e</supplied>ht. Heünt
       <lb facs="#facs_2_r1l19" n="N019"/>duen mihrs schließen, haben gest<supplied>r</supplied>en vnd heünt zwey
       <lb facs="#facs_2_r1l20" n="N020"/>extra schöne reig<supplied>e</supplied>r vnd ein milan g<supplied>e</supplied>fang<supplied>en</supplied>.</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="198 r" xml:id="Kasten_blau_45_15_0879.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>G<supplied>e</supplied>h<supplied>e</supplied>n auf Wien, darumb mus enden vnd mich
       <lb facs="#facs_3_r1l2" n="N002"/>in ewer Durchlaucht <choice><expan>gnade</expan><abbr>g</abbr></choice> <choice><expan>vnterdehnigst</expan><abbr>vt</abbr></choice> b<supplied>e</supplied>f<supplied>e</supplied>hlen, die ich
@@ -206,7 +208,7 @@
       <lb facs="#facs_3_r1l8" n="N006"/>EMT
       <lb facs="#facs_3_r1l5" n="N007"/>Laxenburg den 8ten jun<supplied>i</supplied>j
       <lb facs="#facs_3_r1l7" n="N008"/>1690</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="198 v" xml:id="Kasten_blau_45_15_0880.jpg"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/><seg type="comment">Dise schreiben sein schohn beant-</seg>
       <lb facs="#facs_4_r1l2" n="N002"/>wortedt, <unclear>ohn</unclear> ad acta.</ab>

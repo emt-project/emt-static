@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1248" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1248px"/>
+    <graphic url="Kasten_blau_45_15_0354.jpg" width="800px" height="1248px"/>
     <zone points="11,933 11,1085 21,1085 21,933" rendition="TextRegion" xml:id="facs_1_r1">
       </zone>
     <zone points="17,67 17,1173 762,1173 762,67" rendition="TextRegion" xml:id="facs_1_r2">
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1220" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1220px"/>
+    <graphic url="Kasten_blau_45_15_0355.jpg" width="800px" height="1220px"/>
     <zone points="53,60 53,1206 775,1206 775,60" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="58,91 158,86 212,116 287,87 375,111 428,88 484,112 597,79 740,98 768,87 769,47 57,45" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="64,151 665,161 752,129 752,92 586,121 485,121 455,98 389,124 355,97 286,113 251,95 210,125 141,92 114,109 63,93" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -144,9 +146,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="193 r" xml:id="Kasten_blau_45_15_0354.jpg"/>
     <ab facs="#facs_1_r1"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l3" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> vatter
@@ -164,7 +166,7 @@
       <lb facs="#facs_1_r2l17" n="N013"/>wüste, waß er gericht hette. In Sibenbürgen
       <lb facs="#facs_1_r2l18" n="N014"/>seindt gottlob die sachen zimlich stabilirt.
       <lb facs="#facs_1_r2l19" n="N015"/>Mihr werden auch auf könftigen samstag</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="193 v" xml:id="Kasten_blau_45_15_0355.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>widrumb auf Wien. Heündt seindt die kinder
       <lb facs="#facs_2_r1l2" n="N002"/>heraußen, gehen izt ein wehnig schpaziren. Sie sein

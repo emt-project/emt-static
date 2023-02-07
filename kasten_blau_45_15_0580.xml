@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1278" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1278px"/>
+    <graphic url="Kasten_blau_45_15_0580.jpg" width="800px" height="1278px"/>
     <zone points="20,124 20,1259 759,1259 759,124" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="152,468 210,455 253,489 315,457 356,476 461,458 541,488 754,468 754,432 576,422 520,395 428,418 370,393 308,412 153,405" rendition="Line" xml:id="facs_1_r2l2"/>
         <zone points="80,531 206,536 302,511 344,535 374,514 410,535 480,513 711,527 744,517 744,479 543,492 446,460 357,480 322,459 251,488 210,456 151,452 80,484" rendition="Line" xml:id="facs_1_r2l3"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1273" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1273px"/>
+    <graphic url="Kasten_blau_45_15_0581.jpg" width="800px" height="1273px"/>
     <zone points="40,58 40,1189 785,1189 785,58" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="53,109 378,89 712,111 770,94 771,28 505,21 411,54 54,43" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="46,162 171,147 300,191 460,144 723,163 764,147 764,114 500,97 354,125 226,98 183,124 114,95 75,126 46,116" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -133,7 +135,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1312" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1312px"/>
+    <graphic url="Kasten_blau_45_15_0582.jpg" width="800px" height="1312px"/>
     <zone points="18,59 18,1255 774,1255 774,59" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="28,114 355,85 390,105 524,92 606,128 704,99 746,131 778,118 779,53 492,41 384,62 227,17 30,23" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="28,161 83,176 242,142 449,165 497,142 536,168 569,148 625,175 768,176 768,101 607,130 503,96 28,114" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -158,7 +160,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1259" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1259px"/>
+    <graphic url="Kasten_blau_45_15_0583.jpg" width="800px" height="1259px"/>
     <zone points="45,65 45,720 773,720 773,65" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="41,97 172,126 238,94 760,110 759,14 40,17" rendition="Line" xml:id="facs_4_r1l1"/>
         <zone points="44,156 182,172 226,146 267,167 328,141 398,161 418,144 748,148 747,120 594,95 545,112 512,91 455,117 384,101 336,126 43,110" rendition="Line" xml:id="facs_4_r1l2"/>
@@ -178,9 +180,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="17 r" xml:id="Kasten_blau_45_15_0580.jpg"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l2" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerlibster herr vatter
       <lb facs="#facs_1_r2l3" n="N002"/>Sage ewer Durchlaucht <choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> dankh vohr dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom
@@ -196,7 +198,7 @@
       <lb facs="#facs_1_r2l15" n="N012"/>dan ist iah gahr zue fill daran gelegen, vns allen
       <lb facs="#facs_1_r2l16" n="N013"/>dero <choice><expan>vnterdehnigsten</expan><abbr>vd</abbr></choice> kinde<supplied>r</supplied>n vnd dem ganzen Reich, das ewer
       <lb facs="#facs_1_r2l17" n="N014"/>Durchlaucht dero gesuntheit conseruiren. Ewer Durchlaucht herunter</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="17 v" xml:id="Kasten_blau_45_15_0581.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>konft betrefendt, so bin ich versichert, das, wan ein
       <lb facs="#facs_2_r1l2" n="N002"/>gefahr solte seyn, ihr Mayestät lieb wurd sein alle, die
@@ -217,7 +219,7 @@
       <lb facs="#facs_2_r1l18" n="N017"/>noch nit reden können, gest<supplied>e</supplied>rn ein accademia ist
       <lb facs="#facs_2_r1l19" n="N018"/>gewest, vnd die vohrigen dag haben mihr ein wehnig
       <lb facs="#facs_2_r1l20" n="N019"/>anstalt mit den zimmern zue meiner niderkunft</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="18 r" xml:id="Kasten_blau_45_15_0582.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>gemacht, dan droben vmb ein zimer mehr machen müßen,
       <lb facs="#facs_3_r1l2" n="N002"/>vnd hab derweil die <choice><expan>Maria</expan><abbr>M</abbr></choice> <unclear>Amel</unclear> herunter genommen, bis man
@@ -239,7 +241,7 @@
       <lb facs="#facs_3_r1l18" n="N018"/>geschloßen vnd er neben andren schwehren conditiones
       <lb facs="#facs_3_r1l19" n="N019"/>noch fest darauf b<supplied>e</supplied>steht, das der König in Schpanien
       <lb facs="#facs_3_r1l20" n="N020"/>izt gleich annoch bey sein lebzeiten ihme die Niderland soll</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="18 v" xml:id="Kasten_blau_45_15_0583.jpg"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/>abtretten <supplied>solle</supplied>. Also kunte mein brueder das gouerno
       <lb facs="#facs_4_r1l2" n="N002"/>nit haben. Man mueß erwarten, was die Schpanier

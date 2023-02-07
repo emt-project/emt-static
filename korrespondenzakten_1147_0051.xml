@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1216" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1216px"/>
+    <graphic url="Korrespondenzakten_1147_0051.jpg" width="800px" height="1216px"/>
     <zone points="38,0 38,1170 757,1170 757,0" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="35,124 59,125 85,111 113,123 133,111 165,120 178,111 210,112 206,20 31,24" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="48,474 94,493 260,485 302,514 370,469 432,494 537,477 599,495 759,464 759,414 640,429 522,406 424,434 360,407 130,418 96,394 48,423" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -107,7 +109,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1234" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1234px"/>
+    <graphic url="Korrespondenzakten_1147_0052.jpg" width="800px" height="1234px"/>
     <zone points="47,41 47,1134 784,1134 784,41" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="47,122 343,113 426,134 593,109 757,130 758,46 712,37 538,50 462,96 270,70 188,29 49,29" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="48,168 301,169 357,196 479,164 628,188 674,164 735,188 747,142 697,153 645,126 591,143 533,115 381,142 275,111 151,135 74,109 48,122" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -130,7 +132,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1273" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1273px"/>
+    <graphic url="Korrespondenzakten_1147_0053.jpg" width="800px" height="1273px"/>
     <zone points="9,0 9,1229 769,1229 769,0" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="14,120 84,143 126,116 301,143 327,121 374,141 413,113 570,111 736,159 738,23 237,26 121,61 16,26" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="6,186 138,177 177,208 224,176 301,172 358,203 423,186 557,205 599,178 712,180 713,129 527,139 467,113 305,147 135,114 86,143 6,134" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -153,7 +155,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1247" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1247px"/>
+    <graphic url="Korrespondenzakten_1147_0054.jpg" width="800px" height="1247px"/>
     <zone points="45,72 45,1167 797,1167 797,72" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="48,127 685,127 729,120 731,64 45,72" rendition="Line" xml:id="facs_4_r1l1"/>
         <zone points="42,179 187,178 234,203 292,168 423,194 548,176 728,201 769,193 770,131 481,145 414,117 231,119 155,151 42,121" rendition="Line" xml:id="facs_4_r1l2"/>
@@ -176,7 +178,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1219" xml:id="facs_5">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1219px"/>
+    <graphic url="Korrespondenzakten_1147_0055.jpg" width="800px" height="1219px"/>
     <zone points="18,48 18,1218 760,1218 760,48" rendition="TextRegion" xml:id="facs_5_r1">
         <zone points="33,129 208,122 356,152 398,119 513,143 592,133 634,166 680,141 679,75 30,72" rendition="Line" xml:id="facs_5_r1l3"/>
         <zone points="32,208 215,173 241,195 423,187 521,212 720,186 712,143 647,172 579,133 352,152 193,122 163,139 34,125" rendition="Line" xml:id="facs_5_r1l4"/>
@@ -200,7 +202,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1211" xml:id="facs_6">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1211px"/>
+    <graphic url="Korrespondenzakten_1147_0056.jpg" width="800px" height="1211px"/>
     <zone points="38,75 38,1202 771,1202 771,75" rendition="TextRegion" xml:id="facs_6_r1">
         <zone points="48,102 147,133 389,113 430,141 709,108 761,136 760,22 47,27" rendition="Line" xml:id="facs_6_r1l1"/>
         <zone points="48,161 302,196 575,160 608,180 744,179 744,117 600,141 489,121 419,143 311,121 48,126" rendition="Line" xml:id="facs_6_r1l2"/>
@@ -229,9 +231,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="36 r" xml:id="Korrespondenzakten_1147_0051.jpg" ed="14 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/><unclear>2 febr 92</unclear>
       <lb facs="#facs_1_r1l2" n="N002"/>Durchleüchtiger Fürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
@@ -245,7 +247,7 @@
       <lb facs="#facs_1_r1l10" n="N010"/>bergische reforme betreffendt, als wan ich darbey
       <lb facs="#facs_1_r1l11" n="N011"/>einiges risentiment hette haben, auf genommen. Ich
       <lb facs="#facs_1_r1l12" n="N012"/>wünschte, das dero Liebden mein herz sehen könten, würden</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="36 v" xml:id="Korrespondenzakten_1147_0052.jpg" ed="14 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>sie g<supplied>e</supplied>wißlig von meiner guetten meinung vndt trewen
       <lb facs="#facs_2_r1l3" n="N002"/>lieb anderst vrteilen. Ich hab dißes geschriben, mich
@@ -265,7 +267,7 @@
       <lb facs="#facs_2_r1l17" n="N016"/>etwas widrigens geben, vndt eben darumb
       <lb facs="#facs_2_r1l18" n="N017"/>auch dero Liebden inniklist bitte vmb die lieb, so sie
       <lb facs="#facs_2_r1l19" n="N018"/>mihr biß dahto erzeigt, sie wollen den üblen</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="37 r" xml:id="Korrespondenzakten_1147_0053.jpg" ed="15 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>vndt falschen angwohn, so ich woll aus dero schreiben
       <lb facs="#facs_3_r1l2" n="N002"/>vermerkt, gegen den Deütschmeister, als solte er
@@ -285,7 +287,7 @@
       <lb facs="#facs_3_r1l16" n="N016"/>ich mich sonsten woll vnterstanden hette. Bitte den
       <lb facs="#facs_3_r1l17" n="N017"/>liebsten almechtigsten gott, <supplied>er</supplied> wolle dero Liebden vnd alle ihre
       <lb facs="#facs_3_r1l18" n="N018"/>reht erleüchten, das sie in allem das mögen</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="37 v" xml:id="Korrespondenzakten_1147_0054.jpg" ed="15 v"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/>resoluiren vnd einrahten, was zue seiner ehr,
       <lb facs="#facs_4_r1l2" n="N002"/>dero Liebden vnd des publici besten möge gedeyen. Wegen
@@ -305,7 +307,7 @@
       <lb facs="#facs_4_r1l16" n="N016"/>also glükhlich sein, das niks mehr wi<supplied>r</supplied>t vonöten
       <lb facs="#facs_4_r1l17" n="N017"/>sein. Die übrigen fürsten haben sich alle schon verglichen,
       <lb facs="#facs_4_r1l18" n="N018"/>also hoffen ihr Mayestät, es wirt mit dem Großherzoch auch</ab>
-    <pb facs="#facs_5" n="5" xml:id="img_0005"/>
+    <pb facs="#facs_5" n="38 r" xml:id="Korrespondenzakten_1147_0055.jpg" ed="16 r"/>
     <ab facs="#facs_5_r1">
       <lb facs="#facs_5_r1l3" n="N001"/>sich woll aiustiren laßen vnd alles woll gehen.
       <lb facs="#facs_5_r1l4" n="N002"/>Ich hoff, auch die entreueu mit Cuhrcöllen werd
@@ -326,7 +328,7 @@
       <lb facs="#facs_5_r1l19" n="N017"/>nitt wohl ab gehen vnd mihr keinen friden bekomen,
       <lb facs="#facs_5_r1l20" n="N018"/>so giengen mihr nit allein hier, sondern das
       <lb facs="#facs_5_r1l21" n="N019"/>ganze Reich übernhauffen. In consideration deßen</ab>
-    <pb facs="#facs_6" n="6" xml:id="img_0006"/>
+    <pb facs="#facs_6" n="38 v" xml:id="Korrespondenzakten_1147_0056.jpg"/>
     <ab facs="#facs_6_r1">
       <lb facs="#facs_6_r1l1" n="N001"/>wolen dero Liebden doch nochmahlen überlegen, ob sie nit mit disen
       <lb facs="#facs_6_r1l2" n="N002"/>an die handt könten gehn, es dependirt halt von diser
@@ -349,15 +351,11 @@
       <lb facs="#facs_6_line_1657010799861_217" n="N019"/>dero Liebden
       <lb facs="#facs_6_r1l19" n="N020"/>getre<supplied>w</supplied>ste schw<supplied>e</supplied>ster
       <lb facs="#facs_6_r1l21" n="N021"/>Eleonora
-      <lb facs="#facs_6_r1l20" n="N022"/>Wien den 7ten <choice><expan>feber</expan><abbr>feb</abbr></choice> 1692</ab>
+      <lb facs="#facs_6_r1l20" n="N022"/>Wien den 7ten <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1692</ab>
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -365,5 +363,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

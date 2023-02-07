@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1253" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1253px"/>
+    <graphic url="Korrespondenzakten_1147_0033.jpg" width="800px" height="1253px"/>
     <zone points="12,49 12,1199 746,1199 746,49" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="31,100 65,98 92,116 97,113 113,120 163,107 160,26 114,31 81,22 71,29 47,21 40,28 29,25" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="7,574 88,592 127,569 157,592 274,567 342,592 437,560 523,592 729,565 741,509 583,502 476,529 206,504 83,539 7,516" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -107,7 +109,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1216" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1216px"/>
+    <graphic url="Korrespondenzakten_1147_0034.jpg" width="800px" height="1216px"/>
     <zone points="70,49 70,1133 797,1133 797,49" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="75,114 725,123 751,119 752,39 598,71 507,52 440,79 75,66" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="69,176 120,185 153,159 381,177 447,158 741,175 740,120 423,131 394,112 351,131 229,105 158,135 68,116" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -131,7 +133,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1247" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1247px"/>
+    <graphic url="Korrespondenzakten_1147_0035.jpg" width="800px" height="1247px"/>
     <zone points="14,42 14,1233 747,1233 747,42" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="50,139 108,110 284,103 374,138 431,105 723,119 752,104 752,70 487,58 403,85 258,57 48,65" rendition="Line" xml:id="facs_3_r1l2"/>
         <zone points="45,179 155,185 196,166 274,187 386,161 456,180 556,157 626,172 703,163 703,140 590,145 513,121 280,140 259,120 164,130 116,112 44,139" rendition="Line" xml:id="facs_3_r1l3"/>
@@ -149,9 +151,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="23 r" xml:id="Korrespondenzakten_1147_0033.jpg" ed="5 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/><unclear>3ter jenij 91</unclear>
       <lb facs="#facs_1_r1l2" n="N002"/>Durchleüchtiger Cuhrfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
@@ -165,7 +167,7 @@
       <lb facs="#facs_1_r1l10" n="N010"/>möglich. Seint izt zwar sehr beschefftigt die
       <lb facs="#facs_1_r1l11" n="N011"/>notisten schon mit dem <choice><expan>heiligen</expan><abbr>h</abbr></choice> fansching so vill zu
       <lb facs="#facs_1_r1l12" n="N012"/>dun haben, das wehnig zeit ist. Das <choice><expan>schwester</expan><abbr>schw</abbr></choice> Lepoldin</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="23 v" xml:id="Korrespondenzakten_1147_0034.jpg" ed="5 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>beßer <supplied>geht</supplied>, freüt mich. Wegen der freile hab ich meiner <choice><expan>fraw</expan><abbr>f</abbr></choice>
       <lb facs="#facs_2_r1l3" n="N002"/>schwege<supplied>ri</supplied>n brif eh geschriben, als dero Liebden sein gelesen, also
@@ -186,7 +188,7 @@
       <lb facs="#facs_2_r1l18" n="N017"/>Dero Liebden wollen doch in dergleichen vellen auch dero
       <lb facs="#facs_2_r1l19" n="N018"/>Beichtvatter vnd andere teologos meinung
       <lb facs="#facs_2_r1l20" n="N019"/>vernemmen, dan einmahl an disem ligt die</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="24 r" xml:id="Korrespondenzakten_1147_0035.jpg" ed="6 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l2" n="N001"/>ewichkeit, vnd dise, so dero Liebden solche sachen ein-
       <lb facs="#facs_3_r1l3" n="N002"/>rahten, halt ich nit vohr trewe diener,
@@ -202,11 +204,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -214,5 +212,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

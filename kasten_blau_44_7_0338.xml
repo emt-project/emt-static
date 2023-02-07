@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">enthält Chiffre (ca. 1,5 Seiten). 69 r nicht ganz sicher</ab>
+         <ab type="notes">enthält Chiffre (ca. 1,5 Seiten). 69 r nicht ganz sicher</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1240" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1240px"/>
+    <graphic url="Kasten_blau_44_7_0338.jpg" width="800px" height="1240px"/>
     <zone points="69,60 69,1185 773,1185 773,60" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="64,573 209,615 331,593 424,611 510,583 705,607 778,590 778,512 716,539 369,518 294,540 236,524 198,559 64,550" rendition="Line" xml:id="facs_1_r1l6"/>
         <zone points="68,653 265,639 411,664 530,640 605,674 766,647 766,607 607,588 580,607 494,587 418,612 209,615 68,580" rendition="Line" xml:id="facs_1_r1l7"/>
@@ -106,7 +108,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1286" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1286px"/>
+    <graphic url="Kasten_blau_44_7_0339.jpg" width="800px" height="1286px"/>
     <zone points="37,56 37,1205 785,1205 785,56" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="42,120 150,93 226,118 357,91 471,115 558,82 592,109 713,82 755,96 777,92 777,31 40,27" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="43,150 109,175 236,142 291,165 518,143 757,169 757,130 694,104 625,120 400,95 333,117 272,95 245,118 148,99 43,118" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -131,7 +133,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1256" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1256px"/>
+    <graphic url="Kasten_blau_44_7_0340.jpg" width="800px" height="1256px"/>
     <zone points="12,37 12,1210 767,1210 767,37" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="40,113 77,105 165,143 234,111 310,141 423,102 598,126 747,102 746,63 609,71 406,21 39,28" rendition="Line" xml:id="facs_3_r1l2"/>
         <zone points="20,173 343,180 373,154 462,195 547,159 708,181 754,164 753,110 309,140 221,112 144,144 89,112 19,137" rendition="Line" xml:id="facs_3_r1l3"/>
@@ -157,7 +159,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1238" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1238px"/>
+    <graphic url="Kasten_blau_44_7_0341.jpg" width="800px" height="1238px"/>
     <zone points="21,44 21,1156 755,1156 755,44" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="29,111 78,126 140,92 201,119 345,100 397,130 452,107 741,106 741,81 671,72 588,24 30,23" rendition="Line" xml:id="facs_4_r1l2"/>
         <zone points="28,180 58,195 167,145 300,180 469,159 640,178 742,165 743,133 517,100 398,130 183,123 140,92 80,126 29,113" rendition="Line" xml:id="facs_4_r1l3"/>
@@ -181,7 +183,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1235" xml:id="facs_5">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1235px"/>
+    <graphic url="Kasten_blau_44_7_0342.jpg" width="800px" height="1235px"/>
     <zone points="54,22 54,1158 779,1158 779,22" rendition="TextRegion" xml:id="facs_5_r1">
         <zone points="76,148 224,119 269,143 379,106 476,142 642,110 728,131 727,81 689,70 581,61 534,83 491,65 450,87 336,55 277,86 189,71 138,91 75,69" rendition="Line" xml:id="facs_5_r1l2"/>
         <zone points="56,203 102,171 196,164 245,193 331,159 469,200 517,178 549,200 645,175 680,194 744,180 744,130 607,116 518,151 370,116 325,143 234,124 56,156" rendition="Line" xml:id="facs_5_r1l3"/>
@@ -206,9 +208,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="185 r" xml:id="Kasten_blau_44_7_0338.jpg" ed="69 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l6" n="N001"/>Durchleuchtiger Cuhrfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> <choice><expan>bruder</expan><abbr>brud</abbr></choice>
       <lb facs="#facs_1_r1l7" n="N002"/>Es freüet mich von herzen, aus dero liebsten schr<supplied>e</supplied>iben vom
@@ -220,7 +222,7 @@
       <lb facs="#facs_1_r1l14" n="N008"/>gesuntheit geht vohr alles. Bitt also, mit mihr
       <lb facs="#facs_1_r1l15" n="N009"/>ga<supplied>n</supplied>z keine cerimoni zu machen vndt nuhr
       <lb facs="#facs_1_r1l16" n="N010"/>dero gelegenheit vndt gesuntheit in acht</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="185 v" xml:id="Kasten_blau_44_7_0339.jpg" ed="69 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>zue nemmen. Den Clermont betreffendt, finden ihr Mayestät nit,
       <lb facs="#facs_2_r1l2" n="N002"/>wie <supplied>sie</supplied> sich seiner derzeit auch vnter der handt bedienen
@@ -242,7 +244,7 @@
       <lb facs="#facs_2_r1l18" n="N018"/><unclear>und alter</unclear>, ausgenommen <unclear>der von Fr</unclear>
       <lb facs="#facs_2_r1l19" n="N019"/><unclear>ankhreich und Guastalla</unclear>, auf
       <lb facs="#facs_2_r1l20" n="N020"/><unclear>welche</unclear> auf keine weis zue gedenken.</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="186 r" xml:id="Kasten_blau_44_7_0340.jpg" ed="62 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l2" n="N001"/><unclear>Von den <seg type="comment">un</seg>catolischen</unclear> auch, ob
       <lb facs="#facs_3_r1l3" n="N002"/>vndt <unclear>welche zu unserer re</unclear>
@@ -265,7 +267,7 @@
       <lb facs="#facs_3_r1l20" n="N019"/><unclear>ren, were</unclear>. Vohr allem aber reccomen-
       <lb facs="#facs_3_r1l21" n="N020"/>dir dero Liebden das secretum vndt die beschleünig-
       <lb facs="#facs_3_r1l22" n="N021"/>ung, das ich auf dis balt ein antwort <supplied>bekomme</supplied> vndt</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="186 v" xml:id="Kasten_blau_44_7_0341.jpg" ed="61 r"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l2" n="N001"/>die sach ohne zeit verlust incaminirt werde,
       <lb facs="#facs_4_r1l3" n="N002"/>dan ihr Mayestät verlangen vohr alles, das balt solle
@@ -286,7 +288,7 @@
       <lb facs="#facs_4_r1l18" n="N017"/>Pfilip die compagnie im Reich duen solle, so
       <lb facs="#facs_4_r1l19" n="N018"/>werd es ihr Mayestät so vohr dragen. Das wirten-
       <lb facs="#facs_4_r1l20" n="N019"/>bergische regiment ist nit vacant, vndt haben</ab>
-    <pb facs="#facs_5" n="5" xml:id="img_0005"/>
+    <pb facs="#facs_5" n="187 r" xml:id="Kasten_blau_44_7_0342.jpg" ed="63 r"/>
     <ab facs="#facs_5_r1">
       <lb facs="#facs_5_r1l2" n="N001"/>schon vohrlängst ihr Mayestät dem H<supplied>er</supplied>zoch erlaubt, es
       <lb facs="#facs_5_r1l3" n="N002"/>seinem sohn zue überlaßen. Wegen <choice><expan>Landgraf</expan><abbr>Lag</abbr></choice> Friz, so

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">2. Brief mit gleichem Datum</ab>
+         <ab type="notes">2. Brief mit gleichem Datum</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1215" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1215px"/>
+    <graphic url="Kasten_blau_45_9_0222.jpg" width="800px" height="1215px"/>
     <zone points="45,63 45,1186 775,1186 775,63" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="64,194 220,195 263,218 340,177 408,195 437,174 561,173 704,204 704,141 647,120 64,110" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="61,264 215,244 355,276 399,257 445,271 557,228 694,269 686,199 633,219 510,186 424,207 371,182 341,209 305,193 262,218 220,195 199,216 60,199" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1218" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1218px"/>
+    <graphic url="Kasten_blau_45_9_0223.jpg" width="800px" height="1218px"/>
     <zone points="54,64 54,690 785,690 785,64" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="50,107 140,127 321,96 394,121 473,96 511,114 693,94 747,125 769,117 769,50 570,68 499,44 384,61 320,36 260,61 190,39 146,67 50,73" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="56,150 121,139 166,163 249,137 435,162 600,140 704,163 779,146 779,110 746,125 642,97 404,125 307,97 176,130 56,105" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -133,9 +135,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="128 r" xml:id="Kasten_blau_45_9_0222.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l3" n="N002"/>Ich hab nit großem leidt von ihr Durchlaucht, meiner <choice><expan>geliebsten</expan><abbr>g</abbr></choice>
@@ -154,7 +156,7 @@
       <lb facs="#facs_1_r1l16" n="N015"/>weil er die alt<supplied>e</supplied>ration gehabt, wie woll er sich izt
       <lb facs="#facs_1_r1l17" n="N016"/>ganz gesundt befindt. Sag ewer Durchlaucht <choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> dankh vohr
       <lb facs="#facs_1_r1l18" n="N017"/>dero <choice><expan>gnädigen</expan><abbr>g</abbr></choice> raht wegen meines Obristhoffmeister, aber mit</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="128 v" xml:id="Kasten_blau_45_9_0223.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>dem Fürsten ist es nit möglich, das <supplied>er</supplied> beyde dinst kan versehn,
       <lb facs="#facs_2_r1l2" n="N002"/>vnd wegen der andren werden ewer Durchlaucht alles von ihr Durchlaucht
@@ -172,7 +174,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__32">
+                  <placeName>Linz</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -180,9 +186,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__32">
-                  <placeName>Linz</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

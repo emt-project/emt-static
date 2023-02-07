@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift</ab>
+         <ab type="notes">Konzept mit Unterschrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1262" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1262px"/>
+    <graphic url="Kasten_blau_45_15_0013.jpg" width="800px" height="1262px"/>
     <zone points="29,26 29,1153 784,1153 784,26" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="165,55 179,53 180,55 184,56 197,52 208,55 210,30 205,29 199,31 191,25 188,27 185,22 179,18 169,19" rendition="Line" xml:id="facs_1_r2l1"/>
         <zone points="25,105 60,88 131,94 192,79 220,96 256,83 327,89 327,57 285,53 250,68 220,55 203,64 176,56 137,67 108,50 72,67 59,59 24,71" rendition="Line" xml:id="facs_1_r2l2"/>
@@ -143,7 +145,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1281" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1281px"/>
+    <graphic url="Kasten_blau_45_15_0014.jpg" width="800px" height="1281px"/>
     <zone points="36,94 22,568 788,568 802,94" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="386,128 778,121 777,84 741,78 626,95 585,84 565,97 531,76 478,94 447,80 386,99" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="734,144 739,144 750,136 763,135 767,139 770,139 783,132 788,132 788,113 777,113 768,122 760,117 750,124 748,122 744,124 741,122 734,122" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -171,9 +173,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="8 r" xml:id="Kasten_blau_45_15_0013.jpg"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/>
       <lb facs="#facs_1_r2l2" n="N002"/>hlen my. die vegegend
@@ -222,7 +224,7 @@
       <lb facs="#facs_1_r2l49" n="N045"/>keine allero vndersamstein be
       <lb facs="#facs_1_line_1638457066269_625" n="N046"/>kamgend zu zu verarn base
       <lb facs="#facs_1_r2l52" n="N047"/>r</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="8 v" xml:id="Kasten_blau_45_15_0014.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>mit ssa dsait de-
       <lb facs="#facs_2_r1l2" n="N002"/>dwk
@@ -248,7 +250,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__39">
+                  <placeName>Neuburg</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2866070/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -256,9 +262,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__39">
-                  <placeName>Neuburg</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2866070/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

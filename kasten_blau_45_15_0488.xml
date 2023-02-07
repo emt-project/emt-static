@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift. 2. Brief mit diesem Datum bzw. "An Ihre Maj. Die Khayserin Nomine Serenissimae Electricis p.": ev. Im Namen ihrer Mutter??</ab>
+         <ab type="notes">Konzept mit Unterschrift. 2. Brief mit diesem Datum bzw. "An Ihre Maj. Die Khayserin Nomine Serenissimae Electricis p.": ev. Im Namen ihrer Mutter??</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1297" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1297px"/>
+    <graphic url="Kasten_blau_45_15_0488.jpg" width="800px" height="1297px"/>
     <zone points="65,65 65,776 332,776 332,65" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="147,106 152,105 154,106 158,102 169,100 160,52 156,53 151,59 148,58 144,64 139,65" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="61,150 80,142 129,144 153,127 180,134 200,124 214,131 243,122 314,132 311,101 273,93 266,102 240,103 223,92 194,109 156,103 136,90 110,102 92,91 57,96" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -146,9 +148,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="274 r" xml:id="Kasten_blau_45_15_0488.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>e
       <lb facs="#facs_1_r1l2" n="N002"/>ihm Mma d dsngsarn
@@ -200,7 +202,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__39">
+                  <placeName>Neuburg</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2866070/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -208,9 +214,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__39">
-                  <placeName>Neuburg</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2866070/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

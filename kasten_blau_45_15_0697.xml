@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1228" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1228px"/>
+    <graphic url="Kasten_blau_45_15_0697.jpg" width="800px" height="1228px"/>
     <zone points="37,437 37,1217 769,1217 769,437" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="123,471 282,488 410,461 619,494 675,466 765,498 765,441 701,448 605,401 492,402 438,440 369,404 123,399" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="76,550 217,519 262,537 302,513 422,542 606,541 729,518 729,491 265,477 142,505 75,472" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1203" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1203px"/>
+    <graphic url="Kasten_blau_45_15_0698.jpg" width="800px" height="1203px"/>
     <zone points="52,1085 52,1202 65,1202 65,1085" rendition="TextRegion" xml:id="facs_2_r1">
       </zone>
     <zone points="60,57 60,1151 788,1151 788,57" rendition="TextRegion" xml:id="facs_2_r2">
@@ -138,7 +140,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1237" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1237px"/>
+    <graphic url="Kasten_blau_45_15_0699.jpg" width="800px" height="1237px"/>
     <zone points="20,69 20,1178 739,1178 739,69" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="33,121 223,119 332,90 385,129 470,98 563,130 705,103 705,70 665,64 557,81 454,52 382,76 301,39 251,59 34,47" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="20,193 161,201 258,166 403,196 432,174 533,160 533,122 468,135 407,116 284,127 199,112 88,139 67,124 20,146" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -154,9 +156,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="88 r" xml:id="Kasten_blau_45_15_0697.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich lebe der hoffnung, das ewer Durchlaucht sich in bestem
@@ -172,7 +174,7 @@
       <lb facs="#facs_1_r1l12" n="N012"/>das eben dort dise gutte talenta mehr vonöten
       <lb facs="#facs_1_r1l13" n="N013"/>wehren, damit er sich von den seinigen nit so über-
       <lb facs="#facs_1_r1l14" n="N014"/>meistern laße, wan er zue der kron solte kommen</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="88 v" xml:id="Kasten_blau_45_15_0698.jpg"/>
     <ab facs="#facs_2_r1"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l1" n="N001"/>gleich wie diser König, vnd alsdan kunte er vill guttes
@@ -197,7 +199,7 @@
       <lb facs="#facs_2_r2l20" n="N020"/>dan er allzeit große deuotion erzeigt hatt. Es gibt
       <lb facs="#facs_2_r2l21" n="N021"/>hier sonst ganz niks ewer Durchlaucht zue b<supplied>e</supplied>richten, also
       <lb facs="#facs_2_r2l22" n="N022"/>will ich auch ewer Durchlaucht nit lenger mit mein üblen</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="89 r" xml:id="Kasten_blau_45_15_0699.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>schreiben vngelegenheit machen, sondern mich in dero
       <lb facs="#facs_3_r1l2" n="N002"/><choice><expan>gnade</expan><abbr>g</abbr></choice> <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> befehlen, die ich sterben werde

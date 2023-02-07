@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1201" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1201px"/>
+    <graphic url="Kasten_blau_45_9_0461.jpg" width="800px" height="1201px"/>
     <zone points="22,150 22,1194 783,1194 783,150" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="96,194 217,218 269,199 303,216 450,193 788,199 787,149 719,128 515,163 393,138 222,154 129,104 94,109" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="84,252 188,244 224,274 352,240 432,271 537,245 645,263 731,241 730,210 684,196 461,201 425,227 391,202 329,219 83,199" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1204" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1204px"/>
+    <graphic url="Kasten_blau_45_9_0462.jpg" width="800px" height="1204px"/>
     <zone points="33,61 33,1197 777,1197 777,61" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="55,112 771,99 772,52 487,47 382,70 327,44 223,62 110,38 56,59" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="53,147 234,147 283,174 676,138 735,156 769,143 769,119 606,95 529,120 462,99 327,104 284,127 167,101 52,117" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -137,7 +139,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1239" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1239px"/>
+    <graphic url="Kasten_blau_45_9_0463.jpg" width="800px" height="1239px"/>
     <zone points="4,55 4,1212 787,1212 787,55" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="43,108 134,121 179,102 276,131 407,103 637,118 689,89 780,89 778,18 527,68 383,44 263,47 201,76 42,70" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="37,171 111,158 265,187 410,158 460,180 564,155 785,156 783,109 741,106 278,131 35,110" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -163,9 +165,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="272 r" xml:id="Kasten_blau_45_9_0461.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Mitt der gelegenheit, das ihr Mayestät den Grauen von
@@ -185,7 +187,7 @@
       <lb facs="#facs_1_r1l16" n="N016"/>sturm verwichen sontag eingenommen, alles drin bekomen,
       <lb facs="#facs_1_r1l17" n="N017"/>vnd, wie es in dergleichen geht, nit verwehren können, das
       <lb facs="#facs_1_r1l19" n="N018"/>in der furie nit das meiste nidergemacht worden.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="272 v" xml:id="Kasten_blau_45_9_0462.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Gott zeigt seine gütte vnd almacht vnd sein liebe
       <lb facs="#facs_2_r1l2" n="N002"/><choice><expan>heilige</expan><abbr>h</abbr></choice> muetter, das sie ein hülf der christen, in dem dis
@@ -206,7 +208,7 @@
       <lb facs="#facs_2_r1l17" n="N017"/>die handt pretendiret, so hatt mans scinirt vnd
       <lb facs="#facs_2_r1l18" n="N018"/>vohrgestern mein brueder vnter dem pretext, wie
       <lb facs="#facs_2_r1l19" n="N019"/>es dan auch realiteer wahr, das er müet <unclear>v<supplied>nd</supplied> schläffrig</unclear>,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="273 r" xml:id="Kasten_blau_45_9_0463.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>vohran herrein vnd sich ins bett gelegt auf den abendt.
       <lb facs="#facs_3_r1l2" n="N002"/>Den andren dag zue mittag hatt die verwittibte

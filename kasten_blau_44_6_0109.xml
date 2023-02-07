@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
             <term>Aktennotiz</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,23 +88,23 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="1674" lry="2573" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpg" width="1674px" height="2573px"/>
+    <graphic url="Kasten_blau_44_6_0109.jpg" width="1674px" height="2573px"/>
   </surface>
   <surface ulx="0" uly="0" lrx="1716" lry="2599" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpg" width="1716px" height="2599px"/>
+    <graphic url="Kasten_blau_44_6_0110.jpg" width="1716px" height="2599px"/>
   </surface>
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_1" n="75 r" xml:id="Kasten_blau_44_6_0109.jpg"/>
+    <pb facs="#facs_2" n="75 v" xml:id="Kasten_blau_44_6_0110.jpg"/>
   </div>
 </body>
 

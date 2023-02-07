@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">berichtet über die Einnahme von Ofen (2.9.1686)</ab>
+         <ab type="notes">berichtet über die Einnahme von Ofen (2.9.1686)</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1214" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1214px"/>
+    <graphic url="Kasten_blau_45_15_0091.jpg" width="800px" height="1214px"/>
     <zone points="12,210 12,1209 789,1209 789,210" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="48,259 109,233 176,271 342,265 388,238 445,258 494,237 547,257 779,235 771,196 696,211 501,185 421,206 350,178 178,196 106,155 47,172" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="71,311 244,287 283,310 471,295 513,317 668,286 768,296 767,252 717,240 674,264 578,242 460,265 387,238 350,266 172,271 117,233 70,234" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1196" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1196px"/>
+    <graphic url="Kasten_blau_45_15_0092.jpg" width="800px" height="1196px"/>
     <zone points="32,84 32,602 781,602 781,84" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="69,137 102,135 136,134 169,132 203,131 236,130 270,130 303,129 337,129 370,128 404,128 438,127 471,127 505,126 538,126 572,125 605,124 639,123 672,122 706,120 740,118 740,84 706,86 672,88 639,89 605,90 572,91 538,92 505,92 471,93 438,93 404,94 370,94 337,95 303,95 270,96 236,96 203,97 169,98 136,100 102,101 69,103" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="69,192 103,191 137,190 171,190 205,189 239,188 273,187 307,187 341,186 375,186 410,185 444,184 478,183 512,182 546,181 580,180 614,179 648,178 682,177 716,176 751,174 751,140 716,142 682,143 648,144 614,145 580,146 546,147 512,148 478,149 444,150 410,151 375,152 341,152 307,153 273,153 239,154 205,155 171,156 137,156 103,157 69,158" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -130,9 +132,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="58 r" xml:id="Kasten_blau_45_15_0091.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Damit ewer Durchlaucht balt die frölige zeitung
@@ -152,7 +154,7 @@
       <lb facs="#facs_1_r1l17" n="N016"/>so duet ers heünt in etwas herein bringen, also
       <lb facs="#facs_1_r1l18" n="N017"/>wan der Weiks etwas schpehter keme, wollen ihms
       <lb facs="#facs_1_r1l20" n="N018"/>ewer Durchlaucht <choice><expan>gnädigst</expan><abbr>g</abbr></choice> verzeien. Dise beygelegte b<supplied>r</supplied>if hab ich</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="58 v" xml:id="Kasten_blau_45_15_0092.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>die einen amb sambstag, die andern heünt
       <lb facs="#facs_2_r1l2" n="N002"/>bekommen, dah doch mein <choice><expan>herr</expan><abbr>h</abbr></choice> brueder schon geste<supplied>r</supplied>n

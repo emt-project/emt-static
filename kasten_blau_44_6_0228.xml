@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">wg. Favorita: die "alte F." im Augarten war zu dieser Zeit noch kaputt von 1683; aber das 1623 erbaute und später unter MTh zum Theresianum umgebaute Lustschloss Favorita auf der Wieden war zwar auch 1683 großteils zerstört, aber 1687-90 wieder aufgebaut worden. Von diesem Brief liegt eine Abschrift in Kasten Blau 44_3c, die jedoch nicht in die Briefliste aufgenommen wurde, da der Originalbrief hier vorhanden ist.</ab>
+         <ab type="notes">wg. Favorita: die "alte F." im Augarten war zu dieser Zeit noch kaputt von 1683; aber das 1623 erbaute und später unter MTh zum Theresianum umgebaute Lustschloss Favorita auf der Wieden war zwar auch 1683 großteils zerstört, aber 1687-90 wieder aufgebaut worden. Von diesem Brief liegt eine Abschrift in Kasten Blau 44_3c, die jedoch nicht in die Briefliste aufgenommen wurde, da der Originalbrief hier vorhanden ist.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1246" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1246px"/>
+    <graphic url="Kasten_blau_44_6_0228.jpg" width="800px" height="1246px"/>
     <zone points="18,41 18,1164 754,1164 754,41" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="14,98 23,98 35,87 45,92 54,88 64,95 100,76 110,82 123,75 132,81 148,78 146,21 98,26 75,14 45,26 12,18" rendition="Line" xml:id="facs_1_r2l1"/>
         <zone points="195,423 323,460 512,429 563,464 608,439 759,436 759,395 712,380 610,373 469,405 344,369 305,384 195,358" rendition="Line" xml:id="facs_1_r2l4"/>
@@ -111,7 +113,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1226" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1226px"/>
+    <graphic url="Kasten_blau_44_6_0229.jpg" width="800px" height="1226px"/>
     <zone points="61,69 61,1132 798,1132 798,69" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="68,109 217,95 285,129 358,97 503,121 561,94 699,119 770,107 771,25 69,25" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="74,149 236,147 316,177 360,148 579,176 628,147 774,175 783,109 559,124 368,101 291,128 225,103 74,112" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -137,7 +139,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1253" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1253px"/>
+    <graphic url="Kasten_blau_44_6_0230.jpg" width="800px" height="1253px"/>
     <zone points="17,66 17,1180 755,1180 755,66" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="30,117 91,132 309,99 333,121 631,117 673,147 711,129 724,65 35,56" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="31,160 218,146 295,185 345,158 508,190 601,161 727,182 719,115 672,148 631,120 527,139 452,109 374,127 295,105 33,117" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -162,7 +164,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1228" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1228px"/>
+    <graphic url="Kasten_blau_44_6_0231.jpg" width="800px" height="1228px"/>
     <zone points="63,78 63,1108 783,1108 783,78" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="83,122 328,104 383,125 482,100 733,116 732,62 667,50 403,81 262,57 161,84 82,63" rendition="Line" xml:id="facs_4_r1l1"/>
         <zone points="86,198 143,168 194,191 256,162 362,184 426,158 469,179 750,158 749,116 709,129 673,110 624,130 573,107 384,126 346,105 280,132 85,122" rendition="Line" xml:id="facs_4_r1l2"/>
@@ -191,9 +193,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="146 r" xml:id="Kasten_blau_44_6_0228.jpg"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/><unclear>11. junij 94</unclear>
       <lb facs="#facs_1_r2l4" n="N002"/>Durchleüchtiger Cuh<supplied>r</supplied>fürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
@@ -210,7 +212,7 @@
       <lb facs="#facs_1_r2l15" n="N013"/>ich erschpüre dero bestendige lieb gegen mich, vndt <supplied>ich</supplied>
       <lb facs="#facs_1_r2l16" n="N014"/>gewißlich nit vnterlaßen werden, auch solche bis
       <lb facs="#facs_1_line_1644571762979_142" n="N015"/>in mein grab gegen dero Liebden bestendig in mein h<supplied>er</supplied>zen zue</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="146 v" xml:id="Kasten_blau_44_6_0229.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>herzen zue dragen. Meine gesuntheit aber betreffendt,
       <lb facs="#facs_2_r1l2" n="N002"/>so bin ich nuhr gahr zue heiklich auf mich selbsten,
@@ -233,7 +235,7 @@
       <lb facs="#facs_2_r1l19" n="N019"/>es hatts auch ein mahl der Neßelraht verlanget.
       <lb facs="#facs_2_r1l20" n="N020"/>Wan dißes wehr, glaubt ich, das, weil er sich dise
       <lb facs="#facs_2_r1l21" n="N021"/>mahl so woll comportirt hatt, <supplied>das</supplied> man ihm nit aus</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="147 r" xml:id="Kasten_blau_44_6_0230.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>handen gehen soll, wan ers aber nit verlangt, kan
       <lb facs="#facs_3_r1l2" n="N002"/>man woll alle officia vohr den Granpasteur von <unclear>firsten</unclear>
@@ -255,7 +257,7 @@
       <lb facs="#facs_3_r1l19" n="N018"/>ein mittel wüst, auf was weis er wehre
       <lb facs="#facs_3_r1l20" n="N019"/>wekh zue bringen. Den Welschperg werdt ihr Mayestät bestens
       <lb facs="#facs_3_line_1644573465626_210" n="N020"/>reccomendiren. Wegen des Schellerer, so will auch ge<supplied>r</supplied>n</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="147 v" xml:id="Kasten_blau_44_6_0231.jpg"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/>ihn reccomendiren, weis aber nit, ob vndt wan
       <lb facs="#facs_4_r1l2" n="N002"/>ihr Mayestät einen vice kanzler resoluirn werden. Wegen

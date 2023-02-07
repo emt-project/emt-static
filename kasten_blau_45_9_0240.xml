@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1195" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1195px"/>
+    <graphic url="Kasten_blau_45_9_0240.jpg" width="800px" height="1195px"/>
     <zone points="17,150 17,1194 773,1194 773,150" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="72,190 204,212 253,185 276,205 311,187 375,208 400,186 671,190 720,173 719,137 656,129 616,148 544,126 189,150 71,122" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="46,247 289,226 405,252 455,232 497,252 671,250 756,222 755,194 710,186 547,199 511,179 370,208 332,189 280,210 253,186 197,211 95,182 45,205" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1211" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1211px"/>
+    <graphic url="Kasten_blau_45_9_0241.jpg" width="800px" height="1211px"/>
     <zone points="35,64 35,486 777,486 777,64" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="88,151 214,126 276,142 311,122 630,142 736,126 733,76 702,70 605,80 424,41 369,58 82,25" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="153,222 200,243 228,225 233,231 254,230 279,242 300,237 303,190 274,182 244,192 218,186 201,197 186,194 167,176 156,175" rendition="Line" xml:id="facs_2_line_1637069098987_3688"/>
@@ -126,9 +128,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="138 r" xml:id="Kasten_blau_45_9_0240.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Bitt <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> vmb vergebung, das bey vohriger post mein
@@ -147,19 +149,23 @@
       <lb facs="#facs_1_r1l15" n="N015"/>die prob ist ehender aus worden als ich glaubt,
       <lb facs="#facs_1_r1l16" n="N016"/>so müsen iezt gleich an disch gehen. Mit nechstem
       <lb facs="#facs_1_r1l17" n="N017"/>will alles beantworten, due mich indeßen in</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="138 v" xml:id="Kasten_blau_45_9_0241.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>ewer Durchlaucht <choice><expan>gnade</expan><abbr>g</abbr></choice> <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> <supplied>befehlen</supplied>, die ich sterben werde
       <lb facs="#facs_2_line_1637069098987_3688" n="N002"/>ewer Durchlaucht
       <lb facs="#facs_2_line_1638547368228_291" n="N003"/><choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> tre<supplied>w</supplied>gehorsa<supplied>m</supplied>ste do<supplied>c</supplied>hter
       <lb facs="#facs_2_line_1637069109129_3693" n="N004"/>EMT
-      <lb facs="#facs_2_line_1638547368228_292" n="N005"/>Lins den 12ten <choice><expan>feber</expan><abbr>feb</abbr></choice> 1684
+      <lb facs="#facs_2_line_1638547368228_292" n="N005"/>Lins den 12ten <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1684
       <lb facs="#facs_2_r1l3" n="N006"/>Von ihr Durchlaucht <choice><expan>fraw</expan><abbr>f</abbr></choice> <choice><expan>mutter</expan><abbr>m</abbr></choice> werden ewer Durchlaucht alle vnsere
       <lb facs="#facs_2_r1l4" n="N007"/>fasching vnterhaltungen vernemmen.</ab>
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__32">
+                  <placeName>Linz</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -167,9 +173,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__32">
-                  <placeName>Linz</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

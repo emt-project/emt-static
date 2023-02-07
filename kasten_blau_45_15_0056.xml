@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datierung unsicher; Grund warum vorangehende Monate nur Philipp Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg ist unklar; generell scheint mir 1686 Brieffrequenz niedriger</ab>
+         <ab type="notes">Datierung unsicher; Grund warum vorangehende Monate nur Philipp Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg ist unklar; generell scheint mir 1686 Brieffrequenz niedriger</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1214" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1214px"/>
+    <graphic url="Kasten_blau_45_15_0056.jpg" width="800px" height="1214px"/>
     <zone points="52,159 52,1212 798,1212 798,159" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="75,238 493,188 804,210 800,109 716,151 631,162 565,135 482,169 424,145 172,158 95,151" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="88,298 202,290 246,252 324,282 512,244 713,268 757,260 755,207 417,195 322,219 288,204 258,227 192,218 162,244 85,223" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1215" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1215px"/>
+    <graphic url="Kasten_blau_45_15_0057.jpg" width="800px" height="1215px"/>
     <zone points="41,56 41,1163 788,1163 788,56" rendition="TextRegion" xml:id="facs_2_r2">
         <zone points="53,101 131,120 165,96 253,114 321,92 777,97 766,8 53,10" rendition="Line" xml:id="facs_2_r2l1"/>
         <zone points="45,155 583,124 793,154 792,107 752,89 695,114 589,83 526,106 388,87 287,119 44,95" rendition="Line" xml:id="facs_2_r2l2"/>
@@ -140,7 +142,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1241" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1241px"/>
+    <graphic url="Kasten_blau_45_15_0058.jpg" width="800px" height="1241px"/>
     <zone points="9,66 9,391 712,391 712,66" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="26,110 120,109 177,143 306,109 381,113 430,125 473,153 530,140 530,67 499,62 410,61 155,56 26,60" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="135,233 171,219 185,224 193,219 199,222 208,214 214,217 220,212 233,212 240,204 257,209 255,154 243,158 232,154 200,170 177,160 148,163 142,159 132,163" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -152,9 +154,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="35 r" xml:id="Kasten_blau_45_15_0056.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster <choice><expan>herr</expan><abbr>hr</abbr></choice> vater
       <lb facs="#facs_1_r1l2" n="N002"/>Dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schre<supplied>i</supplied>ben vom 26ten passato hab mit großen freüden
@@ -174,7 +176,7 @@
       <lb facs="#facs_1_r1l16" n="N016"/>anfangen. Ewer Durchlaucht derfen gahr nit zweiflen, das,
       <lb facs="#facs_1_r1l17" n="N017"/>so balt sich etwas mit portugal <unclear>vohrg<supplied>e</supplied>nder</unclear>
       <lb facs="#facs_1_r1l18" n="N018"/>zeigen wurde, ihr Mayestät alsobalt mein <choice><expan>bruder</expan><abbr>brud</abbr></choice> Carl zue-</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="35 v" xml:id="Kasten_blau_45_15_0057.jpg"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l1" n="N001"/>rukh schiken wurden. Aber ich forcht, wird schwerlich geschen, dan die
       <lb facs="#facs_2_r2l2" n="N002"/>franzosen sich rüemen, das balt etwas werd heraus kommen,
@@ -197,7 +199,7 @@
       <lb facs="#facs_2_r2l19" n="N019"/>so werd es durch den Schellerer ihm sagen laßen vnd
       <lb facs="#facs_2_r2l20" n="N020"/>wan er herraus wirt kommen, selber mit ihm
       <lb facs="#facs_2_r2l21" n="N021"/>draus reden. Mit dießem due ich mich ewer Durchlaucht</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="36 r" xml:id="Kasten_blau_45_15_0058.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/><choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> befehlen vnd werde st<supplied>e</supplied>rben
       <lb facs="#facs_3_r1l2" n="N002"/>ewer Durchlaucht

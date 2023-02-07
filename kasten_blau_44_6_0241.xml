@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Extrakt eines Briefes</term>
          </ab>
-         <ab type="abstract-terms">"Extract" des Briefes Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg vom 01.07.1694. Vgl. Abschrift dieses Briefs Kasten_blau_44_6_0235.jpg ff.</ab>
+         <ab type="notes">"Extract" des Briefes Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg vom 01.07.1694. Vgl. Abschrift dieses Briefs Kasten_blau_44_6_0235.jpg ff.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch, Abschrift</language>
          </langUsage>
@@ -85,23 +87,23 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="1828" lry="2709" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpg" width="1828px" height="2709px"/>
+    <graphic url="Kasten_blau_44_6_0241.jpg" width="1828px" height="2709px"/>
   </surface>
   <surface ulx="0" uly="0" lrx="1852" lry="2687" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpg" width="1852px" height="2687px"/>
+    <graphic url="Kasten_blau_44_6_0242.jpg" width="1852px" height="2687px"/>
   </surface>
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_1" n="154 r" xml:id="Kasten_blau_44_6_0241.jpg"/>
+    <pb facs="#facs_2" n="154 v" xml:id="Kasten_blau_44_6_0242.jpg"/>
   </div>
 </body>
 

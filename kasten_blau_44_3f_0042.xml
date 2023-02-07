@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">enthält Chiffre (2/3 einer Seite).</ab>
+         <ab type="notes">enthält Chiffre (2/3 einer Seite).</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1243" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1243px"/>
+    <graphic url="Kasten_blau_44_3f_0042.jpg" width="800px" height="1243px"/>
     <zone points="29,29 29,1178 769,1178 769,29" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="25,68 73,80 81,74 119,70 149,52 163,55 161,10 152,10 147,16 126,8 118,12 101,9 94,14 74,7 57,10 49,4 23,14" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="73,489 198,498 303,475 359,495 690,461 750,479 757,407 685,389 415,421 270,407 187,417 131,463 72,459" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1230" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1230px"/>
+    <graphic url="Kasten_blau_44_3f_0043.jpg" width="800px" height="1230px"/>
     <zone points="45,31 45,1123 788,1123 788,31" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="54,87 648,112 678,89 768,89 768,56 685,74 648,44 529,68 296,37 145,71 83,41 54,52" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="52,136 122,113 402,143 489,118 547,137 706,125 766,149 786,112 53,92" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -135,16 +137,16 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1222" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1222px"/>
+    <graphic url="Kasten_blau_44_3f_0044.jpg" width="800px" height="1222px"/>
     <zone points="13,1098 13,1221 44,1221 44,1098" rendition="TextRegion" xml:id="facs_3_r1">
       </zone>
   </surface>
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="1" xml:id="Kasten_blau_44_3f_0042.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/><unclear>1. junij 95</unclear>
       <lb facs="#facs_1_r1l3" n="N002"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
@@ -163,7 +165,7 @@
       <lb facs="#facs_1_r1l16" n="N015"/>insonderheit <unclear>weil Spanien in dieser sac</unclear>
       <lb facs="#facs_1_r1l17" n="N016"/><unclear>h noch nit recht dißponirt ist, weil</unclear>
       <lb facs="#facs_1_r1l18" n="N017"/><unclear>noch immer hoft, selbige zue bekommen.</unclear></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="2" xml:id="Kasten_blau_44_3f_0043.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>Vermeinen also, das hieruon solle abstrahirt werden. <unclear>Solte</unclear>
       <lb facs="#facs_2_r1l3" n="N002"/><unclear>aber von seiten Frankreich etwas davon</unclear>
@@ -182,7 +184,7 @@
       <lb facs="#facs_2_line_1641739954426_500" n="N015"/>getre<supplied>w</supplied>ste schwester
       <lb facs="#facs_2_r1l16" n="N016"/>Eleonora
       <lb facs="#facs_2_line_1641739954426_501" n="N017"/>Fauorita den 1ten junij 1695</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="3" xml:id="Kasten_blau_44_3f_0044.jpg"/>
     <ab facs="#facs_3_r1"/>
   </div>
 </body>

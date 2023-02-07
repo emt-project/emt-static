@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Ebersdorf. Folgende Briefe Eleonora Magdalena von Pfalz-Neuburgs im Datum absteigend</ab>
+         <ab type="notes">Ebersdorf. Folgende Briefe Eleonora Magdalena von Pfalz-Neuburgs im Datum absteigend</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1225" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1225px"/>
+    <graphic url="Kasten_blau_44_7_0141.jpg" width="800px" height="1225px"/>
     <zone points="32,40 32,1155 757,1155 757,40" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="27,82 35,84 50,73 62,79 91,72 130,78 146,91 216,72 215,17 197,21 144,9 103,19 75,17 56,5 26,18" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="44,475 165,503 213,477 270,500 467,464 593,495 762,464 747,398 588,411 475,385 207,416 109,375 43,388" rendition="Line" xml:id="facs_1_r1l4"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1205" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1205px"/>
+    <graphic url="Kasten_blau_44_7_0142.jpg" width="800px" height="1205px"/>
     <zone points="54,33 54,1131 728,1131 728,33" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="61,128 162,140 215,117 332,144 412,116 528,134 597,113 718,143 727,79 480,84 416,63 301,90 173,69 61,80" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="61,183 192,169 269,195 319,171 407,195 437,175 528,199 606,171 698,201 733,195 734,146 483,126 156,154 94,121 62,132" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -123,9 +125,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="79 r" xml:id="Kasten_blau_44_7_0141.jpg" ed="70 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/><unclear>3 8br 96</unclear>
       <lb facs="#facs_1_r1l4" n="N002"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
@@ -139,7 +141,7 @@
       <lb facs="#facs_1_r1l12" n="N010"/>gesegent. Diser streich, obwoll empfintlich, ist von
       <lb facs="#facs_1_r1l13" n="N011"/>der liebreichisten handt gottes, der alles zum besten duet,
       <lb facs="#facs_1_r1l14" n="N012"/>der s<supplied>e</supplied>y in allem gebenedeit. Vndt kan mich dis billig</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="79 v" xml:id="Kasten_blau_44_7_0142.jpg" ed="70 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>trösten, das, in dem er sie in ihrer vnschuld wollen zue
       <lb facs="#facs_2_r1l3" n="N002"/>sich nemmen, hoffentlich sie die ewige freüdt genießen

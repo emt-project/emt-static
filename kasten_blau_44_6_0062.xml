@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">falls Datierung richtig, stimmt hier die Chronologie nicht</ab>
+         <ab type="notes">falls Datierung richtig, stimmt hier die Chronologie nicht</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1235" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1235px"/>
+    <graphic url="Kasten_blau_44_6_0062.jpg" width="800px" height="1235px"/>
     <zone points="41,39 41,1210 757,1210 757,39" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="548,99 574,106 601,103 613,93 641,89 658,97 683,88 728,106 761,95 755,41 747,39 722,48 692,33 673,39 660,34 629,46 615,42 604,54 572,39 544,60" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="122,352 220,380 267,358 324,387 410,357 448,384 482,367 579,388 685,376 685,345 643,326 535,328 456,288 123,292" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1205" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1205px"/>
+    <graphic url="Kasten_blau_44_6_0063.jpg" width="800px" height="1205px"/>
     <zone points="79,137 79,520 756,520 756,137" rendition="TextRegion" xml:id="facs_2_r2">
         <zone points="101,175 251,165 303,183 333,159 413,193 484,165 669,191 756,174 756,150 630,125 568,136 509,110 414,146 351,120 301,136 203,93 101,109" rendition="Line" xml:id="facs_2_r2l1"/>
         <zone points="100,225 146,236 238,212 272,234 400,242 583,213 737,239 760,233 761,183 463,177 412,194 361,170 101,174" rendition="Line" xml:id="facs_2_r2l2"/>
@@ -125,7 +127,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1219" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1219px"/>
+    <graphic url="Kasten_blau_44_6_0064.jpg" width="800px" height="1219px"/>
     <zone points="400,727 400,881 725,881 725,727" rendition="TextRegion" xml:id="facs_3_r2">
         <zone points="411,876 475,853 520,858 551,848 571,860 620,842 643,862 656,854 691,860 704,854 704,816 668,834 605,816 575,821 538,808 527,815 511,802 474,819 411,826" rendition="Line" xml:id="facs_3_r2l3"/>
         <zone points="395,828 513,805 528,816 592,812 682,829 730,811 730,753 692,764 663,751 629,779 595,782 536,764 501,772 432,758 395,764" rendition="Line" xml:id="facs_3_r2l2"/>
@@ -133,7 +135,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1161" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1161px"/>
+    <graphic url="Kasten_blau_44_6_0065.jpg" width="800px" height="1161px"/>
     <zone points="454,312 451,732 618,740 623,309" rendition="TextRegion" xml:id="facs_4_r3">
         <zone points="597,379 598,405 598,427 595,453 601,479 598,504 598,523 595,540 601,557 599,602 594,617 594,630 594,656 594,679 592,693 594,700 546,713 542,697 544,677 544,656 544,629 545,608 550,593 551,564 545,546 548,520 548,501 551,481 545,456 548,425 548,406 547,381" rendition="Line" xml:id="facs_4_line_1643465667158_688"/>
         <zone points="548,380 548,411 548,429 552,465 549,493 552,522 551,550 550,574 549,597 548,610 549,628 549,646 548,655 551,672 550,698 500,696 501,675 498,657 499,644 499,629 498,610 499,595 500,572 501,548 502,523 499,493 502,465 498,432 498,411 498,380" rendition="Line" xml:id="facs_4_line_1643465679146_693"/>
@@ -143,11 +145,11 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="44 r" xml:id="Kasten_blau_44_6_0062.jpg"/>
     <ab facs="#facs_1_r1">
-      <lb facs="#facs_1_r1l1" n="N001"/><unclear>?? d 20. jan 91</unclear>
+      <lb facs="#facs_1_r1l1" n="N001"/><unclear>?? d 20. Januarij 91</unclear>
       <lb facs="#facs_1_r1l3" n="N002"/>Durchleüchtiger Cuhrfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l4" n="N003"/>Ich hab dero liebstes schreiben vom 30ten passato woll empfangen
       <lb facs="#facs_1_r1l5" n="N004"/>vndt daraus ersehen, das dero Liebden etwas allarmirt vnd in
@@ -163,7 +165,7 @@
       <lb facs="#facs_1_r1l15" n="N014"/>florentiner selbst trainiren wollen, welches ich nit glauben
       <lb facs="#facs_1_r1l16" n="N015"/>noch hoffen will. Due mich in allem auf den <choice><expan>Graven</expan><abbr>G</abbr></choice> Hamilton
       <lb facs="#facs_1_r1l17" n="N016"/>bezihen. Mueß ihm auch zeüchnus geben, das er genuch</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="44 v" xml:id="Kasten_blau_44_6_0063.jpg"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l1" n="N001"/>solicitirt wider fort zue gehen, aber ihr Mayestät <supplied>haben</supplied> nit ehnder
       <lb facs="#facs_2_r2l2" n="N002"/>zeit gehabt zue schreiben. Haben zwar vermeindt am freitag,
@@ -173,12 +175,12 @@
       <lb facs="#facs_2_r2l8" n="N006"/>getrewester schwester
       <lb facs="#facs_2_r2l9" n="N007"/>Eleonora
       <lb facs="#facs_2_r2l7" n="N008"/>Wien den 7ten jener 1691</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="45 v" xml:id="Kasten_blau_44_6_0064.jpg"/>
     <ab facs="#facs_3_r2">
       <lb facs="#facs_3_r2l3" n="N001"/>Ihr <choice><expan>Liebden</expan><abbr>Ld</abbr></choice> <choice><expan>herrn</expan><abbr>h</abbr></choice> Cuhrfürsten zue
       <lb facs="#facs_3_r2l2" n="N002"/>Pfalz, meinem herzallerlibsten
       <lb facs="#facs_3_r2l1" n="N003"/>herrn brudern</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="46 r" xml:id="Kasten_blau_44_6_0065.jpg"/>
     <ab facs="#facs_4_r3">
       <lb facs="#facs_4_line_1643465667158_688" n="N001"/>Ihr <choice><expan>Liebden</expan><abbr>Ld</abbr></choice> Churfürsten zu Pfalz
       <lb facs="#facs_4_line_1643465679146_693" n="N002"/>meinem h<supplied>er</supplied>zallerlibsten herrn
@@ -186,11 +188,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -198,5 +196,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

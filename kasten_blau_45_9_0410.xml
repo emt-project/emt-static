@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1190" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1190px"/>
+    <graphic url="Kasten_blau_45_9_0410.jpg" width="800px" height="1190px"/>
     <zone points="21,135 21,1178 783,1178 783,135" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="100,208 180,179 247,198 311,161 402,182 470,160 519,178 743,168 757,101 609,139 322,110 100,146" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="92,263 134,231 235,220 300,243 366,218 480,236 552,215 773,224 772,162 494,180 465,161 317,202 89,182" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1196" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1196px"/>
+    <graphic url="Kasten_blau_45_9_0411.jpg" width="800px" height="1196px"/>
     <zone points="24,61 24,1194 784,1194 784,61" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="49,109 98,124 153,100 197,122 289,84 418,82 555,117 638,99 765,119 765,56 582,68 476,18 417,54 324,40 234,77 49,60" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="41,178 84,186 191,144 314,171 395,144 490,165 584,138 702,176 754,169 754,114 679,130 644,106 539,119 456,96 317,125 269,101 209,123 152,103 90,129 41,115" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -138,7 +140,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1216" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1216px"/>
+    <graphic url="Kasten_blau_45_9_0412.jpg" width="800px" height="1216px"/>
     <zone points="17,49 17,1191 798,1191 798,49" rendition="TextRegion" xml:id="facs_3_r2">
         <zone points="32,93 162,105 293,72 384,109 459,83 608,116 788,98 789,45 543,55 472,31 395,62 311,30 32,64" rendition="Line" xml:id="facs_3_r2l1"/>
         <zone points="20,145 128,143 155,165 280,128 399,150 544,133 602,161 760,147 776,108 607,115 459,86 327,114 265,86 20,114" rendition="Line" xml:id="facs_3_r2l2"/>
@@ -163,9 +165,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="243 r" xml:id="Kasten_blau_45_9_0410.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ewer Durchlaucht <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom 16ten dis hab mit schuldigstem
@@ -185,7 +187,7 @@
       <lb facs="#facs_1_r1l16" n="N016"/>Wegen Heidelberg müeßen halt erwarten, was gott
       <lb facs="#facs_1_r1l17" n="N017"/>wirt machen. Wegen des Pfluech hab ich ewer Durchlaucht
       <lb facs="#facs_1_r1l18" n="N018"/>bey vohriger post <choice><expan>vnterdehnigst</expan><abbr>vt</abbr></choice> bericht, wegen des Reichen-</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="243 v" xml:id="Kasten_blau_45_9_0411.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>bach werden ewer Durchlaucht die versicherung schon empfangen
       <lb facs="#facs_2_r1l2" n="N002"/>haben. So wirt auch vermuetlich der Starenberg <supplied>und</supplied>
@@ -207,7 +209,7 @@
       <lb facs="#facs_2_r1l18" n="N018"/>allerhöchsten zue preisen. Diser König hebt es generos
       <lb facs="#facs_2_r1l19" n="N019"/>an, der almechtige wolle ihm beystehn, das dißes
       <lb facs="#facs_2_r1l20" n="N020"/>landt widerumb zue dem liecht des wahren glauben</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="244 r" xml:id="Kasten_blau_45_9_0412.jpg"/>
     <ab facs="#facs_3_r2">
       <lb facs="#facs_3_r2l1" n="N001"/>möge gebracht werden. Wegen des Hamilton hab ich nuhr
       <lb facs="#facs_3_r2l2" n="N002"/>was ich geschrieben aus <choice><expan>vnterdehnigster</expan><abbr>vnt</abbr></choice> deuotion gedahn, weil

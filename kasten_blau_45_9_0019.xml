@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1212" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1212px"/>
+    <graphic url="Kasten_blau_45_9_0019.jpg" width="800px" height="1212px"/>
     <zone points="71,156 71,1211 776,1211 776,156" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="88,208 717,208 718,180 570,174 543,153 373,170 300,132 137,148 91,131" rendition="Line" xml:id="facs_1_r2l1"/>
         <zone points="85,239 219,254 353,233 420,265 489,244 611,273 655,246 689,266 752,248 753,221 597,206 517,223 458,197 334,221 176,215 138,192 86,207" rendition="Line" xml:id="facs_1_r2l2"/>
@@ -116,7 +118,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1219" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1219px"/>
+    <graphic url="Kasten_blau_45_9_0020.jpg" width="800px" height="1219px"/>
     <zone points="22,97 22,1212 790,1212 790,97" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="74,138 284,119 383,153 447,133 518,150 588,126 641,146 779,129 779,97 677,86 462,109 74,83" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="79,181 317,159 481,182 507,164 668,198 697,173 769,181 770,134 518,151 450,129 383,151 201,121 80,140" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -143,7 +145,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1247" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1247px"/>
+    <graphic url="Kasten_blau_45_9_0021.jpg" width="800px" height="1247px"/>
     <zone points="9,113 9,1239 777,1239 777,113" rendition="TextRegion" xml:id="facs_3_r2">
         <zone points="80,182 150,154 337,173 383,149 539,171 731,153 730,105 525,96 492,116 280,81 219,107 125,78 79,86" rendition="Line" xml:id="facs_3_r2l1"/>
         <zone points="88,203 101,204 106,197 116,193 126,194 131,190 148,196 168,188 164,155 146,161 141,159 132,165 127,163 117,173 101,181 86,181" rendition="Line" xml:id="facs_3_r2l2"/>
@@ -161,9 +163,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="10 r" xml:id="Kasten_blau_45_9_0019.jpg"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r2l2" n="N002"/>Ewer Durchlaucht <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom 18ten dis hab mit schuldigstem respect
@@ -186,7 +188,7 @@
       <lb facs="#facs_1_r2l22" n="N019"/>das etliche guette legata möchten darinnen sein. Ich <supplied>habe</supplied> gleich den andern
       <lb facs="#facs_1_r2l23" n="N020"/>dag, als diese zeitung kommen, aus ihr Mayestät befehl den
       <lb facs="#facs_1_r2l24" n="N021"/>Nostiz zue mihr ruefen laßen vnd das negotium wegen meines</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="10 v" xml:id="Kasten_blau_45_9_0020.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/><choice><expan>herrn</expan><abbr>h</abbr></choice> brudern recomendirt, welcher sich ganz wilfährich vnd eifrich erzeiget.
       <lb facs="#facs_2_r1l2" n="N002"/>Ich merke aber woll, das er verlanget, allein die ehr von disem
@@ -210,7 +212,7 @@
       <lb facs="#facs_2_r1l20" n="N020"/>laßen vnd wurde woll ein große freüd haben, wan ewer Durchlaucht
       <lb facs="#facs_2_r1l21" n="N021"/>vnd mein <choice><expan>herr</expan><abbr>h</abbr></choice> brueder hierinfals wurde können dienen, varan
       <lb facs="#facs_2_r1l22" n="N022"/>ich mit der hilf gottes nit zweiflen will. Ich due mich</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="11 r" xml:id="Kasten_blau_45_9_0021.jpg"/>
     <ab facs="#facs_3_r2">
       <lb facs="#facs_3_r2l1" n="N001"/>hiermit in ewer Durchlaucht <choice><expan>gnade</expan><abbr>g</abbr></choice> <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> befehlen, die ich sterben
       <lb facs="#facs_3_r2l2" n="N002"/>werde
@@ -218,8 +220,8 @@
       <lb facs="#facs_3_r2l4" n="N004"/>ganzergebenste trewg<supplied>e</supplied>horsamste
       <lb facs="#facs_3_r2l5" n="N005"/>dochter
       <lb facs="#facs_3_r2l7" n="N006"/>EMT 
-      <lb facs="#facs_3_r2l6" n="N007"/>Wien den 26 <choice><expan>feber</expan><abbr>feb</abbr></choice> 1682
-      <lb facs="#facs_3_r2l8" n="N008"/>PS Der Egelhoff hatt mich durch ein schreiben ersuecht, seinen sohn, welch<supplied>e</supplied>r bey ewer Durchlaucht,
+      <lb facs="#facs_3_r2l6" n="N007"/>Wien den 26 <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1682
+       <lb facs="#facs_3_r2l8" n="N008"/><choice><expan>Postscriptum</expan><abbr>PS</abbr></choice> Der Egelhoff hatt mich durch ein schreiben ersuecht, seinen sohn, welch<supplied>e</supplied>r bey ewer Durchlaucht,
       <lb facs="#facs_3_r2l9" n="N009"/>der <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> zue recommendiren zue einer nechstfallenden pfleg, welchs
       <lb facs="#facs_3_r2l10" n="N010"/>ich ihm in ansehung seiner muetter selig nit abschlagen können.
       <lb facs="#facs_3_r2l11" n="N011"/>Steht alles zue ewer Durchlaucht <choice><expan>gnädigstem</expan><abbr>g</abbr></choice> befehl.</ab>

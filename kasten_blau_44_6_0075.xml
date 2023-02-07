@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1232" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1232px"/>
+    <graphic url="Kasten_blau_44_6_0075.jpg" width="800px" height="1232px"/>
     <zone points="26,61 26,1219 752,1219 752,61" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="22,457 133,432 257,454 417,417 737,396 717,356 357,333 178,354 109,398 20,381" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="62,498 128,479 242,503 557,466 608,479 670,458 714,479 752,472 750,415 703,443 634,415 481,435 386,419 322,454 132,433 61,461" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -110,7 +112,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1227" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1227px"/>
+    <graphic url="Kasten_blau_44_6_0076.jpg" width="800px" height="1227px"/>
     <zone points="56,60 56,1153 772,1153 772,60" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="51,99 274,113 394,93 673,126 739,99 739,55 491,78 229,46 186,72 50,39" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="70,173 114,157 156,184 246,165 375,181 560,148 676,177 768,155 768,108 641,135 602,109 562,126 452,106 395,133 346,111 311,131 265,111 147,130 70,105" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -134,7 +136,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1233" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1233px"/>
+    <graphic url="Kasten_blau_44_6_0077.jpg" width="800px" height="1233px"/>
     <zone points="23,72 23,1167 748,1167 748,72" rendition="TextRegion" xml:id="facs_3_r2">
         <zone points="37,117 348,92 753,110 755,57 35,68" rendition="Line" xml:id="facs_3_r2l1"/>
         <zone points="30,161 119,176 474,148 558,172 741,166 741,128 636,110 30,120" rendition="Line" xml:id="facs_3_r2l2"/>
@@ -158,9 +160,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="53 r" xml:id="Kasten_blau_44_6_0075.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/>Durchleüchtiger Cuhrfürst, h<supplied>e</supplied>rzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l3" n="N002"/>Mitt der gutten gelegenheit des Montauti, welcher
@@ -177,7 +179,7 @@
       <lb facs="#facs_1_r1l14" n="N013"/>segen darzu, amen. Vnser polnische braut ist schon <supplied>durch</supplied>
       <lb facs="#facs_1_r1l15" n="N014"/>Preßlaw passirt, die sachen wegen der gelder seint
       <lb facs="#facs_1_r1l16" n="N015"/>schon alles aiustirt, gottlob mit contento,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="54 v" xml:id="Kasten_blau_44_6_0076.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>der wolle ihr auch alle vergnüegung verleyen. In
       <lb facs="#facs_2_r1l2" n="N002"/>Schpanien gehn die sachen gottlob beßer. Der Mansfelt
@@ -198,7 +200,7 @@
       <lb facs="#facs_2_r1l17" n="N017"/>Bischoff woll erlauben können. Mit <choice><expan>bruder</expan><abbr>b</abbr></choice> Carl ist
       <lb facs="#facs_2_r1l18" n="N018"/>vohr sich, weil er die campagna im Reich
       <lb facs="#facs_2_r1l19" n="N019"/>bleibt, so kan er schon kommen. Ich hab woll mit</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="54 r" xml:id="Kasten_blau_44_6_0077.jpg"/>
     <ab facs="#facs_3_r2">
       <lb facs="#facs_3_r2l1" n="N001"/>großem leidt vernommen das ihr Durchlaucht, vnser <choice><expan>fraw</expan><abbr>f</abbr></choice> mutter,
       <lb facs="#facs_3_r2l2" n="N002"/>übel gewest, hoff, werd alles wider gutt sein. Ich
@@ -220,11 +222,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -232,5 +230,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

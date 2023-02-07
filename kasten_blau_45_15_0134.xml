@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datierung "1686": wohl immer noch verschrieben (?!); erwähnt "des Lobkowiz brief"</ab>
+         <ab type="notes">Datierung "1686": wohl immer noch verschrieben (?!); erwähnt "des Lobkowiz brief"</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1226" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1226px"/>
+    <graphic url="Kasten_blau_45_15_0134.jpg" width="800px" height="1226px"/>
     <zone points="15,163 15,1224 790,1224 790,163" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="114,233 220,237 274,204 332,228 407,201 539,214 714,191 755,208 786,203 784,142 730,160 609,137 464,166 343,126 112,184" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="86,299 177,302 281,260 760,254 773,198 541,215 478,199 369,225 274,205 217,238 81,207" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1226" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1226px"/>
+    <graphic url="Kasten_blau_45_15_0135.jpg" width="800px" height="1226px"/>
     <zone points="26,43 26,1181 796,1181 796,43" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="49,94 170,74 384,88 431,65 780,79 778,5 753,-1 47,4" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="33,144 147,151 213,125 265,149 361,136 388,159 526,124 781,122 779,79 749,76 31,90" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -139,7 +141,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1238" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1238px"/>
+    <graphic url="Kasten_blau_45_15_0136.jpg" width="800px" height="1238px"/>
     <zone points="11,31 11,1231 787,1231 787,31" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="30,108 172,60 282,90 325,63 369,79 439,55 536,78 702,69 754,52 752,-11 278,-1 221,27 28,31" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="16,140 454,105 604,124 763,94 767,59 643,84 574,59 471,81 339,61 284,91 159,65 15,114" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -172,9 +174,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="56 r2" xml:id="Kasten_blau_45_15_0134.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich sag ewer Durchlaucht <choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> dankh vohr bede dero <choice><expan>gnädige</expan><abbr>g</abbr></choice>
@@ -194,7 +196,7 @@
       <lb facs="#facs_1_r1l18" n="N016"/>hatt zwischen Filshoffen vnd Baßaw, dah er doch
       <lb facs="#facs_1_r1l19" n="N017"/>ganz gemach, aber über ein eis reiten müeßen,
       <lb facs="#facs_1_r1l20" n="N018"/>mit dem pfert gefallen vnd ihm an der axel</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="56 v2" xml:id="Kasten_blau_45_15_0135.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>das kleine beinel, welches sie die klauikel nennen, gebrochen.
       <lb facs="#facs_2_r1l2" n="N002"/>Ich hab erst am sontag schpaht den brif bekommen mit
@@ -216,7 +218,7 @@
       <lb facs="#facs_2_r1l18" n="N018"/>wirt er sein schuldi<supplied>c</supplied>hkeit ablegen. Mit mein Joseph
       <lb facs="#facs_2_r1l19" n="N019"/>geht gottlob guett, die hiez hatt schon fast völlich nach-
       <lb facs="#facs_2_r1l20" n="N020"/>gelaßen vnd die flekh vergehen schon auch. Das wehnige</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="57 r2" xml:id="Kasten_blau_45_15_0136.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>eßen, das man ihm gibt, schmekt ihm auch guett. Schlafft
       <lb facs="#facs_3_r1l2" n="N002"/>woll, also hoff ich, es soll balt vollich guett werden,

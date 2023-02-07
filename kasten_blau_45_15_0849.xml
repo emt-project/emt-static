@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Dieser Brief muss auf den 30. März datiert sein, die Korrektur stimmt nicht. Ergibt sich aus 843, wo Berufung Waldsteins am 25. April erwähnt wird, die hier erst als Plan angedeutet ist.</ab>
+         <ab type="notes">Dieser Brief muss auf den 30. März datiert sein, die Korrektur stimmt nicht. Ergibt sich aus 843, wo Berufung Waldsteins am 25. April erwähnt wird, die hier erst als Plan angedeutet ist.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1286" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1286px"/>
+    <graphic url="Kasten_blau_45_15_0849.jpg" width="800px" height="1286px"/>
     <zone points="21,369 21,1274 761,1274 761,369" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="108,430 150,412 179,438 280,437 355,396 444,393 487,423 751,400 758,355 614,359 515,336 106,347" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="56,460 332,456 450,482 536,451 682,475 745,443 744,418 665,403 332,442 222,425 188,445 133,413 102,444 56,439" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1285" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1285px"/>
+    <graphic url="Kasten_blau_45_15_0850.jpg" width="800px" height="1285px"/>
     <zone points="36,62 36,1263 797,1263 797,62" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="38,89 479,108 503,87 674,85 755,122 783,109 786,54 727,44 43,44" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="36,161 100,129 171,134 205,165 330,128 370,160 537,128 716,158 776,142 776,114 676,90 602,109 523,88 474,115 427,95 36,89" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -141,7 +143,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1292" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1292px"/>
+    <graphic url="Kasten_blau_45_15_0851.jpg" width="800px" height="1292px"/>
     <zone points="13,69 13,1216 756,1216 756,69" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="28,125 86,95 745,105 763,52 27,54" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="25,165 83,186 182,180 227,150 530,149 578,176 660,145 729,160 738,125 576,103 538,128 431,129 378,102 245,129 135,108 25,130" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -165,9 +167,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="180 r" xml:id="Kasten_blau_45_15_0849.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerlibster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Weil, wan das wetter morgen guet wirt sein, welches
@@ -186,7 +188,7 @@
       <lb facs="#facs_1_r1l16" n="N015"/>Weil man aus Frankreich schreibt, das man vill schiff
       <lb facs="#facs_1_r1l17" n="N016"/>bey Brest passiren sehn, das werden sie hoffentlich gew<supplied>e</supplied>ßen
       <lb facs="#facs_1_r1l18" n="N017"/>sein, vnd hoff ich, <supplied>sie</supplied> werde die verwitbte Königin auch</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="180 v" xml:id="Kasten_blau_45_15_0850.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>in guettem wohlstandt antreffen. Ich verlang deswegen sehr
       <lb facs="#facs_2_r1l2" n="N002"/>auf die könftige post, glaub aber nit, das mihr noch
@@ -211,7 +213,7 @@
       <lb facs="#facs_2_r1l21" n="N021"/>gritett vnd noch estimirt hab. Den Prinz Iorch werde <supplied>ich</supplied>
       <lb facs="#facs_2_r1l22" n="N022"/>ihr Mayestät auch fleisig reccomendiren. Der Hoffkirchen
       <lb facs="#facs_2_r1l23" n="N023"/>hatt das regiment bekommen, mit den andren haben</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="181 r" xml:id="Kasten_blau_45_15_0851.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>ihr Mayestät bis dato noch niks resoluirt, werd nit vnter-
       <lb facs="#facs_3_r1l2" n="N002"/>laßen, ihn zue reccomendiren, wie woll ich hör, das

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift</ab>
+         <ab type="notes">Konzept mit Unterschrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1298" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1298px"/>
+    <graphic url="Kasten_blau_44_6_0334.jpg" width="800px" height="1298px"/>
     <zone points="18,38 18,1226 773,1226 773,38" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="13,79 37,84 50,71 71,70 83,61 97,63 95,27 85,27 80,33 67,31 57,34 47,29 20,28 11,31" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="31,130 88,136 211,100 259,129 343,129 353,126 350,53 241,57 211,47 135,71 77,61 29,84" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -135,7 +137,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1302" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1302px"/>
+    <graphic url="Kasten_blau_44_6_0335.jpg" width="800px" height="1302px"/>
     <zone points="149,36 149,207 315,207 315,36" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="145,167 177,163 204,169 216,163 232,168 279,157 303,170 323,161 315,90 232,96 220,91 183,120 166,116 159,122 139,115" rendition="Line" xml:id="facs_2_r1l1"/>
       </zone>
@@ -172,9 +174,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="215 r" xml:id="Kasten_blau_44_6_0334.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>o
       <lb facs="#facs_1_r1l2" n="N002"/>sn dhelab bebten 
@@ -215,7 +217,7 @@
       <lb facs="#facs_1_r1l37" n="N037"/>lexueic besterwst zu conoliesen
       <lb facs="#facs_1_r1l38" n="N038"/>vnd ihre alleföstge e
       <lb facs="#facs_1_r1l39" n="N039"/>E</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="215 v" xml:id="Kasten_blau_44_6_0335.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>er den selben</ab>
     <ab facs="#facs_2_r2">
@@ -248,13 +250,13 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__13">
                   <placeName>Düsseldorf</placeName>

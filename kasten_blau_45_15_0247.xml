@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Preßburg, 2. Brief mit diesem Datum</ab>
+         <ab type="notes">Preßburg, 2. Brief mit diesem Datum</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1232" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1232px"/>
+    <graphic url="Kasten_blau_45_15_0247.jpg" width="800px" height="1232px"/>
     <zone points="17,322 17,1198 782,1198 782,322" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="62,360 178,349 214,370 259,350 360,380 457,361 524,386 592,353 631,371 773,358 773,313 509,321 357,287 275,308 155,266 62,295" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="86,433 254,402 292,430 328,411 439,445 756,410 756,365 727,354 569,389 424,365 259,389 182,349 86,365" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1212" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1212px"/>
+    <graphic url="Kasten_blau_45_15_0248.jpg" width="800px" height="1212px"/>
     <zone points="37,99 37,1147 779,1147 779,99" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="77,130 271,154 365,129 412,159 460,128 736,134 736,99 594,81 526,102 426,73 264,97 77,90" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="68,185 290,203 434,181 477,202 541,182 591,213 769,196 769,152 695,141 565,167 520,137 411,159 357,131 203,167 124,135 68,143" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -138,7 +140,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1251" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1251px"/>
+    <graphic url="Kasten_blau_45_15_0249.jpg" width="800px" height="1251px"/>
     <zone points="18,43 18,1202 775,1202 775,43" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="32,109 83,120 153,81 205,95 241,76 334,116 382,86 766,86 766,27 618,49 429,41 350,0 31,5" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="31,135 171,171 226,143 603,146 721,132 740,78 596,101 536,80 335,116 289,86 175,84 82,119 30,111" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -161,9 +163,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="127 r" xml:id="Kasten_blau_45_15_0247.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich hab mit großen freüden ewer Durchlaucht <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom
@@ -181,7 +183,7 @@
       <lb facs="#facs_1_r1l14" n="N014"/>etlige dag auf Wien, sich noch mehr in der
       <lb facs="#facs_1_r1l15" n="N015"/>gesuntheit zue assodiren vnd noch etwas brauchen,
       <lb facs="#facs_1_r1l16" n="N016"/>mit deme, hoffe ich, werde er die kreften</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="127 v" xml:id="Kasten_blau_45_15_0248.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>wider völlich erholen. Was Cöllen anbelangt, seh ich
       <lb facs="#facs_2_r1l2" n="N002"/>nit, wie mein brueder dort etwas helfen könne,
@@ -204,7 +206,7 @@
       <lb facs="#facs_2_r1l19" n="N019"/>sein. Der Cauniz wirt schon bey ewer <unclear>Durchlaucht</unclear> sein. Der Oting
       <lb facs="#facs_2_r1l20" n="N020"/>ist noch nit kommen, ich förcht nuhr, es sey
       <lb facs="#facs_2_r1l21" n="N021"/>ihm ein vnglükh geschen oder er sey krankh</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="128 r" xml:id="Kasten_blau_45_15_0249.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>worden. Was <choice><expan>Pater</expan><abbr>P</abbr></choice> Marco schreibt, so ist er ein gutter
       <lb facs="#facs_3_r1l2" n="N002"/>man, hatt gutte intentioneß vnd gahr eifrich <unclear>licht</unclear>,

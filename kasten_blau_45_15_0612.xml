@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1199" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1199px"/>
+    <graphic url="Kasten_blau_45_15_0612.jpg" width="800px" height="1199px"/>
     <zone points="28,324 28,1126 760,1126 760,324" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="28,374 119,368 213,397 379,363 470,387 639,357 725,370 756,357 755,285 687,274 575,327 485,313 425,339 27,304" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="48,423 233,436 264,415 434,445 580,407 681,422 712,406 711,374 551,364 364,401 311,381 210,397 118,368 46,373" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,9 +115,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="35 r" xml:id="Kasten_blau_45_15_0612.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfü<supplied>r</supplied>st, mein herz allerliebster her vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Bitt <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> vmb vergebung, das heünt dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice>
@@ -130,7 +132,7 @@
       <lb facs="#facs_1_r1l11" n="N011"/>ewer Durchlaucht
       <lb facs="#facs_1_r1l12" n="N012"/><choice><expan>vnterdehnigste</expan><abbr>vd</abbr></choice> <choice><expan>trewgehorsamste</expan><abbr>trwghos</abbr></choice> do<supplied>c</supplied>hter
       <lb facs="#facs_1_r1l15" n="N013"/>EMT
-      <lb facs="#facs_1_line_1647614745510_887" n="N014"/>Wien den 20ten <choice><expan>feber</expan><abbr>feb</abbr></choice> 1689
+      <lb facs="#facs_1_line_1647614745510_887" n="N014"/>Wien den 20ten <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1689
       <lb facs="#facs_1_r1l14" n="N015"/>Bitt <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice>, mich bey ihr Durchlaucht <choice><expan>fraw</expan><abbr>f</abbr></choice> mutter
       <lb facs="#facs_1_r1l16" n="N016"/><choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> zue entschuldigen.</ab>
   </div>

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">rechts oben zusätzliche Foliierung: 70. Bleistiftvermerk "7. Sept. 1699", muss irrtümlich</ab>
+         <ab type="notes">rechts oben zusätzliche Foliierung: 70. Bleistiftvermerk "7. Sept. 1699", muss irrtümlich</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1087" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1087px"/>
+    <graphic url="Kasten_blau_44_6_0475.jpg" width="800px" height="1087px"/>
     <zone points="25,70 25,1082 734,1082 734,70" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="79,443 110,464 155,432 244,451 368,425 459,441 585,399 695,408 738,396 735,343 337,378 297,357 250,377 176,369 77,414" rendition="Line" xml:id="facs_1_r2l2"/>
         <zone points="61,512 179,526 262,497 312,508 352,480 422,507 474,484 505,503 560,480 729,481 727,438 659,447 608,426 558,447 350,446 329,466 265,439 183,435 111,462 58,442" rendition="Line" xml:id="facs_1_r2l3"/>
@@ -111,7 +113,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1250" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1250px"/>
+    <graphic url="Kasten_blau_44_6_0476.jpg" width="800px" height="1250px"/>
     <zone points="327,425 332,838 544,837 548,419" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="515,435 516,471 514,505 514,539 516,564 515,599 517,619 517,640 519,672 523,719 521,746 523,770 524,797 523,828 473,826 474,797 473,773 471,746 473,719 469,675 467,641 467,621 465,600 466,565 464,541 464,504 466,470 465,436" rendition="Line" xml:id="facs_2_line_1645275119637_3048"/>
         <zone points="445,437 446,461 447,485 450,506 452,525 451,559 453,595 454,656 458,673 459,709 459,738 457,774 459,791 462,813 412,820 409,797 407,775 409,737 409,710 408,680 404,662 403,597 401,560 402,527 400,513 397,489 396,463 395,439" rendition="Line" xml:id="facs_2_line_1645275129129_3053"/>
@@ -121,9 +123,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="298 r" xml:id="Kasten_blau_44_6_0475.jpg" ed="70 r"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l2" n="N001"/>Durchleüchtiger Curfürst, m<supplied>e</supplied>in herz allerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r2l3" n="N002"/>Der <choice><expan>Grav</expan><abbr>G</abbr></choice> von <unclear>Stirstheim</unclear> hatt mich geb<supplied>e</supplied>tt, ihn mit disen z<supplied>e</supplied>ilen
@@ -140,7 +142,7 @@
       <lb facs="#facs_1_r2l13" n="N013"/>getr<supplied>e</supplied>wste schw<supplied>e</supplied>ster
       <lb facs="#facs_1_r2l15" n="N014"/>Eleonora
       <lb facs="#facs_1_r2l14" n="N015"/>Fauorita den 2ten <choice><expan>septembris</expan><abbr>7br</abbr></choice> 1699</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="299 r" xml:id="Kasten_blau_44_6_0476.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_line_1645275119637_3048" n="N001"/>Ihr <choice><expan>Liebden</expan><abbr>Ld</abbr></choice> <choice><expan>herrn</expan><abbr>hr</abbr></choice> Curfürst zu
       <lb facs="#facs_2_line_1645275129129_3053" n="N002"/>Pfalz, meinem h<supplied>e</supplied>rzallerlibsten

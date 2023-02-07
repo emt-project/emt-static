@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1203" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1203px"/>
+    <graphic url="Kasten_blau_45_15_0422.jpg" width="800px" height="1203px"/>
     <zone points="40,358 40,1156 766,1156 766,358" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="133,392 210,388 242,412 296,394 339,425 382,424 430,388 531,388 560,408 771,393 771,325 633,352 584,324 523,364 417,327 386,347 339,328 243,347 205,333 133,370" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="84,470 216,444 254,463 278,445 379,462 433,443 465,465 509,443 545,464 613,445 640,465 737,443 737,402 628,419 487,386 381,424 296,395 267,414 84,386" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1189" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1189px"/>
+    <graphic url="Kasten_blau_45_15_0423.jpg" width="800px" height="1189px"/>
     <zone points="46,82 46,1115 785,1115 785,82" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="66,131 101,152 234,125 269,151 373,119 613,129 659,108 749,129 764,84 503,45 430,79 309,53 65,70" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="62,195 237,179 268,202 319,172 489,166 526,191 595,159 666,202 713,171 765,174 764,124 683,121 653,146 538,116 498,136 415,119 385,147 306,132 267,150 234,129 138,159 61,144" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -133,7 +135,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1231" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1231px"/>
+    <graphic url="Kasten_blau_45_15_0424.jpg" width="800px" height="1231px"/>
     <zone points="5,71 5,1173 764,1173 764,71" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="38,111 164,99 205,122 254,94 326,144 358,123 430,143 539,95 585,117 643,98 691,112 726,100 727,58 582,70 511,43 411,64 357,22 39,24" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="32,172 63,156 106,186 134,168 284,190 358,153 427,182 741,151 741,125 696,110 428,142 212,126 169,101 32,125" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -156,9 +158,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="235 r" xml:id="Kasten_blau_45_15_0422.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich hab dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben mit schuldigstem respect,
@@ -174,7 +176,7 @@
       <lb facs="#facs_1_r1l12" n="N012"/>mit nechstem ewer Durchlaucht berichten. Der Deütschmeister
       <lb facs="#facs_1_r1l13" n="N013"/>schreibt mihr von Lüttich, das ihm die dumh<supplied>e</supplied>rren
       <lb facs="#facs_1_r1l14" n="N014"/>große lieb erzeigen, also hoff ich, werd es</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="235 v" xml:id="Kasten_blau_45_15_0423.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>desto leichter sein, die coadiutori aus zuewürken,
       <lb facs="#facs_2_r1l2" n="N002"/>warzue ihr Mayestät niks vnterlaßen werden, doch
@@ -195,7 +197,7 @@
       <lb facs="#facs_2_r1l17" n="N017"/>auch schon anfangt ein bresche zue machen, wie
       <lb facs="#facs_2_r1l18" n="N018"/>woll sie die maur diker gefunden, als sie
       <lb facs="#facs_2_r1l19" n="N019"/>vermeint, hoffen doch balt ein ent</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="236 r" xml:id="Kasten_blau_45_15_0424.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>darmit zue machen. G<supplied>e</supplied>ste<supplied>r</supplied>n sein auch brif
       <lb facs="#facs_3_r1l2" n="N002"/>vom Herzoch von Lotring von Eßek kommen,

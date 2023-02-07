@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1185" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1185px"/>
+    <graphic url="Kasten_blau_45_9_0116.jpg" width="800px" height="1185px"/>
     <zone points="45,133 46,1183 786,1183 785,133" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="83,234 142,212 387,241 430,217 513,254 684,219 747,273 790,264 791,196 706,174 623,194 509,153 254,175 86,113" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="86,299 132,319 268,281 336,315 378,292 459,314 523,290 657,309 724,288 759,307 761,236 670,233 630,261 379,243 332,265 200,224 157,255 129,230 87,252" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -110,7 +112,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1215" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1215px"/>
+    <graphic url="Kasten_blau_45_9_0117.jpg" width="800px" height="1215px"/>
     <zone points="30,94 29,962 761,962 762,94" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="47,170 280,150 413,156 485,188 639,167 700,194 744,180 746,111 571,119 515,96 344,133 204,87 120,111 49,86" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="37,230 174,262 234,236 381,250 466,222 567,252 653,230 731,252 733,182 676,194 646,171 39,179" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -130,9 +132,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="68 r" xml:id="Kasten_blau_45_9_0116.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich hab dero <choice><expan>gnädigstes</expan><abbr>g</abbr></choice> schreiben bey der extraordinari
@@ -149,7 +151,7 @@
       <lb facs="#facs_1_r1l13" n="N013"/>das er sich ihr Mayestät doch solle submitiren
       <lb facs="#facs_1_r1l14" n="N014"/>vnd bey seinem bischtum verbleiben.
       <lb facs="#facs_1_r1l15" n="N015"/>Müeßen izt der antwort erwarten.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="68 v" xml:id="Kasten_blau_45_9_0117.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Der Cardinal vermeint vohr gewis, das er in
       <lb facs="#facs_2_r1l2" n="N002"/>seinem bischtum bleiben wirt vnd also die

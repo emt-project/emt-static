@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1169" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1169px"/>
+    <graphic url="Korrespondenzakten_1147_0041.jpg" width="800px" height="1169px"/>
     <zone points="24,27 24,1114 767,1114 767,27" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="113,455 145,473 168,454 204,471 527,466 583,438 773,424 770,369 701,393 206,373 141,414 110,406" rendition="Line" xml:id="facs_1_r1l9"/>
         <zone points="80,535 127,549 198,511 248,536 278,516 371,535 513,511 543,525 631,493 743,500 740,447 621,434 552,466 383,461 226,488 154,488 75,444" rendition="Line" xml:id="facs_1_r1l10"/>
@@ -107,7 +109,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1161" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1161px"/>
+    <graphic url="Korrespondenzakten_1147_0042.jpg" width="800px" height="1161px"/>
     <zone points="44,54 44,1152 769,1152 769,54" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="52,113 537,77 751,84 750,30 611,60 510,35 465,62 240,61 193,40 52,57" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="61,141 135,166 183,140 732,143 757,135 757,87 586,105 229,91 196,112 111,96 61,114" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -131,7 +133,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1135" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1135px"/>
+    <graphic url="Korrespondenzakten_1147_0043.jpg" width="800px" height="1135px"/>
     <zone points="17,0 17,1134 369,1134 369,0" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="77,662 101,645 136,641 191,669 270,646 303,668 322,655 342,661 364,656 365,608 230,605 191,583 141,600 78,583" rendition="Line" xml:id="facs_3_r1l4"/>
         <zone points="67,713 117,718 145,697 199,696 219,685 267,709 307,699 348,714 374,701 375,661 299,667 270,646 195,670 115,647 67,666" rendition="Line" xml:id="facs_3_r1l5"/>
@@ -141,9 +143,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="29 r" xml:id="Korrespondenzakten_1147_0041.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l9" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l10" n="N002"/>Ich schem mich recht, das ich so lang vnterlaßen,
@@ -157,7 +159,7 @@
       <lb facs="#facs_1_r1l18" n="N010"/>alle glauben zue zue stellen. Er will, ich soll dero Liebden schreiben,
       <lb facs="#facs_1_r1l19" n="N011"/>das ich schuldich, das er nit ehender wekh <supplied>konnte</supplied>, es geht mihr
       <lb facs="#facs_1_r1l20" n="N012"/>aber wie den kindren, die legen die schuldt lieber auf</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="29 v" xml:id="Korrespondenzakten_1147_0042.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>auf andren, als das sie die ihrige bekennen. Bedankh dero Liebden, das
       <lb facs="#facs_2_r1l2" n="N002"/>sie wollen gratuliren zu der victori, gott gebe, das balt
@@ -178,7 +180,7 @@
       <lb facs="#facs_2_r1l16" n="N017"/>getrewste schw<supplied>e</supplied>ster
       <lb facs="#facs_2_r1l18" n="N018"/>Eleonora
       <lb facs="#facs_2_r1l17" n="N019"/>Wien den 26ten <choice><expan>octobris</expan><abbr>8br</abbr></choice> 1691</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="3" xml:id="Korrespondenzakten_1147_0043.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l4" n="N001"/>Ihr <choice><expan>Liebden</expan><abbr>Ld</abbr></choice> herrn Cuhrfürsten zue
       <lb facs="#facs_3_r1l5" n="N002"/>Pfalz, meinem herzallerlibsten
@@ -186,11 +188,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -198,5 +196,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">"ist den 8. Junij 1689 beantwortet eigenhandig und dem ? Von Lamberg mitgegeben worden"</ab>
+         <ab type="notes">"ist den 8. Junij 1689 beantwortet eigenhandig und dem ? Von Lamberg mitgegeben worden"</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1213" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1213px"/>
+    <graphic url="Kasten_blau_44_6_0028.jpg" width="800px" height="1213px"/>
     <zone points="42,31 42,1203 767,1203 767,31" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="46,59 610,60 679,59 748,72 746,38 38,34" rendition="Line" xml:id="facs_1_r2l1"/>
         <zone points="59,109 149,85 214,106 382,96 447,112 542,97 582,110 571,53 308,58 287,38 226,33 146,41 110,67 59,60" rendition="Line" xml:id="facs_1_r2l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1213" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1213px"/>
+    <graphic url="Kasten_blau_44_6_0029.jpg" width="800px" height="1213px"/>
     <zone points="65,70 65,543 771,543 771,70" rendition="TextRegion" xml:id="facs_2_r2">
         <zone points="76,104 749,112 756,57 78,56" rendition="Line" xml:id="facs_2_r2l1"/>
         <zone points="71,163 166,146 287,166 570,168 602,149 753,165 753,125 672,133 617,106 362,103 283,131 72,113" rendition="Line" xml:id="facs_2_r2l2"/>
@@ -128,7 +130,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="630" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="630px"/>
+    <graphic url="Kasten_blau_44_6_0030.jpg" width="800px" height="630px"/>
     <zone points="208,245 208,347 453,347 453,245" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="223,296 256,270 271,279 296,277 310,291 324,284 346,295 375,274 386,281 405,279 416,268 442,270 442,237 397,238 379,246 317,226 283,231 273,241 247,229 223,231" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="203,306 258,325 284,310 312,319 324,313 336,323 368,299 447,305 458,301 458,280 397,290 374,274 349,293 324,284 310,291 296,277 271,279 251,267 229,285 203,281" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -138,9 +140,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="19 r" xml:id="Kasten_blau_44_6_0028.jpg"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/><unclear>ist den 8. junij 1689 beantwortet eigenhandig vndt dem </unclear>
       <lb facs="#facs_1_r2l2" n="N002"/><unclear>Graffen von Lamberg mit gegeben werden</unclear>
@@ -159,7 +161,7 @@
       <lb facs="#facs_1_r2l16" n="N015"/>gewohnligen generositet vnd vereinung mit gott anemmen werden.
       <lb facs="#facs_1_r2l17" n="N016"/>Vnd kan vns woll dißes zue einem trost gereichen,
       <lb facs="#facs_1_r2l18" n="N017"/>ihre dugent im leben vnd heiliger doht. Dero Liebden können leicht <supplied>ermessen, wie</supplied></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="19 v" xml:id="Kasten_blau_44_6_0029.jpg"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l1" n="N001"/>mihr dißes auch ist zue herzen gangen. Also ihnen vnd
       <lb facs="#facs_2_r2l2" n="N002"/>mihr nit mehrer diße wunden zue erfrischen, due ich mich
@@ -171,7 +173,7 @@
       <lb facs="#facs_2_r2l9" n="N008"/>getrewste schw<supplied>e</supplied>ster
       <lb facs="#facs_2_r2l10" n="N009"/>EMT
       <lb facs="#facs_2_r2l8" n="N010"/>Laxenburg den 11 maj 1689</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="20 r" xml:id="Kasten_blau_44_6_0030.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>Ihr <choice><expan>Liebden</expan><abbr>Ld</abbr></choice> Johann Wilhelm
       <lb facs="#facs_3_r1l2" n="N002"/>Pfalzgrauen bey Reyn, meinem

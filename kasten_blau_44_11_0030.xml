@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Liegt zwischen 1712.05.04-1712.05.05</ab>
+         <ab type="notes">Liegt zwischen 1712.05.04-1712.05.05</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1180" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1180px"/>
+    <graphic url="Kasten_blau_44_11_0030.jpg" width="800px" height="1180px"/>
     <zone points="37,6 37,1163 797,1163 797,6" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="171,433 244,410 385,438 513,396 684,418 802,395 802,358 653,316 610,343 517,351 453,318 376,338 316,312 173,309" rendition="Line" xml:id="facs_1_r1l3"/>
         <zone points="98,490 144,475 212,512 324,463 400,499 450,471 766,460 765,412 737,406 644,438 534,422 464,450 313,417 170,436 97,407" rendition="Line" xml:id="facs_1_r1l4"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1190" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1190px"/>
+    <graphic url="Kasten_blau_44_11_0031.jpg" width="800px" height="1190px"/>
     <zone points="37,0 37,1168 797,1168 797,0" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="51,136 258,107 313,134 378,107 434,131 517,112 561,140 620,108 751,104 751,77 621,46 410,57 338,84 272,81 227,51 161,72 51,60" rendition="Line" xml:id="facs_2_r1l3"/>
         <zone points="49,191 132,183 172,210 212,180 381,186 537,156 637,177 674,150 733,182 731,99 590,140 484,113 381,145 336,116 228,150 110,123 48,145" rendition="Line" xml:id="facs_2_r1l4"/>
@@ -131,7 +133,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1220" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1220px"/>
+    <graphic url="Kasten_blau_44_11_0032.jpg" width="800px" height="1220px"/>
     <zone points="21,11 21,1196 773,1196 773,11" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="44,155 116,160 176,131 328,149 377,181 427,150 760,132 760,95 488,84 411,105 284,78 43,81" rendition="Line" xml:id="facs_3_r1l3"/>
         <zone points="39,198 299,225 778,188 776,137 715,129 626,157 433,152 380,184 323,151 252,163 179,133 38,171" rendition="Line" xml:id="facs_3_r1l4"/>
@@ -159,9 +161,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="12 r" xml:id="Kasten_blau_44_11_0030.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l3" n="N001"/>Durchleüchtiger Curfürst, mein herzallerl<supplied>i</supplied>bster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l4" n="N002"/>Empfange dero libsts schreiben vom 20ten diß,
@@ -176,7 +178,7 @@
       <lb facs="#facs_1_r1l13" n="N011"/>haben. Der Kaißer ist bestendig in dem verbliben, das,
       <lb facs="#facs_1_r1l14" n="N012"/>wan die impresa nit sein kan, sie gleich heraus sollen,
       <lb facs="#facs_1_r1l15" n="N013"/>vndt könen dero Liebden leicht erachten, nach dem die sach von so</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="12 v" xml:id="Kasten_blau_44_11_0031.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l3" n="N001"/>von so großer importanz, so lang man hoffnung
       <lb facs="#facs_2_r1l4" n="N002"/>hatt, man es nit gern abbandonire. Izt haben
@@ -195,7 +197,7 @@
       <lb facs="#facs_2_r1l17" n="N015"/>geschriben, aber mitt der gebenedeiten minuta, die
       <lb facs="#facs_2_r1l18" n="N016"/>der Fedl selbsten auß gebettelt vnd nit ihm
       <lb facs="#facs_2_r1l19" n="N017"/>angedragen worden, wie clar scheindt aus sein eignen</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="13 r" xml:id="Kasten_blau_44_11_0032.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l3" n="N001"/>schreiben, welches mihr dero Liebden geschikt vndt hierbey mitt deme,
       <lb facs="#facs_3_r1l4" n="N002"/>welches dero Liebden villeicht in der eil nit so werden beoba<supplied>c</supplied>ht

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1235" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1235px"/>
+    <graphic url="Kasten_blau_45_15_0360.jpg" width="800px" height="1235px"/>
     <zone points="16,240 16,1172 767,1172 767,240" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="64,465 187,494 280,473 347,491 418,461 579,481 772,465 771,410 626,424 574,400 482,433 376,395 187,391 144,431 64,441" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="74,543 188,519 753,526 753,482 627,465 583,488 421,463 351,491 200,495 74,472" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1222" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1222px"/>
+    <graphic url="Kasten_blau_45_15_0361.jpg" width="800px" height="1222px"/>
     <zone points="53,76 53,1156 784,1156 784,76" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="70,117 203,142 239,112 331,101 425,139 684,96 739,127 779,117 778,59 675,81 499,56 379,79 290,57 227,87 184,50 138,48 69,75" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="60,184 106,191 174,151 413,184 588,162 645,194 746,152 747,125 673,139 589,117 442,149 331,101 200,142 138,115 61,133" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -136,7 +138,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1260" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1260px"/>
+    <graphic url="Kasten_blau_45_15_0362.jpg" width="800px" height="1260px"/>
     <zone points="0,49 0,1197 760,1197 760,49" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="11,85 221,88 285,115 325,85 377,108 470,73 765,99 765,14 734,1 11,12" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="12,155 155,121 258,129 308,165 390,133 440,163 526,137 582,163 743,127 744,77 670,111 635,83 581,105 405,82 363,113 328,85 288,115 122,88 12,108" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -160,9 +162,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="197 r" xml:id="Kasten_blau_45_15_0360.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> vatter
       <lb facs="#facs_1_r1l3" n="N002"/>Ich sag ewer Durchlaucht <choice><expan>vnterdehnigsten</expan><abbr>vd</abbr></choice> dankh vohr dero bede <choice><expan>gnädige</expan><abbr>g</abbr></choice> sch<supplied>r</supplied>eiben
@@ -178,7 +180,7 @@
       <lb facs="#facs_1_r1l13" n="N012"/><choice><expan>bruder</expan><abbr>b</abbr></choice> Carl wüntsche ich ihm von herzen, das diser
       <lb facs="#facs_1_r1l14" n="N013"/>reis möge glükigen effect haben. Er mues aber
       <lb facs="#facs_1_r1l15" n="N014"/>sehn, das ers so macht, das der Curfürst</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="197 v" xml:id="Kasten_blau_45_15_0361.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>nit disgustirt wirt. Gottgeb, das dem Deütsch
       <lb facs="#facs_2_r1l2" n="N002"/>Meister das bad mag woll bekommen. Der
@@ -202,7 +204,7 @@
       <lb facs="#facs_2_r1l20" n="N020"/>vnd verschprechen vill. Die heirat mit Florenz
       <lb facs="#facs_2_r1l21" n="N021"/>ist geschloßen. In der cöllnischen sach hatt sich der
       <lb facs="#facs_2_r1l22" n="N022"/><choice><expan>Cuhrfürst</expan><abbr>Cuhf</abbr></choice> declarirt, er wolle vnsren haus zue Münster</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="198 r" xml:id="Kasten_blau_45_15_0362.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>vnd Hildesheim helfen, Cöllen vnd Lüttig aber verlang
       <lb facs="#facs_3_r1l2" n="N002"/>er vohr sein bruedren. Der Bischoff von Preslaw

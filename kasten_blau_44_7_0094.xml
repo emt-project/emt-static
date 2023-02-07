@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Achtung: an die Mutter!</ab>
+         <ab type="notes">Achtung: an die Mutter!</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1240" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1240px"/>
+    <graphic url="Kasten_blau_44_7_0094.jpg" width="800px" height="1240px"/>
     <zone points="20,52 20,1171 760,1171 760,52" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="19,30 58,19 92,22 120,22 146,19 152,69 122,72 90,72 62,69 33,78" rendition="Line" xml:id="facs_1_line_1648049486142_2017"/>
         <zone points="153,519 184,507 248,540 406,511 638,517 754,499 754,447 666,475 566,445 525,476 476,476 309,417 240,435 151,409" rendition="Line" xml:id="facs_1_r2l2"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1220" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1220px"/>
+    <graphic url="Kasten_blau_44_7_0095.jpg" width="800px" height="1220px"/>
     <zone points="53,36 53,1154 741,1154 741,36" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="59,126 170,109 271,137 614,106 745,136 745,83 656,68 576,84 407,62 68,64" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="48,186 138,165 269,195 303,170 409,162 683,175 720,164 720,131 364,122 325,153 229,118 166,148 130,116 48,139" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -123,9 +125,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="53 r" xml:id="Kasten_blau_44_7_0094.jpg" ed="47 r"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_line_1648049486142_2017" n="N001"/><unclear>9 junij 96</unclear>
       <lb facs="#facs_1_r2l2" n="N002"/>Durchleüchtige Cuhrfürstin, mein herzallerliebste <choice><expan>fraw</expan><abbr>f</abbr></choice> <choice><expan>mutter</expan><abbr>mut</abbr></choice>
@@ -139,7 +141,7 @@
       <lb facs="#facs_1_r2l10" n="N010"/>der ein sach, so mihr ewer Durchlaucht <choice><expan>gnädigst</expan><abbr>g</abbr></choice> melden, wie woll ich
       <lb facs="#facs_1_r2l11" n="N011"/>einmahl ganz vnschuldich bin, das weis gott, vndt
       <lb facs="#facs_1_r2l12" n="N012"/>nichts daruon gewust hab. Ist nit so vill zeit</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="53 v" xml:id="Kasten_blau_44_7_0095.jpg" ed="47 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>mehr zue schreiben, ach, ewer Durchlaucht seint mihr nuhr nit vngnedig,
       <lb facs="#facs_2_r1l3" n="N002"/>sonst stirb ich gewiß vohr bedruebnus. Befehl mich <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice>

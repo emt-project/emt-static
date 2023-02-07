@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1188" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1188px"/>
+    <graphic url="Kasten_blau_45_15_0045.jpg" width="800px" height="1188px"/>
     <zone points="66,164 66,1159 783,1159 783,164" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="67,224 161,211 173,218 241,215 298,194 330,214 398,191 513,225 571,188 694,205 788,191 788,149 605,156 536,137 467,159 370,137 121,140" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="108,258 141,238 208,261 228,241 320,253 413,234 454,259 551,237 716,259 769,237 769,208 605,188 516,222 403,194 330,215 250,201 226,222 107,181" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1191" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1191px"/>
+    <graphic url="Kasten_blau_45_15_0046.jpg" width="800px" height="1191px"/>
     <zone points="33,117 33,730 779,730 779,117" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="100,146 171,171 217,139 259,168 299,144 760,147 760,107 736,101 597,94 537,116 404,95 341,120 100,81" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="93,212 158,183 451,174 541,207 655,180 703,211 783,200 765,145 599,166 378,143 257,170 217,139 172,171 130,149 92,160" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -134,9 +136,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="28 r" xml:id="Kasten_blau_45_15_0045.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich bitt ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> vmb vergebung, das ich bey vohriger
@@ -157,7 +159,7 @@
       <lb facs="#facs_1_r1l18" n="N017"/>Wegen der portugeßer ists ein artigs durcheinander,
       <lb facs="#facs_1_r1l19" n="N018"/>ich weis nit, was ich glauben soll. Es mues sich
       <lb facs="#facs_1_r1l20" n="N019"/>balt zeigen, gott geb, das der francos so resonabel sein</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="28 v" xml:id="Kasten_blau_45_15_0046.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>sein möge in seinen relationen, als er sonst scheindt.
       <lb facs="#facs_2_r1l2" n="N002"/>Ich traw keinem. Mein brueder wert ich ein freüdt haben zu

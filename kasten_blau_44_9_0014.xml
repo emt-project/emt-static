@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Brief ist undatiert, aber Tintenvermerk "Iaarij 1707", nach Vermerk auf Rückseite vor 09.07.1707</ab>
+         <ab type="notes">Brief ist undatiert, aber Tintenvermerk "Iaarij 1707", nach Vermerk auf Rückseite vor 09.07.1707</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1240" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1240px"/>
+    <graphic url="Kasten_blau_44_9_0014.jpg" width="800px" height="1240px"/>
     <zone points="29,61 29,983 735,983 735,61" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="72,102 99,101 127,130 149,131 155,137 181,137 194,127 221,132 239,126 240,64 184,61 176,67 149,64 124,71 102,60 88,70 72,69" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="126,435 297,404 490,421 694,392 693,342 675,334 606,358 549,337 461,371 352,345 317,363 258,346 125,366" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="1702" lry="2508" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpg" width="1702px" height="2508px"/>
+    <graphic url="Kasten_blau_44_9_0016.jpg" width="1702px" height="2508px"/>
     <zone points="151,124 959,124 959,219 151,219" rendition="TextRegion" xml:id="facs_2_region_1670406396639_72">
         <zone points="202,140 901,142 901,192 202,190" rendition="Line" xml:id="facs_2_line_1670406400967_75"/>
       </zone>
@@ -124,9 +126,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="6 r" xml:id="Kasten_blau_44_9_0014.jpg" ed="8 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/><unclear>iaarij 1707</unclear>
       <lb facs="#facs_1_r1l3" n="N002"/>Durchleüchtiger Curfürst, mein herzlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
@@ -140,7 +142,7 @@
       <lb facs="#facs_1_line_1658306940091_91" n="N010"/>dero Liebden
       <lb facs="#facs_1_r1l11" n="N011"/>getr<supplied>e</supplied>wste sch<supplied>w</supplied>ester
       <lb facs="#facs_1_r1l12" n="N012"/>Eleonora</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="2" xml:id="Kasten_blau_44_9_0016.jpg" ed="9 r"/>
     <ab facs="#facs_2_region_1670406396639_72">
       <lb facs="#facs_2_line_1670406400967_75" n="N001"/></ab>
     <pb facs="#facs_3" n="3" xml:id="img_0003"/>

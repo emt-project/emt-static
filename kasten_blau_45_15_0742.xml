@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1291" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1291px"/>
+    <graphic url="Kasten_blau_45_15_0742.jpg" width="800px" height="1291px"/>
     <zone points="32,500 32,1271 758,1271 758,500" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="46,552 169,541 200,568 305,543 376,566 469,531 530,563 585,536 760,554 760,489 687,468 435,496 242,470 143,521 46,479" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="78,613 252,591 397,618 488,585 584,619 630,589 762,594 761,558 666,542 586,537 530,563 466,535 377,565 268,544 184,577 77,534" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -107,7 +109,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1274" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1274px"/>
+    <graphic url="Kasten_blau_45_15_0743.jpg" width="800px" height="1274px"/>
     <zone points="58,71 58,1193 788,1193 788,71" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="72,113 246,103 269,122 428,99 494,121 616,96 686,137 727,120 728,29 707,21 73,30" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="61,143 312,179 404,148 470,172 621,147 679,173 770,154 771,105 687,137 537,100 497,120 406,106 351,134 224,104 62,125" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -133,7 +135,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1294" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1294px"/>
+    <graphic url="Kasten_blau_45_15_0744.jpg" width="800px" height="1294px"/>
     <zone points="17,75 17,1237 772,1237 772,75" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="23,71 97,46 662,58 734,68 735,126 204,140 22,119" rendition="Line" xml:id="facs_3_line_1650990134786_871"/>
         <zone points="12,159 173,179 272,153 445,183 584,186 658,160 730,174 713,116 547,113 408,141 12,116" rendition="Line" xml:id="facs_3_r1l3"/>
@@ -151,9 +153,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="116 r" xml:id="Kasten_blau_45_15_0742.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich hab mit <choice><expan>vnterdehnigstem</expan><abbr>vt</abbr></choice> respect vnd höchsten freüden dero
@@ -167,7 +169,7 @@
       <lb facs="#facs_1_r1l10" n="N010"/>haben ihr Mayestät auch anbefohlen zu deliberiren,
       <lb facs="#facs_1_r1l11" n="N011"/>es ist aber dise dag so vill in der schpanischen
       <lb facs="#facs_1_r1l12" n="N012"/>sach zu dun g<supplied>e</supplied>west vnd mit der reis, das noch</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="116 v" xml:id="Kasten_blau_45_15_0743.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>nit haben duen können. Wirt aber ehistens geschen
       <lb facs="#facs_2_r1l2" n="N002"/>vndt hoffe ich, mit dem Fuker hirin auch können
@@ -190,7 +192,7 @@
       <lb facs="#facs_2_r1l19" n="N019"/>einem schreiner aus vnglükh, andre aber, es sey
       <lb facs="#facs_2_r1l20" n="N020"/>ein gelegt<supplied>e</supplied>s feüer gew<supplied>e</supplied>st, dan es an etligen orten zue-
       <lb facs="#facs_2_r1l21" n="N021"/>gleich aufgangen. Man soll auch in etligen heüs<supplied>e</supplied>rn sekh</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="117 r" xml:id="Kasten_blau_45_15_0744.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_line_1650990134786_871" n="N001"/>mit puluer gefunden haben, gott wolle alles übel
       <lb facs="#facs_3_r1l3" n="N002"/>verhüetten durch seine barmherzichkeit. Geste<supplied>r</supplied>n haben mihr

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1220" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1220px"/>
+    <graphic url="Korrespondenzakten_1147_0103.jpg" width="800px" height="1220px"/>
     <zone points="23,0 23,1156 775,1156 775,0" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="39,79 49,81 72,66 108,94 135,90 155,96 192,70 204,68 202,12 36,13" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="57,359 298,395 669,375 670,333 622,331 591,355 474,323 284,264 224,306 184,317 135,290 59,292" rendition="Line" xml:id="facs_1_r1l4"/>
@@ -110,7 +112,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1189" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1189px"/>
+    <graphic url="Korrespondenzakten_1147_0104.jpg" width="800px" height="1189px"/>
     <zone points="33,27 33,1181 777,1181 777,27" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="72,90 129,118 210,97 327,113 504,87 603,107 621,89 746,92 746,14 483,14 428,56 360,14 72,14" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="44,144 104,178 222,150 384,181 513,144 545,161 767,147 767,118 678,98 423,125 290,101 127,121 44,104" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -135,7 +137,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1242" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1242px"/>
+    <graphic url="Korrespondenzakten_1147_0105.jpg" width="800px" height="1242px"/>
     <zone points="4,0 4,1219 797,1219 797,0" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="29,123 57,106 147,142 217,122 251,143 314,105 372,130 493,91 752,112 762,64 26,62" rendition="Line" xml:id="facs_3_r1l3"/>
         <zone points="21,175 94,165 208,204 294,165 381,178 535,143 608,173 739,151 728,97 538,119 473,100 253,142 170,122 142,141 104,115 19,128" rendition="Line" xml:id="facs_3_r1l4"/>
@@ -160,9 +162,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="65 r" xml:id="Korrespondenzakten_1147_0103.jpg" ed="45 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/><unclear>7 8bris 93</unclear>
       <lb facs="#facs_1_r1l4" n="N002"/>Durchleüchtiger <add>Cuhrfürst</add>, herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> brueder
@@ -179,7 +181,7 @@
       <lb facs="#facs_1_r1l15" n="N013"/>auch nit, das dero Liebden sagen sollen, woh er ist, sondren gesa<supplied>c</supplied>ht,
       <lb facs="#facs_1_r1l16" n="N014"/>ich wolt mich mit dem Bischoff von Augschpurg
       <lb facs="#facs_1_r1l17" n="N015"/>vntereden, wie alles möge zum besten eingericht</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="65 v" xml:id="Korrespondenzakten_1147_0104.jpg" ed="45 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>werden zue ihr Durchlaucht reputation, vnd darnach wolt ich
       <lb facs="#facs_2_r1l3" n="N002"/>dero Liebden schreiben. Weil er aber izt nit kombt, so bleibt die
@@ -201,7 +203,7 @@
       <lb facs="#facs_2_r1l20" n="N018"/>dero deuotion erzeigen können. Auch hab ich vernommen,
       <lb facs="#facs_2_r1l21" n="N019"/>als verlangeten ihr Durchlaucht, das dero Liebden die iägerei zum
       <lb facs="#facs_2_r1l22" n="N020"/>iagen möchten spesiren, vnd solle der Hamilton von ihr Durchlaucht</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="66 r" xml:id="Korrespondenzakten_1147_0105.jpg" ed="46 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l3" n="N001"/>die comission haben, dise spese wi<supplied>r</supplied>t nit so gahr groß sei<supplied>n</supplied>,
       <lb facs="#facs_3_r1l4" n="N002"/>vndt dero Liebden könen ihr Durchlaucht sehr darmit obligirn. Auch

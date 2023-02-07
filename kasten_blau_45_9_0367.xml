@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1187" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1187px"/>
+    <graphic url="Kasten_blau_45_9_0367.jpg" width="800px" height="1187px"/>
     <zone points="17,108 17,1181 772,1181 772,108" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="126,192 535,134 727,144 735,108 526,78 462,98 266,92 124,135" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="77,209 272,226 345,188 445,208 584,177 705,199 776,181 774,148 735,137 273,176 75,163" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1189" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1189px"/>
+    <graphic url="Kasten_blau_45_9_0368.jpg" width="800px" height="1189px"/>
     <zone points="21,52 21,1187 798,1187 798,52" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="40,105 244,74 313,96 509,72 777,96 778,36 44,37" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="36,136 151,122 192,144 253,117 458,139 598,116 803,145 802,93 771,89 260,105 206,83 36,105" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -142,7 +144,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1221" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1221px"/>
+    <graphic url="Kasten_blau_45_9_0369.jpg" width="800px" height="1221px"/>
     <zone points="17,39 17,1220 775,1220 775,39" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="28,87 172,65 233,89 327,71 367,89 524,61 623,81 732,68 731,19 27,40" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="18,144 69,123 115,145 148,115 311,134 493,103 704,114 748,98 747,72 678,62 600,88 408,69 193,105 65,77 17,114" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -169,7 +171,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1186" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1186px"/>
+    <graphic url="Kasten_blau_45_9_0370.jpg" width="800px" height="1186px"/>
     <zone points="17,1072 17,1185 49,1185 49,1072" rendition="TextRegion" xml:id="facs_4_r1">
       </zone>
     <zone points="42,63 42,612 780,612 780,63" rendition="TextRegion" xml:id="facs_4_r2">
@@ -189,9 +191,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="218 r" xml:id="Kasten_blau_45_9_0367.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ewer Durchlaucht <choice><expan>gnädige</expan><abbr>g</abbr></choice> schreiben vom 8ten vnd 12ten dis hab mit <choice><expan>vnterdehnigstem</expan><abbr>vnt</abbr></choice> respect
@@ -212,7 +214,7 @@
       <lb facs="#facs_1_r1l17" n="N017"/>gestorben, ist nit guett, mueß freilig ie belder ie beßer
       <lb facs="#facs_1_r1l18" n="N018"/>auf einen gutten hoffmeister gedacht werden, dan der
       <lb facs="#facs_1_r1l19" n="N019"/>Hamilton verlangt zu seiner compagnie. Der Turn ist</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="218 v" xml:id="Kasten_blau_45_9_0368.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>iezt hier, ein feiner man, aber die mittel sein nit groß,
       <lb facs="#facs_2_r1l2" n="N002"/>welchs woll beßer wehr, wan man ein finden könt, der mittel hette,
@@ -237,7 +239,7 @@
       <lb facs="#facs_2_r1l21" n="N021"/>nit genuech wegen seiner informirt, wirt schreiben vmb
       <lb facs="#facs_2_r1l22" n="N022"/>nachricht. Sonst sagt er, er sey gescheid, von guttem haus
       <lb facs="#facs_2_r1l23" n="N023"/>vnd guette mittel. Hatt auch gemelt von einem</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="219 r" xml:id="Kasten_blau_45_9_0369.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>Paulofsqui, der ist Hoffmeister beim Cardinal <choice><expan>sehligen</expan><abbr>seh</abbr></choice> geweßen,
       <lb facs="#facs_3_r1l2" n="N002"/>so ist dis sein bedenken, weil er nit weis, wahrumb er
@@ -261,7 +263,7 @@
       <lb facs="#facs_3_r1l20" n="N020"/>er doch starkh schwellen due vnd beförchte, er werd
       <lb facs="#facs_3_r1l21" n="N021"/>es nit lang mehr dreiben vnd fast von ihm vrlaubs
       <lb facs="#facs_3_r1l23" n="N022"/>genommen, also ist in diser sach niks zue negligiren.</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="219 v" xml:id="Kasten_blau_45_9_0370.jpg"/>
     <ab facs="#facs_4_r1"/>
     <ab facs="#facs_4_r2">
       <lb facs="#facs_4_r2l1" n="N001"/>Ihr Mayestät seint gahr eifrig drin, der Seiler hatt auch comission,

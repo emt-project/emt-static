@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">2. Brief mit diesem Datum. Datum: könnte auch wie 29. aussehen, aber sie macht die 9 immer mit einer Linkskurve unten</ab>
+         <ab type="notes">2. Brief mit diesem Datum. Datum: könnte auch wie 29. aussehen, aber sie macht die 9 immer mit einer Linkskurve unten</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1273" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1273px"/>
+    <graphic url="Kasten_blau_45_15_0773.jpg" width="800px" height="1273px"/>
     <zone points="22,545 22,1248 757,1248 757,545" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="84,588 129,604 178,582 292,614 490,569 579,598 625,573 762,587 749,518 587,499 508,542 370,499 142,515 83,494" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="33,654 297,637 389,667 528,635 596,657 648,631 746,630 745,590 706,603 626,573 532,600 434,576 391,606 347,588 290,615 192,587 81,624 32,605" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1283" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1283px"/>
+    <graphic url="Kasten_blau_45_15_0774.jpg" width="800px" height="1283px"/>
     <zone points="52,347 52,681 773,681 773,347" rendition="TextRegion" xml:id="facs_2_r2">
         <zone points="49,379 171,407 251,379 628,400 778,371 777,348 614,349 507,318 48,331" rendition="Line" xml:id="facs_2_r2l1"/>
         <zone points="46,437 282,438 344,461 442,435 490,462 550,444 642,462 704,435 703,373 560,407 490,382 327,411 198,386 165,412 46,411" rendition="Line" xml:id="facs_2_r2l2"/>
@@ -122,9 +124,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="136 r" xml:id="Kasten_blau_45_15_0773.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>hr</abbr></choice> vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ewer Durchlaucht bede <choice><expan>gnädige</expan><abbr>g</abbr></choice> schreiben vom 19ten dis hab mit
@@ -138,7 +140,7 @@
       <lb facs="#facs_1_r1l10" n="N010"/>wirt mit der nachricht, das vnsre reis bis
       <lb facs="#facs_1_r1l11" n="N011"/>auf könftigen freitag aufgeschoben <supplied>wird</supplied>, so werde mit
       <lb facs="#facs_1_r1l12" n="N012"/>selbigem ausfürlich alles <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> beantworten,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="136 v" xml:id="Kasten_blau_45_15_0774.jpg"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l1" n="N001"/>hoffe, ewer Durchlaucht werden mirs nit in vngnaden nemmen.
       <lb facs="#facs_2_r2l2" n="N002"/>Due mich in dero <choice><expan>gnade</expan><abbr>g</abbr></choice> <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> b<supplied>e</supplied>f<supplied>e</supplied>hlen, die ich st<supplied>er</supplied>ben

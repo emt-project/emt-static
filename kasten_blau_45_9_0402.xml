@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">2. Brief mit dem gleichen Datum 21.03.1685</ab>
+         <ab type="notes">2. Brief mit dem gleichen Datum 21.03.1685</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1188" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1188px"/>
+    <graphic url="Kasten_blau_45_9_0402.jpg" width="800px" height="1188px"/>
     <zone points="56,203 56,1187 783,1187 783,203" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="173,247 310,265 356,230 415,258 475,242 493,258 533,241 636,253 672,232 752,250 779,244 779,184 550,205 506,182 418,197 380,183 173,220" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="89,292 139,283 190,312 308,283 510,303 631,275 718,296 776,279 776,242 309,266 255,243 201,254 88,200" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -115,7 +117,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1191" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1191px"/>
+    <graphic url="Kasten_blau_45_9_0401.jpg" width="800px" height="1191px"/>
     <zone points="21,70 21,1179 784,1179 784,70" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="54,105 147,98 181,121 336,105 380,124 448,99 517,121 595,91 688,121 750,106 750,63 189,55 151,83 116,65 54,80" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="47,146 630,139 780,161 771,104 663,124 47,107" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -145,9 +147,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="238 r" xml:id="Kasten_blau_45_9_0402.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Weil ich glaub, das der Palfi ehender als die post
@@ -168,7 +170,7 @@
       <lb facs="#facs_1_r1l17" n="N017"/>tlich wirt können von der reichs canzlei anemmen,
       <lb facs="#facs_1_r1l18" n="N018"/>sonst wirt er müeßen die tax doppelt geben, in
       <lb facs="#facs_1_r1l19" n="N019"/>der hoff canzley vnd reichskanzley. Wegen des Reichenbach</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="238 v" xml:id="Kasten_blau_45_9_0401.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>werden ewer Durchlaucht schon empfangen haben die versicherung,
       <lb facs="#facs_2_r1l2" n="N002"/>solten ewer Durchlaucht aber ein mehrers verlangen, wirt es auch

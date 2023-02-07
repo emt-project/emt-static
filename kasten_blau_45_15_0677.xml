@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1246" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1246px"/>
+    <graphic url="Kasten_blau_45_15_0677.jpg" width="800px" height="1246px"/>
     <zone points="51,432 51,1226 768,1226 768,432" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="97,479 190,499 248,481 283,502 396,456 490,485 566,457 611,486 769,465 768,402 599,385 405,426 208,403 97,451" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="68,532 174,525 240,553 322,522 445,546 502,523 752,516 751,480 705,500 669,475 637,497 599,478 462,498 405,464 201,504 67,454" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1235" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1235px"/>
+    <graphic url="Kasten_blau_45_15_0678.jpg" width="800px" height="1235px"/>
     <zone points="64,80 64,1135 798,1135 798,80" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="69,135 253,136 308,109 593,151 703,115 748,143 775,133 777,35 71,16" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="66,190 167,172 310,204 497,174 551,201 612,172 709,171 765,192 771,142 694,129 560,159 424,128 325,153 291,129 209,157 145,138 65,154" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -131,7 +133,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1257" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1257px"/>
+    <graphic url="Kasten_blau_45_15_0679.jpg" width="800px" height="1257px"/>
     <zone points="14,88 14,1202 673,1202 673,88" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="32,140 115,157 163,126 271,165 354,122 475,164 623,125 623,97 584,88 419,75 312,89 220,68 138,106 32,67" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="138,251 358,250 376,234 386,233 386,177 381,177 375,181 363,179 355,182 135,182" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -147,9 +149,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="75 r" xml:id="Kasten_blau_45_15_0677.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtige <unclear>Cuhrfürst,</unclear> mein herzallerliebster <unclear>herr</unclear> <unclear>vatter</unclear>
       <lb facs="#facs_1_r1l2" n="N002"/>Mit der gelegenheit, das der <choice><expan>Grav</expan><abbr>G</abbr></choice> von Starenberg wider
@@ -164,7 +166,7 @@
       <lb facs="#facs_1_r1l11" n="N011"/>gewest, auch die zwehn breüt. Gestern wahr des
       <lb facs="#facs_1_r1l12" n="N012"/>Starenbergs sein hochzeit vnd heünt die heim-
       <lb facs="#facs_1_r1l13" n="N013"/>führung. Nachmitag gehn mihr auf Laxenburg.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="75 v" xml:id="Kasten_blau_45_15_0678.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Iezt gleich empfange ewer Durchlaucht <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom 29ten
       <lb facs="#facs_2_r1l2" n="N002"/>passato. Weil der Starenberg in denen punctis, so darin <supplied>erwähnt</supplied>,
@@ -184,7 +186,7 @@
       <lb facs="#facs_2_r1l16" n="N016"/>landen, also will ich ewer Durchlaucht nit lenger
       <lb facs="#facs_2_r1l17" n="N017"/>mit meinen lehren schreiben vngelegenheit
       <lb facs="#facs_2_r1l18" n="N018"/>machen, sondren mich <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> in</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="76 r" xml:id="Kasten_blau_45_15_0679.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>dero gnad bef<supplied>e</supplied>hlen, die ich sterben werde
       <lb facs="#facs_3_r1l2" n="N002"/>ewer Durchlaucht

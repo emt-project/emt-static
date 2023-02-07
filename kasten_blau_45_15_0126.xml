@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datierung "1686": dürfte sich verschrieben haben; erwähnt Portugal, dessen König Peter II. ihre Schwester Marie Sophie 2. Juli 1687 in Heidelberg per Prokuration heiratete</ab>
+         <ab type="notes">Datierung "1686": dürfte sich verschrieben haben; erwähnt Portugal, dessen König Peter II. ihre Schwester Marie Sophie 2. Juli 1687 in Heidelberg per Prokuration heiratete</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1228" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1228px"/>
+    <graphic url="Kasten_blau_45_15_0126.jpg" width="800px" height="1228px"/>
     <zone points="21,188 21,1224 789,1224 789,188" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="151,227 242,243 314,221 346,236 786,220 786,154 624,163 579,192 329,142 182,176 151,161" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="111,304 148,311 201,269 554,274 596,297 764,276 763,226 560,249 518,228 354,230 317,256 208,260 110,222" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1229" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1229px"/>
+    <graphic url="Kasten_blau_45_15_0127.jpg" width="800px" height="1229px"/>
     <zone points="18,50 18,1227 787,1227 787,50" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="44,107 268,88 468,113 497,91 765,84 764,6 43,5" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="47,156 84,166 137,139 215,169 330,136 599,132 730,166 769,152 769,107 536,97 498,115 271,89 214,114 149,95 89,122 47,112" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -141,7 +143,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1276" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1276px"/>
+    <graphic url="Kasten_blau_45_15_0128.jpg" width="800px" height="1276px"/>
     <zone points="16,49 16,1230 767,1230 767,49" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="23,87 265,70 342,97 566,72 728,89 764,83 764,-2 469,20 23,6" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="16,134 237,124 390,153 758,120 757,83 617,71 470,105 283,72 157,104 15,89" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -152,9 +154,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="50 r2" xml:id="Kasten_blau_45_15_0126.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich hab mit <choice><expan>vnterdehnigstem</expan><abbr>vnd</abbr></choice> respect dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom
@@ -173,7 +175,7 @@
       <lb facs="#facs_1_r1l15" n="N015"/>zue poussiren. Ich förcht nuhr die andre, die wirt
       <lb facs="#facs_1_r1l16" n="N016"/>wehren vnd verhinderen, waß sie kan, vnd ich
       <lb facs="#facs_1_r1l17" n="N017"/>förcht, sie kan mehr als guett ist. Das hantbrifel</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="50 v2" xml:id="Kasten_blau_45_15_0127.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>an Cuhr Mainz werden ewer Durchlaucht schon empfangen haben.
       <lb facs="#facs_2_r1l2" n="N002"/>Wegen der composition vom Minati hab ich schon bey
@@ -198,7 +200,7 @@
       <lb facs="#facs_2_r1l20" n="N021"/>Wien den 9ten jener 168<unclear>6</unclear>
       <lb facs="#facs_2_line_1642415793275_193" n="N022"/>Schikh hirbey auch ein brif von der Aya. Sie hatte
       <lb facs="#facs_2_r1l22" n="N023"/>die <unclear>Madlen</unclear> gebeten, sie soll ihr die überschrift machen, sie weis einmahl nit,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="51 r2" xml:id="Kasten_blau_45_15_0128.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>vnd diese hatts auch nit gewist. So hab ich mich <unclear>glei</unclear>
       <lb facs="#facs_3_r1l2" n="N002"/>vnterstanden vnd ihn ewer Durchlaucht so geschikt. Sonst hats ihr

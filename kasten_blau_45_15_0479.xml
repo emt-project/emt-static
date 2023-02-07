@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1183" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1183px"/>
+    <graphic url="Kasten_blau_45_15_0479.jpg" width="800px" height="1183px"/>
     <zone points="35,369 35,1171 759,1171 759,369" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="93,434 185,453 295,426 560,438 660,402 711,413 760,401 756,312 340,330 255,381 128,373 89,349" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="72,532 134,506 438,496 556,465 600,487 766,471 762,413 729,409 540,452 381,426 68,457" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1172" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1172px"/>
+    <graphic url="Kasten_blau_45_15_0480.jpg" width="800px" height="1172px"/>
     <zone points="17,0 17,51 28,51 28,0" rendition="TextRegion" xml:id="facs_2_r1">
       </zone>
     <zone points="54,89 54,1084 787,1084 787,89" rendition="TextRegion" xml:id="facs_2_r2">
@@ -132,7 +134,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1216" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1216px"/>
+    <graphic url="Kasten_blau_45_15_0481.jpg" width="800px" height="1216px"/>
     <zone points="8,69 8,1169 763,1169 763,69" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="21,139 103,112 232,130 278,100 319,122 403,99 595,118 645,89 722,131 767,113 765,15 19,35" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="13,189 177,191 245,165 272,189 387,153 422,172 524,150 747,166 755,98 573,104 541,126 261,111 195,147 107,116 11,148" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -159,9 +161,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="269 r" xml:id="Kasten_blau_45_15_0479.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>In der hoffnung, das sich ewer Durchlaucht in der gesundtheit
@@ -176,7 +178,7 @@
       <lb facs="#facs_1_r1l11" n="N011"/>können, gott aber ist alles möglich, auf den verlaß
       <lb facs="#facs_1_r1l12" n="N012"/>ich mich festiglich. Aus Polen hab ich nachricht, das
       <lb facs="#facs_1_r1l13" n="N013"/>die Sapien meins <choice><expan>bruders</expan><abbr>b</abbr></choice> Carl gemahlin <choice><expan>Liebden</expan><abbr>Ld</abbr></choice> guetter zu ihrer</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="169 v" xml:id="Kasten_blau_45_15_0480.jpg"/>
     <ab facs="#facs_2_r1"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l1" n="N001"/>protection genommen gegen den König. Es werden auch
@@ -196,7 +198,7 @@
       <lb facs="#facs_2_r2l15" n="N015"/>hör, ist wegen seiner krankheit nit in stant,
       <lb facs="#facs_2_r2l16" n="N016"/>das er dise fonction verichten kan. Ich hab
       <lb facs="#facs_2_r2l17" n="N017"/>aber dem Hoffkanzler gesacht, er soll antworten,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="270 r" xml:id="Kasten_blau_45_15_0481.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>das, weil sie hir weiters niks daruon gemelt hetten,
       <lb facs="#facs_3_r1l2" n="N002"/>so hett man nit glaubt, das der Cuhrfürst mehr

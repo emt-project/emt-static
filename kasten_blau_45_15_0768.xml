@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1230" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1230px"/>
+    <graphic url="Kasten_blau_45_15_0768.jpg" width="800px" height="1230px"/>
     <zone points="35,421 35,1213 763,1213 763,421" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="92,482 206,519 248,489 306,503 600,451 769,453 767,418 675,403 558,426 489,411 445,433 335,416 234,443 88,408" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="64,565 160,573 238,531 314,555 378,529 412,551 446,528 554,547 631,512 724,528 770,518 767,470 617,462 566,493 491,474 205,521 58,470" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,9 +114,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="132 r" xml:id="Kasten_blau_45_15_0768.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfü<supplied>r</supplied>st, mein herzallerlibster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Mitt diser occasion, das die von Starenberg hinauf-

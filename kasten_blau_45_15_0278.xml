@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1247" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1247px"/>
+    <graphic url="Kasten_blau_45_15_0278.jpg" width="800px" height="1247px"/>
     <zone points="19,382 19,1238 762,1238 762,382" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="225,420 347,442 412,443 474,412 523,439 622,421 752,437 751,387 668,375 622,348 224,369" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="81,494 318,494 395,471 750,480 750,437 692,427 515,437 461,413 387,453 82,394" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -110,7 +112,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1215" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1215px"/>
+    <graphic url="Kasten_blau_45_15_0279.jpg" width="800px" height="1215px"/>
     <zone points="53,69 53,1200 797,1200 797,69" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="89,148 137,121 176,137 308,111 385,135 636,96 762,106 763,55 560,53 441,78 327,48 251,70 86,59" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="71,183 402,184 459,154 570,148 651,169 753,152 751,106 677,92 572,129 427,115 352,138 277,115 69,142" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -137,7 +139,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1265" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1265px"/>
+    <graphic url="Kasten_blau_45_15_0280.jpg" width="800px" height="1265px"/>
     <zone points="11,55 11,1251 773,1251 773,55" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="43,84 132,109 268,72 368,74 408,103 473,78 565,99 720,87 720,36 501,51 259,12 43,18" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="38,129 82,122 109,150 195,118 617,152 762,123 763,81 696,109 603,82 563,103 530,76 412,103 363,73 218,76 133,109 39,86" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -164,7 +166,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1228" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1228px"/>
+    <graphic url="Kasten_blau_45_15_0281.jpg" width="800px" height="1228px"/>
     <zone points="38,68 38,1216 776,1216 776,68" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="54,131 147,103 227,139 352,100 445,135 766,98 765,68 728,52 581,84 529,46 461,38 250,66 52,45" rendition="Line" xml:id="facs_4_r1l1"/>
         <zone points="52,173 297,192 526,152 579,172 688,146 726,160 752,146 752,105 680,95 450,136 353,102 250,142 142,124 51,142" rendition="Line" xml:id="facs_4_r1l2"/>
@@ -196,9 +198,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="147 r" xml:id="Kasten_blau_45_15_0278.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich sage ewer Durchlaucht <choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> dankh vohr bede dero <choice><expan>gnädigste</expan><abbr>g</abbr></choice>
@@ -215,7 +217,7 @@
       <lb facs="#facs_1_line_1639478076221_4075" n="N013"/>nemmen due, das sich ewer Durchlaucht in guettem wohlstant
       <lb facs="#facs_1_r1l18" n="N014"/>befinden. Das zue Cöllen die wahl so übel abgeloffen,
       <lb facs="#facs_1_r1l19" n="N015"/>wirt gott schon ein mittel schiken. Vnterdeßen duen</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="147 v" xml:id="Kasten_blau_45_15_0279.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>ihr Mayestät niks vnterlaßen, auf Rohm vnd an die
       <lb facs="#facs_2_r1l2" n="N002"/>Cuhrfürsten ist schon geschriben worden, wirt auch zue
@@ -239,7 +241,7 @@
       <lb facs="#facs_2_r1l21" n="N020"/>der <choice><expan>Cuhrfürst</expan><abbr>Cuhrf</abbr></choice> hatt dem Fuker gesacht, Wie kan ich auf Wien gehen,
       <lb facs="#facs_2_r1l22" n="N021"/>ich derf mich dort nit sehen laßen, ich bin in ein
       <lb facs="#facs_2_r1l23" n="N022"/>imbroglio, hab ein brief an die Caunizin an die Fehlen</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="148 r" xml:id="Kasten_blau_45_15_0280.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>überschriben, vnd ein an die Vehlen der Kaunizin überschriben,
       <lb facs="#facs_3_r1l2" n="N002"/>so derf ich mich bey keiner sehen laßen. Er schaut halt
@@ -263,7 +265,7 @@
       <lb facs="#facs_3_r1l20" n="N020"/>mit den cerimonialien soll halten, also müeße
       <lb facs="#facs_3_r1l21" n="N021"/>sie es biß in Portugal verschieben, das sie
       <lb facs="#facs_3_r1l24" n="N022"/>sich dort disfals informiren könne, vnd darum hatt sie</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="148 v" xml:id="Kasten_blau_45_15_0281.jpg"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/>vohr der desponsation als cuhrpfalzische Prinzeßin, aber nit dar-
       <lb facs="#facs_4_r1l2" n="N002"/>nach als Königin geschriben, auf welchen brief die Königin

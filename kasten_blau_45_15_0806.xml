@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datum: Merz korrigiert aus Feb -- deshalb chronologische Abfolge der Briefe hier durcheinander</ab>
+         <ab type="notes">Datum: Merz korrigiert aus Feb -- deshalb chronologische Abfolge der Briefe hier durcheinander</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1228" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1228px"/>
+    <graphic url="Kasten_blau_45_15_0806.jpg" width="800px" height="1228px"/>
     <zone points="15,397 15,1198 757,1198 757,397" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="121,450 260,449 309,472 447,427 569,460 660,430 762,429 761,355 577,370 517,354 404,384 303,359 236,383 120,365" rendition="Line" xml:id="facs_1_r2l1"/>
         <zone points="49,508 103,494 292,519 365,482 441,509 582,479 754,483 752,443 667,430 525,467 417,456 226,481 156,442 93,441 48,468" rendition="Line" xml:id="facs_1_r2l2"/>
@@ -110,7 +112,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1244" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1244px"/>
+    <graphic url="Kasten_blau_45_15_0807.jpg" width="800px" height="1244px"/>
     <zone points="23,57 23,1232 773,1232 773,57" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="32,127 95,92 336,126 383,96 520,90 576,124 767,110 766,60 690,43 31,65" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="33,165 188,153 300,176 408,155 591,185 723,152 722,107 624,102 581,126 401,98 336,125 253,105 210,137 103,109 32,127" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -135,9 +137,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="154 r" xml:id="Kasten_blau_45_15_0806.jpg"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerlibster herr vatter
       <lb facs="#facs_1_r2l2" n="N002"/>Ewer Durchlaucht <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom 10ten dis hab mit <choice><expan>vnterdehnigstem</expan><abbr>vnt</abbr></choice> res-
@@ -153,7 +155,7 @@
       <lb facs="#facs_1_r2l12" n="N012"/>engelendischer cavalier durch auf Venedig, welchen der
       <lb facs="#facs_1_r2l13" n="N013"/>König Wilhelm gahr in Türkey schikt, sie zum friden
       <lb facs="#facs_1_r2l14" n="N014"/>zue persuadiren. Der hab gesagt, das er erst 11 dag</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="154 v" xml:id="Kasten_blau_45_15_0807.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>erst aus Engelandt sey, vnd die Königin sey mit
       <lb facs="#facs_2_r1l2" n="N002"/>gutem windt abgesegelt. Hingegen geben die

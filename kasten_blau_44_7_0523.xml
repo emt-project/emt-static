@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Abschrift</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Abschrift "Copia" "aigenmächtig also abgangen" Weinheim</ab>
+         <ab type="notes">Abschrift "Copia" "aigenmächtig also abgangen" Weinheim</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1205" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1205px"/>
+    <graphic url="Kasten_blau_44_7_0523.jpg" width="800px" height="1205px"/>
     <zone points="35,28 35,1134 768,1134 768,28" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="31,66 50,61 60,50 71,49 76,54 91,51 97,56 105,51 110,55 117,49 135,57 148,49 152,52 170,40 170,15 147,20 125,19 115,13 30,29" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="68,93 75,92 85,81 89,81 92,76 96,77 100,73 109,75 112,73 115,76 121,75 118,51 109,54 96,48 95,51 84,52 80,55 71,50 63,51" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -123,7 +125,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1229" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1229px"/>
+    <graphic url="Kasten_blau_44_7_0524.jpg" width="800px" height="1229px"/>
     <zone points="112,0 112,1151 797,1151 797,0" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="715,23 720,24 723,21 726,20 734,26 740,26 743,-4 742,-5 732,-5 731,-6 718,-7" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="142,99 221,99 249,122 305,98 475,96 502,120 527,100 780,109 780,61 692,70 652,45 590,74 388,44 142,62" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -154,7 +156,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1235" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1235px"/>
+    <graphic url="Kasten_blau_44_7_0525.jpg" width="800px" height="1235px"/>
     <zone points="101,7 101,1135 767,1135 767,7" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="727,41 734,40 739,45 749,50 756,47 763,51 769,51 769,10 748,10 742,14 740,12 727,12" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="114,104 240,84 402,100 732,87 753,82 752,43 590,66 541,46 433,72 369,39 244,44 113,83" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -180,9 +182,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="289 r" xml:id="Kasten_blau_44_7_0523.jpg" ed="74 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>o
       <lb facs="#facs_1_r1l2" n="N002"/>EMT
@@ -211,7 +213,7 @@
       <lb facs="#facs_1_r1l25" n="N025"/>ccompegefebeerlen sodzudes
       <lb facs="#facs_1_r1l26" n="N026"/>bdfligen venath senwirt auch alsto gleich
       <lb facs="#facs_1_r1l27" n="N027"/>E</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="289 v" xml:id="Kasten_blau_44_7_0524.jpg" ed="74 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>
       <lb facs="#facs_2_r1l2" n="N002"/>über defrkh vnd vlerbirg per lerten vnd zie
@@ -239,7 +241,7 @@
       <lb facs="#facs_2_r1l24" n="N024"/>fufrsin von hieralhbrichen vnde bil bey
       <lb facs="#facs_2_r1l25" n="N025"/>mag allrif d  vmb den mtteg anlangen
       <lb facs="#facs_2_r1l26" n="N026"/>EMT</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="290 r" xml:id="Kasten_blau_44_7_0525.jpg" ed="76 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>M
       <lb facs="#facs_3_r1l2" n="N002"/>werce bealeitse von demen abe ie

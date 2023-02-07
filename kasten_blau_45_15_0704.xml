@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Liegt zwischen 1689.05.29-1689.06.02</ab>
+         <ab type="notes">Liegt zwischen 1689.05.29-1689.06.02</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1245" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1245px"/>
+    <graphic url="Kasten_blau_45_15_0704.jpg" width="800px" height="1245px"/>
     <zone points="30,76 30,1239 760,1239 760,76" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="73,484 190,496 302,474 347,494 469,455 548,472 747,459 745,408 522,385 436,412 261,405 213,435 71,436" rendition="Line" xml:id="facs_1_r1l4"/>
         <zone points="67,526 337,527 391,502 483,534 531,497 577,496 767,523 764,471 711,455 349,493 301,474 238,474 216,497 65,479" rendition="Line" xml:id="facs_1_r1l5"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1205" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1205px"/>
+    <graphic url="Kasten_blau_45_15_0705.jpg" width="800px" height="1205px"/>
     <zone points="85,75 85,1136 779,1136 779,75" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="95,107 174,133 214,105 322,105 360,127 422,101 603,124 663,99 734,106 734,72 634,56 591,74 535,49 407,69 95,58" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="84,163 196,154 223,179 283,167 301,183 493,152 741,151 740,122 635,107 604,125 505,110 420,136 334,119 277,139 83,116" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -139,7 +141,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1260" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1260px"/>
+    <graphic url="Kasten_blau_45_15_0706.jpg" width="800px" height="1260px"/>
     <zone points="25,1128 25,1259 53,1259 53,1128" rendition="TextRegion" xml:id="facs_3_r1">
       </zone>
     <zone points="31,59 31,1202 736,1202 736,59" rendition="TextRegion" xml:id="facs_3_r2">
@@ -161,9 +163,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="92 r" xml:id="Kasten_blau_45_15_0704.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l4" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l5" n="N002"/>Ewer Durchlaucht bede <choice><expan>gnädige</expan><abbr>g</abbr></choice> schreiben vom bede vom 13ten dis hab ich vohrgeste<supplied>r</supplied>n,
@@ -181,7 +183,7 @@
       <lb facs="#facs_1_r1l19" n="N014"/>vnterlaßen, ihr nach ewer Durchlaucht <choice><expan>gnädigstem</expan><abbr>g</abbr></choice> befehl zue schreiben, wie
       <lb facs="#facs_1_r1l20" n="N015"/>woll ich glaub, das izt zimlich schpaht wi<supplied>r</supplied>t sein vnd der
       <lb facs="#facs_1_r1l21" n="N016"/>König schon resoluirt wirt haben, welche sie haben wollen,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="92 v" xml:id="Kasten_blau_45_15_0705.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>welches sie nachg<supplied>e</supplied>hns schwerlich endren werden wollen.
       <lb facs="#facs_2_r1l2" n="N002"/>Die Königin in Schpanien, so vill ich in der eil
@@ -205,7 +207,7 @@
       <lb facs="#facs_2_r1l21" n="N020"/>zue empfangen vnd auch, das er beßer kan von
       <lb facs="#facs_2_r1l22" n="N021"/>meinen schweste<supplied>r</supplied>n relation geben, wan er sie gesehn
       <lb facs="#facs_2_r1l23" n="N022"/>hatt, dan die Königin wirt in sehr examiniren wollen.</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="93 r" xml:id="Kasten_blau_45_15_0706.jpg"/>
     <ab facs="#facs_3_r1"/>
     <ab facs="#facs_3_r2">
       <lb facs="#facs_3_r2l1" n="N001"/>Aber ich mein, bis er hinein kombt, wirt die

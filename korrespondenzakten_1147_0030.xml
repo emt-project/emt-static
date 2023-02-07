@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datierung unsicher, weil Monat unleserlich und Presentatum-Vermerk auf April hinweist</ab>
+         <ab type="notes">Datierung unsicher, weil Monat unleserlich und Presentatum-Vermerk auf April hinweist</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1234" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1234px"/>
+    <graphic url="Korrespondenzakten_1147_0030.jpg" width="800px" height="1234px"/>
     <zone points="18,33 18,1233 773,1233 773,33" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="23,100 33,103 61,84 94,100 138,83 153,93 165,84 213,89 210,38 199,34 176,32 165,41 148,42 132,35 113,39 105,31 86,39 75,33 21,57" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="79,392 153,388 229,417 295,389 386,419 446,386 480,405 691,399 763,382 763,345 584,362 460,346 362,303 77,313" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1221" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1221px"/>
+    <graphic url="Korrespondenzakten_1147_0031.jpg" width="800px" height="1221px"/>
     <zone points="33,61 33,1214 798,1214 798,61" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="36,104 113,124 191,90 251,122 343,88 438,105 520,86 591,119 724,86 728,46 247,47 35,61" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="41,158 435,155 477,132 552,152 585,130 731,146 730,96 591,119 472,88 378,112 282,98 249,123 195,91 165,119 40,119" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -143,7 +145,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1232" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1232px"/>
+    <graphic url="Korrespondenzakten_1147_0032.jpg" width="800px" height="1232px"/>
     <zone points="18,0 18,959 769,959 769,0" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="86,699 132,704 154,683 210,700 230,680 278,669 320,681 394,677 392,641 360,627 307,626 274,641 179,620 82,627" rendition="Line" xml:id="facs_3_r1l4"/>
         <zone points="58,688 119,715 154,683 228,706 274,673 322,691 350,673 419,698 419,723 395,720 60,755" rendition="Line" xml:id="facs_3_line_1656940000124_458"/>
@@ -157,9 +159,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="21 r" xml:id="Korrespondenzakten_1147_0030.jpg" ed="3 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/><unclear>9ter maij 1690</unclear>
       <lb facs="#facs_1_r1l2" n="N002"/>Durchleüchtiger Fürst, herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> brueder 
@@ -178,7 +180,7 @@
       <lb facs="#facs_1_r1l15" n="N015"/>das angestifft ist, aber mit nechstem sols geschen.
       <lb facs="#facs_1_r1l16" n="N016"/>Das dero Liebden den Wachtendockh angenommen, weils ihr Durchlaucht
       <lb facs="#facs_1_r1l17" n="N017"/><choice><expan>herr</expan><abbr>h</abbr></choice> vatter auch gern gesehn, habens gar recht gedahn. Ich hoff, <supplied>er</supplied></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="21 v" xml:id="Korrespondenzakten_1147_0031.jpg" ed="3 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>werd sich befleisen, dero Liebden woll zue dienen, ein gutter
       <lb facs="#facs_2_r1l2" n="N002"/>economus ist er, vnd den haben dero Liebden zum meisten
@@ -205,7 +207,7 @@
       <lb facs="#facs_2_line_1656939731154_411" n="N023"/>bestellen. Ich förcht, ich hab den nahmen gefehlt,
       <lb facs="#facs_2_r1l22" n="N024"/>weis mich nit mehr recht zue erinnern vnd hab ihren brif schon
       <lb facs="#facs_2_r1l23" n="N025"/>verbrendt.</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="3" xml:id="Korrespondenzakten_1147_0032.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l4" n="N001"/>Ihr <choice><expan>Liebden</expan><abbr>Ld</abbr></choice> Johan Wilhelm,
       <lb facs="#facs_3_line_1656940000124_458" n="N002"/>Pfalzgrauen bey Reyhn,
@@ -217,11 +219,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -229,5 +227,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

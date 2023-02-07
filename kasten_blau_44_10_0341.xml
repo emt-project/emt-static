@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift. Vermerk "abgangen abends vmb siben Uhren"</ab>
+         <ab type="notes">Konzept mit Unterschrift. Vermerk "abgangen abends vmb siben Uhren"</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1319" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1319px"/>
+    <graphic url="Kasten_blau_44_10_0341.jpg" width="800px" height="1319px"/>
     <zone points="43,42 43,1277 798,1277 798,42" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="43,75 79,75 116,75 153,76 189,76 226,77 263,77 299,78 336,78 373,79 410,79 446,79 483,79 520,79 556,79 593,79 630,78 666,77 703,76 740,74 777,72 777,42 740,44 703,46 666,47 630,48 593,49 556,49 520,49 483,49 446,49 410,49 373,49 336,48 299,48 263,47 226,47 189,46 153,46 116,45 79,45 43,45" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="44,143 74,145 105,147 136,148 167,148 198,149 228,148 259,148 290,147 321,146 352,145 382,144 413,144 444,143 475,142 506,142 536,142 567,142 598,143 629,145 660,147 660,117 629,115 598,113 567,112 536,112 506,112 475,112 444,113 413,114 382,114 352,115 321,116 290,117 259,118 228,118 198,119 167,118 136,118 105,117 74,115 44,113" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -132,7 +134,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1311" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1311px"/>
+    <graphic url="Kasten_blau_44_10_0342.jpg" width="800px" height="1311px"/>
     <zone points="76,28 76,1305 798,1305 798,28" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="630,58 649,58 649,28 630,28" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="384,127 409,127 434,127 460,127 485,127 511,127 536,127 562,127 587,127 613,127 638,127 664,127 689,127 715,127 740,126 766,126 766,96 740,96 715,97 689,97 664,97 638,97 613,97 587,97 562,97 536,97 511,97 485,97 460,97 434,97 409,97 384,97" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -174,7 +176,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1348" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1348px"/>
+    <graphic url="Kasten_blau_44_10_0349.jpg" width="800px" height="1348px"/>
     <zone points="281,24 281,1274 767,1274 767,24" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="731,57 760,60 760,27 731,24" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="374,115 399,115 424,114 449,114 474,114 500,113 525,113 550,113 575,113 600,113 626,113 651,113 676,114 701,114 726,114 752,115 752,85 726,84 701,84 676,84 651,83 626,83 600,83 575,83 550,83 525,83 500,83 474,84 449,84 424,84 399,85 374,85" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -192,9 +194,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="66 r" xml:id="Kasten_blau_44_10_0341.jpg" ed="210 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/>
@@ -232,7 +234,7 @@
       <lb facs="#facs_1_r1l34" n="N034"/>
       <lb facs="#facs_1_r1l35" n="N035"/>
       <lb facs="#facs_1_r1l36" n="N036"/></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="66 v" xml:id="Kasten_blau_44_10_0342.jpg" ed="210 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>
       <lb facs="#facs_2_r1l2" n="N002"/>
@@ -271,7 +273,7 @@
       <lb facs="#facs_2_r1l35" n="N035"/>
       <lb facs="#facs_2_r1l36" n="N036"/>
       <lb facs="#facs_2_r1l37" n="N037"/></ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="70 r" xml:id="Kasten_blau_44_10_0349.jpg" ed="214 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>
       <lb facs="#facs_3_r1l2" n="N002"/>
@@ -287,13 +289,13 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__13">
                   <placeName>Düsseldorf</placeName>

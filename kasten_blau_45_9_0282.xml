@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1188" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1188px"/>
+    <graphic url="Kasten_blau_45_9_0282.jpg" width="800px" height="1188px"/>
     <zone points="18,-22 18,1165 790,1165 790,-22" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="96,193 142,163 243,182 330,151 417,171 663,140 701,159 761,146 760,90 658,82 430,116 238,95 180,125 94,100" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="61,216 156,202 335,229 361,201 433,218 767,190 765,155 663,140 417,172 321,154 255,183 163,163 60,193" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -116,7 +118,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1200" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1200px"/>
+    <graphic url="Kasten_blau_45_9_0283.jpg" width="800px" height="1200px"/>
     <zone points="28,74 28,1192 797,1192 797,74" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="76,128 239,102 781,115 779,45 750,41 698,69 587,56 468,85 395,64 75,82" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="64,186 136,158 272,189 469,161 596,184 685,147 787,163 786,112 743,107 679,128 576,106 433,132 362,113 220,141 149,114 63,132" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -141,7 +143,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1216" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1216px"/>
+    <graphic url="Kasten_blau_45_9_0284.jpg" width="800px" height="1216px"/>
     <zone points="15,59 15,1208 775,1208 775,59" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="37,98 194,87 333,109 366,86 415,116 486,89 546,113 582,87 748,90 748,54 651,42 540,66 309,37 37,68" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="27,145 216,168 663,127 754,143 774,140 773,97 414,117 159,92 26,128" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -170,9 +172,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="165 r" xml:id="Kasten_blau_45_9_0282.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l3" n="N002"/>Beyde ewer Durchlaucht <choice><expan>gnädige</expan><abbr>g</abbr></choice> schreiben vom 26ten <add>maij</add> durch den Kinski vnd vom
@@ -195,7 +197,7 @@
       <lb facs="#facs_1_r1l20" n="N019"/>starken competenten, dan ewer Durchlaucht werden ohne zweifel schon
       <lb facs="#facs_1_line_1637070461478_4587" n="N020"/>Wegen <choice><expan>bruder</expan><abbr>br</abbr></choice> Carl bezie mich <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> auf mein vohriges, ewer Durchlaucht glauben gewis, das ihr Mayestät
       <lb facs="#facs_1_line_1637070474955_4592" n="N021"/>seiner auf alleweis in <choice><expan>gnaden</expan><abbr>g</abbr></choice> gedenken werden zue ewer Durchlaucht satisfaction.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="165 v" xml:id="Kasten_blau_45_9_0283.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/><choice><expan>gnädigst</expan><abbr>g</abbr></choice> vernommen haben, das die probent, so der Schmißing <choice><expan>seeliger</expan><abbr>seh</abbr></choice>
       <lb facs="#facs_2_r1l2" n="N002"/>gehabt, der Papst des Cuhrfürst in Bayren seinem brudren
@@ -217,7 +219,7 @@
       <lb facs="#facs_2_r1l18" n="N018"/>ewer Durchlaucht werden gesehn haben die puncta, so er vonn ihnen
       <lb facs="#facs_2_r1l19" n="N019"/>begert, es kan niks aroganters vnd vngereimbters
       <lb facs="#facs_2_r1l20" n="N020"/>sein, woh nit, so wills ewer Durchlaucht schiken. Könftigen mitwoch,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="166 r" xml:id="Kasten_blau_45_9_0284.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>wans das wetter zuelast, wolten ihr Mayestät gern widerumb ein
       <lb facs="#facs_3_r1l2" n="N002"/>wehnig luft schepfen vnd das gemseniagen, so sie das vohrige
@@ -244,7 +246,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__32">
+                  <placeName>Linz</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -252,9 +258,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__32">
-                  <placeName>Linz</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

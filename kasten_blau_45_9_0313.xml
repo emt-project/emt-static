@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">berichtet vom Tod Erzh. Leop. Ich hätte 3. Aug. und Linz gelesen: Zeremonialprotokolle: 2. Aug. Enns</ab>
+         <ab type="notes">berichtet vom Tod Erzh. Leop. Ich hätte 3. Aug. und Linz gelesen: Zeremonialprotokolle: 2. Aug. Enns</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1195" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1195px"/>
+    <graphic url="Kasten_blau_45_9_0313.jpg" width="800px" height="1195px"/>
     <zone points="12,195 12,1183 775,1183 775,195" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="131,271 189,251 277,267 366,227 405,252 562,223 697,230 711,180 623,191 502,170 458,191 230,156 128,170" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="97,291 223,285 270,311 307,284 435,282 529,313 607,297 631,314 668,282 751,286 750,244 703,257 652,238 538,268 501,250 331,268 278,239 157,271 96,260" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1172" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1172px"/>
+    <graphic url="Kasten_blau_45_9_0314.jpg" width="800px" height="1172px"/>
     <zone points="43,135 43,996 779,996 779,135" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="67,176 189,189 296,171 324,188 569,155 703,177 754,162 754,130 513,128 437,104 375,136 279,134 66,107" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="71,220 169,240 207,219 322,231 363,208 493,239 573,204 748,215 747,172 70,183" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -137,9 +139,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="184 r" xml:id="Kasten_blau_45_9_0313.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ewer Durchlaucht werden aus meinen vohrigen schreiben so woll
@@ -158,7 +160,7 @@
       <lb facs="#facs_1_r1l15" n="N015"/>zue nemmen. Gott gibt vnd nimbt das seinige, von seiner
       <lb facs="#facs_1_r1l16" n="N016"/>hant ist alles sueß, sein will sey gebenedeit. Mihr seint
       <lb facs="#facs_1_r1l18" n="N017"/>heünt gottlob alle gelükhlich hier ankommen vnd alle</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="184 v" xml:id="Kasten_blau_45_9_0314.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>alle durch seine <choice><expan>gnade</expan><abbr>g</abbr></choice> wohl auf. Mein gröster trost wirt sein,
       <lb facs="#facs_2_r1l2" n="N002"/>wan ich balt die <choice><expan>gnade</expan><abbr>g</abbr></choice> werd haben, ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> zue
@@ -180,7 +182,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__32">
+                  <placeName>Linz</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -188,9 +194,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__32">
-                  <placeName>Linz</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

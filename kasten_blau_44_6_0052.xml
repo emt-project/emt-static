@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Augsburg</ab>
+         <ab type="notes">Augsburg</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1252" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1252px"/>
+    <graphic url="Kasten_blau_44_6_0052.jpg" width="800px" height="1252px"/>
     <zone points="17,59 17,1239 765,1239 765,59" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="62,169 161,155 509,140 710,159 732,167 735,216 714,223 268,252 63,240" rendition="Line" xml:id="facs_1_line_1643377044129_2341"/>
         <zone points="568,164 661,164 678,171 702,155 719,166 741,167 735,97 677,97 662,84 639,83 601,111 563,111" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -119,9 +121,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="37 r" xml:id="Kasten_blau_44_6_0052.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_line_1643377044129_2341" n="N001"/>Bitt, wan die Königin wekh, die brief durch den Kramprecht
       <lb facs="#facs_1_r1l2" n="N002"/>zue bestellen.

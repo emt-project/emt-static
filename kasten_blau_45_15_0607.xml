@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1239" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1239px"/>
+    <graphic url="Kasten_blau_45_15_0607.jpg" width="800px" height="1239px"/>
     <zone points="69,368 69,1200 769,1200 769,368" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="134,467 275,432 456,420 549,443 617,405 745,411 764,402 763,362 683,323 585,351 542,330 424,389 330,334 227,376 130,343" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="105,514 183,488 368,481 396,498 435,477 481,498 565,466 709,475 715,419 539,443 462,420 385,444 276,432 103,464" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1238" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1238px"/>
+    <graphic url="Kasten_blau_45_15_0608.jpg" width="800px" height="1238px"/>
     <zone points="32,213 32,751 763,751 763,213" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="76,194 296,194 487,197 682,201 751,214 751,251 405,281 76,253" rendition="Line" xml:id="facs_2_line_1647613740308_840"/>
         <zone points="58,323 211,302 309,337 363,297 443,334 586,303 701,317 768,300 767,250 719,268 698,251 452,259 397,288 259,262 154,276 128,256 57,281" rendition="Line" xml:id="facs_2_r1l4"/>
@@ -124,9 +126,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="32 r" xml:id="Kasten_blau_45_15_0607.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich kom nuhr, durch dise wehnige <choice><expan>vnterdehnigste</expan><abbr>vt</abbr></choice> zeilen
@@ -141,7 +143,7 @@
       <lb facs="#facs_1_r1l11" n="N011"/>Prag ankommen, wirt als heünt von dort auf-
       <lb facs="#facs_1_r1l12" n="N012"/>brechen, aber gahr langsamb reis<supplied>en</supplied>, glaub nit,
       <lb facs="#facs_1_r1l13" n="N013"/>das sie vohr 14 dagen wirt hir sein. Weil heünt</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="32 v" xml:id="Kasten_blau_45_15_0608.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_line_1647613740308_840" n="N001"/>der caualier comedi schpaht aus worden, so mues
       <lb facs="#facs_2_r1l4" n="N002"/><choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> vmb vergebung bitten, das nit mehr sch<supplied>r</supplied>eibe,
@@ -151,7 +153,7 @@
       <lb facs="#facs_2_r1l8" n="N006"/>ewer Durchlaucht
       <lb facs="#facs_2_r1l10" n="N007"/><choice><expan>vnterdehnigste</expan><abbr>vnt</abbr></choice> <choice><expan>trewgehorsamste</expan><abbr>trwghos</abbr></choice> do<supplied>c</supplied>hter
       <lb facs="#facs_2_r1l11" n="N008"/>EMT
-      <lb facs="#facs_2_r1l9" n="N009"/>Wien den 17ten <choice><expan>feber</expan><abbr>feb</abbr></choice> 1689</ab>
+      <lb facs="#facs_2_r1l9" n="N009"/>Wien den 17ten <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1689</ab>
   </div>
 </body>
 

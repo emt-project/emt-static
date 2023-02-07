@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Zandberg korrigiert aus Zangberg (oder umgekehrt), heißt wohl Zangberg = in Bayern bei Ampfing, also auf Heimreise von München (Zeremonialprotokolle Bild 564/fol.556: kamen nachts nach Ampfing und Zantberg). Schreibpause, weil PW auch nach Augsburg kam (Kaps S. 78)</ab>
+         <ab type="notes">Zandberg korrigiert aus Zangberg (oder umgekehrt), heißt wohl Zangberg = in Bayern bei Ampfing, also auf Heimreise von München (Zeremonialprotokolle Bild 564/fol.556: kamen nachts nach Ampfing und Zantberg). Schreibpause, weil PW auch nach Augsburg kam (Kaps S. 78)</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1298" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1298px"/>
+    <graphic url="Kasten_blau_45_15_0804.jpg" width="800px" height="1298px"/>
     <zone points="31,299 31,1231 765,1231 765,299" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="108,357 366,372 768,336 767,304 706,285 610,302 521,271 469,307 265,278 106,293" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="60,439 128,409 205,430 266,402 376,435 485,394 734,403 732,354 551,344 298,373 56,342" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1281" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1281px"/>
+    <graphic url="Kasten_blau_45_15_0805.jpg" width="800px" height="1281px"/>
     <zone points="45,182 45,1032 763,1032 763,182" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="76,230 154,257 271,224 498,219 524,239 724,220 724,188 647,167 550,185 452,165 405,186 269,163 193,178 116,138 75,142" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="84,279 641,296 750,270 749,230 679,250 545,226 495,252 400,219 322,248 274,225 83,252" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -136,9 +138,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="153 r" xml:id="Kasten_blau_45_15_0804.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster her vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Das leidt hatt mihr negsten die red verhindert, das
@@ -157,7 +159,7 @@
       <lb facs="#facs_1_r1l15" n="N015"/>gottlob guet, heündt haben mihr ein zimlich
       <lb facs="#facs_1_r1l16" n="N016"/>gutten weg gehabt vnd <supplied>sind</supplied> mit dag ins quartir
       <lb facs="#facs_1_r1l17" n="N017"/>kommen. Wüntsche, das vnser Königin auch</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="153 v" xml:id="Kasten_blau_45_15_0805.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>balt glükhlich möge überkommen, verwunder
       <lb facs="#facs_2_r1l2" n="N002"/>mich, das sie nit schreiben, gott geb sein gnad
@@ -174,7 +176,7 @@
       <lb facs="#facs_2_r1l13" n="N013"/>ewer Durchlaucht
       <lb facs="#facs_2_r1l15" n="N014"/><choice><expan>vnterdehnigste</expan><abbr>vnt</abbr></choice> trwghos doc<supplied>h</supplied>ter
       <lb facs="#facs_2_r1l16" n="N015"/>Eleonora
-      <lb facs="#facs_2_r1l14" n="N016"/><unclear>Zangberg</unclear> den 15ten <choice><expan>feber</expan><abbr>feb</abbr></choice> 1690</ab>
+      <lb facs="#facs_2_r1l14" n="N016"/><unclear>Zangberg</unclear> den 15ten <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1690</ab>
   </div>
 </body>
 

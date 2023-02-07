@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1256" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1256px"/>
+    <graphic url="Kasten_blau_45_9_0148.jpg" width="800px" height="1256px"/>
     <zone points="16,150 14,1255 775,1255 777,150" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="70,247 118,254 151,226 338,241 379,220 416,242 455,219 554,216 737,251 738,193 686,193 645,164 578,195 367,147 252,161 186,133 72,141" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="75,283 106,272 155,300 327,279 376,303 521,278 626,309 743,308 744,253 581,227 515,253 438,232 220,252 151,226 76,248" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1250" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1250px"/>
+    <graphic url="Kasten_blau_45_9_0149.jpg" width="800px" height="1250px"/>
     <zone points="61,89 61,1218 777,1218 777,89" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="75,159 746,122 738,74 572,103 537,75 432,84 382,62 295,93 231,59 76,90" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="72,192 143,213 233,188 327,227 469,192 528,191 571,224 683,190 733,201 733,173 469,135 392,162 324,148 276,175 176,146 72,161" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -135,7 +137,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1257" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1257px"/>
+    <graphic url="Kasten_blau_45_9_0150.jpg" width="800px" height="1257px"/>
     <zone points="39,135 41,586 783,591 781,140" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="51,192 256,181 309,211 335,193 534,208 602,187 633,209 711,180 760,190 760,141 700,129 480,155 51,136" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="57,245 171,270 351,260 388,281 492,251 618,279 747,246 745,217 681,225 654,206 522,206 488,231 444,207 57,203" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -150,9 +152,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="85 r" xml:id="Kasten_blau_45_9_0148.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Mitt gröster consolation hab ich aus dero <choice><expan>gnädigem</expan><abbr>g</abbr></choice> schreiben
@@ -171,7 +173,7 @@
       <lb facs="#facs_1_line_1637063561193_2179" n="N015"/>man sich auch wegen des andren richten.
       <lb facs="#facs_1_line_1637063565521_2184" n="N016"/>Wegen Portugal werden ihr Mayestät heüt <seg type="blackening">nechsten</seg>
       <lb facs="#facs_1_line_1637063575536_2197" n="N017"/>ewer Durchlaucht antworten, ob schon die heütigen brief etwas</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="85 v" xml:id="Kasten_blau_45_9_0149.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>schpaht kommen. Es haben aber ihr Mayestät vnd alle
       <lb facs="#facs_2_r1l3" n="N002"/>annoch nit vohr rahtsamb befunden, das mein
@@ -191,7 +193,7 @@
       <lb facs="#facs_2_r1l17" n="N016"/>antrettete. Der Stratman wirt ewer Durchlaucht hierin
       <lb facs="#facs_2_r1l18" n="N017"/>weitleüfiger berichten. Erwarte dero <choice><expan>gnädigen</expan><abbr>g</abbr></choice> befehl,
       <lb facs="#facs_2_r1l19" n="N018"/>vnd weil es schon zimlich schpaht, also mus</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="86 r" xml:id="Kasten_blau_45_9_0150.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/><choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> vmb vergebung bitten, das so kurz schreibe.
       <lb facs="#facs_3_r1l2" n="N002"/>Due mich in ewer Durchlaucht <choice><expan>gnade</expan><abbr>g</abbr></choice> <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> befehlen, werde

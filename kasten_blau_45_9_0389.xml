@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">liegt zwischen 1685.01.12-1685.01.04</ab>
+         <ab type="notes">liegt zwischen 1685.01.12-1685.01.04</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1193" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1193px"/>
+    <graphic url="Kasten_blau_45_9_0389.jpg" width="800px" height="1193px"/>
     <zone points="40,187 40,1185 784,1185 784,187" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="172,239 202,218 290,254 409,226 515,243 772,221 771,177 475,190 390,171 355,188 301,159 171,147" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="128,281 188,274 294,307 355,272 468,292 544,268 599,289 750,266 750,224 550,244 417,226 315,256 241,248 202,218 128,230" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1191" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1191px"/>
+    <graphic url="Kasten_blau_45_9_0390.jpg" width="800px" height="1191px"/>
     <zone points="53,98 53,1186 756,1186 756,98" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="58,138 108,130 181,160 425,132 609,155 759,124 746,92 584,108 528,86 451,104 374,76 318,95 58,75" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="58,192 166,181 366,213 452,179 594,208 639,187 739,203 738,137 716,134 524,163 400,141 177,163 102,129 58,146" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -127,9 +129,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="231 r" xml:id="Kasten_blau_45_9_0389.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Mitt der gelegenheit, das die <choice><expan>Grävin</expan><abbr>Gr</abbr></choice> Hamilton widerumb
@@ -148,7 +150,7 @@
       <lb facs="#facs_1_r1l15" n="N015"/>werde, weil ich niemahlen der lieben Mamer <choice><expan>sehligen</expan><abbr>sehl</abbr></choice> gnuch
       <lb facs="#facs_1_r1l16" n="N016"/>mein dankbarkeit erzeigen kan vnd die Hamilton mihr auch
       <lb facs="#facs_1_r1l18" n="N017"/>vill treü erzeiget hatt. Sie wirt ewer Durchlaucht ein schäntlige schrift </ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="231 v" xml:id="Kasten_blau_45_9_0390.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/><supplied>übermitteln</supplied>, <unclear>das lateinisch</unclear> hatt er erst gelernt, seider er den preceptor
       <lb facs="#facs_2_r1l2" n="N002"/>hatt, mit welchem ich gahr woll zuefriden bin, ist ein

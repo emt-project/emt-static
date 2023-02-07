@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift</ab>
+         <ab type="notes">Konzept mit Unterschrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1251" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1251px"/>
+    <graphic url="Kasten_blau_45_15_0054.jpg" width="800px" height="1251px"/>
     <zone points="70,79 70,1213 788,1213 788,79" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="168,115 173,114 178,119 192,111 195,113 198,111 208,118 211,115 222,115 220,72 207,75 189,62 188,64 180,63 173,70 166,71" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="65,148 292,129 353,146 517,118 634,132 699,111 778,128 776,85 702,74 64,110" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -147,9 +149,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="33 r" xml:id="Kasten_blau_45_15_0054.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>chau
       <lb facs="#facs_1_r1l2" n="N002"/>. Ma die regiuende beyseinen alberdurchleüchtigsteig diy b bey sech

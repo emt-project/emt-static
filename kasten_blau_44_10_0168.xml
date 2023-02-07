@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept</ab>
+         <ab type="notes">Konzept</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1306" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1306px"/>
+    <graphic url="Kasten_blau_44_10_0168.jpg" width="800px" height="1306px"/>
     <zone points="21,16 21,1294 797,1294 797,16" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="281,1294 292,1292 292,1142 281,1144" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="757,46 772,46 772,16 757,16" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -129,7 +131,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1291" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1291px"/>
+    <graphic url="Kasten_blau_44_10_0169.jpg" width="800px" height="1291px"/>
     <zone points="376,35 376,1290 798,1290 798,35" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="406,65 432,67 458,68 484,69 510,69 536,69 562,69 588,69 614,70 640,70 666,71 692,72 718,73 744,76 770,79 796,84 796,54 770,49 744,46 718,43 692,42 666,41 640,40 614,40 588,39 562,39 536,39 510,39 484,39 458,38 432,37 406,35" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="389,113 414,113 440,113 465,114 491,114 516,114 542,115 567,115 593,115 619,116 644,117 670,118 695,118 721,119 746,120 772,121 798,122 798,92 772,91 746,90 721,89 695,88 670,88 644,87 619,86 593,85 567,85 542,85 516,84 491,84 465,84 440,83 414,83 389,83" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -161,7 +163,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1343" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1343px"/>
+    <graphic url="Kasten_blau_44_10_0170.jpg" width="800px" height="1343px"/>
     <zone points="68,48 68,1299 773,1299 773,48" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="388,79 413,81 438,83 464,84 489,85 515,85 540,86 565,86 591,85 616,85 642,85 667,86 692,86 718,87 743,88 769,89 769,58 743,57 718,56 692,55 667,55 642,54 616,54 591,54 565,55 540,55 515,54 489,54 464,53 438,52 413,50 388,48" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="68,144 101,140 135,136 169,134 203,132 236,130 270,130 304,129 338,129 371,130 405,131 439,132 473,133 506,134 540,135 574,136 608,136 641,137 675,137 709,136 743,135 743,104 709,105 675,106 641,106 608,105 574,105 540,104 506,103 473,102 439,101 405,100 371,99 338,98 304,98 270,99 236,99 203,101 169,103 135,105 101,109 68,113" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -192,7 +194,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1269" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1269px"/>
+    <graphic url="Kasten_blau_44_10_0171.jpg" width="800px" height="1269px"/>
     <zone points="29,29 29,1248 798,1248 798,29" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="44,68 81,68 118,67 155,66 192,65 229,64 266,63 303,62 340,61 377,60 414,60 451,59 488,59 525,60 562,60 599,61 636,63 673,65 710,68 747,70 784,74 784,44 747,40 710,38 673,35 636,33 599,31 562,30 525,30 488,29 451,29 414,30 377,30 340,31 303,32 266,33 229,34 192,35 155,36 118,37 81,38 44,38" rendition="Line" xml:id="facs_4_r1l1"/>
         <zone points="44,98 80,98 117,98 153,97 190,97 226,97 263,97 299,98 336,98 372,99 409,100 445,100 482,102 518,103 555,104 591,105 628,107 664,108 701,110 737,112 774,114 774,84 737,82 701,80 664,78 628,77 591,75 555,74 518,73 482,72 445,70 409,70 372,69 336,68 299,68 263,67 226,67 190,67 153,67 117,68 80,68 44,68" rendition="Line" xml:id="facs_4_r1l2"/>
@@ -245,9 +247,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="85 r" xml:id="Kasten_blau_44_10_0168.jpg" ed="101 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/>
@@ -282,7 +284,7 @@
       <lb facs="#facs_1_r1l31" n="N031"/>
       <lb facs="#facs_1_r1l32" n="N032"/>
       <lb facs="#facs_1_r1l33" n="N033"/></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="85 v" xml:id="Kasten_blau_44_10_0169.jpg" ed="101 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>
       <lb facs="#facs_2_r1l2" n="N002"/>
@@ -311,7 +313,7 @@
       <lb facs="#facs_2_r1l25" n="N025"/>
       <lb facs="#facs_2_r1l26" n="N026"/>
       <lb facs="#facs_2_r1l27" n="N027"/></ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="89 r" xml:id="Kasten_blau_44_10_0170.jpg" ed="102 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>
       <lb facs="#facs_3_r1l2" n="N002"/>
@@ -339,7 +341,7 @@
       <lb facs="#facs_3_r1l24" n="N024"/>
       <lb facs="#facs_3_r1l25" n="N025"/>
       <lb facs="#facs_3_r1l26" n="N026"/></ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="89 v" xml:id="Kasten_blau_44_10_0171.jpg" ed="102 v"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/>
       <lb facs="#facs_4_r1l2" n="N002"/>
@@ -390,13 +392,13 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__13">
                   <placeName>Düsseldorf</placeName>

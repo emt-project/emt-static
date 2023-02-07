@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">2. Brief mit dem gleichen Datum</ab>
+         <ab type="notes">2. Brief mit dem gleichen Datum</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1220" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1220px"/>
+    <graphic url=" Kasten_blau_45_9_0040.jpg" width="800px" height="1220px"/>
     <zone points="32,151 32,1185 780,1185 780,151" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="55,206 116,186 173,205 209,185 232,204 465,174 599,192 658,179 657,131 408,151 248,121 133,146 53,120" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="84,249 150,231 272,252 407,226 451,247 734,228 747,185 84,196" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,16 +115,16 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="24 r" xml:id=" Kasten_blau_45_9_0040.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Mitt was vohr freüden ich der glükhligen stund erwarte,
       <lb facs="#facs_1_r1l3" n="N003"/>ewer Durchlaucht hier <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> zue bedienen, <add>mit</add> welchem hoffentlich
       <lb facs="#facs_1_r1l4" n="N004"/>der morgige dag mich beglükhsehligen wirt, wehre
       <lb facs="#facs_1_r1l5" n="N005"/>mihr nit möglich auszueschprechen, vnd förchte wol,
-      <lb facs="#facs_1_r1l6" n="N006"/>der <choice><expan>Graf</expan><abbr>G</abbr></choice> Coloredo werde es auch nit genuechsamb
+      <lb facs="#facs_1_r1l6" n="N006"/>der <choice><expan>Grav</expan><abbr>G</abbr></choice> Coloredo werde es auch nit genuechsamb
       <lb facs="#facs_1_r1l7" n="N007"/>exprimiren können. Wirt doch so vill möglich ihme
       <lb facs="#facs_1_r1l8" n="N008"/>wirt es statt meiner verrichten, die ich in erwarten
       <lb facs="#facs_1_r1l9" n="N009"/>dises großen trost mich ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vt</abbr></choice> empfele,

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1218" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1218px"/>
+    <graphic url="Kasten_blau_45_15_0192.jpg" width="800px" height="1218px"/>
     <zone points="14,194 14,1215 778,1215 778,194" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="67,244 267,230 300,247 435,219 478,241 582,219 782,236 781,179 719,194 566,147 371,148 320,169 66,154" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="84,298 132,270 236,262 674,284 778,265 778,238 470,239 435,219 300,248 84,243" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -116,7 +118,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1230" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1230px"/>
+    <graphic url="Kasten_blau_45_15_0193.jpg" width="800px" height="1230px"/>
     <zone points="33,64 33,1168 788,1168 788,64" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="39,94 254,99 320,121 473,97 621,114 724,106 724,57 555,47 393,70 297,45 38,51" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="39,156 111,140 193,173 234,144 351,164 522,130 757,151 768,112 476,92 396,116 117,118 38,98" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -145,7 +147,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1235" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1235px"/>
+    <graphic url="Kasten_blau_45_15_0194.jpg" width="800px" height="1235px"/>
     <zone points="19,43 19,1177 772,1177 772,43" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="32,93 433,60 596,95 689,71 768,93 776,-2 32,9" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="28,126 130,104 222,134 479,103 595,131 770,105 769,77 504,89 473,67 27,90" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -177,9 +179,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="90 r" xml:id="Kasten_blau_45_15_0192.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster h<supplied>e</supplied>rr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ewer Durchlaucht bitt <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> vmb vergebung, das bey vohriger post dero
@@ -202,7 +204,7 @@
       <lb facs="#facs_1_r1l21" n="N019"/>nie difficultirt haben anzuenemmen. Wegen übermachung
       <lb facs="#facs_1_r1l22" n="N020"/>des gelt werden ihr Mayestät gern vernere instanz in Schpanien
       <lb facs="#facs_1_r1l23" n="N021"/>duen. Ich kan ewer Durchlaucht aber <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> nit verhalten, das ich</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="90 v" xml:id="Kasten_blau_45_15_0193.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>nit conbiniren kan ewer Durchlaucht schreiben, <unclear>der König</unclear> in Schpanien
       <lb facs="#facs_2_r1l2" n="N002"/>habe verschprochen 150 <unclear>m</unclear> <unclear>rt</unclear>, vnd die Königin so woll als
@@ -228,7 +230,7 @@
       <lb facs="#facs_2_r1l22" n="N022"/>starke bezuardica geben derfen, dan er von sich selbsten
       <lb facs="#facs_2_r1l23" n="N023"/>an einem stuck geschwizt hatt. Das hatt auch gemacht,
       <lb facs="#facs_2_r1l24" n="N024"/>das er so balt wider gesundt ist worden. Es</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="91 r" xml:id="Kasten_blau_45_15_0194.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>ist nit ohn, das mihr ihn gern zum reiten gewonten, insonderh<supplied>e</supplied>it,
       <lb facs="#facs_3_r1l2" n="N002"/>wan in Vngeren einmahl die krönung solt sein, müest

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Augschpurg. Schreibpause: Eleonora Magdalena von Pfalz-Neuburg war in Neuburg (erstmals seit 22 Jahren) zur Hochzeit in Prokuration ihrer Schwester mit Karl II.</ab>
+         <ab type="notes">Augschpurg. Schreibpause: Eleonora Magdalena von Pfalz-Neuburg war in Neuburg (erstmals seit 22 Jahren) zur Hochzeit in Prokuration ihrer Schwester mit Karl II.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1221" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1221px"/>
+    <graphic url="Kasten_blau_45_15_0782.jpg" width="800px" height="1221px"/>
     <zone points="18,427 18,1215 775,1215 775,427" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="137,484 284,490 333,472 373,498 498,471 543,495 638,461 753,467 780,457 777,376 662,415 571,408 489,432 276,412 190,433 134,407" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="76,552 158,527 196,548 351,522 434,538 466,515 693,519 728,506 727,459 544,495 489,471 381,506 333,472 227,480 171,508 74,495" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -110,7 +112,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1202" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1202px"/>
+    <graphic url="Kasten_blau_45_15_0783.jpg" width="800px" height="1202px"/>
     <zone points="41,71 41,1192 761,1192 761,71" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="38,112 557,107 745,131 746,82 540,54 39,56" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="43,154 148,142 240,181 290,152 752,162 752,140 635,113 574,109 539,134 317,106 260,138 173,99 124,123 44,109" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -134,9 +136,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="141 r" xml:id="Kasten_blau_45_15_0782.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Curfürst, mein herzallerliebster her vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Sage nachmahlen <choice><expan>vnterdehnigst</expan><abbr>vnter</abbr></choice> dankh vohr die <choice><expan>gnädige</expan><abbr>g</abbr></choice>
@@ -152,7 +154,7 @@
       <lb facs="#facs_1_r1l12" n="N012"/>in gegenwart zue bedienen. Vnd wurde mihr
       <lb facs="#facs_1_r1l13" n="N013"/>solches vntröstlich fallen, wan ich nit der hoff-
       <lb facs="#facs_1_r1l14" n="N014"/>nung lebet, balt widrumb so woll hir als filleicht</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="141 v" xml:id="Kasten_blau_45_15_0783.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>zue Neüburg disen trost zue genießen. Bedanke mich <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice>
       <lb facs="#facs_2_r1l2" n="N002"/>vohr alle gnaden, so mihr dorten empfangen, die ich woll nieh-

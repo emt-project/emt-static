@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Ebersdorf</ab>
+         <ab type="notes">Ebersdorf</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1225" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1225px"/>
+    <graphic url="Kasten_blau_44_7_0352.jpg" width="800px" height="1225px"/>
     <zone points="44,33 44,1206 751,1206 751,33" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="40,494 139,506 169,480 215,507 249,476 349,489 413,459 507,501 534,479 629,494 753,463 639,410 551,394 504,420 418,378 242,415 203,396 105,452 40,434" rendition="Line" xml:id="facs_1_r1l4"/>
         <zone points="44,553 87,523 171,542 281,524 353,566 471,526 642,566 736,527 736,500 586,508 538,479 485,512 250,477 216,506 174,481 132,507 44,495" rendition="Line" xml:id="facs_1_r1l5"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1236" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1236px"/>
+    <graphic url="Kasten_blau_44_7_0353.jpg" width="800px" height="1236px"/>
     <zone points="44,60 44,1150 788,1150 788,60" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="59,110 353,84 450,86 502,124 576,97 731,109 731,13 59,20" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="52,166 556,139 748,167 768,159 768,91 640,114 576,97 504,125 450,88 327,130 244,97 122,135 52,125" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -132,7 +134,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1267" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1267px"/>
+    <graphic url="Kasten_blau_44_7_0354.jpg" width="800px" height="1267px"/>
     <zone points="12,34 12,1156 722,1156 722,34" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="7,119 214,115 313,158 385,122 443,155 492,126 544,149 673,123 673,82 604,89 531,62 471,79 365,32 256,87 194,68 125,95 63,59 7,68" rendition="Line" xml:id="facs_3_r1l2"/>
         <zone points="20,186 189,169 253,202 378,170 440,194 545,169 603,204 658,188 681,205 700,201 700,130 624,147 595,125 544,155 488,133 375,162 226,120 178,153 91,126 20,146" rendition="Line" xml:id="facs_3_r1l3"/>
@@ -152,9 +154,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="193 r" xml:id="Kasten_blau_44_7_0352.jpg" ed="68 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l4" n="N001"/>Durchleüchtiger Cuhrfürst, mein herz allerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l5" n="N002"/>Heündt kombt der <unclear>Deitrschein</unclear> mit der relation vnd
@@ -169,7 +171,7 @@
       <lb facs="#facs_1_r1l14" n="N011"/>zu beschleünigen. Wegen der subsid<supplied>i</supplied>en werd duen
       <lb facs="#facs_1_r1l15" n="N012"/>was ich kan, ihr Mayestät gewis auch alles möglige
       <lb facs="#facs_1_r1l16" n="N013"/>duen werden, wie dero Liebden schon von obenenten könftig</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="193 v" xml:id="Kasten_blau_44_7_0353.jpg" ed="68 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>ausfürlich vernemmen werden. Wegen meins sohns,
       <lb facs="#facs_2_r1l2" n="N002"/>wans nit frid wirt, werd man woll drauf reflectirn
@@ -189,7 +191,7 @@
       <lb facs="#facs_2_r1l16" n="N016"/>Der Fürst von Naßaw, der die Hohenloh soll heiraten,
       <lb facs="#facs_2_r1l17" n="N017"/>hatt mich so sehr gebetten, ihn dero Liebden zu reccomen-
       <lb facs="#facs_2_r1l18" n="N018"/>dirn, wan dero Liebden einig regiment vom kreis</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="194 r" xml:id="Kasten_blau_44_7_0354.jpg" ed="69 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l2" n="N001"/>lahr wurde, auf ihn zue refflectiren vohr
       <lb facs="#facs_3_r1l3" n="N002"/>andren. Mitt disen due mich in dero Liebden affection

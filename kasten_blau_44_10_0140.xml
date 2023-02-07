@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift</ab>
+         <ab type="notes">Konzept mit Unterschrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1252" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1252px"/>
+    <graphic url="Kasten_blau_44_10_0140.jpg" width="800px" height="1252px"/>
     <zone points="45,24 45,1180 764,1180 764,24" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="65,58 91,58 117,58 143,57 169,56 196,54 196,24 169,26 143,27 117,28 91,28 65,28" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="45,83 77,85 109,85 142,86 174,87 206,88 239,88 271,89 303,89 336,89 368,90 400,90 433,90 465,91 497,91 530,92 562,93 594,93 627,95 659,96 692,97 692,67 659,66 627,65 594,63 562,63 530,62 497,61 465,61 433,60 400,60 368,60 336,59 303,59 271,59 239,58 206,58 174,57 142,56 109,55 77,55 45,53" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -116,9 +118,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="74 r" xml:id="Kasten_blau_44_10_0140.jpg" ed="86 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/>

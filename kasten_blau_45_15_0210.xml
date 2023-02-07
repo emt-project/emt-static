@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">dieser und nächster Brief vom Datum her absteigend</ab>
+         <ab type="notes">dieser und nächster Brief vom Datum her absteigend</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1181" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1181px"/>
+    <graphic url="Kasten_blau_45_15_0210.jpg" width="800px" height="1181px"/>
     <zone points="31,126 31,1075 784,1075 784,126" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="102,273 276,241 357,260 432,228 508,251 669,225 761,236 778,233 777,177 547,180 499,201 401,177 210,200 100,182" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="89,324 235,289 461,322 498,297 567,310 676,283 784,308 776,239 716,262 635,243 584,260 242,247 200,276 87,246" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -117,9 +119,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="102 r" xml:id="Kasten_blau_45_15_0210.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Gestren ist gottlob der Deütschmeister glükhlich angelangt,

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1184" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1184px"/>
+    <graphic url="Kasten_blau_45_15_0404.jpg" width="800px" height="1184px"/>
     <zone points="53,340 53,1140 764,1140 764,340" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="76,408 139,382 249,414 439,403 525,372 762,378 760,324 436,308 389,338 330,316 231,343 189,307 73,312" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="111,438 192,427 241,452 299,427 358,449 547,425 640,448 759,426 758,380 719,370 592,396 414,391 381,414 110,384" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1172" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1172px"/>
+    <graphic url="Kasten_blau_45_15_0405.jpg" width="800px" height="1172px"/>
     <zone points="53,54 53,1124 785,1124 785,54" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="75,81 189,77 239,117 353,90 748,98 759,21 344,6 75,55" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="77,170 172,131 269,157 290,137 340,170 517,129 740,157 763,148 763,104 712,90 439,116 353,89 266,117 203,91 159,113 77,106" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -134,7 +136,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1194" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1194px"/>
+    <graphic url="Kasten_blau_45_15_0406.jpg" width="800px" height="1194px"/>
     <zone points="23,50 23,1138 764,1138 764,50" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="22,91 98,104 173,80 205,102 308,77 377,109 495,85 550,110 600,89 651,116 733,85 733,51 617,44 571,17 22,22" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="37,144 175,125 404,135 444,160 669,127 744,140 744,98 719,92 651,118 605,92 380,109 287,77 202,104 162,81 37,97" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -159,9 +161,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="223 r" xml:id="Kasten_blau_45_15_0404.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Weil mihr morgen über nacht aus gehen auf
@@ -177,7 +179,7 @@
       <lb facs="#facs_1_r1l12" n="N012"/>der Karch selbsten hoffentlich es erkennen,
       <lb facs="#facs_1_r1l13" n="N013"/>dan der Ekh schreibt ihr Mayestät, das auf
       <lb facs="#facs_1_r1l14" n="N014"/><choice><expan>Prinz</expan><abbr>P</abbr></choice> Clement ganz kein inclination sey, also</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="223 v" xml:id="Kasten_blau_45_15_0405.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>wirt der Karch sich auch vermuetlich nit weiter
       <lb facs="#facs_2_r1l2" n="N002"/>opiniatriren, sondern zue meinem bruder helfen,
@@ -199,7 +201,7 @@
       <lb facs="#facs_2_r1l18" n="N018"/>Princen alle ciuilitet <seg type="blackening">hatt</seg>, welches er zwar nit
       <lb facs="#facs_2_r1l19" n="N019"/>woll wehniger duen kan, dan sie ist entlich frey
       <lb facs="#facs_2_r1l20" n="N020"/>zue nemmen, wen sie will. Er hatt aber gesacht,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="224 r" xml:id="Kasten_blau_45_15_0406.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>er hoffe es noch mit den eh pacten zue verhindern,
       <lb facs="#facs_3_r1l2" n="N002"/>die zeit wirts lehren. Wegen Parma hab ich dem

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1227" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1227px"/>
+    <graphic url="Kasten_blau_44_2b_0012.jpg" width="800px" height="1227px"/>
     <zone points="17,313 17,1217 769,1217 769,313" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="26,335 74,375 262,373 466,336 684,367 774,338 774,297 748,292 643,308 614,288 338,272 175,294 73,216" rendition="Line" xml:id="facs_1_r2l1"/>
         <zone points="61,432 187,402 279,430 302,405 467,392 656,411 703,393 754,417 770,341 685,366 332,354 271,381 137,350 60,398" rendition="Line" xml:id="facs_1_r2l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1229" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1229px"/>
+    <graphic url="Kasten_blau_44_2b_0013.jpg" width="800px" height="1229px"/>
     <zone points="39,59 39,1219 787,1219 787,59" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="56,112 118,127 158,96 181,109 233,86 283,106 403,87 551,113 741,83 763,58 731,39 56,45" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="63,139 144,142 175,167 251,136 345,166 434,135 469,159 501,140 596,167 792,146 792,104 766,90 705,123 587,98 552,116 160,93 95,123 63,105" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -141,7 +143,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1205" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1205px"/>
+    <graphic url="Kasten_blau_44_2b_0014.jpg" width="800px" height="1205px"/>
     <zone points="14,40 14,1195 761,1195 761,40" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="38,80 136,104 262,69 521,83 597,62 698,87 720,83 720,39 323,41 294,24 178,57 38,52" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="30,137 320,120 362,148 550,114 763,137 754,82 683,101 550,70 30,94" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -169,7 +171,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1231" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1231px"/>
+    <graphic url="Kasten_blau_44_2b_0015.jpg" width="800px" height="1231px"/>
     <zone points="37,54 37,1169 797,1169 797,54" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="44,95 493,72 587,106 673,75 771,92 785,42 43,43" rendition="Line" xml:id="facs_4_r1l1"/>
         <zone points="40,133 188,160 380,119 629,139 783,117 782,88 586,105 512,73 207,103 182,81 39,93" rendition="Line" xml:id="facs_4_r1l2"/>
@@ -199,9 +201,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="1" xml:id="Kasten_blau_44_2b_0012.jpg"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> vatter
       <lb facs="#facs_1_r2l2" n="N002"/>Ich hab durch den Stratman dero andertes <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben
@@ -221,7 +223,7 @@
       <lb facs="#facs_1_r2l16" n="N016"/>soll andiehandt geben, die obgedachte bulla gleichfals zue
       <lb facs="#facs_1_r2l17" n="N017"/>Rohm vohr seinen bruedren auszuewürken, die <unclear>???</unclear>
       <lb facs="#facs_1_r2l18" n="N018"/>aber vermeinen, er habs schon. Den Starenberg betreffendt</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="2" xml:id="Kasten_blau_44_2b_0013.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>so verwundere ich mich, das er so starkh auf
       <lb facs="#facs_2_r1l2" n="N002"/>die Obristhoffmeister stel bey der Erzherzogin dringt,
@@ -246,7 +248,7 @@
       <lb facs="#facs_2_r1l21" n="N021"/>der Erzherzogin ihrn darbey zue haben, welcher allein ein
       <lb facs="#facs_2_r1l22" n="N022"/>eignen man bedarf. Das er meld, ihr Mayestät haben
       <lb facs="#facs_2_r1l23" n="N023"/>dises allezeit gehalten, als wan man ihnen selbsten dienet,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="3" xml:id="Kasten_blau_44_2b_0014.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>so kan er versichert sein, das die dienst, so er ewer 
       <lb facs="#facs_3_r1l2" n="N002"/>Durchlaucht leisten wirt, ihr Mayestät eben also erkennen werden,
@@ -271,7 +273,7 @@
       <lb facs="#facs_3_r1l22" n="N021"/>den Stratman dem Veltmarschalkh hier dise sachen
       <lb facs="#facs_3_r1l23" n="N022"/>representiren laßen vnd befohlen, seinem brudern dest-
       <lb facs="#facs_3_r1l24" n="N023"/>wegen zue zue schreiben, welcher eß hoffentlich erkenen</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="4" xml:id="Kasten_blau_44_2b_0015.jpg"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/>vnd darbey aquiesciren vnd die große gnaden,
       <lb facs="#facs_4_r1l2" n="N002"/>die ihr Mayestät ihme duen, erkennen <supplied>wird</supplied>, sonst wurde

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">eingelegt in Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg 10.06.1706</ab>
+         <ab type="notes">eingelegt in Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg 10.06.1706</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1227" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1227px"/>
+    <graphic url="Kasten_blau_45_7_0382.jpg" width="800px" height="1227px"/>
     <zone points="54,338 54,1152 732,1152 732,338" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="85,384 371,398 473,370 551,394 586,367 657,358 657,302 613,289 541,309 372,295 329,313 135,309 85,286" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="66,429 251,455 326,426 499,459 527,439 724,423 714,382 346,410 232,384 211,403 128,398 66,364" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1228" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1228px"/>
+    <graphic url="Kasten_blau_45_7_0383.jpg" width="800px" height="1228px"/>
     <zone points="37,70 37,782 768,782 768,70" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="36,105 505,89 532,114 773,119 773,67 748,61 416,80 156,45 115,69 36,59" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="36,142 125,174 369,128 746,154 746,117 646,104 546,120 508,98 452,115 217,95 36,115" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -132,7 +134,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="1702" lry="2630" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpg" width="1702px" height="2630px"/>
+    <graphic url="Kasten_blau_45_7_0385.jpg" width="1702px" height="2630px"/>
     <zone points="75,2448 75,2620 227,2620 227,2448" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="91,2478 107,2479 107,2449 91,2448" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="96,2488 106,2490 106,2460 96,2458" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -148,9 +150,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="51 r" xml:id="Kasten_blau_45_7_0382.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleücht<supplied>i</supplied>ger Curfü<supplied>r</supplied>st, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l2" n="N002"/>Dero bede sch<supplied>rei</supplied>ben, das eine an meinen vnglüksehl<supplied>i</supplied>gsten dag datirt mit
@@ -168,7 +170,7 @@
       <lb facs="#facs_1_r1l14" n="N014"/>vndt Wißer gesch<supplied>rie</supplied>ben. Sag dero Liebden vnentligen dankh, das sie die
       <lb facs="#facs_1_r1l15" n="N015"/>troupen haben marchiren laßen, gott, meine bede söhn vndt alle
       <lb facs="#facs_1_r1l16" n="N016"/>wollgemeinte werden dero Liebden e<supplied>w</supplied>igen dankh <unclear>drz</unclear> zeigen. W<supplied>e</supplied>gen des</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="51 v" xml:id="Kasten_blau_45_7_0383.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>dis wels tractat, hoff ich, werd der Wißer <unclear>bezen</unclear>, das dero Liebden zu fr<supplied>i</supplied>den sein
       <lb facs="#facs_2_r1l2" n="N002"/>werden. Wegen des B<supplied>i</supplied>schoff von Rahb, weil er au<supplied>c</supplied>h izt Cardinal, werden dero Liebden
@@ -185,7 +187,7 @@
       <lb facs="#facs_2_line_1666797158631_391" n="N013"/>Wien den 29ten maij 1706
       <lb facs="#facs_2_r1l12" n="N014"/><choice><expan>Wegen</expan><abbr>Wen</abbr></choice> der punti werd mitt
       <lb facs="#facs_2_r1l14" n="N015"/>mein sohn reden, hab erst dero Liebden sch<supplied>rei</supplied>ben bek<supplied>o</supplied>men.</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="52 v" xml:id="Kasten_blau_45_7_0385.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>
       <lb facs="#facs_3_r1l2" n="N002"/>
@@ -198,11 +200,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -210,5 +208,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

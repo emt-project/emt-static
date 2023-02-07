@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1212" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1212px"/>
+    <graphic url="Kasten_blau_44_2d_0022.jpg" width="800px" height="1212px"/>
     <zone points="79,323 79,1200 771,1200 771,323" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="143,370 181,352 227,381 301,362 381,385 412,357 573,376 603,353 774,350 773,311 690,312 584,272 428,285 331,320 265,313 226,283 142,283" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="153,404 770,413 770,365 742,360 709,379 457,365 387,383 298,361 276,383 153,359" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1253" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1253px"/>
+    <graphic url="Kasten_blau_44_2d_0023.jpg" width="800px" height="1253px"/>
     <zone points="113,225 113,705 776,705 776,225" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="131,267 718,262 768,246 768,197 623,229 514,200 215,230 130,208" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="132,327 185,337 250,307 343,334 463,335 511,303 547,324 658,294 740,311 767,303 766,246 686,284 625,265 511,286 479,268 239,265 131,287" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -126,7 +128,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1244" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1244px"/>
+    <graphic url="Kasten_blau_44_2d_0024.jpg" width="800px" height="1244px"/>
     <zone points="101,153 101,311 261,311 261,153" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="97,276 148,265 163,272 186,258 222,284 243,276 267,278 265,217 237,224 217,219 201,230 149,211 132,228 110,218 95,219" rendition="Line" xml:id="facs_3_r1l1"/>
       </zone>
@@ -134,9 +136,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="1" xml:id="Kasten_blau_44_2d_0022.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr brueder
       <lb facs="#facs_1_r1l2" n="N002"/>Bitt vmb verzeiung, das so lang nit geschriben,
@@ -155,7 +157,7 @@
       <lb facs="#facs_1_r1l15" n="N015"/>dan es ist nacht worden. In der frej hez wie
       <lb facs="#facs_1_r1l16" n="N016"/>auf die hasen haben mihr neülich zue Brandis
       <lb facs="#facs_1_r1l17" n="N017"/>11 stuk mit ein <unclear>schwein</unclear> gefangen, ist recht lustich,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="2" xml:id="Kasten_blau_44_2d_0023.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>vndt lauter fleischhaker hundt, die seindt wie
       <lb facs="#facs_2_r1l2" n="N002"/>englische, ein pahr halten ein saue wie es sich
@@ -166,7 +168,7 @@
       <lb facs="#facs_2_r1l8" n="N007"/>getrewste schwester
       <lb facs="#facs_2_r1l9" n="N008"/>EMT
       <lb facs="#facs_2_r1l7" n="N009"/>Prag den 25 <choice><expan>novembris</expan><abbr>9br</abbr></choice> 1679</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="3" xml:id="Kasten_blau_44_2d_0024.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/><seg type="blackening">vndt last</seg></ab>
   </div>

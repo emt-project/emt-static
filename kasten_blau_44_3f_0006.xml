@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1238" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1238px"/>
+    <graphic url="Kasten_blau_44_3f_0006.jpg" width="800px" height="1238px"/>
     <zone points="26,39 26,1216 751,1216 751,39" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="27,71 37,68 58,84 85,73 100,74 114,87 135,73 144,81 159,81 162,17 143,13 123,24 107,17 99,24 74,15 28,20" rendition="Line" xml:id="facs_1_r2l2"/>
         <zone points="85,437 188,415 235,437 276,416 316,440 391,423 733,428 733,390 710,382 614,393 487,367 455,386 350,370 85,382" rendition="Line" xml:id="facs_1_r2l3"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1235" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1235px"/>
+    <graphic url="Kasten_blau_44_3f_0007.jpg" width="800px" height="1235px"/>
     <zone points="45,78 45,1131 776,1131 776,78" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="58,114 197,97 764,113 764,74 724,87 677,64 265,84 231,62 58,62" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="60,154 126,143 173,174 281,146 364,169 480,146 768,149 776,113 60,114" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -143,11 +145,11 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="1" xml:id="Kasten_blau_44_3f_0006.jpg"/>
     <ab facs="#facs_1_r2">
-      <lb facs="#facs_1_r2l2" n="N001"/><unclear>12. <choice><expan>januar</expan><abbr>jan</abbr></choice> 95</unclear>
+      <lb facs="#facs_1_r2l2" n="N001"/><unclear>12. <choice><expan>Januarij</expan><abbr>jan</abbr></choice> 95</unclear>
       <lb facs="#facs_1_r2l3" n="N002"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> brueder
       <lb facs="#facs_1_r2l4" n="N003"/>Entlich hab ich ein mahl dißse beygeschloßene relation
       <lb facs="#facs_1_r2l6" n="N004"/>vom Hamilton <add>gestren</add> empfangen, in welcher er sich zwar beziehet
@@ -164,7 +166,7 @@
       <lb facs="#facs_1_r2l17" n="N015"/>daraus ersehn, was ich ihm vohr precautiones aufgebe
       <lb facs="#facs_1_r2l18" n="N016"/>in disem so wichtigen werkh, welche alle <unclear>hoscht</unclear> nötich
       <lb facs="#facs_1_r2l19" n="N017"/>sein, vndt bitte, dero Liebden wollens durch dero befehl an ihn</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="2" xml:id="Kasten_blau_44_3f_0007.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>secondiren. Die andre parti ist darhier schon sehr allarmirt
       <lb facs="#facs_2_r1l2" n="N002"/>vndt duen alles, was möglich, also das vohrnemste das secretum
@@ -193,11 +195,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -205,5 +203,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

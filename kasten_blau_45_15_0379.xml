@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Corneüburg</ab>
+         <ab type="notes">Corneüburg</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1199" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1199px"/>
+    <graphic url="Kasten_blau_45_15_0379.jpg" width="800px" height="1199px"/>
     <zone points="30,312 30,1190 768,1190 768,312" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="133,357 223,347 283,371 335,338 398,368 474,341 543,363 709,330 759,343 772,278 661,299 571,271 515,292 294,286 188,326 132,322" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="61,397 252,417 368,401 443,428 483,408 732,406 764,390 764,360 612,352 561,379 524,358 380,359 325,387 175,347 120,378 60,369" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1192" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1192px"/>
+    <graphic url="Kasten_blau_45_15_0380.jpg" width="800px" height="1192px"/>
     <zone points="65,1071 65,1191 76,1191 76,1071" rendition="TextRegion" xml:id="facs_2_r1">
       </zone>
     <zone points="63,40 63,1160 788,1160 788,40" rendition="TextRegion" xml:id="facs_2_r2">
@@ -142,7 +144,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1229" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1229px"/>
+    <graphic url="Kasten_blau_45_15_0381.jpg" width="800px" height="1229px"/>
     <zone points="12,42 12,1164 762,1164 762,42" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="15,107 137,68 354,103 760,88 762,38 694,38 12,38" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="7,144 63,112 125,139 252,116 319,148 469,122 760,136 767,93 577,73 390,108 231,79 7,100" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -166,9 +168,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="209 r" xml:id="Kasten_blau_45_15_0379.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster her vater
       <lb facs="#facs_1_r1l2" n="N002"/>Ich bitt <choice><expan>Machat, Vera &lt;Vera.Machat@oeaw.ac.at&gt;</expan><abbr>vt</abbr></choice> vmb vergebung, das ich nit
@@ -187,7 +189,7 @@
       <lb facs="#facs_1_r1l18" n="N015"/>er ist halt gahr eilents expedirt worden, vnd
       <lb facs="#facs_1_r1l19" n="N016"/>ihr Mayestät <supplied>haben</supplied> schon nachdem sie ihm bett warhen, in eil
       <lb facs="#facs_1_line_1645786170233_436" n="N017"/>vnterschriben, wie ewer Durchlaucht von Schellerer vernemmen könen.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="209 v" xml:id="Kasten_blau_45_15_0380.jpg"/>
     <ab facs="#facs_2_r1"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l1" n="N001"/>Was ewer Durchlaucht in der cölnischen sach mit heüntigem curir
@@ -212,7 +214,7 @@
       <lb facs="#facs_2_r2l21" n="N020"/>sie das <seg type="comment">apostem</seg> eröfent, ist alleweil beßer worden,
       <lb facs="#facs_2_r2l22" n="N021"/>gott geb, das ein bestand haben möge. Der
       <lb facs="#facs_2_r2l23" n="N022"/>Hoffkanzler ist auf München, weil der Cuhrfürst</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="210 r" xml:id="Kasten_blau_45_15_0381.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>gezeigt, das er der campagna noch möcht beywohnen,
       <lb facs="#facs_3_r1l2" n="N002"/>die sachen mit ihm einzuerichten, aber dorten ist halt

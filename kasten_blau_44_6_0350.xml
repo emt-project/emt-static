@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,14 +62,16 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Abschrift</term>
             <term>Schreiber</term>
             <term>Extrakt eines Briefes</term>
          </ab>
-         <ab type="abstract-terms">"Extract eines an Ihrer Churfürstl. Durchlaucht zur Pfaltz etc. von dem Reichs Vice Cantzlern graffen von Windischgrätz sub dato Wien des 15. Januarij 95 abgelassenes Schreibens". Windischgrätz war seit 1693 Reichsvizekanzler.</ab>
+         <ab type="notes">"Extract eines an Ihrer Churfürstl. Durchlaucht zur Pfaltz etc. von dem Reichs Vice Cantzlern graffen von Windischgrätz sub dato Wien des 15. Januarij 95 abgelassenes Schreibens". Windischgrätz war seit 1693 Reichsvizekanzler.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -87,12 +89,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="1714" lry="2597" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpg" width="1714px" height="2597px"/>
+    <graphic url="Kasten_blau_44_6_0350.jpg" width="1714px" height="2597px"/>
     <zone points="58,153 58,2563 1634,2563 1634,153" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="192,221 219,217 246,214 273,212 301,211 328,210 355,210 383,211 410,211 437,212 465,213 465,156 437,155 410,154 383,154 355,153 328,153 301,154 273,155 246,157 219,160 192,164" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="646,300 673,300 701,298 729,296 757,294 784,293 812,292 840,291 868,291 868,234 840,234 812,235 784,236 757,237 729,239 701,241 673,243 646,243" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -116,9 +118,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="225 r" xml:id="Kasten_blau_44_6_0350.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/>

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1202" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1202px"/>
+    <graphic url="Kasten_blau_45_15_0036.jpg" width="800px" height="1202px"/>
     <zone points="17,201 17,1199 775,1199 775,201" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="83,260 160,250 194,274 391,243 735,239 733,192 675,185 346,206 270,189 168,210 81,194" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="80,306 278,285 418,318 517,278 546,301 652,280 725,295 737,237 677,256 537,237 438,270 390,246 197,273 79,256" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1208" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1208px"/>
+    <graphic url="Kasten_blau_45_15_0037.jpg" width="800px" height="1208px"/>
     <zone points="57,112 57,1150 797,1150 797,112" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="81,146 184,137 250,171 293,144 343,166 586,141 782,175 783,103 657,112 544,89 498,114 427,94 365,111 324,90 237,113 180,81 132,99 82,83" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="84,184 430,196 472,225 528,193 646,218 742,195 743,164 660,175 596,144 485,176 456,151 386,175 213,170 147,138 85,152" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -144,7 +146,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1242" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1242px"/>
+    <graphic url="Kasten_blau_45_15_0038.jpg" width="800px" height="1242px"/>
     <zone points="22,130 22,1201 752,1201 752,130" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="54,193 306,160 400,193 620,163 705,198 758,180 757,110 484,130 306,113 156,151 53,126" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="33,235 92,246 128,243 141,230 191,258 244,221 287,225 311,210 335,225 372,223 364,164 312,179 276,165 195,185 135,179 32,193" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -157,9 +159,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="22 r" xml:id="Kasten_blau_45_15_0036.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herz allerlibster herrr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Bitt <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> vmb vergebung, das bey vohriger post
@@ -179,7 +181,7 @@
       <lb facs="#facs_1_r1l16" n="N016"/>nichts, hoff aber, sollen balt kommen, dan man von
       <lb facs="#facs_1_r1l17" n="N017"/>allen orten die sach vohr richtig schreibt. Wegen der
       <lb facs="#facs_1_r1l18" n="N018"/>französischen sachen werden ewer Durchlaucht heündt alles von ihr Mayestät</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="22 v" xml:id="Kasten_blau_45_15_0037.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>vnd dem Hoffkanzler bekommen, also will ich ewer Durchlaucht
       <lb facs="#facs_2_r1l2" n="N002"/>nit weiter darmit auf halten. Wegen der
@@ -204,7 +206,7 @@
     <ab facs="#facs_2_region_1638964377135_344"/>
     <ab facs="#facs_2_region_1638964384239_347"/>
     <ab facs="#facs_2_region_1638964511420_377"/>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="23 r" xml:id="Kasten_blau_45_15_0038.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>sondern in allem, die ich bis ins grab verharren
       <lb facs="#facs_3_r1l2" n="N002"/>werde zue sein

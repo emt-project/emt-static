@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1195" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1195px"/>
+    <graphic url="Kasten_blau_45_9_0243.jpg" width="800px" height="1195px"/>
     <zone points="12,200 12,1194 774,1194 774,200" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="141,248 297,264 372,241 440,250 471,229 525,246 586,224 632,246 752,227 750,163 667,158 438,205 389,183 307,207 140,198" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="91,293 208,275 262,293 319,275 406,287 607,258 733,276 748,248 567,232 242,261 89,235" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1226" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1226px"/>
+    <graphic url="Kasten_blau_45_9_0244.jpg" width="800px" height="1226px"/>
     <zone points="63,86 63,1225 798,1225 798,86" rendition="TextRegion" xml:id="facs_2_r2">
         <zone points="81,116 796,127 791,74 720,66 618,60 549,74 446,74 228,69 84,75" rendition="Line" xml:id="facs_2_r2l1"/>
         <zone points="68,166 267,187 366,159 500,160 542,185 612,160 783,176 802,126 718,144 609,115 487,145 398,119 345,136 67,110" rendition="Line" xml:id="facs_2_r2l2"/>
@@ -139,7 +141,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1201" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1201px"/>
+    <graphic url="Kasten_blau_45_9_0245.jpg" width="800px" height="1201px"/>
     <zone points="42,0 42,628 778,628 778,0" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="61,103 247,131 423,113 479,141 553,107 621,125 783,110 783,74 689,85 546,20 354,38 266,86 179,65 61,81" rendition="Line" xml:id="facs_3_r1l2"/>
         <zone points="52,192 242,160 440,194 520,167 779,187 779,127 565,111 483,140 423,113 375,141 325,119 291,137 52,130" rendition="Line" xml:id="facs_3_r1l3"/>
@@ -157,9 +159,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="140 r" xml:id="Kasten_blau_45_9_0243.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ewer Durchlaucht sage ich <choice><expan>vnterdehnigsten</expan><abbr>vntd</abbr></choice> dankh vohr dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben
@@ -179,7 +181,7 @@
       <lb facs="#facs_1_line_1637069210079_3776" n="N016"/>zeit ewer Durchlaucht nit auf dero <choice><expan>gnädige</expan><abbr>g</abbr></choice> schreiben völlich beanworten
       <lb facs="#facs_1_line_1637069213011_3780" n="N017"/>können. Als wegen meines Obrist Hoffmeisters, ist noch
       <lb facs="#facs_1_r1l39" n="N018"/>keiner declarirt oder resoluirt, vndt ich dreib gahr nit, </ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="140 v" xml:id="Kasten_blau_45_9_0244.jpg"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l1" n="N001"/>nit drauf, dan ie lenger ich vom Fürsten kan bedient sein, 
       <lb facs="#facs_2_r2l2" n="N002"/>ie lieber es mihr ist, aber wan gleich es resoluirt wirt,
@@ -202,7 +204,7 @@
       <lb facs="#facs_2_r2l19" n="N019"/>wie es mit einem vnd andern zue machen. Auf
       <lb facs="#facs_2_line_1637069359810_3854" n="N020"/>alle w<supplied>e</supplied>is werden ihr Mayestät suechen es so zeitlich zu
       <lb facs="#facs_2_line_1637069361959_3858" n="N021"/>machen, das ewer Durchlaucht auch dero consolation</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="141 v" xml:id="Kasten_blau_45_9_0245.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l2" n="N001"/>darbey haben mögen. Es komt izt gleich die Kaiserin herumb,
       <lb facs="#facs_3_r1l3" n="N002"/>also due ich mich hiermit in ewer Durchlaucht <choice><expan>gnade</expan><abbr>g</abbr></choice> <choice><expan>vnterdehnigst</expan><abbr>vnd</abbr></choice> befehlen,
@@ -210,7 +212,7 @@
       <lb facs="#facs_3_line_1637069432733_3880" n="N004"/>ewer Durchlaucht
       <lb facs="#facs_3_r1l6" n="N005"/><choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> trewgehorsamste do<supplied>c</supplied>hter
       <lb facs="#facs_3_line_1637069437317_3885" n="N006"/>EMT
-      <lb facs="#facs_3_r1l5" n="N007"/>Lins den 28 <choice><expan>feber</expan><abbr>feb</abbr></choice> 1684
+      <lb facs="#facs_3_r1l5" n="N007"/>Lins den 28 <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1684
       <lb facs="#facs_3_r1l7" n="N008"/><choice><expan>Post</expan><abbr>P</abbr></choice>  <choice><expan>scriptum</expan><abbr>s</abbr></choice> Wegen <unclear>mouana</unclear> seint
       <lb facs="#facs_3_r1l8" n="N009"/>ihr Mayestät auch der meinung, das man die sach
       <lb facs="#facs_3_r1l9" n="N010"/>trainiren soll. Sie laßen sich zwar schon ein auf
@@ -218,7 +220,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__32">
+                  <placeName>Linz</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -226,9 +232,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__32">
-                  <placeName>Linz</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

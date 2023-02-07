@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1204" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1204px"/>
+    <graphic url="Kasten_blau_45_15_0394.jpg" width="800px" height="1204px"/>
     <zone points="6,0 6,52 30,52 30,0" rendition="TextRegion" xml:id="facs_1_r1">
       </zone>
     <zone points="29,390 29,1151 773,1151 773,390" rendition="TextRegion" xml:id="facs_1_r2">
@@ -110,7 +112,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1182" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1182px"/>
+    <graphic url="Kasten_blau_45_15_0395.jpg" width="800px" height="1182px"/>
     <zone points="41,64 41,1110 797,1110 797,64" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="58,104 120,121 222,97 267,130 381,93 463,114 509,86 543,111 644,90 718,105 742,99 741,18 509,12 313,53 57,60" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="57,155 230,148 293,182 386,137 510,167 610,142 752,156 771,114 542,111 510,86 471,118 405,96 308,130 226,100 57,116" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -135,7 +137,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1197" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1197px"/>
+    <graphic url="Kasten_blau_45_15_0396.jpg" width="800px" height="1197px"/>
     <zone points="15,45 15,1187 768,1187 768,45" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="27,92 163,118 245,84 297,104 380,77 431,103 473,84 686,89 667,38 604,33 564,57 400,15 26,23" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="13,149 101,143 132,165 307,125 435,160 604,121 687,142 721,127 720,92 579,82 437,113 373,83 321,114 258,87 162,119 62,92 12,118" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -160,7 +162,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1158" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1158px"/>
+    <graphic url="Kasten_blau_45_15_0397.jpg" width="800px" height="1158px"/>
     <zone points="43,53 43,1073 777,1073 777,53" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="60,114 159,85 201,110 235,84 375,108 463,82 652,103 684,81 769,87 769,30 612,23 540,46 304,27 253,56 177,29 59,33" rendition="Line" xml:id="facs_4_r1l1"/>
         <zone points="56,167 123,173 205,134 278,159 402,133 530,133 588,157 752,140 735,90 448,109 283,88 230,125 166,98 55,116" rendition="Line" xml:id="facs_4_r1l2"/>
@@ -187,9 +189,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="218 r" xml:id="Kasten_blau_45_15_0394.jpg"/>
     <ab facs="#facs_1_r1"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/>Durchleüchtiger Cuhrfürst mein herz allerliebster herr vatter
@@ -205,7 +207,7 @@
       <lb facs="#facs_1_r2l11" n="N011"/>so seint noch die bede iüngere dah, welche auch
       <lb facs="#facs_1_r2l12" n="N012"/>schon herzue waxen. Gestren ist die zeitung der
       <lb facs="#facs_1_r2l13" n="N013"/>cölnischen wahl hir ahn kommen, gottlob das nur</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="218 v" xml:id="Kasten_blau_45_15_0395.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>der Fürstenberger drauß ist gehalten worden.
       <lb facs="#facs_2_r1l2" n="N002"/>Vnd weil Beyern es allein durch ihr Mayestät vnd
@@ -227,7 +229,7 @@
       <lb facs="#facs_2_r1l18" n="N018"/>wirt durch kommen, weil er kein indultum
       <lb facs="#facs_2_r1l19" n="N019"/>hatt, also wurd woll ihm glorios sein, wan
       <lb facs="#facs_2_r1l20" n="N020"/>er noch ein deil diser campagne beywohnen</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="219 r" xml:id="Kasten_blau_45_15_0396.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>könte, doch villeicht die böße welt ihm
       <lb facs="#facs_3_r1l2" n="N002"/>übel ausdeüten wurde, wan ers vnterlies,
@@ -249,7 +251,7 @@
       <lb facs="#facs_3_r1l19" n="N018"/>darin negotiren, welches in die leng sich zien
       <lb facs="#facs_3_r1l20" n="N019"/>möchte. Iezt gleich empfange ich ewer Durchlaucht <choice><expan>gnädiges</expan><abbr>g</abbr></choice>
       <lb facs="#facs_3_r1l21" n="N020"/>schreiben vom 17ten diß, waruohr ich <choice><expan>vnterdehnigsten</expan><abbr>vd</abbr></choice> da<supplied>n</supplied>kh</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="219 v" xml:id="Kasten_blau_45_15_0397.jpg"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/>erstatte. Gottlob, das sich ewer Durchlaucht in guttem
       <lb facs="#facs_4_r1l2" n="N002"/>wohlstandt befinden vnd die beis so guett

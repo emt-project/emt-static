@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">links oben "16.?91" Liegt zwischen 1691.10.20-1691.11.09</ab>
+         <ab type="notes">links oben "16.?91" Liegt zwischen 1691.10.20-1691.11.09</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1190" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1190px"/>
+    <graphic url="Korrespondenzakten_1147_0044.jpg" width="800px" height="1190px"/>
     <zone points="17,0 17,1104 747,1104 747,0" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="36,89 53,82 89,87 117,103 130,97 148,103 179,87 188,91 210,85 208,24 189,23 165,41 130,41 112,39 79,9 33,6" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="100,426 148,446 214,422 285,449 323,432 491,450 564,428 613,451 750,427 750,385 593,322 266,325 125,399 100,386" rendition="Line" xml:id="facs_1_r1l4"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1239" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1239px"/>
+    <graphic url="Korrespondenzakten_1147_0045.jpg" width="800px" height="1239px"/>
     <zone points="24,103 24,1238 786,1238 786,103" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="66,155 274,136 363,160 654,131 750,152 749,84 520,95 460,66 383,104 65,93" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="69,212 194,226 292,207 330,234 380,202 616,222 740,184 740,154 639,140 438,176 347,154 232,179 193,152 68,157" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -140,9 +142,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="31 r" xml:id="Korrespondenzakten_1147_0044.jpg" ed="10 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/><unclear>16 <seg type="blackening">jan</seg> <add>xbr</add> 91</unclear>
       <lb facs="#facs_1_r1l4" n="N002"/>Durchleüchtiger Cuhrfürst, mein h<supplied>er</supplied>zallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
@@ -157,7 +159,7 @@
       <lb facs="#facs_1_r1l13" n="N011"/>consolation dun werden. Haben auch schon darüber
       <lb facs="#facs_1_r1l14" n="N012"/>dem Carraffa zue geschriben, vnd wie ich ver-
       <lb facs="#facs_1_r1l15" n="N013"/>nemmen due, seint die sachen schon aiustirt.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="31 v" xml:id="Korrespondenzakten_1147_0045.jpg" ed="10 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Ihr Mayestät dr<supplied>a</supplied>gen auch ganz kein zweifel, das der <choice><expan>herr</expan><abbr>h</abbr></choice>
       <lb facs="#facs_2_r1l2" n="N002"/>Großhe<supplied>r</supplied>zoch selbsten auch gern alles möglige
@@ -180,17 +182,13 @@
       <lb facs="#facs_2_r1l19" n="N019"/>vom lezten festel, war herzich.
       <lb facs="#facs_2_r1l21" n="N020"/><choice><expan>Bruder</expan><abbr>B</abbr></choice> Carl hatt seine fueß woll gezeicht vnd von
       <lb facs="#facs_2_r1l22" n="N021"/>allen das aplausum daruon gedragen, vnmüglich ist
-      <lb facs="#facs_2_r1l23" n="N022"/>izt die music abzueschr<supplied>e</supplied>iben, euer Liebden wolen dero <choice><expan>fraw</expan><abbr>f</abbr></choice> gemahl geben.
+      <lb facs="#facs_2_r1l23" n="N022"/>izt die music abzueschr<supplied>e</supplied>iben, dero Liebden wolen dero <choice><expan>fraw</expan><abbr>f</abbr></choice> gemahl geben.
       <lb facs="#facs_2_line_1656946916751_849" n="N023"/>Mit meinem sohn vnd <choice><expan>bruder</expan><abbr>b</abbr></choice> Carl haben gedanst
       <lb facs="#facs_2_r1l16" n="N024"/>Iörger, Lamberg vndt Salm.</ab>
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -198,5 +196,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

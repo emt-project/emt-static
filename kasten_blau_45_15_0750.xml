@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1272" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1272px"/>
+    <graphic url="Kasten_blau_45_15_0750.jpg" width="800px" height="1272px"/>
     <zone points="57,485 57,1254 748,1254 748,485" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="148,528 432,522 519,545 566,522 702,544 752,527 753,488 608,488 527,464 473,490 370,447 249,468 149,447" rendition="Line" xml:id="facs_1_r2l1"/>
         <zone points="97,576 174,573 235,611 350,581 433,599 485,587 523,610 713,586 713,544 564,555 432,522 216,547 165,522 97,525" rendition="Line" xml:id="facs_1_r2l2"/>
@@ -107,7 +109,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1272" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1272px"/>
+    <graphic url="Kasten_blau_45_15_0751.jpg" width="800px" height="1272px"/>
     <zone points="53,64 53,819 776,819 776,64" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="59,120 245,94 361,116 465,94 693,117 758,101 752,51 480,51 279,48 165,52 52,58" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="48,172 127,147 174,177 285,149 413,171 776,152 776,112 744,106 598,106 572,126 48,112" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -126,9 +128,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="121 r" xml:id="Kasten_blau_45_15_0750.jpg"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster h<supplied>e</supplied>rr vatter
       <lb facs="#facs_1_r2l2" n="N002"/>Mitt der gelegenheit, das der <choice><expan>Graven</expan><abbr>Gr</abbr></choice> von Wollenstein von
@@ -142,7 +144,7 @@
       <lb facs="#facs_1_r2l10" n="N010"/>vernemmen. Was von hier könte <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> berichten,
       <lb facs="#facs_1_r2l11" n="N011"/>werden ewer Durchlaucht alles von ihme vernemmen. Das
       <lb facs="#facs_1_r2l12" n="N012"/>habe <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> erinne<supplied>r</supplied>n wollen, das in der polnischen <supplied>sache</supplied></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="121 v" xml:id="Kasten_blau_45_15_0751.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>man vermeint, es wehre mit verkaufung der
       <lb facs="#facs_2_r1l2" n="N002"/>güetter geferlich vnd beßer, wan es kundt bono

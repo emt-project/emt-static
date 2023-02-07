@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">rechts oben zusätzliche Foliierung: 56</ab>
+         <ab type="notes">rechts oben zusätzliche Foliierung: 56</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1106" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1106px"/>
+    <graphic url="Kasten_blau_44_6_0437.jpg" width="800px" height="1106px"/>
     <zone points="53,27 53,1097 764,1097 764,27" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="110,365 147,372 181,350 207,370 293,365 339,343 463,375 538,340 593,360 647,328 732,335 731,284 479,256 108,279" rendition="Line" xml:id="facs_1_r1l4"/>
         <zone points="76,416 761,396 760,333 660,328 593,360 538,340 464,374 74,358" rendition="Line" xml:id="facs_1_r1l5"/>
@@ -111,7 +113,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1121" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1121px"/>
+    <graphic url="Kasten_blau_44_6_0438.jpg" width="800px" height="1121px"/>
     <zone points="29,41 29,1068 798,1068 798,41" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="71,111 718,109 737,107 738,71 650,45 601,66 513,45 446,75 273,49 72,61" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="59,144 169,134 253,167 379,142 497,164 598,150 632,174 769,164 770,121 702,104 543,117 504,99 405,127 355,96 285,121 60,113" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -136,7 +138,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1107" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1107px"/>
+    <graphic url="Kasten_blau_44_6_0439.jpg" width="800px" height="1107px"/>
     <zone points="17,0 17,1098 779,1098 779,0" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="30,112 378,94 441,129 487,98 737,100 736,62 670,41 587,77 376,52 29,67" rendition="Line" xml:id="facs_3_r1l4"/>
         <zone points="37,162 118,144 176,167 427,153 460,174 572,150 647,170 739,155 753,113 662,102 615,126 563,102 364,133 278,105 237,132 176,108 131,129 92,106 37,115" rendition="Line" xml:id="facs_3_r1l5"/>
@@ -160,7 +162,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1094" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1094px"/>
+    <graphic url="Kasten_blau_44_6_0440.jpg" width="800px" height="1094px"/>
     <zone points="60,270 60,422 71,422 71,270" rendition="TextRegion" xml:id="facs_4_r1">
       </zone>
     <zone points="56,32 56,1022 784,1022 784,32" rendition="TextRegion" xml:id="facs_4_r2">
@@ -187,7 +189,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1102" xml:id="facs_5">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1102px"/>
+    <graphic url="Kasten_blau_44_6_0441.jpg" width="800px" height="1102px"/>
     <zone points="33,37 33,1050 758,1050 758,37" rendition="TextRegion" xml:id="facs_5_r1">
         <zone points="34,148 389,127 660,157 697,133 747,156 761,100 623,69 35,73" rendition="Line" xml:id="facs_5_r1l3"/>
         <zone points="35,194 163,175 336,184 363,208 415,181 543,208 581,181 745,193 745,150 708,145 651,170 613,146 570,174 520,144 428,165 374,129 327,153 153,128 132,149 35,147" rendition="Line" xml:id="facs_5_r1l4"/>
@@ -210,7 +212,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1092" xml:id="facs_6">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1092px"/>
+    <graphic url="Kasten_blau_44_6_0442.jpg" width="800px" height="1092px"/>
     <zone points="63,35 63,1050 786,1050 786,35" rendition="TextRegion" xml:id="facs_6_r1">
         <zone points="72,118 131,124 158,102 185,121 431,116 468,143 598,113 731,134 746,73 635,43 527,77 426,59 380,77 258,42 72,50" rendition="Line" xml:id="facs_6_r1l2"/>
         <zone points="75,169 362,155 429,185 499,166 667,183 732,171 733,137 514,122 467,141 418,115 185,122 158,103 132,124 76,120" rendition="Line" xml:id="facs_6_r1l3"/>
@@ -234,7 +236,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1132" xml:id="facs_7">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1132px"/>
+    <graphic url="Kasten_blau_44_6_0443.jpg" width="800px" height="1132px"/>
     <zone points="16,29 16,1122 752,1122 752,29" rendition="TextRegion" xml:id="facs_7_r1">
         <zone points="20,115 131,133 212,100 421,122 479,91 554,123 753,113 739,57 498,72 454,53 397,74 339,50 193,74 146,47 87,70 20,55" rendition="Line" xml:id="facs_7_r1l2"/>
         <zone points="25,172 163,148 211,179 247,155 297,176 506,156 708,176 743,169 743,106 511,108 472,137 389,110 129,136 86,108 25,112" rendition="Line" xml:id="facs_7_r1l3"/>
@@ -259,9 +261,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="276 r" xml:id="Kasten_blau_44_6_0437.jpg" ed="56 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l4" n="N001"/>Durchleüchtiger Curfürst, mein h<supplied>er</supplied>zallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l5" n="N002"/>Die einzige vhrsach meines so langen stilschweigens
@@ -278,7 +280,7 @@
       <lb facs="#facs_1_r1l16" n="N013"/>auch sonsten alle möglige ehr vndt distinction erzeigen,
       <lb facs="#facs_1_r1l17" n="N014"/>was ohne preiudiz vndt consequens geschen kan. In den üb<supplied>r</supplied>igen puncten
       <lb facs="#facs_1_r1l18" n="N015"/>beziehe mich auf mein herb<supplied>e</supplied>y l<supplied>ie</supplied>gendes, so lang wartendes sch<supplied>rei</supplied>ben</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="276 v" xml:id="Kasten_blau_44_6_0438.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>schr<supplied>e</supplied>iben vndt auf den Sinzendorf selbsten, welchem in
       <lb facs="#facs_2_r1l3" n="N002"/>ein vnd andren auf gedragen mit dero Liebden zue reden. Die fondation
@@ -300,7 +302,7 @@
       <lb facs="#facs_2_r1l19" n="N018"/>die Herzogin von Hanouer hir wi<supplied>r</supplied>t sein. Wegen der
       <lb facs="#facs_2_r1l20" n="N019"/>fondation hab ich ihr anfanglich große difficulteten
       <lb facs="#facs_2_r1l21" n="N020"/>gemacht, das vill dazue vonöten, ein große fondo erfordre,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="277 r" xml:id="Kasten_blau_44_6_0439.jpg" ed="57 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l4" n="N001"/>auch ohne dero Liebden consens nit geschehen <add>vndt cooperation</add> könne. So antwort
       <lb facs="#facs_3_r1l5" n="N002"/>sie mihr darauf, das dero Liebden ihr schon alles verwilliget hetten,
@@ -321,7 +323,7 @@
       <lb facs="#facs_3_r1l20" n="N017"/>zu bringen, nemlich durch <choice><expan>bruder</expan><abbr>b</abbr></choice> Carl, das er soll von ihr
       <lb facs="#facs_3_r1l21" n="N018"/>begehrn dise mittel, so sie zu der fondation wolle
       <lb facs="#facs_3_r1l22" n="N019"/>anwenden, vndt auch von dero Lieben vndt dem <choice><expan>Bischof</expan><abbr>Bisch</abbr></choice> von Augschpurg</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="277 v" xml:id="Kasten_blau_44_6_0440.jpg"/>
     <ab facs="#facs_4_r1"/>
     <ab facs="#facs_4_r2">
       <lb facs="#facs_4_r2l2" n="N001"/>darzu <add>zu</add> bekommen verlange, sie ihme möge geben, damit
@@ -344,7 +346,7 @@
       <lb facs="#facs_4_r2l19" n="N018"/>auch dero Liebden ihm noch wolten was zulegen, als mit der fon-
       <lb facs="#facs_4_r2l20" n="N019"/>dation oder sonsten, könnens doch restringiren nuhr auf
       <lb facs="#facs_4_r2l21" n="N020"/>sein lebtag, vndt das seine kinder das ordinari</ab>
-    <pb facs="#facs_5" n="5" xml:id="img_0005"/>
+    <pb facs="#facs_5" n="278 r" xml:id="Kasten_blau_44_6_0441.jpg" ed="54 r"/>
     <ab facs="#facs_5_r1">
       <lb facs="#facs_5_r1l3" n="N001"/>apanage des haus herkomens gemehs haben sollen, einm<supplied>a</supplied>hl
       <lb facs="#facs_5_r1l4" n="N002"/><unclear>ligt</unclear> dero Liebden vndt der religion alles dran, b<supplied>e</supplied>zie mich auf
@@ -364,7 +366,7 @@
       <lb facs="#facs_5_r1l18" n="N016"/>zue sehen, was gott schikt, das dise crisis ist, mus es mit
       <lb facs="#facs_5_r1l19" n="N017"/>gedult erleiden, hoff aber könftigs iahr dise vergnugen
       <lb facs="#facs_5_r1l20" n="N018"/>zue genießen vndt dero Liebden mein enikel zeigen zue können.</ab>
-    <pb facs="#facs_6" n="6" xml:id="img_0006"/>
+    <pb facs="#facs_6" n="278 v" xml:id="Kasten_blau_44_6_0442.jpg"/>
     <ab facs="#facs_6_r1">
       <lb facs="#facs_6_r1l2" n="N001"/>Der <choice><expan>Pater</expan><abbr>P</abbr></choice> Poitier ist mit seinen gesellen hir gew<supplied>e</supplied>st,
       <lb facs="#facs_6_r1l3" n="N002"/>er, kombt mihr vohr, hab gutte intention, der
@@ -385,7 +387,7 @@
       <lb facs="#facs_6_r1l18" n="N017"/>will vndt man sie woll nit zwingen kan, weil
       <lb facs="#facs_6_r1l19" n="N018"/>das verschprechen in ihrer minderiarichkeit geschehn
       <lb facs="#facs_6_r1l20" n="N019"/>ist, also bitt ehr in solchen vall, das dero Liebden seinem</ab>
-    <pb facs="#facs_7" n="7" xml:id="img_0007"/>
+    <pb facs="#facs_7" n="279 r" xml:id="Kasten_blau_44_6_0443.jpg" ed="59 r"/>
     <ab facs="#facs_7_r1">
       <lb facs="#facs_7_r1l2" n="N001"/>sohn wolten genedig vndt verhülflich sein. Ich kan dero Liebden versi<supplied>c</supplied>he<supplied>r</supplied>n,
       <lb facs="#facs_7_r1l3" n="N002"/>das er die beste intentiones vndt dero Liebden vndt dem haus

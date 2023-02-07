@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1204" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1204px"/>
+    <graphic url="Kasten_blau_45_15_0637.jpg" width="800px" height="1204px"/>
     <zone points="7,341 7,1147 758,1147 758,341" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="144,425 311,449 413,421 735,437 757,431 756,384 434,367 370,382 262,369 227,387 142,370" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="84,514 275,476 523,481 555,503 700,469 758,494 757,442 661,420 312,449 82,430" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1178" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1178px"/>
+    <graphic url="Kasten_blau_45_15_0638.jpg" width="800px" height="1178px"/>
     <zone points="55,68 55,1090 784,1090 784,68" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="59,129 221,93 286,115 330,90 463,117 495,98 523,121 564,97 747,106 756,20 57,30" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="63,155 201,183 377,144 569,171 614,142 756,145 754,104 724,97 62,127" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -134,7 +136,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1218" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1218px"/>
+    <graphic url="Kasten_blau_45_15_0639.jpg" width="800px" height="1218px"/>
     <zone points="13,76 13,1161 760,1161 760,76" rendition="TextRegion" xml:id="facs_3_r2">
         <zone points="12,131 466,133 531,106 659,149 718,145 707,79 440,86 326,65 280,31 14,21" rendition="Line" xml:id="facs_3_r2l1"/>
         <zone points="35,204 52,213 89,202 115,218 147,221 149,158 130,147 121,148 111,137 106,140 95,134 87,139 75,128 49,141 37,137" rendition="Line" xml:id="facs_3_r2l2"/>
@@ -150,9 +152,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="51 r" xml:id="Kasten_blau_45_15_0637.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l3" n="N002"/>Ich sag ewer Durchlaucht <choice><expan>vnterdehnigsten</expan><abbr>vd</abbr></choice> dankh vohr dero <choice><expan>gnädige</expan><abbr>g</abbr></choice> schreiben vm
@@ -168,7 +170,7 @@
       <lb facs="#facs_1_r1l13" n="N012"/>post geht, so ist ünmöglich, <unclear>so vill</unclear> der zeit zue
       <lb facs="#facs_1_r1l14" n="N013"/>haben. Auch die predigen nachmitag izt seint, die
       <lb facs="#facs_1_r1l15" n="N014"/>vill zeit nemmen. Von hier geht die post in Schpanien</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="51 v" xml:id="Kasten_blau_45_15_0638.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>geht von hier nuhr alle 14 dag, also werden ewer Durchlaucht
       <lb facs="#facs_2_r1l2" n="N002"/>bede <choice><expan>gnädige</expan><abbr>g</abbr></choice> schreib<supplied>e</supplied>n miteinander heünt schiken, auch die
@@ -190,7 +192,7 @@
       <lb facs="#facs_2_r1l18" n="N018"/>aber auch in disen weite<supplied>re</supplied>n b<supplied>e</supplied>fehl. Mues einmahl wider
       <lb facs="#facs_2_r1l19" n="N019"/>m<supplied>e</supplied>in willen schließen, die zeit ist zue ku<supplied>r</supplied>z, werd mich
       <lb facs="#facs_2_r1l20" n="N020"/>befleisen, mit könftiger post alles zue beant-</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="52 r" xml:id="Kasten_blau_45_15_0639.jpg"/>
     <ab facs="#facs_3_r2">
       <lb facs="#facs_3_r2l1" n="N001"/>worten. Befehl mich <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> in ewer Durchlaucht <choice><expan>gnade</expan><abbr>g</abbr></choice> vnd werde ste<supplied>r</supplied>ben
       <lb facs="#facs_3_r2l2" n="N002"/>ewer Durchlaucht

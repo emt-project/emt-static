@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">"aygenhändig". Konzept mit Unterschrift. scheint erst jetzt das Beileidsschreiben (Joseph war am 17.04. gestorben)</ab>
+         <ab type="notes">"aygenhändig". Konzept mit Unterschrift. scheint erst jetzt das Beileidsschreiben (Joseph war am 17.04. gestorben)</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1309" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1309px"/>
+    <graphic url="Kasten_blau_44_10_0281.jpg" width="800px" height="1309px"/>
     <zone points="19,18 19,1308 797,1308 797,18" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="24,1308 43,1308 43,1194 24,1195" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="730,50 760,48 760,18 730,20" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -134,7 +136,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1290" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1290px"/>
+    <graphic url="Kasten_blau_44_10_0282.jpg" width="800px" height="1290px"/>
     <zone points="42,92 42,1183 797,1183 797,92" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="42,122 78,122 115,122 151,123 188,123 225,123 261,123 298,123 334,123 371,122 408,122 444,122 481,123 517,123 554,123 591,123 627,123 664,124 700,124 737,125 774,126 774,96 737,95 700,94 664,94 627,93 591,93 554,93 517,93 481,93 444,92 408,92 371,92 334,93 298,93 261,93 225,93 188,93 151,93 115,92 78,92 42,92" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="43,172 79,171 116,171 152,170 189,169 226,168 262,168 299,167 335,166 372,165 409,165 445,164 482,164 518,164 555,164 592,164 628,165 665,166 701,167 738,168 775,170 775,140 738,138 701,137 665,136 628,135 592,134 555,134 518,134 482,134 445,134 409,135 372,135 335,136 299,137 262,138 226,138 189,139 152,140 116,141 79,141 43,142" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -169,7 +171,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1330" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1330px"/>
+    <graphic url="Kasten_blau_44_10_0286.jpg" width="800px" height="1330px"/>
     <zone points="9,75 9,1283 778,1283 778,75" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="369,110 394,108 420,106 445,105 471,105 497,105 522,105 548,105 573,106 599,106 625,107 650,107 676,108 701,108 727,108 753,108 753,78 727,78 701,78 676,78 650,77 625,77 599,76 573,76 548,75 522,75 497,75 471,75 445,75 420,76 394,78 369,80" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="373,153 399,151 425,151 452,150 478,150 505,149 531,150 558,150 584,150 611,151 637,151 664,152 690,153 717,153 743,154 770,155 770,125 743,124 717,123 690,123 664,122 637,121 611,121 584,120 558,120 531,120 505,119 478,120 452,120 425,121 399,121 373,123" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -215,9 +217,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="15 r" xml:id="Kasten_blau_44_10_0281.jpg" ed="175 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/>
@@ -257,7 +259,7 @@
       <lb facs="#facs_1_r1l36" n="N036"/>
       <lb facs="#facs_1_r1l37" n="N037"/>
       <lb facs="#facs_1_r1l38" n="N038"/></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="15 v" xml:id="Kasten_blau_44_10_0282.jpg" ed="175 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>
       <lb facs="#facs_2_r1l2" n="N002"/>
@@ -289,7 +291,7 @@
       <lb facs="#facs_2_r1l28" n="N028"/>
       <lb facs="#facs_2_r1l29" n="N029"/>
       <lb facs="#facs_2_r1l30" n="N030"/></ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="17 r" xml:id="Kasten_blau_44_10_0286.jpg" ed="175 a"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>
       <lb facs="#facs_3_r1l2" n="N002"/>
@@ -333,13 +335,13 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__13">
                   <placeName>Düsseldorf</placeName>

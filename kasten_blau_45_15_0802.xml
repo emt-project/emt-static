@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Augsburg</ab>
+         <ab type="notes">Augsburg</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1249" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1249px"/>
+    <graphic url="Kasten_blau_45_15_0802.jpg" width="800px" height="1249px"/>
     <zone points="7,393 7,1241 762,1241 762,393" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="86,450 160,461 188,441 269,464 329,425 503,453 549,425 701,421 712,363 639,385 560,363 267,392 165,379 129,413 84,412" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="66,527 289,475 683,483 721,465 719,422 549,425 503,453 332,429 234,469 189,442 165,460 62,449" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1249" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1249px"/>
+    <graphic url="Kasten_blau_45_15_0803.jpg" width="800px" height="1249px"/>
     <zone points="21,58 21,494 768,494 768,58" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="36,102 217,121 426,81 727,90 726,46 668,36 633,54 502,35 400,54 341,30 296,47 35,38" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="36,157 157,136 296,172 350,139 482,133 574,161 610,136 756,134 755,89 669,110 520,78 235,127 122,107 35,122" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -129,9 +131,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="152 r" xml:id="Kasten_blau_45_15_0802.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuh<supplied>r</supplied>füst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l3" n="N002"/>Izt auf den abendt kombt dero Kanzler Irsch, welcher
@@ -150,7 +152,7 @@
       <lb facs="#facs_1_r1l16" n="N015"/>verschprechen 14 <unclear>m</unclear>, die gebliben, dan die Nissa ist ein fluß wie
       <lb facs="#facs_1_r1l17" n="N016"/>die Ens, aber vill rapider, der sey von der menge der
       <lb facs="#facs_1_r1l18" n="N017"/>doten geschwelt worden, das er ausgeloffen, ohne wos aufn</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="152 v" xml:id="Kasten_blau_45_15_0803.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>plaz bliben, gott <unclear>sey ewich</unclear> lob vnd dankh. <choice><expan>Pater</expan><abbr>P</abbr></choice>
       <lb facs="#facs_2_r1l2" n="N002"/>Marcus mit sein gebett hats vns erhalten, der hett

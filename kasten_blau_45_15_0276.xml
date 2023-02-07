@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Preßburg</ab>
+         <ab type="notes">Preßburg</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1271" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1271px"/>
+    <graphic url="Kasten_blau_45_15_0276.jpg" width="800px" height="1271px"/>
     <zone points="40,223 40,1212 772,1212 772,223" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="139,271 240,276 271,258 391,283 522,252 550,271 619,253 695,272 773,259 773,219 738,214 401,212 357,192 234,214 139,194" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="96,341 139,316 364,335 495,305 652,334 754,302 719,274 591,261 446,261 389,284 271,260 219,279 95,267" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,9 +116,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="145 r" xml:id="Kasten_blau_45_15_0276.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich bitt ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> vmb vergebung, das

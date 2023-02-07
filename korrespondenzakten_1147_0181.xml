@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">an Geistlichen (Wiser?)</ab>
+         <ab type="notes">an Geistlichen (Wiser?)</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1234" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1234px"/>
+    <graphic url="Korrespondenzakten_1147_0181.jpg" width="800px" height="1234px"/>
     <zone points="21,37 21,1233 727,1233 727,37" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="34,74 54,77 59,72 102,71 119,65 134,78 188,51 188,15 68,26 35,17" rendition="Line" xml:id="facs_1_r1l3"/>
         <zone points="58,342 315,327 387,344 599,324 678,346 694,341 694,281 531,284 360,253 266,293 174,276 70,287" rendition="Line" xml:id="facs_1_r1l5"/>
@@ -107,12 +109,12 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="109 r" xml:id="Korrespondenzakten_1147_0181.jpg" ed="82 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l3" n="N001"/><unclear>17 aug 95</unclear>
-      <lb facs="#facs_1_r1l5" n="N002"/>Woll <choice><expan>ehrwürdiger</expan><abbr>erw</abbr></choice> pater, hirbey kombt das büechel.
+      <lb facs="#facs_1_r1l5" n="N002"/>Woll <choice><expan>ehrwürdiger</expan><abbr>erw</abbr></choice> Pater, hirbey kombt das büechel.
       <lb facs="#facs_1_r1l6" n="N003"/>Mit nechstem werd mein <choice><expan>herrn</expan><abbr>h</abbr></choice> <choice><expan>bruder</expan><abbr>b</abbr></choice> sch<supplied>r</supplied>eiben in diser materi,
       <lb facs="#facs_1_r1l7" n="N004"/>hab heündt nit zeit. Ich hoff, ewer <choice><expan>Ehrwürden</expan><abbr>Er</abbr></choice> werden den
       <lb facs="#facs_1_r1l8" n="N005"/>Landgrauen schon in gutten standt gefunden haben,

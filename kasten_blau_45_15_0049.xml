@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Abschrift</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Heidelberg; Schönschrift, keine Unterschrift: wohl Abschrift</ab>
+         <ab type="notes">Heidelberg; Schönschrift, keine Unterschrift: wohl Abschrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1293" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1293px"/>
+    <graphic url="Kasten_blau_45_15_0049.jpg" width="800px" height="1293px"/>
     <zone points="18,1180 18,1292 50,1292 50,1180" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="13,1287 21,1287 27,1291 34,1289 36,1291 42,1289 44,1291 55,1291 55,1244 38,1244 23,1233 20,1235 13,1234" rendition="Line" xml:id="facs_1_r1l1"/>
       </zone>
@@ -120,7 +122,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1309" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1309px"/>
+    <graphic url="Kasten_blau_45_15_0050.jpg" width="800px" height="1309px"/>
     <zone points="22,1189 22,1308 84,1308 84,1189" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="17,1303 32,1307 44,1303 53,1305 72,1302 82,1307 89,1307 91,1259 72,1260 66,1264 57,1262 42,1271 36,1265 24,1269 18,1268" rendition="Line" xml:id="facs_2_r1l1"/>
       </zone>
@@ -144,7 +146,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1313" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1313px"/>
+    <graphic url="Kasten_blau_45_15_0051.jpg" width="800px" height="1313px"/>
     <zone points="16,406 16,1260 773,1260 773,406" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="93,467 233,437 647,447 765,430 765,408 609,376 505,411 417,383 358,404 191,378 91,396" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="98,489 347,472 486,490 605,464 718,477 765,465 764,430 596,451 473,432 335,460 220,438 97,465" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -161,9 +163,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="30 r" xml:id="Kasten_blau_45_15_0049.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/></ab>
     <ab facs="#facs_1_r2">
@@ -188,7 +190,7 @@
       <lb facs="#facs_1_r2l22" n="N019"/>Kisers betteru bisteleiben vnd lich amdebeu auß
       <lb facs="#facs_1_r2l23" n="N020"/>de dfalde hres ebangesagnns dnemorialich so bil
       <lb facs="#facs_1_r2l24" n="N021"/>ochtr</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="30 v" xml:id="Kasten_blau_45_15_0050.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/></ab>
     <ab facs="#facs_2_r2">
@@ -208,7 +210,7 @@
       <lb facs="#facs_2_r2l15" n="N014"/>allervnteraügste dmpetrantern ihner verdihr vue
       <lb facs="#facs_2_r2l16" n="N015"/>sansteein großes begderben nberschulde dinse
       <lb facs="#facs_2_r2l17" n="N016"/>gestütget</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="31 r" xml:id="Kasten_blau_45_15_0051.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>gestürket wedem mit ihrem alle vntertfägten vnder
       <lb facs="#facs_3_r1l2" n="N002"/>gekmeste deisen allergehorsambste zue cemerien zite

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1223" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1223px"/>
+    <graphic url="Kasten_blau_45_9_0224.jpg" width="800px" height="1223px"/>
     <zone points="17,178 17,1222 772,1222 772,178" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="101,225 177,245 276,218 326,241 378,214 433,228 466,212 612,217 651,200 651,138 587,138 527,165 456,139 292,156 243,127 190,146 101,141" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="65,291 120,276 184,295 220,268 370,259 433,281 509,264 548,284 741,278 735,218 335,243 277,217 173,247 65,206" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1216" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1216px"/>
+    <graphic url="Kasten_blau_45_9_0225.jpg" width="800px" height="1216px"/>
     <zone points="64,133 64,1125 783,1125 783,133" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="74,164 177,190 218,160 283,157 327,194 355,176 419,201 491,165 727,190 728,142 611,126 412,139 346,113 212,133 148,109 75,116" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="77,236 145,245 219,209 286,239 417,212 480,240 581,211 742,238 751,179 693,198 658,173 574,174 434,199 262,170 77,198" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -138,7 +140,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1242" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1242px"/>
+    <graphic url="Kasten_blau_45_9_0226.jpg" width="800px" height="1242px"/>
     <zone points="10,72 10,1189 782,1189 782,72" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="31,122 133,129 157,142 173,130 193,133 228,117 259,123 274,110 313,102 314,53 303,48 236,75 198,69 177,53 103,64 33,38" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="195,233 203,229 208,232 220,225 230,227 245,221 258,209 267,214 281,203 293,200 290,165 255,160 242,176 221,190 191,184" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -154,9 +156,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="129 r" xml:id="Kasten_blau_45_9_0224.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich mues ganz erstummen, in dem ich nit wort finden kan, ewer Durchlaucht
@@ -177,7 +179,7 @@
       <lb facs="#facs_1_r1l17" n="N017"/>nit hab abgelegt, das feierdag wüntschen hatt mich daran
       <lb facs="#facs_1_r1l19" n="N018"/>verhindert. Vnd weil <seg type="blackening">heütt</seg> <add>morgen</add> der <unclear>?</unclear> Linzig hinauf reiset, also
       <lb facs="#facs_1_r1l20" n="N019"/>hoff, er werd vast so balt als die post ankommen.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="129 v" xml:id="Kasten_blau_45_9_0225.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Das schreiben an die Königin in Sch<supplied>p</supplied>anien, weil ewer Durchlaucht mihr <choice><expan>gnädigst</expan><abbr>g</abbr></choice>
       <lb facs="#facs_2_r1l2" n="N002"/>befehlen, meine enfaltige meinung darüber zue berichten,
@@ -198,7 +200,7 @@
       <lb facs="#facs_2_r1l17" n="N017"/>gedanken schreibe, geschicht aus gehorsam vnt trewestem
       <lb facs="#facs_2_r1l18" n="N018"/>herzen. Erwarte also verners ewer Durchlaucht befehl, due mich
       <lb facs="#facs_2_r1l19" n="N019"/>in deßen in ewer Durchlaucht <choice><expan>gnade</expan><abbr>g</abbr></choice> <choice><expan>vnterdehnigst</expan><abbr>vnd</abbr></choice> befehlen, die</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="130 r" xml:id="Kasten_blau_45_9_0226.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>ich ersterben werde
       <lb facs="#facs_3_r1l2" n="N002"/>ewer Durchlaucht
@@ -212,7 +214,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__32">
+                  <placeName>Linz</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -220,9 +226,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__32">
-                  <placeName>Linz</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

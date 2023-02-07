@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="kasten_blau_45_9_0474.xml" xml:base="https://id.acdh.oeaw.ac.at.at/emt" prev="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_9_0470.xml" next="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_9_0479.xml">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="kasten_blau_45_9_0474.xml" xml:base="https://id.acdh.oeaw.ac.at.at/emt" prev="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_9_0470.xml" next="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_9_0476.xml">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">2. Brief mit dem gleichen Datum</ab>
+         <ab type="notes">2. Brief mit dem gleichen Datum</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1182" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1182px"/>
+    <graphic url="Kasten_blau_45_9_0474.jpg" width="800px" height="1182px"/>
     <zone points="11,278 11,1181 783,1181 783,278" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="96,330 130,321 181,354 311,316 353,343 382,317 513,339 553,316 716,314 715,272 638,255 576,280 433,264 246,283 95,253" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="114,377 294,390 373,372 425,391 564,362 769,370 767,326 691,311 532,345 463,329 407,353 113,346" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -111,7 +113,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1200" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1200px"/>
+    <graphic url="Kasten_blau_45_9_0475.jpg" width="800px" height="1200px"/>
     <zone points="37,0 29,598 757,598 765,0" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="116,299 162,302 192,282 354,315 482,277 697,276 696,243 620,235 554,252 441,238 389,259 115,240" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="103,350 217,367 245,346 286,362 311,340 361,334 449,369 495,345 601,335 598,270 460,280 312,321 203,288 145,316 101,303" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -124,9 +126,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="280 r" xml:id="Kasten_blau_45_9_0474.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Curfürst, herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben hab mit schuld<supplied>i</supplied>gstem respect empfangen.
@@ -143,7 +145,7 @@
       <lb facs="#facs_1_r1l13" n="N013"/>könftigen veltzug, wie ich nit zweifle, widerumb wirt
       <lb facs="#facs_1_r1l14" n="N014"/>sein guette conduite vnd valor erzeigen, zweifle
       <lb facs="#facs_1_r1l15" n="N015"/>ich nit, das schon gelegenheiten werden sein, ihme vortzuehelfen,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="280 v" xml:id="Kasten_blau_45_9_0475.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>warzue ich von herzen cooperiren werde. Due mich in
       <lb facs="#facs_2_r1l3" n="N002"/>dero beharlige gnad <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> befehlen, ste<supplied>r</supplied>be

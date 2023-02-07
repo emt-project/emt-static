@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datum: könnte theoretisch auch 1696, aber wohl unwahrscheinlich</ab>
+         <ab type="notes">Datum: könnte theoretisch auch 1696, aber wohl unwahrscheinlich</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1259" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1259px"/>
+    <graphic url="Kasten_blau_45_15_0832.jpg" width="800px" height="1259px"/>
     <zone points="33,331 33,1233 771,1233 771,331" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="141,374 242,398 288,372 306,388 346,354 368,376 415,354 487,380 560,364 642,386 691,364 765,368 766,315 253,295 142,346" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="46,450 82,463 172,424 223,463 368,418 480,444 521,420 660,443 753,424 752,386 484,380 446,360 325,396 289,374 247,399 171,373 118,400 89,378 46,393" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1260" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1260px"/>
+    <graphic url="Kasten_blau_45_15_0833.jpg" width="800px" height="1260px"/>
     <zone points="35,92 35,1253 769,1253 769,92" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="38,129 144,134 178,159 249,137 336,157 416,118 450,137 606,124 654,148 726,133 725,29 37,41" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="47,192 234,177 332,212 462,173 629,196 766,177 766,133 690,127 653,150 606,124 429,145 399,128 356,160 47,138" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -138,9 +140,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="169 r" xml:id="Kasten_blau_45_15_0832.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ewer Durchlaucht <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom 11ten dis hab mit <choice><expan>vnterdehnigstem</expan><abbr>vd</abbr></choice> respect
@@ -158,7 +160,7 @@
       <lb facs="#facs_1_r1l14" n="N014"/>lige satisfaction. Es continuiren alle zeitungen,
       <lb facs="#facs_1_r1l15" n="N015"/>das vnser Königin den 17ten mit guttem windt abgefaren
       <lb facs="#facs_1_r1l16" n="N016"/>vnd kein incontra mit den franzosen gehabt, also</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="169 v" xml:id="Kasten_blau_45_15_0833.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>verhoffe ich ganzlich, sie werde nuhnmehr schon
       <lb facs="#facs_2_r1l2" n="N002"/>bey ihrem König sein vnd mihr gahr balt

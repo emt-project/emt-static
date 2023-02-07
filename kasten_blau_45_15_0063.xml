@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift</ab>
+         <ab type="notes">Konzept mit Unterschrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1263" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1263px"/>
+    <graphic url="Kasten_blau_45_15_0063.jpg" width="800px" height="1263px"/>
     <zone points="75,56 382,56 780,87 780,733 396,733 74,147" rendition="TextRegion" xml:id="facs_1_TextRegion_1638788923627_1357">
         <zone points="147,107 160,111 165,111 172,106 182,109 206,107 206,53 197,53 192,56 178,50 174,54 167,51 156,60 147,58" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="69,151 90,140 125,154 237,134 273,145 308,128 343,139 386,122 384,84 361,93 309,87 259,111 211,101 141,116 116,106 67,109" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -127,9 +129,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="39 r" xml:id="Kasten_blau_45_15_0063.jpg"/>
     <ab facs="#facs_1_TextRegion_1638788923627_1357">
       <lb facs="#facs_1_r1l1" n="N001"/>urchen
       <lb facs="#facs_1_r1l2" n="N002"/> May die erzeirend beysein

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Foliierung: eindeutig, bloß leider beim vorigen 38 etc. auch schon: ??? Zur Unterscheidung habe ich jetzt bei allen Doppel-Foliennummern eine 2 dazugestellt</ab>
+         <ab type="notes">Foliierung: eindeutig, bloß leider beim vorigen 38 etc. auch schon: ??? Zur Unterscheidung habe ich jetzt bei allen Doppel-Foliennummern eine 2 dazugestellt</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1184" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1184px"/>
+    <graphic url="Kasten_blau_45_15_0108.jpg" width="800px" height="1184px"/>
     <zone points="25,147 25,1154 785,1154 785,147" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="97,196 162,182 232,206 280,178 423,205 465,176 497,192 630,168 752,187 778,183 777,131 556,121 441,154 339,119 209,127 150,154 95,125" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="76,255 517,220 549,240 604,218 736,238 771,220 770,182 710,201 519,175 455,208 395,188 356,209 288,187 224,210 158,186 74,198" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -118,9 +120,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="38 r2" xml:id="Kasten_blau_45_15_0108.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger cuhrfürst, mein herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Bitt <choice><expan>vnterdehnigst</expan><abbr>vn</abbr></choice> vmb vergebung, das auf dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> sch<supplied>r</supplied>eiben

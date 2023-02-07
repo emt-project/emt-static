@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,9 +62,11 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
-         <ab type="abstract-terms">1 Seite Chiffre, am Ende datiert und "Ahn Ihre kay. Maj. Die Kayserin von Ihro Curfl. Dhrl. Aygenhändig also abgangen" dürfte noch zum Brief dieses Datums 134 r ff. gehören</ab>
+         <ab type="notes">1 Seite Chiffre, am Ende datiert und "Ahn Ihre kay. Maj. Die Kayserin von Ihro Curfl. Dhrl. Aygenhändig also abgangen" dürfte noch zum Brief dieses Datums 134 r ff. gehören</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="und">noch nicht bestimmt</language>
          </langUsage>
@@ -82,12 +84,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1188" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1188px"/>
+    <graphic url="Kasten_blau_44_7_0253.jpg" width="800px" height="1188px"/>
     <zone points="87,47 87,1107 765,1107 765,47" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="694,77 728,78 728,48 694,47" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="102,130 135,128 169,127 202,126 236,125 270,124 303,124 337,124 371,124 404,124 438,124 471,124 505,125 539,125 572,126 606,127 640,127 673,128 707,129 741,129 741,99 707,99 673,98 640,97 606,97 572,96 539,95 505,95 471,94 438,94 404,94 371,94 337,94 303,94 270,94 236,95 202,96 169,97 135,98 102,100" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -119,7 +121,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1197" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1197px"/>
+    <graphic url="Kasten_blau_44_7_0254.jpg" width="800px" height="1197px"/>
     <zone points="86,1074 86,1196 148,1196 148,1074" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="86,1196 117,1196 148,1196 148,1076 117,1074 86,1076" rendition="Line" xml:id="facs_2_r1l1"/>
       </zone>
@@ -135,7 +137,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1235" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1235px"/>
+    <graphic url="Kasten_blau_44_7_0252.jpg" width="800px" height="1235px"/>
     <zone points="36,64 36,1138 760,1138 760,64" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="201,111 227,109 254,107 281,106 307,105 334,105 361,104 387,104 414,105 441,105 467,107 494,107 521,109 521,69 494,67 467,67 441,65 414,65 387,64 361,64 334,65 307,65 281,66 254,67 227,69 201,71" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="36,132 62,116 89,111 116,111 143,108 143,68 116,71 89,71 62,76 36,92" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -162,9 +164,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="139 r" xml:id="Kasten_blau_44_7_0253.jpg" ed="10 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/>
@@ -193,7 +195,7 @@
       <lb facs="#facs_1_r1l25" n="N025"/>
       <lb facs="#facs_1_r1l26" n="N026"/>
       <lb facs="#facs_1_r1l27" n="N027"/></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="139 v" xml:id="Kasten_blau_44_7_0254.jpg" ed="10 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/></ab>
     <ab facs="#facs_2_r2">
@@ -205,7 +207,7 @@
       <lb facs="#facs_2_r2l6" n="N006"/>
       <lb facs="#facs_2_r2l7" n="N007"/>
       <lb facs="#facs_2_r2l8" n="N008"/></ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="138 r" xml:id="Kasten_blau_44_7_0252.jpg" ed="8 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>
       <lb facs="#facs_3_r1l2" n="N002"/>

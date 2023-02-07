@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1186" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1186px"/>
+    <graphic url="Kasten_blau_45_15_0077.jpg" width="800px" height="1186px"/>
     <zone points="42,175 42,1185 777,1185 777,175" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="62,256 139,253 170,240 239,241 353,218 407,233 459,202 513,227 572,209 777,217 787,190 761,161 547,179 515,158 475,170 384,148 287,145 240,173 143,150" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="130,309 208,288 215,297 276,291 361,263 650,291 691,265 766,294 774,249 709,220 608,240 354,219 295,244 264,225 222,245 189,226 129,234" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -111,7 +113,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1191" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1191px"/>
+    <graphic url="Kasten_blau_45_15_0078.jpg" width="800px" height="1191px"/>
     <zone points="90,9 90,1141 732,1141 732,9" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="309,36 334,42 347,35 377,45 397,31 409,40 417,36 433,43 450,36 483,49 516,40 516,-4 495,5 482,-1 448,5 403,-2 337,5 309,-1" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="186,88 209,79 288,99 334,87 364,102 394,84 460,102 575,85 575,38 424,50 396,32 367,51 339,39 299,49 272,27 250,37 186,22" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -147,9 +149,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="48 r" xml:id="Kasten_blau_45_15_0077.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, herzallerliebster herrvatter
       <lb facs="#facs_1_r1l2" n="N002"/>Von Offen seint widrumb diße schreiben kommen
@@ -167,7 +169,7 @@
       <lb facs="#facs_1_r1l12" n="N014"/>Wien den 21 julij 1686
       <lb facs="#facs_1_line_1640075379598_146" n="N015"/>Ich weis nit, warumb <choice><expan>Pater</expan><abbr>P</abbr></choice> Marco
       <lb facs="#facs_1_r1l15" n="N016"/>so gahr nit schreibt, hab auf zwey brif kein antwo<supplied>r</supplied>t.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="49 r" xml:id="Kasten_blau_45_15_0078.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>tan teintschmeste
       <lb facs="#facs_2_r1l2" n="N002"/>drlötlager bey vom den 1 hilig ibeb

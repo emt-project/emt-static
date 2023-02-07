@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1259" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1259px"/>
+    <graphic url="Kasten_blau_45_15_0414.jpg" width="800px" height="1259px"/>
     <zone points="75,57 75,1125 332,1125 332,57" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="71,118 92,107 120,112 133,102 151,110 207,96 219,106 282,116 305,108 337,112 336,81 304,72 265,75 255,66 243,73 226,58 203,57 166,80 126,72 70,83" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="159,344 168,348 181,343 190,348 209,338 257,344 287,332 285,295 276,291 264,295 256,290 239,299 227,290 207,287 157,295" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -143,7 +145,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1278" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1278px"/>
+    <graphic url="Kasten_blau_45_15_0415.jpg" width="800px" height="1278px"/>
     <zone points="117,41 117,832 394,832 394,41" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="113,87 136,90 155,74 264,86 329,64 359,79 396,79 392,18 189,21 162,40 111,47" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="140,109 148,112 157,107 164,110 168,106 176,110 182,108 191,116 199,106 208,105 206,76 198,75 194,78 190,75 182,76 178,81 175,78 171,79 165,73 157,77 138,75" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -192,7 +194,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1343" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1343px"/>
+    <graphic url="Kasten_blau_45_15_0416.jpg" width="800px" height="1343px"/>
     <zone points="36,435 36,1044 365,1044 365,435" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="220,470 253,477 267,470 272,474 304,463 315,464 313,412 294,414 280,404 266,412 247,433 239,428 218,425" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="144,500 151,501 162,511 165,508 181,511 193,505 222,514 231,509 249,509 253,475 227,470 189,433 162,442 152,440" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -236,9 +238,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="230 r" xml:id="Kasten_blau_45_15_0414.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>iher mglder nr
       <lb facs="#facs_1_r1l2" n="N002"/>herwhb
@@ -287,7 +289,7 @@
       <lb facs="#facs_1_r2l34" n="N034"/>n pohlen mit wetlchein er sinbrion wdllen on
       <lb facs="#facs_1_r2l35" n="N035"/>dengenflagen tendt wundten  m
       <lb facs="#facs_1_r2l36" n="N036"/>EcT</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="230 v" xml:id="Kasten_blau_45_15_0415.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>daruben sin aoch vend d
       <lb facs="#facs_2_r1l2" n="N002"/>bien
@@ -332,7 +334,7 @@
       <lb facs="#facs_2_r2l35" n="N035"/>en sebrnigen sihert man gotteb handt wahl
       <lb facs="#facs_2_r2l36" n="N036"/>rengenschrlich das die tirlhen so gen me
       <lb facs="#facs_2_r2l37" n="N037"/>kn ersehen der ceristlich maften derlen</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="231 r" xml:id="Kasten_blau_45_15_0416.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>t seinr
       <lb facs="#facs_3_r1l2" n="N002"/>o

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datum: Martij korrigiert aus feb</ab>
+         <ab type="notes">Datum: Martij korrigiert aus feb</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1253" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1253px"/>
+    <graphic url="Kasten_blau_45_15_0815.jpg" width="800px" height="1253px"/>
     <zone points="31,361 31,1239 772,1239 772,361" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="153,439 274,443 335,409 391,426 465,395 540,422 729,387 778,409 777,366 724,346 603,357 561,338 487,356 427,336 335,366 289,341 152,382" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="41,473 218,483 349,450 416,473 477,457 521,483 588,445 769,448 768,418 608,398 553,428 478,394 389,426 333,410 276,447 120,416 40,440" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1240" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1240px"/>
+    <graphic url="Kasten_blau_45_15_0816.jpg" width="800px" height="1240px"/>
     <zone points="35,58 35,1183 775,1183 775,58" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="36,120 165,85 260,104 323,75 391,105 418,86 548,109 582,88 637,111 738,82 738,9 678,29 491,8 447,28 36,24" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="39,163 84,171 186,129 321,148 360,124 665,154 721,138 721,92 627,113 583,90 459,112 158,94 39,120" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -147,9 +149,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="159 r" xml:id="Kasten_blau_45_15_0815.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster her vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ewer Durchlaucht <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom 29ten passato hab ich mit <choice><expan>vnterdehnigstem</expan><abbr>vnt</abbr></choice>
@@ -167,7 +169,7 @@
       <lb facs="#facs_1_r1l14" n="N014"/>schperen zeiten haben solches nit prestiren können,
       <lb facs="#facs_1_r1l15" n="N015"/>ins könftig aber werden ihr Mayestät allezeit verners
       <lb facs="#facs_1_r1l16" n="N016"/>suechen, dero erkantnus zue erzeigen. Ich finde mich</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="159 v" xml:id="Kasten_blau_45_15_0816.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>ganz vntauglich, so vill gnaden, so ich empfangen,
       <lb facs="#facs_2_r1l2" n="N002"/>abzuedienen, wan mihr ewer Durchlaucht durch dero <choice><expan>gnädige</expan><abbr>g</abbr></choice> befehl

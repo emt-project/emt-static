@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1240" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1240px"/>
+    <graphic url="Kasten_blau_44_2d_0027.jpg" width="800px" height="1240px"/>
     <zone points="60,298 60,1224 757,1224 757,298" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="106,337 218,354 385,331 434,362 483,339 751,341 758,286 107,273" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="81,373 591,386 690,380 707,348 480,338 444,358 393,331 156,351 124,325 82,340" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1218" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1218px"/>
+    <graphic url="Kasten_blau_44_2d_0028.jpg" width="800px" height="1218px"/>
     <zone points="54,181 54,878 769,878 769,181" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="123,225 220,243 271,218 298,241 462,213 531,238 572,216 709,212 708,178 620,194 497,169 434,187 262,175 122,194" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="114,286 286,256 615,269 713,253 712,214 687,207 573,242 379,221 300,242 256,224 221,244 113,223" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -133,9 +135,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="1" xml:id="Kasten_blau_44_2d_0027.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr brueder
       <lb facs="#facs_1_r1l2" n="N002"/>Ich habe wegen der kindelbet nit eender können
@@ -154,7 +156,7 @@
       <lb facs="#facs_1_r1l15" n="N015"/>kan, vndt bin dero Liebden vnerhört obligirt, das sie
       <lb facs="#facs_1_r1l16" n="N016"/>mihr so baldt daruon haben parte wollen
       <lb facs="#facs_1_r1l17" n="N017"/>geben. Ich werdt woll ein große freüdt haben,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="2" xml:id="Kasten_blau_44_2d_0028.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>wan ich die guette zeittung hören werde.
       <lb facs="#facs_2_r1l2" n="N002"/>Ich befindt mich mitt meinen kindren
@@ -165,7 +167,7 @@
       <lb facs="#facs_2_r1l8" n="N007"/>getreweste schwester
       <lb facs="#facs_2_line_1641474417546_485" n="N008"/>EMT
       <lb facs="#facs_2_r1l7" n="N009"/>Lins den 21 jener 1681
-      <lb facs="#facs_2_r1l9" n="N010"/>PS Dem Ansalone will fleisig
+       <lb facs="#facs_2_r1l9" n="N010"/><choice><expan>Postscriptum</expan><abbr>PS</abbr></choice> Dem Ansalone will fleisig
       <lb facs="#facs_2_line_1641474417546_486" n="N011"/>ihr Mayestät recomendiren, ist mihr 
       <lb facs="#facs_2_r1l11" n="N012"/>einfr<supplied>e</supplied>udt, wan dero Liebden etwas von mihr verlangt. Die guett
       <lb facs="#facs_2_r1l12" n="N013"/>Hamelton due ich au<supplied>c</supplied>h hirmit nochmahls recomendiren,

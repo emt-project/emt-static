@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,17 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Abschrift</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Abschrift. plötzlich Foliierung -- Frage, wo der Brief ursprünglich eingeordnet war</ab>
+         <ab type="notes">Abschrift. plötzlich Foliierung -- Frage, wo der Brief ursprünglich eingeordnet war</ab>
         </abstract>
+        <abstract n="regest">
+            <p>
+               Schlägt im Auftrag <rs type="person" ref="#emt_person_id__50">PWs</rs> vor, dass <rs ref="#emt_person_id__58">Graf Maximilian von Starhemberg</rs>  eine beständige Kommission beim nieder- und oberrheinischen Reichskreis  erhalten soll, die es ihm ermöglichen würde, gleichzeitig PW mit Rat und Tat zur Seite zu stehen. Damit würde auch der fatalen Geschwätzigkeit des Grafen von Hohenlohe  entgegengewirkt, der schuld daran ist, dass beim Reichstag in Regensburg öffentliche Kopien des Projekts des Allianzprojekts (gemeint ist wohl die Augsburger Allianz) kursieren.
+            </p>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +90,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1298" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1298px"/>
+    <graphic url="Kasten_blau_44_2d_0034.jpg" width="800px" height="1298px"/>
     <zone points="62,129 62,1228 767,1228 767,129" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="57,176 612,172 708,162 740,127 661,104 465,126 323,109 178,147 121,127 56,158" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="177,208 215,201 292,216 340,196 374,206 400,193 480,196 478,166 402,163 358,174 332,161 233,181 201,170 176,189" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -124,7 +128,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1286" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1286px"/>
+    <graphic url="Kasten_blau_44_2d_0035.jpg" width="800px" height="1286px"/>
     <zone points="95,130 95,1113 783,1113 783,130" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="101,160 783,163 783,136 715,113 599,138 523,117 344,136 315,114 213,130 101,106" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="97,198 411,183 444,206 475,182 622,182 719,201 765,192 765,171 694,150 544,172 96,165" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -158,7 +162,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1323" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1323px"/>
+    <graphic url="Kasten_blau_44_2d_0036.jpg" width="800px" height="1323px"/>
     <zone points="49,134 49,1253 755,1253 755,134" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="63,183 312,165 528,179 588,156 749,178 755,130 361,114 246,133 145,114 62,140" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="73,204 559,211 748,177 583,157 528,178 308,166 73,185" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -191,7 +195,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1268" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1268px"/>
+    <graphic url="Kasten_blau_44_2d_0037.jpg" width="800px" height="1268px"/>
     <zone points="72,135 72,685 776,685 776,135" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="119,168 770,162 770,130 737,122 616,149 382,101 119,119" rendition="Line" xml:id="facs_4_r1l1"/>
         <zone points="128,199 336,209 493,191 645,219 769,202 769,179 680,160 253,179 128,159" rendition="Line" xml:id="facs_4_r1l2"/>
@@ -213,9 +217,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="112 r" xml:id="Kasten_blau_44_2d_0034.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>ladurchleuüchtigstern aent großachteigster drnchter lausdarm
       <lb facs="#facs_1_r1l2" n="N002"/>dalernmste luber aw
@@ -245,7 +249,7 @@
       <lb facs="#facs_1_r1l26" n="N026"/>mein allergndigste hr bay eitse anach wehrenden einenkuk
       <lb facs="#facs_1_r1l27" n="N027"/>drstalken cmmtlisen eepirb seinden das bie kenen nitu duren
       <lb facs="#facs_1_r1l28" n="N028"/>rebu sie fenriben berauebmaht is lich ushalen ernungnen</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="112 v" xml:id="Kasten_blau_44_2d_0035.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>koner biederten aller err macht fählich vemmahten haben lnder
       <lb facs="#facs_2_r1l2" n="N002"/>dieselbe auf keine weße bis brie wottgebe beli erfolgende
@@ -276,7 +280,7 @@
       <lb facs="#facs_2_r1l27" n="N027"/>em eber bnde vderam sonegbe curd dech der
       <lb facs="#facs_2_r1l28" n="N028"/>gestalten wa er nemnes pöst geliebbesten deren latter hm
       <lb facs="#facs_2_r1l29" n="N029"/>suchter</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="113 r" xml:id="Kasten_blau_44_2d_0036.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>cuersthy zwar nicht nit ehlichten zugetchas seinen denselbern aber doch
       <lb facs="#facs_3_r1l2" n="N002"/>mit röchte vnd kort an die fandt gehewen qbiueruo vnd vege
@@ -306,7 +310,7 @@
       <lb facs="#facs_3_r1l26" n="N026"/>ihedardurch hegen mie ein verteren in deselben haben
       <lb facs="#facs_3_r1l27" n="N027"/>vanerselbe nir auch gegen vnß mit derglefen llleproie
       <lb facs="#facs_3_r1l28" n="N028"/>memrlten  aer a arneeb sich</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="113 v" xml:id="Kasten_blau_44_2d_0037.jpg"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/>wardurch hie heitlich vnt aertew eig einen immerbefande deaw
       <lb facs="#facs_4_r1l2" n="N002"/>ds orie aetihe genes sent vreser ld eolebern
@@ -326,9 +330,16 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__58">
+                  <persName>Graf Maximilan von Starhemberg</persName>
+               </person>
+            <person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
                <person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>

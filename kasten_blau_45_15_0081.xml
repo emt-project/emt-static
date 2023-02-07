@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1184" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1184px"/>
+    <graphic url="Kasten_blau_45_15_0081.jpg" width="800px" height="1184px"/>
     <zone points="25,190 25,1178 784,1178 784,190" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="61,201 90,252 174,213 241,249 405,218 768,230 792,214 786,188 683,168 415,180 367,155 236,179 123,152" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="63,278 160,297 310,268 530,293 656,261 727,293 789,282 789,229 682,220 626,245 408,220 239,248 258,226 238,238 203,225 189,233 64,203" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1179" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1179px"/>
+    <graphic url="Kasten_blau_45_15_0082.jpg" width="800px" height="1179px"/>
     <zone points="15,77 15,1177 787,1177 787,77" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="74,128 199,121 254,142 430,118 522,136 616,105 698,127 740,109 748,67 68,70" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="66,178 183,167 219,192 327,197 387,163 553,181 588,165 692,185 746,168 745,115 690,136 661,114 428,119 306,135 191,134 113,121 65,142" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -139,7 +141,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1204" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1204px"/>
+    <graphic url="Kasten_blau_45_15_0083.jpg" width="800px" height="1204px"/>
     <zone points="12,71 12,1195 756,1195 756,71" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="27,113 190,102 323,133 439,126 488,98 560,120 754,107 745,51 590,71 423,44 146,71 81,45 26,55" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="23,170 167,154 346,179 509,155 666,182 754,162 753,105 427,139 22,122" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -154,9 +156,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="51 r" xml:id="Kasten_blau_45_15_0081.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreib<supplied>e</supplied>n vom 26ten passato hab mit <choice><expan>vnterdehnigstem</expan><abbr>vnt</abbr></choice> respect
@@ -177,7 +179,7 @@
       <lb facs="#facs_1_r1l17" n="N017"/>meister wie auch andre dagzettel werden ewer Durchlaucht <choice><expan>gnädig</expan><abbr>g</abbr></choice>
       <lb facs="#facs_1_r1l18" n="N018"/>ersehn, das zue Offen nit zum besen steht wegen
       <lb facs="#facs_1_r1l21" n="N019"/>anahenden feindts. Das gebett ist vonöten, sie hoffen aber,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="51 v" xml:id="Kasten_blau_45_15_0082.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>diesen desperaten feindt entlich zue überwinden
       <lb facs="#facs_2_r1l2" n="N002"/>durch die gnad gottes, welcher es allein kan.
@@ -199,7 +201,7 @@
       <lb facs="#facs_2_r1l18" n="N018"/>vnd mein dag. W<supplied>e</supplied>is nit, obs nit villeicht in
       <lb facs="#facs_2_r1l19" n="N019"/>meinem vohrigen schreiben vergeßen bin, weil <supplied>ich</supplied>
       <lb facs="#facs_2_line_1640086798576_374" n="N020"/>so in eil daruon geloffen. Ewer Durchlaucht glauben, das</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="52 r" xml:id="Kasten_blau_45_15_0083.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>das <supplied>es</supplied> mein höchste glükhsehlichkeit <supplied>wäre</supplied>, wan ich nuhr ewer
       <lb facs="#facs_3_r1l2" n="N002"/>Durchlaucht könt <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> dienen, warzue ich den Josephl

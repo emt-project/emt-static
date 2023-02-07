@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">im Datum steht 1683, muss irrtümlich sein</ab>
+         <ab type="notes">im Datum steht 1683, muss irrtümlich sein</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1211" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1211px"/>
+    <graphic url="Kasten_blau_45_9_0234.jpg" width="800px" height="1211px"/>
     <zone points="64,158 64,1179 771,1179 771,158" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="125,199 165,212 319,192 384,218 513,189 643,199 704,188 703,135 661,126 608,148 528,128 470,157 370,143 303,165 248,146 167,157 123,131" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="93,282 244,283 299,243 424,270 604,235 659,256 692,235 748,242 747,200 450,216 407,200 370,229 312,207 223,234 90,197" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1191" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1191px"/>
+    <graphic url="Kasten_blau_45_9_0235.jpg" width="800px" height="1191px"/>
     <zone points="34,95 34,954 782,954 782,95" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="66,123 276,122 353,150 567,124 688,152 755,129 756,97 711,101 667,72 558,92 429,74 362,104 269,65 174,97 67,81" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="59,179 157,167 250,198 298,167 382,198 716,205 777,172 778,145 587,134 555,157 452,155 276,122 60,130" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -138,9 +140,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="135 r" xml:id="Kasten_blau_45_9_0234.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich verhoffe, ewer Durchlaucht werden sich in guettem wohlstandt
@@ -160,7 +162,7 @@
       <lb facs="#facs_1_r1l16" n="N016"/>tedeum gehalten wegen der polnischen victori, so sie
       <lb facs="#facs_1_r1l17" n="N017"/>gehabt haben vnd ewer Durchlaucht ohne zweifel schon werden
       <lb facs="#facs_1_r1l18" n="N018"/>wißen. Sie machens gahr groß, ist schon guett, wans</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="135 v" xml:id="Kasten_blau_45_9_0235.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>nuhr der vierte deil daruon ist, gott gebe weiters sein gnad,
       <lb facs="#facs_2_r1l2" n="N002"/>das die könftige campagne möge woll abgehn. Ich schreib
@@ -171,7 +173,7 @@
       <lb facs="#facs_2_r1l8" n="N007"/><choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> <choice><expan>trewgehorsamste</expan><abbr>twgehors</abbr></choice> do<supplied>c</supplied>hter
       <lb facs="#facs_2_r1l9" n="N008"/>EMT
       <lb facs="#facs_2_r1l7" n="N009"/>Linz den 22ten jener <unclear>1683</unclear>
-      <lb facs="#facs_2_r1l10" n="N010"/>PS So eben ist der Cardinal b<supplied>e</supplied>y mihr gewest, brenget niks news
+       <lb facs="#facs_2_r1l10" n="N010"/><choice><expan>Postscriptum</expan><abbr>PS</abbr></choice> So eben ist der Cardinal b<supplied>e</supplied>y mihr gewest, brenget niks news
       <lb facs="#facs_2_r1l11" n="N011"/>wegen Portugall als das der Nunti verlang, das ihre Mayestät
       <lb facs="#facs_2_r1l12" n="N012"/>in Schpanien schreiben, das sie von dort den gesanten auch comission
       <lb facs="#facs_2_r1l13" n="N013"/>gebetten, mit dem Nunti das werkh zue portiren. Hatt mihr auch
@@ -182,7 +184,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__32">
+                  <placeName>Linz</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -190,9 +196,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__32">
-                  <placeName>Linz</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

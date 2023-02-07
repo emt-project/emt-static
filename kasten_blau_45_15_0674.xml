@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1239" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1239px"/>
+    <graphic url="Kasten_blau_45_15_0674.jpg" width="800px" height="1239px"/>
     <zone points="16,437 16,590 29,590 29,437" rendition="TextRegion" xml:id="facs_1_r1">
       </zone>
     <zone points="16,513 16,1183 755,1183 755,513" rendition="TextRegion" xml:id="facs_1_r2">
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1239" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1239px"/>
+    <graphic url="Kasten_blau_45_15_0675.jpg" width="800px" height="1239px"/>
     <zone points="65,64 65,1132 797,1132 797,64" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="78,110 170,128 203,105 356,99 388,126 509,90 742,99 735,22 77,16" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="68,154 153,174 216,147 368,178 435,154 507,176 633,151 704,176 747,166 748,122 644,134 574,99 534,123 429,106 388,126 318,103 69,127" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -133,7 +135,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1276" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1276px"/>
+    <graphic url="Kasten_blau_45_15_0676.jpg" width="800px" height="1276px"/>
     <zone points="21,89 21,1179 746,1179 746,89" rendition="TextRegion" xml:id="facs_3_r2">
         <zone points="21,131 182,119 324,158 522,125 584,161 722,126 722,100 598,95 528,67 363,98 210,60 146,86 21,77" rendition="Line" xml:id="facs_3_r2l1"/>
         <zone points="17,219 128,224 225,189 309,215 386,189 593,219 654,190 750,202 751,167 607,144 517,175 459,144 300,164 250,131 18,133" rendition="Line" xml:id="facs_3_r2l2"/>
@@ -150,9 +152,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="73 r" xml:id="Kasten_blau_45_15_0674.jpg"/>
     <ab facs="#facs_1_r1"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster her vatter
@@ -167,7 +169,7 @@
       <lb facs="#facs_1_r2l10" n="N010"/>ehr ist. Das hier solt die sach ausgema<supplied>c</supplied>ht
       <lb facs="#facs_1_r2l11" n="N011"/>werden, wirt woll zue überlegen sein, ob bey disen
       <lb facs="#facs_1_r2l12" n="N012"/>zeiten sie nit sicherer durch Niderland <add>vnd</add> Holand hinein</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="73 v" xml:id="Kasten_blau_45_15_0675.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>zue gehn als über Walischland. Biß daorthin aber
       <lb facs="#facs_2_r1l2" n="N002"/>wirt sich alles dis schon überlegen laßen, wie auch
@@ -188,7 +190,7 @@
       <lb facs="#facs_2_r1l17" n="N017"/>Aber dis in höchstem secreto, mit nechstem aber
       <lb facs="#facs_2_r1l18" n="N018"/>werd alles ausfürlich schreiben oder durch den
       <lb facs="#facs_2_r1l19" n="N019"/>Hoffkanzler berichten laßen. Im haubt werk g<supplied>i</supplied>bt</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="74 r" xml:id="Kasten_blau_45_15_0676.jpg"/>
     <ab facs="#facs_3_r2">
       <lb facs="#facs_3_r2l1" n="N001"/>sonst gibt hier ganz niks zue berichten. Heündt
       <lb facs="#facs_3_r2l2" n="N002"/><unclear>halten</unclear> <unclear>ein</unclear> oratori, singens meine freülen in der

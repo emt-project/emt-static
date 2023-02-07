@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">enthält Chiffre (fast 1 Seite). Datierung: es steht 1696, aber ich denke, dass sie sich mit dem Jahr mal wieder vertan hat. Auf der ersten Seite Vermerk in Tinte 21.01.1696, aber mit Bleistift 1697</ab>
+         <ab type="notes">enthält Chiffre (fast 1 Seite). Datierung: es steht 1696, aber ich denke, dass sie sich mit dem Jahr mal wieder vertan hat. Auf der ersten Seite Vermerk in Tinte 21.01.1696, aber mit Bleistift 1697</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1191" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1191px"/>
+    <graphic url="Kasten_blau_44_7_0242.jpg" width="800px" height="1191px"/>
     <zone points="33,41 33,1128 756,1128 756,41" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="28,83 41,81 61,92 106,80 129,89 209,53 209,29 169,33 157,26 141,32 109,21 86,30 28,26" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="82,457 316,506 437,459 512,483 761,460 753,379 678,422 561,402 536,423 81,382" rendition="Line" xml:id="facs_1_r1l7"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1187" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1187px"/>
+    <graphic url="Kasten_blau_44_7_0243.jpg" width="800px" height="1187px"/>
     <zone points="45,68 45,1117 797,1117 797,68" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="64,113 213,90 432,126 509,93 592,98 636,129 786,107 786,16 64,12" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="42,155 211,169 246,147 286,170 530,139 617,170 646,150 694,166 759,144 759,125 580,110 396,129 357,107 42,138" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -134,9 +136,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="133 r" xml:id="Kasten_blau_44_7_0242.jpg" ed="14 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/><unclear>21 jenner 96</unclear>
       <lb facs="#facs_1_r1l7" n="N002"/>Durchleüchtiger Cuhrfürst, mein h<supplied>er</supplied>zallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> <choice><expan>bruder</expan><abbr>brud</abbr></choice>
@@ -150,7 +152,7 @@
       <lb facs="#facs_1_r1l15" n="N010"/>überschikt vnd nit in ziffra, dan am secreto
       <lb facs="#facs_1_r1l16" n="N011"/>diser sach henkt alles. Diser brif hatt mich
       <lb facs="#facs_1_r1l17" n="N012"/>übrigens sehr erfreüet, in dem ich daraus</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="133 v" xml:id="Kasten_blau_44_7_0243.jpg" ed="14 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>sehe, das <unclear>er verlangt, <supplied>das</supplied> sein dochte</unclear>
       <lb facs="#facs_2_r1l2" n="N002"/><unclear>r recht catolisch werde, das   </unclear>
@@ -174,11 +176,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -186,5 +184,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

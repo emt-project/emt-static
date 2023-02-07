@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Foliierung: offenbar zwischen der Tinten- und der Bleistiftfoliierung dieser Brief aus dem vorigen herausgenommen worden, wo er wohl wie häufig in 45_7 seit der Beantwortung gesteckt haben dürfte.</ab>
+         <ab type="notes">Foliierung: offenbar zwischen der Tinten- und der Bleistiftfoliierung dieser Brief aus dem vorigen herausgenommen worden, wo er wohl wie häufig in 45_7 seit der Beantwortung gesteckt haben dürfte.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1245" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1245px"/>
+    <graphic url="Kasten_blau_44_9_0012.jpg" width="800px" height="1245px"/>
     <zone points="64,344 64,1117 732,1117 732,344" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="155,402 730,416 734,345 673,330 481,373 290,312 160,315" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="85,432 171,427 263,466 376,443 412,465 543,472 732,461 734,415 197,411 88,356" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -111,7 +113,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1228" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1228px"/>
+    <graphic url="Kasten_blau_44_9_0013.jpg" width="800px" height="1228px"/>
     <zone points="85,126 85,1140 769,1140 769,126" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="91,166 218,151 400,188 534,169 742,180 731,134 596,143 420,97 335,119 261,95 166,124 94,104" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="83,209 744,227 737,180 658,198 535,168 402,186 216,150 115,177 86,162" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -142,9 +144,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="4 r" xml:id="Kasten_blau_44_9_0012.jpg" ed="7 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Curfürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l2" n="N002"/>In dem sich die <choice><expan>heiligen</expan><abbr>h</abbr></choice> weinachtsfeirdag vnd newes iahr herzue
@@ -161,7 +163,7 @@
       <lb facs="#facs_1_r1l13" n="N013"/>brif an die Keiserin, mein libste <choice><expan>fraw</expan><abbr>f</abbr></choice> dochter <choice><expan>Mayestät</expan><abbr>My</abbr></choice>, überschike, warinnen
       <lb facs="#facs_1_r1l14" n="N014"/>sie selbiger die ahnemung vnsers glauben eröffne vndt in ahn-
       <lb facs="#facs_1_r1l15" n="N015"/>sehung ihrer naheten anuerwantschafft vmb ihre protection</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="4 v" xml:id="Kasten_blau_44_9_0013.jpg" ed="7 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>erbitte vndt die erlaubnus, sich persönlich dahir vnter selbige
       <lb facs="#facs_2_r1l2" n="N002"/>zu sezen vndt zu genießen. Auf welchen brif hernach man einrichten
@@ -190,11 +192,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -202,5 +200,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

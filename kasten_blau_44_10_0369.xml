@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datum ist unklar: könnte 1sten, 13ten, 18ten 7bris. Vielleicht irrtümlich 7bris, und es sollte 01.10. heißen?</ab>
+         <ab type="notes">Datum ist unklar: könnte 1sten, 13ten, 18ten 7bris. Vielleicht irrtümlich 7bris, und es sollte 01.10. heißen?</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1257" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1257px"/>
+    <graphic url="Kasten_blau_44_10_0369.jpg" width="800px" height="1257px"/>
     <zone points="33,0 33,1247 783,1247 783,0" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="144,413 197,419 221,395 258,417 478,396 541,412 588,392 655,412 696,386 756,411 782,405 783,314 596,339 545,319 496,343 145,326" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="69,459 122,435 150,457 365,438 440,479 528,440 656,465 788,438 788,406 722,392 374,428 70,355" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1241" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1241px"/>
+    <graphic url="Kasten_blau_44_10_0370.jpg" width="800px" height="1241px"/>
     <zone points="25,60 25,1229 798,1229 798,60" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="47,121 323,90 504,129 585,91 758,100 758,61 662,40 405,71 246,49 150,77 109,56 47,71" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="32,146 422,144 487,172 686,134 734,146 734,98 688,94 557,127 420,111 368,132 32,85" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -139,7 +141,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1212" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1212px"/>
+    <graphic url="Kasten_blau_44_10_0372.jpg" width="800px" height="1212px"/>
     <zone points="57,9 57,1167 773,1167 773,9" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="69,134 186,107 249,132 500,147 547,115 594,131 753,112 754,86 70,59" rendition="Line" xml:id="facs_3_r1l3"/>
         <zone points="53,155 83,178 115,151 269,175 568,154 654,183 735,167 728,121 549,122 450,148 53,108" rendition="Line" xml:id="facs_3_r1l4"/>
@@ -161,7 +163,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1271" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1271px"/>
+    <graphic url="Kasten_blau_44_10_0371.jpg" width="800px" height="1271px"/>
     <zone points="579,403 331,403 331,852 579,852" rendition="TextRegion" xml:id="facs_4_region_1661176140741_289">
         <zone points="518,465 523,508 527,558 527,599 529,634 529,669 532,712 530,769 480,767 482,713 479,671 479,635 477,600 477,560 473,514 468,471" rendition="Line" xml:id="facs_4_line_1661176154796_293"/>
         <zone points="476,443 481,499 484,552 486,603 482,651 483,694 484,739 434,740 433,695 432,650 436,602 434,554 431,502 426,447" rendition="Line" xml:id="facs_4_line_1661176162894_298"/>
@@ -171,9 +173,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="82 r" xml:id="Kasten_blau_44_10_0369.jpg" ed="227 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Curfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l2" n="N002"/>Ich hoffe, dero Liebden kennen meine gegen diselbe bestendig dragende,
@@ -191,7 +193,7 @@
       <lb facs="#facs_1_r1l14" n="N014"/>es gahr nicht glauben, weilen dises nicht zu der wahl
       <lb facs="#facs_1_r1l15" n="N015"/>gehöret vndt vill zeit brauchen wurde, selbige zu erörtern
       <lb facs="#facs_1_r1l16" n="N016"/>vndt ville alte vnd newe schrifften müesten vntersuchet</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="82 v" xml:id="Kasten_blau_44_10_0370.jpg" ed="227 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>werden, welche zu Frankfort man nicht haben kan, vndt vill zeit
       <lb facs="#facs_2_r1l2" n="N002"/>zuesammen zu bringen dazu vonöten währe, auch dero Liebden erachten
@@ -215,7 +217,7 @@
       <lb facs="#facs_2_r1l21" n="N020"/>allein, wan innen dererley ansuchung anderwerts herkommen
       <lb facs="#facs_2_r1l22" n="N021"/>solte, selbigem kein gehör zu geben, sondern auch im vall,
       <lb facs="#facs_2_r1l23" n="N022"/>gegen alles verhoffen, dißes vohrzubringen oder zu befordern dero</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="83 r" xml:id="Kasten_blau_44_10_0372.jpg" ed="229 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l3" n="N001"/>frankhfortische gesantschafft schon befeh<supplied>l</supplied>cht währe, ihro es
       <lb facs="#facs_3_r1l4" n="N002"/>alsobalt durch eignen courir widrumb zu verbieten. Dero Liebden
@@ -232,9 +234,9 @@
       <lb facs="#facs_3_r1l15" n="N013"/>Eleonora
       <lb facs="#facs_3_line_1661175821434_272" n="N014"/>Wien den 13ten <choice><expan>septembris</expan><abbr>7br</abbr></choice> 1711
       <lb facs="#facs_3_r1l16" n="N015"/>Bitt mich bey d<supplied>e</supplied>ro libsten Curfürst<supplied>i</supplied>n zu entschuldigen, ist mihr die
-      <lb facs="#facs_3_r1l17" n="N016"/>zeit zu curz worden, dan izt gleich zue <unclear>poßeken</unclear> vndt
+      <lb facs="#facs_3_r1l17" n="N016"/>zeit zu curz worden, dan izt gleich zue <unclear reason="unleserlich">poßeken</unclear> vndt
       <lb facs="#facs_3_r1l18" n="N017"/>procession gehen muß, wa<supplied>r</supplied>t schon alls auf mich.</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="4" xml:id="Kasten_blau_44_10_0371.jpg" ed="228 r"/>
     <ab facs="#facs_4_region_1661176140741_289">
       <lb facs="#facs_4_line_1661176154796_293" n="N001"/>Ihr <choice><expan>Liebden</expan><abbr>Ld</abbr></choice> <choice><expan>herrn</expan><abbr>h</abbr></choice> Curfürsten zu
       <lb facs="#facs_4_line_1661176162894_298" n="N002"/>Pfalz, meinem herzallerlibsten
@@ -242,11 +244,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -254,5 +252,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

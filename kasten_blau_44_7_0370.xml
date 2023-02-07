@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1260" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1260px"/>
+    <graphic url="Kasten_blau_44_7_0370.jpg" width="800px" height="1260px"/>
     <zone points="32,54 32,1159 756,1159 756,54" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="28,116 145,126 164,109 177,117 205,100 201,19 144,35 101,28 65,38 44,26 24,32" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="87,466 480,502 575,478 626,499 761,462 761,415 726,403 576,436 476,384 285,397 88,360" rendition="Line" xml:id="facs_1_r1l4"/>
@@ -107,7 +109,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1244" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1244px"/>
+    <graphic url="Kasten_blau_44_7_0371.jpg" width="800px" height="1244px"/>
     <zone points="74,53 74,729 764,729 764,53" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="98,154 246,188 356,149 638,151 692,179 751,162 751,108 586,114 551,91 457,132 348,100 252,111 98,84" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="93,216 328,212 388,238 521,206 696,231 746,214 746,184 649,158 476,182 425,159 269,191 171,164 93,194" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -124,9 +126,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="204 r" xml:id="Kasten_blau_44_7_0370.jpg" ed="79 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/><unclear>23 xbris 97</unclear>
       <lb facs="#facs_1_r1l4" n="N002"/>Durchleüchtiger Curfürst, mein h<supplied>er</supplied>zallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
@@ -140,7 +142,7 @@
       <lb facs="#facs_1_r1l12" n="N010"/>empfinden werden. Der gottlige will ist der e<supplied>in</supplied>zige
       <lb facs="#facs_1_r1l13" n="N011"/>trost, vndt das sie hoffentlich die belohnu<supplied>n</supplied>g
       <lb facs="#facs_1_r1l14" n="N012"/>ihrer dugenten schon im himmel wi<supplied>r</supplied>t</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="204 v" xml:id="Kasten_blau_44_7_0371.jpg" ed="79 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>belohnt sein. Die arme kinder erbarmen
       <lb facs="#facs_2_r1l3" n="N002"/>mihr in die sehl, in sonderhelt die zwei
@@ -155,11 +157,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -167,5 +165,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

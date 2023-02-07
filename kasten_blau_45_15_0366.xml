@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1239" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1239px"/>
+    <graphic url="Kasten_blau_45_15_0366.jpg" width="800px" height="1239px"/>
     <zone points="16,449 16,1223 772,1223 772,449" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="122,473 189,471 234,509 280,508 311,479 347,509 452,481 481,508 527,489 772,493 773,447 602,415 501,450 422,408 378,426 246,413 170,456 123,455" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="56,537 284,521 361,547 461,533 532,563 593,538 630,559 730,544 731,498 480,507 452,482 346,510 307,484 233,509 177,473 57,482" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -110,7 +112,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1239" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1239px"/>
+    <graphic url="Kasten_blau_45_15_0367.jpg" width="800px" height="1239px"/>
     <zone points="36,67 36,1236 788,1236 788,67" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="79,101 164,100 197,128 253,98 291,117 383,92 468,131 603,98 752,129 753,19 80,13" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="65,154 127,183 177,142 262,177 357,157 439,189 543,151 625,179 752,179 753,127 714,136 659,107 464,133 383,107 331,132 66,96" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -137,7 +139,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1263" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1263px"/>
+    <graphic url="Kasten_blau_45_15_0368.jpg" width="800px" height="1263px"/>
     <zone points="14,0 14,1252 780,1252 780,0" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="36,130 117,131 191,97 264,129 396,105 441,126 464,106 532,137 604,95 752,93 750,8 34,14" rendition="Line" xml:id="facs_3_r1l2"/>
         <zone points="33,168 169,149 371,182 468,149 595,183 676,147 769,156 769,123 702,105 548,140 464,107 441,125 371,112 342,137 299,109 230,137 32,136" rendition="Line" xml:id="facs_3_r1l3"/>
@@ -164,9 +166,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="201 r" xml:id="Kasten_blau_45_15_0366.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerlibste<supplied>r</supplied> <choice><expan>herr</expan><abbr>hr</abbr></choice> vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich hab mit <choice><expan>vnterdehnigstem</expan><abbr>vnt</abbr></choice> respect dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom
@@ -183,7 +185,7 @@
       <lb facs="#facs_1_r1l13" n="N013"/>nit allein wider recitiu worden, sondern gahr ists
       <lb facs="#facs_1_r1l14" n="N014"/>ein continuirlichs fieber mit stehtem brechen,
       <lb facs="#facs_1_r1l15" n="N015"/>das ehr kein cordial, es sey waßer oder puluer,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="201 v" xml:id="Kasten_blau_45_15_0367.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>weder <unclear>giftlwäßerl</unclear>, das man ihm alles geben,
       <lb facs="#facs_2_r1l2" n="N002"/>behalten können, sondern gleich alles gebrochen.
@@ -207,7 +209,7 @@
       <lb facs="#facs_2_r1l20" n="N020"/>gehört, <unclear>was man</unclear>. Wegen Collen vermein ich, ihr Mayestät
       <lb facs="#facs_2_r1l21" n="N021"/>werden den Cauniz über München auf Collen
       <lb facs="#facs_2_r1l22" n="N022"/>schiken. Der Gödens oder Freitag, der zue Hambug <supplied>ist</supplied>, hett</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="202 r" xml:id="Kasten_blau_45_15_0368.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l2" n="N001"/>schon befehl auf Münster zue gehn, wie ewer Durchlaucht
       <lb facs="#facs_3_r1l3" n="N002"/>vernommen haben. Ich glaub aber, man wirt noch

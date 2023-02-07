@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">aufm Strenberg: Strengberg (Markt bei Amstetten); Zeremonialprotokolle Bild 335/fol. 331: mittags auf dem Strenberg angekommen.</ab>
+         <ab type="notes">aufm Strenberg: Strengberg (Markt bei Amstetten); Zeremonialprotokolle Bild 335/fol. 331: mittags auf dem Strenberg angekommen.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1223" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1223px"/>
+    <graphic url="Kasten_blau_45_15_0777.jpg" width="800px" height="1223px"/>
     <zone points="53,439 53,1180 762,1180 762,439" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="48,486 195,465 270,492 407,470 613,494 764,478 765,447 49,405" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="56,525 146,542 258,519 310,539 389,516 506,548 550,525 754,543 755,496 721,490 610,506 560,480 271,493 239,474 205,492 175,471 57,495" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -111,7 +113,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1229" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1229px"/>
+    <graphic url="Kasten_blau_45_15_0778.jpg" width="800px" height="1229px"/>
     <zone points="73,119 73,1221 764,1221 764,119" rendition="TextRegion" xml:id="facs_2_r2">
         <zone points="79,163 188,177 233,146 294,149 383,187 452,157 508,175 620,144 687,176 759,172 751,116 465,119 327,79 79,110" rendition="Line" xml:id="facs_2_r2l1"/>
         <zone points="69,205 403,242 526,214 592,230 733,212 733,174 647,164 508,183 437,165 382,188 214,156 187,177 69,168" rendition="Line" xml:id="facs_2_r2l2"/>
@@ -129,9 +131,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="138 r" xml:id="Kasten_blau_45_15_0777.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Wie schmerzlich mihr der traurige fall meines liebsten
@@ -148,7 +150,7 @@
       <lb facs="#facs_1_r1l13" n="N013"/>freüdt genießen, welches ihm der almechtige <choice><expan>gnädigst</expan><abbr>g</abbr></choice> verl<supplied>e</supplied>yen wolle.
       <lb facs="#facs_1_r1l14" n="N014"/>Auf dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schr<supplied>e</supplied>iben vom 26ten passato wird die meristen puncten
       <lb facs="#facs_1_r1l15" n="N015"/>der <choice><expan>Grav</expan><abbr>Gr</abbr></choice> Fuker beantwort haben. Ich will auch ewer Durchlaucht</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="138 v" xml:id="Kasten_blau_45_15_0778.jpg"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l1" n="N001"/>nit lenger mit meinen sch<supplied>r</supplied>eiben vngelegenheit machen, due
       <lb facs="#facs_2_r2l2" n="N002"/>mich <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> in dero <choice><expan>gnade</expan><abbr>g</abbr></choice> befehlen, die ich sterben werde

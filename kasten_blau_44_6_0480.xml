@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Abschrift</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Abschrift "Copia" rechts oben zusätzliche Foliierung: 72 Schloss Schwetzingen Abschrift</ab>
+         <ab type="notes">Abschrift "Copia" rechts oben zusätzliche Foliierung: 72 Schloss Schwetzingen Abschrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1211" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1211px"/>
+    <graphic url="Kasten_blau_44_6_0480.jpg" width="800px" height="1211px"/>
     <zone points="32,23 32,1154 767,1154 767,23" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="28,75 33,75 60,47 75,53 77,50 88,52 92,56 99,51 106,57 117,47 122,47 122,7 67,14 51,13 44,7 27,5" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="60,94 90,77 100,77 109,82 118,75 125,76 133,70 156,64 155,51 141,47 125,58 106,50 91,56 85,51 74,53 64,48 58,49" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -122,7 +124,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1202" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1202px"/>
+    <graphic url="Kasten_blau_44_6_0481.jpg" width="800px" height="1202px"/>
     <zone points="70,599 70,679 152,679 152,599" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="65,633 90,632 97,637 103,633 115,637 127,635 137,637 142,642 157,637 156,600 149,601 131,593 125,595 117,587 109,589 105,586 100,589 92,581 86,587 78,584 71,591 64,592" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="83,675 95,674 98,677 100,675 104,676 110,670 116,675 120,673 123,675 128,671 136,671 139,631 133,631 128,635 117,636 113,639 86,634" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -140,9 +142,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="303 r" xml:id="Kasten_blau_44_6_0480.jpg" ed="72 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/>pa
@@ -170,7 +172,7 @@
       <lb facs="#facs_1_r1l24" n="N024"/>zimelden oe vrloge 
       <lb facs="#facs_1_r1l25" n="N025"/>impeg isethalb horde sole
       <lb facs="#facs_1_r1l26" n="N026"/>E</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="303 v" xml:id="Kasten_blau_44_6_0481.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>E
       <lb facs="#facs_2_r1l2" n="N002"/></ab>

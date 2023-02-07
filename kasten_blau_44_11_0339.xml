@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift. Datum: 20. korrigiert aus 17. Unterschrift zittrig.</ab>
+         <ab type="notes">Konzept mit Unterschrift. Datum: 20. korrigiert aus 17. Unterschrift zittrig.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1253" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1253px"/>
+    <graphic url="Kasten_blau_44_11_0339.jpg" width="800px" height="1253px"/>
     <zone points="27,51 27,201 386,201 386,51" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="22,96 81,108 150,98 209,106 237,93 249,103 260,93 343,102 391,84 390,20 202,14 181,26 125,19 109,34 21,31" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="48,174 130,148 192,169 250,143 391,160 390,113 365,106 327,113 296,98 238,116 201,105 144,117 47,103" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -129,7 +131,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1274" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1274px"/>
+    <graphic url="Kasten_blau_44_11_0340.jpg" width="800px" height="1274px"/>
     <zone points="393,70 393,1218 798,1218 798,70" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="414,107 463,124 486,107 531,124 591,98 663,104 714,89 778,99 771,43 683,58 653,48 610,62 553,41 526,58 471,40 440,59 413,51" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="409,161 546,133 644,136 665,155 711,135 740,149 797,149 796,89 724,104 577,104 529,124 408,109" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -165,7 +167,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1275" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1275px"/>
+    <graphic url="Kasten_blau_44_11_0341.jpg" width="800px" height="1275px"/>
     <zone points="361,35 361,1190 757,1190 757,35" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="711,59 720,58 727,61 733,57 738,62 743,58 757,61 759,12 751,11 746,16 741,15 733,18 727,14 722,17 713,17" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="386,118 402,111 432,123 465,96 511,92 574,104 597,94 657,118 701,99 747,103 747,67 702,50 688,62 646,55 608,75 565,47 498,56 474,40 386,78" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -198,7 +200,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1229" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1229px"/>
+    <graphic url="Kasten_blau_44_11_0342.jpg" width="800px" height="1229px"/>
     <zone points="416,45 416,538 798,538 798,45" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="691,79 716,91 739,79 762,75 770,67 789,76 795,75 795,19 722,22 713,18 691,22" rendition="Line" xml:id="facs_4_r1l1"/>
         <zone points="427,128 685,97 803,113 802,66 672,90 644,73 595,77 517,52 488,67 426,68" rendition="Line" xml:id="facs_4_r1l2"/>
@@ -219,9 +221,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="29 r" xml:id="Kasten_blau_44_11_0339.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>2 fbe 1  nsauli
       <lb facs="#facs_1_r1l2" n="N002"/>disto m die vawirtli
@@ -255,7 +257,7 @@
       <lb facs="#facs_1_r2l26" n="N026"/>dgede richtetlich
       <lb facs="#facs_1_r2l27" n="N027"/>eshreiben ich ihne dehselbe
       <lb facs="#facs_1_r2l28" n="N028"/>iisgon stor </ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="29 v" xml:id="Kasten_blau_44_11_0340.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>welches ich es beib dben
       <lb facs="#facs_2_r1l2" n="N002"/>golasen indeen aamen
@@ -288,7 +290,7 @@
       <lb facs="#facs_2_r1l29" n="N029"/>ich hwaren albefi ei
       <lb facs="#facs_2_r1l30" n="N030"/>absenderlich andas
       <lb facs="#facs_2_r1l31" n="N031"/>lgrostes vert</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="30 r" xml:id="Kasten_blau_44_11_0341.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>
       <lb facs="#facs_3_r1l2" n="N002"/>aedie allerbeigen ligste
@@ -318,7 +320,7 @@
       <lb facs="#facs_3_r1l26" n="N026"/>nit vnfdif mit hege
       <lb facs="#facs_3_r1l27" n="N027"/>allezeilig menden ges de
       <lb facs="#facs_3_r1l28" n="N028"/>aco inwelche f</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="30 v" xml:id="Kasten_blau_44_11_0342.jpg"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/>EMT
       <lb facs="#facs_4_r1l2" n="N002"/>gedr m wees
@@ -337,13 +339,13 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__13">
                   <placeName>Düsseldorf</placeName>

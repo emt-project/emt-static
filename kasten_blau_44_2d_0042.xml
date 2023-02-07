@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Liegt zwischen 1686.05.17-1686.06.03 erwähnt Casal und Straßburg, demnach wohl 1681 (vgl. 45-8 im Okt. 1681)</ab>
+         <ab type="notes">Liegt zwischen 1686.05.17-1686.06.03 erwähnt Casal und Straßburg, demnach wohl 1681 (vgl. 45-8 im Okt. 1681)</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1235" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1235px"/>
+    <graphic url="Kasten_blau_44_2d_0042.jpg" width="800px" height="1235px"/>
     <zone points="95,205 95,1186 735,1186 735,205" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="124,261 285,276 313,256 460,242 554,265 585,236 698,232 697,196 523,192 497,210 400,192 310,213 246,191 121,194" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="122,326 220,287 364,306 429,276 489,300 587,273 698,291 699,230 585,236 559,263 470,243 223,277 118,259" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -117,9 +119,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="1" xml:id="Kasten_blau_44_2d_0042.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> brueder
       <lb facs="#facs_1_r1l2" n="N002"/>Ich hab woll die höchste freüdt aus dero Liebden schreiben

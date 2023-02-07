@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">2. Brief mit diesem Datum</ab>
+         <ab type="notes">2. Brief mit diesem Datum</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1240" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1240px"/>
+    <graphic url="Kasten_blau_45_15_0718.jpg" width="800px" height="1240px"/>
     <zone points="36,385 36,1229 774,1229 774,385" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="128,424 323,437 344,455 491,450 561,418 656,412 777,429 776,382 683,368 521,380 418,350 344,379 127,375" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="80,439 95,438 559,418 761,427 763,465 233,508 69,490 69,480" rendition="Line" xml:id="facs_1_line_1650551410303_94"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1223" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1223px"/>
+    <graphic url="Kasten_blau_45_15_0719.jpg" width="800px" height="1223px"/>
     <zone points="52,60 52,1214 797,1214 797,60" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="65,116 157,87 763,108 780,12 66,11" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="63,147 411,131 621,160 689,136 779,160 779,112 738,95 646,116 524,89 474,112 308,100 222,120 117,90 63,117" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -139,7 +141,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1248" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1248px"/>
+    <graphic url="Kasten_blau_45_15_0720.jpg" width="800px" height="1248px"/>
     <zone points="17,77 17,1200 766,1200 766,77" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="15,136 124,103 258,123 365,99 542,134 609,116 689,146 717,132 716,18 545,22 411,78 201,64 148,89 69,50 15,65" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="23,179 293,169 373,200 491,175 599,190 659,161 754,179 753,118 730,114 677,144 604,117 410,145 361,118 23,147" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -154,9 +156,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="101 r" xml:id="Kasten_blau_45_15_0718.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_line_1650551410303_94" n="N002"/>Weil ich glaub, das der <choice><expan>Grav</expan><abbr>Gr</abbr></choice> von Oting ehender als die
@@ -174,7 +176,7 @@
       <lb facs="#facs_1_r1l17" n="N014"/>Mayestät ihre hinaufreis villeicht also eingericht hetten,
       <lb facs="#facs_1_r1l18" n="N015"/>das ewer Durchlaucht dannoch vohrhero hetten könen herunter
       <lb facs="#facs_1_r1l20" n="N016"/>kommen vnd mein schw<supplied>e</supplied>ster von hier wekh gehen können.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="101 v" xml:id="Kasten_blau_45_15_0719.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Izt aber, weil die resolution noch nit kommen, so wirt, wan
       <lb facs="#facs_2_r1l2" n="N002"/>des <choice><expan>Graven</expan><abbr>Gr</abbr></choice> von Öting negotiation bey Meins woll geht, die reis
@@ -198,7 +200,7 @@
       <lb facs="#facs_2_r1l20" n="N020"/>in allem, was ewer Durchlaucht vnd alle dero <choice><expan>vnterdehnigste</expan><abbr>vd</abbr></choice> kinder
       <lb facs="#facs_2_r1l21" n="N021"/>angeht, er ist, kan ich gahr nit beschreiben, wünschte,
       <lb facs="#facs_2_r1l22" n="N022"/>das vill seines gleichen bey disen hoff wehren. Will auch</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="102 r" xml:id="Kasten_blau_45_15_0720.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>ewer Durchlaucht nit lenger mit meinem schreiben vngelegenheit
       <lb facs="#facs_3_r1l2" n="N002"/>machen, in dem er alles beßer müntlich refferiren wi<supplied>r</supplied>t.

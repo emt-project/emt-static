@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">eingelegt in Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg 21.11.1705. Liegt zwischen 1705.11.21-1705.11.21, Durch den Einstieg mit "auch" wirkt es, als gehöre das Schreiben zu einem anderen dazu - muss nach 12.09.1705 geschrieben sein - evtl. zu Brief 255, dort wird Diemantstein erwähnt</ab>
+         <ab type="notes">eingelegt in Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg 21.11.1705. Liegt zwischen 1705.11.21-1705.11.21, Durch den Einstieg mit "auch" wirkt es, als gehöre das Schreiben zu einem anderen dazu - muss nach 12.09.1705 geschrieben sein - evtl. zu Brief 255, dort wird Diemantstein erwähnt</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1214" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1214px"/>
+    <graphic url="Kasten_blau_45_7_0264.jpg" width="800px" height="1214px"/>
     <zone points="55,311 55,1148 719,1148 719,311" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="52,391 125,376 191,401 317,357 681,347 713,339 709,265 567,309 511,284 254,313 113,282 47,306" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="92,435 167,442 207,416 306,433 354,406 425,427 477,398 549,422 585,398 681,394 696,344 271,366 174,398 122,375 90,392" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -111,7 +113,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1187" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1187px"/>
+    <graphic url="Kasten_blau_45_7_0265.jpg" width="800px" height="1187px"/>
     <zone points="33,5 33,1165 783,1165 783,5" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="34,102 276,86 440,113 518,83 582,101 766,85 765,54 710,38 661,55 498,36 465,57 432,33 321,51 245,24 173,70 87,35 33,44" rendition="Line" xml:id="facs_2_r1l3"/>
         <zone points="45,144 112,130 183,170 299,133 425,165 480,135 510,157 535,135 627,150 764,128 763,99 673,86 561,114 477,87 439,117 311,110 276,85 183,110 138,91 100,118 44,93" rendition="Line" xml:id="facs_2_r1l4"/>
@@ -135,7 +137,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1205" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1205px"/>
+    <graphic url="Kasten_blau_45_7_0266.jpg" width="800px" height="1205px"/>
     <zone points="21,0 21,1173 798,1173 798,0" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="29,86 87,109 351,95 479,121 576,97 606,123 660,98 689,122 803,89 803,42 626,55 522,34 417,64 246,43 120,74 29,46" rendition="Line" xml:id="facs_3_r1l3"/>
         <zone points="32,168 108,180 256,148 339,177 378,160 564,185 668,163 699,183 769,160 769,111 629,131 576,98 502,123 379,97 252,133 176,93 32,113" rendition="Line" xml:id="facs_3_r1l4"/>
@@ -159,7 +161,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1213" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1213px"/>
+    <graphic url="Kasten_blau_45_7_0267.jpg" width="800px" height="1213px"/>
     <zone points="89,81 89,692 756,692 756,81" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="84,173 157,157 292,190 335,163 400,181 502,162 657,187 699,157 761,154 746,100 459,94 328,121 276,94 187,113 84,95" rendition="Line" xml:id="facs_4_r1l2"/>
         <zone points="88,229 188,209 282,237 400,208 474,242 525,213 623,239 679,208 725,234 750,220 750,159 657,187 500,163 407,197 364,166 278,195 229,172 88,178" rendition="Line" xml:id="facs_4_r1l3"/>
@@ -174,9 +176,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="135 r" xml:id="Kasten_blau_45_7_0264.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Auch, durchleüchtiger Curfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder,
       <lb facs="#facs_1_r1l2" n="N002"/>due ich mich wegen der wolfenbüttlischen sach vndt
@@ -193,7 +195,7 @@
       <lb facs="#facs_1_r1l14" n="N013"/>mihr vnmöglich <add>anderst</add>, als dero Liebden, mein sohn vndt instendich
       <lb facs="#facs_1_r1l15" n="N014"/>zu bitten, dabey zu verbleiben, dan einmahl
       <lb facs="#facs_1_r1l16" n="N015"/>was man verschprochen, ist man schuldich zu halten,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="135 v" xml:id="Kasten_blau_45_7_0265.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l3" n="N001"/>vndt was recht ist, ist gott lieb, gott wirt alles
       <lb facs="#facs_2_r1l4" n="N002"/>zum b<supplied>e</supplied>sten schiken vndt sein segen geben. Wegen Hanouer
@@ -214,7 +216,7 @@
       <lb facs="#facs_2_r1l19" n="N017"/>selbst soll einmahl ein anstos gehabt haben,
       <lb facs="#facs_2_r1l20" n="N018"/>vndt was kan es preiudiciren <unclear>ander</unclear> auch zu sehen.
       <lb facs="#facs_2_r1l21" n="N019"/>Dero Liebden könen, vmb sie zu erhalten, ihm alle officia <unclear>v<supplied>or</supplied>schl<supplied>ag</supplied>en</unclear>,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="136 r" xml:id="Kasten_blau_45_7_0266.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l3" n="N001"/>vndt wan entlich es nit vohr rahtsamb gefunden wurde,
       <lb facs="#facs_3_r1l4" n="N002"/>die schuldt auf vns vndt mein sohn selbsten schr<supplied>e</supplied>iben.
@@ -235,7 +237,7 @@
       <lb facs="#facs_3_r1l19" n="N017"/>gott wi<supplied>r</supplied>t ihm schon finden. Von mein sohn aus Cattalonien
       <lb facs="#facs_3_r1l20" n="N018"/>schreibt man vnterschidlich, gott wolle als zum b<supplied>e</supplied>sten
       <lb facs="#facs_3_r1l21" n="N019"/>schiken, von mein sohn seint nuhr vom 28ten brif, das sie ankomen,</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="136 v" xml:id="Kasten_blau_45_7_0267.jpg"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l2" n="N001"/><unclear>??</unclear> werden es schon wißen. Wehr woll gutt, wan der
       <lb facs="#facs_4_r1l3" n="N002"/>courir den <choice><expan>Pater</expan><abbr>P</abbr></choice> Denneman noch angetroffen

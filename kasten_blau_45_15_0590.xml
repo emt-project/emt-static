@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1267" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1267px"/>
+    <graphic url="Kasten_blau_45_15_0590.jpg" width="800px" height="1267px"/>
     <zone points="64,455 64,1259 764,1259 764,455" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="133,510 225,491 266,515 306,481 398,514 769,495 769,432 705,426 627,453 519,432 493,452 372,426 330,444 133,419" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="75,560 239,548 304,580 446,551 565,574 593,554 768,550 768,504 461,519 318,488 266,515 224,490 158,519 75,483" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1252" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1252px"/>
+    <graphic url="Kasten_blau_45_15_0591.jpg" width="800px" height="1252px"/>
     <zone points="50,75 50,1099 783,1099 783,75" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="48,119 346,98 451,130 493,99 628,118 654,143 719,115 787,125 788,75 699,93 50,21" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="47,191 242,167 269,188 305,156 413,187 553,162 637,205 716,172 783,182 783,135 617,147 506,105 434,137 385,112 320,132 47,127" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -134,9 +136,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="22 r" xml:id="Kasten_blau_45_15_0590.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Verhoffendt, das sich ewer Durchlaucht in bestem wohlstandt
@@ -151,7 +153,7 @@
       <lb facs="#facs_1_r1l11" n="N011"/>der Erzherzogin zurukh <supplied>ist</supplied>, werden ewer Durchlaucht aus meinem
       <lb facs="#facs_1_r1l12" n="N012"/>vohrigen <supplied>schreiben</supplied> <choice><expan>gnädigst</expan><abbr>g</abbr></choice> vernommen haben, wie auch, was
       <lb facs="#facs_1_r1l13" n="N013"/>ihr Mayestät <choice><expan>gnädigst</expan><abbr>ge</abbr></choice> resoluirt wegen meins <choice><expan>bruder</expan><abbr>b</abbr></choice> Carls,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="22 v" xml:id="Kasten_blau_45_15_0591.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>also will es nit widerholen. Mihr erwarten alleweil
       <lb facs="#facs_2_r1l2" n="N002"/>etwas zue hören, das der Cuhrfürst in Beyren etwas
@@ -166,7 +168,7 @@
       <lb facs="#facs_2_r1l11" n="N011"/>ewer Durchlaucht
       <lb facs="#facs_2_line_1647466113884_50" n="N012"/><choice><expan>vnterdehnigste</expan><abbr>vd</abbr></choice> tr<supplied>ew</supplied>g<supplied>e</supplied>horsamste do<supplied>c</supplied>hter
       <lb facs="#facs_2_r1l13" n="N013"/>EMT
-      <lb facs="#facs_2_line_1647466113884_51" n="N014"/>Wien den 3ten <choice><expan>feber</expan><abbr>feb</abbr></choice> 1689
+      <lb facs="#facs_2_line_1647466113884_51" n="N014"/>Wien den 3ten <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1689
       <lb facs="#facs_2_r1l14" n="N015"/>Heünt hab ich brif von meiner <choice><expan>fraw</expan><abbr>f</abbr></choice> schw<supplied>e</supplied>ster aus Portugal,
       <lb facs="#facs_2_r1l15" n="N016"/>die schreibt, das sie izt ein cur braucht, gott
       <lb facs="#facs_2_r1l16" n="N017"/>gebs, das ihr woll bekommen möge, vnd das sie

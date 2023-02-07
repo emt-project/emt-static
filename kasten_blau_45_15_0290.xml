@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1190" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1190px"/>
+    <graphic url="Kasten_blau_45_15_0290.jpg" width="800px" height="1190px"/>
     <zone points="22,297 22,1142 764,1142 764,297" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="121,345 180,322 245,361 310,331 356,360 382,334 419,348 508,321 577,348 639,322 679,340 773,330 772,279 729,289 686,258 655,282 610,264 261,284 120,256" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="86,408 181,382 244,415 313,385 477,408 559,406 611,377 748,383 740,331 418,349 384,333 352,363 292,336 245,361 86,328" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1168" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1168px"/>
+    <graphic url="Kasten_blau_45_15_0291.jpg" width="800px" height="1168px"/>
     <zone points="47,52 47,1086 789,1086 789,52" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="63,101 197,90 281,117 399,85 505,106 613,73 794,87 793,21 737,11 62,24" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="54,153 194,139 377,168 429,138 756,147 771,91 617,109 450,93 385,121 53,112" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -138,7 +140,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1175" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1175px"/>
+    <graphic url="Kasten_blau_45_15_0292.jpg" width="800px" height="1175px"/>
     <zone points="16,52 16,1156 752,1156 752,52" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="27,106 105,75 222,107 260,78 303,99 472,77 499,103 711,82 711,51 644,40 493,30 390,55 242,18 27,16" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="29,160 163,157 222,119 308,167 385,124 616,126 714,166 746,153 747,87 497,109 261,76 223,106 153,82 29,109" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -157,9 +159,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="154 r" xml:id="Kasten_blau_45_15_0290.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herz allerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich bin dismahl mit 3 <choice><expan>gnädigen</expan><abbr>g</abbr></choice> schreiben woll höchst
@@ -178,7 +180,7 @@
       <lb facs="#facs_1_r1l15" n="N015"/><unclear>Kargs</unclear> hatt auch der Cauniz es gemeindt,
       <lb facs="#facs_1_r1l16" n="N016"/>ihr Mayestät wird es vohrgedragen werden. In dem
       <lb facs="#facs_1_r1l17" n="N017"/>andren haubt werkh hatt er noch nit die</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="154 v" xml:id="Kasten_blau_45_15_0291.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>relation abgelegt, dan es iezt mit dem Leidel
       <lb facs="#facs_2_r1l2" n="N002"/>vill zue negotiren gibt, welchen der Cuhrfürst
@@ -201,7 +203,7 @@
       <lb facs="#facs_2_r1l19" n="N019"/>damen balt loß zue sein. Mit der Jorgerin ist
       <lb facs="#facs_2_r1l20" n="N020"/>schon richtig vnd wirt balt die hochzeit
       <lb facs="#facs_2_r1l21" n="N021"/>werden, aber erst in der fasten. Die andre</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="155 r" xml:id="Kasten_blau_45_15_0292.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>steht auch in einem heyrat, hoff es soll
       <lb facs="#facs_3_r1l2" n="N002"/>angehn. Ich bitt ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> vmb vergebung,

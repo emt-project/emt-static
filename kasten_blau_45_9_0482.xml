@@ -2,9 +2,9 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Eleonora Magdalena von Pfalz-Neuburg an Philipp Wilhelm von Pfalz-Neuburg, Wien am 1685.10.25</title>
+            <title type="main">nan, nan am nan</title>
             <title type="sub">Familiensache. Dynastische Handlungsspielräume in der Korrespondenz von Kaiserin Eleonora Magdalena von Pfalz-Neuburg (1655-1720)</title>
-            <author>Eleonora Magdalena von Pfalz-Neuburg</author>
+            <author>nan</author>
             <editor>
                <name>Katrin Keller</name>
             </editor>
@@ -44,12 +44,12 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
                      <history>
-                        <origin><origDate when-iso="1685-10-25"/></origin>
+                        <origin><origDate/></origin>
                      </history>
                   </msDesc>
                </witness>
@@ -62,35 +62,34 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
-          <ab type="abstract-terms">
-            <term>Ausfertigung</term>
-            <term>eigenhändig</term>
-         </ab>
+         <ab type="notes">Blatt verkehrt (erkennbar an Inhalt und Knicken)</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
-            <language ident="deu">deutsch</language>
+            <language ident="und">noch nicht bestimmt</language>
          </langUsage>
          <correspDesc>
             <correspAction type="sent">
-               <persName ref="#emt_person_id__9">Eleonora Magdalena von Pfalz-Neuburg</persName>
-               <placeName ref="#emt_place_id__63">Wien</placeName>
-               <date when-iso="1685-10-25"/>
+               <persName ref="#">nan</persName>
+               <placeName ref="#"/>
+               <date/>
             </correspAction>
             <correspAction type="received">
-                <persName ref="#emt_person_id__50">Philipp Wilhelm von Pfalz-Neuburg</persName>
+                <persName ref="#">nan</persName>
                 <placeName ref="#"/>
                 <date/>
             </correspAction>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1185" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1185px"/>
+    <graphic url="Kasten_blau_45_9_0481.jpg" width="800px" height="1185px"/>
     <zone points="57,239 57,1120 788,1120 788,239" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="141,274 220,308 352,282 526,291 554,274 610,299 672,264 793,275 792,232 737,240 570,195 445,197 385,228 350,212 293,246 261,222 140,214" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="95,330 214,347 465,325 539,350 751,339 743,307 629,305 561,275 220,308 143,267 95,274" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,9 +111,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="284 v" xml:id="Kasten_blau_45_9_0481.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ewer Durchlaucht sag ich <choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> dankh, das sie wegen meiner
@@ -134,17 +133,5 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace></back></text>
+   <back/></text>
 </TEI>

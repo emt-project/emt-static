@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1208" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1208px"/>
+    <graphic url="Kasten_blau_44_2d_0013.jpg" width="800px" height="1208px"/>
     <zone points="122,276 122,1189 763,1189 763,276" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="124,334 236,312 301,343 346,313 419,330 549,307 745,310 768,306 768,254 644,275 541,237 446,232 420,255 252,264 166,295 124,283" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="124,365 365,353 468,387 579,353 748,347 748,310 691,334 643,315 593,342 523,317 454,341 388,321 303,343 240,312 124,334" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1205" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1205px"/>
+    <graphic url="Kasten_blau_44_2d_0014.jpg" width="800px" height="1205px"/>
     <zone points="53,239 53,1180 764,1180 764,239" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="98,271 171,262 250,290 346,262 464,290 498,266 594,265 689,290 730,275 731,211 486,249 279,207 99,207" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="101,315 190,297 335,303 362,323 601,307 643,332 758,316 759,277 689,290 549,266 438,293 410,270 372,289 326,264 236,287 164,262 102,272" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -129,9 +131,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="1" xml:id="Kasten_blau_44_2d_0013.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr brueder
       <lb facs="#facs_1_r1l2" n="N002"/>Vohr dero Liebden angenehmes schreiben durch den Grau
@@ -152,7 +154,7 @@
       <lb facs="#facs_1_r1l17" n="N017"/>können sein wegen der religion, welches dero Liebden selbsten
       <lb facs="#facs_1_r1l18" n="N018"/>woll erachten kan. Wan ich ein anders
       <lb facs="#facs_1_r1l19" n="N019"/>mittel wuste, ihme anhant zue gehen, wolt es</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="2" xml:id="Kasten_blau_44_2d_0014.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>mihr gewis eifrich angelegen sein laßen. Due mich
       <lb facs="#facs_2_r1l2" n="N002"/>hirmit in dero Liebden affection recomendiren. Der <choice><expan>Grav</expan><abbr>G</abbr></choice> Fuker

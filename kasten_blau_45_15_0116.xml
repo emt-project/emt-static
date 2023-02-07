@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">erwähnt ein "gronogratium, das ihr Mayestät auf die Windischgräz gemacht"</ab>
+         <ab type="notes">erwähnt ein "gronogratium, das ihr Mayestät auf die Windischgräz gemacht"</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1216" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1216px"/>
+    <graphic url="Kasten_blau_45_15_0116.jpg" width="800px" height="1216px"/>
     <zone points="48,195 48,1178 780,1178 780,195" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="53,252 309,246 474,240 506,221 584,238 759,225 759,171 726,160 635,194 561,192 504,163 424,189 51,134" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="84,313 245,272 673,295 698,272 768,272 768,243 83,228" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1209" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1209px"/>
+    <graphic url="Kasten_blau_45_15_0117.jpg" width="800px" height="1209px"/>
     <zone points="53,50 53,1199 788,1199 788,50" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="63,94 129,117 169,85 466,94 499,75 525,99 559,82 602,101 775,78 784,28 57,35" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="52,136 144,158 187,136 301,154 508,116 657,144 778,123 776,76 651,103 492,79 162,86 127,117 51,93" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -140,7 +142,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1248" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1248px"/>
+    <graphic url="Kasten_blau_45_15_0118.jpg" width="800px" height="1248px"/>
     <zone points="8,53 8,1190 782,1191 782,54" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="21,86 235,126 269,102 402,114 484,86 562,128 625,103 714,129 753,114 753,63 638,63 569,26 455,54 282,55 198,18 21,31" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="24,163 78,144 156,164 198,144 239,178 375,145 756,162 755,117 650,105 562,128 523,97 393,120 330,98 231,125 24,99" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -168,9 +170,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="44 r2" xml:id="Kasten_blau_45_15_0116.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich hab nit vnterlaßen wollen, mit der lieben gelegenheit, das
@@ -190,7 +192,7 @@
       <lb facs="#facs_1_r1l16" n="N016"/>kommen, wie alle sagen, die den weg kennen, insonder-
       <lb facs="#facs_1_r1l17" n="N017"/>heit bey diser zeit, dah die weg gahr schlim vnd
       <lb facs="#facs_1_r1l19" n="N018"/>auf dem mehr wegen der wint vnsicher ist.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="44 v2" xml:id="Kasten_blau_45_15_0117.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>In Schpanien haben ihr Mayestät gewiß eifrigst geschriben vnd
       <lb facs="#facs_2_r1l2" n="N002"/>duen es noch alle post, werdens auch ins könftige duen,
@@ -213,7 +215,7 @@
       <lb facs="#facs_2_r1l19" n="N019"/>schriften, welche <supplied>sie</supplied> dem Papst haben eingeben, ewer Durchlaucht werden
       <lb facs="#facs_2_r1l20" n="N020"/>ihr Mayestät sentimenten darüber vernemmen. Wan man
       <lb facs="#facs_2_r1l21" n="N021"/>in wohl in torto sezt, wirt die ganze welt</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="45 r2" xml:id="Kasten_blau_45_15_0118.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>wider ihn helfen, wan er was solte anfangen. Wegen
       <lb facs="#facs_3_r1l2" n="N002"/>des Cauniz werden ihr Mayestät ihm dise befehlh geben,
@@ -233,7 +235,7 @@
       <lb facs="#facs_3_r1l17" n="N016"/>ewer Durchlaucht
       <lb facs="#facs_3_r1l19" n="N017"/><choice><expan>vnterdehnigste</expan><abbr>vt</abbr></choice> <choice><expan>trewgehorsamste</expan><abbr>tregehors</abbr></choice> do<supplied>c</supplied>hter
       <lb facs="#facs_3_line_1638802998415_2108" n="N018"/>EMT
-      <lb facs="#facs_3_r1l18" n="N019"/>Wien den 22ten <choice><expan>10bris</expan><abbr>10br</abbr></choice> 1686
+      <lb facs="#facs_3_r1l18" n="N019"/>Wien den 22ten <choice><expan>decembris</expan><abbr>10br</abbr></choice> 1686
       <lb facs="#facs_3_line_1638802998415_2109" n="N020"/>Schik hirbey ewer Durchlaucht ein gronogratium,
       <lb facs="#facs_3_r1l21" n="N021"/>das ihr Mayestät auf die Wind<supplied>i</supplied>schgräz gemacht.</ab>
   </div>

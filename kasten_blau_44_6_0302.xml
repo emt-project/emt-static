@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">"Puncten, so in dem Schreiben an Ihre Kayserl. Mayestät zu beobachten": Liste mit 10 Punkten, offenbar ein Konzept, da viele Streichungen. Bezieht sich bestimmt auf den folgenden langen offiziellen Brief Düsseldorf 04.11.1694</ab>
+         <ab type="notes">"Puncten, so in dem Schreiben an Ihre Kayserl. Mayestät zu beobachten": Liste mit 10 Punkten, offenbar ein Konzept, da viele Streichungen. Bezieht sich bestimmt auf den folgenden langen offiziellen Brief Düsseldorf 04.11.1694</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="1862" lry="2693" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpg" width="1862px" height="2693px"/>
+    <graphic url="Kasten_blau_44_6_0302.jpg" width="1862px" height="2693px"/>
     <zone points="73,1643 73,1801 169,1801 169,1643" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="73,1801 105,1796 137,1794 169,1793 169,1643 137,1644 105,1646 73,1651" rendition="Line" xml:id="facs_1_r1l1"/>
       </zone>
@@ -132,7 +134,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="1856" lry="2698" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpg" width="1856px" height="2698px"/>
+    <graphic url="Kasten_blau_44_6_0303.jpg" width="1856px" height="2698px"/>
     <zone points="92,551 92,2630 1770,2630 1770,551" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="223,616 299,617 376,618 453,618 530,618 607,617 683,616 760,616 837,614 914,613 991,612 1067,611 1144,609 1221,608 1298,607 1375,606 1451,606 1528,606 1605,606 1682,606 1759,607 1759,552 1682,551 1605,551 1528,551 1451,551 1375,551 1298,552 1221,553 1144,554 1067,556 991,557 914,558 837,559 760,561 683,561 607,562 530,563 453,563 376,563 299,562 223,561" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="317,707 388,708 460,709 531,709 603,709 675,708 746,707 818,706 889,704 961,702 1033,701 1104,699 1176,697 1247,695 1319,694 1391,693 1462,693 1534,692 1605,693 1677,694 1749,696 1749,641 1677,639 1605,638 1534,637 1462,638 1391,638 1319,639 1247,640 1176,642 1104,644 1033,646 961,647 889,649 818,651 746,652 675,653 603,654 531,654 460,654 388,653 317,652" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -156,9 +158,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="193 r" xml:id="Kasten_blau_44_6_0302.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/></ab>
     <ab facs="#facs_1_r2">
@@ -194,7 +196,7 @@
       <lb facs="#facs_1_r3l28" n="N028"/>
       <lb facs="#facs_1_r3l29" n="N029"/>
       <lb facs="#facs_1_r3l30" n="N030"/></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="193 v" xml:id="Kasten_blau_44_6_0303.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>
       <lb facs="#facs_2_r1l2" n="N002"/>

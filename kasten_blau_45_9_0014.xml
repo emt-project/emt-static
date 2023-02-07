@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Liegt zwischen 1682.02.12-1682.02.19</ab>
+         <ab type="notes">Liegt zwischen 1682.02.12-1682.02.19</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1207" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1207px"/>
+    <graphic url="Kasten_blau_45_9_0014.jpg" width="800px" height="1207px"/>
     <zone points="12,174 12,1204 775,1204 775,174" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="109,200 205,200 239,218 294,194 387,195 419,218 469,193 637,212 665,208 666,165 470,147 396,166 213,156 109,171" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="94,257 320,230 412,257 550,234 737,266 769,251 762,212 555,196 416,221 387,195 294,194 243,221 94,195" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -120,7 +122,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1197" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1197px"/>
+    <graphic url="Kasten_blau_45_9_0015.jpg" width="800px" height="1197px"/>
     <zone points="18,48 18,1194 778,1194 778,48" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="46,98 176,110 282,81 314,101 587,101 667,74 745,99 779,80 767,37 55,40" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="48,131 155,114 253,138 449,112 479,131 563,109 682,139 768,120 767,75 733,98 666,74 379,98 296,76 250,101 90,75 47,98" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -151,7 +153,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1256" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1256px"/>
+    <graphic url="Kasten_blau_45_9_0016.jpg" width="800px" height="1256px"/>
     <zone points="22,42 22,541 776,541 776,42" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="28,65 773,92 774,3 634,39 541,16 418,46 297,14 262,38 29,33" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="26,116 345,105 390,129 478,107 756,132 770,89 697,73 590,99 563,73 522,91 221,64 27,96" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -168,9 +170,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="7 r" xml:id="Kasten_blau_45_9_0014.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Bitte ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vnterd</abbr></choice> vmb vergebung, das bey vohriger post
@@ -196,7 +198,7 @@
       <lb facs="#facs_1_r1l22" n="N022"/>Also bitte nochmahlen <choice><expan>vnterdehnigst</expan><abbr>vnd</abbr></choice>, ewer Durchlaucht wollten meinetwegen
       <lb facs="#facs_1_r1l23" n="N023"/>sich doch nie keine vngelegenheit machen mit schreiben, dan
       <lb facs="#facs_1_r1l24" n="N024"/>meine ängsten vnbeschreiblich, das es ewer Durchlaucht möchte schaden.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="7 v" xml:id="Kasten_blau_45_9_0015.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Freüdt mich auch, das der beyerische creistag so wohl ist abgangen
       <lb facs="#facs_2_r1l2" n="N002"/>vnd <supplied>das</supplied> der Locowiz sich dorten wie auch bey Chur Beyern so woll
@@ -224,7 +226,7 @@
       <lb facs="#facs_2_r1l24" n="N024"/>mihr woll die gröste consolation vnd freüd von der welt,
       <lb facs="#facs_2_r1l25" n="N025"/>wan ich balt einmahl widrumb das glükh möchte haben,
       <lb facs="#facs_2_r1l26" n="N026"/>ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> zue bedienen. Die brief an die Königin</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="8 r" xml:id="Kasten_blau_45_9_0016.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>in Schpanien hab bey vohriger post fleisig überschikt vndt mein
       <lb facs="#facs_3_r1l2" n="N002"/><choice><expan>bruder</expan><abbr>b</abbr></choice> Carl recomendirt. Von ihr bin ich woll versichert, das sie gewiß

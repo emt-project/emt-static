@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,14 +62,16 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Abschrift</term>
             <term>Schreiber</term>
             <term>Extrakt eines Briefes</term>
          </ab>
-         <ab type="abstract-terms">"Extract aygenhändigen schreibns von Ihro May. Der verwittibten Kayserin an Ihre Curf. Dhl. Zu Pfalz de dato Wien den 21 feb. 1709"</ab>
+         <ab type="notes">"Extract aygenhändigen schreibns von Ihro May. Der verwittibten Kayserin an Ihre Curf. Dhl. Zu Pfalz de dato Wien den 21 Februarij 1709"</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -87,12 +89,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1159" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1159px"/>
+    <graphic url="Kasten_blau_44_10_0030.jpg" width="800px" height="1159px"/>
     <zone points="94,33 64,787 730,787 760,33" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="133,154 161,153 189,152 218,151 246,151 274,150 303,149 331,148 359,147 388,146 416,146 444,145 473,145 501,144 529,144 558,143 586,143 614,143 643,143 671,143 700,143 700,112 671,112 643,112 614,112 586,112 558,112 529,113 501,113 473,114 444,114 416,115 388,115 359,116 331,117 303,118 274,119 246,120 218,120 189,121 161,122 133,123" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="142,199 169,197 197,196 225,194 253,193 280,192 308,192 336,191 364,191 391,191 419,190 447,190 475,190 502,190 530,190 558,189 586,189 613,189 641,188 669,187 697,186 697,156 669,157 641,158 613,159 586,159 558,159 530,160 502,160 475,160 447,160 419,160 391,161 364,161 336,161 308,162 280,162 253,163 225,164 197,166 169,167 142,169" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -113,14 +115,14 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="16 r" xml:id="Kasten_blau_44_10_0030.jpg" ed="18 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/>Extract aygenhändigen schreibens von
       <lb facs="#facs_1_r1l3" n="N002"/>ihro <choice><expan>Mayestät</expan><abbr>May</abbr></choice> der verwittibten Kayserin
       <lb facs="#facs_1_r1l4" n="N003"/>an ihre <choice><expan>churfürstliche</expan><abbr>churf</abbr></choice> <choice><expan>Durchlaucht</expan><abbr>Dh</abbr></choice> zu Pfalz de dato
-      <lb facs="#facs_1_r1l5" n="N004"/>Wien den 21 <choice><expan>februar</expan><abbr>feb</abbr></choice> 1709
+      <lb facs="#facs_1_r1l5" n="N004"/>Wien den 21 <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1709
       <lb facs="#facs_1_r1l6" n="N005"/>Auß dero liebsten schreiben vom 1ten dieß
       <lb facs="#facs_1_r1l7" n="N006"/>habe dero wohlstandt, auch den guten löblichen
       <lb facs="#facs_1_r1l8" n="N007"/>eyfer den römischen vergleich betreffendt,
@@ -134,11 +136,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -146,5 +144,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

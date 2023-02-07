@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datierung muss November sein, Ort irrig angegeben, vgl.  Miller, Hofreisen, S. 245 der 29.10.1687.</ab>
+         <ab type="notes">Datierung muss November sein, Ort irrig angegeben, vgl.  Miller, Hofreisen, S. 245 der 29.10.1687.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1236" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1236px"/>
+    <graphic url="Kasten_blau_45_15_0236.jpg" width="800px" height="1236px"/>
     <zone points="48,162 48,1183 784,1183 784,162" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="108,233 176,252 311,242 362,206 572,220 786,201 785,172 701,143 580,143 519,168 377,140 251,170 106,151" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="74,280 317,290 459,255 667,279 772,241 771,199 692,228 521,210 375,252 344,232 148,253 72,222" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -111,9 +113,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="119 r" xml:id="Kasten_blau_45_15_0236.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein h<supplied>e</supplied>rzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Weil ich eben heünt mit dem cuhrir schr<supplied>e</supplied>ibe,

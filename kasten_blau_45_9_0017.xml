@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Ort unleserlich, Zeremonialprotokolle Wien</ab>
+         <ab type="notes">Ort unleserlich, Zeremonialprotokolle Wien</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1214" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1214px"/>
+    <graphic url="Kasten_blau_45_9_0017.jpg" width="800px" height="1214px"/>
     <zone points="45,148 45,1213 781,1213 781,148" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="96,207 233,200 285,172 664,189 665,142 623,153 456,124 405,147 330,122 189,134 97,113" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="72,235 411,232 443,213 728,240 772,231 773,171 495,192 341,173 73,205" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -117,7 +119,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1225" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1225px"/>
+    <graphic url="Kasten_blau_45_9_0018.jpg" width="800px" height="1225px"/>
     <zone points="73,175 73,608 791,608 791,175" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="111,215 357,247 431,226 598,236 667,213 781,216 796,176 695,176 529,132 362,139 219,189 111,192" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="96,276 203,265 303,289 327,271 348,289 415,265 587,279 766,259 765,223 728,211 586,243 95,235" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -133,9 +135,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="9 r" xml:id="Kasten_blau_45_9_0017.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Sage ewer Durchlaucht <choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> dankh vohr dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom 6 dis. Gottlob,
@@ -158,7 +160,7 @@
       <lb facs="#facs_1_r1l19" n="N019"/>widerumb herrein bringen. Ich sage ewer Durchlaucht <choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> dankh
       <lb facs="#facs_1_r1l20" n="N020"/>vohr dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> andenken in dero <unclear>h</unclear> gebett bey vnser lieben fraw,
       <lb facs="#facs_1_r1l21" n="N021"/>bin so viller gnaden woll gahr nit wert vnd weis es</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="9 v" xml:id="Kasten_blau_45_9_0018.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>niemahlen zue verschulden. Frewet mich von herzen, das meine <choice><expan>herren</expan><abbr>h</abbr></choice> brüder
       <lb facs="#facs_2_r1l2" n="N002"/>so woll zu Rohm seint ankommen vndt übrall so
@@ -168,7 +170,7 @@
       <lb facs="#facs_2_r1l6" n="N006"/>ewer Durchlaucht
       <lb facs="#facs_2_r1l8" n="N007"/>ganz ergebenste trew gehorsa<supplied>m</supplied>ste
       <lb facs="#facs_2_r1l9" n="N008"/>dochter EMT
-      <lb facs="#facs_2_r1l7" n="N009"/>Wien den 19 <choice><expan>feber</expan><abbr>feb</abbr></choice> 1682</ab>
+      <lb facs="#facs_2_r1l7" n="N009"/>Wien den 19 <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1682</ab>
   </div>
 </body>
 

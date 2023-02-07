@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1199" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1199px"/>
+    <graphic url="Kasten_blau_45_15_0526.jpg" width="800px" height="1199px"/>
     <zone points="22,264 22,1150 752,1150 752,264" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="71,316 167,335 192,318 271,349 379,311 429,332 578,293 668,298 713,287 709,210 631,236 552,215 374,230 334,263 195,241 68,257" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="70,373 301,388 361,357 410,377 488,350 748,336 744,262 658,305 578,292 540,322 429,332 379,311 264,348 192,318 167,335 67,313" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1223" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1223px"/>
+    <graphic url="Kasten_blau_45_15_0527.jpg" width="800px" height="1223px"/>
     <zone points="37,60 37,1183 798,1183 798,60" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="54,117 761,100 783,93 782,22 401,5 52,22" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="52,163 192,150 335,177 406,151 579,165 640,143 782,165 780,94 587,129 501,95 424,117 51,115" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -138,7 +140,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1227" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1227px"/>
+    <graphic url="Kasten_blau_45_15_0528.jpg" width="800px" height="1227px"/>
     <zone points="16,42 16,1183 768,1183 768,42" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="17,83 113,64 177,90 231,67 285,89 338,75 388,105 431,74 521,94 552,67 653,95 763,81 764,39 684,61 569,19 332,53 278,28 18,15" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="17,124 51,151 108,130 152,154 231,113 358,152 452,123 699,156 773,135 767,79 610,86 584,109 386,106 266,71 18,83" rendition="Line" xml:id="facs_3_r1l3"/>
@@ -163,7 +165,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1207" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1207px"/>
+    <graphic url="Kasten_blau_45_15_0529.jpg" width="800px" height="1207px"/>
     <zone points="25,505 25,656 59,656 59,505" rendition="TextRegion" xml:id="facs_4_r2">
       </zone>
     <zone points="37,57 37,583 784,583 784,57" rendition="TextRegion" xml:id="facs_4_r4">
@@ -180,9 +182,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="296 r" xml:id="Kasten_blau_45_15_0526.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Weil ich morgen wegen des ausgehn nit werd können, kome
@@ -201,7 +203,7 @@
       <lb facs="#facs_1_r1l15" n="N015"/>vnd ewer Durchlaucht wohlstandt zu vernemmen, welcher
       <lb facs="#facs_1_r1l16" n="N016"/>hoffentlich däglich beßer sein wirt. Vnd wan ewer Durchlaucht
       <lb facs="#facs_1_r1l17" n="N017"/>nuhr woll seindt, ist alles andre leichter zue</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="296 v" xml:id="Kasten_blau_45_15_0527.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>zue erdragen, wie woll ich nit laugnen kan, das mihr
       <lb facs="#facs_2_r1l2" n="N002"/>dero betrüebter stand sehr zue herzen geht, vnd vil
@@ -224,7 +226,7 @@
       <lb facs="#facs_2_r1l19" n="N019"/>So balt mihr aber vom iagen werden zurukh komen,
       <lb facs="#facs_2_r1l20" n="N020"/>werd nit vnterlaßen, mit ihm zu reden, wie auch vom
       <lb facs="#facs_2_r1l21" n="N021"/>Schellerer ewer Durchlaucht b<supplied>e</supplied>fehl zue empfangen, welcher sich zwar</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="297 r" xml:id="Kasten_blau_45_15_0528.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>noch nit angemelt, ich will ihn aber holen laßen. Wegen des
       <lb facs="#facs_3_r1l3" n="N002"/>Deütschmeister ist nit dis mein meinung gewest, das ich glaubt,
@@ -246,7 +248,7 @@
       <lb facs="#facs_3_r1l19" n="N018"/>könt wißen, waß vohr ein kauf man es überma<supplied>c</supplied>ht, so
       <lb facs="#facs_3_r1l20" n="N019"/>kunt man villeicht darhinder kommen vnd wehr woll
       <lb facs="#facs_3_r1l21" n="N020"/>ein gewünschter handel. Ich will ewer Durchlaucht nit lenger</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="297 v" xml:id="Kasten_blau_45_15_0529.jpg"/>
     <ab facs="#facs_4_r2"/>
     <ab facs="#facs_4_r4">
       <lb facs="#facs_4_r4l1" n="N001"/><supplied>mit</supplied> meinen schr<supplied>e</supplied>iben vngelegen<supplied>h</supplied>e<supplied>i</supplied>t machen, due mich in dero

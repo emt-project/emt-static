@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Liegt zwischen 1684.02.12-1684.02.28</ab>
+         <ab type="notes">Liegt zwischen 1684.02.12-1684.02.28</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1205" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1205px"/>
+    <graphic url="Kasten_blau_45_9_0242.jpg" width="800px" height="1205px"/>
     <zone points="18,0 18,1202 777,1202 777,0" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="91,189 188,175 226,194 326,156 419,193 481,163 532,181 763,170 778,120 734,135 378,103 92,143" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="43,254 159,250 227,214 493,243 634,226 695,251 769,242 771,178 632,197 567,165 457,208 378,176 300,201 189,176 137,203 44,200" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -120,9 +122,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="139 r" xml:id="Kasten_blau_45_9_0242.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatte<supplied>r</supplied>
       <lb facs="#facs_1_r1l3" n="N002"/>Ich hab gestren vnterlaßen meine schuldichkeit abzulegen

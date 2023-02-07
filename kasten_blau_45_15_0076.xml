@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Liegt zwischen 1686.07.18-1686.07.21. wg. Foliierung: es gibt kein Foto von 47 r, aber man sieht eine 47 verkehrt durchscheinen; kurze Entschuldigung, dass sie nicht schreibt wg. einer Hochzeit</ab>
+         <ab type="notes">Liegt zwischen 1686.07.18-1686.07.21. wg. Foliierung: es gibt kein Foto von 47 r, aber man sieht eine 47 verkehrt durchscheinen; kurze Entschuldigung, dass sie nicht schreibt wg. einer Hochzeit</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1202" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1202px"/>
+    <graphic url="Kasten_blau_45_15_0076.jpg" width="800px" height="1202px"/>
     <zone points="70,177 70,1201 777,1201 777,177" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="80,248 234,242 262,215 416,236 511,218 552,241 590,213 642,232 758,221 767,170 628,175 537,147 446,178 394,156 273,171 217,144 136,164 79,150" rendition="Line" xml:id="facs_1_r2l1"/>
         <zone points="80,288 241,303 281,273 457,292 584,269 672,295 721,265 758,273 757,231 619,218 548,252 498,218 458,238 77,250" rendition="Line" xml:id="facs_1_r2l2"/>
@@ -104,9 +106,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="47 v" xml:id="Kasten_blau_45_15_0076.jpg"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/>Durchleüchtiger Cuhrfürst, herz allerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> <choice><expan>vatter</expan><abbr>v</abbr></choice>
       <lb facs="#facs_1_r2l2" n="N002"/>Bitt <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> vmb vergebung, das nit schreib

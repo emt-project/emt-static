@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Augsburg</ab>
+         <ab type="notes">Augsburg</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1299" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1299px"/>
+    <graphic url="Kasten_blau_45_15_0792.jpg" width="800px" height="1299px"/>
     <zone points="49,389 49,1287 767,1287 767,389" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="124,460 250,456 304,421 346,448 662,423 772,435 772,384 692,374 124,364" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="73,518 95,527 191,480 303,482 350,508 390,481 421,496 474,476 632,509 729,488 716,432 576,453 522,433 383,440 358,458 290,441 160,469 71,399" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -111,7 +113,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1283" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1283px"/>
+    <graphic url="Kasten_blau_45_15_0793.jpg" width="800px" height="1283px"/>
     <zone points="38,121 38,1274 776,1274 776,121" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="53,168 174,183 333,153 369,187 402,155 486,186 532,161 724,164 722,88 473,109 378,94 343,107 246,93 177,109 51,101" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="52,236 240,207 316,245 347,215 399,202 484,226 512,211 776,213 775,163 486,186 406,157 368,187 330,155 267,181 239,171 190,188 153,172 132,188 51,167" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -141,9 +143,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="146 r" xml:id="Kasten_blau_45_15_0792.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ewer Durchlaucht sag <choice><expan>vnterdehnigsten</expan><abbr>vt</abbr></choice> dankh vohr bede dero <choice><expan>gnädige</expan><abbr>g</abbr></choice> schreiben
@@ -160,7 +162,7 @@
       <lb facs="#facs_1_r1l13" n="N013"/>wider ein wehnig recht drein komme vnd hier
       <lb facs="#facs_1_r1l14" n="N014"/>verbleibe. Wan ewer Durchlaucht <choice><expan>gnädigst</expan><abbr>g</abbr></choice> befehlen werden, wirt er
       <lb facs="#facs_1_r1l15" n="N015"/>schon noch ein mahl auf ein par dag hinübergeschikt</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="146 v" xml:id="Kasten_blau_45_15_0793.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>werden. Ihr Mayestät wehren auch gern lenger bey
       <lb facs="#facs_2_r1l2" n="N002"/>ewer Durchlaucht verbliben, aber auch die andre negotien,

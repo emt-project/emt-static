@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,14 +62,16 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>Schreiber ?</term>
             <term>Chronostichon</term>
          </ab>
-         <ab type="abstract-terms">latein. Chronostichon; kleinerer Zettel scheints ausgeschnitten, erwähnt im  Brief vom 27.06.</ab>
+         <ab type="notes">latein. Chronostichon; kleinerer Zettel scheints ausgeschnitten, erwähnt im  Brief vom 27.06.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="lat">lateinisch</language>
          </langUsage>
@@ -87,12 +89,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1206" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1206px"/>
+    <graphic url="Kasten_blau_44_2d_0044.jpg" width="800px" height="1206px"/>
     <zone points="17,165 17,1194 767,1194 767,165" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="84,194 231,223 326,219 379,192 424,212 490,200 513,220 635,199 700,212 700,142 529,160 408,134 203,164 84,137" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="68,278 228,256 263,282 363,247 444,287 772,247 757,210 390,204 354,227 67,190" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -119,7 +121,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1210" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1210px"/>
+    <graphic url="Kasten_blau_44_2d_0047.jpg" width="800px" height="1210px"/>
     <zone points="116,362 116,495 412,495 412,362" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="132,413 177,385 239,413 272,402 300,405 324,391 349,408 384,386 400,393 400,343 379,352 320,350 276,332 251,340 195,322 132,331" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="128,451 154,439 185,453 228,427 256,434 280,456 290,448 325,462 366,435 384,445 418,442 417,399 387,396 360,412 319,392 278,414 257,406 237,414 176,384 149,413 127,414" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -127,7 +129,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="1702" lry="2531" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpg" width="1702px" height="2531px"/>
+    <graphic url="Kasten_blau_44_2d_0048.jpg" width="1702px" height="2531px"/>
     <zone points="246,824 246,2462 1518,2462 1518,824" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="312,921 372,918 432,915 492,911 553,908 613,906 673,903 734,901 794,899 854,897 915,895 975,893 1035,892 1095,890 1156,889 1216,888 1276,887 1337,886 1397,885 1457,885 1518,884 1518,824 1457,825 1397,825 1337,826 1276,827 1216,828 1156,829 1095,830 1035,832 975,833 915,835 854,837 794,839 734,841 673,843 613,846 553,848 492,851 432,855 372,858 312,861" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="246,1044 305,1037 364,1031 424,1026 483,1020 543,1016 602,1012 661,1008 721,1005 780,1002 840,999 899,997 958,995 1018,992 1077,990 1137,989 1196,987 1255,985 1315,984 1374,982 1434,980 1434,925 1374,927 1315,929 1255,930 1196,932 1137,934 1077,935 1018,937 958,940 899,942 840,944 780,947 721,950 661,953 602,957 543,961 483,965 424,971 364,976 305,982 246,989" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -140,9 +142,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="1" xml:id="Kasten_blau_44_2d_0044.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> brueder
       <lb facs="#facs_1_r1l2" n="N002"/>Ich hab den von Ekh mit diesen zeilen accompagniren
@@ -162,16 +164,16 @@
       <lb facs="#facs_1_r1l20" n="N016"/>getreweste schwester
       <lb facs="#facs_1_r1l22" n="N017"/>EMT
       <lb facs="#facs_1_r1l19" n="N018"/>Wien den 27ten junij 1686
-      <lb facs="#facs_1_r1l17" n="N019"/>PS Schike hierbey ein gronografiumen, so mihr der Deütschmeister
+       <lb facs="#facs_1_r1l17" n="N019"/><choice><expan>Postscriptum</expan><abbr>PS</abbr></choice> Schike hierbey ein gronografiumen, so mihr der Deütschmeister
       <lb facs="#facs_1_r1l18" n="N020"/>geschikt hatt, gott geb den efect noch ehnder als das <unclear>paralium</unclear>.
       <lb facs="#facs_1_r1l21" n="N021"/>Ich möcht gleichwoll wißen, wie es dem
       <lb facs="#facs_1_r1l23" n="N022"/>Gültich mit seinen haßen ohren gangen.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="2" xml:id="Kasten_blau_44_2d_0047.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Ihr <choice><expan>Liebden</expan><abbr>Ld</abbr></choice> Johan Wilhelm
       <lb facs="#facs_2_r1l2" n="N002"/>Pfalzgrauen bey Reym, mein
       <lb facs="#facs_2_r1l3" n="N003"/>herz allerliebsten <choice><expan>herrn</expan><abbr>h</abbr></choice> brudern</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="3" xml:id="Kasten_blau_44_2d_0048.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>Ite, Bvda est nostra virgine dei para duce et avxiliante
       <lb facs="#facs_3_r1l2" n="N002"/>S Xaverivs bis qvinqvies in vocatvs iestit ver Bvdam viro

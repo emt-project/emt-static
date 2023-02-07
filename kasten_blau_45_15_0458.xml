@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1188" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1188px"/>
+    <graphic url="Kasten_blau_45_15_0458.jpg" width="800px" height="1188px"/>
     <zone points="58,336 58,1154 762,1154 762,336" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="121,417 281,376 338,399 521,394 558,372 615,395 645,374 767,369 766,321 727,315 701,336 535,301 428,336 119,305" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="89,468 323,424 458,453 577,420 637,439 669,412 757,421 756,391 598,401 558,373 471,403 287,385 158,406 85,362" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1167" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1167px"/>
+    <graphic url="Kasten_blau_45_15_0459.jpg" width="800px" height="1167px"/>
     <zone points="57,64 57,940 774,940 774,64" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="53,133 141,149 224,127 263,145 468,99 512,129 574,100 736,107 750,60 588,54 545,79 418,52 52,58" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="66,184 169,167 274,187 324,168 421,190 472,161 613,180 726,161 711,116 627,137 596,114 517,136 65,137" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -132,9 +134,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="257 r" xml:id="Kasten_blau_45_15_0458.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich kumb, ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> zue gratuliren wegen meiner
@@ -150,7 +152,7 @@
       <lb facs="#facs_1_r1l12" n="N012"/>französische vnrechtfertige vsurpation ewer Durchlaucht
       <lb facs="#facs_1_r1l13" n="N013"/>an selbiger schaden möchte. Heündt hatt
       <lb facs="#facs_1_r1l14" n="N014"/>der hisige franzesische Enuoyé Lousignan</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="257 v" xml:id="Kasten_blau_45_15_0459.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>ein schrift eingeben, das nit impertinenter sein
       <lb facs="#facs_2_r1l2" n="N002"/>könte, welche ewer Durchlaucht ohne zweifel schon von

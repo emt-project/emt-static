@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift</ab>
+         <ab type="notes">Konzept mit Unterschrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1288" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1288px"/>
+    <graphic url="Kasten_blau_45_15_0419.jpg" width="800px" height="1288px"/>
     <zone points="89,87 89,906 352,906 352,87" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="84,136 115,125 144,127 168,143 188,127 263,139 295,130 313,135 342,109 341,61 308,55 266,75 219,76 177,51 125,89 83,84" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="264,622 275,626 283,624 300,637 313,636 320,630 331,636 342,636 346,632 358,634 356,584 343,588 319,568 289,603 278,602 263,608" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -138,7 +140,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1243" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1243px"/>
+    <graphic url="Kasten_blau_45_15_0420.jpg" width="800px" height="1243px"/>
     <zone points="263,263 263,414 319,414 319,263" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="259,380 284,378 295,385 308,385 314,380 325,380 324,324 316,325 309,321 302,327 288,316 283,316 274,323 258,322" rendition="Line" xml:id="facs_2_r1l1"/>
       </zone>
@@ -187,7 +189,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1337" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1337px"/>
+    <graphic url="Kasten_blau_45_15_0421.jpg" width="800px" height="1337px"/>
     <zone points="341,1160 341,1314 395,1314 395,1160" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="337,1270 352,1273 365,1281 372,1281 379,1277 384,1282 395,1277 402,1277 398,1229 387,1233 382,1230 360,1237 353,1234 346,1240 335,1239" rendition="Line" xml:id="facs_3_r1l1"/>
       </zone>
@@ -205,9 +207,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="233 r" xml:id="Kasten_blau_45_15_0419.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>n d ehre
       <lb facs="#facs_1_r1l2" n="N002"/>hrenen
@@ -250,7 +252,7 @@
       <lb facs="#facs_1_r2l32" n="N032"/>inteponirgen tedt aeich ihten pohlen mih m
       <lb facs="#facs_1_r2l33" n="N033"/>gen minen gutten serenden zueschreben durfhen
       <lb facs="#facs_1_r2l34" n="N034"/>E</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="233 v" xml:id="Kasten_blau_45_15_0420.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Ee Mi</ab>
     <ab facs="#facs_2_r2">
@@ -294,7 +296,7 @@
       <lb facs="#facs_2_r3l34" n="N034"/>enffeirrt würden ampl gelangen antendirt
       <lb facs="#facs_2_r3l35" n="N035"/>as massen wilen dff disen be dado besternihter
       <lb facs="#facs_2_r3l36" n="N036"/>beförnden snn sollein ermahren vig Mm</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="234 r" xml:id="Kasten_blau_45_15_0421.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>E</ab>
     <ab facs="#facs_3_r2">

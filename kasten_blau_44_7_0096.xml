@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Achtung: an die Mutter!</ab>
+         <ab type="notes">Achtung: an die Mutter!</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1250" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1250px"/>
+    <graphic url="Kasten_blau_44_7_0096.jpg" width="800px" height="1250px"/>
     <zone points="12,43 12,1208 768,1208 768,43" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="7,88 36,89 51,100 71,94 96,106 164,79 161,22 146,23 133,15 90,17 75,25 40,23 24,30 4,23" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="89,549 152,523 232,561 300,510 374,540 773,530 773,470 711,492 567,455 478,495 441,466 319,444 243,472 90,460" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1233" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1233px"/>
+    <graphic url="Kasten_blau_44_7_0097.jpg" width="800px" height="1233px"/>
     <zone points="41,36 41,1187 756,1187 756,36" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="56,151 97,128 288,157 350,131 485,125 713,162 742,156 743,92 563,99 526,81 451,106 341,78 267,99 57,80" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="59,193 161,215 299,180 388,211 556,187 625,210 669,185 743,195 744,168 647,171 482,128 409,147 360,129 278,160 218,136 160,163 120,135 60,151" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -163,9 +165,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="54 r" xml:id="Kasten_blau_44_7_0096.jpg" ed="48 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/><unclear>13 junij 96</unclear>
       <lb facs="#facs_1_r1l3" n="N002"/>Durchleüchtige Cuhrfürstin, mein herzallerlibste <choice><expan>fraw</expan><abbr>f</abbr></choice> mutter
@@ -180,7 +182,7 @@
       <lb facs="#facs_1_r1l12" n="N011"/>Neüburg zu g<supplied>e</supplied>hen, wie ichs ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> gesch<supplied>r</supplied>iben
       <lb facs="#facs_1_r1l13" n="N012"/>hab. Darnach habens gesacht, es hetten ihn vnterwegs
       <lb facs="#facs_1_r1l14" n="N013"/>reüter angefallen, vndt man wüst nit, woh er sey.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="54 v" xml:id="Kasten_blau_44_7_0097.jpg" ed="48 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>Einmahl bitt ich, ewer Durchlaucht wollen glauben, das ich
       <lb facs="#facs_2_r1l3" n="N002"/>lieber sterben wolte, als ewer Durchlaucht einige vn-

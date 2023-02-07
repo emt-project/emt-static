@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">eingelegt in Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg 07.05.1707</ab>
+         <ab type="notes">eingelegt in Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg 07.05.1707</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1283" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1283px"/>
+    <graphic url="Kasten_blau_44_9_0081.jpg" width="800px" height="1283px"/>
     <zone points="29,0 29,1194 717,1194 717,0" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="36,414 133,452 175,426 322,450 666,401 685,395 684,356 550,341 408,372 252,362 120,401 35,382" rendition="Line" xml:id="facs_1_r1l2"/>
         <zone points="36,494 130,479 163,509 286,476 346,501 492,471 652,492 711,471 701,416 596,442 479,423 330,459 176,426 141,454 34,405" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -111,7 +113,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1295" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1295px"/>
+    <graphic url="Kasten_blau_44_9_0082.jpg" width="800px" height="1295px"/>
     <zone points="278,437 636,437 636,866 278,866" rendition="TextRegion" xml:id="facs_2_region_1656425432587_2938">
         <zone points="537,533 546,578 553,638 551,692 550,742 547,775 497,771 500,739 501,691 503,640 497,586 488,543" rendition="Line" xml:id="facs_2_line_1656425450597_2953"/>
         <zone points="493,543 498,614 501,676 495,713 505,752 456,763 445,715 451,674 448,617 443,546" rendition="Line" xml:id="facs_2_line_1656425454229_2958"/>
@@ -122,9 +124,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="41 r" xml:id="Kasten_blau_44_9_0081.jpg" ed="46 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l2" n="N001"/>Durchleüchtiger <choice><expan>Cuhrfürst</expan><abbr>Cüfst</abbr></choice>, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l3" n="N002"/>Zu dero herbey nahender geb<supplied>ur</supplied>zdag komme ich, aus grundt
@@ -141,7 +143,7 @@
       <lb facs="#facs_1_r1l14" n="N013"/>Bitt vmb v<supplied>er</supplied>g<supplied>e</supplied>bung, das dero sch<supplied>rei</supplied>ben nit beantwort,
       <lb facs="#facs_1_r1l15" n="N014"/>ist in diser <choice><expan>heiligen</expan><abbr>h</abbr></choice> zeit vnmöglich, nach oste<supplied>r</supplied>n
       <lb facs="#facs_1_r1l16" n="N015"/>werd alls herein brengen.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="2" xml:id="Kasten_blau_44_9_0082.jpg" ed="47 r"/>
     <ab facs="#facs_2_region_1656425432587_2938">
       <lb facs="#facs_2_line_1656425450597_2953" n="N001"/>Ihr <choice><expan>Liebden</expan><abbr>Ld</abbr></choice> <choice><expan>herrn</expan><abbr>h</abbr></choice> Curfürsten zu
       <lb facs="#facs_2_line_1656425454229_2958" n="N002"/>Pfalz, meinen herzalle<supplied>r</supplied>libsten
@@ -150,11 +152,7 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -162,5 +160,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

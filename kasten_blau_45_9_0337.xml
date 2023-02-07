@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1202" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1202px"/>
+    <graphic url="Kasten_blau_45_9_0337.jpg" width="800px" height="1202px"/>
     <zone points="41,193 41,1197 764,1197 764,193" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="97,229 205,255 268,230 427,248 497,220 564,242 739,219 728,137 631,144 550,178 384,187 96,168" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="70,298 325,276 401,296 467,275 529,300 731,264 730,243 631,230 438,251 328,238 274,270 221,270 183,243 69,263" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1190" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1190px"/>
+    <graphic url="Kasten_blau_45_9_0338.jpg" width="800px" height="1190px"/>
     <zone points="53,122 53,1168 785,1168 785,122" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="73,187 287,154 466,176 656,151 770,170 769,93 647,118 578,88 406,105 369,81 201,72 71,96" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="72,211 646,227 769,200 769,169 72,186" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -139,7 +141,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1222" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1222px"/>
+    <graphic url="Kasten_blau_45_9_0339.jpg" width="800px" height="1222px"/>
     <zone points="21,119 21,1187 779,1187 779,119" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="34,163 115,184 343,156 577,176 784,145 784,122 542,75 434,72 372,100 33,74" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="36,235 288,198 357,224 394,200 464,218 552,193 735,213 744,155 570,177 455,154 346,183 36,164" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -165,9 +167,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="199 r" xml:id="Kasten_blau_45_9_0337.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Dero <choice><expan>gnädige</expan><abbr>g</abbr></choice> schreiben vom 22ten, 26ten vnd 28ten dises hab mit
@@ -188,7 +190,7 @@
       <lb facs="#facs_1_r1l17" n="N017"/>des juraments, so mein <choice><expan>bruder</expan><abbr>brud</abbr></choice> abzuelegen. Er zeigt
       <lb facs="#facs_1_r1l18" n="N018"/>gewis ein großen eifer zue ihr Mayestät vnd auch
       <lb facs="#facs_1_r1l19" n="N019"/><unclear>ewer Durchlaucht</unclear> vnd aller <choice><expan>brüder</expan><abbr>br</abbr></choice> dienst vnd ein große redlichk<supplied>eit</supplied>.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="199 v" xml:id="Kasten_blau_45_9_0338.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Sag ewer Durchlaucht <choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> dankh, das sie mihr solche <choice><expan>gnädige</expan><abbr>g</abbr></choice>
       <lb facs="#facs_2_r1l2" n="N002"/>wuntsch zue mein heruohrgang duen wollen. Wan ich
@@ -210,7 +212,7 @@
       <lb facs="#facs_2_r1l18" n="N018"/>leüt, der Herzoch hatt wider das terzian fieber, die
       <lb facs="#facs_2_r1l19" n="N019"/>bede Starenberg haben sich ganz kranker von
       <lb facs="#facs_2_r1l20" n="N020"/>der armeé begeben müeßen. Ist izt mein bruder</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="200 r" xml:id="Kasten_blau_45_9_0339.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>vnd Schaftenberg, auch <choice><expan>General</expan><abbr>G</abbr></choice> Wa<supplied>c</supplied>htmeister, allein bey der fanteri
       <lb facs="#facs_3_r1l2" n="N002"/>von generals personen, wan nit ihr Mayestät wider ein hin

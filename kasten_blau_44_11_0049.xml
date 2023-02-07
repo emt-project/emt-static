@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift. Ort: ? Erwähnt ein beiliegendes kleines Briefflein ohne Überschrift, das seinem Residenten in London, [Baron Daniel von] Steingens, übergeben wurde und angeblich von der verwitweten Königin in Spanien an Eleonora Magdalena von Pfalz-Neuburg sein soll. Könnte jpg 54 (Maria Anna von Pfalz-Neuburg/Königinwitwe von Spanien? an Eleonora Magdalena von Pfalz-Neuburg? sein.</ab>
+         <ab type="notes">Konzept mit Unterschrift. Ort: ? Erwähnt ein beiliegendes kleines Briefflein ohne Überschrift, das seinem Residenten in London, [Baron Daniel von] Steingens, übergeben wurde und angeblich von der verwitweten Königin in Spanien an Eleonora Magdalena von Pfalz-Neuburg sein soll. Könnte jpg 54 (Maria Anna von Pfalz-Neuburg/Königinwitwe von Spanien? an Eleonora Magdalena von Pfalz-Neuburg? sein.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1298" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1298px"/>
+    <graphic url="Kasten_blau_44_11_0049.jpg" width="800px" height="1298px"/>
     <zone points="22,21 22,637 374,637 374,21" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="22,63 47,58 72,57 97,57 122,57 148,55 148,21 122,23 97,23 72,23 47,24 22,29" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="138,76 170,74 203,72 236,72 236,38 203,38 170,40 138,42" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -143,7 +145,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1304" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1304px"/>
+    <graphic url="Kasten_blau_44_11_0050.jpg" width="800px" height="1304px"/>
     <zone points="53,139 53,414 388,414 388,139" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="223,180 248,181 273,181 298,180 323,179 348,177 374,176 374,139 348,140 323,142 298,143 273,144 248,144 223,143" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="57,300 83,299 110,298 136,297 163,296 189,295 216,294 243,293 269,293 296,292 322,291 349,290 376,289 376,259 349,260 322,261 296,262 269,263 243,263 216,264 189,265 163,266 136,267 110,268 83,269 57,270" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -167,9 +169,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="25 r" xml:id="Kasten_blau_44_11_0049.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/>
@@ -216,7 +218,7 @@
       <lb facs="#facs_1_r3l31" n="N031"/>
       <lb facs="#facs_1_r3l32" n="N032"/>
       <lb facs="#facs_1_r3l33" n="N033"/></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="25 v" xml:id="Kasten_blau_44_11_0050.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>
       <lb facs="#facs_2_r1l2" n="N002"/>

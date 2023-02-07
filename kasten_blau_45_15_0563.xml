@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift</ab>
+         <ab type="notes">Konzept mit Unterschrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1301" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1301px"/>
+    <graphic url="Kasten_blau_45_15_0563.jpg" width="800px" height="1301px"/>
     <zone points="25,0 25,52 44,52 44,0" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="21,16 27,16 31,12 33,13 36,9 37,10 41,9 44,11 50,10 49,-6 46,-5 34,-5 33,-4 21,-5 20,-4" rendition="Line" xml:id="facs_1_r1l1"/>
       </zone>
@@ -151,7 +153,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1303" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1303px"/>
+    <graphic url="Kasten_blau_45_15_0564.jpg" width="800px" height="1303px"/>
     <zone points="61,71 61,1201 784,1201 784,71" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="388,101 453,94 502,107 569,92 618,99 634,115 674,99 746,104 769,122 789,113 790,68 774,58 714,55 680,76 619,47 557,42 389,60" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="110,135 148,138 168,129 186,142 197,130 206,135 222,126 244,144 343,143 340,69 315,66 279,89 261,80 232,89 137,74 108,93" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -203,9 +205,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="7 r" xml:id="Kasten_blau_45_15_0563.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/></ab>
     <ab facs="#facs_1_r2">
@@ -261,7 +263,7 @@
       <lb facs="#facs_1_r2l50" n="N050"/>rzrngen vndt sie nach darhuntbe
       <lb facs="#facs_1_r2l51" n="N051"/>ehr
       <lb facs="#facs_1_r2l52" n="N052"/>de nils briglen tendt sehlig decting</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="7 v" xml:id="Kasten_blau_45_15_0564.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>dardurch bndichstich genacht werdten
       <lb facs="#facs_2_r1l2" n="N002"/>de irigen somit ger
@@ -311,7 +313,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__39">
+                  <placeName>Neuburg</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2866070/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -319,9 +325,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__39">
-                  <placeName>Neuburg</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2866070/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

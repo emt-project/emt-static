@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1221" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1221px"/>
+    <graphic url="Kasten_blau_45_15_0303.jpg" width="800px" height="1221px"/>
     <zone points="18,275 18,1211 748,1211 748,275" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="154,317 257,301 308,332 440,301 470,330 530,303 561,320 581,305 744,312 744,269 726,264 646,285 534,249 458,266 370,223 296,259 155,223" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="49,351 541,352 644,374 737,354 738,312 570,327 526,302 460,338 284,329 257,301 204,321 125,292 50,306" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1224" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1224px"/>
+    <graphic url="Kasten_blau_45_15_0304.jpg" width="800px" height="1224px"/>
     <zone points="57,83 57,1143 786,1143 786,83" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="89,133 171,144 213,119 281,138 354,112 394,131 423,115 451,139 522,111 548,131 589,111 663,133 762,117 762,76 553,88 466,66 328,97 244,62 88,80" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="73,170 208,185 400,162 495,188 525,164 571,180 713,148 757,171 772,109 651,134 589,112 544,138 516,114 440,144 324,117 72,145" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -139,7 +141,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1251" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1251px"/>
+    <graphic url="Kasten_blau_45_15_0305.jpg" width="800px" height="1251px"/>
     <zone points="15,69 15,1182 755,1182 755,69" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="20,131 102,91 137,108 200,91 275,128 389,95 455,121 511,101 646,112 747,95 748,48 348,78 283,57 211,72 155,41 20,74" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="19,163 125,174 184,149 210,169 294,142 358,162 464,138 535,164 646,146 712,174 751,155 751,118 353,102 266,128 147,103 19,132" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -166,9 +168,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="162 r" xml:id="Kasten_blau_45_15_0303.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Sage <choice><expan>vnterdehnigsten</expan><abbr>vd</abbr></choice> dankh vohr bede der<unclear>g</unclear> <choice><expan>gnädige</expan><abbr>g</abbr></choice> schreiben
@@ -188,7 +190,7 @@
       <lb facs="#facs_1_r1l16" n="N016"/>geschikt werden. Der Cauniz meindt, man soll kein
       <lb facs="#facs_1_r1l17" n="N017"/>particullar proces anfangen als zu dem der
       <lb facs="#facs_1_r1l20" n="N018"/>Peruci di procuren verlangt hatt, sondern</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="162 v" xml:id="Kasten_blau_45_15_0304.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>die sach in genere zue sammen nehmen vnd
       <lb facs="#facs_2_r1l2" n="N002"/>in nahmen ihr Mayestät vnd Beyrn die sach anbringen
@@ -211,7 +213,7 @@
       <lb facs="#facs_2_r1l20" n="N019"/>Königs gedahn, das vnangesehn der differentien,
       <lb facs="#facs_2_r1l21" n="N020"/>die er mit dem Papsten hab, er doch darbey
       <lb facs="#facs_2_r1l22" n="N021"/>bleib bey der mediation, die er dorten angenomen,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="163 r" xml:id="Kasten_blau_45_15_0305.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>so mues er nuhr ein andren pretext als ewer
       <lb facs="#facs_3_r1l2" n="N002"/>Durchlaucht suechen. Ich för<supplied>c</supplied>ht nuhr, die cölnische sach bringt

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift. Datum: 20. korrigiert aus 11.</ab>
+         <ab type="notes">Konzept mit Unterschrift. Datum: 20. korrigiert aus 11.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1257" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1257px"/>
+    <graphic url="Kasten_blau_45_7_0395.jpg" width="800px" height="1257px"/>
     <zone points="41,25 41,1248 775,1248 775,25" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="721,60 743,56 743,26 721,30" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="41,60 68,61 96,62 124,61 152,60 180,58 208,55 208,25 180,28 152,30 124,31 96,32 68,31 41,30" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -127,7 +129,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1284" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1284px"/>
+    <graphic url="Kasten_blau_45_7_0396.jpg" width="800px" height="1284px"/>
     <zone points="49,20 49,1219 798,1219 798,20" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="456,51 489,50 523,50 523,20 489,20 456,21" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="409,71 434,70 459,70 485,71 510,71 536,72 561,73 587,73 612,74 638,75 663,75 689,75 714,74 740,72 765,70 791,67 791,37 765,40 740,42 714,44 689,45 663,45 638,45 612,44 587,43 561,43 536,42 510,41 485,41 459,40 434,40 409,41" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -171,7 +173,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1278" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1278px"/>
+    <graphic url="Kasten_blau_45_7_0397.jpg" width="800px" height="1278px"/>
     <zone points="20,21 20,1265 777,1265 777,21" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="725,51 749,51 749,21 725,21" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="384,73 409,73 434,73 459,73 484,73 509,73 534,73 559,73 584,72 609,72 634,71 659,71 684,71 709,70 734,70 759,70 759,40 734,40 709,40 684,41 659,41 634,41 609,42 584,42 559,43 534,43 509,43 484,43 459,43 434,43 409,43 384,43" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -213,23 +215,23 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="1730" lry="2651" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpg" width="1730px" height="2651px"/>
+    <graphic url="Kasten_blau_45_7_0398.jpg" width="1730px" height="2651px"/>
   </surface>
   <surface ulx="0" uly="0" lrx="1738" lry="2647" xml:id="facs_5">
-    <graphic url="%2Ffiles.jpg" width="1738px" height="2647px"/>
+    <graphic url="Kasten_blau_45_7_0399.jpg" width="1738px" height="2647px"/>
   </surface>
   <surface ulx="0" uly="0" lrx="1738" lry="2647" xml:id="facs_6">
-    <graphic url="%2Ffiles.jpg" width="1738px" height="2647px"/>
+    <graphic url="Kasten_blau_45_7_0400.jpg" width="1738px" height="2647px"/>
   </surface>
   <surface ulx="0" uly="0" lrx="1738" lry="2647" xml:id="facs_7">
-    <graphic url="%2Ffiles.jpg" width="1738px" height="2647px"/>
+    <graphic url="Kasten_blau_45_7_0401.jpg" width="1738px" height="2647px"/>
   </surface>
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="59 r" xml:id="Kasten_blau_45_7_0395.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/>
@@ -262,7 +264,7 @@
       <lb facs="#facs_1_r1l29" n="N029"/>
       <lb facs="#facs_1_r1l30" n="N030"/>
       <lb facs="#facs_1_r1l31" n="N031"/></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="59 v" xml:id="Kasten_blau_45_7_0396.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>
       <lb facs="#facs_2_r1l2" n="N002"/>
@@ -303,7 +305,7 @@
       <lb facs="#facs_2_r1l37" n="N037"/>
       <lb facs="#facs_2_r1l38" n="N038"/>
       <lb facs="#facs_2_r1l39" n="N039"/></ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="60 r" xml:id="Kasten_blau_45_7_0397.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>
       <lb facs="#facs_3_r1l2" n="N002"/>
@@ -342,20 +344,20 @@
       <lb facs="#facs_3_r1l35" n="N035"/>
       <lb facs="#facs_3_r1l36" n="N036"/>
       <lb facs="#facs_3_r1l37" n="N037"/></ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
-    <pb facs="#facs_5" n="5" xml:id="img_0005"/>
-    <pb facs="#facs_6" n="6" xml:id="img_0006"/>
-    <pb facs="#facs_7" n="7" xml:id="img_0007"/>
+    <pb facs="#facs_4" n="61 r" xml:id="Kasten_blau_45_7_0398.jpg"/>
+    <pb facs="#facs_5" n="61 v" xml:id="Kasten_blau_45_7_0399.jpg"/>
+    <pb facs="#facs_6" n="62 r" xml:id="Kasten_blau_45_7_0400.jpg"/>
+    <pb facs="#facs_7" n="62 v" xml:id="Kasten_blau_45_7_0401.jpg"/>
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__13">
                   <placeName>Düsseldorf</placeName>

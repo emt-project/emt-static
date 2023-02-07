@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datierung unsicher</ab>
+         <ab type="notes">Datierung unsicher</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1203" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1203px"/>
+    <graphic url="Kasten_blau_45_9_0454.jpg" width="800px" height="1203px"/>
     <zone points="17,203 17,1192 787,1192 787,203" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="73,279 147,247 323,263 413,238 486,259 772,227 771,187 723,180 579,209 498,186 434,205 300,183 185,201 121,168 71,183" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="76,294 204,314 259,295 329,327 443,289 552,310 701,281 787,296 768,252 436,269 144,247 75,278" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1219" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1219px"/>
+    <graphic url="Kasten_blau_45_9_0455.jpg" width="800px" height="1219px"/>
     <zone points="27,42 27,1216 798,1216 798,42" rendition="TextRegion" xml:id="facs_2_r2">
         <zone points="37,82 778,79 777,30 29,39" rendition="Line" xml:id="facs_2_r2l1"/>
         <zone points="26,124 179,159 237,125 437,135 471,117 625,151 764,129 764,83 26,92" rendition="Line" xml:id="facs_2_r2l2"/>
@@ -139,7 +141,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1219" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1219px"/>
+    <graphic url="Kasten_blau_45_9_0456.jpg" width="800px" height="1219px"/>
     <zone points="4,76 4,1162 779,1162 779,76" rendition="TextRegion" xml:id="facs_3_r2">
         <zone points="45,112 117,133 277,108 568,128 779,112 779,74 747,86 628,49 572,69 479,54 318,78 266,60 213,81 148,60 45,82" rendition="Line" xml:id="facs_3_r2l1"/>
         <zone points="33,180 125,198 181,165 318,186 643,151 749,178 747,112 473,137 418,121 324,148 32,136" rendition="Line" xml:id="facs_3_r2l2"/>
@@ -162,9 +164,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="268 r" xml:id="Kasten_blau_45_9_0454.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l3" n="N002"/>Weil ich bey vohriger post nit können dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben beantworten <add>vom 22ten passato</add>,
@@ -183,7 +185,7 @@
       <lb facs="#facs_1_r1l16" n="N015"/><choice><expan>Pater</expan><abbr>P</abbr></choice> Hippolito reden. Es ist zwar hart vnd gefahrlich, wan man
       <lb facs="#facs_1_r1l17" n="N016"/>kein beruef hatt, einen standt anzuetretten, es hengt halt
       <lb facs="#facs_1_r1l18" n="N017"/>die ewichkeit daran, die werdt gahr lang. Die Erzherzogin</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="268 v" xml:id="Kasten_blau_45_9_0455.jpg"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l1" n="N001"/>wirt, wie ich vermein, balt hier sein, mihr erwarten sie die
       <lb facs="#facs_2_r2l2" n="N002"/>könftige wochen. Mein brueder wirt woll ein großen freüdt
@@ -206,7 +208,7 @@
       <lb facs="#facs_2_r2l19" n="N019"/>schreibt mihr dis bey ligende, waraus ewer Durchlaucht <choice><expan>gnädig</expan><abbr>g</abbr></choice> 
       <lb facs="#facs_2_r2l20" n="N020"/>werden ersehen, wie vnser armeh steht vnd die vhrsach,
       <lb facs="#facs_2_r2l21" n="N021"/>warumb sie bis dahto noch nit zum schlagen kommen können.</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="269 r" xml:id="Kasten_blau_45_9_0456.jpg"/>
     <ab facs="#facs_3_r2">
       <lb facs="#facs_3_r2l1" n="N001"/>Wie ich hab gehört, das der Borkstorf blieben, so hab ihm darüber
       <lb facs="#facs_3_r2l2" n="N002"/>zuegeschrieben, weil ich mihr eingebilt, er werde villeicht

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1253" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1253px"/>
+    <graphic url="Kasten_blau_45_15_0661.jpg" width="800px" height="1253px"/>
     <zone points="14,77 14,1230 775,1230 775,77" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="57,500 269,519 406,493 614,504 643,482 771,481 769,422 673,409 509,471 328,436 283,481 146,492 55,448" rendition="Line" xml:id="facs_1_r1l4"/>
         <zone points="84,592 232,550 379,550 422,574 510,551 540,572 639,533 774,536 772,492 681,481 612,515 554,495 312,523 80,502" rendition="Line" xml:id="facs_1_r1l5"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1236" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1236px"/>
+    <graphic url="Kasten_blau_45_15_0662.jpg" width="800px" height="1236px"/>
     <zone points="58,71 58,1153 797,1153 797,71" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="65,134 121,112 302,134 357,108 425,124 667,96 741,117 770,109 769,25 63,21" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="69,189 129,177 169,197 214,160 289,186 353,156 421,177 613,146 698,182 740,168 739,115 562,110 535,129 467,107 381,135 177,142 120,113 67,135" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -133,7 +135,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1238" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1238px"/>
+    <graphic url="Kasten_blau_45_15_0663.jpg" width="800px" height="1238px"/>
     <zone points="11,66 11,1154 755,1154 755,66" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="34,118 219,117 285,92 370,111 436,91 670,106 700,93 699,22 32,26" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="23,179 76,188 161,156 273,183 435,144 471,163 645,155 677,181 731,160 729,107 658,97 596,132 520,113 473,133 443,105 345,134 179,106 21,127" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -159,9 +161,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="65 r" xml:id="Kasten_blau_45_15_0661.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l4" n="N001"/>Durchleüchtiger Cuhrfürst, mein h<supplied>er</supplied>zallerliebster herr vatter
       <lb facs="#facs_1_r1l5" n="N002"/>Iezt kome in <choice><expan>vnterdehnigkeit</expan><abbr>vd</abbr></choice>, dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben zue beantworten,
@@ -176,7 +178,7 @@
       <lb facs="#facs_1_r1l14" n="N011"/>an ihr haben. Was die schpanische sach angeht, werden
       <lb facs="#facs_1_r1l15" n="N012"/>ewer Durchlaucht schon alles vernommen haben, was hierin g<supplied>e</supplied>schen,
       <lb facs="#facs_1_r1l16" n="N013"/>vnd das die verwitibte Königin sich stark der sach animbt,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="65 v" xml:id="Kasten_blau_45_15_0662.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>gott gebe sein gnad darzue vnd was zue seiner ehr
       <lb facs="#facs_2_r1l2" n="N002"/>ist. Wegen Portugal werden die patres überlegen,
@@ -198,7 +200,7 @@
       <lb facs="#facs_2_r1l18" n="N018"/>mein <choice><expan>bruder</expan><abbr>b</abbr></choice> Carl werde woll widerumb ins felt gehen,
       <lb facs="#facs_2_r1l19" n="N019"/>seine chargi zue betretten, dan ihm villeicht die
       <lb facs="#facs_2_r1l20" n="N020"/>schlimme welt sonst übel möchte nachreden,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="66 r" xml:id="Kasten_blau_45_15_0663.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>dan der Cuhrfürst vnd ander mehr verheirate
       <lb facs="#facs_3_r1l2" n="N002"/>herrn ins felt gehen, nimbt auch der aus Saxen

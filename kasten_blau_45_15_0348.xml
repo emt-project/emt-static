@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,14 +62,16 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
             <term>Bericht</term>
          </ab>
-         <ab type="abstract-terms">scheint nur eine Seite aus einem längeren Schreiben zu sein; geht u.a. um Graf Starhemberg und den Kaiser</ab>
+         <ab type="notes">scheint nur eine Seite aus einem längeren Schreiben zu sein; geht u.a. um Graf Starhemberg und den Kaiser</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -87,12 +89,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1250" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1250px"/>
+    <graphic url="Kasten_blau_45_15_0348.jpg" width="800px" height="1250px"/>
     <zone points="209,126 209,766 339,766 339,126" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="275,244 281,244 285,240 297,244 305,238 318,243 326,236 343,232 346,188 341,188 332,196 327,190 319,187 305,195 289,187 278,186" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="205,545 232,542 241,546 253,535 276,536 282,531 298,533 304,526 310,527 309,490 297,493 270,475 251,478 245,484 241,481 236,485 232,482 223,486 203,484" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -127,9 +129,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="189 r" xml:id="Kasten_blau_45_15_0348.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>glamb
       <lb facs="#facs_1_r1l2" n="N002"/>eb allan

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1200" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1200px"/>
+    <graphic url="Kasten_blau_45_9_0295.jpg" width="800px" height="1200px"/>
     <zone points="24,143 24,1162 763,1162 763,143" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="152,209 259,184 300,199 364,173 397,192 518,170 705,175 722,152 593,129 537,144 256,123 151,136" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="99,248 208,259 287,227 456,251 512,229 548,259 655,257 764,230 763,209 701,211 667,185 525,196 460,177 272,219 197,188 180,203 98,150" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1194" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1194px"/>
+    <graphic url="Kasten_blau_45_9_0296.jpg" width="800px" height="1194px"/>
     <zone points="21,72 21,1187 798,1187 798,72" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="45,119 228,96 312,131 509,90 621,125 755,95 755,61 506,50 462,69 426,44 214,32 176,56 45,65" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="42,159 184,139 314,169 420,141 536,169 605,144 738,161 780,140 780,108 42,125" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -140,7 +142,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1177" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1177px"/>
+    <graphic url="Kasten_blau_45_9_0297.jpg" width="800px" height="1177px"/>
     <zone points="26,0 26,752 770,752 770,0" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="32,104 135,87 165,114 278,88 303,107 386,80 477,120 505,95 760,109 775,1 551,0 434,54 284,40 231,66 84,23 32,53" rendition="Line" xml:id="facs_3_r1l2"/>
         <zone points="37,159 174,135 356,131 412,156 758,129 740,96 670,92 471,115 391,83 319,109 244,87 179,118 127,93 37,103" rendition="Line" xml:id="facs_3_r1l3"/>
@@ -161,9 +163,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="173 r" xml:id="Kasten_blau_45_9_0295.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster her vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben vom 22ten dis hab mit schuldigstem respect
@@ -184,7 +186,7 @@
       <lb facs="#facs_1_r1l17" n="N017"/>ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> zue überschreiben, das entweder hier oder
       <lb facs="#facs_1_r1l18" n="N018"/>zue Wien ewer Durchlaucht möchten gegen dise obenente zeit
       <lb facs="#facs_1_r1l19" n="N019"/>sich zue vns begeben. Was ich hirab vohr ein vnaus-</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="173 v" xml:id="Kasten_blau_45_9_0296.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>schprechlige freüdt empfinde, ist mein feder zue schwach zue
       <lb facs="#facs_2_r1l2" n="N002"/>exprimiren, ewer Durchlaucht werdens durch dero guette zumb besten
@@ -207,7 +209,7 @@
       <lb facs="#facs_2_r1l19" n="N019"/>von Dietrichstein gesacht, er hab vernommen als wan
       <lb facs="#facs_2_r1l20" n="N020"/>ewer Durchlaucht einen schprachmeister verlangeten, so wehre einer
       <lb facs="#facs_2_r1l21" n="N021"/>hir, gahr ein feiner mensch, der guett franzosisch, wälsch, schpanisch</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="174 r" xml:id="Kasten_blau_45_9_0297.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l2" n="N001"/>vnd lateinisch redet. Er kendt ihn, sagt er sey gahr dugentlich,
       <lb facs="#facs_3_r1l3" n="N002"/>hatt kein weib vnd wurd sich mit hundert taler vnd
@@ -226,7 +228,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__32">
+                  <placeName>Linz</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -234,9 +240,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__32">
-                  <placeName>Linz</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

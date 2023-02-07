@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Abschrift</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Abschrift "Copia" "aygenhändig also abgangen" Benrath. rechts oben zusätzliche Foliierung: 17 Abschrift</ab>
+         <ab type="notes">Abschrift "Copia" "aygenhändig also abgangen" Benrath. rechts oben zusätzliche Foliierung: 17 Abschrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1203" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1203px"/>
+    <graphic url="Kasten_blau_44_6_0391.jpg" width="800px" height="1203px"/>
     <zone points="30,30 30,162 99,162 99,30" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="37,103 52,101 72,85 104,93 95,15 67,16 58,21 53,17 47,19 34,12 27,12" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="23,156 28,157 33,153 44,157 66,147 77,158 90,163 102,160 105,120 97,121 90,113 83,112 68,124 47,116 34,126 26,124" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -129,7 +131,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1191" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1191px"/>
+    <graphic url="Kasten_blau_44_6_0392.jpg" width="800px" height="1191px"/>
     <zone points="79,77 79,1117 798,1117 798,77" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="165,136 291,110 321,126 642,104 679,128 743,100 777,117 787,29 655,73 483,71 379,38 291,73 164,78" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="163,168 260,176 316,151 385,170 481,144 554,163 777,151 770,118 525,131 439,110 410,127 163,138" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -159,7 +161,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1214" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1214px"/>
+    <graphic url="Kasten_blau_44_6_0393.jpg" width="800px" height="1214px"/>
     <zone points="61,28 61,1147 766,1147 766,28" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="733,53 739,53 743,56 749,53 752,55 759,51 765,51 765,12 756,11 750,16 733,16" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="95,99 635,114 754,99 754,53 570,70 443,43 373,73 271,51 95,80" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -193,7 +195,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1186" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1186px"/>
+    <graphic url="Kasten_blau_44_6_0394.jpg" width="800px" height="1186px"/>
     <zone points="75,1066 75,1185 86,1185 86,1066" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="69,1171 76,1172 77,1175 79,1174 82,1175 84,1173 90,1174 99,1127 97,1126 92,1127 90,1125 89,1126 85,1120 79,1119" rendition="Line" xml:id="facs_4_r1l1"/>
       </zone>
@@ -227,7 +229,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1226" xml:id="facs_5">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1226px"/>
+    <graphic url="Kasten_blau_44_6_0395.jpg" width="800px" height="1226px"/>
     <zone points="64,30 64,1164 770,1164 770,30" rendition="TextRegion" xml:id="facs_5_r1">
         <zone points="734,68 739,67 746,62 748,63 756,61 759,56 765,56 763,31 755,31 749,36 745,33 744,35 740,36 737,40 732,41" rendition="Line" xml:id="facs_5_r1l1"/>
         <zone points="59,123 314,99 417,121 770,109 769,64 583,71 521,40 416,72 58,53" rendition="Line" xml:id="facs_5_r1l2"/>
@@ -259,7 +261,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1170" xml:id="facs_6">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1170px"/>
+    <graphic url="Kasten_blau_44_6_0396.jpg" width="800px" height="1170px"/>
     <zone points="121,70 121,1115 783,1115 783,70" rendition="TextRegion" xml:id="facs_6_r1">
         <zone points="150,100 298,97 359,122 486,92 537,113 777,99 777,66 749,57 516,65 317,36 232,73 150,52" rendition="Line" xml:id="facs_6_r1l1"/>
         <zone points="148,144 302,133 408,158 528,133 657,157 716,135 774,145 775,117 622,97 544,114 513,95 397,101 370,120 317,95 149,100" rendition="Line" xml:id="facs_6_r1l2"/>
@@ -291,7 +293,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1223" xml:id="facs_7">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1223px"/>
+    <graphic url="Kasten_blau_44_6_0397.jpg" width="800px" height="1223px"/>
     <zone points="74,38 74,1142 762,1142 762,38" rendition="TextRegion" xml:id="facs_7_r1">
         <zone points="730,78 740,76 744,72 749,76 753,72 762,73 764,35 759,35 757,37 755,35 751,36 747,34 738,39 733,39" rendition="Line" xml:id="facs_7_r1l1"/>
         <zone points="69,126 133,102 273,123 765,110 765,81 639,89 581,53 468,81 69,58" rendition="Line" xml:id="facs_7_r1l2"/>
@@ -322,7 +324,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1170" xml:id="facs_8">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1170px"/>
+    <graphic url="Kasten_blau_44_6_0398.jpg" width="800px" height="1170px"/>
     <zone points="124,87 124,1071 779,1071 779,87" rendition="TextRegion" xml:id="facs_8_r1">
         <zone points="152,119 779,125 780,77 323,88 188,59 153,76" rendition="Line" xml:id="facs_8_r1l1"/>
         <zone points="148,153 772,166 778,110 700,130 621,113 374,131 350,115 321,135 220,111 148,132" rendition="Line" xml:id="facs_8_r1l2"/>
@@ -351,7 +353,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1208" xml:id="facs_9">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1208px"/>
+    <graphic url="Kasten_blau_44_6_0399.jpg" width="800px" height="1208px"/>
     <zone points="13,31 13,1154 757,1154 757,31" rendition="TextRegion" xml:id="facs_9_r1">
         <zone points="718,80 734,75 745,76 755,84 763,82 760,18 750,19 746,15 738,13 734,13 731,17 726,14 720,18 715,18" rendition="Line" xml:id="facs_9_r1l1"/>
         <zone points="76,117 183,123 212,104 301,124 446,101 482,125 539,102 734,118 748,66 494,63 456,81 139,46 76,74" rendition="Line" xml:id="facs_9_r1l2"/>
@@ -383,7 +385,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1190" xml:id="facs_10">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1190px"/>
+    <graphic url="Kasten_blau_44_6_0400.jpg" width="800px" height="1190px"/>
     <zone points="112,69 112,1123 788,1123 788,69" rendition="TextRegion" xml:id="facs_10_r1">
         <zone points="138,116 214,95 313,117 431,91 489,115 553,97 689,117 764,99 763,74 713,57 493,49 454,70 420,47 137,55" rendition="Line" xml:id="facs_10_r1l1"/>
         <zone points="132,147 174,166 220,138 246,157 359,142 443,157 471,139 550,156 793,139 793,112 488,116 435,92 318,117 204,97 132,119" rendition="Line" xml:id="facs_10_r1l2"/>
@@ -412,7 +414,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1229" xml:id="facs_11">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1229px"/>
+    <graphic url="Kasten_blau_44_6_0401.jpg" width="800px" height="1229px"/>
     <zone points="25,1116 25,1228 36,1228 36,1116" rendition="TextRegion" xml:id="facs_11_r1">
         <zone points="20,1223 31,1224 36,1220 41,1220 41,1184 36,1184 31,1186 26,1181 25,1182 20,1182" rendition="Line" xml:id="facs_11_r1l1"/>
       </zone>
@@ -443,9 +445,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="249 r" xml:id="Kasten_blau_44_6_0391.jpg" ed="17 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>er
       <lb facs="#facs_1_r1l2" n="N002"/></ab>
@@ -479,7 +481,7 @@
       <lb facs="#facs_1_r2l27" n="N027"/>der allergengste theil wäreheingesdah
       <lb facs="#facs_1_r2l28" n="N028"/>setteefr noch aber erhingligst ven
       <lb facs="#facs_1_r2l29" n="N029"/>E</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="249 v" xml:id="Kasten_blau_44_6_0392.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>a dla zuer vermehng das diesele
       <lb facs="#facs_2_r1l2" n="N002"/>we ganflichen cetiturrrt hegen derege
@@ -506,7 +508,7 @@
       <lb facs="#facs_2_r1l23" n="N023"/>er le vnd deuotion h gebe
       <lb facs="#facs_2_r1l24" n="N024"/>vo biel dembdiltem ohnlangeten dosen  laa
       <lb facs="#facs_2_r1l25" n="N025"/>E</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="250 r" xml:id="Kasten_blau_44_6_0393.jpg" ed="18 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>
       <lb facs="#facs_3_r1l2" n="N002"/>mi die allergengste obligalienicht hu
@@ -537,7 +539,7 @@
       <lb facs="#facs_3_r1l27" n="N027"/>kei wirt habe mi ah felten lesen
       <lb facs="#facs_3_r1l28" n="N028"/>eßen eses hil vndeehnen schondeoen
       <lb facs="#facs_3_r1l29" n="N029"/>E</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="250 v" xml:id="Kasten_blau_44_6_0394.jpg"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/>E</ab>
     <ab facs="#facs_4_r2">
@@ -567,7 +569,7 @@
       <lb facs="#facs_4_r2l24" n="N024"/>hinein schlhe als der laigein verlang lachten
       <lb facs="#facs_4_r2l25" n="N025"/>gebes do das die langi ver erla a ma
       <lb facs="#facs_4_r2l26" n="N026"/>m gurh bleiben vd damit z derohelb</ab>
-    <pb facs="#facs_5" n="5" xml:id="img_0005"/>
+    <pb facs="#facs_5" n="251 r" xml:id="Kasten_blau_44_6_0395.jpg" ed="19 r"/>
     <ab facs="#facs_5_r1">
       <lb facs="#facs_5_r1l1" n="N001"/>c
       <lb facs="#facs_5_r1l2" n="N002"/>gerehtigs aantasgeo etrsseliges
@@ -596,7 +598,7 @@
       <lb facs="#facs_5_r1l25" n="N025"/>werben v derderntwgen gabe
       <lb facs="#facs_5_r1l26" n="N026"/>mpehmit sich beingeb welte abeenacht herne
       <lb facs="#facs_5_r1l27" n="N027"/></ab>
-    <pb facs="#facs_6" n="6" xml:id="img_0006"/>
+    <pb facs="#facs_6" n="251 v" xml:id="Kasten_blau_44_6_0396.jpg"/>
     <ab facs="#facs_6_r1">
       <lb facs="#facs_6_r1l1" n="N001"/>das de eütsheise sein deginn verlisheen
       <lb facs="#facs_6_r1l2" n="N002"/>kenken e konke dise lamas als allaen
@@ -625,7 +627,7 @@
       <lb facs="#facs_6_r1l25" n="N025"/>d verhelsen henbern luch dienach fas wange
       <lb facs="#facs_6_r1l26" n="N026"/>lage seines dubl derlihem olegnedegst
       <lb facs="#facs_6_r1l27" n="N027"/></ab>
-    <pb facs="#facs_7" n="7" xml:id="img_0007"/>
+    <pb facs="#facs_7" n="252 r" xml:id="Kasten_blau_44_6_0397.jpg" ed="27 r"/>
     <ab facs="#facs_7_r1">
       <lb facs="#facs_7_r1l1" n="N001"/>
       <lb facs="#facs_7_r1l2" n="N002"/>vlegelegte gehalten in gatsu contimeen
@@ -653,7 +655,7 @@
       <lb facs="#facs_7_r1l24" n="N024"/>pirseren hide kö salten aberetwehr die
       <lb facs="#facs_7_r1l25" n="N025"/>afsien vnd gehige vbstne derahe
       <lb facs="#facs_7_r1l26" n="N026"/></ab>
-    <pb facs="#facs_8" n="8" xml:id="img_0008"/>
+    <pb facs="#facs_8" n="252 v" xml:id="Kasten_blau_44_6_0398.jpg"/>
     <ab facs="#facs_8_r1">
       <lb facs="#facs_8_r1l1" n="N001"/>mi dar verdisahl verfetelich fal
       <lb facs="#facs_8_r1l2" n="N002"/>ete abeo andee kuefaen inedentia k
@@ -679,7 +681,7 @@
       <lb facs="#facs_8_r1l22" n="N022"/>meinen dnten dabderglhten hallen ge
       <lb facs="#facs_8_r1l23" n="N023"/>nohnliges zegliges gebell verlndge
       <lb facs="#facs_8_r1l24" n="N024"/>laß bitte mit vndekhs verdiseahl</ab>
-    <pb facs="#facs_9" n="9" xml:id="img_0009"/>
+    <pb facs="#facs_9" n="253 r" xml:id="Kasten_blau_44_6_0399.jpg" ed="28 r"/>
     <ab facs="#facs_9_r1">
       <lb facs="#facs_9_r1l1" n="N001"/>e
       <lb facs="#facs_9_r1l2" n="N002"/>bey beyen maseten lel duh lgen
@@ -708,7 +710,7 @@
       <lb facs="#facs_9_r1l25" n="N025"/>dai
       <lb facs="#facs_9_r1l26" n="N026"/>
       <lb facs="#facs_9_r1l27" n="N027"/>uren m v</ab>
-    <pb facs="#facs_10" n="10" xml:id="img_0010"/>
+    <pb facs="#facs_10" n="253 v" xml:id="Kasten_blau_44_6_0400.jpg"/>
     <ab facs="#facs_10_r1">
       <lb facs="#facs_10_r1l1" n="N001"/>dam andern g beben vegenmeines chwegen
       <lb facs="#facs_10_r1l2" n="N002"/>des feihen b datoie aich mit möchster
@@ -734,7 +736,7 @@
       <lb facs="#facs_10_r1l22" n="N022"/>mich wohl ven terben das alles s wohl kenen
       <lb facs="#facs_10_r1l23" n="N023"/>ichwerdenihtemanglen vn eier post hu
       <lb facs="#facs_10_r1l24" n="N024"/>E</ab>
-    <pb facs="#facs_11" n="11" xml:id="img_0011"/>
+    <pb facs="#facs_11" n="254 r" xml:id="Kasten_blau_44_6_0401.jpg" ed="29 r"/>
     <ab facs="#facs_11_r1">
       <lb facs="#facs_11_r1l1" n="N001"/></ab>
     <ab facs="#facs_11_r2">

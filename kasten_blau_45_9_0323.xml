@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Abschrift</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Abschrift; PW nicht ausdrücklich aber: "also aigenhändig abgang."</ab>
+         <ab type="notes">Abschrift; PW nicht ausdrücklich aber: "also aigenhändig abgang."</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1251" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1251px"/>
+    <graphic url="Kasten_blau_45_9_0323.jpg" width="800px" height="1251px"/>
     <zone points="59,122 59,1063 776,1063 776,122" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="120,154 220,154 247,166 286,154 313,168 343,158 386,166 411,160 410,93 377,97 359,114 347,106 331,121 268,101 226,118 203,95 178,114 161,102 119,118" rendition="Line" xml:id="facs_1_r2l1"/>
         <zone points="54,225 768,197 767,178 691,158 564,177 489,145 331,175 53,157" rendition="Line" xml:id="facs_1_r2l2"/>
@@ -124,7 +126,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1235" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1235px"/>
+    <graphic url="Kasten_blau_45_9_0324.jpg" width="800px" height="1235px"/>
     <zone points="73,114 73,1095 773,1095 773,114" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="68,157 757,148 768,93 724,117 459,92 402,116 271,112 184,92 67,119" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="82,187 176,179 222,200 263,175 714,166 778,183 777,141 747,158 651,132 82,167" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -158,7 +160,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1303" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1303px"/>
+    <graphic url="Kasten_blau_45_9_0325.jpg" width="800px" height="1303px"/>
     <zone points="65,122 65,1245 771,1245 771,122" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="64,158 769,159 769,108 430,138 316,112 179,140 64,128" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="60,195 146,211 209,188 394,189 436,208 466,188 760,184 759,154 723,148 59,168" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -188,9 +190,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="190 r" xml:id="Kasten_blau_45_9_0323.jpg"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/>ldurhlechteg te
       <lb facs="#facs_1_r2l2" n="N002"/>obeg lebster sost hab ich in schreiben band odsixprolite in des duchellerens
@@ -220,7 +222,7 @@
       <lb facs="#facs_1_r2l26" n="N026"/>losan demit anferlgendem hürbst wiedern in deflande snen ae
       <lb facs="#facs_1_r2l27" n="N027"/>edabey er auch zufri de estwaßs mein ohr freit mit geheim solle
       <lb facs="#facs_1_r2l28" n="N028"/>erbldensich auch erbieiten die felder ueden bebn zukragen ndi</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="190 v" xml:id="Kasten_blau_45_9_0324.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>alt bekome ish w es meines armesens nicht andiemlich hor beyde wehreren
       <lb facs="#facs_2_r1l2" n="N002"/>zumahlenmdie noch nie anderwerts gewesen, bin ich auch songen die wuede
@@ -251,7 +253,7 @@
       <lb facs="#facs_2_r1l27" n="N027"/>ihme machtigste vnd mildeste fend bieken dan folßten alleo seine
       <lb facs="#facs_2_r1l28" n="N028"/>aute intentoies pori limina enre ibers fonschein gewereden
       <lb facs="#facs_2_r1l29" n="N029"/>Eleonora</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="191 r" xml:id="Kasten_blau_45_9_0325.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>kundt er sich aus dn belwite ugan nit vinder bifbroren koen
       <lb facs="#facs_3_r1l2" n="N002"/>so auch allemsnen brüederen eb exemsolan faden würde zue mahl in
@@ -279,7 +281,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__39">
+                  <placeName>Neuburg</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2866070/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -287,9 +293,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__39">
-                  <placeName>Neuburg</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2866070/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

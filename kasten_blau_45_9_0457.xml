@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datierung unsicher: 1685 wg. Foliierung angenommen, August hat kein A, 11: zwei Punkte vorhanden</ab>
+         <ab type="notes">Datierung unsicher: 1685 wg. Foliierung angenommen, August hat kein A, 11: zwei Punkte vorhanden</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1192" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1192px"/>
+    <graphic url="Kasten_blau_45_9_0457.jpg" width="800px" height="1192px"/>
     <zone points="37,115 37,1191 791,1192 791,116" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="97,186 242,224 328,184 360,205 420,192 498,211 562,183 620,201 764,185 764,142 736,155 674,129 461,151 388,129 152,142 97,121" rendition="Line" xml:id="facs_1_r2l1"/>
         <zone points="76,255 748,230 747,188 600,215 554,186 496,212 326,185 241,225 74,171" rendition="Line" xml:id="facs_1_r2l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1191" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1191px"/>
+    <graphic url="Kasten_blau_45_9_0458.jpg" width="800px" height="1191px"/>
     <zone points="27,84 25,562 769,562 771,84" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="48,126 95,138 130,115 299,145 439,120 536,143 640,116 765,124 765,80 706,69 655,100 577,99 490,72 348,103 263,66 198,92 48,83" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="37,182 317,165 360,193 454,159 583,189 774,177 774,143 572,128 345,153 129,118 89,147 37,141" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -133,9 +135,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="270 r" xml:id="Kasten_blau_45_9_0457.jpg"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herz allerliebster her vatter
       <lb facs="#facs_1_r2l2" n="N002"/>Ich hab vermeindt, weill ich mit der post mein
@@ -155,7 +157,7 @@
       <lb facs="#facs_1_r2l16" n="N016"/>woll herzlich leid, erwart ewer Durchlaucht <choice><expan>gnädigsten</expan><abbr>g</abbr></choice> befehl, wirt
       <lb facs="#facs_1_r2l17" n="N017"/>aber auf alle weis <unclear>vohr</unclear> dise campagne schpaht
       <lb facs="#facs_1_r2l18" n="N018"/>sein, bis ein anderer kombt. Gott woll meinem bruder</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="270 v" xml:id="Kasten_blau_45_9_0458.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>indeßen die <choice><expan>heiligen</expan><abbr>h</abbr></choice> engel anstatt des Hoffmeister mit geben.
       <lb facs="#facs_2_r1l2" n="N002"/>Er ist mit seinem regiment beim Herzoch. Due mich

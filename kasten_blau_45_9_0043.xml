@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1202" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1202px"/>
+    <graphic url="Kasten_blau_45_9_0043.jpg" width="800px" height="1202px"/>
     <zone points="25,162 25,1201 786,1201 786,162" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="108,200 203,225 288,220 318,198 433,222 499,191 679,190 678,146 459,142 398,167 345,141 108,159" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="104,253 197,274 311,250 541,273 594,249 731,245 730,193 433,222 351,204 201,223 103,202" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1210" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1210px"/>
+    <graphic url="Kasten_blau_45_9_0044.jpg" width="800px" height="1210px"/>
     <zone points="32,111 32,953 797,953 797,111" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="93,150 160,145 189,168 284,142 411,170 475,135 592,157 634,136 667,159 802,132 802,109 759,98 601,101 540,80 93,88" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="102,202 176,222 251,195 361,215 433,189 740,210 797,199 797,161 494,138 386,174 330,147 102,164" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -137,12 +139,12 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="27 r" xml:id="Kasten_blau_45_9_0043.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr vatter
-      <lb facs="#facs_1_r1l2" n="N002"/>Mit der gelegenheit, das der <choice><expan>Graf</expan><abbr>G</abbr></choice> Petting hinauf reiset,
+      <lb facs="#facs_1_r1l2" n="N002"/>Mit der gelegenheit, das der <choice><expan>Grav</expan><abbr>G</abbr></choice> Petting hinauf reiset,
       <lb facs="#facs_1_r1l3" n="N003"/>hab ich nit vnterlaßen wollen, meine schuldichkeit durch
       <lb facs="#facs_1_r1l4" n="N004"/>diese zeilen abzulegen in hoffnung, das ewer Durchlaucht sich
       <lb facs="#facs_1_r1l5" n="N005"/>annoch in guettem wollstandt befinden werden vnd
@@ -159,7 +161,7 @@
       <lb facs="#facs_1_r1l16" n="N016"/>ich nicht, das er an deme, was ihm sein brueder
       <lb facs="#facs_1_r1l17" n="N017"/>vohrdragen wirt, ihr Mayestät intention wirt secondiren.
       <lb facs="#facs_1_r1l18" n="N018"/>Ewer Durchlaucht können ihn in meinem nahmen versichern,</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="27 v" xml:id="Kasten_blau_45_9_0044.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>das ich es allezeit gegen ihn vnd die seinige werde
       <lb facs="#facs_2_r1l2" n="N002"/>suechen zue erkennen. Sein brueder hatt mihr versichert,

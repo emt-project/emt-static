@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Datierung unsicher</ab>
+         <ab type="notes">Datierung unsicher</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1198" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1198px"/>
+    <graphic url="Kasten_blau_45_9_0249.jpg" width="800px" height="1198px"/>
     <zone points="12,130 12,1190 783,1190 783,130" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="103,170 152,192 184,169 223,189 349,149 469,172 734,170 768,165 766,85 536,82 473,116 334,78 254,112 101,104" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="88,244 238,213 348,226 414,208 461,234 495,214 782,205 781,174 722,165 354,157 223,189 182,169 161,191 86,172" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1204" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1204px"/>
+    <graphic url="Kasten_blau_45_9_0250.jpg" width="800px" height="1204px"/>
     <zone points="45,53 45,1202 797,1202 797,53" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="83,122 225,99 298,116 360,92 492,115 528,88 620,104 663,80 740,97 759,91 754,-2 518,0 416,41 80,60" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="77,172 348,139 429,166 520,132 630,160 672,132 745,128 742,88 721,88 649,112 575,92 493,114 358,95 302,120 240,96 194,125 167,105 75,134" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -140,7 +142,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1206" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1206px"/>
+    <graphic url="Kasten_blau_45_9_0251.jpg" width="800px" height="1206px"/>
     <zone points="4,44 4,1203 775,1203 775,44" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="23,111 62,92 133,117 349,73 613,99 768,85 753,-1 21,0" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="43,157 290,130 411,155 501,128 531,150 657,132 699,149 737,138 735,78 605,102 446,76 297,107 170,92 133,117 102,97 42,120" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -166,9 +168,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="144 r" xml:id="Kasten_blau_45_9_0249.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich bitte <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> vmb vergebung, das bey vohriger
@@ -188,7 +190,7 @@
       <lb facs="#facs_1_r1l17" n="N016"/>sein, wan ich dardurch die genad möchte widerumb
       <lb facs="#facs_1_line_1637069577657_3970" n="N017"/>haben, ewer Durchlaucht zue bedienen. So balt ich etwas
       <lb facs="#facs_1_r1l20" n="N018"/>vernemmen werde von ihr Mayestät, so werde nit</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="144 v" xml:id="Kasten_blau_45_9_0250.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>vnterlaßen, es ewer Durchlaucht zeitligist zue erinern.
       <lb facs="#facs_2_r1l2" n="N002"/>Das <choice><expan>bruder</expan><abbr>b</abbr></choice> <choice><expan>Ludwig</expan><abbr>Lud</abbr></choice> so fleisich mit sein regiment
@@ -211,7 +213,7 @@
       <lb facs="#facs_2_r1l19" n="N019"/>er zue ihr Durchlaucht <choice><expan>fraw</expan><abbr>f</abbr></choice> <choice><expan>mutter</expan><abbr>m</abbr></choice> vnd den schwestern geht, so duet er
       <lb facs="#facs_2_r1l20" n="N020"/>nit, geht auch zue niemant, wan er nit gerufen
       <lb facs="#facs_2_r1l21" n="N021"/>wirt, aber <supplied>ist</supplied> gewis erleücht von gott vnd rett die schönisten</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="145 r" xml:id="Kasten_blau_45_9_0251.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>geistlige sachen, woll auch weltlige, wan man ihn fragt vnd
       <lb facs="#facs_3_r1l2" n="N002"/>ein vertrawen zeigt, vnd ist nit so einfaltig
@@ -235,7 +237,11 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__32">
+                  <placeName>Linz</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -243,9 +249,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__32">
-                  <placeName>Linz</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772400/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

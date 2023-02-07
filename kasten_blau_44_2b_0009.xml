@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">offizielles Schreiben</ab>
+         <ab type="notes">offizielles Schreiben</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1210" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1210px"/>
+    <graphic url="Kasten_blau_44_2b_0009.jpg" width="800px" height="1210px"/>
     <zone points="48,175 48,1179 775,1179 775,175" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="72,209 550,206 635,224 764,215 765,175 718,163 669,185 552,162 508,186 250,143 197,174 73,177" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="149,237 296,256 403,236 490,256 595,243 643,269 674,248 760,259 761,219 149,210" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -119,7 +121,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1214" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1214px"/>
+    <graphic url="Kasten_blau_44_2b_0010.jpg" width="800px" height="1214px"/>
     <zone points="28,660 28,920 398,920 398,660" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="65,690 349,681 397,689 397,661 343,650 296,667 229,670 174,645 133,652 65,637" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="49,716 95,725 166,712 226,721 299,714 328,725 357,711 395,718 395,686 386,684 205,691 141,682 85,692 49,682" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -134,9 +136,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="1" xml:id="Kasten_blau_44_2b_0009.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleuchtiger, hochgebohrner Churfürst, freündt-
       <lb facs="#facs_1_r1l2" n="N002"/>licher lieber herr vatter. Demnach eüer <choice><expan>Liebden</expan><abbr>Ldn</abbr></choice>
@@ -161,7 +163,7 @@
       <lb facs="#facs_1_r1l21" n="N021"/>eüer <choice><expan>Liebden</expan><abbr>Ldn</abbr></choice>
       <lb facs="#facs_1_r1l22" n="N022"/><choice><expan>vnterdehnigste</expan><abbr>vnt</abbr></choice> <choice><expan>trewgehorsamste</expan><abbr>trwgeh</abbr></choice> dochter
       <lb facs="#facs_1_r1l23" n="N023"/>Eleonora Magdalena Ther<supplied>e</supplied>sia</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="2" xml:id="Kasten_blau_44_2b_0010.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Dem durchleüchtigen hochgebohrnen
       <lb facs="#facs_2_r1l2" n="N002"/>Fürsten Philipp Wilhelmb Pfaltz-

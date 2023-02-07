@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1188" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1188px"/>
+    <graphic url="Kasten_blau_45_9_0379.jpg" width="800px" height="1188px"/>
     <zone points="45,134 45,1187 785,1187 785,134" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="126,178 337,192 373,162 441,182 486,161 737,171 772,160 772,134 646,106 506,139 125,108" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="75,221 140,243 368,216 773,222 772,177 712,163 553,180 497,161 446,197 367,165 319,196 259,174 179,198 74,155" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -114,7 +116,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1200" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1200px"/>
+    <graphic url="Kasten_blau_45_9_0380.jpg" width="800px" height="1200px"/>
     <zone points="40,71 40,1194 797,1194 797,71" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="60,117 119,137 198,103 399,125 449,101 518,125 605,97 686,125 789,104 788,62 726,39 646,71 501,44 59,76" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="49,174 278,172 337,147 424,182 522,147 681,146 727,172 784,145 784,114 732,134 436,108 48,125" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -140,7 +142,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1209" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1209px"/>
+    <graphic url="Kasten_blau_45_9_0381.jpg" width="800px" height="1209px"/>
     <zone points="17,59 17,1206 783,1206 783,59" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="43,87 180,79 232,104 457,80 582,109 638,82 773,87 773,48 639,43 534,69 378,41 338,67 277,44 198,59 150,32 94,70 43,61" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="33,146 189,130 228,149 299,123 399,153 432,122 636,146 781,130 781,105 705,109 675,80 607,111 456,80 233,110 32,94" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -172,9 +174,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="225 r" xml:id="Kasten_blau_45_9_0379.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Mitt großen freüden hab ich aus dero <choice><expan>gnädigem</expan><abbr>g</abbr></choice> schreiben vom 19ten
@@ -195,7 +197,7 @@
       <lb facs="#facs_1_r1l17" n="N017"/>ahn, wirt sich, wan er auch daruon kombt, langsamb
       <lb facs="#facs_1_r1l18" n="N018"/>erholen, auch zue dem wurde er schwehrlich bede schargen
       <lb facs="#facs_1_r1l19" n="N019"/>versehen können, ihn deme offt die regimenter verdeilt</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="225 v" xml:id="Kasten_blau_45_9_0380.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>werden vnd der obristwachtmeister von seinem obristen <add>an</add> separi<supplied>r</supplied>t
       <lb facs="#facs_2_r1l2" n="N002"/>ort comendirt wirt oder auf partey oder wan er die wacht
@@ -218,7 +220,7 @@
       <lb facs="#facs_2_r1l19" n="N019"/><choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice>, <supplied>sie</supplied> wollen doch deswegen keine vngnad auf ihn werfen.
       <lb facs="#facs_2_r1l20" n="N020"/>Er ist redlich darzue verführt worden, gott wirt schon
       <lb facs="#facs_2_r1l21" n="N021"/>helfen, das er mit repatation aus diesem labirint komen</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="226 r" xml:id="Kasten_blau_45_9_0381.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>möge. Der vohrschlag mit der anweisung gefalt mihr nit
       <lb facs="#facs_3_r1l2" n="N002"/>übel, hatt doch der Cuhrfürst auch angewisen, man mues
@@ -241,7 +243,7 @@
       <lb facs="#facs_3_line_1639658589185_90" n="N019"/>ewer Durchlaucht
       <lb facs="#facs_3_r1l20" n="N020"/><choice><expan>vnterdehnigste</expan><abbr>vnt</abbr></choice> <choice><expan>trewgehorsamste</expan><abbr>trewgehos</abbr></choice> do<supplied>c</supplied>hter
       <lb facs="#facs_3_line_1639658659625_98" n="N021"/>EMT
-      <lb facs="#facs_3_r1l19" n="N022"/>Wien den 1ten <choice><expan>feber</expan><abbr>feb</abbr></choice> 1685
+      <lb facs="#facs_3_r1l19" n="N022"/>Wien den 1ten <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1685
       <lb facs="#facs_3_r1l21" n="N023"/>Hab vergeßen ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> zue berichten,
       <lb facs="#facs_3_line_1639658659625_99" n="N024"/>das morgen der Carl von Wallenstein zue
       <lb facs="#facs_3_r1l24" n="N025"/>mein Obr<supplied>i</supplied>sthoffmeister wi<supplied>r</supplied>t declarirt werden, der Schwarzenberg wirt Hoffmarschall.</ab>

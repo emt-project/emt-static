@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Wien und Datum korrigiert aus der Grußformel vnt trwghos; Reise: 29.07.1689-04.03.1690 Leopold Hofreise zum Augsburger (Regensburg blockiert) Reichstag (Miller, Hofreisen S. 245).</ab>
+         <ab type="notes">Wien und Datum korrigiert aus der Grußformel vnt trwghos; Reise: 29.07.1689-04.03.1690 Leopold Hofreise zum Augsburger (Regensburg blockiert) Reichstag (Miller, Hofreisen S. 245).</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1231" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1231px"/>
+    <graphic url="Kasten_blau_45_15_0775.jpg" width="800px" height="1231px"/>
     <zone points="43,469 43,1226 759,1226 759,469" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="115,530 288,541 350,506 752,522 762,472 709,450 509,443 444,467 245,433 113,446" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="75,605 155,572 481,587 581,555 732,585 757,568 756,520 597,542 412,508 310,547 72,508" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -108,7 +110,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1207" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1207px"/>
+    <graphic url="Kasten_blau_45_15_0776.jpg" width="800px" height="1207px"/>
     <zone points="65,63 65,526 797,526 797,63" rendition="TextRegion" xml:id="facs_2_r2">
         <zone points="69,109 243,87 352,116 513,97 578,117 637,95 759,110 762,56 71,55" rendition="Line" xml:id="facs_2_r2l1"/>
         <zone points="69,144 191,164 426,138 519,167 580,141 802,168 802,127 695,107 613,126 529,102 461,124 416,100 69,110" rendition="Line" xml:id="facs_2_r2l2"/>
@@ -123,9 +125,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="137 r" xml:id="Kasten_blau_45_15_0775.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich hab vermeint, es werde ein curir verwichenen
@@ -139,7 +141,7 @@
       <lb facs="#facs_1_r1l10" n="N010"/>auch in allem münt<supplied>lich</supplied> aufgeben, ewer Durchlaucht <choice><expan>gnädiges</expan><abbr>g</abbr></choice> schreiben
       <lb facs="#facs_1_r1l11" n="N011"/>zue beantworten. Damit ich ewer Durchlaucht mit meinem
       <lb facs="#facs_1_r1l12" n="N012"/>schreiben nit zue vill vngelegenheit mache, due</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="137 v" xml:id="Kasten_blau_45_15_0776.jpg"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l1" n="N001"/>mich in allem auf ihne bezihen. Morgen werden mihr
       <lb facs="#facs_2_r2l2" n="N002"/>mit der <choice><expan>gnade</expan><abbr>g</abbr></choice> gottes vnser reis in seinem nahmen antretten,

@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">enthält Chiffre (ca. 1 Seite)</ab>
+         <ab type="notes">enthält Chiffre (ca. 1 Seite)</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1232" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1232px"/>
+    <graphic url="Kasten_blau_44_7_0501.jpg" width="800px" height="1232px"/>
     <zone points="32,41 32,1180 763,1180 763,41" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="26,93 50,90 71,103 111,91 155,106 164,99 216,92 216,22 190,15 155,19 149,13 110,20 77,11 37,19 28,14" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="205,505 268,494 321,520 397,491 437,511 473,487 500,503 533,487 749,488 767,484 763,396 702,393 568,435 446,425 203,454" rendition="Line" xml:id="facs_1_r1l3"/>
@@ -111,7 +113,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1215" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1215px"/>
+    <graphic url="Kasten_blau_44_7_0502.jpg" width="800px" height="1215px"/>
     <zone points="85,65 85,1145 798,1145 798,65" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="105,112 324,132 621,88 756,112 773,106 771,16 103,27" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="100,167 273,148 307,169 397,143 448,172 494,143 565,159 600,136 770,149 757,91 693,113 551,90 503,116 413,104 322,135 238,132 190,105 99,118" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -138,7 +140,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1245" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1245px"/>
+    <graphic url="Kasten_blau_44_7_0503.jpg" width="800px" height="1245px"/>
     <zone points="28,65 28,1169 746,1169 746,65" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="23,92 91,111 262,88 319,110 356,85 471,117 517,96 610,110 638,86 751,114 751,24 23,22" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="40,147 341,144 405,165 444,131 480,153 558,132 642,157 731,139 730,89 672,108 630,90 606,111 517,97 488,118 401,97 363,123 165,96 39,122" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -153,9 +155,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="277 r" xml:id="Kasten_blau_44_7_0501.jpg" ed="64 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/><unclear>16 aug 1698</unclear>
       <lb facs="#facs_1_r1l3" n="N002"/>Durchleüchtiger Cuhrfürst, mein h<supplied>er</supplied>zallerlibster
@@ -172,7 +174,7 @@
       <lb facs="#facs_1_r1l14" n="N013"/><unclear>ben</unclear>, dan man hier sporgirt hatt, <unclear>Frankrei</unclear>
       <lb facs="#facs_1_r1l15" n="N014"/><unclear>ch pussir es</unclear>. Die historien dauon
       <lb facs="#facs_1_line_1650379406067_243" n="N015"/>wehren gahr zue lang zu schreiben, basta.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="277 v" xml:id="Kasten_blau_44_7_0502.jpg" ed="64 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>Gottlob, das dero Liebden gezeigt, das es nit war ist. Ich kan
       <lb facs="#facs_2_r1l2" n="N002"/>dero Liebden ist genuechsamb sagen, was vohr <unclear>ges<supplied>ch</supplied>wäz und</unclear> 
@@ -196,7 +198,7 @@
       <lb facs="#facs_2_r1l20" n="N020"/>liben gedechtnus erhalten. Gott geb dero Liebden bestendichkeit
       <lb facs="#facs_2_r1l21" n="N021"/>in allen gutten vohrnemen, vmb welches ich eif<supplied>ri</supplied>ch
       <lb facs="#facs_2_r1l22" n="N022"/>bitten due. <unclear>In Spanien gen die</unclear></ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="278 r" xml:id="Kasten_blau_44_7_0503.jpg" ed="65 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/><unclear>sachen schlecht</unclear>, gott verzeie es, wer schuld dran
       <lb facs="#facs_3_r1l2" n="N002"/>ist, gott woll es beßeren, sonst ist wehnig zu

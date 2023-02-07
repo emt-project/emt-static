@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Konzept mit Unterschrift. Ort: Closter Schonthal korrigiert aus Schön; Schöntal ist eine Zisterzienserabtei einstmals im Bistum Würzburg, reichsunmittelbar; 2. Brief mit diesem Datum</ab>
+         <ab type="notes">Konzept mit Unterschrift. Ort: Closter Schonthal korrigiert aus Schön; Schöntal ist eine Zisterzienserabtei einstmals im Bistum Würzburg, reichsunmittelbar; 2. Brief mit diesem Datum</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1300" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1300px"/>
+    <graphic url="Kasten_blau_45_15_0469.jpg" width="800px" height="1300px"/>
     <zone points="13,1172 13,1299 26,1299 26,1172" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="8,1276 14,1276 16,1278 24,1274 31,1275 31,1221 26,1221 23,1224 18,1220 17,1221 15,1219 8,1219" rendition="Line" xml:id="facs_1_r1l1"/>
       </zone>
@@ -135,7 +137,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1311" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1311px"/>
+    <graphic url="Kasten_blau_45_15_0470.jpg" width="800px" height="1311px"/>
     <zone points="172,130 172,1023 382,1023 382,130" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="199,171 220,155 236,165 249,157 262,164 273,153 311,164 323,153 339,159 350,148 371,162 387,154 388,93 323,109 278,93 200,94" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="204,206 217,210 258,202 308,214 320,206 345,204 367,214 378,211 377,162 365,162 351,149 328,169 312,170 290,154 274,153 264,164 252,156 241,165 221,155 203,167" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -182,9 +184,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="263 r" xml:id="Kasten_blau_45_15_0469.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/></ab>
     <ab facs="#facs_1_r2">
@@ -224,7 +226,7 @@
       <lb facs="#facs_1_r2l34" n="N034"/>schiligis ilhelen glükhlich wangedangt
       <lb facs="#facs_1_r2l35" n="N035"/>hit mene
       <lb facs="#facs_1_r2l36" n="N036"/>eurc</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="263 v" xml:id="Kasten_blau_45_15_0470.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>schulich ishrien
       <lb facs="#facs_2_r1l2" n="N002"/>lichist verandrgen

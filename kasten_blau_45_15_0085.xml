@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Liegt zwischen 1686.08.15-1686.08.29 Brief endet abrupt mit Seitenende. Auf Grund der beigelegten Notiz und der Erwähung dieses Briefs in jenem vom 8. August, ist dieser wohl vor 8. August zu datieren. Sie dankt für Glückwünsche zu ihrem und Josephs Tag, vermutlich Namenstag Hl. Magdalena = 22. Juli und Geburtstag Josephs I. 26. Juli.</ab>
+         <ab type="notes">Liegt zwischen 1686.08.15-1686.08.29 Brief endet abrupt mit Seitenende. Auf Grund der beigelegten Notiz und der Erwähung dieses Briefs in jenem vom 8. August, ist dieser wohl vor 8. August zu datieren. Sie dankt für Glückwünsche zu ihrem und Josephs Tag, vermutlich Namenstag Hl. Magdalena = 22. Juli und Geburtstag Josephs I. 26. Juli.</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1200" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1200px"/>
+    <graphic url="Kasten_blau_45_15_0085.jpg" width="800px" height="1200px"/>
     <zone points="43,155 43,1021 786,1021 786,155" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="43,201 96,188 151,209 203,183 390,218 446,188 791,189 791,158 723,140 594,162 499,134 296,149 111,115 43,133" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="64,242 149,277 296,239 396,258 469,236 565,264 606,248 653,275 777,252 777,204 709,188 470,219 423,199 391,220 187,194 142,215 64,183" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="385" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="385px"/>
+    <graphic url="Kasten_blau_45_15_0086.jpg" width="800px" height="385px"/>
     <zone points="33,27 33,355 789,355 789,27" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="37,113 93,76 159,112 267,81 335,118 396,79 440,106 496,81 719,101 753,83 753,47 696,31 611,57 555,25 476,43 334,4 37,7" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="28,130 771,138 794,133 794,79 704,111 500,81 440,107 396,79 338,118 266,81 159,113 94,77 28,86" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -123,9 +125,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="54 r" xml:id="Kasten_blau_45_15_0085.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Dero <choice><expan>gnädiges</expan><abbr>g</abbr></choice> sch<supplied>r</supplied>eiben vom 8ten durch mein bruede<supplied>r</supplied>n, den <seg type="blackening">Deütschmeisten</seg>
@@ -143,7 +145,7 @@
       <lb facs="#facs_1_r1l14" n="N014"/>Hoff iezt woll, in kurzem ein guette
       <lb facs="#facs_1_r1l15" n="N015"/>zeitung zue sch<supplied>r</supplied>eiben, insonderheit, weil heünt
       <lb facs="#facs_1_r1l16" n="N016"/>z<supplied>e</supplied>itung k<supplied>o</supplied>mt, das zwey minen woll angangen</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="55 r" xml:id="Kasten_blau_45_15_0086.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/><seg type="comment">Ihr Mayestät</seg>, die Kayserin, laßen sich excusiren, daß
       <lb facs="#facs_2_r1l2" n="N002"/>sie den brieff nit völlig follenden können, weilen

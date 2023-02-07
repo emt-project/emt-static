@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Konzept</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">neue Foliierung 1710. Konzept mit Unterschrift</ab>
+         <ab type="notes">neue Foliierung 1710. Konzept mit Unterschrift</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1277" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1277px"/>
+    <graphic url="Kasten_blau_44_10_0181.jpg" width="800px" height="1277px"/>
     <zone points="25,12 25,1274 796,1274 796,12" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="25,59 51,56 78,53 104,51 131,50 157,49 184,48 210,45 237,42 237,12 210,15 184,18 157,19 131,20 104,21 78,23 51,26 25,29" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="426,81 451,82 476,84 502,85 527,85 552,86 578,86 603,86 628,86 654,86 679,88 704,89 730,91 730,61 704,59 679,58 654,56 628,56 603,56 578,56 552,56 527,55 502,55 476,54 451,52 426,51" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -130,7 +132,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1301" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1301px"/>
+    <graphic url="Kasten_blau_44_10_0182.jpg" width="800px" height="1301px"/>
     <zone points="70,45 70,1245 797,1245 797,45" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="405,76 431,78 458,79 485,80 511,81 538,81 565,82 592,83 618,83 645,85 672,85 698,86 725,89 752,90 779,93 779,62 752,59 725,58 698,55 672,54 645,54 618,52 592,52 565,51 538,50 511,50 485,49 458,48 431,47 405,45" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="400,121 425,123 450,124 475,126 500,126 525,126 550,127 575,127 600,128 625,128 650,129 675,129 700,131 725,132 750,135 775,137 775,106 750,104 725,101 700,100 675,98 650,98 625,97 600,97 575,96 550,96 525,95 500,95 475,95 450,93 425,92 400,90" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -163,7 +165,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1317" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1317px"/>
+    <graphic url="Kasten_blau_44_10_0183.jpg" width="800px" height="1317px"/>
     <zone points="40,39 40,1257 785,1257 785,39" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="366,72 392,75 418,78 444,80 471,81 497,82 523,83 549,83 576,83 602,83 628,83 654,83 681,83 707,83 733,83 760,84 760,51 733,50 707,50 681,50 654,50 628,50 602,50 576,50 549,50 523,50 497,49 471,48 444,47 418,45 392,42 366,39" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="381,119 406,121 432,123 458,124 483,125 509,126 535,126 561,126 586,127 612,127 638,127 664,128 689,128 715,129 741,131 767,133 767,103 741,101 715,99 689,98 664,98 638,97 612,97 586,97 561,96 535,96 509,96 483,95 458,94 432,93 406,91 381,89" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -196,9 +198,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="1 r" xml:id="Kasten_blau_44_10_0181.jpg" ed="108 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/>
@@ -234,7 +236,7 @@
       <lb facs="#facs_1_r1l32" n="N032"/>
       <lb facs="#facs_1_r1l33" n="N033"/>
       <lb facs="#facs_1_r1l34" n="N034"/></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="1 v" xml:id="Kasten_blau_44_10_0182.jpg" ed="108 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>
       <lb facs="#facs_2_r1l2" n="N002"/>
@@ -264,7 +266,7 @@
       <lb facs="#facs_2_r1l26" n="N026"/>
       <lb facs="#facs_2_r1l27" n="N027"/>
       <lb facs="#facs_2_r1l28" n="N028"/></ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="6 r" xml:id="Kasten_blau_44_10_0183.jpg" ed="109 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>
       <lb facs="#facs_3_r1l2" n="N002"/>
@@ -295,13 +297,13 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__13">
                   <placeName>Düsseldorf</placeName>

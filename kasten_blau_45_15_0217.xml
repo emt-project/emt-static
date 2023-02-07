@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1181" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1181px"/>
+    <graphic url="Kasten_blau_45_15_0217.jpg" width="800px" height="1181px"/>
     <zone points="51,214 51,1143 784,1143 784,214" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="142,295 237,274 276,292 299,273 323,290 507,285 588,258 634,270 763,247 761,209 640,224 507,196 426,232 198,229 140,248" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="89,330 242,327 270,346 301,321 392,318 453,346 533,313 586,333 775,296 786,249 624,287 556,268 184,296 147,269 86,273" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1211" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1211px"/>
+    <graphic url="Kasten_blau_45_15_0218.jpg" width="800px" height="1211px"/>
     <zone points="35,92 35,1088 785,1088 785,92" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="61,141 136,133 166,153 311,126 547,155 611,122 782,124 781,82 555,65 438,86 273,61 221,92 60,100" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="51,197 280,184 348,209 459,174 762,177 760,118 548,154 366,138 329,163 256,133 234,151 50,143" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -137,7 +139,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1217" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1217px"/>
+    <graphic url="Kasten_blau_45_15_0219.jpg" width="800px" height="1217px"/>
     <zone points="18,152 18,1182 797,1182 797,152" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="48,218 240,178 365,209 738,184 723,123 627,146 394,134 284,154 187,115 47,141" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="44,241 115,241 160,267 203,243 248,265 576,231 685,250 690,194 482,205 463,188 429,210 187,187 43,220" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -157,9 +159,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="106 r" xml:id="Kasten_blau_45_15_0217.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Ich verhoffe, ewer Durchlaucht werden sich in guettem wolstandt
@@ -178,7 +180,7 @@
       <lb facs="#facs_1_r1l15" n="N015"/>werd wehnig halten, dan es ist ein wunderliger
       <lb facs="#facs_1_line_1639400495619_3412" n="N016"/>kopf vnd der franzosich Enuoyé <unclear> </unclear> ist wie
       <lb facs="#facs_1_r1l19" n="N017"/>sein schuzengel alzeit an der seiten. Er sagt, er</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="106 v" xml:id="Kasten_blau_45_15_0218.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/><supplied>sei</supplied> auch bey ewer Durchlaucht Enuoyé geweßen vnd hab mich
       <lb facs="#facs_2_r1l2" n="N002"/>dort gahr klein gesehen, ich weis mich aber niks
@@ -200,7 +202,7 @@
       <lb facs="#facs_2_r1l19" n="N018"/>ich werds mit nechster post probiren über
       <lb facs="#facs_2_r1l20" n="N019"/>Schpanien. Sonst gibt iezt hier ganz niks
       <lb facs="#facs_2_r1l21" n="N020"/>so würdig, ewer Durchlaucht zu berichten, also will</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="107 r" xml:id="Kasten_blau_45_15_0219.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>ich ewer Durchlaucht mit meinen lehren schreiben nit lenger
       <lb facs="#facs_3_r1l2" n="N002"/>incomodiren, bef<supplied>e</supplied>hl mich <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> vnd werde

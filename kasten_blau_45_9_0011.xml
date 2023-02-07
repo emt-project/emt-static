@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1220" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1220px"/>
+    <graphic url="Kasten_blau_45_9_0011.jpg" width="800px" height="1220px"/>
     <zone points="52,178 52,1218 784,1218 784,178" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="161,216 203,222 246,196 320,230 367,205 732,215 733,168 614,174 577,140 457,140 417,171 338,145 245,154 163,133" rendition="Line" xml:id="facs_1_r2l1"/>
         <zone points="85,258 275,274 366,240 390,257 445,241 495,262 627,258 652,282 773,261 760,202 697,225 521,206 229,225 88,169" rendition="Line" xml:id="facs_1_r2l2"/>
@@ -116,7 +118,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1201" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1201px"/>
+    <graphic url="Kasten_blau_45_9_0012.jpg" width="800px" height="1201px"/>
     <zone points="27,138 27,1180 784,1180 784,138" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="99,172 210,192 343,164 770,189 771,142 658,115 578,131 497,114 438,140 378,107 256,144 101,98" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="82,220 319,246 406,206 531,242 559,218 689,212 757,237 769,185 672,201 637,180 596,205 452,170 372,188 341,167 82,189" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -143,7 +145,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1264" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1264px"/>
+    <graphic url="Kasten_blau_45_9_0013.jpg" width="800px" height="1264px"/>
     <zone points="21,7 21,1194 776,1194 776,7" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="40,134 98,156 189,128 278,159 374,130 617,172 761,152 763,100 396,96 43,54" rendition="Line" xml:id="facs_3_r1l2"/>
         <zone points="42,181 183,174 317,199 355,180 442,206 482,190 514,214 602,190 636,211 753,190 754,163 713,173 675,148 617,173 477,169 345,131 301,158 152,130 43,159" rendition="Line" xml:id="facs_3_r1l3"/>
@@ -165,9 +167,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="5 r" xml:id="Kasten_blau_45_9_0011.jpg"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l1" n="N001"/>Durchleüchtiger Fürst, herz allerliebster herr vatter
       <lb facs="#facs_1_r2l2" n="N002"/>Aus ewer Durchlaucht <choice><expan>gnädigem</expan><abbr>g</abbr></choice> schreiben vom 26ten vnd 30ten dis hab mit großen freüden
@@ -190,7 +192,7 @@
       <lb facs="#facs_1_r2l20" n="N019"/>verreisen sollen, seint aber dem Oxenstern widerumb newe
       <lb facs="#facs_1_r2l21" n="N020"/>comissiones kommen, wegen welicher er sich annoch bis dato
       <lb facs="#facs_1_r2l22" n="N021"/>aufhalten müeßen. Seine abreis wirt aber noch ehrster dagen</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="5 v" xml:id="Kasten_blau_45_9_0012.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>vohrsich gehn. Wegen Dennenmark ist kein gedanken geweßen
       <lb facs="#facs_2_r1l2" n="N002"/>ihne aufzuhalten. Ihr Mayestät suechen auf alle weis, diesen
@@ -214,7 +216,7 @@
       <lb facs="#facs_2_r1l20" n="N020"/>fasching ist gottlob wohl abgangen. Ich schreibe ihr Durchlaucht
       <lb facs="#facs_2_r1l21" n="N021"/>meiner <choice><expan>geliebsten</expan><abbr>g</abbr></choice> <choice><expan>fraw</expan><abbr>f</abbr></choice> <choice><expan>mutter</expan><abbr>m</abbr></choice> alles was ist gehalten worden. Er ist gahr
       <lb facs="#facs_2_r1l22" n="N022"/>kurz gewesen, so haben mehr fest in wehnig dagen haben</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="6 r" xml:id="Kasten_blau_45_9_0013.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l2" n="N001"/>müeßen. Das fest bey der Kaiserin ist gahr herzich geweßen,
       <lb facs="#facs_3_r1l3" n="N002"/>auch des Markgrauen seins. Es müeßen die waßer woll
@@ -226,7 +228,7 @@
       <lb facs="#facs_3_r1l10" n="N008"/>ganzergebenste trewg<supplied>e</supplied>ho<supplied>r</supplied>sa<supplied>m</supplied>ste
       <lb facs="#facs_3_r1l11" n="N009"/>dochter
       <lb facs="#facs_3_line_1637145125806_445" n="N010"/>EMT
-      <lb facs="#facs_3_r1l9" n="N011"/>Wien den 12 <choice><expan>feber</expan><abbr>feb</abbr></choice> 1682 
+      <lb facs="#facs_3_r1l9" n="N011"/>Wien den 12 <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1682 
       <lb facs="#facs_3_line_1637145125822_446" n="N012"/>Hierbey überschike ewer Durchlaucht nach dero befehl des <choice><expan>Pater</expan><abbr>P</abbr></choice> 
       <lb facs="#facs_3_r1l13" n="N013"/>Marci seinen brief. Ihr Mayestät werden auf alle weis suechen, die
       <lb facs="#facs_3_r1l14" n="N014"/>obedenz vohr ihn auszuewirken, damit er nah ostren möge

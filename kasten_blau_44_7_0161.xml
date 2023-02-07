@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">Ebersdorf</ab>
+         <ab type="notes">Ebersdorf</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1233" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1233px"/>
+    <graphic url="Kasten_blau_44_7_0161.jpg" width="800px" height="1233px"/>
     <zone points="50,87 50,1170 760,1170 760,87" rendition="TextRegion" xml:id="facs_1_r2">
         <zone points="115,492 191,464 219,485 439,471 530,490 594,462 650,499 765,459 765,408 229,414 115,370" rendition="Line" xml:id="facs_1_r2l2"/>
         <zone points="77,566 128,572 180,532 301,541 333,565 430,521 656,541 734,528 734,493 666,504 616,484 578,501 436,473 219,485 193,465 75,478" rendition="Line" xml:id="facs_1_r2l3"/>
@@ -107,7 +109,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1240" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1240px"/>
+    <graphic url="Kasten_blau_44_7_0162.jpg" width="800px" height="1240px"/>
     <zone points="52,39 52,1162 798,1162 798,39" rendition="TextRegion" xml:id="facs_2_r2">
         <zone points="61,137 188,102 270,123 331,102 493,104 565,131 730,108 713,51 392,79 311,48 219,69 148,52 60,74" rendition="Line" xml:id="facs_2_r2l2"/>
         <zone points="58,173 107,197 185,161 432,158 580,185 625,159 748,159 756,118 705,101 589,145 520,113 461,128 397,105 368,125 303,105 240,132 126,103 58,134" rendition="Line" xml:id="facs_2_r2l3"/>
@@ -130,7 +132,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1247" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1247px"/>
+    <graphic url="Kasten_blau_44_7_0163.jpg" width="800px" height="1247px"/>
     <zone points="16,30 16,1168 763,1168 763,30" rendition="TextRegion" xml:id="facs_3_r2">
         <zone points="40,129 205,108 238,129 425,105 521,128 620,105 696,118 753,102 753,62 674,76 432,38 194,85 148,48 39,44" rendition="Line" xml:id="facs_3_r2l2"/>
         <zone points="11,179 167,161 481,184 563,158 627,180 768,159 767,118 656,139 598,116 325,115 256,143 170,109 59,149 10,128" rendition="Line" xml:id="facs_3_r2l3"/>
@@ -148,9 +150,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="89 r" xml:id="Kasten_blau_44_7_0161.jpg" ed="79 r"/>
     <ab facs="#facs_1_r2">
       <lb facs="#facs_1_r2l2" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerlibster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r2l3" n="N002"/>Es ist mihr von herzen leidt zu vernemmen aus
@@ -163,7 +165,7 @@
       <lb facs="#facs_1_r2l10" n="N009"/>wan das baldt solt sein, möcht er villei<supplied>c</supplied>ht
       <lb facs="#facs_1_r2l11" n="N010"/><unclear>lieber dort</unclear> bleiben. Werd aber auf allen fall den
       <lb facs="#facs_1_r2l12" n="N011"/>Lamberg reccomendirn, so vill ihr Mayestät, die ihn beßer</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="89 v" xml:id="Kasten_blau_44_7_0162.jpg" ed="79 v"/>
     <ab facs="#facs_2_r2">
       <lb facs="#facs_2_r2l2" n="N001"/>als mihr <supplied>kennen</supplied>, es zue dero dinst werden finden. Dero Liebden
       <lb facs="#facs_2_r2l3" n="N002"/>anl<supplied>e</supplied>genheiten werd nit vnterlaßen bestens zu
@@ -183,7 +185,7 @@
       <lb facs="#facs_2_r2l17" n="N016"/>die den Ragozi hatt, ist, mein ich, nit von der
       <lb facs="#facs_2_r2l18" n="N017"/>ersten, sondern von der lezten gemahlin, ich mein, von
       <lb facs="#facs_2_r2l19" n="N018"/>der ersten s<supplied>e</supplied>y keine mehr dah. Iezt mit des</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="90 r" xml:id="Kasten_blau_44_7_0163.jpg" ed="80 r"/>
     <ab facs="#facs_3_r2">
       <lb facs="#facs_3_r2l2" n="N001"/>botschaffler vnglükh haben mihr noch zeit, vns beßer
       <lb facs="#facs_3_r2l3" n="N002"/>zue informiren. Ich hoff in deßen werde <unclear>der cu</unclear>

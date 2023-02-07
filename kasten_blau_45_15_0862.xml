@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1263" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1263px"/>
+    <graphic url="Kasten_blau_45_15_0862.jpg" width="800px" height="1263px"/>
     <zone points="20,388 20,1230 753,1230 753,388" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="39,439 144,455 209,417 263,447 294,425 403,454 470,423 609,444 758,411 758,359 574,382 516,352 399,385 339,347 246,379 189,371 106,324 23,376" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="38,478 82,493 109,471 184,498 238,473 282,504 340,476 624,494 712,472 712,438 673,425 468,462 308,462 215,419 143,457 38,438" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -112,7 +114,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1283" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1283px"/>
+    <graphic url="Kasten_blau_45_15_0863.jpg" width="800px" height="1283px"/>
     <zone points="32,72 32,1264 765,1264 765,72" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="37,140 129,111 191,133 228,107 332,108 372,135 532,96 756,116 755,26 61,29" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="60,170 136,150 168,169 192,149 371,169 533,152 575,174 742,152 741,121 591,104 525,130 484,103 376,134 331,108 274,130 245,111 203,138 121,113 59,129" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -141,7 +143,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1268" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1268px"/>
+    <graphic url="Kasten_blau_45_15_0864.jpg" width="800px" height="1268px"/>
     <zone points="16,58 16,1242 752,1242 752,58" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="18,29 70,10 98,9 117,9 434,15 707,21 737,29 737,86 592,120 396,120 19,103" rendition="Line" xml:id="facs_3_line_1652718000435_306"/>
         <zone points="25,145 73,161 221,130 453,155 574,130 658,160 749,154 741,96 585,120 498,95 405,121 195,82 25,88" rendition="Line" xml:id="facs_3_r1l3"/>
@@ -159,9 +161,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="188 r" xml:id="Kasten_blau_45_15_0862.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerlibster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Damit ich morgen nit widerumb mit einer
@@ -180,7 +182,7 @@
       <lb facs="#facs_1_r1l15" n="N015"/>kan ein gott überall finden, vnd von seiner handt ist
       <lb facs="#facs_1_r1l16" n="N016"/>alles guett, so due ich mich auch darauf verl<supplied>a</supplied>ßen vnd
       <lb facs="#facs_1_r1l17" n="N017"/>ihm alles heim stellen. Sag ewer Durchlaucht <choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> dankh vohr den</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="188 v" xml:id="Kasten_blau_45_15_0863.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/><choice><expan>gnädigen</expan><abbr>g</abbr></choice> wuntsch zue dem <choice><expan>heiligen</expan><abbr>h</abbr></choice> pfingstdag, der allmechtig <choice><expan>heilige</expan><abbr>h</abbr></choice> geist
       <lb facs="#facs_2_r1l2" n="N002"/>wolle ewer Durchlaucht alles erdenklige wollerg<supplied>e</supplied>hn verleyen,
@@ -206,7 +208,7 @@
       <lb facs="#facs_2_r1l22" n="N022"/>antreffen wurden. Ihr Mayestät werden <supplied>sich</supplied> auf alle weis ihn
       <lb facs="#facs_2_r1l23" n="N023"/>vnd sein orden laßen befohlen sein vnd haben ein absonder-
       <lb facs="#facs_2_r1l24" n="N024"/>lige satisfaction, das er dise reis auf sich genommen.</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="189 r" xml:id="Kasten_blau_45_15_0864.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_line_1652718000435_306" n="N001"/>Heündt ist vnser procession gahr gutt abgangen. Iezt,
       <lb facs="#facs_3_r1l3" n="N002"/>hoff ich, werden die w<supplied>e</supplied>tter ein end nemmen, dan vnser

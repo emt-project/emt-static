@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,12 +62,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -85,12 +87,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1212" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1212px"/>
+    <graphic url="Kasten_blau_45_15_0059.jpg" width="800px" height="1212px"/>
     <zone points="18,180 18,1170 797,1170 797,180" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="92,249 193,257 285,223 316,249 439,213 531,242 803,213 795,157 739,159 657,162 533,149 460,186 365,168 142,188 89,164" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="85,300 365,291 536,293 709,275 753,296 780,279 778,236 698,221 84,256" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -113,7 +115,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1199" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1199px"/>
+    <graphic url="Kasten_blau_45_15_0060.jpg" width="800px" height="1199px"/>
     <zone points="44,78 44,1152 798,1152 798,78" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="61,127 197,148 260,123 319,145 528,105 566,124 769,108 767,61 732,48 640,71 423,68 377,91 59,73" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="48,183 141,167 215,198 257,168 327,184 464,164 522,200 678,158 804,160 803,116 760,107 643,144 561,119 224,157 47,124" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -139,7 +141,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1240" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1240px"/>
+    <graphic url="Kasten_blau_45_15_0061.jpg" width="800px" height="1240px"/>
     <zone points="21,80 21,1209 783,1209 783,80" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="28,124 152,113 268,152 487,120 700,119 738,127 781,120 781,55 549,78 305,52 28,69" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="22,201 91,168 224,197 335,171 460,203 788,170 788,135 754,127 673,148 614,125 368,140 312,130 217,154 147,123 22,130" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -164,7 +166,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1213" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1213px"/>
+    <graphic url="Kasten_blau_45_15_0062.jpg" width="800px" height="1213px"/>
     <zone points="44,86 44,838 788,838 788,86" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="63,161 108,122 235,137 257,120 428,144 502,112 609,137 749,132 748,74 522,88 432,58 206,77 85,68" rendition="Line" xml:id="facs_4_r1l1"/>
         <zone points="70,184 144,200 225,173 406,195 789,179 788,137 728,126 469,124 385,150 312,124 216,141 108,122 70,152" rendition="Line" xml:id="facs_4_r1l2"/>
@@ -185,9 +187,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="37 r" xml:id="Kasten_blau_45_15_0059.jpg"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster herr vatter
       <lb facs="#facs_1_r1l2" n="N002"/>Zue dero <choice><expan>heiligen</expan><abbr>hl</abbr></choice> nahmensdag wehre mein schuldichkeit geweßen,
@@ -207,7 +209,7 @@
       <lb facs="#facs_1_r1l16" n="N016"/>ligen blieben, ist die schuld, das ich den opabalsam mit
       <lb facs="#facs_1_r1l17" n="N017"/>schiken wollen, an welchem sie so lang eingemacht, das
       <lb facs="#facs_1_r1l18" n="N018"/>der courir schon vort wahr, vnd es also der Hoffkanzler</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="37 v" xml:id="Kasten_blau_45_15_0060.jpg"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>mit der post vortgeschikt. Gott geb, das es ewer Durchlaucht woll
       <lb facs="#facs_2_r1l2" n="N002"/>bekommen möge. Was ewer Durchlaucht <choice><expan>gnädig</expan><abbr>g</abbr></choice> befehlen wegen der creditiu
@@ -230,7 +232,7 @@
       <lb facs="#facs_2_r1l19" n="N019"/>ein wehnig iung, ist sonst ein wakers weib, hatt auch
       <lb facs="#facs_2_r1l20" n="N020"/>vill kinder geha<supplied>b</supplied>tt, ist aber noch iung. Darnoch ist noch dah
       <lb facs="#facs_2_r1l21" n="N021"/>der Niklaß Palfi sein muetter, der Weix ihr schwigermuetter,</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="38 r" xml:id="Kasten_blau_45_15_0061.jpg"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>die den Niclas Palfi gehabt, den ewer Durchlaucht woll gekent. Sie ist
       <lb facs="#facs_3_r1l2" n="N002"/>eine von Harrach, meiner alten Obristhoffmeisterin <choice><expan>sehlig</expan><abbr>sehl</abbr></choice> dochter,
@@ -252,7 +254,7 @@
       <lb facs="#facs_3_r1l19" n="N018"/>dah get der Weg durch Florenz, vnd das er nit her ist
       <lb facs="#facs_3_r1l20" n="N019"/>kommen, gefalt mihr gahr nit. Gott weis alles, was er dut
       <lb facs="#facs_3_r1l21" n="N020"/>vnd ist alles zum besten. Meines bruders Fridrich</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="38 v" xml:id="Kasten_blau_45_15_0062.jpg"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/>seines knabens, des Schifers, sein vatter hatt mich
       <lb facs="#facs_4_r1l2" n="N002"/>bitten laßen, das ewer Durchlaucht seinen sohn soll recomman-

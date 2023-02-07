@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Abschrift</term>
             <term>Schreiber</term>
          </ab>
-         <ab type="abstract-terms">Abschrift "Copia" enthält Chiffre (ca. 1,5 Seiten)</ab>
+         <ab type="notes">Abschrift "Copia" enthält Chiffre (ca. 1,5 Seiten)</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1154" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1154px"/>
+    <graphic url="Korrespondenzakten_1147_0182.jpg" width="800px" height="1154px"/>
     <zone points="18,37 18,1153 768,1153 768,37" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="18,1153 56,1153 56,1040 18,1041" rendition="Line" xml:id="facs_1_r1l1"/>
         <zone points="60,70 108,67 108,37 60,40" rendition="Line" xml:id="facs_1_r1l2"/>
@@ -128,7 +130,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1142" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1142px"/>
+    <graphic url="Korrespondenzakten_1147_0183.jpg" width="800px" height="1142px"/>
     <zone points="114,0 114,1023 776,1023 776,0" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="684,11 714,10 714,0 684,0" rendition="Line" xml:id="facs_2_r1l1"/>
         <zone points="137,207 169,208 202,210 234,210 267,210 299,210 332,209 365,209 397,208 430,207 462,205 495,204 527,203 560,202 593,201 625,201 658,200 690,200 723,201 756,202 756,172 723,171 690,170 658,170 625,171 593,171 560,172 527,173 495,174 462,175 430,177 397,178 365,179 332,179 299,180 267,180 234,180 202,180 169,178 137,177" rendition="Line" xml:id="facs_2_r1l2"/>
@@ -165,7 +167,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1178" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1178px"/>
+    <graphic url="Korrespondenzakten_1147_0184.jpg" width="800px" height="1178px"/>
     <zone points="17,32 17,1177 776,1177 776,32" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="17,1177 44,1177 44,1066 17,1065" rendition="Line" xml:id="facs_3_r1l1"/>
         <zone points="714,62 745,62 745,32 714,32" rendition="Line" xml:id="facs_3_r1l2"/>
@@ -201,7 +203,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1176" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1176px"/>
+    <graphic url="Korrespondenzakten_1147_0185.jpg" width="800px" height="1176px"/>
     <zone points="109,150 109,1008 798,1008 798,150" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="121,187 153,189 186,190 219,191 252,192 284,192 317,191 350,191 383,190 415,189 448,188 481,187 514,186 546,185 579,183 612,183 645,182 677,181 710,180 743,180 776,180 776,150 743,150 710,150 677,151 645,152 612,153 579,153 546,155 514,156 481,157 448,158 415,159 383,160 350,161 317,161 284,162 252,162 219,161 186,160 153,159 121,157" rendition="Line" xml:id="facs_4_r1l1"/>
         <zone points="119,217 152,219 186,219 220,220 254,220 288,220 322,220 356,219 390,219 424,218 458,217 491,216 525,215 559,214 593,213 627,212 661,212 695,211 729,211 763,211 797,212 797,182 763,181 729,181 695,181 661,182 627,182 593,183 559,184 525,185 491,186 458,187 424,188 390,189 356,189 322,190 288,190 254,190 220,190 186,189 152,189 119,187" rendition="Line" xml:id="facs_4_r1l2"/>
@@ -238,7 +240,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1186" xml:id="facs_5">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1186px"/>
+    <graphic url="Korrespondenzakten_1147_0186.jpg" width="800px" height="1186px"/>
     <zone points="35,140 35,1130 772,1130 772,140" rendition="TextRegion" xml:id="facs_5_r1">
         <zone points="35,170 71,171 108,172 144,172 181,172 218,172 254,172 291,172 328,171 364,171 401,171 438,170 474,170 511,170 548,170 584,170 621,170 658,171 694,171 731,172 768,174 768,144 731,142 694,141 658,141 621,140 584,140 548,140 511,140 474,140 438,140 401,141 364,141 328,141 291,142 254,142 218,142 181,142 144,142 108,142 71,141 35,140" rendition="Line" xml:id="facs_5_r1l1"/>
         <zone points="53,200 90,200 128,200 166,200 204,199 242,199 280,198 317,198 355,197 393,196 431,196 469,195 507,195 544,195 582,195 620,195 658,195 696,196 734,197 772,199 772,169 734,167 696,166 658,165 620,165 582,165 544,165 507,165 469,165 431,166 393,166 355,167 317,168 280,168 242,169 204,169 166,170 128,170 90,170 53,170" rendition="Line" xml:id="facs_5_r1l2"/>
@@ -277,7 +279,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1176" xml:id="facs_6">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1176px"/>
+    <graphic url="Korrespondenzakten_1147_0187.jpg" width="800px" height="1176px"/>
     <zone points="87,151 87,1014 798,1014 798,151" rendition="TextRegion" xml:id="facs_6_r1">
         <zone points="96,181 129,182 162,182 195,183 229,183 262,184 295,184 329,184 362,184 395,184 429,184 462,184 495,183 528,183 562,183 595,183 628,183 662,182 695,182 728,182 762,182 762,152 728,152 695,152 662,152 628,153 595,153 562,153 528,153 495,153 462,154 429,154 395,154 362,154 329,154 295,154 262,154 229,153 195,153 162,152 129,152 96,151" rendition="Line" xml:id="facs_6_r1l1"/>
         <zone points="102,209 134,210 167,210 199,210 232,210 264,210 297,210 329,210 362,210 394,210 427,210 459,210 492,210 524,210 557,210 589,210 622,210 654,210 687,210 719,209 752,209 752,179 719,179 687,180 654,180 622,180 589,180 557,180 524,180 492,180 459,180 427,180 394,180 362,180 329,180 297,180 264,180 232,180 199,180 167,180 134,180 102,179" rendition="Line" xml:id="facs_6_r1l2"/>
@@ -315,7 +317,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1181" xml:id="facs_7">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1181px"/>
+    <graphic url="Korrespondenzakten_1147_0188.jpg" width="800px" height="1181px"/>
     <zone points="12,34 12,1135 761,1135 761,34" rendition="TextRegion" xml:id="facs_7_r1">
         <zone points="728,67 748,64 748,34 728,37" rendition="Line" xml:id="facs_7_r1l1"/>
         <zone points="36,189 71,189 106,190 142,189 177,189 213,189 248,189 284,188 319,188 355,188 390,187 425,187 461,186 496,186 532,185 567,185 603,185 638,185 674,185 709,185 745,185 745,155 709,155 674,155 638,155 603,155 567,155 532,155 496,156 461,156 425,157 390,157 355,158 319,158 284,158 248,159 213,159 177,159 142,159 106,160 71,159 36,159" rendition="Line" xml:id="facs_7_r1l2"/>
@@ -355,9 +357,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="110 r" xml:id="Korrespondenzakten_1147_0182.jpg" ed="83 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l1" n="N001"/>
       <lb facs="#facs_1_r1l2" n="N002"/>
@@ -391,7 +393,7 @@
       <lb facs="#facs_1_r1l30" n="N030"/>
       <lb facs="#facs_1_r1l31" n="N031"/>
       <lb facs="#facs_1_r1l32" n="N032"/></ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="110 v" xml:id="Korrespondenzakten_1147_0183.jpg" ed="83 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l1" n="N001"/>
       <lb facs="#facs_2_r1l2" n="N002"/>
@@ -425,7 +427,7 @@
       <lb facs="#facs_2_r1l30" n="N030"/>
       <lb facs="#facs_2_r1l31" n="N031"/>
       <lb facs="#facs_2_r1l32" n="N032"/></ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="111 r" xml:id="Korrespondenzakten_1147_0184.jpg" ed="84 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l1" n="N001"/>
       <lb facs="#facs_3_r1l2" n="N002"/>
@@ -458,7 +460,7 @@
       <lb facs="#facs_3_r1l29" n="N029"/>
       <lb facs="#facs_3_r1l30" n="N030"/>
       <lb facs="#facs_3_r1l31" n="N031"/></ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="111 v" xml:id="Korrespondenzakten_1147_0185.jpg" ed="84 v"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l1" n="N001"/>
       <lb facs="#facs_4_r1l2" n="N002"/>
@@ -492,7 +494,7 @@
       <lb facs="#facs_4_r1l30" n="N030"/>
       <lb facs="#facs_4_r1l31" n="N031"/>
       <lb facs="#facs_4_r1l32" n="N032"/></ab>
-    <pb facs="#facs_5" n="5" xml:id="img_0005"/>
+    <pb facs="#facs_5" n="112 r" xml:id="Korrespondenzakten_1147_0186.jpg" ed="85 r"/>
     <ab facs="#facs_5_r1">
       <lb facs="#facs_5_r1l1" n="N001"/>
       <lb facs="#facs_5_r1l2" n="N002"/>
@@ -528,7 +530,7 @@
       <lb facs="#facs_5_r1l32" n="N032"/>
       <lb facs="#facs_5_r1l33" n="N033"/>
       <lb facs="#facs_5_r1l34" n="N034"/></ab>
-    <pb facs="#facs_6" n="6" xml:id="img_0006"/>
+    <pb facs="#facs_6" n="112 v" xml:id="Korrespondenzakten_1147_0187.jpg" ed="85 v"/>
     <ab facs="#facs_6_r1">
       <lb facs="#facs_6_r1l1" n="N001"/>
       <lb facs="#facs_6_r1l2" n="N002"/>
@@ -563,7 +565,7 @@
       <lb facs="#facs_6_r1l31" n="N031"/>
       <lb facs="#facs_6_r1l32" n="N032"/>
       <lb facs="#facs_6_r1l33" n="N033"/></ab>
-    <pb facs="#facs_7" n="7" xml:id="img_0007"/>
+    <pb facs="#facs_7" n="113 r" xml:id="Korrespondenzakten_1147_0188.jpg" ed="86 r"/>
     <ab facs="#facs_7_r1">
       <lb facs="#facs_7_r1l1" n="N001"/>
       <lb facs="#facs_7_r1l2" n="N002"/>
@@ -601,13 +603,13 @@
   </div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__18">
+   <back><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__13">
                   <placeName>Düsseldorf</placeName>

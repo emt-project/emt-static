@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>some archive in munich</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository>
                         
                         <idno/>
                      </msIdentifier>
@@ -62,13 +62,15 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-         
           <ab type="abstract-terms">
             <term>Ausfertigung</term>
             <term>eigenhändig</term>
          </ab>
-         <ab type="abstract-terms">enthält Chiffre (ca. 2/3 einer Seite) Ebersdorf. Ab hier absteigende Chronologie bi 92 r</ab>
+         <ab type="notes">enthält Chiffre (ca. 2/3 einer Seite) Ebersdorf. Ab hier absteigende Chronologie bi 92 r</ab>
         </abstract>
+        <abstract n="regest">
+            <p/>
+         </abstract>
          <langUsage>
             <language ident="deu">deutsch</language>
          </langUsage>
@@ -86,12 +88,12 @@
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2022-12-16">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
-   <facsimile xmlns="http://www.tei-c.org/ns/1.0">
+   <facsimile>
   <surface ulx="0" uly="0" lrx="800" lry="1240" xml:id="facs_1">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1240px"/>
+    <graphic url="Kasten_blau_44_7_0157.jpg" width="800px" height="1240px"/>
     <zone points="42,58 42,1182 758,1182 758,58" rendition="TextRegion" xml:id="facs_1_r1">
         <zone points="65,473 282,493 462,468 512,491 547,469 619,487 730,478 749,435 665,415 574,436 522,409 474,449 371,409 277,434 198,404 65,452" rendition="Line" xml:id="facs_1_r1l4"/>
         <zone points="73,578 195,535 293,569 347,540 489,529 542,547 571,528 642,569 702,535 754,543 739,485 516,494 381,465 329,491 193,492 156,466 73,484" rendition="Line" xml:id="facs_1_r1l5"/>
@@ -109,7 +111,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1204" xml:id="facs_2">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1204px"/>
+    <graphic url="Kasten_blau_44_7_0158.jpg" width="800px" height="1204px"/>
     <zone points="52,37 52,1134 783,1134 783,37" rendition="TextRegion" xml:id="facs_2_r1">
         <zone points="63,98 196,100 231,127 367,97 466,130 590,99 646,128 755,114 778,74 576,47 524,78 501,60 419,78 356,29 64,31" rendition="Line" xml:id="facs_2_r1l2"/>
         <zone points="60,146 214,168 317,138 507,168 554,143 682,139 728,167 774,148 775,107 616,130 462,128 360,97 235,126 61,120" rendition="Line" xml:id="facs_2_r1l3"/>
@@ -134,7 +136,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1244" xml:id="facs_3">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1244px"/>
+    <graphic url="Kasten_blau_44_7_0159.jpg" width="800px" height="1244px"/>
     <zone points="17,40 17,1228 742,1228 742,40" rendition="TextRegion" xml:id="facs_3_r1">
         <zone points="29,132 713,138 734,132 735,67 619,78 558,43 466,78 294,55 30,66" rendition="Line" xml:id="facs_3_r1l2"/>
         <zone points="20,199 70,179 313,215 393,190 467,225 591,189 671,211 717,197 717,157 647,148 530,160 478,140 415,168 303,138 230,161 172,125 98,164 48,130 22,143" rendition="Line" xml:id="facs_3_r1l3"/>
@@ -159,7 +161,7 @@
       </zone>
   </surface>
   <surface ulx="0" uly="0" lrx="800" lry="1225" xml:id="facs_4">
-    <graphic url="%2Ffiles.jpeg" width="800px" height="1225px"/>
+    <graphic url="Kasten_blau_44_7_0160.jpg" width="800px" height="1225px"/>
     <zone points="62,35 62,751 786,751 786,35" rendition="TextRegion" xml:id="facs_4_r1">
         <zone points="71,105 144,124 213,103 260,125 373,98 427,126 447,110 517,128 600,110 727,118 776,144 777,80 711,62 606,83 529,59 362,79 302,57 72,66" rendition="Line" xml:id="facs_4_r1l2"/>
         <zone points="61,159 129,181 172,152 227,179 272,157 450,160 476,180 562,158 605,186 643,167 742,191 728,119 611,139 572,115 368,128 212,106 140,137 61,132" rendition="Line" xml:id="facs_4_r1l3"/>
@@ -179,9 +181,9 @@
 </facsimile>
 
    <text type="letter">
-   <body xmlns="http://www.tei-c.org/ns/1.0">
+   <body>
   <div>
-    <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+    <pb facs="#facs_1" n="87 r" xml:id="Kasten_blau_44_7_0157.jpg" ed="77 r"/>
     <ab facs="#facs_1_r1">
       <lb facs="#facs_1_r1l4" n="N001"/>Durchleüchtiger Cuhrfürst, mein herzallerliebster <choice><expan>herr</expan><abbr>h</abbr></choice> bruder
       <lb facs="#facs_1_r1l5" n="N002"/>Ich hab dero liebstes schreiben vom 8ten dis woll empfangen.
@@ -196,7 +198,7 @@
       <lb facs="#facs_1_r1l14" n="N011"/>alle weis bedacht sein, die sachen dahin zu dirigiren,
       <lb facs="#facs_1_r1l15" n="N012"/>das <unclear>der congres im Reich seie, </unclear>
       <lb facs="#facs_1_r1l16" n="N013"/><unclear>wo nit zu Frankfort, <supplied>so</supplied> doch zu Achen</unclear>.</ab>
-    <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+    <pb facs="#facs_2" n="87 v" xml:id="Kasten_blau_44_7_0158.jpg" ed="77 v"/>
     <ab facs="#facs_2_r1">
       <lb facs="#facs_2_r1l2" n="N001"/>Was <unclear>der König Iacob an dero Liebden gebracht</unclear>,
       <lb facs="#facs_2_r1l3" n="N002"/><unclear>erkennen</unclear> Tiberius <unclear>wol, das es inp</unclear>
@@ -218,7 +220,7 @@
       <lb facs="#facs_2_r1l20" n="N018"/>man auch was <unclear>daruon</unclear> bekommen wirt, einkommen
       <lb facs="#facs_2_r1l21" n="N019"/>wirt. Wegen der 5000 ducaten wirt es izt ihr Mayestät auch
       <lb facs="#facs_2_r1l22" n="N020"/>schwer fallen, in dem nebst den schwern zeiten ihr Mayestät auch</ab>
-    <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+    <pb facs="#facs_3" n="88 r" xml:id="Kasten_blau_44_7_0159.jpg" ed="78 r"/>
     <ab facs="#facs_3_r1">
       <lb facs="#facs_3_r1l2" n="N001"/><supplied>zur</supplied> polnischen wahl gelt höchst nötig haben. Noch zeigt sich
       <lb facs="#facs_3_r1l3" n="N002"/>zimlige hoffnung vohr vnsren schwagren, gott wolle alles
@@ -240,7 +242,7 @@
       <lb facs="#facs_3_r1l19" n="N018"/>nemmen, das ihr Mayestät dem Hamilton befohlen, sich ein
       <lb facs="#facs_3_r1l20" n="N019"/>kleine zeit zue Ginsbur<supplied>c</supplied>h aufzuehalten, er wi<supplied>r</supplied>t so balt
       <lb facs="#facs_3_r1l21" n="N020"/>kommen, als die affairen es möglist erleiden werden.</ab>
-    <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+    <pb facs="#facs_4" n="88 v" xml:id="Kasten_blau_44_7_0160.jpg" ed="78 v"/>
     <ab facs="#facs_4_r1">
       <lb facs="#facs_4_r1l2" n="N001"/>Indeßen hatt vns hir der liebe gott auch ein allarme gemacht,
       <lb facs="#facs_4_r1l3" n="N002"/>mein <choice><expan>Maria</expan><abbr>M</abbr></choice> Ther<supplied>e</supplied>sel hatt die blattern bekommen, so haben
