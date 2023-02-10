@@ -2,11 +2,13 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von Pfalz-Neuburg, Düsseldorf am 1701.08.07</title>
-            <title type="sub">Familiensache. Dynastische Handlungsspielräume in der Korrespondenz von Kaiserin Eleonora Magdalena von Pfalz-Neuburg (1655-1720)</title>
+            <title type="main">Johann Wilhelm von Pfalz-Neuburg an Eleonora Magdalena von
+               Pfalz-Neuburg, Düsseldorf am 1701.08.07</title>
+            <title type="sub">Familiensache. Dynastische Handlungsspielräume in der Korrespondenz
+               von Kaiserin Eleonora Magdalena von Pfalz-Neuburg (1655-1720)</title>
             <author>Johann Wilhelm von Pfalz-Neuburg</author>
             <editor>
-               <name>Katrin Keller</name>
+               <name ref="https://orcid.org/0000-0002-8621-5162">Katrin Keller</name><name ref="https://orcid.org/0000-0002-8676-3935">Ines Peper</name><name ref="https://orcid.org/0000-0002-1389-896X">Anna Spitzbart</name>
             </editor>
             <funder>
                <name>FWF - Der Wissenschaftsfonds</name>
@@ -28,7 +30,8 @@
             </respStmt>
          </editionStmt>
          <publicationStmt>
-            <publisher>INSTITUT FÜR DIE ERFORSCHUNG DER HABSBURGERMONARCHIE UND DES BALKANRAUMES</publisher>
+            <publisher>INSTITUT FÜR DIE ERFORSCHUNG DER HABSBURGERMONARCHIE UND DES
+               BALKANRAUMES</publisher>
             <pubPlace>Vienna</pubPlace>
             <date when="2023">2023</date>
             <availability>
@@ -45,7 +48,7 @@
                         <country>Deutschland</country>
                         <settlement>München</settlement>
                         <repository>Bayerisches Hauptstaatsarchiv</repository>
-                        
+
                         <idno/>
                      </msIdentifier>
                      <history>
@@ -62,13 +65,14 @@
       </fileDesc>
       <profileDesc>
          <abstract>
-          <ab type="abstract-terms">
-            <term>Abschrift</term>
-            <term>Schreiber</term>
-         </ab>
-         <ab type="notes">Abschrift "Copia" Tintenvermerk "17 Aug. 1701", Datum aber eindeutig 7.</ab>
-        </abstract>
-        <abstract n="regest">
+            <ab type="abstract-terms">
+               <term>Abschrift</term>
+               <term>Schreiber</term>
+            </ab>
+            <ab type="notes">Abschrift "Copia" Tintenvermerk "17 Aug. 1701", Datum aber eindeutig
+               7.</ab>
+         </abstract>
+         <abstract n="regest">
             <p/>
          </abstract>
          <langUsage>
@@ -81,14 +85,15 @@
                <date when-iso="1701-08-07"/>
             </correspAction>
             <correspAction type="received">
-                <persName ref="#emt_person_id__9">Eleonora Magdalena von Pfalz-Neuburg</persName>
-                <placeName ref="#"/>
-                <date/>
+               <persName ref="#emt_person_id__9">Eleonora Magdalena von Pfalz-Neuburg</persName>
+               <placeName ref="#"/>
+               <date/>
             </correspAction>
          </correspDesc>
       </profileDesc>
       <revisionDesc status="draft">
-         <change who="pandorfer" when="2023-01-04">template populated with script "create_templates.py"</change>
+         <change who="pandorfer" when="2023-01-04">template populated with script
+            "create_templates.py"</change>
       </revisionDesc>
    </teiHeader>
    <facsimile>
@@ -134,8 +139,8 @@
          <zone points="1650,6 1650,160 1714,160 1714,6" rendition="TextRegion" xml:id="facs_155_r6">
             <zone points="1643,165 1656,167 1662,163 1669,170 1676,166 1686,171 1697,171 1702,165 1724,168 1721,52 1710,53 1704,47 1693,52 1640,51" rendition="Line" xml:id="facs_155_r6l1"/></zone>
       </surface>
-      
-<surface lrx="1772" lry="2719" ulx="0" uly="0" xml:id="facs_156">
+
+      <surface lrx="1772" lry="2719" ulx="0" uly="0" xml:id="facs_156">
          <graphic height="2719px" url="Kasten_blau_44_8_0156.jpg" width="1772px"/>
          <zone points="80,1355 80,1943 184,1943 184,1355" rendition="TextRegion" xml:id="facs_156_r1">
             <zone points="69,1476 86,1482 93,1477 110,1488 119,1484 131,1496 158,1498 179,1520 190,1521 195,1441 180,1440 145,1424 128,1431 123,1425 108,1426 101,1419 93,1425 72,1425" rendition="Line" xml:id="facs_156_r1l1"/>
@@ -168,8 +173,8 @@
             <zone points="1699,2470 1710,2467 1712,2469 1729,2467 1713,2396 1697,2399 1694,2402 1684,2404" rendition="Line" xml:id="facs_156_r2l25"/>
             <zone points="908,2512 946,2515 959,2498 983,2499 1002,2485 1063,2493 1060,2453 1044,2455 997,2428 979,2434 953,2427 943,2436 921,2422 897,2427" rendition="Line" xml:id="facs_156_r2l26"/></zone>
       </surface>
-      
-<surface lrx="1772" lry="2719" ulx="0" uly="0" xml:id="facs_157">
+
+      <surface lrx="1772" lry="2719" ulx="0" uly="0" xml:id="facs_157">
          <graphic height="2719px" url="Kasten_blau_44_8_0157.jpg" width="1772px"/>
          <zone points="51,1402 51,1560 93,1560 93,1402" rendition="TextRegion" xml:id="facs_157_r1">
             <zone points="43,1496 59,1501 71,1517 79,1514 85,1515 86,1518 90,1516 92,1519 101,1520 112,1458 103,1457 97,1450 93,1453 89,1452 78,1441 74,1444 65,1438 54,1436" rendition="Line" xml:id="facs_157_r1l1"/></zone>
@@ -203,8 +208,8 @@
             <zone points="257,2395 1163,2402 1237,2458 1687,2392 1687,2346 1513,2261 1283,2315 620,2275 489,2351 257,2328" rendition="Line" xml:id="facs_157_r3l24"/>
             <zone points="713,2501 754,2509 782,2506 797,2495 849,2523 908,2504 917,2367 879,2385 870,2381 825,2410 788,2382 733,2423 718,2425" rendition="Line" xml:id="facs_157_r3l25"/></zone>
       </surface>
-      
-<surface lrx="1772" lry="2719" ulx="0" uly="0" xml:id="facs_158">
+
+      <surface lrx="1772" lry="2719" ulx="0" uly="0" xml:id="facs_158">
          <graphic height="2719px" url="Kasten_blau_44_8_0158.jpg" width="1772px"/>
          <zone points="60,1 60,158 96,158 96,1" rendition="TextRegion" xml:id="facs_158_r1">
             <zone points="48,112 58,114 63,122 72,117 79,127 90,121 104,123 119,46 109,44 102,49 62,41" rendition="Line" xml:id="facs_158_r1l1"/></zone>
@@ -244,8 +249,8 @@
             <zone points="261,2424 421,2436 543,2383 796,2429 909,2375 1312,2429 1703,2390 1703,2339 1525,2261 1355,2348 1122,2271 686,2320 261,2260" rendition="Line" xml:id="facs_158_r3l31"/>
             <zone points="875,2512 911,2510 942,2524 972,2504 988,2512 1022,2494 1041,2509 1069,2499 1065,2436 1045,2440 1029,2432 987,2457 964,2444 947,2453 920,2444 892,2452 871,2449" rendition="Line" xml:id="facs_158_r3l32"/></zone>
       </surface>
-      
-<surface lrx="1772" lry="2719" ulx="0" uly="0" xml:id="facs_159">
+
+      <surface lrx="1772" lry="2719" ulx="0" uly="0" xml:id="facs_159">
          <graphic height="2719px" url="Kasten_blau_44_8_0159.jpg" width="1772px"/>
          <zone points="56,123 56,273 66,273 66,123" rendition="TextRegion" xml:id="facs_159_r1">
             <zone points="47,259 56,259 60,262 64,259 75,259 75,169 66,169 56,175 47,175" rendition="Line" xml:id="facs_159_r1l1"/></zone>
@@ -275,8 +280,8 @@
             <zone points="251,2420 418,2460 535,2386 613,2427 838,2388 1399,2458 1643,2430 1644,2341 1147,2295 1028,2331 977,2291 915,2325 842,2284 692,2343 251,2329" rendition="Line" xml:id="facs_159_r2l23"/>
             <zone points="733,2489 762,2493 800,2483 820,2500 868,2493 905,2512 956,2515 958,2426 880,2417 854,2437 815,2408 780,2420 734,2421" rendition="Line" xml:id="facs_159_r2l24"/></zone>
       </surface>
-      
-<surface lrx="1772" lry="2719" ulx="0" uly="0" xml:id="facs_160">
+
+      <surface lrx="1772" lry="2719" ulx="0" uly="0" xml:id="facs_160">
          <graphic height="2719px" url="Kasten_blau_44_8_0160.jpg" width="1772px"/>
          <zone points="69,184 69,2512 1720,2512 1720,184" rendition="TextRegion" xml:id="facs_160_r1">
             <zone points="362,299 651,235 1722,250 1682,158 1476,180 1359,126 1205,172 889,129 682,174 600,134 361,157" rendition="Line" xml:id="facs_160_r1l1"/>
@@ -302,230 +307,89 @@
             <zone points="171,1600 983,1628 1480,1586 1481,1527 1341,1522 1221,1460 857,1518 615,1446 394,1500 252,1454 174,1488" rendition="Line" xml:id="facs_160_r1l21"/>
             <zone points="759,2496 805,2491 837,2511 873,2493 926,2520 984,2485 1045,2497 1089,2483 1087,2426 1041,2430 1008,2416 977,2430 919,2391 893,2403 858,2396 789,2431 757,2426" rendition="Line" xml:id="facs_160_r1l22"/></zone>
       </surface>
-      
+
 
    </facsimile>
    <text type="letter">
       <body>
          <pb facs="#facs_155" n="89 r" xml:id="Kasten_blau_44_8_0155.jpg" ed="93 r"/>
-<ab facs="#facs_155_r1">
-               <lb facs="#facs_155_r1l1" n="N001"/>e
-            </ab>
-<ab facs="#facs_155_r2">
-               <lb facs="#facs_155_r2l1" n="N001"/>duer
-            </ab>
-<ab facs="#facs_155_r3">
-               <lb facs="#facs_155_r3l1" n="N001"/>e
-            </ab>
-<ab facs="#facs_155_r4">
-               <lb facs="#facs_155_r4l1" n="N001"/>e
-            </ab>
-<ab facs="#facs_155_r5">
-               <lb facs="#facs_155_r5l1" n="N001"/>gen alii 167
-               <lb facs="#facs_155_r5l2" n="N002"/>EM
-               <lb facs="#facs_155_r5l3" n="N003"/>a
-               <lb facs="#facs_155_r5l4" n="N004"/>as
-               <lb facs="#facs_155_r5l5" n="N005"/>gallerdurchlmächtigste
-               <lb facs="#facs_155_r5l6" n="N006"/>ehens schuldag der trier nig die ca
-               <lb facs="#facs_155_r5l7" n="N007"/> es and berein vere er ders
-               <lb facs="#facs_155_r5l8" n="N008"/>leis verlasenen es er ich deroselben
-               <lb facs="#facs_155_r5l9" n="N009"/>iundere gehes vnderhalben des werden
-               <lb facs="#facs_155_r5l10" n="N010"/>ellerergeet darbich her dag meinem
-               <lb facs="#facs_155_r5l11" n="N011"/>aten er es ein wegen der denen
-               <lb facs="#facs_155_r5l12" n="N012"/>n von heren er berg duerch den da
-               <lb facs="#facs_155_r5l13" n="N013"/>zangegen haublich in lesen dor
-               <lb facs="#facs_155_r5l14" n="N014"/>vndt proncection der orderist auß eder sagen der
-               <lb facs="#facs_155_r5l15" n="N015"/>ion he ergeer verbeung e
-               <lb facs="#facs_155_r5l16" n="N016"/>sonder aus die terengeleig  leng ge
-               <lb facs="#facs_155_r5l17" n="N017"/>wer
-               <lb facs="#facs_155_r5l18" n="N018"/>deraßen den es disen beyer begeig
-               <lb facs="#facs_155_r5l19" n="N019"/>gebnen nie dise ß außee under
-               <lb facs="#facs_155_r5l20" n="N020"/>her angenete benderselben
-               <lb facs="#facs_155_r5l21" n="N021"/>erhalten so gester beßer den ende ich ie
-               <lb facs="#facs_155_r5l22" n="N022"/>edigsten vers erhalten daß als rers sein
-               <lb facs="#facs_155_r5l23" n="N023"/>mich selbige heut o vntir gehorsin fiebey die
-               <lb facs="#facs_155_r5l24" n="N024"/>lagen leo lang ersung der portir
-               <lb facs="#facs_155_r5l25" n="N025"/>ition hembstellet ab dieselben ender
-               <lb facs="#facs_155_r5l26" n="N026"/>meine allergehen lasteruder herung
-               <lb facs="#facs_155_r5l27" n="N027"/>künsten nebens immer eoban zue leztenig
-               <lb facs="#facs_155_r5l28" n="N028"/>eich
-            </ab>
-<ab facs="#facs_155_r6">
-               <lb facs="#facs_155_r6l1" n="N001"/>e
-            </ab>
-<pb facs="#facs_156" n="89 v" xml:id="Kasten_blau_44_8_0156.jpg" ed="93 v"/>
-<ab facs="#facs_156_r1">
-               <lb facs="#facs_156_r1l1" n="N001"/>e
-               <lb facs="#facs_156_r1l2" n="N002"/>erbey
-            </ab>
-<ab facs="#facs_156_r2">
-               <lb facs="#facs_156_r2l1" n="N001"/>allergen belieben lang ein wollen vnder
-               <lb facs="#facs_156_r2l2" n="N002"/>deßen etier anhere nachmahlen einen de
-               <lb facs="#facs_156_r2l3" n="N003"/>tlige vinder er fürste schuldige danckh sag
-               <lb facs="#facs_156_r2l4" n="N004"/>legen delbe bermahlen zu dere gesten
-               <lb facs="#facs_156_r2l5" n="N005"/>schmeisten nicht allein ver dise mus erhalben
-               <lb facs="#facs_156_r2l6" n="N006"/>eiße ben er men werden meine
-               <lb facs="#facs_156_r2l7" n="N007"/> esse ebten erer deren welchem 
-               <lb facs="#facs_156_r2l8" n="N008"/>aus derselben beyeristen eignen enheit a
-               <lb facs="#facs_156_r2l9" n="N009"/>e
-               <lb facs="#facs_156_r2l10" n="N010"/>urgehen macht englen wern seder du
-               <lb facs="#facs_156_r2l11" n="N011"/>g deren es erlein besteren euer
-               <lb facs="#facs_156_r2l12" n="N012"/> egen heiter es eigen vntercecern
-               <lb facs="#facs_156_r2l13" n="N013"/> parimont belangenden ist das gelo seing
-               <lb facs="#facs_156_r2l14" n="N014"/>jegengt vnd commes inten etwalhermaßen
-               <lb facs="#facs_156_r2l15" n="N015"/>inkeiner gewesen ich also zue der er bereine
-               <lb facs="#facs_156_r2l16" n="N016"/>bergang benige wollen möcht sein
-               <lb facs="#facs_156_r2l17" n="N017"/>üchtig doch zur antrere endeier noch wohl
-               <lb facs="#facs_156_r2l18" n="N018"/>e ai sein an aber er langen an b
-               <lb facs="#facs_156_r2l19" n="N019"/>vonder egel heren in enbergeen
-               <lb facs="#facs_156_r2l20" n="N020"/>nigem esein gangeihei beune
-               <lb facs="#facs_156_r2l21" n="N021"/>funde bonten oberer anderung
-               <lb facs="#facs_156_r2l22" n="N022"/>laße ein eifer balte entlig mich wahle
-               <lb facs="#facs_156_r2l23" n="N023"/>gebrange werteung die dimire atimon
-               <lb facs="#facs_156_r2l24" n="N024"/>ber welhe benfals der es 
-               <lb facs="#facs_156_r2l25" n="N025"/>eue
-               <lb facs="#facs_156_r2l26" n="N026"/>euer Liebden i
-            </ab>
-<pb facs="#facs_157" n="90 r" xml:id="Kasten_blau_44_8_0157.jpg" ed="95 r"/>
-<ab facs="#facs_157_r1">
-               <lb facs="#facs_157_r1l1" n="N001"/>ue
-            </ab>
-<ab facs="#facs_157_r2">
-               <lb facs="#facs_157_r2l1" n="N001"/>e
-               <lb facs="#facs_157_r2l2" n="N002"/>E
-            </ab>
-<ab facs="#facs_157_r3">
-               <lb facs="#facs_157_r3l1" n="N001"/>ue
-               <lb facs="#facs_157_r3l2" n="N002"/>eine ender gebe se geschuldet vnd deren
-               <lb facs="#facs_157_r3l3" n="N003"/>ester in meiner aus den wereren
-               <lb facs="#facs_157_r3l4" n="N004"/>inder perbey geheis anwender wirt mihr
-               <lb facs="#facs_157_r3l5" n="N005"/>bester nach ernser er vnd der ender
-               <lb facs="#facs_157_r3l6" n="N006"/> venban des gang gehendere begen
-               <lb facs="#facs_157_r3l7" n="N007"/>ender gehorsten eteren zu berischeit der
-               <lb facs="#facs_157_r3l8" n="N008"/>fester allergen ster herren zu leißen es halbe
-               <lb facs="#facs_157_r3l9" n="N009"/>enderselbe gewet iagenue
-               <lb facs="#facs_157_r3l10" n="N010"/>de vohr man belegener comentiren weder
-               <lb facs="#facs_157_r3l11" n="N011"/>selbige weterung halehen gern deren se vndt se
-               <lb facs="#facs_157_r3l12" n="N012"/>gender legt das duen der bewertig die ich
-               <lb facs="#facs_157_r3l13" n="N013"/>wohl verung der euen hendern eßelebe
-               <lb facs="#facs_157_r3l14" n="N014"/>eter bestelten werde er euer
-               <lb facs="#facs_157_r3l15" n="N015"/>enz nich als so gung den der gele
-               <lb facs="#facs_157_r3l16" n="N016"/>a weilen in er lenischen dasung der be
-               <lb facs="#facs_157_r3l17" n="N017"/>fahlen das ich der leh dingen hue
-               <lb facs="#facs_157_r3l18" n="N018"/>ßer es schluschen allen anderender
-               <lb facs="#facs_157_r3l19" n="N019"/>ngertige aier er
-               <lb facs="#facs_157_r3l20" n="N020"/>rite daselben gehors aßenemmen
-               <lb facs="#facs_157_r3l21" n="N021"/>M
-               <lb facs="#facs_157_r3l22" n="N022"/>ich habe die hem besterlt dah erwerliche
-               <lb facs="#facs_157_r3l23" n="N023"/>ze kröglig 3 balt der oder dan ich die hindern
-               <lb facs="#facs_157_r3l24" n="N024"/>wenden wie es enselbigen so überschike vier
-               <lb facs="#facs_157_r3l25" n="N025"/>ueb
-            </ab>
-<pb facs="#facs_158" n="90 v" xml:id="Kasten_blau_44_8_0158.jpg" ed="95 v"/>
-<ab facs="#facs_158_r1">
-               <lb facs="#facs_158_r1l1" n="N001"/>zu
-            </ab>
-<ab facs="#facs_158_r2">
-               <lb facs="#facs_158_r2l1" n="N001"/>e
-            </ab>
-<ab facs="#facs_158_r3">
-               <lb facs="#facs_158_r3l1" n="N001"/>leig man die anden sicher bernemen
-               <lb facs="#facs_158_r3l2" n="N002"/>wegen der angehung sodich der vom e
-               <lb facs="#facs_158_r3l3" n="N003"/>entergegenen term sierein vnd
-               <lb facs="#facs_158_r3l4" n="N004"/>e
-               <lb facs="#facs_158_r3l5" n="N005"/>salien zue ersen der ene
-               <lb facs="#facs_158_r3l6" n="N006"/> man hen ein gelesen derg
-               <lb facs="#facs_158_r3l7" n="N007"/>er
-               <lb facs="#facs_158_r3l8" n="N008"/>onen in der an a endere der leßen
-               <lb facs="#facs_158_r3l9" n="N009"/>e gean es des anderli
-               <lb facs="#facs_158_r3l10" n="N010"/>las gehen er wende alles e der
-               <lb facs="#facs_158_r3l11" n="N011"/>nd ben heit ster herescheines der
-               <lb facs="#facs_158_r3l12" n="N012"/>er
-               <lb facs="#facs_158_r3l13" n="N013"/>aggrsen meiner anders hutes wellers
-               <lb facs="#facs_158_r3l14" n="N014"/>as verenburg lieb gehen leiligen können
-               <lb facs="#facs_158_r3l15" n="N015"/>mnemen befeist mich derumb
-               <lb facs="#facs_158_r3l16" n="N016"/>uer
-               <lb facs="#facs_158_r3l17" n="N017"/>ergen aus das seingeben dach mit lechter
-               <lb facs="#facs_158_r3l18" n="N018"/>ue
-               <lb facs="#facs_158_r3l19" n="N019"/>e
-               <lb facs="#facs_158_r3l20" n="N020"/>due
-               <lb facs="#facs_158_r3l21" n="N021"/>paß dem beher der der la 
-               <lb facs="#facs_158_r3l22" n="N022"/>e
-               <lb facs="#facs_158_r3l23" n="N023"/>vnder zuesnserengeden geschreiben
-               <lb facs="#facs_158_r3l24" n="N024"/>gesch dobich auch allen verdrdung
-               <lb facs="#facs_158_r3l25" n="N025"/>e verlehen ein es er der herr der
-               <lb facs="#facs_158_r3l26" n="N026"/>nicht zihendern hueber dorte hefe das bey
-               <lb facs="#facs_158_r3l27" n="N027"/>geraser lus derebulich
-               <lb facs="#facs_158_r3l28" n="N028"/>eingerangen
-               <lb facs="#facs_158_r3l29" n="N029"/>angelangt das also vleigendern er
-               <lb facs="#facs_158_r3l30" n="N030"/>leg argsaus wer
-               <lb facs="#facs_158_r3l31" n="N031"/>über diehaltene inter here
-               <lb facs="#facs_158_r3l32" n="N032"/>ihr
-            </ab>
-<pb facs="#facs_159" n="91 r" xml:id="Kasten_blau_44_8_0159.jpg" ed="96 r"/>
-<ab facs="#facs_159_r1">
-               <lb facs="#facs_159_r1l1" n="N001"/>ue
-            </ab>
-<ab facs="#facs_159_r2">
-               <lb facs="#facs_159_r2l1" n="N001"/>e
-               <lb facs="#facs_159_r2l2" n="N002"/>ongeleier es er ereis een
-               <lb facs="#facs_159_r2l3" n="N003"/>meine heren er belbung derender
-               <lb facs="#facs_159_r2l4" n="N004"/>he s er der vererergen
-               <lb facs="#facs_159_r2l5" n="N005"/>ranhes er einig eß bleiben due
-               <lb facs="#facs_159_r2l6" n="N006"/>ner mich an deren machere vnd
-               <lb facs="#facs_159_r2l7" n="N007"/>e der gericht er nicht anders dies
-               <lb facs="#facs_159_r2l8" n="N008"/>iegles lesen er allergehen
-               <lb facs="#facs_159_r2l9" n="N009"/>aher ich volle es eigenere
-               <lb facs="#facs_159_r2l10" n="N010"/>ich biber vmb sulsen dißen verster ich
-               <lb facs="#facs_159_r2l11" n="N011"/>in meinen deigen denigen der der
-               <lb facs="#facs_159_r2l12" n="N012"/>luß meine vesegern sein versehle
-               <lb facs="#facs_159_r2l13" n="N013"/>ber dah der vorseyerich zue beungee
-               <lb facs="#facs_159_r2l14" n="N014"/>vehleslieben erfrewe mich dabentlig
-               <lb facs="#facs_159_r2l15" n="N015"/>leo langen an der doces zue wegen
-               <lb facs="#facs_159_r2l16" n="N016"/>lecarorina gewemmen wien dieselbe mi
-               <lb facs="#facs_159_r2l17" n="N017"/>lastere geh dauon durch dero reis haben
-               <lb facs="#facs_159_r2l18" n="N018"/>ntor mille welchem mein ster die
-               <lb facs="#facs_159_r2l19" n="N019"/>nachricht hiezen seiden  hoarin dergenge
-               <lb facs="#facs_159_r2l20" n="N020"/>ich er handt er lanz in mit mehrerm
-               <lb facs="#facs_159_r2l21" n="N021"/>gehrsche wirt zuverberns haben dahle
-               <lb facs="#facs_159_r2l22" n="N022"/>e la  meine darab befeunder
-               <lb facs="#facs_159_r2l23" n="N023"/>vnauschreichliche trewtnacht genuegsamb
-               <lb facs="#facs_159_r2l24" n="N024"/>u
-            </ab>
-<pb facs="#facs_160" n="91 v" xml:id="Kasten_blau_44_8_0160.jpg" ed="96 v"/>
-<ab facs="#facs_160_r1">
-               <lb facs="#facs_160_r1l1" n="N001"/>bes heibung dergsebe wohl vndern
-               <lb facs="#facs_160_r1l2" n="N002"/> meinen an es an ewesen
-               <lb facs="#facs_160_r1l3" n="N003"/>etermb heern zue der lesen
-               <lb facs="#facs_160_r1l4" n="N004"/>e
-               <lb facs="#facs_160_r1l5" n="N005"/>EM
-               <lb facs="#facs_160_r1l6" n="N006"/>wie auch die versleißen der eren dere
-               <lb facs="#facs_160_r1l7" n="N007"/>eder collen will es sein mein ledirten wegen
-               <lb facs="#facs_160_r1l8" n="N008"/>denen den es er erendern
-               <lb facs="#facs_160_r1l9" n="N009"/>EMT
-               <lb facs="#facs_160_r1l10" n="N010"/>e
-               <lb facs="#facs_160_r1l11" n="N011"/>einhas herben
-               <lb facs="#facs_160_r1l12" n="N012"/>ue
-               <lb facs="#facs_160_r1l13" n="N013"/>erer ich mehr de
-               <lb facs="#facs_160_r1l14" n="N014"/>fhet der he fudens despecti
-               <lb facs="#facs_160_r1l15" n="N015"/> te ender esen de
-               <lb facs="#facs_160_r1l16" n="N016"/>dahlen gangen 
-               <lb facs="#facs_160_r1l17" n="N017"/>l
-               <lb facs="#facs_160_r1l18" n="N018"/>herer gang den lasterben
-               <lb facs="#facs_160_r1l19" n="N019"/>E
-               <lb facs="#facs_160_r1l20" n="N020"/>e
-               <lb facs="#facs_160_r1l21" n="N021"/>befunden zu erfalz auguschanburg das anbeiglich
-               <lb facs="#facs_160_r1l22" n="N022"/> 
-            </ab>
+         <ab facs="#facs_155_r1">
+            <lb facs="#facs_155_r1l1" n="N001"/>e </ab>
+         <ab facs="#facs_155_r2">
+            <lb facs="#facs_155_r2l1" n="N001"/>duer </ab>
+         <ab facs="#facs_155_r3">
+            <lb facs="#facs_155_r3l1" n="N001"/>e </ab>
+         <ab facs="#facs_155_r4">
+            <lb facs="#facs_155_r4l1" n="N001"/>e </ab>
+         <ab facs="#facs_155_r5">
+            <lb facs="#facs_155_r5l1" n="N001"/>gen alii 167 <lb facs="#facs_155_r5l2" n="N002"/>EM
+               <lb facs="#facs_155_r5l3" n="N003"/>a <lb facs="#facs_155_r5l4" n="N004"/>as <lb facs="#facs_155_r5l5" n="N005"/>gallerdurchlmächtigste <lb facs="#facs_155_r5l6" n="N006"/>ehens schuldag der trier nig die ca <lb facs="#facs_155_r5l7" n="N007"/> es
+            and berein vere er ders <lb facs="#facs_155_r5l8" n="N008"/>leis verlasenen es er ich
+            deroselben <lb facs="#facs_155_r5l9" n="N009"/>iundere gehes vnderhalben des werden <lb facs="#facs_155_r5l10" n="N010"/>ellerergeet darbich her dag meinem <lb facs="#facs_155_r5l11" n="N011"/>aten er es ein wegen der denen <lb facs="#facs_155_r5l12" n="N012"/>n von heren er berg duerch den da <lb facs="#facs_155_r5l13" n="N013"/>zangegen haublich in lesen dor <lb facs="#facs_155_r5l14" n="N014"/>vndt proncection der orderist auß eder sagen der <lb facs="#facs_155_r5l15" n="N015"/>ion he ergeer verbeung e <lb facs="#facs_155_r5l16" n="N016"/>sonder aus die terengeleig leng ge <lb facs="#facs_155_r5l17" n="N017"/>wer
+               <lb facs="#facs_155_r5l18" n="N018"/>deraßen den es disen beyer begeig <lb facs="#facs_155_r5l19" n="N019"/>gebnen nie dise ß außee under <lb facs="#facs_155_r5l20" n="N020"/>her angenete benderselben <lb facs="#facs_155_r5l21" n="N021"/>erhalten so gester beßer den ende ich ie <lb facs="#facs_155_r5l22" n="N022"/>edigsten vers erhalten daß als rers sein <lb facs="#facs_155_r5l23" n="N023"/>mich selbige heut o vntir gehorsin fiebey die <lb facs="#facs_155_r5l24" n="N024"/>lagen leo lang ersung der portir <lb facs="#facs_155_r5l25" n="N025"/>ition
+            hembstellet ab dieselben ender <lb facs="#facs_155_r5l26" n="N026"/>meine allergehen
+            lasteruder herung <lb facs="#facs_155_r5l27" n="N027"/>künsten nebens immer eoban zue
+            leztenig <lb facs="#facs_155_r5l28" n="N028"/>eich </ab>
+         <ab facs="#facs_155_r6">
+            <lb facs="#facs_155_r6l1" n="N001"/>e </ab>
+         <pb facs="#facs_156" n="89 v" xml:id="Kasten_blau_44_8_0156.jpg" ed="93 v"/>
+         <ab facs="#facs_156_r1">
+            <lb facs="#facs_156_r1l1" n="N001"/>e <lb facs="#facs_156_r1l2" n="N002"/>erbey </ab>
+         <ab facs="#facs_156_r2">
+            <lb facs="#facs_156_r2l1" n="N001"/>allergen belieben lang ein wollen vnder <lb facs="#facs_156_r2l2" n="N002"/>deßen etier anhere nachmahlen einen de <lb facs="#facs_156_r2l3" n="N003"/>tlige vinder er fürste schuldige danckh sag <lb facs="#facs_156_r2l4" n="N004"/>legen delbe bermahlen zu dere gesten <lb facs="#facs_156_r2l5" n="N005"/>schmeisten nicht allein ver dise mus erhalben <lb facs="#facs_156_r2l6" n="N006"/>eiße ben er men werden meine <lb facs="#facs_156_r2l7" n="N007"/> esse ebten erer deren welchem <lb facs="#facs_156_r2l8" n="N008"/>aus derselben beyeristen eignen enheit a <lb facs="#facs_156_r2l9" n="N009"/>e <lb facs="#facs_156_r2l10" n="N010"/>urgehen macht
+            englen wern seder du <lb facs="#facs_156_r2l11" n="N011"/>g deren es erlein besteren
+            euer <lb facs="#facs_156_r2l12" n="N012"/> egen heiter es eigen vntercecern <lb facs="#facs_156_r2l13" n="N013"/> parimont belangenden ist das gelo seing <lb facs="#facs_156_r2l14" n="N014"/>jegengt vnd commes inten etwalhermaßen <lb facs="#facs_156_r2l15" n="N015"/>inkeiner gewesen ich also zue der er bereine <lb facs="#facs_156_r2l16" n="N016"/>bergang benige wollen möcht sein <lb facs="#facs_156_r2l17" n="N017"/>üchtig doch zur antrere endeier noch wohl <lb facs="#facs_156_r2l18" n="N018"/>e ai sein an aber er langen an b <lb facs="#facs_156_r2l19" n="N019"/>vonder egel heren in enbergeen <lb facs="#facs_156_r2l20" n="N020"/>nigem esein gangeihei beune <lb facs="#facs_156_r2l21" n="N021"/>funde bonten oberer anderung <lb facs="#facs_156_r2l22" n="N022"/>laße ein eifer balte entlig mich wahle <lb facs="#facs_156_r2l23" n="N023"/>gebrange werteung die dimire atimon <lb facs="#facs_156_r2l24" n="N024"/>ber welhe benfals der es <lb facs="#facs_156_r2l25" n="N025"/>eue <lb facs="#facs_156_r2l26" n="N026"/>euer Liebden i </ab>
+         <pb facs="#facs_157" n="90 r" xml:id="Kasten_blau_44_8_0157.jpg" ed="95 r"/>
+         <ab facs="#facs_157_r1">
+            <lb facs="#facs_157_r1l1" n="N001"/>ue </ab>
+         <ab facs="#facs_157_r2">
+            <lb facs="#facs_157_r2l1" n="N001"/>e <lb facs="#facs_157_r2l2" n="N002"/>E </ab>
+         <ab facs="#facs_157_r3">
+            <lb facs="#facs_157_r3l1" n="N001"/>ue <lb facs="#facs_157_r3l2" n="N002"/>eine ender
+            gebe se geschuldet vnd deren <lb facs="#facs_157_r3l3" n="N003"/>ester in meiner aus den
+            wereren <lb facs="#facs_157_r3l4" n="N004"/>inder perbey geheis anwender wirt mihr <lb facs="#facs_157_r3l5" n="N005"/>bester nach ernser er vnd der ender <lb facs="#facs_157_r3l6" n="N006"/> venban des gang gehendere begen <lb facs="#facs_157_r3l7" n="N007"/>ender gehorsten eteren zu berischeit der <lb facs="#facs_157_r3l8" n="N008"/>fester allergen ster herren zu leißen es halbe <lb facs="#facs_157_r3l9" n="N009"/>enderselbe gewet iagenue <lb facs="#facs_157_r3l10" n="N010"/>de vohr man belegener comentiren weder <lb facs="#facs_157_r3l11" n="N011"/>selbige weterung halehen gern deren se vndt se <lb facs="#facs_157_r3l12" n="N012"/>gender legt das duen der bewertig die ich <lb facs="#facs_157_r3l13" n="N013"/>wohl
+            verung der euen hendern eßelebe <lb facs="#facs_157_r3l14" n="N014"/>eter bestelten
+            werde er euer <lb facs="#facs_157_r3l15" n="N015"/>enz nich als so gung den der gele <lb facs="#facs_157_r3l16" n="N016"/>a weilen in er lenischen dasung der be <lb facs="#facs_157_r3l17" n="N017"/>fahlen das ich der leh dingen hue <lb facs="#facs_157_r3l18" n="N018"/>ßer es schluschen allen anderender <lb facs="#facs_157_r3l19" n="N019"/>ngertige aier er <lb facs="#facs_157_r3l20" n="N020"/>rite daselben gehors aßenemmen <lb facs="#facs_157_r3l21" n="N021"/>M <lb facs="#facs_157_r3l22" n="N022"/>ich habe die hem besterlt dah erwerliche <lb facs="#facs_157_r3l23" n="N023"/>ze kröglig 3 balt der oder dan ich die hindern <lb facs="#facs_157_r3l24" n="N024"/>wenden wie es enselbigen so überschike vier <lb facs="#facs_157_r3l25" n="N025"/>ueb </ab>
+         <pb facs="#facs_158" n="90 v" xml:id="Kasten_blau_44_8_0158.jpg" ed="95 v"/>
+         <ab facs="#facs_158_r1">
+            <lb facs="#facs_158_r1l1" n="N001"/>zu </ab>
+         <ab facs="#facs_158_r2">
+            <lb facs="#facs_158_r2l1" n="N001"/>e </ab>
+         <ab facs="#facs_158_r3">
+            <lb facs="#facs_158_r3l1" n="N001"/>leig man die anden sicher bernemen <lb facs="#facs_158_r3l2" n="N002"/>wegen der angehung sodich der vom e <lb facs="#facs_158_r3l3" n="N003"/>entergegenen term sierein vnd <lb facs="#facs_158_r3l4" n="N004"/>e <lb facs="#facs_158_r3l5" n="N005"/>salien zue
+            ersen der ene <lb facs="#facs_158_r3l6" n="N006"/> man hen ein gelesen derg <lb facs="#facs_158_r3l7" n="N007"/>er <lb facs="#facs_158_r3l8" n="N008"/>onen in der an
+            a endere der leßen <lb facs="#facs_158_r3l9" n="N009"/>e gean es des anderli <lb facs="#facs_158_r3l10" n="N010"/>las gehen er wende alles e der <lb facs="#facs_158_r3l11" n="N011"/>nd ben heit ster herescheines der <lb facs="#facs_158_r3l12" n="N012"/>er <lb facs="#facs_158_r3l13" n="N013"/>aggrsen
+            meiner anders hutes wellers <lb facs="#facs_158_r3l14" n="N014"/>as verenburg lieb gehen
+            leiligen können <lb facs="#facs_158_r3l15" n="N015"/>mnemen befeist mich derumb <lb facs="#facs_158_r3l16" n="N016"/>uer <lb facs="#facs_158_r3l17" n="N017"/>ergen aus
+            das seingeben dach mit lechter <lb facs="#facs_158_r3l18" n="N018"/>ue <lb facs="#facs_158_r3l19" n="N019"/>e <lb facs="#facs_158_r3l20" n="N020"/>due <lb facs="#facs_158_r3l21" n="N021"/>paß dem beher der der la <lb facs="#facs_158_r3l22" n="N022"/>e <lb facs="#facs_158_r3l23" n="N023"/>vnder zuesnserengeden geschreiben
+               <lb facs="#facs_158_r3l24" n="N024"/>gesch dobich auch allen verdrdung <lb facs="#facs_158_r3l25" n="N025"/>e verlehen ein es er der herr der <lb facs="#facs_158_r3l26" n="N026"/>nicht zihendern hueber dorte hefe das bey <lb facs="#facs_158_r3l27" n="N027"/>geraser lus derebulich <lb facs="#facs_158_r3l28" n="N028"/>eingerangen <lb facs="#facs_158_r3l29" n="N029"/>angelangt das also
+            vleigendern er <lb facs="#facs_158_r3l30" n="N030"/>leg argsaus wer <lb facs="#facs_158_r3l31" n="N031"/>über diehaltene inter here <lb facs="#facs_158_r3l32" n="N032"/>ihr </ab>
+         <pb facs="#facs_159" n="91 r" xml:id="Kasten_blau_44_8_0159.jpg" ed="96 r"/>
+         <ab facs="#facs_159_r1">
+            <lb facs="#facs_159_r1l1" n="N001"/>ue </ab>
+         <ab facs="#facs_159_r2">
+            <lb facs="#facs_159_r2l1" n="N001"/>e <lb facs="#facs_159_r2l2" n="N002"/>ongeleier es
+            er ereis een <lb facs="#facs_159_r2l3" n="N003"/>meine heren er belbung derender <lb facs="#facs_159_r2l4" n="N004"/>he s er der vererergen <lb facs="#facs_159_r2l5" n="N005"/>ranhes er einig eß bleiben due <lb facs="#facs_159_r2l6" n="N006"/>ner mich
+            an deren machere vnd <lb facs="#facs_159_r2l7" n="N007"/>e der gericht er nicht anders
+            dies <lb facs="#facs_159_r2l8" n="N008"/>iegles lesen er allergehen <lb facs="#facs_159_r2l9" n="N009"/>aher ich volle es eigenere <lb facs="#facs_159_r2l10" n="N010"/>ich biber vmb sulsen dißen verster ich <lb facs="#facs_159_r2l11" n="N011"/>in meinen deigen denigen der der <lb facs="#facs_159_r2l12" n="N012"/>luß meine
+            vesegern sein versehle <lb facs="#facs_159_r2l13" n="N013"/>ber dah der vorseyerich zue
+            beungee <lb facs="#facs_159_r2l14" n="N014"/>vehleslieben erfrewe mich dabentlig <lb facs="#facs_159_r2l15" n="N015"/>leo langen an der doces zue wegen <lb facs="#facs_159_r2l16" n="N016"/>lecarorina gewemmen wien dieselbe mi <lb facs="#facs_159_r2l17" n="N017"/>lastere geh dauon durch dero reis haben <lb facs="#facs_159_r2l18" n="N018"/>ntor mille welchem mein ster die <lb facs="#facs_159_r2l19" n="N019"/>nachricht hiezen seiden hoarin dergenge <lb facs="#facs_159_r2l20" n="N020"/>ich er handt er lanz in mit mehrerm <lb facs="#facs_159_r2l21" n="N021"/>gehrsche wirt zuverberns haben dahle <lb facs="#facs_159_r2l22" n="N022"/>e la meine darab befeunder <lb facs="#facs_159_r2l23" n="N023"/>vnauschreichliche trewtnacht genuegsamb <lb facs="#facs_159_r2l24" n="N024"/>u </ab>
+         <pb facs="#facs_160" n="91 v" xml:id="Kasten_blau_44_8_0160.jpg" ed="96 v"/>
+         <ab facs="#facs_160_r1">
+            <lb facs="#facs_160_r1l1" n="N001"/>bes heibung dergsebe wohl vndern <lb facs="#facs_160_r1l2" n="N002"/> meinen an es an ewesen <lb facs="#facs_160_r1l3" n="N003"/>etermb heern zue der lesen <lb facs="#facs_160_r1l4" n="N004"/>e <lb facs="#facs_160_r1l5" n="N005"/>EM <lb facs="#facs_160_r1l6" n="N006"/>wie auch die
+            versleißen der eren dere <lb facs="#facs_160_r1l7" n="N007"/>eder collen will es sein
+            mein ledirten wegen <lb facs="#facs_160_r1l8" n="N008"/>denen den es er erendern <lb facs="#facs_160_r1l9" n="N009"/>EMT <lb facs="#facs_160_r1l10" n="N010"/>e <lb facs="#facs_160_r1l11" n="N011"/>einhas herben <lb facs="#facs_160_r1l12" n="N012"/>ue <lb facs="#facs_160_r1l13" n="N013"/>erer ich mehr de <lb facs="#facs_160_r1l14" n="N014"/>fhet der he fudens despecti <lb facs="#facs_160_r1l15" n="N015"/> te ender
+            esen de <lb facs="#facs_160_r1l16" n="N016"/>dahlen gangen <lb facs="#facs_160_r1l17" n="N017"/>l <lb facs="#facs_160_r1l18" n="N018"/>herer gang den lasterben <lb facs="#facs_160_r1l19" n="N019"/>E <lb facs="#facs_160_r1l20" n="N020"/>e <lb facs="#facs_160_r1l21" n="N021"/>befunden zu erfalz auguschanburg das anbeiglich <lb facs="#facs_160_r1l22" n="N022"/>
+         </ab>
 
       </body>
-   <back><listPerson><person xml:id="emt_person_id__18">
-                  <persName>JW - Johann Wilhelm von der Pfalz</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118712411</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__18">
+                  <persName>JW - Johann Wilhelm von der Pfalz</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__13">
                   <placeName>Düsseldorf</placeName>

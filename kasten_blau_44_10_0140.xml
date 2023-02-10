@@ -6,7 +6,7 @@
             <title type="sub">Familiensache. Dynastische Handlungsspielräume in der Korrespondenz von Kaiserin Eleonora Magdalena von Pfalz-Neuburg (1655-1720)</title>
             <author>Johann Wilhelm von Pfalz-Neuburg</author>
             <editor>
-               <name>Katrin Keller</name>
+               <name ref="https://orcid.org/0000-0002-8621-5162">Katrin Keller</name><name ref="https://orcid.org/0000-0002-8676-3935">Ines Peper</name><name ref="https://orcid.org/0000-0002-1389-896X">Anna Spitzbart</name>
             </editor>
             <funder>
                <name>FWF - Der Wissenschaftsfonds</name>
@@ -143,17 +143,17 @@
   </div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__39">
-                  <placeName>Neuburg</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2866070/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__18">
-                  <persName>JW - Johann Wilhelm von der Pfalz</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118712411</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__18">
+                  <persName>JW - Johann Wilhelm von der Pfalz</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__39">
+                  <placeName>Neuburg</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2866070/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>
