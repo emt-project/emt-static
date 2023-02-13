@@ -118,6 +118,9 @@ button#ssDoSearch {
 #github-logo:hover {
     transform: scale(1.05);
 }
+.editionstext {
+    line-height: 200%;
+}
 
 /*** calendar ***/
 
