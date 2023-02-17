@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>Bayerisches Hauptstaatsarchiv</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository><idno>Kasten blau, 44/2d</idno>
                         
                         <idno/>
                      </msIdentifier>
@@ -325,6 +325,10 @@ Schlägt im Auftrag <rs type="person" ref="#emt_person_id__50">PWs</rs> vor, das
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
+               <person xml:id="emt_person_id__18">
+                  <persName>JW - Johann Wilhelm von der Pfalz</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
                <person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
@@ -332,9 +336,5 @@ Schlägt im Auftrag <rs type="person" ref="#emt_person_id__50">PWs</rs> vor, das
                <person xml:id="emt_person_id__58">
                   <persName>Graf Maximilan von Starhemberg</persName>
                </person>
-            <person xml:id="emt_person_id__18">
-                  <persName>JW - Johann Wilhelm von der Pfalz</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118712411</idno>
-               </person>
-               </listPerson></back></text>
+            </listPerson></back></text>
 </TEI>

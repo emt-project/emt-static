@@ -44,7 +44,7 @@
                      <msIdentifier>
                         <country>Deutschland</country>
                         <settlement>München</settlement>
-                        <repository>Bayerisches Hauptstaatsarchiv</repository>
+                        <repository>Bayerisches Hauptstaatsarchiv</repository><idno>Kasten blau, 45/9</idno>
                         
                         <idno/>
                      </msIdentifier>
@@ -136,8 +136,8 @@
       <lb n="N014"/>amste dochter
       <lb n="N015"/>EMT
       <lb n="N016"/>Eberstorf den 8ten <choice><expan>septembris</expan><abbr>7br</abbr></choice> 1682
-      <lb n="N017"/><unclear>ad acta, weillen schon</unclear>
-      <lb n="N018"/><unclear>geandtworthet p.</unclear></p></div>
+      <lb n="N017"/><unclear reason="Aktenvermerk">ad acta, weillen schon</unclear>
+      <lb n="N018"/><unclear reason="Aktenvermerk">geandtworthet p.</unclear></p></div>
 </body>
 
    <back><listPerson><person xml:id="emt_person_id__9">
