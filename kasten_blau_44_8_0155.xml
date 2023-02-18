@@ -358,17 +358,17 @@
             mein ledirten wegen <lb n="N008"/>denen den es er erendern <lb n="N009"/>EMT <lb n="N010"/>e <lb n="N011"/>einhas herben <lb n="N012"/>ue <lb n="N013"/>erer ich mehr de <lb n="N014"/>fhet der he fudens despecti <lb n="N015"/> te ender
             esen de <lb n="N016"/>dahlen gangen <lb n="N017"/>l <lb n="N018"/>herer gang den lasterben <lb n="N019"/>E <lb n="N020"/>e <lb n="N021"/>befunden zu erfalz auguschanburg das anbeiglich <lb n="N022"/>
          </p></div></body>
-   <back><listPerson><person xml:id="emt_person_id__18">
-                  <persName>JW - Johann Wilhelm von der Pfalz</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118712411</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__13">
+   <back><listPlace><place xml:id="emt_place_id__13">
                   <placeName>Düsseldorf</placeName>
                   <idno type="GEONAMES">https://sws.geonames.org/2934246/</idno>
                </place>
-               </listPlace></back></text>
+               </listPlace><listPerson><person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__18">
+                  <persName>JW - Johann Wilhelm von der Pfalz</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               </listPerson></back></text>
 </TEI>
