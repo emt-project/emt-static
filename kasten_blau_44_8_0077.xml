@@ -409,7 +409,7 @@
                <lb n="N012"/>getr<supplied>e</supplied>wst schw<supplied>e</supplied>ster
                <lb n="N013"/>dero Liebden
                <lb n="N014"/>Eleonora
-               <lb n="N015"/>Wien den 29ten <choice><expan>jener</expan><abbr>jer</abbr></choice> 1701
+               <lb n="N015"/>Wien den 29ten <choice><expan>januarij</expan><abbr>jer</abbr></choice> 1701
                <lb n="N016"/>Ihr Durchlaucht h<supplied>a</supplied>ben mihr mit heint<supplied>i</supplied>ger post wider <supplied>geschrieben, ich</supplied> soll die <unclear>m</unclear> <unclear>An</unclear>
                <lb n="N017"/>hinauf auf Höchstett schik<supplied>en</supplied>. Ich antwort izt, in dem
                <lb n="N018"/>wetter könne sie nit reisen, vnd so vill ich
@@ -597,17 +597,17 @@
                <lb n="N025"/>dag ihr
                <lb n="N026"/>r
             </p></div></body>
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__18">
-                  <persName>JW - Johann Wilhelm von der Pfalz</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118712411</idno>
-               </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__63">
+   <back><listPlace><place xml:id="emt_place_id__63">
                   <placeName>Wien</placeName>
                   <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
                </place>
-               </listPlace></back></text>
+               </listPlace><listPerson><person xml:id="emt_person_id__18">
+                  <persName>JW - Johann Wilhelm von der Pfalz</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               </listPerson></back></text>
 </TEI>

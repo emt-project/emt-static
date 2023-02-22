@@ -288,7 +288,7 @@
                <lb n="N024"/>Schike hirbey noch das schreiben an <supplied>den</supplied> <rs type="person">Cuhrfürsten</rs>, wan es nit recht 
                <lb n="N025"/>bitt nuhr zu schaffen, will es anderst nach dero befehl machen.
             </p></div><div type="page"><pb facs="#facs_138" n="9 r" xml:id="Kasten_blau_45_8_0138.jpg"/><p facs="#facs_138_r1">
-               <lb n="N001"/>PS Ewer Durchlaucht berichte hiermit vnterdehnig in
+               <lb n="N001"/><choice><expan>Postscriptum</expan><abbr>PS</abbr></choice> Ewer Durchlaucht berichte hiermit vnterdehnig in
                <lb n="N002"/>höchster geheim, das alles, was in meinem
                <lb n="N003"/>heutigen schreiben melde, mit ihr <rs type="person">Mayestät</rs> vohrwißen
                <lb n="N004"/>vndt befehl geschen vndt sie mihr <seg type="blackening">ausdrük</seg>
@@ -296,10 +296,10 @@
                <lb n="N006"/><choice><expan>bruedern</expan><abbr><rs type="person">b</rs></abbr></choice> geschrieben vndt gesacht, ich solle ihnen
                <lb n="N007"/>ein mehrere hoffnung machen <add>als bis hero</add> vndt schreiben,
                <lb n="N008"/>das sie balt mit einer beßeren zeitung
-               <lb n="N009"/>erfrewen welte, <add>dan sie es nit lang mehr anstehn laßen wolten</add>. Der <rs type="person">Hoher</rs> vndt <rs type="person"><choice><expan>pater</expan><abbr>p</abbr></choice> <choice><expan>Emerik</expan><abbr>Eme</abbr></choice></rs>
+               <lb n="N009"/>erfrewen welte, <add>dan sie es nit lang mehr anstehn laßen wolten</add>. Der <rs type="person">Hoher</rs> vndt <rs type="person"><choice><expan>Pater</expan><abbr>P</abbr></choice> <choice><expan>Emerik</expan><abbr>Eme</abbr></choice></rs>
                <lb n="N010"/>geben mihr auch hoffnung, das in gahr kurzem
                <lb n="N011"/>die resolution erfolgen werde, vndt zwar
-               <lb n="N012"/>hatt mihr <choice><expan>pater</expan><abbr>p</abbr></choice> <choice><expan>Emerik</expan><abbr>Eme</abbr></choice> ausdruklich die hoffnung
+               <lb n="N012"/>hatt mihr <choice><expan>Pater</expan><abbr>P</abbr></choice> <choice><expan>Emerik</expan><abbr>Eme</abbr></choice> ausdruklich die hoffnung
                <lb n="N013"/>gemacht, das noch vohr dem august die
                <lb n="N014"/>hochzeit möchte vohr sich gehn, <seg type="blackening">bitt</seg> deswegen ich
                <lb n="N015"/>dan ewer Durchlaucht widerahten, mein bruedern
@@ -316,10 +316,14 @@
                <lb n="N007"/>sein, dah es sich nit reimen würde,
                <lb n="N008"/>das, wan die armée in der besten opera-
                <lb n="N009"/>tion, er daruon solte. Bitte auf
-               <lb n="N010"/>dieses PS nit zue antworten, auf
+               <lb n="N010"/>dieses <choice><expan>Postscriptum</expan><abbr>PS</abbr></choice> nit zue antworten, auf
                <lb n="N011"/>kein weis. Befehl mich nochmahlen vnterdehnig.
             </p></div></body>
-   <back><listPerson><person xml:id="emt_person_id__50">
+   <back><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -327,9 +331,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

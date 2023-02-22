@@ -262,7 +262,7 @@
                <lb n="N010"/>können. Indeßen werden alle anstalten gemacht, vndt
                <lb n="N011"/>hatt mich der Kriegspresident noch in lezter audienz
                <lb n="N012"/>versichert, das in Italien die nottwendige manschafft
-               <lb n="N013"/>vndt im Reich 45 <unclear>m</unclear> keiserlige zue rechter zeit sein
+               <lb n="N013"/>vndt im Reich 45 000 keiserlige zue rechter zeit sein
                <lb n="N014"/>werden, mich aber gebetten zu verhelfen, das man ihn
                <lb n="N015"/>mit dem gelt nit steken last, ohne welches man
                <lb n="N016"/>nirgens niks kan duen. Man labori<supplied>r</supplied>t auch izt
@@ -316,17 +316,17 @@
                <lb n="N022"/>Eleonora
                <lb n="N023"/>Wien den 11ten jener 1702
             </p></div></body>
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__18">
-                  <persName>JW - Johann Wilhelm von der Pfalz</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118712411</idno>
-               </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__63">
+   <back><listPlace><place xml:id="emt_place_id__63">
                   <placeName>Wien</placeName>
                   <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
                </place>
-               </listPlace></back></text>
+               </listPlace><listPerson><person xml:id="emt_person_id__18">
+                  <persName>JW - Johann Wilhelm von der Pfalz</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118712411</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               </listPerson></back></text>
 </TEI>
