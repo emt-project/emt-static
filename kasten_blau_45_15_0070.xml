@@ -174,8 +174,8 @@
       <lb n="N011"/>dis gehöre an mich, aber ich versichere ewer Durchlaucht als dero
       <lb n="N012"/><choice><expan>vnterdehnigstes</expan><abbr>vd</abbr></choice> kint, das <supplied>ich</supplied> gewislich kein buechstaben geleßen als oben
       <lb n="N013"/>durchleuchtigster Cuhrfürst. So hab ich gleich gesehn, das es nit
-      <lb n="N014"/>an mich ist. Hoffe durch ewer Durchlaucht große guette <unclear>dese</unclear>
-      <lb n="N015"/>vergebung zue erlang<supplied>en</supplied>. Wie es zue Offen steht,
+      <lb n="N014"/>an mich ist. Hoffe durch ewer Durchlaucht große guette diese
+      <lb n="N015"/>vergebung zue erlang<unclear reason="Tintenfleck"><supplied>en</supplied></unclear>. Wie es zue Offen steht,
       <lb n="N016"/>werden ewer Durchlaucht aus dem beyliegenden ersehen,
       <lb n="N017"/>auch noch alte dagzettel, so ich vergeßen zue schiken.</p></div><div type="page"><pb facs="#facs_2" n="43 v" xml:id="Kasten_blau_45_15_0071.jpg"/><p facs="#facs_2_r1">
       <lb n="N001"/>Gott steh inen verners bey mit seiner gnad,
@@ -212,17 +212,17 @@
       <lb n="N012"/>werde dero befehl allezeit gehorsammen.</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

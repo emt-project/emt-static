@@ -352,7 +352,7 @@
       <lb n="N012"/>aber etwas von silber, den wert wust ich woll selber
       <lb n="N013"/>nit, doch vermeinet ich, vngefehr gegen ein fünf hund<supplied>e</supplied>rt
       <lb n="N014"/>gulden. Dem andren etwas wehnigers, weil das silber
-      <lb n="N015"/>ohne das mehrer ansehen hatt als <unclear>was</unclear> von geschmukh.
+      <lb n="N015"/>ohne das mehrer ansehen hatt als was von geschmukh.
       <lb n="N016"/>Ich hab heündt die kinder laßen heraus kommen, die
       <lb n="N017"/><choice><expan>Maria</expan><abbr>M</abbr></choice> Lißel wider hier zue bleiben vnd die andren habens
       <lb n="N018"/>begleidt, ist ein große freüdt geweßen, der Carl ist
@@ -378,17 +378,17 @@
       <lb n="N017"/>Laxenburg den 14ten maij 1687</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

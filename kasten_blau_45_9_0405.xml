@@ -257,7 +257,7 @@
       <lb n="N010"/>hatt heyer gahr einen guetten prediger, ist schon ein
       <lb n="N011"/>alter man. Vom Heiseler seint wider zeitung kommen,
       <lb n="N012"/>das er widrem wie sie sagen ein 7000 tartarn vnd
-      <lb n="N013"/>türken, welche <unclear>viuers</unclear> in Neüheüsel bringen wollen,
+      <lb n="N013"/>türken, welche viuers in Neüheüsel bringen wollen,
       <lb n="N014"/>geschlagen. Seint aber wehnig daruon blieben, weill
       <lb n="N015"/>sie ausgerißen vnd vnsere, so nuhr 2000 starkh,
       <lb n="N016"/>nit haben trawen noch können nachiagen, weil vnsre
@@ -337,17 +337,17 @@
       <lb n="N033"/></p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

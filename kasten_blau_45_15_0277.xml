@@ -122,7 +122,7 @@
    <body>
   <div type="page"><pb facs="#facs_1" n="146 r" xml:id="Kasten_blau_45_15_0277.jpg"/><p facs="#facs_1_r1">
       <lb n="N001"/>Durchleüchtiger Cuhrfürst, h<supplied>e</supplied>rzallerliebster h<supplied>e</supplied>rr vatter
-      <lb n="N002"/>Ich verhoffe, ewer <unclear>Durchlaucht</unclear> werden sich bede in
+     <lb n="N002"/>Ich verhoffe, ewer <unclear reason="offensichtlich sinnentstellende Korruptele: Durchlaucht">Liebden</unclear> werden sich bede in
       <lb n="N003"/>bestem wohlstandt befinden, welches mich über
       <lb n="N004"/>alles erfreien wirt zue vernemmen. Bitte
       <lb n="N005"/><choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> vmb vergebung, das ich mit
@@ -143,17 +143,17 @@
       <lb n="N020"/>sachen beßeren.</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

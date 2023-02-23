@@ -201,7 +201,7 @@
       <lb n="N003"/>ganz gebunden wurden mit der zeit, das es ehender
       <lb n="N004"/>dardurch die lieb, so er woll herzlich vohr seine
       <lb n="N005"/>brüeder, insonderheit den Carl, hatt, möchte schwechen
-      <lb n="N006"/>vnd <unclear>ercol</unclear> auch gegen demselben weniger respect zu
+      <lb n="N006"/>vnd <unclear reason="offensichtlich sinnentstellende Korruptele: er sol">ercol</unclear> auch gegen demselben weniger respect zu
       <lb n="N007"/>haben veranlaßet werden. Ich siehe nit, wie einige
       <lb n="N008"/>vneinichkeit disfals vnter ihnen entstehen könte,
       <lb n="N009"/>in dem, wan mein elterer brueder kein succession
@@ -244,17 +244,17 @@
       <lb n="N008"/>Wien den 2ten <choice><expan>decembris</expan><abbr>10br</abbr></choice> 1685</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

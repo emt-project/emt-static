@@ -204,7 +204,7 @@
       <lb n="N014"/>gahr woll auf. Der Josephl ist schon wider aus
       <lb n="N015"/>gefahren vnd wirt heündt wider das erste mahl
       <lb n="N016"/>mit vns eßen, dan die doctor nit es erlauben
-      <lb n="N017"/>wollen, das er soll zue mihr kommen, bis 5 wochen <unclear>sein</unclear>.</p></div><div type="page"><pb facs="#facs_2" n="64 v2" xml:id="Kasten_blau_45_15_0149.jpg"/><p facs="#facs_2_r1">
+      <lb n="N017"/>wollen, das er soll zue mihr kommen, bis 5 wochen <unclear reason="unsichere Lesart">sein</unclear>.</p></div><div type="page"><pb facs="#facs_2" n="64 v2" xml:id="Kasten_blau_45_15_0149.jpg"/><p facs="#facs_2_r1">
       <lb n="N001"/>Die Mhißel ist auch wider woll auf, wahr nuhr ein
       <lb n="N002"/>cattar. Die antwort an Papsten haben ihr Mayestät schon
       <lb n="N003"/>an die höff publiciren laßen. Was ewer Durchlaucht weiters
@@ -262,17 +262,17 @@
       <lb n="N014"/>Wien den 2ten merz 1687</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

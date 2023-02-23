@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="kasten_blau_45_9_0448.xml" xml:base="https://id.acdh.oeaw.ac.at.at/emt" prev="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_9_0444.xml" next="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_9_0450.xml">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="kasten_blau_45_9_0448.xml" xml:base="https://id.acdh.oeaw.ac.at.at/emt" prev="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_9_0444.xml" next="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_9_0454.xml">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -149,7 +149,7 @@
       <lb n="N015"/>von <choice><expan>bruder</expan><abbr>br</abbr></choice> Carl empfangen haben, wans ewer Durchlaucht aber <choice><expan>gnädig</expan><abbr>g</abbr></choice>
       <lb n="N016"/>bef<supplied>e</supplied>hlen, will ich auch die meinige schiken vnd was ich
       <lb n="N017"/>sonst vernemmen werde, gott geb sein gnad. Die türken
-      <lb n="N018"/>stehn bey Offen zwischen 40 vnd 60 <unclear>m</unclear> man stark, woh sie werden
+      <lb n="N018"/>stehn bey Offen zwischen 40 vnd 60 000 man stark, woh sie werden
       <lb n="N019"/>hin gehn, steht zue erwarten, der almechtige wolle verleyen,</p></div><div type="page"><pb facs="#facs_2" n="265 v" xml:id="Kasten_blau_45_9_0449.jpg"/><p facs="#facs_2_r1">
       <lb n="N001"/>wolle verleyen, das alles zue seiner ehr woll abgeh.
       <lb n="N002"/>Due mich in ewer Durchlaucht <choice><expan>gnade</expan><abbr>g</abbr></choice> <choice><expan>vnterdehnigst</expan><abbr>vt</abbr></choice> b<supplied>e</supplied>fehlen vnd werde
@@ -160,17 +160,17 @@
       <lb n="N007"/>Wien den 26ten julij 1685</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="kasten_blau_45_9_0391.xml" xml:base="https://id.acdh.oeaw.ac.at.at/emt" prev="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_9_0389.xml" next="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_9_0394.xml">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="kasten_blau_45_9_0391.xml" xml:base="https://id.acdh.oeaw.ac.at.at/emt" prev="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_9_0388.xml" next="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_9_0394.xml">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -162,7 +162,7 @@
    <body>
   <div type="page"><pb facs="#facs_1" n="232 r" xml:id="Kasten_blau_45_9_0391.jpg"/><p facs="#facs_1_r1">
       <lb n="N001"/>Durchleüchtiger Fürst, herzallerliebster herr vatter
-      <lb n="N002"/>Dero bede <choice><expan>gnädige</expan><abbr>g</abbr></choice> geschreiben vom 21 passato <unclear>vnd</unclear> 22ten hab
+      <lb n="N002"/>Dero bede <choice><expan>gnädige</expan><abbr>g</abbr></choice> geschreiben vom 21 passato <unclear reason="unsichere Lesart wegen Korrektur">vnd</unclear> 22ten hab
       <lb n="N003"/>mit schuldichstem respect erbrochen. Frewt mich woll von
       <lb n="N004"/>herzen, ewer Durchlaucht guetten wohlstandt zue vernemmen vnd
       <lb n="N005"/>das ewer Durchlaucht einige vergnüegung gehabt ab der <choice><expan>gnade</expan><abbr>g</abbr></choice>, die
@@ -213,17 +213,17 @@
       <lb n="N012"/>Wien den 4ten des iahrs 1685</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

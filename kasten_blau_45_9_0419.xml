@@ -159,7 +159,7 @@
       <lb n="N015"/>kleine auch ein cattar. Seint wohl
       <lb n="N016"/>grobe kattar, sie haben offt gehuest, das gewis <supplied>gewesen bin</supplied>
       <lb n="N017"/>sie erstiken. Wegen des Reichenbach wirt mit</p></div><div type="page"><pb facs="#facs_2" n="249 v" xml:id="Kasten_blau_45_9_0420.jpg"/><p facs="#facs_2_r1">
-      <lb n="N001"/>mit nechstem <unclear>das</unclear> decret wegen des Reichenbach
+      <lb n="N001"/>mit nechstem <unclear reason="unsichere Lesart wegen Korrektur">das</unclear> decret wegen des Reichenbach
       <lb n="N002"/>schiken. Der Hamilton hatt niks gewist von
       <lb n="N003"/>dem, was ich geschrieben, vnd hatt allezeit
       <lb n="N004"/>verlangt ins felt zue gehn. Befehl
@@ -180,17 +180,17 @@
       <lb n="N019"/>bloße, dan der Fürst, mein ich, wirt schon schlaffen.</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

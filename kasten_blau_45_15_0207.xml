@@ -213,7 +213,7 @@
       <lb n="N003"/>hirsch gefangen, zimlich guett, aber nit extra feist.
       <lb n="N004"/>Der große hatt 430 <choice><expan>Pfund</expan><abbr>lb</abbr></choice> gewogen. Bitt nochmahlen <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice>, ewer Durchlaucht
       <lb n="N005"/>wollen sich nit entschuldigen wegen des schreiben, förcht sonst,
-      <lb n="N006"/>sey in vngnaden. Weil ich aber weis, das ewer <unclear>Durchlaucht</unclear>
+      <lb n="N006"/>sey in vngnaden. Weil ich aber weis, das ewer <unclear reason="offensichtlich sinnentstellende Korruptele: Durchlaucht">Liebden</unclear>
       <lb n="N007"/>iezt vill zueduen haben, will auch ewer Durchlaucht nit
       <lb n="N008"/>lenger mit mein sch<supplied>r</supplied>eiben be<supplied>m</supplied>ühen. Befehl mich <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice>
       <lb n="N009"/>vnd werde sterben
@@ -223,17 +223,17 @@
       <lb n="N013"/>Wien den 29ten jun<supplied>i</supplied>j 1687</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

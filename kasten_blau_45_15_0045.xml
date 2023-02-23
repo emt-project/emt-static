@@ -163,26 +163,26 @@
       <lb n="N004"/>hier müeßen sein, dan wirt die campagne anfangen.
       <lb n="N005"/>Prinz Louis ist ein wakrern herr, aber allein bey Cuhrfürsten,
       <lb n="N006"/>seindt bede etwas jung. Bitt <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> vmb vergebung,
-      <lb n="N007"/>das so wehnig schreib, weil heündt nit <unclear>fr</unclear> eingenommen,
+      <lb n="N007"/>das so wehnig schreib, weil heündt mit <choice><expan>erlaubnis</expan><abbr>er</abbr></choice> eingenommen,
       <lb n="N008"/>so derf nit vill sch<supplied>r</supplied>eiben. Befehl mich <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> vnd werde
       <lb n="N009"/>sterben
       <lb n="N010"/>ewer Durchlaucht
-      <lb n="N011"/><choice><expan>vnterdehnigste</expan><abbr>vnt</abbr></choice> <unclear>trghrs</unclear> d<supplied>o</supplied>chter
+      <lb n="N011"/><choice><expan>vnterdehnigste</expan><abbr>vnt</abbr></choice> <choice><expan>trewgehorsamste</expan><abbr>trghrs</abbr></choice> d<supplied>o</supplied>chter
       <lb n="N012"/>EMT
       <lb n="N013"/>Wien den 18ten aprill 1686</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

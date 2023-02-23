@@ -217,8 +217,8 @@
       <lb n="N014"/>curirt als ordinarius, der Beker aber nuhr
       <lb n="N015"/>darzu kommen, wei<supplied>l</supplied>s so schlim wahr, etlige</p></div><div type="page"><pb facs="#facs_2" n="149 v" xml:id="Kasten_blau_45_15_0283.jpg"/><p facs="#facs_2_r1">
       <lb n="N001"/>dag darnoch zu vns auf Presburg, vnd der
-      <lb n="N002"/>Hertot die cur ausgefürt hatt. <unclear>Die</unclear> meinung
-      <lb n="N003"/><seg type="blackening">dahr</seg> Bekers war aber ganz nit, das er bestendig
+      <lb n="N002"/>Hertot die cur ausgefürt hatt. <unclear reason="unsichere Lesart wegen Korrektur">Die</unclear> meinung
+      <lb n="N003"/><unclear reason="unsichere Lesart wegen Korrektur">doct<supplied>o</supplied>r</unclear> Bekers war aber ganz nit, das er bestendig
       <lb n="N004"/>den wein völlig meiden soll, sondern, das <supplied>er</supplied> woll
       <lb n="N005"/>einen bestendigen wein, neker oder moßler,
       <lb n="N006"/>vnd ein waßer darneben <supplied>trinken soll</supplied>, wie er ihm dan
@@ -288,17 +288,17 @@
       <lb n="N027"/>der Cuhrfürst nit weiter als Venedig werd gehen, er kan mit ihm <supplied>machen</supplied> was er will.</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

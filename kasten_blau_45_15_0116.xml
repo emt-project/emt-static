@@ -217,7 +217,7 @@
       <lb n="N004"/>ers richt, dan ich förcht, Engelant sei mit Frankr<supplied>e</supplied>ich
       <lb n="N005"/>verstanden. Wegen der comedi, so ewer Durchlaucht verlangen,
       <lb n="N006"/>hab ichs schon das dem Minati geben, er versteht aber
-      <lb n="N007"/>nit recht wegen der <unclear>schenen</unclear> oder verendrungen. Mein
+      <lb n="N007"/>nit recht wegen der schemen oder verendrungen. Mein
       <lb n="N008"/>brueder wirt es ewer Durchlaucht schon sagen, wie mans ihm
       <lb n="N009"/>zumb besten bedeüten kan, er wirt sich darnach gleich
       <lb n="N010"/>dran sezen. Heündt haben mihr den walischen prediger
@@ -234,17 +234,17 @@
       <lb n="N021"/>das ihr Mayestät auf die Wind<supplied>i</supplied>schgräz gemacht.</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>

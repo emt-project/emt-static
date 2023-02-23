@@ -1,2 +1,6 @@
 path,error
-no faulty files found,good job!
+kasten_blau_45_15_0111.xml,"Specification mandates value for attribute type, line 211, column 63 (kasten_blau_45_15_0111.xml, line 211)"
+kasten_blau_45_15_0161.xml,"Opening and ending tag mismatch: type line 210 and typecomment, line 210, column 177 (kasten_blau_45_15_0161.xml, line 210)"
+kasten_blau_45_9_0389.xml,"Specification mandates value for attribute type, line 151, column 69 (kasten_blau_45_9_0389.xml, line 151)"
+kasten_blau_45_9_0426.xml,"Specification mandates value for attribute comment, line 181, column 48 (kasten_blau_45_9_0426.xml, line 181)"
+kasten_blau_45_9_0450.xml,"Specification mandates value for attribute type, line 222, column 35 (kasten_blau_45_9_0450.xml, line 222)"

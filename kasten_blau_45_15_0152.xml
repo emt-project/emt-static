@@ -156,7 +156,7 @@
       <lb n="N013"/>er werde schon glükhlich bey ewer Durchlaucht ange-
       <lb n="N014"/>langt sein. Wegen Meins vnd wegen der
       <lb n="N015"/>cerimonialen der portugeßer werden ewer Durchlaucht
-      <lb n="N016"/>schon antwort von ihr Mayestät mein <choice><expan>gnädigsten</expan><abbr><unclear>g</unclear></abbr></choice> Kaiser</p></div><div type="page"><pb facs="#facs_2" n="66 v2" xml:id="Kasten_blau_45_15_0153.jpg"/><p facs="#facs_2_r1">
+      <lb n="N016"/>schon antwort von ihr Mayestät mein <choice><expan>gnädigsten</expan><abbr>g</abbr></choice> Kaiser</p></div><div type="page"><pb facs="#facs_2" n="66 v2" xml:id="Kasten_blau_45_15_0153.jpg"/><p facs="#facs_2_r1">
       <lb n="N001"/>empfangen haben. Der Speroni wirt den ersten
       <lb n="N002"/>act völlich mit brengen vnd auch die in-
       <lb n="N003"/>formation wegen der windt. Sie eilen was sie
@@ -178,17 +178,17 @@
       <lb n="N019"/>Wien den 18ten merz 1687</p></div>
 </body>
 
-   <back><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>
