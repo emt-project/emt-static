@@ -122,20 +122,20 @@
       <lb n="N006"/>deroselben deren noch ohne zahl mit bestem wohlsta<supplied>n</supplied>d
       <lb n="N007"/>vnd allem erdenkligen wolergehen erleben laßen
       <lb n="N008"/>zue vnser aller trost vnd mich darbey in dero
-      <lb n="N009"/>gnad erhalten, als dienige, so <unclear>sterben</unclear> wirt
+      <lb n="N009"/>gnad erhalten, als dienige, so <unclear reason="unsichere Lesart wegen Korrektur">sterben</unclear> wirt
       <lb n="N010"/>ewer Durchlaucht
       <lb n="N011"/>vnt <choice><expan>trewgehorsamste</expan><abbr>trwghos</abbr></choice> do<supplied>c</supplied>hter
       <lb n="N012"/>EMT
-      <lb n="N013"/><unclear>Laxenburg</unclear> 29ten apprill 1688</p></div>
+      <lb n="N013"/><unclear reason="unsichere Lesart wegen Korrektur">Laxenburg</unclear> 29ten apprill 1688</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__50">
+   <back><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__31">
                   <placeName>Laxenburg</placeName>

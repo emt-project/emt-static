@@ -179,7 +179,7 @@
       <lb n="N009"/>hab. Mit disem due ich mich ewer Durchlaucht <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice>
       <lb n="N010"/>bef<supplied>e</supplied>hlen vnd werde ste<supplied>r</supplied>ben
       <lb n="N011"/>ewer Durchlaucht
-      <lb n="N012"/><unclear>ewer Durchlaucht</unclear>
+      <lb n="N012"/>ewer <unclear reason="offensichtlich sinnentstellende Korruptele: Durchlaucht">Liebden</unclear>
       <lb n="N013"/><choice><expan>vnterdehnigste</expan><abbr>vt</abbr></choice> <choice><expan>treügehorsamste</expan><abbr>trewgehors</abbr></choice> do<supplied>c</supplied>hter
       <lb n="N014"/>EMT
       <lb n="N015"/>Wien den 25ten junij 1688
@@ -199,13 +199,13 @@
       <lb n="N008"/>Cuhrfürst darzue.</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__50">
+   <back><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__63">
                   <placeName>Wien</placeName>

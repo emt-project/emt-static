@@ -133,7 +133,7 @@
       <lb n="N003"/>schuldichkeit nit vnterlaßen wollen, ewer Durchlaucht
       <lb n="N004"/>mit meinen <choice><expan>vnterdehnigsten</expan><abbr>vd</abbr></choice> zeilen zue bedienen,
       <lb n="N005"/>verhoffendt, sie werden sich in bestem wohlstand
-      <lb n="N006"/>befinden. Weil er ewer Durchlaucht so woll <unclear>meiner</unclear>
+      <lb n="N006"/>befinden. Weil er ewer Durchlaucht so woll <unclear reason="unsichere Lesart wegen Korrektur">meiner</unclear>
       <lb n="N007"/><add><choice><expan>vnterdehnigsten</expan><abbr>vnt</abbr></choice> deuotion versichern wirt als auch wegen</add>
       <lb n="N008"/>Beyren vnd in der cöllnischen sach in allem infor-
       <lb n="N009"/>miren wirt, also will ich ewer Durchlaucht nit weiters
@@ -149,13 +149,13 @@
       <lb n="N006"/>Wien den 25ten j<supplied>u</supplied>nij 1688</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__50">
+   <back><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__63">
                   <placeName>Wien</placeName>

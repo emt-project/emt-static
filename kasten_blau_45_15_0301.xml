@@ -145,7 +145,7 @@
       <lb n="N011"/>galantes festel gehabt, mues woll schön gewesen
       <lb n="N012"/>sein. Gottlob, das der Deutschmeister wider so beßer
       <lb n="N013"/>wirt, freüdt mich von herzen. Von des <choice><expan>bruder</expan><abbr>b</abbr></choice> Carl seiner
-      <lb n="N014"/>heirat hör ich niks, <unclear>so</unclear> wirt er gewis die campagna
+      <lb n="N014"/>heirat hör ich niks, sowirt er gewis die campagna
       <lb n="N015"/>duen, die dame wirt biß dorthin schon wekh sein.</p></div><div type="page"><pb facs="#facs_2" n="161 v" xml:id="Kasten_blau_45_15_0302.jpg"/><p facs="#facs_2_r1">
       <lb n="N001"/>Die ander, hoff ich, werd auch balt hochzeit haben.
       <lb n="N002"/>Mus enden wider mein willen, bef<supplied>e</supplied>hl mich <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice>
@@ -160,13 +160,13 @@
       <lb n="N011"/>pretext der cölnischen sach.</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__50">
+   <back><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__63">
                   <placeName>Wien</placeName>

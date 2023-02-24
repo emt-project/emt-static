@@ -256,7 +256,7 @@
       <lb n="N010"/>zum Cuhrfürsten, eins vnd andres in disem
       <lb n="N011"/>cölnischen werkh zue aiustiren, wie der
       <lb n="N012"/>Hoffcanzler ewer Durchlaucht alles wirt bericht
-      <lb n="N013"/>haben, <unclear>auch</unclear> was man sonst in diser sach hatt
+      <lb n="N013"/>haben, auch was man sonst in diser sach hatt
       <lb n="N014"/>gedahn, auf den ich mich bezie, ewer Durchlaucht nit
       <lb n="N015"/>mit dem widerholung zue bemühen. Due mich
       <lb n="N016"/>in dero <choice><expan>gnade</expan><abbr>g</abbr></choice> <choice><expan>vnterdehnigst</expan><abbr>vnt</abbr></choice> befehlen, die ich ste<supplied>r</supplied>ben werd
@@ -266,13 +266,13 @@
       <lb n="N020"/>Wien den 25ten iulij 1688</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               <person xml:id="emt_person_id__50">
+   <back><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               <person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__63">
                   <placeName>Wien</placeName>
