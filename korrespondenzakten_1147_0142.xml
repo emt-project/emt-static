@@ -159,7 +159,11 @@
       <lb n="N006"/>Laxenbu<supplied>r</supplied>g den 7ten maij 1695</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__18">
+   <back><listPlace><place xml:id="emt_place_id__31">
+                  <placeName>Laxenburg</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772810/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__18">
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
@@ -167,9 +171,5 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__31">
-                  <placeName>Laxenburg</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772810/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>
