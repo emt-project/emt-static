@@ -309,13 +309,13 @@
                <lb n="N025"/>gott, an meinem fleis werde nichts ermanglen laßen. Will ihr Durchlaucht fleisig alles berichten,
                <lb n="N026"/>was mit ihme wert gerett haben. Auf dieses <choice><expan>Postscriptum</expan><abbr>PS</abbr></choice> bitte durch <choice><expan>Pater</expan><abbr>P<rs type="person"/></abbr></choice><rs type="person"> <choice><expan>Danner</expan><abbr>D</abbr></choice></rs> mihr zu anworten.
             </p></div></body>
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
                </listPerson></back></text>
 </TEI>
