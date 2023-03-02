@@ -186,7 +186,7 @@
       <lb n="N018"/>werd alles ausfürlich schreiben oder durch den
       <lb n="N019"/>Hoffkanzler berichten laßen. Im haubt werk g<supplied>i</supplied>bt</p></div><div type="page"><pb facs="#facs_3" n="74 r" xml:id="Kasten_blau_45_15_0676.jpg"/><p facs="#facs_3_r2">
       <lb n="N001"/>sonst gibt hier ganz niks zue berichten. Heündt
-      <lb n="N002"/><unclear>halten</unclear> <unclear>ein</unclear> oratori, singens meine freülen in der
+      <lb n="N002"/><unclear reason="unsichere Lesart wegen Korrektur">halten</unclear> <unclear reason="unsichere Lesart wegen Korrektur">ein</unclear> oratori, singens meine freülen in der
       <lb n="N003"/>cammer. Due zue disen dag nochmahlen in
       <lb n="N004"/>aller <choice><expan>vnterdehnigkeit</expan><abbr>vnt</abbr></choice> allen segen von gott mitt villen
       <lb n="N005"/>volgenden herzinnglist anwüntschen vnd mich
@@ -197,13 +197,13 @@
       <lb n="N010"/>Wien den 1 maij 1689</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__63">
                   <placeName>Wien</placeName>

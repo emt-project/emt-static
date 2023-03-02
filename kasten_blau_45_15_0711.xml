@@ -1,4 +1,4 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="kasten_blau_45_15_0711.xml" xml:base="https://id.acdh.oeaw.ac.at.at/emt" prev="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_15_0707.xml" next="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_15_0713.xml">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="kasten_blau_45_15_0711.xml" xml:base="https://id.acdh.oeaw.ac.at.at/emt" prev="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_15_0704.xml" next="https://id.acdh.oeaw.ac.at.at/emt/kasten_blau_45_15_0713.xml">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -180,17 +180,17 @@
       <lb n="N021"/>Laxenburg den 5ten jun<supplied>i</supplied>j 1689</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__31">
+   <back><listPlace><place xml:id="emt_place_id__31">
                   <placeName>Laxenburg</placeName>
                   <idno type="GEONAMES">https://sws.geonames.org/2772810/</idno>
                </place>
-               </listPlace></back></text>
+               </listPlace><listPerson><person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson></back></text>
 </TEI>

@@ -153,17 +153,17 @@
       <lb n="N005"/><seg type="blackening">getre<supplied>w</supplied>ste vnd dienstwillige</seg>
       <lb n="N006"/><seg type="blackening">mutter</seg>
       <lb n="N007"/>Eleonora Magdalena Ther<supplied>e</supplied>sia
-      <lb n="N008"/>inn der <unclear>Kon<supplied>i</supplied>gin Closter</unclear> den 25t<supplied>en</supplied>
+      <lb n="N008"/>inn der Kon<supplied>i</supplied>gin Closter den 25t<supplied>en</supplied>
       <lb n="N009"/>maij 1690</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__63">
                   <placeName>Wien</placeName>

@@ -181,7 +181,7 @@
       <lb n="N005"/>Solte aber die resolution nit guet sein, des Öting negotia
       <lb n="N006"/>auch erfordern, das die reis ins Reich noch verschoben
       <lb n="N007"/>wurde, so verlangen ihr Mayestät auf alle weis, ewer
-      <lb n="N008"/>Durchlaucht hier zue sehn vnd ich mit dero höchst <unclear>verlangeten</unclear>
+      <lb n="N008"/>Durchlaucht hier zue sehn vnd ich mit dero höchst <unclear reason="unsichere Lesart wegen Korrektur">verlangeten</unclear>
       <lb n="N009"/>gegenwart erfreüt werden möge. So balt der von Oting
       <lb n="N010"/>von Erfort aus berichten wirt, was in dem haubtwerkh zue
       <lb n="N011"/>hoffen, in dißen wie auch wegen meines <choice><expan>herrn</expan><abbr>h</abbr></choice> brudern heirat po<supplied>r</supplied>tugesisch,
@@ -206,13 +206,13 @@
       <lb n="N008"/>Wien den 12ten junij 1689</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__63">
                   <placeName>Wien</placeName>

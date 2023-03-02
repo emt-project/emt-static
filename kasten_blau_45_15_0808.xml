@@ -147,7 +147,7 @@
       <lb n="N008"/>langen dag vnd üblen weg überstanden, gott sey
       <lb n="N009"/>gedankt. Disen mitag seint mihr dise schr<supplied>e</supplied>iben
       <lb n="N010"/>von vnserer Königin in Schpanien zue kommen.
-      <lb n="N011"/>Der Deütschmeister <unclear>beförcht</unclear> sich in <unclear>brif</unclear> noch aufgehalden
+      <lb n="N011"/>Der Deütschmeister <unclear reason="unsichere Lesart wegen Korrektur">beförcht</unclear> sich in <unclear reason="unsichere Lesart">brif</unclear> noch aufgehalden
       <lb n="N012"/>zue sein, weil sich der windt verendert hatt, aber
       <lb n="N013"/>das eine paquet vom 27ten, welches der Crampre<supplied>c</supplied>ht
       <lb n="N014"/>accusirt, an welchem dag sie abgesegelt, haben
@@ -170,13 +170,13 @@
       <lb n="N016"/>Lambach den 21ten <choice><expan>Februarij</expan><abbr>feb</abbr></choice> 1690</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
                </listPerson></back></text>
 </TEI>

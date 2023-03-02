@@ -149,7 +149,7 @@
    <text type="letter">
    <body>
   <div type="page"><pb facs="#facs_1" n="144 r" xml:id="Kasten_blau_44_6_0225.jpg"/><p facs="#facs_1_r1">
-      <lb n="N001"/><unclear>31. maij 94</unclear>
+      <lb n="N001"/><unclear reason="Aktenvermerk">31. maij 94</unclear>
       <lb n="N002"/>Durchleüchtiger Cuhrfürst, mein herzallerlibster
       <lb n="N003"/>her bruder. Es wirt mitt nechstem ein
       <lb n="N004"/>courir volgen mit was hier auf dero Liebden lezter
@@ -189,7 +189,11 @@
       <lb n="N013"/>Eleonora</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
+   <back><listPlace><place xml:id="emt_place_id__31">
+                  <placeName>Laxenburg</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772810/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
@@ -197,9 +201,5 @@
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__31">
-                  <placeName>Laxenburg</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772810/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

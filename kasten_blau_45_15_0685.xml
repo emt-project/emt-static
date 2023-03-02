@@ -198,7 +198,7 @@
       <lb n="N013"/>erwarten. Also ist pro nunc vohr den liebsten
       <lb n="N014"/>Deütschmeister niks in disem zue duen, bis man
       <lb n="N015"/>sicht, wie es auschlagen wirt. Er zeigt sich gahr eifrig
-      <lb n="N016"/>vndt hatt ihr Mayestät selbsten gahr <unclear>inständig</unclear> gebetten balt
+      <lb n="N016"/>vndt hatt ihr Mayestät selbsten gahr <unclear reason="unsichere Lesart wegen Korrektur">inständig</unclear> gebetten balt
       <lb n="N017"/>ins Reich zue reißen, damit ihr Mayestät denen milita-
       <lb n="N018"/>rischen opperationen desto neheter sein möchten,
       <lb n="N019"/>hatt sich auch in dem haubt werkh gahr woll
@@ -231,17 +231,17 @@
       <lb n="N025"/>Laxenburg den 8ten maij 1689</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__31">
+   <back><listPlace><place xml:id="emt_place_id__31">
                   <placeName>Laxenburg</placeName>
                   <idno type="GEONAMES">https://sws.geonames.org/2772810/</idno>
                </place>
-               </listPlace></back></text>
+               </listPlace><listPerson><person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson></back></text>
 </TEI>

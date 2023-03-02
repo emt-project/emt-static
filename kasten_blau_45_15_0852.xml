@@ -236,20 +236,20 @@
       <lb n="N020"/>ewer Durchlaucht
       <lb n="N021"/><choice><expan>vnterdehnigste</expan><abbr>vt</abbr></choice> tr<supplied>ew</supplied>g<supplied>e</supplied>horsa<supplied>m</supplied>ste d<supplied>oc</supplied>hter
       <lb n="N022"/>Eleonora
-      <lb n="N023"/><unclear>Laxenburg</unclear> den 4ten maij 1690</p></div>
+      <lb n="N023"/>Laxenburg den 4ten maij 1690</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__31">
+   <back><listPlace><place xml:id="emt_place_id__31">
                   <placeName>Laxenburg</placeName>
                   <idno type="GEONAMES">https://sws.geonames.org/2772810/</idno>
                </place>
-               </listPlace></back></text>
+               </listPlace><listPerson><person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson></back></text>
 </TEI>

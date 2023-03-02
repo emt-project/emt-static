@@ -207,7 +207,7 @@
       <lb n="N007"/>mit den er content möge sein. Man mus sich halt
       <lb n="N008"/>in allem informiren. Aus Portugal hab ich auch
       <lb n="N009"/>wider ein brif, in welchem sie sehr andreibt. Es
-      <lb n="N010"/>ist halt, das die posten so <unclear>langhin</unclear> haben, der weg
+      <lb n="N010"/>ist halt, das die posten so langehin haben, der weg
       <lb n="N011"/>ist weit, sie hatt dis brief von ewer Durchlaucht noch
       <lb n="N012"/>nit haben können, dan sie noch nit einmahl mein
       <lb n="N013"/>niderkunft gewust hatt. Bitt <choice><expan>vnterdehnigst</expan><abbr>vd</abbr></choice> vmb vergebung,
@@ -221,13 +221,13 @@
       <lb n="N021"/>Wien den 16ten junij 1689</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__63">
                   <placeName>Wien</placeName>

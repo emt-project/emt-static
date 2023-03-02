@@ -156,7 +156,7 @@
       <lb n="N001"/>erst aus Engelandt sey, vnd die Königin sey mit
       <lb n="N002"/>gutem windt abgesegelt. Hingegen geben die
       <lb n="N003"/>heüntigen brief, das sie den 20ten noch dort wahr,
-      <lb n="N004"/>aber sie meineten, weils gueter <unclear>wind</unclear>, werds balt abfahren,
+      <lb n="N004"/>aber sie meineten, weils gueter <supplied>wind</supplied>, werds balt abfahren,
       <lb n="N005"/>so wißen nit, was glauben sollen. Dise dag sein mihr
       <lb n="N006"/>zue Laxenburg gewest, aber der windt hatt die
       <lb n="N007"/>beys verhindert. Vohrgestren war ein fuxbrellen, ist
@@ -173,13 +173,13 @@
       <lb n="N018"/>zum schreiben.</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__63">
                   <placeName>Wien</placeName>

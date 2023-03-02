@@ -185,7 +185,7 @@
       <lb n="N005"/>dag gahr schön, haben auch gestren vnd heündt schöne reiger,
       <lb n="N006"/>auch gahr ein schön milan gefangen, deren es so wehnich
       <lb n="N007"/>gibt, das man offt in 8 dag nit einen sicht. Heündt
-      <lb n="N008"/>ist der <unclear>I</unclear> Beyern gewesen, die hochzeit hatt könftigen
+      <lb n="N008"/>ist der <unclear reason="unklare Abkürzung">I</unclear> Beyern gewesen, die hochzeit hatt könftigen
       <lb n="N009"/>sontag sein sollen. Weil mihr aber selbigen dag auf
       <lb n="N010"/>Wien müeßen wegen einer prozeßion vnd hoffen, auch
       <lb n="N011"/>zugleich dort selbigen dag das tedeum wegen Stuel-
@@ -211,17 +211,17 @@
       <lb n="N008"/>EMT</p></div><div type="page"><pb facs="#facs_4" n="4" xml:id="Kasten_blau_44_2b_0008.jpg"/></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
-                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
-                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
-               </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__31">
+   <back><listPlace><place xml:id="emt_place_id__31">
                   <placeName>Laxenburg</placeName>
                   <idno type="GEONAMES">https://sws.geonames.org/2772810/</idno>
                </place>
-               </listPlace></back></text>
+               </listPlace><listPerson><person xml:id="emt_person_id__9">
+                  <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
+                  <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
+               </person>
+               </listPerson></back></text>
 </TEI>

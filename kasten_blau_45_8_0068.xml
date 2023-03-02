@@ -207,13 +207,13 @@
                <lb n="N003"/>befehl hierüber, was ihr antworten soll oder was darin duen soll.
                <lb n="N004"/>Bitte auf dieses post schriptum nit oder durch <choice><expan>Pater</expan><abbr>P<rs type="person"/></abbr></choice><rs type="person"> <choice><expan>Danner</expan><abbr>D</abbr></choice></rs> zu anworten.
             </p></div></body>
-   <back><listPerson><person xml:id="emt_person_id__50">
-                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
-                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
-               </person>
-               <person xml:id="emt_person_id__9">
+   <back><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
+               </person>
+               <person xml:id="emt_person_id__50">
+                  <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
+                  <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
                </listPerson><listPlace><place xml:id="emt_place_id__63">
                   <placeName>Wien</placeName>
