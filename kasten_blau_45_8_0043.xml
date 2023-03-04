@@ -131,11 +131,7 @@
                <lb n="N014"/>eins vndt anderst steht deßen, was ihr Durchlaucht
                <lb n="N015"/>von mihr <choice><expan>gnädigst</expan><abbr>g</abbr></choice> verlanget.
             </p></div></body>
-   <back><listPlace><place xml:id="emt_place_id__31">
-                  <placeName>Laxenburg</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2772810/</idno>
-               </place>
-               </listPlace><listPerson><person xml:id="emt_person_id__50">
+   <back><listPerson><person xml:id="emt_person_id__50">
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
@@ -143,5 +139,9 @@
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
-               </listPerson></back></text>
+               </listPerson><listPlace><place xml:id="emt_place_id__31">
+                  <placeName>Laxenburg</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2772810/</idno>
+               </place>
+               </listPlace></back></text>
 </TEI>
