@@ -149,7 +149,11 @@
       <lb n="N006"/>Wien den 25ten j<supplied>u</supplied>nij 1688</p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
+   <back><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
@@ -157,9 +161,5 @@
                   <persName>PW - Philipp Wilhelm von Pfalz-Neuburg</persName>
                   <idno type="GND">https://d-nb.info/gnd/118742221</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>

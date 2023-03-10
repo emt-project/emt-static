@@ -213,7 +213,11 @@
                <lb n="N019"/>Bitt nochmahlen balt ein antwort, wohin die <unclear>M</unclear> <choice><expan>Anna</expan><abbr>A</abbr></choice> <choice><expan>Magdalena</expan><abbr>M</abbr></choice>
                <lb n="N020"/>zu schik<supplied>en</supplied> hab.
             </p></div></body>
-   <back><listPerson><person xml:id="emt_person_id__9">
+   <back><listPlace><place xml:id="emt_place_id__63">
+                  <placeName>Wien</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
@@ -221,9 +225,5 @@
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__63">
-                  <placeName>Wien</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2761369/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>
