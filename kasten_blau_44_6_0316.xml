@@ -215,7 +215,7 @@
       <lb n="N014"/>aussrichtung zugewachsen wäre,
       <lb n="N015"/>so guetmuetig vbernommen, zu allergstem
       <lb n="N016"/>gefallen, vnd zu einem abermahligen
-      <lb n="N017"/>wesentlichen <unclear>ernzeichen</unclear> gereichen, meiner
+      <lb n="N017"/>wesentlichen ernzeichen gereichen, meiner
       <lb n="N018"/>ihrer kayserl. May., meinem allergsten
       <lb n="N019"/>Kayser vnd herren, vnd e. kayserl.
       <lb n="N020"/>May. zutragendter
@@ -286,7 +286,11 @@
       <lb n="N028"/></p></div>
 </body>
 
-   <back><listPerson><person xml:id="emt_person_id__9">
+   <back><listPlace><place xml:id="emt_place_id__13">
+                  <placeName>Düsseldorf</placeName>
+                  <idno type="GEONAMES">https://sws.geonames.org/2934246/</idno>
+               </place>
+               </listPlace><listPerson><person xml:id="emt_person_id__9">
                   <persName>EMT - Eleonora Magdalena von Pfalz-Neuburg, Kaiserin</persName>
                   <idno type="GND">https://d-nb.info/gnd/101026641</idno>
                </person>
@@ -294,9 +298,5 @@
                   <persName>JW - Johann Wilhelm von der Pfalz</persName>
                   <idno type="GND">https://d-nb.info/gnd/118712411</idno>
                </person>
-               </listPerson><listPlace><place xml:id="emt_place_id__13">
-                  <placeName>Düsseldorf</placeName>
-                  <idno type="GEONAMES">https://sws.geonames.org/2934246/</idno>
-               </place>
-               </listPlace></back></text>
+               </listPerson></back></text>
 </TEI>
