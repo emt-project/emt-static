@@ -29,7 +29,7 @@ ihb_owner = """
 ihb_owner_graph = Graph().parse(data=ihb_owner)
 
 
-files = sorted(glob.glob("data/editions/*.xml"))[100:105]
+files = sorted(glob.glob("data/editions/*.xml"))[:5]
 for x in tqdm(files):
     doc = TeiReader(x)
     cur_col_id = os.path.split(x)[-1].replace(".xml", "")
