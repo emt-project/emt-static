@@ -188,6 +188,7 @@
     acdh:isPartOf <https://id.acdh.oeaw.ac.at/emt> ;
     acdh:hasLicensor <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
     acdh:hasLicensor <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
+    acdh:hasOwner <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
     acdh:hasRightsHolder <https://id.acdh.oeaw.ac.at/oeaw> . # ÖAW
 
 <https://id.acdh.oeaw.ac.at/emt/indices> a acdh:Collection ;
@@ -196,6 +197,7 @@
     acdh:isPartOf <https://id.acdh.oeaw.ac.at/emt> ;
     acdh:hasLicensor <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
     acdh:hasLicensor <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
+    acdh:hasOwner <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
     acdh:hasRightsHolder <https://id.acdh.oeaw.ac.at/oeaw> . # ÖAW
 
 <https://id.acdh.oeaw.ac.at/emt/project> a acdh:Project ;
