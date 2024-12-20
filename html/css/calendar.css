@@ -5,6 +5,7 @@
     --emt_person_id__18: #0d13ba;
     --emt_person_id__50: #288217;
     --Brief_erschlossen: #718355;
+    --menioned_letter_pw: #29821769;
     --mehrere_briefe: #52525b;
 }
 
@@ -88,6 +89,10 @@ acdh-ch-calendar-year td>button[data-event-kinds="Brief_erschlossen"] {
     --calendar-cell-color: var(--Brief_erschlossen)
 }
 
+acdh-ch-calendar-year td>button[data-event-kinds="menioned_letter_pw"] {
+    --calendar-cell-color: var(--menioned_letter_pw)
+}
+
 acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
     --calendar-cell-color: #8b5cf6;
 }
@@ -119,6 +124,10 @@ acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
 
 .mehrere_briefe {
     background-color: var(--mehrere_briefe)
+}
+
+.menioned_letter_pw {
+    background-color: var(--menioned_letter_pw)
 }
 
 /* the legend */

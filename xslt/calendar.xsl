@@ -52,8 +52,12 @@
                                         <span class="dot emt_person_id__50"></span>
                                         <span class="legend-item">Philipp Wilhelm von Pfalz-Neuburg</span>
                                     </li>
-                                    <li><span class="dot emt_person_id__10"></span>
-                                        <span class="legend-item">Elisabeth Amalie von Pfalz-Neuburg</span>
+                                    <li>
+                                        <span class="dot emt_person_id__50"></span>
+                                        <span class="legend-item">Philipp Wilhelm von Pfalz-Neuburg</span>
+                                    </li>
+                                    <li><span class="dot menioned_letter_pw"></span>
+                                        <span class="legend-item">Philipp Wilhelm von Pfalz-Neuburg (erwähnter Brief)</span>
                                     </li>
                                     <li>
                                         <span class="dot Brief_erschlossen"></span>

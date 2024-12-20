@@ -49,22 +49,22 @@ for x in file_list:
         events.append(item)
     else:
         pass
-    # for y in doc.any_xpath("//tei:body//tei:date[@type='letter']"):
-    #     extra_item = {
-    #         "link": False,
-    #         "label": "Brief_erschlossen"
-    #     }
-    #     ex_date = extract_begin_end(y)
-    #     extra_item["date"] = ex_date[0]
-    #     extra_item["kind"] = "Brief_erschlossen"
-    #     extra_item["from"] = ex_date[0]
-    #     extra_item["to"] = ex_date[1]
-    #     extra_item["ref_by"] = f_id
-    #     extra_item["sender"] = {
-    #         "label": "Brief erschlossen",
-    #         "link": "brief_erschlossen.html"
-    #     }
-    #     events.append(extra_item)
+    for y in doc.any_xpath("//tei:body//tei:date[@type='letter']"):
+        extra_item = {
+            "link": False,
+            "label": "erwähnter Brief von Philipp Wilhelm von Pfalz-Neuburg"
+        }
+        ex_date = extract_begin_end(y)
+        extra_item["date"] = ex_date[0]
+        extra_item["kind"] = "menioned_letter_pw"
+        extra_item["from"] = ex_date[0]
+        extra_item["to"] = ex_date[1]
+        extra_item["ref_by"] = f_id
+        extra_item["sender"] = {
+            "label": "erwähnter Brief von Philipp Wilhelm von Pfalz-Neuburg",
+            "link": "pw_brief_erschlossen.html"
+        }
+        events.append(extra_item)
 
 mentioned_letters = requests.get(
     "https://raw.githubusercontent.com/emt-project/emt-entities/refs/heads/main/json_dumps/mentioned_letters.json"

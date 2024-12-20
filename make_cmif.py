@@ -59,7 +59,10 @@ for x in tqdm(files, total=len(files)):
         excluded.add(x)
         continue
     item_label = make_entity_label(item_node.xpath("./*[1]")[0])[0]
-    item_gnd = item_node.xpath("./tei:idno[@type='GND']/text()", namespaces=NSMAP)[0]
+    try:
+        item_gnd = item_node.xpath("./tei:idno[@type='GND']/text()", namespaces=NSMAP)[0]
+    except IndexError:
+        item_gnd = False
     item["receiver_label"] = item_label
     item["receiver_gnd"] = item_gnd
 

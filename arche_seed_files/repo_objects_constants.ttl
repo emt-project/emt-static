@@ -2,10 +2,9 @@
 
 <https://foo/bar> acdh:hasCurator <https://d-nb.info/gnd/1043833846> ;
     acdh:hasContact <https://orcid.org/0000-0002-8621-5162> ;
-    acdh:hasContributor <https://orcid.org/0000-0002-8621-5162>  ,
+    acdh:hasCreator <https://orcid.org/0000-0002-8621-5162>  ,
         <https://orcid.org/0000-0002-8676-3935> ,
         <https://orcid.org/0000-0002-1389-896X> ;
     acdh:hasDepositor <https://orcid.org/0000-0002-8621-5162> ;
     acdh:hasPrincipalInvestigator <https://orcid.org/0000-0002-8621-5162> ;
-    acdh:hasMetadataCreator <https://orcid.org/0000-0002-8621-5162> .
-    
+    acdh:hasMetadataCreator <https://d-nb.info/gnd/1043833846> .

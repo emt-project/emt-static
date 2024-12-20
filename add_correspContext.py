@@ -42,7 +42,7 @@ for x in tqdm(files, total=len(files)):
                 if x != empress_id
             ]
         )
-    )
+    ).replace("_#", "-")
     corresp_names = " und ".join(
         [
             (x.text if x.text is not None else "?")

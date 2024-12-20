@@ -1,0 +1,19 @@
+@prefix acdh: <https://vocabs.acdh.oeaw.ac.at/schema#> .
+@prefix acdhi: <https://id.acdh.oeaw.ac.at/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<https://id.acdh.oeaw.ac.at/emt/title-image.jpg> a acdh:Resource ;
+    acdh:hasTitle """Titelbild zu: Familiensache: Die Korrespondenz der Kaiserin Eleonora Magdalena"""@de ;
+    acdh:hasTitle """Title image for: Family Matters: The Correspondence of Empress Eleonora Magdalena of Pfalz-Neuburg"""@en ;
+    acdh:hasUrl "https://commons.wikimedia.org/wiki/File:Eleonore_of_Pfalz_Neuburg.jpg" ;
+    acdh:isPartOf <https://id.acdh.oeaw.ac.at/emt> ;
+    acdh:isTitleImageOf <https://id.acdh.oeaw.ac.at/emt> ;
+    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/publicdomain-1-0> ;
+    acdh:hasLicensor <https://id.acdh.oeaw.ac.at/none> ;
+    acdh:hasOwner <https://id.acdh.oeaw.ac.at/none> ;
+    acdh:hasCategory <https://vocabs.acdh.oeaw.ac.at/archecategory/image> ;
+    acdh:hasContact <https://orcid.org/0000-0002-8621-5162> ;
+    acdh:hasDepositor <https://orcid.org/0000-0002-8621-5162> ;
+    acdh:hasMetadataCreator <https://d-nb.info/gnd/1043833846> ;
+    acdh:hasRightsHolder <https://id.acdh.oeaw.ac.at/none> .

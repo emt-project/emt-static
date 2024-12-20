@@ -14,7 +14,7 @@ os.makedirs(to_ingest, exist_ok=True)
 g = Graph().parse("arche_seed_files/arche_constants.ttl")
 g_repo_objects = Graph().parse("arche_seed_files/repo_objects_constants.ttl")
 TOP_COL_URI = URIRef("https://id.acdh.oeaw.ac.at/emt")
-APP_URL = "https://emt.acdh-dev.oeaw.ac.at/"
+APP_URL = "https://kaiserin-eleonora.oeaw.ac.at/"
 
 ACDH = Namespace("https://vocabs.acdh.oeaw.ac.at/schema#")
 COLS = [ACDH["TopCollection"], ACDH["Collection"], ACDH["Resource"]]
@@ -32,7 +32,7 @@ for p, o in ihb_owner_graph.predicate_objects():
     g.add((TOP_COL_URI, p, o))
 
 
-files = sorted(glob.glob("data/editions/*.xml"))[:20]
+files = sorted(glob.glob("data/editions/*.xml"))[:5]
 for x in tqdm(files):
     doc = TeiReader(x)
     cur_col_id = os.path.split(x)[-1].replace(".xml", "")
@@ -49,6 +49,15 @@ for x in tqdm(files):
     cur_doc_uri = URIRef(f"{TOP_COL_URI}/{cur_doc_id}")
     g.add((cur_doc_uri, RDF.type, ACDH["Resource"]))
     g.add((cur_doc_uri, ACDH["isPartOf"], cur_col_uri))
+    g.add(
+        (
+            cur_doc_uri,
+            ACDH["hasUrl"],
+            Literal(
+                f"{APP_URL}{cur_doc_id.replace(".xml", ".html")}", datatype=XSD.anyURI
+            ),
+        )
+    )
     g.add(
         (
             cur_doc_uri,
@@ -169,7 +178,13 @@ for x in tqdm(files):
         entity_id = y.xpath("./*[@type='GEONAMES']/text()")[0]
         entity_uri = URIRef(entity_id)
         g.add((entity_uri, RDF.type, ACDH["Place"]))
-        # g.add((entity_uri, ACDH["hasUrl"], Literal(f"{APP_URL}{xml_id}", datatype=XSD.anyURI)))
+        g.add(
+            (
+                entity_uri,
+                ACDH["hasUrl"],
+                Literal(f"{APP_URL}{xml_id}", datatype=XSD.anyURI),
+            )
+        )
         g.add((entity_uri, ACDH["hasTitle"], Literal(entity_title, lang="und")))
         g.add((cur_col_uri, ACDH["hasSpatialCoverage"], entity_uri))
         g.add((cur_doc_uri, ACDH["hasSpatialCoverage"], entity_uri))
@@ -222,6 +237,9 @@ for x in tqdm(files):
         if i != nr_of_images:
             next_uri = URIRef(f"{TOP_COL_URI}/{cur_col_id}___{i + 1:04}.jpg")
             g.add((cur_image_uri, ACDH["hasNextItem"], next_uri))
+        else:
+            next_uri = URIRef(f"{TOP_COL_URI}/{cur_col_id}.xml")
+            g.add((cur_image_uri, ACDH["hasNextItem"], next_uri))
     g.add(
         (
             cur_col_uri,
@@ -272,6 +290,8 @@ for x in COL_URIS:
     for p, o in g_repo_objects.predicate_objects():
         g.add((x, p, o))
 
+g.parse("./arche_seed_files/other_things.ttl")
+
 print("writing graph to file")
 g.serialize("html/arche.ttl")
 
@@ -283,3 +303,25 @@ for x in files_to_ingest:
     _, tail = os.path.split(x)
     new_name = os.path.join(to_ingest, tail)
     shutil.copy(x, new_name)
+
+# following commented lines would add tei-schema to tei files; but this makes the filechecker run taking > 6 hours, and I batch validated the files with oxygen anyways
+# old_string = """<?xml version='1.0' encoding='UTF-8'?>
+# <TEI xmlns="http://www.tei-c.org/ns/1.0" """
+
+# new_string = """<?xml version="1.0" encoding="UTF-8"?>
+# <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+# <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+# <TEI xmlns="http://www.tei-c.org/ns/1.0" """  # noqa:
+
+# # files = sorted(glob.glob("to_ingest/*.xml"))
+
+# # for x in files:
+# #     with open(x, "r", encoding="utf-8") as file:
+# #         content = file.read()
+# #         updated_content = content.replace(old_string, new_string)
+# #     with open(x, "w", encoding="utf-8") as file:
+# #         file.write(updated_content)
+
+
+print(f"copy title image into {to_ingest}")
+shutil.copy("./html/bio-pics/emt_person_id__9.jpg", os.path.join(to_ingest, "title-image.jpg"))

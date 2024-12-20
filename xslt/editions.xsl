@@ -75,7 +75,7 @@
                                         />
                                     </xsl:variable>
                                     <xsl:variable name="openSeadragonId">
-                                        <xsl:value-of select="concat('os-id-', substring((./tei:pb/@facs)[1], 7))"/>
+                                        <xsl:value-of select="concat('os-id-', substring((tokenize(./tei:pb/@facs, ' ')[1])[1], 7))"/>
                                     </xsl:variable>
                                     <xsl:variable name="rotation">
                                         <xsl:value-of select="data(./tei:pb/@rend)"/>
@@ -87,6 +87,7 @@
                                             <div class="float-end">
                                                 <h5>
                                                     <xsl:value-of select="$pbFolio"/>
+                                                    <xsl:value-of select="$openSeadragonId"/>
                                                 </h5>
                                             </div>
                                         </div>
