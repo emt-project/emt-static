@@ -40,7 +40,7 @@
     acdh:isMemberOf <https://id.acdh.oeaw.ac.at/oeawihb> .
 
 <https://orcid.org/0000-0002-1389-896X> a acdh:Person ;
-    acdh:hasTitle "Spitzbart, Anna"@de .
+    acdh:hasTitle "Spitzbart, Anna"@de ;
     acdh:hasIdentifier <https://id.acdh.oeaw.ac.at/aspitzbart> ;
     acdh:hasTitle "Anna Spitzbart"@und ;
     acdh:hasFirstName "Anna"@und ;
@@ -166,23 +166,37 @@
     acdh:hasSpatialCoverage <https://sws.geonames.org/2510769/> ;
     acdh:hasSpatialCoverage <https://sws.geonames.org/3175395/> ;
     acdh:hasSpatialCoverage <https://sws.geonames.org/798544/> ;
-    acdh:hasSpatialCoverage <https://sws.geonames.org/719819/> .
+    acdh:hasSpatialCoverage <https://sws.geonames.org/719819/> ;
+
+    acdh:hasLicensor <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
+    acdh:hasLicensor <https://d-nb.info/gnd/1014584-9> ; #  Generallandesarchiv Karlsruhe 
+    acdh:hasLicensor <https://id.acdh.oeaw.ac.at/none> ; # no rights holder
+
+    acdh:hasRightsHolder <https://id.acdh.oeaw.ac.at/oeaw> ; # ÖAW
+    acdh:hasRightsHolder <https://d-nb.info/gnd/1014584-9> ; #  Generallandesarchiv Karlsruhe
+    acdh:hasRightsHolder <https://id.acdh.oeaw.ac.at/none> ; # no rights holder
+
+    acdh:hasOwner <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
+    acdh:hasOwner <https://d-nb.info/gnd/1014584-9> ; #  Generallandesarchiv Karlsruhe 
+    acdh:hasOwner <https://d-nb.info/gnd/2005486-5> ; # Bayerisches Hauptstaatsarchiv 
+    acdh:hasOwner <https://id.acdh.oeaw.ac.at/khm> . # Kunsthistorisches Museum Wien
+
 
 <https://id.acdh.oeaw.ac.at/emt/meta> a acdh:Collection ;
     acdh:hasTitle """Paratexte und Kurzbiographien"""@de ;
     acdh:hasTitle """Paratexts and short biographies"""@en ;
     acdh:isPartOf <https://id.acdh.oeaw.ac.at/emt> ;
-    acdh:hasLicensor <https://d-nb.info/gnd/1202798799> ;
-    acdh:hasOwner <https://d-nb.info/gnd/1202798799> ;
-   acdh:hasRightsHolder <https://id.acdh.oeaw.ac.at/oeaw> .
+    acdh:hasLicensor <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
+    acdh:hasLicensor <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
+    acdh:hasRightsHolder <https://id.acdh.oeaw.ac.at/oeaw> . # ÖAW
 
 <https://id.acdh.oeaw.ac.at/emt/indices> a acdh:Collection ;
     acdh:hasTitle """Registerdaten"""@de ;
     acdh:hasTitle """Indices"""@en ;
     acdh:isPartOf <https://id.acdh.oeaw.ac.at/emt> ;
-    acdh:hasLicensor <https://d-nb.info/gnd/1202798799> ;
-    acdh:hasOwner <https://d-nb.info/gnd/1202798799> ;
-    acdh:hasRightsHolder <https://id.acdh.oeaw.ac.at/oeaw> .
+    acdh:hasLicensor <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
+    acdh:hasLicensor <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
+    acdh:hasRightsHolder <https://id.acdh.oeaw.ac.at/oeaw> . # ÖAW
 
 <https://id.acdh.oeaw.ac.at/emt/project> a acdh:Project ;
     acdh:hasTitle """Familiensache. Dynastische Handlungsspielräume von Frauen"""@de ;
