@@ -24,7 +24,6 @@ ihb_owner = """
 
 <https://foo/bar> acdh:hasLicensor <https://id.acdh.oeaw.ac.at/oeawihb> ;
     acdh:hasOwner <https://id.acdh.oeaw.ac.at/oeawihb> ;
-    acdh:hasLicense <https://vocabs.acdh.oeaw.ac.at/archelicenses/cc-by-4-0> ;
     acdh:hasRightsHolder <https://id.acdh.oeaw.ac.at/oeaw> .
 """
 ihb_owner_graph = Graph().parse(data=ihb_owner)
@@ -239,13 +238,6 @@ for x in tqdm(files):
             g.add(
                 (
                     cur_image_uri,
-                    ACDH["hasLicense"],
-                    URIRef("https://vocabs.acdh.oeaw.ac.at/archelicenses/noc-cr"),
-                )
-            )
-            g.add(
-                (
-                    cur_image_uri,
                     ACDH["hasRightsHolder"],
                     URIRef("https://d-nb.info/gnd/1014584-9"),
                 )
@@ -337,13 +329,6 @@ for x in tqdm(files):
             g.add(
                 (
                     cur_image_uri,
-                    ACDH["hasLicense"],
-                    URIRef("https://vocabs.acdh.oeaw.ac.at/archelicenses/cc0-1-0"),
-                )
-            )
-            g.add(
-                (
-                    cur_col_uri,
                     ACDH["hasLicense"],
                     URIRef("https://vocabs.acdh.oeaw.ac.at/archelicenses/cc0-1-0"),
                 )
