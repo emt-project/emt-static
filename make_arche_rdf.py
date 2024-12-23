@@ -232,7 +232,7 @@ for x in tqdm(files):
                 (
                     cur_image_uri,
                     ACDH["hasLicense"],
-                    URIRef("https://vocabs.acdh.oeaw.ac.at/archelicenses/noc-cr"),
+                    URIRef("https://vocabs.acdh.oeaw.ac.at/archelicenses/noc-oklr"),
                 )
             )
             g.add(
@@ -289,7 +289,7 @@ for x in tqdm(files):
                     cur_image_uri,
                     ACDH["hasRightsInformation"],
                     Literal(
-                        "Jedwede Nachnutzung der Bilddigitalisate bedarf einer schriftlichen Genehmigung seitens des Generallandesarchivs Karlsruhe.",  # noqa
+                        "Jedwede Nachnutzung des Bilddigitalisates bedarf einer schriftlichen Genehmigung seitens des Generallandesarchivs Karlsruhe.",  # noqa
                         lang="de",
                     ),
                 )
