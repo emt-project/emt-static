@@ -33,7 +33,7 @@ files = sorted(glob.glob("data/editions/*.xml"))
 selected_files = (
     files[:3] + files[len(files) // 2 - 1: len(files) // 2 + 2] + files[-3:]
 )
-files = selected_files
+# files = selected_files
 for x in tqdm(files):
     doc = TeiReader(x)
     cur_col_id = os.path.split(x)[-1].replace(".xml", "")
