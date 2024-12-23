@@ -179,6 +179,7 @@
     acdh:hasOwner <https://id.acdh.oeaw.ac.at/oeawihb> ; # IHB
     acdh:hasOwner <https://d-nb.info/gnd/1014584-9> ; #  Generallandesarchiv Karlsruhe 
     acdh:hasOwner <https://d-nb.info/gnd/2005486-5> ; # Bayerisches Hauptstaatsarchiv 
+    acdh:hasOwner <https://d-nb.info/gnd/4655277-7> ; # Bayerisches Hauptstaatsarchiv. Geheimes Hausarchiv
     acdh:hasOwner <https://id.acdh.oeaw.ac.at/khm> . # Kunsthistorisches Museum Wien
 
 
