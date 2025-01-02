@@ -124,8 +124,9 @@
                     <div class="container">
 
                         <div class="row">
+                            <hr class="hr-custom"/>
                             <div class="col">
-                                <hr class="hr-custom"/>
+                                
                                 <div class="pt-5 pb-5 text-center">
                                     <h2 class="display-5" data-i18n="index__quote_h" />
                                     <p class="fs-5">Familiensache? Die Korrespondenz der Kaiserin
@@ -135,13 +136,7 @@
                                         2024.</p>
                                 </div>
                             </div>
-                            <div class="col">
-                                <hr class="hr-custom"/>
-                                <div class="pt-5 pb-5 text-center">
-                                    <h2 class="display-5" data-i18n="index__contact_h"/>
-                                    <p class="fs-5" data-i18n="index__contact_text" />
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </main>

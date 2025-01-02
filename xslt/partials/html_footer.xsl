@@ -6,52 +6,62 @@
     exclude-result-prefixes="#all"
     version="2.0">
     <xsl:template match="/" name="html_footer">
-        <footer class="footer mt-auto py-3">
+        <footer class="py-3">
             
-            <div class="container">
-                <div class="d-flex justify-content-center pb-4">
+            <div class="container text-center">
+                <div class="pb-2">
+                    <span class="fs-3">Kontakt</span>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-4">
+                        <div>
+                            <a href="https://www.oeaw.ac.at/ihb/home">
+                                <img class="footerlogo" src="./logos/ihb-logo-en-text.png" alt="IHB Logo"/>
+                            </a>
+                        </div>
+                        <div class="text-center p-4">
+                            Institute for Habsburg and Balkan Studies Dominikanerbastei
+                            <br />
+                            <a href="mailto:katrin.keller@oeaw.ac.at">katrin.keller@oeaw.ac.at</a>
+                        </div>
+                    </div>
+                    <div class="col col-lg-4">
+                        <div>
+                            <a href="https://www.oeaw.ac.at/acdh/acdh-ch-home">
+                                <img class="footerlogo" src="./logos/acdh_logo_with_text.svg" alt="ACDH-CH Logo"/>
+                            </a>
+                        </div>
+                        <div class="text-center p-4">
+                            Austrian Centre for Digital Humanities and Cultural Heritage Bäckerstraße
+                            <br />
+                            <a href="mailto:acdh-ch-helpdesk@oeaw.ac.at">acdh-ch-helpdesk@oeaw.ac.at</a>
+                        </div>
+                    </div>
                     
-                        <a href="https://www.oeaw.ac.at/" target="_blank" rel="noopener" aria-label="OEAW">
-                            <img src="logos/oeaw-logo-transparent.png" alt="OEAW" title="Austrian Academy of Sciences"/>
-                        </a>
+                </div>
+                <div class="pb-2 pt-2">
+                    <span class="fs-3">Förderinstitutionen</span>
+                </div>
+                <div class="row justify-content-md-center">
+                    
+                    <div class="col">
+                        <img src="./logos/fwf-logo-transparent.png" alt="FWF Logo" class="footerlogo"/>
+                        <div class="text-center p-3">
+                            Gefördert aus Mitteln Wissenschaftsfonds FWF <a href="https://www.fwf.ac.at/forschungsradar/10.55776/P34651" class="dse-dotted">10.55776/P34651</a> 
+                        </div>
+                    </div>
+                    
                     
                 </div>
-                
-                <div class="row justify-content-between pb-4">
-                    <div class="col-sm-4">
-                        <a href="https://www.oeaw.ac.at/ihb/" target="_blank" rel="noopener" aria-label="IHB">
-                            <img src="logos/ihb-logo-en-text.png" alt="IHB" title="Institut for Habsburg and Balkan Studies"/>
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        Institute for Habsburg and Balkan Studies<br/>
-                        Dominikanerbastei 16<br/>
-                        1010 Vienna (Austria)<br/>
-                    </div>
-                </div>
-                
-                <div class="row justify-content-between pb-4">
-                    <div class="col-sm-4">
-                        <a href="https://www.oeaw.ac.at/acdh/" target="_blank" rel="noopener" aria-label="ACDH">
-                            <img src="logos/acdh_logo_with_text.svg" alt="ACDH" title="Austrian Centre for Digital Humanities and Cultural Heritage (ACDH-CH) of the Austrian Academy of Sciences"/>
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        Austrian Centre for Digital Humanities and Cultural Heritage<br/>
-                        Bäckerstraße 13<br/>
-                        1010 Vienna<br/>
-                    </div>
-                </div>
-                
-                <div class="d-flex justify-content-center">
-                        <a href="https://www.fwf.ac.at/" target="_blank" rel="noopener" aria-label="FWF">
-                            <img src="logos/fwf-logo-transparent.png" alt="FWF" title="FWF Science-Fond" style="max-width: 300px"/>
-                        </a>
-                </div>
-                
             </div>
-            <div class="text-center pt-4">
-                <a href="{$github_url}"><i class="fs-1 bi bi-github" aria-hidden="true"></i><span class="visually-hidden">GitHub Link</span></a>
+            
+            
+            
+            <div class="text-center">
+                <a href="{$github_url}">
+                    <i aria-hidden="true" class="bi bi-github fs-2"></i>
+                    <span class="visually-hidden">GitHub repo</span>
+                </a>
             </div>
         </footer>
         <script src="vendor/jquery/jquery-3.6.3.min.js"></script>
