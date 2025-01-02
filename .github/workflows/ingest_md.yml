@@ -26,6 +26,10 @@ jobs:
       run: ./process.sh
     - name: create metadata
       run: python make_arche_rdf.py
+    - uses: actions/upload-artifact@v4
+      with:
+        name: arche-ttl
+        path: to_ingest/arche.ttl
     - name: run metadata import
       run: ./arche__ingest_md.sh
     

@@ -87,7 +87,6 @@
                                             <div class="float-end">
                                                 <h5>
                                                     <xsl:value-of select="$pbFolio"/>
-                                                    <xsl:value-of select="$openSeadragonId"/>
                                                 </h5>
                                             </div>
                                         </div>

@@ -13,6 +13,7 @@ jobs:
       ARCHE: https://arche-curation.acdh-dev.oeaw.ac.at/api
       TOPCOLID: https://id.acdh.oeaw.ac.at/emt
       TITLEIMAGE: https://id.acdh.oeaw.ac.at/emt/title-image.jpg
+      PROJECTID: https://id.acdh.oeaw.ac.at/emt/project
 
     steps:
     - name: Perform Checkout
