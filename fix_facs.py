@@ -10,7 +10,7 @@ ARCHE_ID = "https://id.acdh.oeaw.ac.at/emt/"
 for x in files:
     doc = TeiReader(x)
     f_id = os.path.split(x)[-1].replace(".xml", "")
-    for i, y in enumerate(doc.any_xpath(".//tei:graphic"), start=1):
+    for i, y in enumerate(doc.any_xpath(".//tei:surface/tei:graphic"), start=1):
         old_url = y.attrib["url"]
         new_url = f"{ARCHE_ID}{f_id}___{i:04}.jpg"
         y.attrib["url"] = new_url
