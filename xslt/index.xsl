@@ -32,6 +32,7 @@
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>
                 <!-- ONCE SHOWN MODAL -->
+                <main class="flex-shrink-0 pt-0">
                 <xsl:call-template name="one_time_alert"/>
                 <!-- END ONCE SHOWN MODAL -->
                 <div id="carouselExampleCaptions" class="carousel slide">
@@ -42,7 +43,7 @@
                         </div>
                     </div>
                 </div>
-                <main class="flex-shrink-0">
+                
 
 
                     <div class="row p-3">

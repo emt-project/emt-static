@@ -38,13 +38,16 @@ function applyLanguageClasses() {
   const selectedLang = localStorage.getItem('i18nextLng');
   const deButton = document.getElementById('lang-switch-de');
   const enButton = document.getElementById('lang-switch-en');
+  const htmlElement = document.documentElement;
 
   if (selectedLang === 'de') {
     deButton.classList.add('fs-2');
     enButton.classList.remove('fs-2');
+    htmlElement.setAttribute('lang', 'de');
   } else if (selectedLang === 'en') {
     enButton.classList.add('fs-2');
     deButton.classList.remove('fs-2');
+    htmlElement.setAttribute('lang', 'en');
   }
 }
 

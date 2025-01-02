@@ -51,7 +51,7 @@
                 
             </div>
             <div class="text-center pt-4">
-                <a href="{$github_url}"><i class="fs-1 bi bi-github"></i></a>
+                <a href="{$github_url}"><i class="fs-1 bi bi-github" aria-hidden="true"></i><span class="visually-hidden">GitHub Link</span></a>
             </div>
         </footer>
         <script src="vendor/jquery/jquery-3.6.3.min.js"></script>
