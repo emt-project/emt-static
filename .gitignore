@@ -181,3 +181,4 @@ metadata_ingest.sh
 html/js-data/calendarData.json
 .secret
 img/
+ingested_img
