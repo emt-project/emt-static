@@ -36,8 +36,8 @@
                                     <!-- commented due to https://github.com/emt-project/emt-static/issues/71  -->
                                     <!-- 
                                     <h2 class="pt-2">Personen</h2>
-                                    <div id="refinement-list-persons"></div>
-                                    <h2 class="pt-2">Sender</h2> -->
+                                    <div id="refinement-list-persons"></div>-->
+                                    <h2 class="pt-2">Sender</h2> 
                                     <div id="refinement-list-sender"></div>
                                     <h2 class="pt-2">Empfänger</h2>
                                     <div id="refinement-list-receiver"></div>
