@@ -106,9 +106,19 @@
             </xsl:attribute>
             <xsl:element name="a">
                 <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                <xsl:attribute name="data-bs-target">
-                    <xsl:value-of select="$entityRef"/>
-                </xsl:attribute>
+                <xsl:choose>
+                    <xsl:when test="contains($entityRef, ' ')">
+                        <xsl:attribute name="data-bs-target">
+                            <xsl:value-of select="string-join(tokenize($entityRef, ' #'))"/>
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:attribute name="data-bs-target">
+                            <xsl:value-of select="$entityRef"/>
+                        </xsl:attribute>
+                    </xsl:otherwise>
+                </xsl:choose>
+                
                 <xsl:apply-templates/>
                 <xsl:if test="@cert">
                     <span title="Identifikation unsicher"> [?]</span>
