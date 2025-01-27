@@ -110,6 +110,9 @@
                     <xsl:value-of select="$entityRef"/>
                 </xsl:attribute>
                 <xsl:apply-templates/>
+                <xsl:if test="@cert">
+                    <span title="Identifikation unsicher"> [?]</span>
+                </xsl:if>
             </xsl:element>
             </span>
         </strong>
