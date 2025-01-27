@@ -131,11 +131,43 @@
                         </p>
 
                     </div>
-                    <xsl:for-each select="//tei:back">
-                        <div class="tei-back">
+                    <div class="back p-3">
+                        <xsl:for-each select="//tei:back">
                             <xsl:apply-templates/>
-                        </div>
-                    </xsl:for-each>
+                        </xsl:for-each>
+                            <xsl:for-each select="//tei:rs/@ref[contains(., ' ')]">
+                                <xsl:variable name="back" select="root()//tei:back" as="node()"/>
+                                <xsl:variable name="modalId" select="replace(string-join(tokenize(., ' #')), '#', '')"/>
+                                <xsl:variable name="modalHead" select=".."/>
+                                
+                                <div class="modal fade" id="{$modalId}" data-bs-keyboard="false" tabindex="-1" aria-labelledby="{$modalHead}" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel"><xsl:value-of select="$modalHead"/></h1>
+                                            </div>
+                                            <div class="modal-body">
+                                                <ul>
+                                                    <xsl:for-each select="tokenize(., ' ')">
+                                                        <xsl:variable name="entRef" select="replace(., '#', '')"/>
+                                                        <xsl:variable name="entNode" select="$back//*[@xml:id=$entRef]"/>
+                                                        <xsl:variable name="entLabel" select="$entNode/*[1]/text()"/>
+                                                        <li>
+                                                            <a href="{$entRef||'.html'}">
+                                                                <xsl:value-of select="$entLabel"/>
+                                                            </a>
+                                                        </li>
+                                                    </xsl:for-each>
+                                                    </ul>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </xsl:for-each>
+                    </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
                 
