@@ -534,25 +534,6 @@ for x in files_to_ingest:
     new_name = os.path.join(to_ingest, tail)
     shutil.copy(x, new_name)
 
-# following commented lines would add tei-schema to tei files; but this makes the filechecker run taking > 6 hours, and I batch validated the files with oxygen anyways
-# old_string = """<?xml version='1.0' encoding='UTF-8'?>
-# <TEI xmlns="http://www.tei-c.org/ns/1.0" """
-
-# new_string = """<?xml version="1.0" encoding="UTF-8"?>
-# <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-# <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-# <TEI xmlns="http://www.tei-c.org/ns/1.0" """  # noqa:
-
-# # files = sorted(glob.glob("to_ingest/*.xml"))
-
-# # for x in files:
-# #     with open(x, "r", encoding="utf-8") as file:
-# #         content = file.read()
-# #         updated_content = content.replace(old_string, new_string)
-# #     with open(x, "w", encoding="utf-8") as file:
-# #         file.write(updated_content)
-
-
 print(f"copy title image into {to_ingest}")
 shutil.copy(
     "./html/bio-pics/emt_person_id__9.jpg", os.path.join(to_ingest, "title-image.jpg")

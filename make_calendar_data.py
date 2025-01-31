@@ -41,9 +41,13 @@ for x in file_list:
         sender_name = normalize_string(
             doc.any_xpath(".//tei:correspAction[@type='sent']/tei:persName//text()")[0]
         )
-        sender_id = doc.any_xpath(
-            ".//tei:correspAction[@type='sent']/tei:persName/@ref"
-        )[0]
+        try:
+            sender_id = doc.any_xpath(
+                ".//tei:correspAction[@type='sent']/tei:persName/@ref"
+            )[0]
+        except IndexError:
+            print(f"### BROKEN: {x}, no .//tei:correspAction[@type='sent']/tei:persName/@ref provided")
+            continue
         item["kind"] = f"{sender_id[1:]}.html"
         item["sender"] = {"label": sender_name, "link": f"{sender_id[1:]}.html"}
         events.append(item)
@@ -70,7 +74,11 @@ mentioned_letters = requests.get(
     "https://raw.githubusercontent.com/emt-project/emt-entities/refs/heads/main/json_dumps/mentioned_letters.json"
 ).json()  # noqa:
 for key, value in mentioned_letters.items():
-    sender = value["sender"][0]["value"].split(", ")[0]
+    try:
+        sender = value["sender"][0]["value"].split(", ")[0]
+    except IndexError:
+        print(value)
+        continue
     receiver = value["receiver"][0]["value"].split(", ")[0]
     date_written = value["date_written"]
     event = {

@@ -4,6 +4,8 @@ import lxml.etree as ET
 import pandas as pd
 from tqdm import tqdm
 
+print("writing corresp context elements")
+
 files = sorted(glob.glob("./data/editions/*.xml", recursive=True))
 empress_id = "#emt_person_id__9"
 
@@ -43,13 +45,16 @@ for x in tqdm(files, total=len(files)):
             ]
         )
     ).replace("_#", "-")
-    corresp_names = " und ".join(
-        [
-            (x.text if x.text is not None else "?")
-            for x in doc.any_xpath(".//tei:correspAction/tei:persName")
-            if x.attrib["ref"] != empress_id
-        ]
-    )
+    try:
+        corresp_names = " und ".join(
+            [
+                (x.text if x.text is not None else "?")
+                for x in doc.any_xpath(".//tei:correspAction/tei:persName")
+                if x.attrib["ref"] != empress_id
+            ]
+        )
+    except Exception as e:
+        print(f"### BROKEN: {x}, because of {e}")
     item = {
         "id": x,
         "corresp_id": corresp_id,
