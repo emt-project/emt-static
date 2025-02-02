@@ -183,3 +183,5 @@ html/js-data/calendarData.json
 img/
 ingested_img
 html/cidoc.ttl
+html/docsfile.tsv
+html/wordsfile.tsv
