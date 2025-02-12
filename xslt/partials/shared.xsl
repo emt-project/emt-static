@@ -101,6 +101,9 @@
         </xsl:variable>
         <strong>
             <span>
+                <xsl:if test="@cert">
+                    <xsl:attribute name="title">Identifizierung fraglich</xsl:attribute>
+                </xsl:if>
             <xsl:attribute name="class">
                 <xsl:value-of select="concat('entity entity-', $entityType)"/>
             </xsl:attribute>
@@ -120,9 +123,6 @@
                 </xsl:choose>
                 
                 <xsl:apply-templates/>
-                <xsl:if test="@cert">
-                    <span title="Identifikation unsicher"> [?]</span>
-                </xsl:if>
             </xsl:element>
             </span>
         </strong>
