@@ -30,6 +30,46 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>data/editions/kasten_blau_44_2d_0011.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>6/tei/teip5.framework/TEI P5/TEI P5 XHTML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>data/editions/emt___77-8806b.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>6/tei/teip5.framework/TEI P5/TEI P5 XHTML</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>xslt/editions.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
