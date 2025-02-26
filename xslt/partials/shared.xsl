@@ -111,8 +111,11 @@
                 <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
                 <xsl:choose>
                     <xsl:when test="contains($entityRef, ' ')">
+                        <xsl:variable name="rsCnt">
+                            <xsl:number level="any" count="//tei:rs[contains(@ref, ' ')]"/>
+                        </xsl:variable>
                         <xsl:attribute name="data-bs-target">
-                            <xsl:value-of select="string-join(tokenize($entityRef, ' #'))"/>
+                            <xsl:value-of select="concat(string-join(tokenize($entityRef, ' #')), '--', $rsCnt)"/>
                         </xsl:attribute>
                     </xsl:when>
                     <xsl:otherwise>

@@ -136,8 +136,11 @@
                             <xsl:apply-templates/>
                         </xsl:for-each>
                             <xsl:for-each select="//tei:rs/@ref[contains(., ' ')]">
+                                <xsl:variable name="rsCnt">
+                                    <xsl:number level="any" count="//tei:rs[contains(@ref, ' ')]"/>
+                                </xsl:variable>
                                 <xsl:variable name="back" select="root()//tei:back" as="node()"/>
-                                <xsl:variable name="modalId" select="replace(string-join(tokenize(., ' #')), '#', '')"/>
+                                <xsl:variable name="modalId" select="concat(replace(string-join(tokenize(., ' #')), '#', ''), '--', $rsCnt)"/>
                                 <xsl:variable name="modalHead" select=".."/>
                                 
                                 <div class="modal fade" id="{$modalId}" data-bs-keyboard="false" tabindex="-1" aria-labelledby="{$modalHead}" aria-hidden="true">
