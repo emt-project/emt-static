@@ -11,4 +11,5 @@ python make_calendar_data.py
 python make_cmif.py
 python make_translations.py
 python fix_facs.py
+python oai-pmh/make_files.py
 # python make_arche_rdf.py
