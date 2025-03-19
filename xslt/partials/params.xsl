@@ -9,6 +9,6 @@
     <xsl:param name="github_url">https://github.com/emt-project/emt-static-dev</xsl:param>
     <xsl:param name="html_title">Familiensache</xsl:param>
     <xsl:param name="project_logo">img/logo.png</xsl:param>
-    <xsl:param name="base_url">https://emt.acdh.oeaw.ac.at</xsl:param>
+    <xsl:param name="base_url">https://kaiserin-eleonora.oeaw.ac.at/</xsl:param>
     <xsl:param name="data_repo">https://github.com/emt-project/emt-working-data</xsl:param>
 </xsl:stylesheet>
