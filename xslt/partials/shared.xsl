@@ -184,7 +184,11 @@
                 <xsl:when test="@when">
                     <xsl:attribute name="title"><xsl:value-of select="@when"/></xsl:attribute>
                 </xsl:when>
-            </xsl:choose><xsl:apply-templates/></span>
+                <xsl:when test="@when-iso">
+                    <xsl:attribute name="title"><xsl:value-of select="@when-iso"/></xsl:attribute>
+                </xsl:when>
+            </xsl:choose>
+            <xsl:apply-templates/></span>
         <xsl:choose>
             <xsl:when test="./following-sibling::node()[1][self::text() = ' ']">
                 <xsl:text> </xsl:text>
