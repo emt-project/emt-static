@@ -141,7 +141,9 @@
                                 </xsl:variable>
                                 <xsl:variable name="back" select="root()//tei:back" as="node()"/>
                                 <xsl:variable name="modalId" select="concat(replace(string-join(tokenize(., ' #')), '#', ''), '--', $rsCnt)"/>
-                                <xsl:variable name="modalHead" select=".."/>
+                                <xsl:variable name="modalHead">
+                                    <xsl:value-of select="normalize-space(string-join(..//text()[not(parent::tei:abbr)]))"/>
+                                </xsl:variable>
                                 
                                 <div class="modal fade" id="{$modalId}" data-bs-keyboard="false" tabindex="-1" aria-labelledby="{$modalHead}" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
