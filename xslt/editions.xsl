@@ -81,7 +81,7 @@
                                         <xsl:value-of select="data(./tei:pb/@rend)"/>
                                     </xsl:variable>
                                     <xsl:variable name="facs-url"
-                                        select="data((./tei:pb/@source)[1])"/>
+                                        select="concat(tokenize(data((./tei:pb/@facs)[1]), ' ')[2], '?format=iiif')"/>
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="float-end">
