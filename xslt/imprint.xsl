@@ -43,4 +43,8 @@
             </body>
         </html>
     </xsl:template>
+    
+    <xsl:template match="br">
+        <xsl:apply-templates/> <br />
+    </xsl:template>
 </xsl:stylesheet>
