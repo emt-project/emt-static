@@ -39,6 +39,16 @@
                                 </td>
                             </tr>
                         </xsl:if>
+                        <xsl:if test=".//tei:roleName">
+                            <tr>
+                                <th>
+                                    Titel
+                                </th>
+                                <td>
+                                    <xsl:value-of select="string-join(.//tei:roleName, ', ')"/>
+                                </td>
+                            </tr>
+                        </xsl:if>
                         <xsl:if test="./tei:idno[@type='NDB']/text()">
                             <tr>
                                 <th>
