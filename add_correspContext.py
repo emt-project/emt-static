@@ -114,7 +114,7 @@ for i, ndf in df.groupby("corresp_id"):
                 target=x["prev"].split("/")[-1],
             )
             prevCorr.text = (
-                "" if x["prev_title"] is None else x["prev_title"].split("/")[-1]
+                "" if x["prev_title"] is None else x["prev_title"]
             )
         if x["next"] is not None:
             nextCorr = ET.SubElement(
@@ -126,7 +126,7 @@ for i, ndf in df.groupby("corresp_id"):
                 target=x["next"].split("/")[-1],
             )
             nextCorr.text = (
-                "" if x["next_title"] is None else x["next_title"].split("/")[-1]
+                "" if x["next_title"] is None else x["next_title"]
             )
         if x["gen_prev"] is not None:
             genPrevCorr = ET.SubElement(
@@ -139,7 +139,7 @@ for i, ndf in df.groupby("corresp_id"):
             genPrevCorr.text = (
                 ""
                 if x["gen_prev_title"] is None
-                else x["gen_prev_title"].split("/")[-1]
+                else x["gen_prev_title"]
             )
         if x["gen_next"] is not None:
             genNextCorr = ET.SubElement(
@@ -152,7 +152,7 @@ for i, ndf in df.groupby("corresp_id"):
             genNextCorr.text = (
                 ""
                 if x["gen_next_title"] is None
-                else x["gen_next_title"].split("/")[-1]
+                else x["gen_next_title"]
             )
 
         doc.tree_to_file(x["id"])
