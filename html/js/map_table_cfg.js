@@ -37,10 +37,18 @@ const columns = [
     minWidth: "350"
   },
   {
-    headerFilter: "input",
     title: "Absendeort",
     field: "Absendeort",
-    formatter: "plaintext",
+    hozAlign: "center",
+    mutator: function(value, data, type, column) {
+      return value === "true";
+    },
+    formatter: "tickCross",
+    headerFilter: "tickCross",
+    headerFilterParams: { tristate: true},
+    headerFilterEmptyCheck: function (value) {
+      return value === null;
+    },
     resizable: true,
   },
   {

@@ -56,8 +56,8 @@
                                         </td>
                                         <td>
                                             <xsl:choose>
-                                                <xsl:when test=".//tei:state[@type='sender']">Absendeort</xsl:when>
-                                                <xsl:otherwise/>
+                                                <xsl:when test=".//tei:state[@type='sender']">true</xsl:when>
+                                                <xsl:otherwise>false</xsl:otherwise>
                                             </xsl:choose>
                                         </td>
                                         <td>
