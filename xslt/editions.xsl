@@ -46,6 +46,7 @@
                 </xsl:call-template>
                 <script src="vendor/openseadragon-bin-4.1.1/openseadragon.min.js"/>
                 <script src="js/osd_single.js"></script>
+                <script src="js/tooltip.js"></script>
             </head>
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>

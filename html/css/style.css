@@ -167,6 +167,7 @@ footer a {
   text-decoration-color: var(--bs-body-color);
   color: var(--bs-body-color);
 }
+
 footer a:hover {
   color: var(--bs-body-color);
 }
@@ -300,16 +301,25 @@ a:hover {
   color: #185de7;
 }
 
-.abbr {
-  color: #185de7;
+.unclear {
+color: #378ab8;
+text-decoration: underline dotted;
+cursor: help;
 }
+
+.expan{
+  color: #185de7;
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+.unclear .expan {
+  text-decoration: underline dotted 3px;
+}
+
 
 .add {
   color: #185de7;
-}
-
-.unclear {
-  color: #378ab8;
 }
 
 .date {
@@ -333,7 +343,7 @@ a:hover {
   justify-content: space-around;
 }
 
-.image-list-flex-row > * {
+.image-list-flex-row>* {
   width: min(400px, 100%);
 }
 
