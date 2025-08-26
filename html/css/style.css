@@ -1,9 +1,10 @@
 :root {
-  --bs-body-color: #61441f;
-  --bs-body-bg: #ecdecc;
+  --bs-body-color: #4e3619;
+  --bs-body-bg: #f4ebe0;
   --bs-border-width: 0px;
-  --bs-link-color: #ff914d;
-  --emt-bg-dark: #c99b6d;
+  --bs-link-color: #b33800;
+  --emt-deco-color: #ff914d;
+  --emt-bg-dark: #c99b6d78;
 }
 
 @font-face {
@@ -74,7 +75,7 @@
 
 .hr-custom {
   border-width: 5px;
-  border-color: var(--bs-link-color);
+  border-color: var(--emt-deco-color);
   opacity: initial;
   margin: 0%;
 }
@@ -85,7 +86,7 @@
   color: var(----bs-body-color);
   text-transform: uppercase;
   border-color: var(----bs-body-color);
-  border-style: outset;
+  /* border-style: outset; */
   border-radius: unset;
   border-width: 1px;
 }
@@ -188,13 +189,16 @@ footer a:hover {
   font-family: "Roboto Serif";
   font-size: xx-large;
 }
-
+#TODO
+a.nav-link{
+  color: var(--bs-body-color);
+} 
 a {
   color: var(--bs-link-color);
 }
 
 a:hover {
-  color: var(--emt-bg-dark);
+  color: var(--emt-deco-color);
 }
 
 #languageSwitcher {
