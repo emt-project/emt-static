@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet 
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    version="2.0" exclude-result-prefixes="xsl tei xs">
-    
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" exclude-result-prefixes="xsl tei xs">
+
     <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0" indent="yes" omit-xml-declaration="yes"/>
-    
-    
+
+
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
@@ -18,14 +17,14 @@
         <xsl:variable name="doc_title">
             <xsl:value-of select=".//tei:titleStmt/tei:title[1]/text()"/>
         </xsl:variable>
-        <html  class="h-100">
-            
+        <html class="h-100">
+
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
             </head>
-            
+
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>
 
@@ -44,8 +43,7 @@
                                     <th scope="col" tabulator-headerFilter="input">Titel</th>
                                     <th scope="col" tabulator-headerFilter="input">Lebensdaten</th>
                                     <th scope="col" tabulator-headerFilter="input">Erwähnungen</th>
-                                    <th scope="col" tabulator-headerFilter="input">Sender</th>
-                                    <th scope="col" tabulator-headerFilter="input">Empfänger</th>
+                                    <th scope="col" tabulator-headerFilter="input">Sender / Empfänger</th>
                                     <th scope="col" tabulator-headerFilter="input">ID</th>
                                 </tr>
                             </thead>
@@ -65,20 +63,23 @@
                                             <xsl:value-of select="string-join(.//tei:roleName, ', ')"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select=".//tei:birth[1]/tei:date[1]/text()"/> - <xsl:value-of select=".//tei:death[1]/tei:date[1]/text()"/>
+                                            <xsl:value-of select=".//tei:birth[1]/tei:date[1]/text()"/>
+ -                                            <xsl:value-of select=".//tei:death[1]/tei:date[1]/text()"/>
                                         </td>
                                         <td>
                                             <xsl:value-of select="count(.//tei:note[@type='mentions'])"/>
                                         </td>
                                         <td>
                                             <xsl:choose>
-                                                <xsl:when test=".//tei:state[@type='sender']">Sender</xsl:when>
-                                                <xsl:otherwise/>
-                                            </xsl:choose>
-                                        </td>
-                                        <td>
-                                            <xsl:choose>
-                                                <xsl:when test=".//tei:state[@type='receiver']">Empfänger</xsl:when>
+                                                <xsl:when test=".//tei:state[@type='sender'] and .//tei:state[@type='receiver']">
+                                                    <xsl:text>Sender, Empfänger</xsl:text>
+                                                </xsl:when>
+                                                <xsl:when test=".//tei:state[@type='sender']">
+                                                    <xsl:text>Sender</xsl:text>
+                                                </xsl:when>
+                                                <xsl:when test=".//tei:state[@type='receiver']">
+                                                    <xsl:text>Empfänger</xsl:text>
+                                                </xsl:when>
                                                 <xsl:otherwise/>
                                             </xsl:choose>
                                         </td>
@@ -102,7 +103,7 @@
             <xsl:variable name="filename" select="concat(./@xml:id, '.html')"/>
             <xsl:variable name="name" select="./tei:persName[1]/text()"></xsl:variable>
             <xsl:result-document href="{$filename}">
-                <html  class="h-100">
+                <html class="h-100">
                     <head>
                         <xsl:call-template name="html_head">
                             <xsl:with-param name="html_title" select="$name"></xsl:with-param>
@@ -116,7 +117,7 @@
                                 <h1 class="display-5 text-center">
                                     <xsl:value-of select="$name"/>
                                 </h1>
-                                <xsl:call-template name="person_detail"/>  
+                                <xsl:call-template name="person_detail"/>
                             </div>
                         </main>
                         <xsl:call-template name="html_footer"/>
