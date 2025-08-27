@@ -63,7 +63,7 @@
                 <xsl:otherwise>Unklar</xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <span class="unclear" data-bs-toggle="tooltip" data-bs-title="{$reason}">
+        <span tabindex="0" class="unclear" data-bs-toggle="popover" data-bs-content="{$reason}">
                 <xsl:apply-templates/>
         </span>
 
@@ -144,8 +144,8 @@
                 <xsl:text></xsl:text>
             </xsl:when>
         </xsl:choose>
-        <span class="expan" data-bs-toggle="tooltip" >
-        <xsl:attribute name="data-bs-title">Abgekürzt: <xsl:value-of select="./tei:abbr"/></xsl:attribute>
+        <span tabindex="0" class="expan" data-bs-toggle="popover">
+        <xsl:attribute name="data-bs-content">Abgekürzt: <xsl:value-of select="./tei:abbr"/></xsl:attribute>
             <xsl:value-of select="./tei:expan/text()"/>
         </span>
         <xsl:choose>
@@ -197,15 +197,15 @@
         </span>
     </xsl:template>
     <xsl:template match="tei:date">
-        <span class="date">
+        <span tabindex="0" class="date" data-bs-toggle="popover">
             <xsl:choose>
                 <xsl:when test="@when">
-                    <xsl:attribute name="title">
+                    <xsl:attribute name="data-bs-content">
                         <xsl:value-of select="@when"/>
                     </xsl:attribute>
                 </xsl:when>
                 <xsl:when test="@when-iso">
-                    <xsl:attribute name="title">
+                    <xsl:attribute name="data-bs-content">
                         <xsl:value-of select="@when-iso"/>
                     </xsl:attribute>
                 </xsl:when>

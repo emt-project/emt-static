@@ -303,20 +303,15 @@ a:hover {
 
 .unclear {
 color: #378ab8;
-text-decoration: underline dotted;
+text-decoration: underline wavy 1px;
 cursor: help;
 }
 
 .expan{
   color: #185de7;
-  text-decoration: underline dotted;
+  text-decoration: underline dotted 2px;
   cursor: help;
 }
-
-.unclear .expan {
-  text-decoration: underline dotted 3px;
-}
-
 
 .add {
   color: #185de7;
@@ -324,6 +319,7 @@ cursor: help;
 
 .date {
   color: #d45121;
+  cursor: help;
 }
 
 .unclear-ciphered {
@@ -356,3 +352,15 @@ cursor: help;
 div#map {
   height: 50vh;
 }
+
+
+
+.custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: var(--bd-violet-bg);
+  --bs-popover-bg: #fff;
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: .5rem;
+}
+
