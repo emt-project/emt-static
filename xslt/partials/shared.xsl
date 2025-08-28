@@ -104,7 +104,10 @@
         <strong>
             <span>
                 <xsl:if test="@cert">
-                    <xsl:attribute name="title">Identifizierung fraglich</xsl:attribute>
+                <xsl:attribute name="data-bs-toggle"/>
+                <xsl:attribute name="tabindex">0</xsl:attribute>
+                <xsl:attribute name="data-bs-toggle">popover</xsl:attribute>
+                <xsl:attribute name="data-bs-content">Identifizierung fraglich</xsl:attribute>
                 </xsl:if>
                 <xsl:attribute name="class">
                     <xsl:value-of select="concat('entity entity-', $entityType)"/>

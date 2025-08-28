@@ -303,13 +303,13 @@ a:hover {
 
 .unclear {
 color: #378ab8;
-text-decoration: underline wavy 1px;
+text-decoration: underline dotted;
 cursor: help;
 }
 
 .expan{
   color: #185de7;
-  text-decoration: underline dotted 2px;
+  text-decoration: underline dotted;
   cursor: help;
 }
 
