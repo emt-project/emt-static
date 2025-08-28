@@ -167,6 +167,7 @@ footer a {
   text-decoration-color: var(--bs-body-color);
   color: var(--bs-body-color);
 }
+
 footer a:hover {
   color: var(--bs-body-color);
 }
@@ -300,20 +301,25 @@ a:hover {
   color: #185de7;
 }
 
-.abbr {
+.unclear {
+color: #378ab8;
+text-decoration: underline dotted;
+cursor: help;
+}
+
+.expan{
   color: #185de7;
+  text-decoration: underline dotted;
+  cursor: help;
 }
 
 .add {
   color: #185de7;
 }
 
-.unclear {
-  color: #378ab8;
-}
-
 .date {
   color: #d45121;
+  cursor: help;
 }
 
 .unclear-ciphered {
@@ -333,7 +339,7 @@ a:hover {
   justify-content: space-around;
 }
 
-.image-list-flex-row > * {
+.image-list-flex-row>* {
   width: min(400px, 100%);
 }
 
@@ -346,3 +352,15 @@ a:hover {
 div#map {
   height: 50vh;
 }
+
+
+
+.custom-popover {
+  --bs-popover-max-width: 200px;
+  --bs-popover-border-color: var(--bd-violet-bg);
+  --bs-popover-bg: #fff;
+  --bs-popover-header-color: var(--bs-white);
+  --bs-popover-body-padding-x: 1rem;
+  --bs-popover-body-padding-y: .5rem;
+}
+
