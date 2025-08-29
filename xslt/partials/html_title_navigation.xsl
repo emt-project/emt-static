@@ -76,28 +76,36 @@
                     </h1>
                 </xsl:if>
             </div>
-            </div>
-            <h1 class="text-center">
-                    <xsl:value-of select="$doc_title"/>
-            </h1>
-             <div class="sticky-top text-center" style="background-color: var(--bs-body-bg);">
-                    <a href="{$teiSource}" class="pe-2">
-                        <i class="bi bi-filetype-xml fs-3" title="TEI/XML"/>
-                    </a>
-                    <a href="#" id="info-modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal" class="ps-2">
-                        <i class="bi bi-question-lg fs-3"></i>
-                    </a>
-                </div>
-                <p class="text-center">
-                    <small>
-                        <xsl:value-of select="//tei:msDesc/tei:msIdentifier/tei:repository" />
-                        <xsl:text></xsl:text>
-                        <xsl:value-of select="//tei:msDesc/tei:msIdentifier/tei:settlement" />
-,                         
-                        <xsl:value-of select="//tei:msDesc/tei:msIdentifier/tei:idno" />
+        </div>
+        <h1 class="text-center">
+            <xsl:value-of select="$doc_title"/>
+        </h1>
+        <div class="text-center">
+            <a href="{$teiSource}" class="pe-2">
+                <i class="bi bi-filetype-xml fs-3" title="TEI/XML"/>
+            </a>
+            <a href="#" id="info-modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal" class="ps-2">
+                <i class="bi bi-question-lg fs-3"></i>
+            </a>
+        </div>
+        <!-- Fixed version of the info modal trigger that shows when scrolling -->
+        <div class="position-fixed bottom-0 end-0 p-2 d-none" id="sticky-info" style="z-index: 1030;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-sm rounded-circle shadow">
+                <i class="bi bi-question-lg"></i>
+            </a>
+        </div>
 
-                    </small>
-                </p>
+        <p class="text-center">
+            <small>
+                <xsl:value-of select="//tei:msDesc/tei:msIdentifier/tei:repository" />
+                <xsl:text></xsl:text>
+                <xsl:value-of select="//tei:msDesc/tei:msIdentifier/tei:settlement" />
+,                         
+                <xsl:value-of select="//tei:msDesc/tei:msIdentifier/tei:idno" />
+
+            </small>
+        </p>
+
         <!-- Modal -->
         <xsl:call-template name="info_modal"/>
 
@@ -120,11 +128,11 @@
                 <xsl:choose>
                     <xsl:when test="contains($eintrag/@subtype, 'next')">
                         <i class="bi bi-chevron-right"/>
-&#160;                         <!--
+&#160;                                                 <!--
                  -->                    </xsl:when>
                     <xsl:when test="contains($eintrag/@subtype, 'previous')">
                         <i class="bi bi-chevron-left"/>
-&#160;                         <!--
+&#160;                                                 <!--
                  -->                    </xsl:when>
                 </xsl:choose>
                 <xsl:value-of select="$eintrag"/>

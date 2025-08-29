@@ -357,10 +357,12 @@ div#map {
 
 .custom-popover {
   --bs-popover-max-width: 200px;
-  --bs-popover-border-color: var(--bd-violet-bg);
   --bs-popover-bg: #fff;
-  --bs-popover-header-color: var(--bs-white);
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: .5rem;
 }
 
+#sticky-info .btn {
+  background-color: var(--bs-link-color);
+  color: var(--bs-body-bg);
+}
