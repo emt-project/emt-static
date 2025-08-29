@@ -90,9 +90,9 @@
         </div>
         <!-- Fixed version of the info modal trigger that shows when scrolling -->
         <div class="position-fixed bottom-0 end-0 p-2 d-none" id="sticky-info" style="z-index: 1030;">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-sm rounded-circle shadow">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn rounded-circle shadow">
                 <i class="bi bi-question-lg"></i>
-            </a>
+            </button>
         </div>
 
         <p class="text-center">
@@ -128,11 +128,11 @@
                 <xsl:choose>
                     <xsl:when test="contains($eintrag/@subtype, 'next')">
                         <i class="bi bi-chevron-right"/>
-&#160;                                                 <!--
+&#160;                                                                                                 <!--
                  -->                    </xsl:when>
                     <xsl:when test="contains($eintrag/@subtype, 'previous')">
                         <i class="bi bi-chevron-left"/>
-&#160;                                                 <!--
+&#160;                                                                                                 <!--
                  -->                    </xsl:when>
                 </xsl:choose>
                 <xsl:value-of select="$eintrag"/>
