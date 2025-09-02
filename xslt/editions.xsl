@@ -83,7 +83,10 @@
                                         <xsl:value-of select="data(./tei:pb/@rend)"/>
                                     </xsl:variable>
                                     <xsl:variable name="facs-url"
-                                        select="concat(tokenize(data((./tei:pb/@facs)[1]), ' ')[2], '?format=iiif')"/>
+                                        select="data((./tei:pb/@source)[1])"/>
+                                    <!--commented out due to https://github.com/emt-project/emt-static/issues/152 , will switch back to ARCHE after another archiving round at the end of the project-->
+                                    <!-- <xsl:variable name="facs-url"
+                                        select="concat(tokenize(data((./tei:pb/@facs)[1]), ' ')[2], '?format=iiif')"/> -->
                                     <div class="row">
                                         <div class="col-md-12 pe-xl-0 pe-5">
                                             <div class="float-end">
