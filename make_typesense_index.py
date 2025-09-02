@@ -28,6 +28,7 @@ current_schema = {
         {"name": "rec_id", "type": "string"},
         {"name": "title", "type": "string"},
         {"name": "full_text", "type": "string"},
+        {"name": "regest", "type": "string"},
         {"name": "date", "type": "int32"},
         {
             "name": "year",
@@ -118,6 +119,14 @@ for x in tqdm(files, total=len(files)):
         record["places"].append(place)
         cfts_record["places"] = record["places"]
     record["full_text"] = extract_fulltext(body, tag_blacklist=tag_blacklist)
+    try:
+        regest = doc.any_xpath('.//tei:abstract[@n="regest"]')[0]  
+    except IndexError:
+        regest = None
+    if regest is not None:
+        record["regest"] = extract_fulltext(regest, tag_blacklist=tag_blacklist)
+    else:
+        record["regest"] = None
     cfts_record["full_text"] = record["full_text"]
     try:
         date_node = doc.any_xpath("//tei:correspAction/tei:date")[0]
@@ -139,6 +148,6 @@ make_index = client.collections["emt"].documents.import_(records)
 print(make_index)
 print("done with indexing emt")
 
-make_index = CFTS_COLLECTION.documents.import_(cfts_records, {"action": "upsert"})
+# make_index = CFTS_COLLECTION.documents.import_(cfts_records, {"action": "upsert"})
 print(make_index)
 print("done with cfts-index emt")

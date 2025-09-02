@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const checkboxes = document.querySelectorAll('.search-attribute-checkbox');
   checkboxes.forEach(checkbox => {
-checkbox.addEventListener('change', (event) => {
+    checkbox.addEventListener('change', (event) => {
       // If this checkbox is being unchecked
       if (!event.target.checked) {
         // Check if it's the last one checked
@@ -31,7 +31,7 @@ const updateSearchAttributes = () => {
     }
   });
 
-    // Force search refresh with current query
+  // Force search refresh with current query
   if (search.helper && search.helper.state.query) {
     search.helper.setClient(typesenseInstantsearchAdapter.searchClient);
     search.helper.search();
@@ -42,24 +42,18 @@ const updateSearchAttributes = () => {
 
 const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   server: {
-    // apiKey: "lGsWJtaz2LdOqNx2iiQeTwY68oLOdn1k",
-    apiKey: "wGufrCvmagp3u285ViWYErQL1t8rzF85",
-    nodes: [{
-      host:"localhost",
-      port: 8108,
-      protocol: "http"
-    }],
-    // nodes: [
-    //   {
-    //     host: "typesense.acdh-dev.oeaw.ac.at",
-    //     port: "443",
-    //     protocol: "https",
-    //   },
-    // ],
+    apiKey: "lGsWJtaz2LdOqNx2iiQeTwY68oLOdn1k",
+    nodes: [
+      {
+        host: "typesense.acdh-dev.oeaw.ac.at",
+        port: "443",
+        protocol: "https",
+      },
+    ],
     cacheSearchResultsForSeconds: 2 * 60,
   },
   additionalSearchParameters: {
-    query_by: "full_text, keywords"
+    query_by: "full_text, regest"
   },
 });
 
@@ -97,7 +91,7 @@ search.addWidgets([
       item(hit, { html, components }) {
         return html`
       <h4><a href='${hit.id}.html'>${hit.title}</a></h4>
-      <p>${ components.Snippet({ hit, attribute: 'keywords' })}</p>
+      <p>${hit._snippetResult.regest.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'regest' }) : ''}</p>
       <p>${hit._snippetResult.full_text.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'full_text' }) : ''}</p>
       <p>${hit.persons.map((item) => html`<a href='${item.id}'><span class="badge rounded-pill m-1 bg-danger">${item}</span></a>`)}</p>
       <p>${hit.places.map((item) => html`<a href='${item.id}'><span class="badge rounded-pill m-1 bg-info">${item}</span></a>`)}</p>`
@@ -211,7 +205,22 @@ search.addWidgets([
   //       checkbox: 'm-2',
   //     }
   // }),
-
+  instantsearch.widgets.refinementList({
+    container: '#refinement-list-keywords',
+    attribute: 'keywords',
+    searchable: true,
+    searchablePlaceholder: 'Suche',
+    cssClasses: {
+      searchableInput: 'form-control form-control-sm mb-2 border-light-2',
+      searchableSubmit: 'd-none',
+      searchableReset: 'd-none',
+      showMore: 'btn btn-secondary btn-sm align-content-center',
+      list: 'list-unstyled',
+      count: 'badge m-2 badge-info',
+      label: 'd-flex align-items-center',
+      checkbox: 'm-2',
+    }
+  }),
   instantsearch.widgets.rangeInput({
     container: "#range-input",
     attribute: "year",
@@ -260,7 +269,7 @@ search.addWidgets([
 
 search.addWidgets([
   instantsearch.widgets.configure({
-    attributesToSnippet: ['full_text', 'keywords'],
+    attributesToSnippet: ['full_text', 'regest'],
   })
 ]);
 

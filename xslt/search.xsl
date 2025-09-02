@@ -39,8 +39,8 @@
                                             <label class="form-check-label" for="search-full-text">Volltext</label>
                                         </div>
                                         <div class="form-check form-check-inline col-auto">
-                                            <input class="search-attribute-checkbox m-2" type="checkbox" id="search-keywords" value="keywords"/>
-                                            <label class="form-check-label" for="search-keywords">Regesten</label>
+                                            <input class="search-attribute-checkbox m-2" type="checkbox" id="search-regest" value="regest" checked="checked"/>
+                                            <label class="form-check-label" for="search-regest">Regesten</label>
                                         </div>
                                     </fieldset>
                                     <div id="current-refinements"></div>
@@ -55,6 +55,8 @@
                                     <div id="refinement-list-receiver"></div>
                                     <h2 class="pt-2">Orte</h2>
                                     <div id="refinement-list-places"></div>
+                                    <h2 class="pt-2">Schlagworte</h2>
+                                    <div id="refinement-list-keywords"></div>
                                     <h2 class="pt-2">Jahr</h2>
                                     <div id="range-input"></div>
                                 </div>
