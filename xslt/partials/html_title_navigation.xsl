@@ -95,15 +95,13 @@
             </button>
         </div>
 
-        <p class="text-center">
-            <small>
-                <xsl:value-of select="//tei:msDesc/tei:msIdentifier/tei:repository" />
-                <xsl:text></xsl:text>
-                <xsl:value-of select="//tei:msDesc/tei:msIdentifier/tei:settlement" />
-,                         
-                <xsl:value-of select="//tei:msDesc/tei:msIdentifier/tei:idno" />
-
-            </small>
+        <p class="text-center small">
+            <xsl:value-of select="string-join((
+     //tei:msDesc/tei:msIdentifier/tei:repository,
+     //tei:msDesc/tei:msIdentifier/tei:settlement
+  ), ' ')"/>
+            <xsl:text>, </xsl:text>
+            <xsl:value-of select="//tei:msDesc/tei:msIdentifier/tei:idno"/>
         </p>
 
         <!-- Modal -->
@@ -128,11 +126,11 @@
                 <xsl:choose>
                     <xsl:when test="contains($eintrag/@subtype, 'next')">
                         <i class="bi bi-chevron-right"/>
-&#160;                                                                                                 <!--
+&#160;                                                                                                                                                                         <!--
                  -->                    </xsl:when>
                     <xsl:when test="contains($eintrag/@subtype, 'previous')">
                         <i class="bi bi-chevron-left"/>
-&#160;                                                                                                 <!--
+&#160;                                                                                                                                                                         <!--
                  -->                    </xsl:when>
                 </xsl:choose>
                 <xsl:value-of select="$eintrag"/>

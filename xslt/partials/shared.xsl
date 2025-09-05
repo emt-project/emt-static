@@ -64,12 +64,12 @@
             </xsl:choose>
         </xsl:variable>
         <span tabindex="0" class="unclear" data-bs-toggle="popover" data-bs-content="{$reason}">
-                <xsl:apply-templates/>
+            <xsl:apply-templates/>
         </span>
 
         <xsl:choose>
             <xsl:when test="./following-sibling::node()[1][self::text() = ' ']">
-                <xsl:text></xsl:text>
+                <xsl:text>&#32;</xsl:text>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -104,10 +104,10 @@
         <strong>
             <span>
                 <xsl:if test="@cert">
-                <xsl:attribute name="data-bs-toggle"/>
-                <xsl:attribute name="tabindex">0</xsl:attribute>
-                <xsl:attribute name="data-bs-toggle">popover</xsl:attribute>
-                <xsl:attribute name="data-bs-content">Identifizierung fraglich</xsl:attribute>
+                    <xsl:attribute name="data-bs-toggle"/>
+                    <xsl:attribute name="tabindex">0</xsl:attribute>
+                    <xsl:attribute name="data-bs-toggle">popover</xsl:attribute>
+                    <xsl:attribute name="data-bs-content">Identifizierung fraglich</xsl:attribute>
                 </xsl:if>
                 <xsl:attribute name="class">
                     <xsl:value-of select="concat('entity entity-', $entityType)"/>
@@ -136,7 +136,7 @@
         </strong>
         <xsl:choose>
             <xsl:when test="./following-sibling::text()[1][not(starts-with(., ','))]">
-                <xsl:text></xsl:text>
+                <xsl:text>&#32;</xsl:text>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -144,16 +144,17 @@
     <xsl:template match="tei:choice">
         <xsl:choose>
             <xsl:when test="./preceding-sibling::node()[1][self::text() = ' ']">
-                <xsl:text></xsl:text>
+                <xsl:text>&#32;</xsl:text>
             </xsl:when>
         </xsl:choose>
         <span tabindex="0" class="expan" data-bs-toggle="popover">
-        <xsl:attribute name="data-bs-content">Abgekürzt: <xsl:value-of select="./tei:abbr"/></xsl:attribute>
+            <xsl:attribute name="data-bs-content">Abgekürzt: <xsl:value-of select="./tei:abbr"/>
+            </xsl:attribute>
             <xsl:value-of select="./tei:expan/text()"/>
         </span>
         <xsl:choose>
             <xsl:when test="./following-sibling::text()[1][not(starts-with(., ','))]">
-                <xsl:text></xsl:text>
+                <xsl:text>&#32;</xsl:text>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -171,11 +172,11 @@
         </span>
         <xsl:choose>
             <xsl:when test="contains(./following-sibling::text()[1], ' ')">
-                <xsl:text></xsl:text>
+                <xsl:text>&#32;</xsl:text>
             </xsl:when>
         </xsl:choose>
         <!--<xsl:choose>
-            <xsl:when test="./following-sibling::text()[1][not(starts-with(., ','))]"><xsl:text> </xsl:text></xsl:when>
+            <xsl:when test="./following-sibling::text()[1][not(starts-with(., ','))]"><xsl:text>&#32;</xsl:text></xsl:when>
         </xsl:choose>-->
     </xsl:template>
     <xsl:template match="tei:supplied">
@@ -184,7 +185,7 @@
         </span>
         <xsl:choose>
             <xsl:when test="./following-sibling::node()[1][self::text() = ' ']">
-                <xsl:text></xsl:text>
+                <xsl:text>&#32;</xsl:text>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
@@ -217,7 +218,7 @@
         </span>
         <xsl:choose>
             <xsl:when test="./following-sibling::node()[1][self::text() = ' ']">
-                <xsl:text></xsl:text>
+                <xsl:text>&#32;</xsl:text>
             </xsl:when>
         </xsl:choose>
     </xsl:template>
