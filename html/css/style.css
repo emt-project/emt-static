@@ -364,3 +364,8 @@ div#map {
   --bs-popover-body-padding-y: .5rem;
 }
 
+/* Typesense styling */
+.search-group{
+  max-width: 1000px;
+  width: 100%;
+}

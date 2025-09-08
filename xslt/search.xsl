@@ -27,53 +27,54 @@
                             <xsl:value-of select="$doc_title"/>
                         </h1>
                         <div class="ais-InstantSearch">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div id="stats-container"></div>
-                                    <div id="searchbox"></div>
-                                    <div id="search-fields-selector"></div>
-                                    <fieldset class="row mb-3">
-                                        <legend class="col-form-label col-sm-4 pt-0">Suchen in:</legend>
-                                        <div class="form-check form-check-inline col-auto">
-                                            <input class="search-attribute-checkbox m-2" type="checkbox" id="search-full-text" value="full_text" checked="checked"/>
-                                            <label class="form-check-label" for="search-full-text">Volltext</label>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <div class="search-group mx-auto">
+                                        <div class="d-flex gap-2 align-items-start">
+                                            <div id="searchbox" class="flex-grow-1"></div>
+                                            <select id="search-field-select" class="form-select form-select-sm w-auto">
+                                                <option value="full_text,regest" selected="selected">Volltext + Regesten</option>
+                                                <option value="full_text">Nur Volltext</option>
+                                                <option value="regest">Nur Regesten</option>
+                                            </select>
                                         </div>
-                                        <div class="form-check form-check-inline col-auto">
-                                            <input class="search-attribute-checkbox m-2" type="checkbox" id="search-regest" value="regest" checked="checked"/>
-                                            <label class="form-check-label" for="search-regest">Regesten</label>
-                                        </div>
-                                    </fieldset>
-                                    <div id="current-refinements"></div>
-                                    <div id="clear-refinements"></div>
-                                    <!-- commented due to https://github.com/emt-project/emt-static/issues/71  -->
-                                    <!-- 
-                                    <h2 class="pt-2">Personen</h2>
-                                    <div id="refinement-list-persons"></div>-->
-                                    <h2 class="pt-2">Sender</h2>
-                                    <div id="refinement-list-sender"></div>
-                                    <h2 class="pt-2">Empfänger</h2>
-                                    <div id="refinement-list-receiver"></div>
-                                    <h2 class="pt-2">Orte</h2>
-                                    <div id="refinement-list-places"></div>
-                                    <h2 class="pt-2">Schlagworte</h2>
-                                    <div id="refinement-list-keywords"></div>
-                                    <h2 class="pt-2">Jahr</h2>
-                                    <div id="range-input"></div>
+                                        <div id="stats-container" class="mt-2"></div>
+                                        <div id="search-fields-selector" class="mt-3 d-none"></div>                                        <!-- old checkboxes can be removed -->
+                                        <div id="current-refinements" class="mt-2"></div>
+                                    </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <div id="hits"></div>
-                                    <div id="pagination"></div>
+                            </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+
+                                        <div id="facets" class="d-grid gap-2">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <h2>Filter</h2>
+                                                <div id="clear-refinements"></div>
+                                            </div>
+                                            <div id="refinement-list-sender"></div>
+                                            <div id="refinement-list-receiver"></div>
+                                            <div id="refinement-list-mentioned_persons"></div>
+                                            <div id="refinement-list-sent_from"></div>
+                                            <div id="refinement-list-mentioned_places"></div>
+                                            <div id="refinement-list-keywords"></div>
+                                            <div id="range-input"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div id="hits"></div>
+                                        <div id="pagination"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </main>
-                <xsl:call-template name="html_footer"/>
-                <link rel="stylesheet" href="vendor/instantsearch.css/themes/algolia-min.css" />
-                <script src="vendor/instantsearch/instantsearch.production.min.js"></script>
-                <script src="vendor/typesense-instantsearch-adapter/typesense-instantsearch-adapter.min.js"></script>
-                <script src="js/ts_index.js"></script>
-            </body>
-        </html>
-    </xsl:template>
-</xsl:stylesheet>
+                    </main>
+                    <xsl:call-template name="html_footer"/>
+                    <link rel="stylesheet" href="vendor/instantsearch.css/themes/algolia-min.css" />
+                    <script src="vendor/instantsearch/instantsearch.production.min.js"></script>
+                    <script src="vendor/typesense-instantsearch-adapter/typesense-instantsearch-adapter.min.js"></script>
+                    <script src="js/ts_index.js"></script>
+                </body>
+            </html>
+        </xsl:template>
+    </xsl:stylesheet>

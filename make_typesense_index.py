@@ -36,10 +36,16 @@ current_schema = {
             "optional": True,
             "facet": True,
         },
-        {"name": "persons", "type": "string[]", "facet": True, "optional": True},
+        {
+            "name": "mentioned_persons",
+            "type": "string[]",
+            "facet": True,
+            "optional": True,
+        },
         {"name": "sender", "type": "string[]", "facet": True, "optional": True},
         {"name": "receiver", "type": "string[]", "facet": True, "optional": True},
-        {"name": "places", "type": "string[]", "facet": True, "optional": True},
+        {"name": "sent_from", "type": "string[]", "facet": True, "optional": True},
+        {"name": "mentioned_places", "type": "string[]", "facet": True, "optional": True},
         {"name": "orgs", "type": "string[]", "facet": True, "optional": True},
         {"name": "keywords", "type": "string[]", "facet": True, "optional": True},
     ],
@@ -85,42 +91,49 @@ for x in tqdm(files, total=len(files)):
         cfts_record["year"] = int(date_str[:4])
     except ValueError:
         pass
-    record["persons"] = [
+    record["mentioned_persons"] = [
         " ".join(" ".join(x.xpath(".//text()")).split())
-        for x in doc.any_xpath(".//tei:correspAction//tei:persName[1]")
+        for x in doc.any_xpath(".//tei:listPerson//tei:persName[1]")
     ]
     record["sender"] = []
     try:
-        place = doc.any_xpath('.//tei:correspAction[@type="sent"]/tei:persName/text()')[
-            0
-        ]
+        sender = doc.any_xpath(
+            './/tei:correspAction[@type="sent"]/tei:persName/text()'
+        )[0]
+        sender = " ".join(sender.split())
     except:
-        place = None
-    record["sender"].append(place)
+        sender = None
+    record["sender"].append(sender)
     record["receiver"] = []
     try:
         receiver = doc.any_xpath(
             './/tei:correspAction[@type="received"]/tei:persName/text()'
         )[0]
+        receiver = " ".join(receiver.split())
     except:
         receiver = None
     if receiver:
         record["receiver"].append(receiver)
 
-    cfts_record["persons"] = record["persons"]
-    record["places"] = []
+    # cfts_record["persons"] = record["persons"]
+    record["sent_from"] = []
     try:
-        place = doc.any_xpath(
+        sent_from = doc.any_xpath(
             './/tei:correspAction[@type="sent"]/tei:placeName/text()'
         )[0]
     except:
-        place = None
-    if place:
-        record["places"].append(place)
-        cfts_record["places"] = record["places"]
+        sent_from = None
+    if sent_from:
+        record["sent_from"].append(sent_from)
+        cfts_record["sent_from"] = record["sent_from"]
+
+    record["mentioned_places"] = [
+        " ".join(" ".join(x.xpath(".//text()")).split())
+        for x in doc.any_xpath(".//tei:listPlace//tei:placeName[1]")
+    ]
     record["full_text"] = extract_fulltext(body, tag_blacklist=tag_blacklist)
     try:
-        regest = doc.any_xpath('.//tei:abstract[@n="regest"]')[0]  
+        regest = doc.any_xpath('.//tei:abstract[@n="regest"]')[0]
     except IndexError:
         regest = None
     if regest is not None:
