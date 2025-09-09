@@ -32,7 +32,7 @@
                                     <div class="search-group mx-auto">
                                         <div class="d-flex gap-2 align-items-start">
                                             <div id="searchbox" class="flex-grow-1"></div>
-                                            <select id="search-field-select" class="form-select form-select-sm w-auto">
+                                            <select id="search-field-select" class="form-select w-auto">
                                                 <option value="full_text,regest" selected="selected">Volltext + Regesten</option>
                                                 <option value="full_text">Nur Volltext</option>
                                                 <option value="regest">Nur Regesten</option>
@@ -44,38 +44,42 @@
                                     </div>
                                 </div>
                             </div>
-                                <div class="row mb-3">
-                                    <div class="col-md-4">
+                            <div class="row mb-3">
+                                <div class="col-md-4">
 
-                                        <div id="facets" class="d-grid gap-2">
-                                            <div class="d-flex justify-content-between align-items-center">
-                                                <h2>Filter</h2>
-                                                <div id="clear-refinements"></div>
-                                            </div>
-                                            <div id="refinement-list-sender"></div>
-                                            <div id="refinement-list-receiver"></div>
-                                            <div id="refinement-list-mentioned_persons"></div>
-                                            <div id="refinement-list-sent_from"></div>
-                                            <div id="refinement-list-mentioned_places"></div>
-                                            <div id="refinement-list-orgs"></div>
-                                            <div id="refinement-list-keywords"></div>
-                                            <div id="range-input"></div>
+                                    <div id="facets" class="d-grid gap-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h2>Filter</h2>
+                                            <div id="clear-refinements"></div>
                                         </div>
+                                        <div id="refinement-list-sender"></div>
+                                        <div id="refinement-list-receiver"></div>
+                                        <div id="refinement-list-mentioned_persons"></div>
+                                        <div id="refinement-list-sent_from"></div>
+                                        <div id="refinement-list-mentioned_places"></div>
+                                        <div id="refinement-list-orgs"></div>
+                                        <div id="refinement-list-keywords"></div>
+                                        <div id="range-input"></div>
                                     </div>
-                                    <div class="col-md-8">
-                                        <div id="hits"></div>
-                                        <div id="pagination"></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="d-flex justify-content-end align-items-center gap-2 mb-3">
+                                        <label for="ais-sort-by-select" class="me-2">Sortieren nach:</label>
+                                        <div id="sort-by"></div>
                                     </div>
+                                    <div id="hits"></div>
+                                    <div id="pagination"></div>
                                 </div>
                             </div>
                         </div>
-                    </main>
-                    <xsl:call-template name="html_footer"/>
-                    <link rel="stylesheet" href="vendor/instantsearch.css/themes/algolia-min.css" />
-                    <script src="vendor/instantsearch/instantsearch.production.min.js"></script>
-                    <script src="vendor/typesense-instantsearch-adapter/typesense-instantsearch-adapter.min.js"></script>
-                    <script src="js/ts_index.js"></script>
-                </body>
-            </html>
-        </xsl:template>
-    </xsl:stylesheet>
+                    </div>
+                </main>
+                <xsl:call-template name="html_footer"/>
+                <link rel="stylesheet" href="vendor/instantsearch.css/themes/algolia-min.css" />
+                <script src="vendor/instantsearch/instantsearch.production.min.js"></script>
+                <script src="vendor/typesense-instantsearch-adapter/typesense-instantsearch-adapter.min.js"></script>
+                <script src="js/ts_index.js"></script>
+            </body>
+        </html>
+    </xsl:template>
+</xsl:stylesheet>

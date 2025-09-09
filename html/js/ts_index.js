@@ -80,6 +80,17 @@ search.addWidgets([
       `,
     }
   }),
+  instantsearch.widgets.sortBy({
+    container: '#sort-by',
+    items: [
+      { label: 'Relevanz', value: 'emt' },
+      { label: 'Jahr (aufsteigend)', value: 'emt/sort/year:asc' },
+      { label: 'Jahr (absteigend)', value: 'emt/sort/year:desc' },
+    ],
+    cssClasses: {
+      select: 'form-control'
+    }
+  }),
 
   // commented due to https://github.com/emt-project/emt-static/issues/71
   // instantsearch.widgets.refinementList({
@@ -106,6 +117,9 @@ search.addWidgets([
     collapsed: true,
     templates: {
       header: 'Absender'
+    },
+    cssClasses :{
+      header: 'fs-6',
     }
   })(
     instantsearch.widgets.refinementList)
