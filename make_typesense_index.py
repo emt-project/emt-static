@@ -15,14 +15,30 @@ from tqdm import tqdm
 files = glob.glob("./data/editions/*.xml")
 tag_blacklist = ["{http://www.tei-c.org/ns/1.0}abbr"]
 
+def get_corresp_info(doc, action_type, tag):
+    try:
+        node = doc.any_xpath(f'.//tei:correspAction[@type="{action_type}"]/tei:{tag}')[0]
+        name = " ".join("".join(node.xpath('.//text()')).split())
+        ref = node.get("ref", "").lstrip("#")
+        return {"name": name, "id": ref}
+    except IndexError:
+        return {}
+
+def get_list_items(doc, list_tag, item_tag, name_tag):
+    items = []
+    for x in doc.any_xpath(f".//tei:{list_tag}/tei:{item_tag}"):
+        name = " ".join(" ".join(x.xpath(f".//tei:{name_tag}[1]//text()", namespaces= {"tei": "http://www.tei-c.org/ns/1.0"})).split())
+        items.append({"name": name, "id": x.get("xml:id")})
+    return items
+
 
 try:
     client.collections["emt"].delete()
 except ObjectNotFound:
     pass
-
 current_schema = {
     "name": "emt",
+    "enable_nested_fields": True,
     "fields": [
         {"name": "id", "type": "string"},
         {"name": "rec_id", "type": "string"},
@@ -36,17 +52,22 @@ current_schema = {
             "optional": True,
             "facet": True,
         },
+        {"name": "sender", "type": "object", "facet": True, "optional": True},
+        {"name": "receiver", "type": "object", "facet": True, "optional": True},
+        {"name": "sent_from", "type": "object", "facet": True, "optional": True},
         {
             "name": "mentioned_persons",
-            "type": "string[]",
+            "type": "object[]",
             "facet": True,
             "optional": True,
         },
-        {"name": "sender", "type": "string[]", "facet": True, "optional": True},
-        {"name": "receiver", "type": "string[]", "facet": True, "optional": True},
-        {"name": "sent_from", "type": "string[]", "facet": True, "optional": True},
-        {"name": "mentioned_places", "type": "string[]", "facet": True, "optional": True},
-        {"name": "orgs", "type": "string[]", "facet": True, "optional": True},
+        {
+            "name": "mentioned_places",
+            "type": "object[]",
+            "facet": True,
+            "optional": True,
+        },
+        {"name": "orgs", "type": "object[]", "facet": True, "optional": True},
         {"name": "keywords", "type": "string[]", "facet": True, "optional": True},
     ],
     "default_sorting_field": "date",
@@ -80,57 +101,16 @@ for x in tqdm(files, total=len(files)):
             doc.any_xpath('.//tei:titleStmt/tei:title[@type="main"]/text()')
         ).split()
     )
-    cfts_record["title"] = record["title"]
+    cfts_record["title"] = record["title"]    
     try:
         date_str = doc.any_xpath("//tei:origDate/@when-iso")[0]
     except IndexError:
         date_str = "1000"
-
     try:
         record["year"] = int(date_str[:4])
         cfts_record["year"] = int(date_str[:4])
     except ValueError:
         pass
-    record["mentioned_persons"] = [
-        " ".join(" ".join(x.xpath(".//text()")).split())
-        for x in doc.any_xpath(".//tei:listPerson//tei:persName[1]")
-    ]
-    record["sender"] = []
-    try:
-        sender = doc.any_xpath(
-            './/tei:correspAction[@type="sent"]/tei:persName/text()'
-        )[0]
-        sender = " ".join(sender.split())
-    except:
-        sender = None
-    record["sender"].append(sender)
-    record["receiver"] = []
-    try:
-        receiver = doc.any_xpath(
-            './/tei:correspAction[@type="received"]/tei:persName/text()'
-        )[0]
-        receiver = " ".join(receiver.split())
-    except:
-        receiver = None
-    if receiver:
-        record["receiver"].append(receiver)
-
-    # cfts_record["persons"] = record["persons"]
-    record["sent_from"] = []
-    try:
-        sent_from = doc.any_xpath(
-            './/tei:correspAction[@type="sent"]/tei:placeName/text()'
-        )[0]
-    except:
-        sent_from = None
-    if sent_from:
-        record["sent_from"].append(sent_from)
-        cfts_record["sent_from"] = record["sent_from"]
-
-    record["mentioned_places"] = [
-        " ".join(" ".join(x.xpath(".//text()")).split())
-        for x in doc.any_xpath(".//tei:listPlace//tei:placeName[1]")
-    ]
     record["full_text"] = extract_fulltext(body, tag_blacklist=tag_blacklist)
     try:
         regest = doc.any_xpath('.//tei:abstract[@n="regest"]')[0]
@@ -141,6 +121,7 @@ for x in tqdm(files, total=len(files)):
     else:
         record["regest"] = None
     cfts_record["full_text"] = record["full_text"]
+    
     try:
         date_node = doc.any_xpath("//tei:correspAction/tei:date")[0]
         date_string = extract_begin_end(date_node)[0]
@@ -154,6 +135,24 @@ for x in tqdm(files, total=len(files)):
     time_tuple = date_object.timetuple()
     unix_timestamp = calendar.timegm(time_tuple)
     record["date"] = unix_timestamp * -1  # dirty trick to change sort order
+    
+    
+    # entities with a single object
+    record["sender"] = get_corresp_info(doc, "sent", "persName")
+    record["receiver"] = get_corresp_info(doc, "received", "persName")
+    record["sent_from"] = get_corresp_info(doc, "sent", "placeName")
+    cfts_record["receiver"] = record["receiver"]
+    cfts_record["sender"] = record["sender"]
+    cfts_record["sent_from"] = record["sent_from"]
+    
+    # entities with object lists
+    record["mentioned_persons"] = get_list_items(doc, "listPerson", "person", "persName")
+    record["mentioned_places"] = get_list_items(doc, "listPlace", "place", "placeName")
+    record["orgs"] = get_list_items(doc, "listOrg", "org", "orgName")
+    cfts_record["mentioned_persons"] = record["mentioned_persons"]
+    cfts_record["mentioned_places"] = record["mentioned_places"]
+    cfts_record["orgs"] = record["orgs"]
+    
     records.append(record)
     cfts_records.append(cfts_record)
 

@@ -1,13 +1,19 @@
 const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   server: {
-    apiKey: "lGsWJtaz2LdOqNx2iiQeTwY68oLOdn1k",
-    nodes: [
-      {
-        host: "typesense.acdh-dev.oeaw.ac.at",
-        port: "443",
-        protocol: "https",
-      },
-    ],
+    // apiKey: "lGsWJtaz2LdOqNx2iiQeTwY68oLOdn1k",
+    // nodes: [
+    //   {
+    //     host: "typesense.acdh-dev.oeaw.ac.at",
+    //     port: "443",
+    //     protocol: "https",
+    //   },
+    // ],
+    apiKey: "wGufrCvmagp3u285ViWYErQL1t8rzF85",
+    nodes: [{
+      host: "localhost",
+      port: 8108,
+      protocol: "http"
+    }],
     cacheSearchResultsForSeconds: 2 * 60,
   },
   additionalSearchParameters: {
@@ -49,9 +55,9 @@ search.addWidgets([
       <h4><a href='${hit.id}.html'>${hit.title}</a></h4>
       <p>${hit._snippetResult.regest.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'regest' }) : ''}</p>
       <p>${hit._snippetResult.full_text.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'full_text' }) : ''}</p>
-      <p>${hit.sender.map((item) => html`<a href='${item.id}'><span class="badge rounded-pill m-1 bg-danger">${item}</span></a>`)}
- ${hit.receiver.map((item) => html`<a href='${item.id}'><span class="badge rounded-pill m-1 bg-warning">${item}</span></a>`)}</p>
-      <p>${hit.sent_from.map((item) => html`<a href='${item.id}'><span class="badge rounded-pill m-1 bg-info">${item}</span></a>`)}</p>`
+      <p>${hit.sender ? html`<a href='${hit.sender.id}.html'><span class="badge rounded-pill m-1 bg-danger">${hit.sender.name}</span></a>` : ''}</p>
+      <p>${hit.receiver ? html`<a href='${hit.receiver.id}.html'><span class="badge rounded-pill m-1 bg-warning">${hit.receiver.name}</span></a>` : ''}</p>
+      <p>${hit.sent_from ? html`<a href='${hit.sent_from.id}.html'><span class="badge rounded-pill m-1 bg-info">${hit.sent_from.name}</span></a>` : ''}</p>`
       }
     },
   }),
@@ -106,7 +112,7 @@ search.addWidgets([
     instantsearch.widgets.refinementList)
     ({
       container: '#refinement-list-sender',
-      attribute: 'sender',
+      attribute: 'sender.name',
       searchable: true,
       searchablePlaceholder: 'Suche',
       cssClasses: {
@@ -129,7 +135,7 @@ search.addWidgets([
     instantsearch.widgets.refinementList)
     ({
       container: '#refinement-list-receiver',
-      attribute: 'receiver',
+      attribute: 'receiver.name',
       searchable: true,
       searchablePlaceholder: 'Suche',
       cssClasses: {
@@ -151,7 +157,7 @@ search.addWidgets([
   })(
     instantsearch.widgets.refinementList)({
       container: '#refinement-list-sent_from',
-      attribute: 'sent_from',
+      attribute: 'sent_from.name',
       searchable: true,
       searchablePlaceholder: 'Suche',
       cssClasses: {
@@ -174,7 +180,7 @@ search.addWidgets([
     instantsearch.widgets.refinementList)
     ({
       container: '#refinement-list-mentioned_persons',
-      attribute: 'mentioned_persons',
+      attribute: 'mentioned_persons.name',
       searchable: true,
       searchablePlaceholder: 'Suche',
       cssClasses: {
@@ -196,7 +202,7 @@ search.addWidgets([
   })(
     instantsearch.widgets.refinementList)({
       container: '#refinement-list-mentioned_places',
-      attribute: 'mentioned_places',
+      attribute: 'mentioned_places.name',
       searchable: true,
       searchablePlaceholder: 'Suche',
       cssClasses: {
