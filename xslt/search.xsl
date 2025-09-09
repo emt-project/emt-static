@@ -57,6 +57,7 @@
                                             <div id="refinement-list-mentioned_persons"></div>
                                             <div id="refinement-list-sent_from"></div>
                                             <div id="refinement-list-mentioned_places"></div>
+                                            <div id="refinement-list-orgs"></div>
                                             <div id="refinement-list-keywords"></div>
                                             <div id="range-input"></div>
                                         </div>

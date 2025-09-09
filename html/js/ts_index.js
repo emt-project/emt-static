@@ -55,9 +55,8 @@ search.addWidgets([
       <h4><a href='${hit.id}.html'>${hit.title}</a></h4>
       <p>${hit._snippetResult.regest.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'regest' }) : ''}</p>
       <p>${hit._snippetResult.full_text.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'full_text' }) : ''}</p>
-      <p>${hit.sender ? html`<a href='${hit.sender.id}.html'><span class="badge rounded-pill m-1 bg-danger">${hit.sender.name}</span></a>` : ''}</p>
-      <p>${hit.receiver ? html`<a href='${hit.receiver.id}.html'><span class="badge rounded-pill m-1 bg-warning">${hit.receiver.name}</span></a>` : ''}</p>
-      <p>${hit.sent_from ? html`<a href='${hit.sent_from.id}.html'><span class="badge rounded-pill m-1 bg-info">${hit.sent_from.name}</span></a>` : ''}</p>`
+      <p>${hit.sender ? html`<a href='${hit.sender.id}.html'><span class="badge rounded-pill m-1 entity-person">${hit.sender.name}</span></a>` : ''} 
+      ${hit.receiver ? html`<a href='${hit.receiver.id}.html'><span class="badge rounded-pill m-1 entity-person">${hit.receiver.name}</span></a>` : ''} ${hit.sent_from ? html`<a href='${hit.sent_from.id}.html'><span class="badge rounded-pill m-1 entity-place">${hit.sent_from.name}</span></a>` : ''}</p>`
       }
     },
   }),
@@ -217,6 +216,28 @@ search.addWidgets([
       }
     }),
   instantsearch.widgets.panel({
+    collapsed: true,
+    templates: {
+      header: 'Organisationen'
+    }
+  })(
+    instantsearch.widgets.refinementList)({
+      container: '#refinement-list-orgs',
+      attribute: 'orgs.name',
+      searchable: true,
+      searchablePlaceholder: 'Suche',
+      cssClasses: {
+        searchableInput: 'form-control form-control-sm mb-2 border-light-2',
+        searchableSubmit: 'd-none',
+        searchableReset: 'd-none',
+        // showMore: 'btn btn-secondary btn-sm align-content-center',
+        list: 'list-unstyled',
+        count: 'badge m-2 badge-info',
+        label: 'd-flex align-items-center',
+        checkbox: 'm-2',
+      }
+    }),
+      instantsearch.widgets.panel({
     collapsed: true,
     templates: {
       header: 'Schlagworte'
