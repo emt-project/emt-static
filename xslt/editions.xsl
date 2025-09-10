@@ -47,6 +47,7 @@
                 <script src="vendor/openseadragon-bin-4.1.1/openseadragon.min.js"/>
                 <script src="js/osd_single.js"></script>
                 <script src="js/popover.js"></script>
+                <script src="js/info-scroll.js"></script>
             </head>
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>
@@ -82,9 +83,12 @@
                                         <xsl:value-of select="data(./tei:pb/@rend)"/>
                                     </xsl:variable>
                                     <xsl:variable name="facs-url"
-                                        select="concat(tokenize(data((./tei:pb/@facs)[1]), ' ')[2], '?format=iiif')"/>
+                                        select="data((./tei:pb/@source)[1])"/>
+                                    <!--commented out due to https://github.com/emt-project/emt-static/issues/152 , will switch back to ARCHE after another archiving round at the end of the project-->
+                                    <!-- <xsl:variable name="facs-url"
+                                        select="concat(tokenize(data((./tei:pb/@facs)[1]), ' ')[2], '?format=iiif')"/> -->
                                     <div class="row">
-                                        <div class="col-md-12">
+                                        <div class="col-md-12 pe-xl-0 pe-5">
                                             <div class="float-end">
                                                 <h5>
                                                     <xsl:value-of select="$pbFolio"/>
@@ -94,13 +98,13 @@
                                     </div>
                                     
                                     <div class="row">
-                                        <div class="col-md-7">
+                                        <div class="col-md-6">
                                               <div id="{$openSeadragonId}">
                                                 <img id="{$openSeadragonId}-img" src="{normalize-space($facs-url)}" onload="loadImage('{$openSeadragonId}', '{$rotation}')"></img>
                                                 <!-- cosy spot for OSD viewer  -->
                                             </div>
                                         </div>
-                                        <div class="col-md-5 editionstext">
+                                        <div class="col-md-6 pe-xl-0 pe-5 editionstext">
                                             <xsl:apply-templates/>
                                         </div>
                                     </div>
