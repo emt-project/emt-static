@@ -353,13 +353,44 @@ search.addWidgets([
     cssClasses: {
       delete: 'btn',
       label: 'badge'
+    },
+    transformItems(items) {
+      return items.map(item => {
+      // Customize label based on attribute
+      switch (item.attribute) {
+        case 'sender.name':
+          item.label = 'Von';
+          break;
+        case 'receiver.name':
+          item.label = 'An';
+          break;
+        case 'mentioned_persons.name':
+          item.label = 'erwähnt';
+          break;
+        case 'mentioned_places.name':
+          item.label = 'erwähnt';
+          break;
+        case 'sent_from.name':
+          item.label = 'Absenderort';
+          break;
+        case 'orgs.name':
+          item.label = 'Organisation';
+          break;
+        case 'keywords':
+          item.label = 'Schlagwort';
+          break;
+        case 'year':
+          item.label = 'Jahr';
+          break;
+        default:
+          item.label = item.label;
+      }
+
+      return item;
+    })
     }
-  })
-]);
+  }),
 
-
-
-search.addWidgets([
   instantsearch.widgets.configure({
     attributesToSnippet: ['full_text', 'regest'],
   })
