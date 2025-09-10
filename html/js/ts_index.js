@@ -1,19 +1,13 @@
 const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   server: {
-    // apiKey: "lGsWJtaz2LdOqNx2iiQeTwY68oLOdn1k",
-    // nodes: [
-    //   {
-    //     host: "typesense.acdh-dev.oeaw.ac.at",
-    //     port: "443",
-    //     protocol: "https",
-    //   },
-    // ],
-    apiKey: "wGufrCvmagp3u285ViWYErQL1t8rzF85",
-    nodes: [{
-      host: "localhost",
-      port: 8108,
-      protocol: "http"
-    }],
+    apiKey: "lGsWJtaz2LdOqNx2iiQeTwY68oLOdn1k",
+    nodes: [
+      {
+        host: "typesense.acdh-dev.oeaw.ac.at",
+        port: "443",
+        protocol: "https",
+      },
+    ],
     cacheSearchResultsForSeconds: 2 * 60,
   },
   additionalSearchParameters: {
@@ -21,11 +15,29 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   }
 });
 
+const indexName = 'emt';
 const searchClient = typesenseInstantsearchAdapter.searchClient;
 const search = instantsearch({
-  indexName: 'emt',
+  indexName,
   searchClient,
-})
+  routing: {
+     // only the query parameter is synced to the URL
+    stateMapping: {
+      stateToRoute(uiState) {
+        return {
+          query: uiState[indexName].query,
+        };
+      },
+      routeToState(routeState) {
+        return {
+          [indexName]: {
+            query: routeState.query
+          }
+        };
+      },
+    },
+  }
+});
 
 search.addWidgets([
   instantsearch.widgets.searchBox({
