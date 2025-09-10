@@ -257,7 +257,7 @@ search.addWidgets([
   instantsearch.widgets.panel({
     collapsed: true,
     templates: {
-      header: 'Organisationen'
+      header: 'Institutionen'
     },
     cssClasses: {
       header: 'fs-6',
@@ -371,10 +371,10 @@ search.addWidgets([
           item.label = 'erwähnt';
           break;
         case 'sent_from.name':
-          item.label = 'Absenderort';
+          item.label = 'Absendeort';
           break;
         case 'orgs.name':
-          item.label = 'Organisation';
+          item.label = 'Institution';
           break;
         case 'keywords':
           item.label = 'Schlagwort';
