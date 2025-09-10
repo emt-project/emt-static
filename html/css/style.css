@@ -361,8 +361,12 @@ div#map {
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: .5rem;
 }
-
 #sticky-info .btn {
   background-color: var(--bs-link-color);
   color: var(--bs-body-bg);
+}
+/* Typesense styling */
+.search-group{
+  max-width: 1000px;
+  width: 100%;
 }
