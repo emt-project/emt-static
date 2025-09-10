@@ -45,7 +45,7 @@ current_schema = {
         {"name": "title", "type": "string"},
         {"name": "full_text", "type": "string"},
         {"name": "regest", "type": "string"},
-        {"name": "date", "type": "int32"},
+        {"name": "date", "type": "int64","sort": True,},
         {
             "name": "year",
             "type": "int32",
@@ -102,15 +102,6 @@ for x in tqdm(files, total=len(files)):
         ).split()
     )
     cfts_record["title"] = record["title"]    
-    try:
-        date_str = doc.any_xpath("//tei:origDate/@when-iso")[0]
-    except IndexError:
-        date_str = "1000"
-    try:
-        record["year"] = int(date_str[:4])
-        cfts_record["year"] = int(date_str[:4])
-    except ValueError:
-        pass
     record["full_text"] = extract_fulltext(body, tag_blacklist=tag_blacklist)
     try:
         regest = doc.any_xpath('.//tei:abstract[@n="regest"]')[0]
@@ -121,22 +112,26 @@ for x in tqdm(files, total=len(files)):
     else:
         record["regest"] = None
     cfts_record["full_text"] = record["full_text"]
-    
+
     try:
         date_node = doc.any_xpath("//tei:correspAction/tei:date")[0]
         date_string = extract_begin_end(date_node)[0]
-        if date_string:
-            pass
+        
+        if date_string and date_string[:4].isdigit():
+            # Add year as facet only for valid years
+            year_val = int(date_string[:4])
+            record["year"] = year_val
+            cfts_record["year"] = year_val
+
         else:
-            date_string = "1800-01-01"
-    except:
-        date_string = "1800-01-01"
+            date_string= "1800-01-01"  # Fallback for invalid dates
+    except Exception:
+        date_string= "1800-01-01" 
     date_object = datetime.strptime(date_string, "%Y-%m-%d")
     time_tuple = date_object.timetuple()
     unix_timestamp = calendar.timegm(time_tuple)
-    record["date"] = unix_timestamp * -1  # dirty trick to change sort order
-    
-    
+    record["date"] = -unix_timestamp # Negate for reverse sorting
+
     # entities with a single object
     record["sender"] = get_corresp_info(doc, "sent", "persName")
     record["receiver"] = get_corresp_info(doc, "received", "persName")

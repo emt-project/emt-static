@@ -17,8 +17,8 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
     cacheSearchResultsForSeconds: 2 * 60,
   },
   additionalSearchParameters: {
-    query_by: "full_text, regest"
-  },
+    query_by: "full_text, regest",
+  }
 });
 
 const searchClient = typesenseInstantsearchAdapter.searchClient;
@@ -80,12 +80,13 @@ search.addWidgets([
       `,
     }
   }),
+  // asc and desc flipped because date values are inverted
   instantsearch.widgets.sortBy({
     container: '#sort-by',
     items: [
       { label: 'Relevanz', value: 'emt' },
-      { label: 'Jahr (aufsteigend)', value: 'emt/sort/year:asc' },
-      { label: 'Jahr (absteigend)', value: 'emt/sort/year:desc' },
+      { label: 'Datum (aufsteigend)', value: 'emt/sort/date:desc' },
+      { label: 'Datum (absteigend)', value: 'emt/sort/date:asc' },
     ],
     cssClasses: {
       select: 'form-control'
@@ -118,7 +119,7 @@ search.addWidgets([
     templates: {
       header: 'Absender'
     },
-    cssClasses :{
+    cssClasses: {
       header: 'fs-6',
     }
   })(
@@ -143,6 +144,9 @@ search.addWidgets([
     collapsed: true,
     templates: {
       header: 'Empfänger'
+    },
+    cssClasses: {
+      header: 'fs-6',
     }
   })(
     instantsearch.widgets.refinementList)
@@ -166,6 +170,9 @@ search.addWidgets([
     collapsed: true,
     templates: {
       header: 'Absendeorte'
+    },
+    cssClasses: {
+      header: 'fs-6',
     }
   })(
     instantsearch.widgets.refinementList)({
@@ -188,6 +195,9 @@ search.addWidgets([
     collapsed: true,
     templates: {
       header: 'Erwähnte Personen'
+    },
+    cssClasses: {
+      header: 'fs-6',
     }
   })(
     instantsearch.widgets.refinementList)
@@ -211,6 +221,9 @@ search.addWidgets([
     collapsed: true,
     templates: {
       header: 'Erwähnte Orte'
+    },
+    cssClasses: {
+      header: 'fs-6',
     }
   })(
     instantsearch.widgets.refinementList)({
@@ -233,6 +246,9 @@ search.addWidgets([
     collapsed: true,
     templates: {
       header: 'Organisationen'
+    },
+    cssClasses: {
+      header: 'fs-6',
     }
   })(
     instantsearch.widgets.refinementList)({
@@ -251,10 +267,13 @@ search.addWidgets([
         checkbox: 'm-2',
       }
     }),
-      instantsearch.widgets.panel({
+  instantsearch.widgets.panel({
     collapsed: true,
     templates: {
       header: 'Schlagworte'
+    },
+    cssClasses: {
+      header: 'fs-6',
     }
   })(
     instantsearch.widgets.refinementList)({
@@ -276,6 +295,9 @@ search.addWidgets([
   instantsearch.widgets.panel({
     templates: {
       header: 'Jahr'
+    },
+    cssClasses: {
+      header: 'fs-6',
     }
   })(
     instantsearch.widgets.rangeInput)
