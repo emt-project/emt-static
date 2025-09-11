@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-    const popovers = []
-  popoverTriggerList.forEach(el => {
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popovers = [];
+
+    popoverTriggerList.forEach(el => {
         const popover = new bootstrap.Popover(el, {
             html: true,
             placement: 'bottom',
@@ -23,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         popovers.push({ el, popover });
 
 
-        // only one popover at a time
         const togglePopover = (e) => {
             e.preventDefault();
             e.stopPropagation();
@@ -40,15 +40,33 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         };
 
-        el.addEventListener('click', togglePopover);
-        el.addEventListener('touchend', togglePopover);
+        let hideTimeout;
+        // === HOVER ===
+        el.addEventListener('mouseover', (e) => {
+            e.stopPropagation();
+            clearTimeout(hideTimeout);
+            popover.show();
+        });
+
+        el.addEventListener('mouseout', (e) => {
+            e.stopPropagation();
+            hideTimeout = setTimeout(() => popover.hide(), 50);
+        });
+
+
+        // === KEYBOARD ===
         el.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') {
                 togglePopover(e);
             }
         });
+
+        // === TOUCH ===
+        el.addEventListener('touchend', togglePopover);
     });
 
+
+    // Hide popovers on outside interaction
     document.addEventListener('click', () => {
         popovers.forEach(({ popover }) => popover.hide());
     });
@@ -59,5 +77,5 @@ document.addEventListener('DOMContentLoaded', function () {
         if (![...popoverTriggerList].includes(e.target)) {
             popovers.forEach(({ popover }) => popover.hide());
         }
+           });
     });
-});
