@@ -16,15 +16,16 @@ function createCalendar(i18n, events, onEventClick) {
     calendar.setData({ events, currentYear: 1696 });
 
     calendar.addEventListener("calendar-event-click", onEventClick);
-    const senders = new Map()
-    events.forEach(d => {
-        if (d.sender?.link.includes("emt_person")) {
-            senders.set(d.sender.link, d.sender.label)
-        }
-        else if (d.sender.label.includes("erschlossen")) {
-            senders.set(false, d.sender.label)
-        }
-    })
+    // const senders = new Map()
+    // events.forEach(d => {
+    //     if (d.sender === undefined) return;
+    //     if (d.sender.link.includes("emt_person")) {
+    //         senders.set(d.sender.link, d.sender.label)
+    //     }
+    //     else if (d.sender.label.includes("erschlossen")) {
+    //         senders.set(false, d.sender.label)
+    //     }
+    // })
 }
 
 function onEventClick(event) {
@@ -41,7 +42,10 @@ function onEventClick(event) {
             li.innerHTML = `
                 <a href="${item.link}">${item.label}</a>
             `
-        } else {
+        } else if (item.ref_by){
+            li.innerHTML = `${item.label} (Erwähnt in: <a href="${item.ref_by.link}">${item.ref_by.label}</a>)`
+        }
+        else {
             li.innerHTML = `${item.label}`
         }
 

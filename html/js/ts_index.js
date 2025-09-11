@@ -11,21 +11,40 @@ const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
     cacheSearchResultsForSeconds: 2 * 60,
   },
   additionalSearchParameters: {
-    query_by: "full_text"
-  },
+    query_by: "full_text, regest",
+  }
 });
 
-
+const indexName = 'emt';
 const searchClient = typesenseInstantsearchAdapter.searchClient;
 const search = instantsearch({
-  indexName: 'emt',
+  indexName,
   searchClient,
+  routing: {
+     // only the query parameter is synced to the URL
+    stateMapping: {
+      stateToRoute(uiState) {
+        return {
+          query: uiState[indexName].query,
+        };
+      },
+      routeToState(routeState) {
+        return {
+          [indexName]: {
+            query: routeState.query
+          }
+        };
+      },
+    },
+  }
 });
 
 search.addWidgets([
   instantsearch.widgets.searchBox({
     container: '#searchbox',
     autofocus: true,
+    showSubmit: true,
+    showReset: true,
     cssClasses: {
       form: 'form-inline',
       input: 'form-control col-md-11',
@@ -33,6 +52,8 @@ search.addWidgets([
       reset: 'btn'
     },
   }),
+
+
 
   instantsearch.widgets.hits({
     container: '#hits',
@@ -44,9 +65,10 @@ search.addWidgets([
       item(hit, { html, components }) {
         return html`
       <h4><a href='${hit.id}.html'>${hit.title}</a></h4>
+      <p>${hit._snippetResult.regest.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'regest' }) : ''}</p>
       <p>${hit._snippetResult.full_text.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'full_text' }) : ''}</p>
-      <p>${hit.persons.map((item) => html`<a href='${item.id}'><span class="badge rounded-pill m-1 bg-danger">${item}</span></a>`)}</p>
-      <p>${hit.places.map((item) => html`<a href='${item.id}'><span class="badge rounded-pill m-1 bg-info">${item}</span></a>`)}</p>`
+      <p>${hit.sender ? html`<a href='${hit.sender.id}.html'><span class="badge rounded-pill m-1 entity-person">${hit.sender.name}</span></a>` : ''} 
+      ${hit.receiver ? html`<a href='${hit.receiver.id}.html'><span class="badge rounded-pill m-1 entity-person">${hit.receiver.name}</span></a>` : ''} ${hit.sent_from ? html`<a href='${hit.sent_from.id}.html'><span class="badge rounded-pill m-1 entity-place">${hit.sent_from.name}</span></a>` : ''}</p>`
       }
     },
   }),
@@ -70,6 +92,18 @@ search.addWidgets([
       `,
     }
   }),
+  // asc and desc flipped because date values are inverted
+  instantsearch.widgets.sortBy({
+    container: '#sort-by',
+    items: [
+      { label: 'Relevanz', value: 'emt' },
+      { label: 'Datum (aufsteigend)', value: 'emt/sort/date:desc' },
+      { label: 'Datum (absteigend)', value: 'emt/sort/date:asc' },
+    ],
+    cssClasses: {
+      select: 'form-control'
+    }
+  }),
 
   // commented due to https://github.com/emt-project/emt-static/issues/71
   // instantsearch.widgets.refinementList({
@@ -90,87 +124,208 @@ search.addWidgets([
   //   }
   // }),
 
-  instantsearch.widgets.refinementList({
-    container: '#refinement-list-places',
-    attribute: 'places',
-    searchable: true,
-    searchablePlaceholder: 'Suche',
-    cssClasses: {
-      searchableInput: 'form-control form-control-sm mb-2 border-light-2',
-      searchableSubmit: 'd-none',
-      searchableReset: 'd-none',
-      showMore: 'btn btn-secondary btn-sm align-content-center',
-      list: 'list-unstyled',
-      count: 'badge m-2 badge-info',
-      label: 'd-flex align-items-center',
-      checkbox: 'm-2',
-    }
-  }),
 
 
-  instantsearch.widgets.refinementList({
-    container: '#refinement-list-sender',
-    attribute: 'sender',
-    searchable: true,
-    searchablePlaceholder: 'Suche',
-    cssClasses: {
-      searchableInput: 'form-control form-control-sm mb-2 border-light-2',
-      searchableSubmit: 'd-none',
-      searchableReset: 'd-none',
-      showMore: 'btn btn-secondary btn-sm align-content-center',
-      list: 'list-unstyled',
-      count: 'badge m-2 badge-secondary',
-      label: 'd-flex align-items-center',
-      checkbox: 'm-2',
-    }
-  }),
-  instantsearch.widgets.refinementList({
-    container: '#refinement-list-receiver',
-    attribute: 'receiver',
-    searchable: true,
-    searchablePlaceholder: 'Suche',
-    cssClasses: {
-      searchableInput: 'form-control form-control-sm mb-2 border-light-2',
-      searchableSubmit: 'd-none',
-      searchableReset: 'd-none',
-      showMore: 'btn btn-secondary btn-sm align-content-center',
-      list: 'list-unstyled',
-      count: 'badge m-2 badge-secondary',
-      label: 'd-flex align-items-center',
-      checkbox: 'm-2',
-    }
-  }),
-
-  // instantsearch.widgets.refinementList({
-  //     container: '#refinement-list-keywords',
-  //     attribute: 'keywords',
-  //     searchable: true,
-  //     searchablePlaceholder: 'Suche',
-  //     cssClasses: {
-  //       searchableInput: 'form-control form-control-sm mb-2 border-light-2',
-  //       searchableSubmit: 'd-none',
-  //       searchableReset: 'd-none',
-  //       showMore: 'btn btn-secondary btn-sm align-content-center',
-  //       list: 'list-unstyled',
-  //       count: 'badge m-2 badge-success',
-  //       label: 'd-flex align-items-center',
-  //       checkbox: 'm-2',
-  //     }
-  // }),
-
-  instantsearch.widgets.rangeInput({
-    container: "#range-input",
-    attribute: "year",
+  instantsearch.widgets.panel({
+    collapsed: true,
     templates: {
-      separatorText: 'bis',
-      submitText: 'Suchen',
+      header: 'Absender'
     },
     cssClasses: {
-      form: 'form-inline',
-      input: 'form-control',
-      submit: 'btn'
+      header: 'fs-6',
     }
-  }),
+  })(
+    instantsearch.widgets.refinementList)
+    ({
+      container: '#refinement-list-sender',
+      attribute: 'sender.name',
+      searchable: true,
+      searchablePlaceholder: 'Suche',
+      cssClasses: {
+        searchableInput: 'form-control form-control-sm mb-2 border-light-2',
+        searchableSubmit: 'd-none',
+        searchableReset: 'd-none',
+        // showMore: 'btn btn-secondary btn-sm align-content-center',
+        list: 'list-unstyled',
+        count: 'badge m-2 badge-secondary',
+        label: 'd-flex align-items-center',
+        checkbox: 'm-2',
+      }
+    }),
+  instantsearch.widgets.panel({
+    collapsed: true,
+    templates: {
+      header: 'Empfänger'
+    },
+    cssClasses: {
+      header: 'fs-6',
+    }
+  })(
+    instantsearch.widgets.refinementList)
+    ({
+      container: '#refinement-list-receiver',
+      attribute: 'receiver.name',
+      searchable: true,
+      searchablePlaceholder: 'Suche',
+      cssClasses: {
+        searchableInput: 'form-control form-control-sm mb-2 border-light-2',
+        searchableSubmit: 'd-none',
+        searchableReset: 'd-none',
+        // showMore: 'btn btn-secondary btn-sm align-content-center',
+        list: 'list-unstyled',
+        count: 'badge m-2 badge-secondary',
+        label: 'd-flex align-items-center',
+        checkbox: 'm-2',
+      }
+    }),
+  instantsearch.widgets.panel({
+    collapsed: true,
+    templates: {
+      header: 'Absendeorte'
+    },
+    cssClasses: {
+      header: 'fs-6',
+    }
+  })(
+    instantsearch.widgets.refinementList)({
+      container: '#refinement-list-sent_from',
+      attribute: 'sent_from.name',
+      searchable: true,
+      searchablePlaceholder: 'Suche',
+      cssClasses: {
+        searchableInput: 'form-control form-control-sm mb-2 border-light-2',
+        searchableSubmit: 'd-none',
+        searchableReset: 'd-none',
+        // showMore: 'btn btn-secondary btn-sm align-content-center',
+        list: 'list-unstyled',
+        count: 'badge m-2 badge-info',
+        label: 'd-flex align-items-center',
+        checkbox: 'm-2',
+      }
+    }),
+  instantsearch.widgets.panel({
+    collapsed: true,
+    templates: {
+      header: 'Erwähnte Personen'
+    },
+    cssClasses: {
+      header: 'fs-6',
+    }
+  })(
+    instantsearch.widgets.refinementList)
+    ({
+      container: '#refinement-list-mentioned_persons',
+      attribute: 'mentioned_persons.name',
+      searchable: true,
+      searchablePlaceholder: 'Suche',
+      cssClasses: {
+        searchableInput: 'form-control form-control-sm mb-2 border-light-2',
+        searchableSubmit: 'd-none',
+        searchableReset: 'd-none',
+        // showMore: 'btn btn-secondary btn-sm align-content-center',
+        list: 'list-unstyled',
+        count: 'badge m-2 badge-secondary',
+        label: 'd-flex align-items-center',
+        checkbox: 'm-2',
+      }
+    }),
+  instantsearch.widgets.panel({
+    collapsed: true,
+    templates: {
+      header: 'Erwähnte Orte'
+    },
+    cssClasses: {
+      header: 'fs-6',
+    }
+  })(
+    instantsearch.widgets.refinementList)({
+      container: '#refinement-list-mentioned_places',
+      attribute: 'mentioned_places.name',
+      searchable: true,
+      searchablePlaceholder: 'Suche',
+      cssClasses: {
+        searchableInput: 'form-control form-control-sm mb-2 border-light-2',
+        searchableSubmit: 'd-none',
+        searchableReset: 'd-none',
+        // showMore: 'btn btn-secondary btn-sm align-content-center',
+        list: 'list-unstyled',
+        count: 'badge m-2 badge-info',
+        label: 'd-flex align-items-center',
+        checkbox: 'm-2',
+      }
+    }),
+  instantsearch.widgets.panel({
+    collapsed: true,
+    templates: {
+      header: 'Institutionen'
+    },
+    cssClasses: {
+      header: 'fs-6',
+    }
+  })(
+    instantsearch.widgets.refinementList)({
+      container: '#refinement-list-orgs',
+      attribute: 'orgs.name',
+      searchable: true,
+      searchablePlaceholder: 'Suche',
+      cssClasses: {
+        searchableInput: 'form-control form-control-sm mb-2 border-light-2',
+        searchableSubmit: 'd-none',
+        searchableReset: 'd-none',
+        // showMore: 'btn btn-secondary btn-sm align-content-center',
+        list: 'list-unstyled',
+        count: 'badge m-2 badge-info',
+        label: 'd-flex align-items-center',
+        checkbox: 'm-2',
+      }
+    }),
+  instantsearch.widgets.panel({
+    collapsed: true,
+    templates: {
+      header: 'Schlagworte'
+    },
+    cssClasses: {
+      header: 'fs-6',
+    }
+  })(
+    instantsearch.widgets.refinementList)({
+      container: '#refinement-list-keywords',
+      attribute: 'keywords',
+      searchable: true,
+      searchablePlaceholder: 'Suche',
+      cssClasses: {
+        searchableInput: 'form-control form-control-sm mb-2 border-light-2',
+        searchableSubmit: 'd-none',
+        searchableReset: 'd-none',
+        // showMore: 'btn btn-secondary btn-sm align-content-center',
+        list: 'list-unstyled',
+        count: 'badge m-2 badge-info',
+        label: 'd-flex align-items-center',
+        checkbox: 'm-2',
+      }
+    }),
+  instantsearch.widgets.panel({
+    templates: {
+      header: 'Jahr'
+    },
+    cssClasses: {
+      header: 'fs-6',
+    }
+  })(
+    instantsearch.widgets.rangeInput)
+    ({
+      container: "#range-input",
+      attribute: "year",
+      templates: {
+        separatorText: 'bis',
+        submitText: 'Suchen',
+      },
+      cssClasses: {
+        form: 'form-inline',
+        input: 'form-control',
+        submit: 'button-custom'
+      }
+    }),
 
   instantsearch.widgets.pagination({
     container: '#pagination',
@@ -187,7 +342,7 @@ search.addWidgets([
       resetLabel: 'Filter zurücksetzen',
     },
     cssClasses: {
-      button: 'btn'
+      button: 'custom-button'
     }
   }),
 
@@ -198,18 +353,79 @@ search.addWidgets([
     cssClasses: {
       delete: 'btn',
       label: 'badge'
+    },
+    transformItems(items) {
+      return items.map(item => {
+      // Customize label based on attribute
+      switch (item.attribute) {
+        case 'sender.name':
+          item.label = 'Von';
+          break;
+        case 'receiver.name':
+          item.label = 'An';
+          break;
+        case 'mentioned_persons.name':
+          item.label = 'erwähnt';
+          break;
+        case 'mentioned_places.name':
+          item.label = 'erwähnt';
+          break;
+        case 'sent_from.name':
+          item.label = 'Absendeort';
+          break;
+        case 'orgs.name':
+          item.label = 'Institution';
+          break;
+        case 'keywords':
+          item.label = 'Schlagwort';
+          break;
+        case 'year':
+          item.label = 'Jahr';
+          break;
+        default:
+          item.label = item.label;
+      }
+
+      return item;
+    })
     }
-  })
-]);
+  }),
 
-
-
-search.addWidgets([
   instantsearch.widgets.configure({
-    attributesToSnippet: ['full_text'],
+    attributesToSnippet: ['full_text', 'regest'],
   })
 ]);
 
+// Add event listeners to checkboxes after the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+  const select = document.getElementById('search-field-select');
+  const applyQueryBy = (queryBy) => {
+    const currentConfig = typesenseInstantsearchAdapter.configuration;
+    typesenseInstantsearchAdapter.updateConfiguration({
+      ...currentConfig,
+      additionalSearchParameters: {
+        query_by: queryBy
+      }
+    });
+    if (search.helper) {
+      search.helper.setClient(typesenseInstantsearchAdapter.searchClient);
+      search.helper.search();
+    }
+  };
+
+  // Initial sync (in case adapter default differs)
+  applyQueryBy(select.value);
+
+  select.addEventListener('change', () => {
+    applyQueryBy(select.value);
+  });
+});
+
+// Force search refresh with current query
+if (search.helper && search.helper.state.query) {
+  search.helper.setClient(typesenseInstantsearchAdapter.searchClient);
+  search.helper.search();
+}
 
 
 search.start();
