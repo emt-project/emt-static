@@ -43,7 +43,7 @@ function onEventClick(event) {
                 <a href="${item.link}">${item.label}</a>
             `
         } else if (item.ref_by){
-            li.innerHTML = `${item.label} (<a href="${item.ref_by.link}">Erwähnt in: ${item.ref_by.label}</a>)`
+            li.innerHTML = `${item.label} (Erwähnt in: <a href="${item.ref_by.link}">${item.ref_by.label}</a>)`
         }
         else {
             li.innerHTML = `${item.label}`
