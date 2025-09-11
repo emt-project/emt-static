@@ -37,7 +37,8 @@ for x in file_list:
             item["range"] = False
         else:
             item["range"] = True
-        item["label"] = normalize_string(title_node)
+        title = normalize_string(title_node)
+        item["label"] = title
         sender_name = normalize_string(
             doc.any_xpath(".//tei:correspAction[@type='sent']/tei:persName//text()")[0]
         )
@@ -63,7 +64,7 @@ for x in file_list:
         extra_item["kind"] = "menioned_letter_pw"
         extra_item["from"] = ex_date[0]
         extra_item["to"] = ex_date[1]
-        extra_item["ref_by"] = f_id
+        extra_item["ref_by"] = {"label": title, "link": f_id}
         extra_item["sender"] = {
             "label": "erwähnter Brief von Philipp Wilhelm von Pfalz-Neuburg",
             "link": "pw_brief_erschlossen.html"
