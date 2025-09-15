@@ -1,3 +1,9 @@
+:root {
+    --tabulator-primary: #ddc2a6; 
+    --tabulator-secondary: #f6efe7;
+    --tabulator-hover: #ddc2a6;
+}
+
 /* custom tabulator toc start */
 
 .tabulator.table:not(.thead-light) .tabulator-header,
@@ -19,32 +25,37 @@
 }
 
 .tabulator-col-content {
-    background-color: var(--bs-body-bg);
+    background-color: var(--tabulator-primary)
+}
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title {
+    color: var(--bs-body-color);
 }
 
-.tabulator-row .tabulator-cell {
+/* .tabulator-row .tabulator-cell {
     background-color: var(--bs-body-bg);
-}
-
+} */
+/* 
 .tabulator-header-contents {
-    background-color: var(--bs-body-bg);
-}
+    background-color: var(--entity-person-color);
+} */
 
 .tabulator-header-contents .tabulator-headers {
-    background-color: var(--bs-body-bg);
+    background-color: var(--tabulator-primary)
 }
+
 
 body div.tabulator-table div.tabulator-row.tabulator-row-even {
     background-color: var(--bs-body-bg);
 }
 
 body div.tabulator-table div.tabulator-row.tabulator-row-odd {
-    background-color: var(--bs-body-bg);
+    background-color: var(--tabulator-secondary)
 }
 
-div.tabulator-row.tabulator-row-odd.tabulator-selectable:hover,
-div.tabulator-row.tabulator-row-even.tabulator-selectable:hover {
-    background-color: var(--bs-body-bg);
+
+.tabulator.table .tabulator-row:hover,
+.tabulator.table .tabulator-row:hover .tabulator-cell {
+    background-color: var(--tabulator-hover);
     cursor: pointer;
 }
 
