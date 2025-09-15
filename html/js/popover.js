@@ -8,6 +8,20 @@ document.addEventListener('DOMContentLoaded', function () {
             placement: 'bottom',
             trigger: 'manual', // manual instead of 'focus' for full control
             customClass: 'custom-popover',
+            title: function () {
+                // Check if this will be a combined popover
+                let combinedCount = 0;
+                let current = el;
+                while (current && current !== document.body) {
+                    if (current.hasAttribute('data-bs-content')) {
+                        combinedCount++;
+                    }
+                    current = current.parentElement;
+                }
+
+                // Return a header only for combined popovers
+                return combinedCount > 1 ? 'Anmerkungen' : null;
+            },
             content: () => {
                 let parts = [];
                 let current = el;
@@ -17,7 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     }
                     current = current.parentElement;
                 }
-                return parts.join('<br>');
+
+                // Format as list if there are multiple parts, otherwise return the single part
+                if (parts.length > 1) {
+                    return '<ul class="popover-list">' +
+                        parts.map(part => `<li>${part}</li>`).join('') +
+                        '</ul>';
+                } else {
+                    return parts[0] || '';
+                }
             }
         });
 
@@ -77,5 +99,5 @@ document.addEventListener('DOMContentLoaded', function () {
         if (![...popoverTriggerList].includes(e.target)) {
             popovers.forEach(({ popover }) => popover.hide());
         }
-           });
     });
+});
