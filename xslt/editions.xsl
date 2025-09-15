@@ -208,7 +208,11 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
-    
+    <xsl:template match="tei:head">
+        <h2 id="{local:makeId(.)}" class="text-center fs-5 text-decoration-underline my-4">
+            <xsl:apply-templates/>
+        </h2>
+    </xsl:template>
     <xsl:template match="tei:ref[@target]">
         <xsl:variable name="href_value">
             <xsl:choose>
