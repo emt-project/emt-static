@@ -1,7 +1,8 @@
 :root {
-    --tabulator-primary: #ddc2a6; 
-    --tabulator-secondary: #f6efe7;
-    --tabulator-hover: #ddc2a6;
+    --tabulator-header: #E69D61; 
+    --tabulator-primary: var(--bs-body-bg);
+    --tabulator-secondary: #eedbc5;
+    --tabulator-hover: var(--emt-deco-color);
 }
 
 /* custom tabulator toc start */
@@ -19,17 +20,16 @@
     background-color: var(--bs-body-bg);
 }
 
-.tabulator-col {
-    border: 0px;
-    background-color: var(--bs-body-bg);
+
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content {
+  font-weight: bold;
+  color: #4E3619;
+  background-color: var(--bs-body-bg);
 }
 
-.tabulator-col-content {
-    background-color: var(--tabulator-primary)
-}
-.tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title {
+/* .tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title {
     color: var(--bs-body-color);
-}
+} */
 
 /* .tabulator-row .tabulator-cell {
     background-color: var(--bs-body-bg);
@@ -40,7 +40,7 @@
 } */
 
 .tabulator-header-contents .tabulator-headers {
-    background-color: var(--tabulator-primary)
+    background-color: var(--bs-body-bg);
 }
 
 

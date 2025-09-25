@@ -1,6 +1,6 @@
 :root {
   --bs-body-color: #4e3619;
-  --bs-body-bg: #f8f3ed;
+  --bs-body-bg: #F2E8DC;
 
   --bs-border-width: 0px;
   /* --bs-link-color: #9a3000;  */
@@ -9,7 +9,9 @@
   --entity-person-color: #d14b1e;
   --entity-place-color: #1e6c16;
   --entity-org-color: #68230a;
-  --emt-bg-dark: #e4cdb6;
+  /* --emt-bg-dark: #e4cdb6; */
+  --emt-bg-dark: #F2AE72;
+
 }
 
 @font-face {
@@ -212,9 +214,9 @@ footer a:hover {
 nav {
   background-color: var(--emt-bg-dark)
 }
-.navbar {
+/* .navbar {
   border-bottom: 5px solid var(--emt-deco-color);
-}
+} */
 
 .nav-item {
   font-size: x-large;
@@ -240,11 +242,11 @@ a.nav-link{
 }
 
 /* Fix hover colors too */
-/* .navbar .nav-link:hover,
+.navbar .nav-link:hover,
 .navbar .dropdown-toggle:hover,
 .navbar .navbar-nav .nav-link:hover {
-  color: red
-} */
+  color: black;
+}
 
 /* Fix active state */
 .navbar .nav-link.active,
@@ -435,9 +437,7 @@ a:hover {
 
 .dropdown-item:hover, 
 .dropdown-item:focus {
-  background-color: var(--emt-deco-color);
-  color: white;
-  text-decoration: none;
+  background-color: var(--emt-bg-dark);
 }
 
 div#map {
