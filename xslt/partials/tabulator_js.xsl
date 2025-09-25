@@ -37,6 +37,30 @@
                 var url = data["itemid"]
                 window.open(url);
             });
+            let total
+            table.on("dataLoaded", function (data) {
+                total = data.length;
+            })
+            table.on("dataFiltered", function(filters, rows){
+                let count = rows.length; //get number of rows in table
+                const counterText = i18next.t('toc_counter_label', { 
+                    count: count, 
+                    total: total
+                });
+                // Need this because i18next is not initialized this event first fires
+                if (counterText){
+                    document.getElementById("table-counter").innerHTML = counterText;
+                }
+            });
+            // Set initial counter text after i18next is initialized
+            i18next.on('initialized', function(options) {
+                const counterText = i18next.t('toc_counter_label', { 
+                    count: total, 
+                    total: total
+                });
+                document.getElementById("table-counter").innerHTML = counterText;
+            });
+
 
         </script>
     </xsl:template>
