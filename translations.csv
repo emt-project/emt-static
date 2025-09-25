@@ -41,3 +41,7 @@ navbar__johannwilhelm,Johann Wilhelm von Pfalz-Neuburg,Johann Wilhelm von Pfalz-
 navbar_philippwilhelm,Philipp Wilhelm von Pfalz-Neuburg,Philipp Wilhelm von Pfalz-Neuburg
 navbar_gen,Genealogien,Genealogies
 toc_counter_label,"{{count}} von {{total}} Briefen","{{count}} of {{total}} letters"
+listperson_counter_label,"{{count}} von {{total}} Personen","{{count}} of {{total}} persons"
+listplace_counter_label,"{{count}} von {{total}} Orten","{{count}} of {{total}} places"
+listorg_counter_label,"{{count}} von {{total}} Institutionen","{{count}} of {{total}} institutions"
+default_counter_label,"{{count}} von {{total}} Ergebnissen","{{count}} of {{total}} results"

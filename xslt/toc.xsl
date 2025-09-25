@@ -85,6 +85,7 @@
                 <xsl:call-template name="html_footer"/>
                 <xsl:call-template name="tabulator_js">
                     <xsl:with-param name="addHeaderMenu" select="'true'"/>
+                    <xsl:with-param name="counterTranslationKey" select="'toc_counter_label'"/>
                 </xsl:call-template>
             </body>
         </html>
