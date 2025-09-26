@@ -213,6 +213,11 @@
                         <xsl:value-of select="@when-iso"/>
                     </xsl:attribute>
                 </xsl:when>
+                <xsl:when test="@notBefore and @notAfter">
+                    <xsl:attribute name="data-bs-content">
+                        <xsl:value-of select="concat(@notBefore, ' - ', @notAfter)"/>
+                    </xsl:attribute>
+                </xsl:when>
             </xsl:choose>
             <xsl:apply-templates/>
         </span>
