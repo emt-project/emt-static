@@ -20,60 +20,48 @@
         <xsl:param name="doc_title"/>
         <xsl:variable name="correspContext" as="node()?" select=".//tei:correspContext[1]"/>
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-6">
                 <xsl:if test="$correspContext/tei:ref/@subtype = 'previous_letter'">
-                    <h1>
-                        <i class="bi bi-chevron-left nav-link float-start" href="#" id="navbarDropdownLeft" role="button" data-bs-toggle="dropdown" aria-expanded="false"/>
-                        <ul class="dropdown-menu unstyled" aria-labelledby="navbarDropdown" style="z-index: 1030;">
-                            <xsl:if test="$correspContext/tei:ref[@type = 'withinCollection' and @subtype = 'previous_letter'][1]">
-                                <span class="dropdown-item-text">Vorheriger Brief </span>
-                                <xsl:for-each select="$correspContext/tei:ref[@type = 'withinCollection' and @subtype = 'previous_letter']">
-                                    <xsl:call-template name="mam:nav-li-item">
-                                        <xsl:with-param name="eintrag" select="."/>
-                                        <xsl:with-param name="direction" select="'prev-doc'"/>
-                                    </xsl:call-template>
-                                </xsl:for-each>
-                            </xsl:if>
-                            <xsl:if test="$correspContext/tei:ref[@type = 'withinCorrespondence' and @subtype = 'previous_letter'][1]">
-                                <span class="dropdown-item-text">… in der Korrespondenz</span>
-                                <xsl:for-each select="$correspContext/tei:ref[@type = 'withinCorrespondence' and @subtype = 'previous_letter']">
-                                    <xsl:call-template name="mam:nav-li-item">
-                                        <xsl:with-param name="eintrag" select="."/>
-                                        <xsl:with-param name="direction" select="'prev-doc2'"/>
-                                    </xsl:call-template>
-                                </xsl:for-each>
-                            </xsl:if>
-                        </ul>
-                    </h1>
+                    <div class="d-flex flex-column align-items-start">
+                        <xsl:if test="$correspContext/tei:ref[@type = 'withinCollection' and @subtype = 'previous_letter'][1]">
+                            <xsl:for-each select="$correspContext/tei:ref[@type = 'withinCollection' and @subtype = 'previous_letter'][1]">
+                                <a href="{concat(substring-before(@target, '.'), '.html')}" class="btn btn-link d-flex align-items-center" title="{normalize-space(.)}">
+                                    <i class="bi bi-chevron-left me-1"/>
+                                    <span class="small">Vorheriger Brief</span>
+                                </a>
+                            </xsl:for-each>
+                        </xsl:if>
+                        <xsl:if test="$correspContext/tei:ref[@type = 'withinCorrespondence' and @subtype = 'previous_letter'][1]">
+                            <xsl:for-each select="$correspContext/tei:ref[@type = 'withinCorrespondence' and @subtype = 'previous_letter'][1]">
+                                <a href="{concat(substring-before(@target, '.'), '.html')}" class="btn btn-link d-flex align-items-center" title="{normalize-space(.)}">
+                                    <i class="bi bi-chevron-left me-1"/>
+                                    <span class="small">... in der Korrespondenz</span>
+                                </a>
+                            </xsl:for-each>
+                        </xsl:if>
+                    </div>
                 </xsl:if>
             </div>
-            <div class="col-md-8">
-            </div>
-            <div class="col-md-2 text-end">
+            <div class="col-6">
                 <xsl:if test="$correspContext/tei:ref/@subtype = 'next_letter'">
-                    <h1>
-                        <i class="bi bi-chevron-right nav-link float-end" href="#" id="navbarDropdownLeft" role="button" data-bs-toggle="dropdown" aria-expanded="false"/>
-                        <ul class="dropdown-menu dropdown-menu-right unstyled" aria-labelledby="navbarDropdown" style="z-index: 1030;">
-                            <xsl:if test="$correspContext/tei:ref[@type = 'withinCollection' and @subtype = 'next_letter'][1]">
-                                <span class="dropdown-item-text">Nächster Brief </span>
-                                <xsl:for-each select="$correspContext/tei:ref[@type = 'withinCollection' and @subtype = 'next_letter']">
-                                    <xsl:call-template name="mam:nav-li-item">
-                                        <xsl:with-param name="eintrag" select="."/>
-                                        <xsl:with-param name="direction" select="'next-doc'"/>
-                                    </xsl:call-template>
-                                </xsl:for-each>
-                            </xsl:if>
-                            <xsl:if test="$correspContext/tei:ref[@type = 'withinCorrespondence' and @subtype = 'next_letter'][1]">
-                                <span class="dropdown-item-text">… in der Korrespondenz</span>
-                                <xsl:for-each select="$correspContext/tei:ref[@type = 'withinCorrespondence' and @subtype = 'next_letter']">
-                                    <xsl:call-template name="mam:nav-li-item">
-                                        <xsl:with-param name="eintrag" select="."/>
-                                        <xsl:with-param name="direction" select="'next-doc2'"/>
-                                    </xsl:call-template>
-                                </xsl:for-each>
-                            </xsl:if>
-                        </ul>
-                    </h1>
+                    <div class="d-flex flex-column align-items-end">
+                        <xsl:if test="$correspContext/tei:ref[@type = 'withinCollection' and @subtype = 'next_letter'][1]">
+                            <xsl:for-each select="$correspContext/tei:ref[@type = 'withinCollection' and @subtype = 'next_letter'][1]">
+                                <a href="{concat(substring-before(@target, '.'), '.html')}" class="btn btn-link d-flex align-items-center mb-1" title="{normalize-space(.)}">
+                                    <span class="small">Nächster Brief</span>
+                                    <i class="bi bi-chevron-right ms-1"/>
+                                </a>
+                            </xsl:for-each>
+                        </xsl:if>
+                        <xsl:if test="$correspContext/tei:ref[@type = 'withinCorrespondence' and @subtype = 'next_letter'][1]">
+                            <xsl:for-each select="$correspContext/tei:ref[@type = 'withinCorrespondence' and @subtype = 'next_letter'][1]">
+                                <a href="{concat(substring-before(@target, '.'), '.html')}" class="btn btn-link d-flex align-items-center" title="{normalize-space(.)}">
+                                    <span class="small">... in der Korrespondenz</span>
+                                    <i class="bi bi-chevron-right ms-1"/>
+                                </a>
+                            </xsl:for-each>
+                        </xsl:if>
+                    </div>
                 </xsl:if>
             </div>
         </div>
@@ -81,12 +69,14 @@
             <xsl:value-of select="$doc_title"/>
         </h1>
         <div class="text-center">
-            <a href="{$teiSource}" class="pe-2">
-                <i class="bi bi-filetype-xml fs-3" title="TEI/XML"/>
-            </a>
-            <a href="#" id="info-modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal" class="ps-2">
-                <i class="bi bi-question-lg fs-3"></i>
-            </a>
+            <button type="button" onclick="window.open('{$teiSource}', '_blank')" class="btn btn-link me-2">
+                <i class="bi bi-filetype-xml me-1"/>
+                <span>TEI/XML</span>
+            </button>
+            <button type="button" id="info-modal-trigger" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-link">
+                <i class="bi bi-question-lg me-1"></i>
+                <span>Markup-Info</span>
+            </button>
         </div>
         <!-- Fixed version of the info modal trigger that shows when scrolling -->
         <div class="position-fixed bottom-0 end-0 p-2 d-none" id="sticky-info" style="z-index: 1030;">
@@ -126,11 +116,11 @@
                 <xsl:choose>
                     <xsl:when test="contains($eintrag/@subtype, 'next')">
                         <i class="bi bi-chevron-right"/>
-&#160;                                                                                                                                                                         <!--
+&#160;                                                                                                                                                                                                                                                                                                                                                                                                 <!--
                  -->                    </xsl:when>
                     <xsl:when test="contains($eintrag/@subtype, 'previous')">
                         <i class="bi bi-chevron-left"/>
-&#160;                                                                                                                                                                         <!--
+&#160;                                                                                                                                                                                                                                                                                                                                                                                                 <!--
                  -->                    </xsl:when>
                 </xsl:choose>
                 <xsl:value-of select="$eintrag"/>

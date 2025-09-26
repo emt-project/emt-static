@@ -1,8 +1,9 @@
 :root {
   --bs-body-color: #61441f;
-  --bs-body-bg: #ecdecc;
+  --bs-body-bg: #f8f3ed;
   --bs-border-width: 0px;
-  --bs-link-color: #ff914d;
+  --bs-link-color: #CC3600;
+  --bs-link-hover-color: #b84909;
   --emt-bg-dark: #c99b6d;
 }
 
