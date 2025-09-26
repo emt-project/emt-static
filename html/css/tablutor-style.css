@@ -1,15 +1,15 @@
 :root {
-    --tabulator-header: #E69D61; 
     --tabulator-primary: var(--bs-body-bg);
-    --tabulator-secondary: #eedbc5;
-    --tabulator-hover: var(--emt-deco-color);
+    --tabulator-secondary:  #ede0d1;
+    --tabulator-hover: var(--emt-bg-dark);
 }
 
 /* custom tabulator toc start */
 
 .tabulator.table:not(.thead-light) .tabulator-header,
 .tabulator.table:not(.thead-light) .tabulator-header .tabulator-col {
-    border: 0cm;
+    border-color: var(--emt-deco-color);
+    background-color: var(--bs-body-bg);
 }
 
 .tabulator-tableholder {
@@ -27,25 +27,8 @@
   background-color: var(--bs-body-bg);
 }
 
-/* .tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-title {
-    color: var(--bs-body-color);
-} */
-
-/* .tabulator-row .tabulator-cell {
-    background-color: var(--bs-body-bg);
-} */
-/* 
-.tabulator-header-contents {
-    background-color: var(--entity-person-color);
-} */
-
-.tabulator-header-contents .tabulator-headers {
-    background-color: var(--bs-body-bg);
-}
-
-
 body div.tabulator-table div.tabulator-row.tabulator-row-even {
-    background-color: var(--bs-body-bg);
+    background-color: var(--tabulator-primary);
 }
 
 body div.tabulator-table div.tabulator-row.tabulator-row-odd {
