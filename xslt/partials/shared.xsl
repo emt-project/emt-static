@@ -215,7 +215,7 @@
                 </xsl:when>
                 <xsl:when test="@notBefore and @notAfter">
                     <xsl:attribute name="data-bs-content">
-                        <xsl:value-of select="concat(@notBefore, ' - ', @notAfter)"/>
+                        <xsl:value-of select="concat('liegt zwischen ', @notBefore, ' und ', @notAfter)"/>
                     </xsl:attribute>
                 </xsl:when>
             </xsl:choose>
