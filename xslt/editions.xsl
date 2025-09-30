@@ -70,14 +70,9 @@
                         <xsl:for-each select=".//tei:div[@type='page']">
                             <!-- If this is the first page of an attachment, output the attachment header first -->
                             <xsl:if test="parent::tei:div[@type='attachment'] and not(preceding-sibling::tei:div[@type='page'])">
-                                <div class="row attachment-header">
-                                    <div class="col-md-12">
-                                        <xsl:apply-templates select="../tei:head"/>
-                                        <xsl:if test="../tei:ab">
-                                            <xsl:apply-templates select="../tei:ab"/>
-                                        </xsl:if>
-                                    </div>
-                                </div>
+                                <xsl:call-template name="attachment-header">
+                                    <xsl:with-param name="attachment-div" select=".."/>
+                                </xsl:call-template>
                             </xsl:if>
 
                             <xsl:variable name="pbFacs">
@@ -123,6 +118,17 @@
                             </div>
                         </xsl:for-each>
 
+                        <!-- Handle attachments that have no pages -->
+                        <xsl:for-each select=".//tei:div[@type='attachment'][not(tei:div[@type='page'])]">
+                            <xsl:call-template name="attachment-header">
+                                <xsl:with-param name="attachment-div" select="."/>
+                            </xsl:call-template>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <hr />
+                                </div>
+                            </div>
+                        </xsl:for-each>
 
                         <p style="text-align:center;">
                             <xsl:variable name="footnote-notes" select=".//tei:note[not(./tei:p) and not(ancestor::tei:div[@type='attachment']/tei:ab)]"/>
@@ -218,6 +224,17 @@
             <xsl:apply-templates/>
         </div>
     </xsl:template>
+
+
+    <xsl:template name="attachment-header">
+        <xsl:param name="attachment-div" select="."/>
+        <div class="row">
+            <div class="col-md-12">
+                <xsl:apply-templates select="$attachment-div/tei:head"/>
+                <xsl:apply-templates select="$attachment-div/tei:ab"/>
+            </div>
+        </div>
+    </xsl:template>
     <xsl:template match="tei:head">
         <h2 id="{local:makeId(.)}" class="text-center fs-5 text-decoration-underline my-4">
             <xsl:apply-templates/>
@@ -249,7 +266,7 @@
                 <xsl:apply-templates select="tei:persName[@type='recipient']"/>
             </p>
         </xsl:if>
-          <xsl:if test="tei:lang">
+        <xsl:if test="tei:lang">
             <p class="attachment-metadata-item">
                 <span class="metadata-label">Sprache: </span>
                 <xsl:apply-templates select="tei:lang"/>
@@ -268,6 +285,7 @@
             </p>
         </xsl:if>
     </xsl:template>
+
 
     <xsl:template match="tei:ref[@target]">
         <xsl:variable name="href_value">
