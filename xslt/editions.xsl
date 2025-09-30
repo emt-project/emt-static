@@ -68,17 +68,13 @@
                             </div>
                         </div>
                         <xsl:for-each select=".//tei:div[@type='page']">
-
-
                             <!-- If this is the first page of an attachment, output the attachment header first -->
                             <xsl:if test="parent::tei:div[@type='attachment'] and not(preceding-sibling::tei:div[@type='page'])">
                                 <div class="row attachment-header">
                                     <div class="col-md-12">
                                         <xsl:apply-templates select="../tei:head"/>
                                         <xsl:if test="../tei:ab">
-                                            <div class="attachment-metadata">
-                                                <xsl:apply-templates select="../tei:ab"/>
-                                            </div>
+                                            <xsl:apply-templates select="../tei:ab"/>
                                         </xsl:if>
                                     </div>
                                 </div>
@@ -228,24 +224,51 @@
         </h2>
     </xsl:template>
 
-    <xsl:template match="tei:ab">
-        <xsl:for-each select="*">
+    <xsl:template match="tei:div[@type='attachment']/tei:ab">
+        <xsl:if test="tei:date">
             <p class="attachment-metadata-item">
-                <xsl:apply-templates select="."/>
+                <span class="metadata-label">Datum: </span>
+                <xsl:apply-templates select="tei:date"/>
             </p>
-        </xsl:for-each>
+        </xsl:if>
+        <xsl:if test="tei:placeName">
+            <p class="attachment-metadata-item">
+                <span class="metadata-label">Ort: </span>
+                <xsl:apply-templates select="tei:placeName"/>
+            </p>
+        </xsl:if>
+        <xsl:if test="tei:persName[@type='sender']">
+            <p class="attachment-metadata-item">
+                <span class="metadata-label">Absender: </span>
+                <xsl:apply-templates select="tei:persName[@type='sender']"/>
+            </p>
+        </xsl:if>
+        <xsl:if test="tei:persName[@type='recipient']">
+            <p class="attachment-metadata-item">
+                <span class="metadata-label">Empfänger: </span>
+                <xsl:apply-templates select="tei:persName[@type='recipient']"/>
+            </p>
+        </xsl:if>
+          <xsl:if test="tei:lang">
+            <p class="attachment-metadata-item">
+                <span class="metadata-label">Sprache: </span>
+                <xsl:apply-templates select="tei:lang"/>
+            </p>
+        </xsl:if>
+        <xsl:if test="tei:note[@type='attachmentType']">
+            <p class="attachment-metadata-item">
+                <span class="metadata-label">Typus: </span>
+                <xsl:apply-templates select="tei:note[@type='attachmentType']"/>
+            </p>
+        </xsl:if>
+        <xsl:if test="tei:note[@type='content']">
+            <p class="attachment-metadata-item">
+                <span class="metadata-label">Inhalt: </span>
+                <xsl:apply-templates select="tei:note[@type='content']"/>
+            </p>
+        </xsl:if>
     </xsl:template>
-    <xsl:template match="tei:note[@type='attachmentType']">
-        <span class="badge rounded-pill text-bg-secondary">
-            <xsl:value-of select="./text()"/>
-        </span>
 
-    </xsl:template>
-    <xsl:template match="tei:note[@type='content']">
-        <div class="regest-text">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
     <xsl:template match="tei:ref[@target]">
         <xsl:variable name="href_value">
             <xsl:choose>
