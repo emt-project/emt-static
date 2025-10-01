@@ -35,6 +35,7 @@
                         <h1 class="text-center display-5 p-3">
                             <xsl:value-of select="$doc_title"/>
                         </h1>
+                        <div class="text-center p-1" id="table-counter"></div>
                         <table class="table" id="myTable">
                             <thead>
                                 <tr>
@@ -84,6 +85,7 @@
                 <xsl:call-template name="html_footer"/>
                 <xsl:call-template name="tabulator_js">
                     <xsl:with-param name="addHeaderMenu" select="'true'"/>
+                    <xsl:with-param name="counterTranslationKey" select="'toc_counter_label'"/>
                 </xsl:call-template>
             </body>
         </html>

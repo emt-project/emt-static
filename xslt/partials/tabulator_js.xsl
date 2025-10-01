@@ -3,6 +3,7 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs" version="2.0">
     <xsl:template match="/" name="tabulator_js">
         <xsl:param name="addHeaderMenu"/>
+        <xsl:param name="counterTranslationKey">default_counter_label</xsl:param>
         <script type="text/javascript" src="vendor/tabulator-tables/js/tabulator.min.js"></script>
         <xsl:if test="$addHeaderMenu = 'true'">
             <script src="tabulator-js/headermenu.js"></script>
@@ -15,7 +16,7 @@
                 };
             </xsl:if>
             var table = new Tabulator("#myTable", config);
-            
+            const counterKey = "<xsl:value-of select="$counterTranslationKey"/>";
             //trigger download of data.csv file
             document.getElementById("download-csv").addEventListener("click", function(){
             table.download("csv", "data.csv");
@@ -37,6 +38,30 @@
                 var url = data["itemid"]
                 window.open(url);
             });
+            let total
+            table.on("dataLoaded", function (data) {
+                total = data.length;
+            })
+            table.on("dataFiltered", function(filters, rows){
+                let count = rows.length; //get number of rows in table
+                const counterText = i18next.t(counterKey, { 
+                    count: count, 
+                    total: total
+                });
+                // Need this because i18next is not initialized this event first fires
+                if (counterText){
+                    document.getElementById("table-counter").innerHTML = counterText;
+                }
+            });
+            // Set initial counter text after i18next is initialized
+            i18next.on('initialized', function(options) {
+                const counterText = i18next.t(counterKey, { 
+                    count: total, 
+                    total: total
+                });
+                document.getElementById("table-counter").innerHTML = counterText;
+            });
+
 
         </script>
     </xsl:template>

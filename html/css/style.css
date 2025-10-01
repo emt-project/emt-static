@@ -451,6 +451,11 @@ div#map {
   --bs-popover-bg: #fff;
   --bs-popover-body-padding-x: 1rem;
   --bs-popover-body-padding-y: .5rem;
+  --bs-popover-header-bg: var(--emt-bg-dark);
+  --bs-popover-header-color: var(--bs-body-color);
+} 
+.custom-popover ul{
+  padding-left: 1rem;
 }
 #sticky-info .btn {
   background-color: var(--bs-link-color);

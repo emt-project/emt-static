@@ -3,7 +3,7 @@ index__h1,"Familiensache?","Family matters?"
 index__h2,"Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)","The correspondence of Empress Eleonora Magdalena (1655–1720)"
 index__teaser,"Zwischen 1677 und 1716 gingen eine Unzahl von Briefen hin und her zwischen Wien, Düsseldorf, Neuburg an der Donau und Heidelberg: Kaiserin Eleonora Magdalena korrespondierte mit Vater bzw. Bruder, den Kurfürsten von der Pfalz. Erstmals wird hier die umfangreiche Korrespondenz im Volltext zugänglich gemacht.","Between 1677 and 1716, countless letters went back and forth between Vienna, Düsseldorf, Neuburg an der Donau and Heidelberg: Empress Eleonora Magdalena corresponded with her father and brother, the Elector Palatine. For the first time, the extensive correspondence is made available in full text here."
 index__about_the_project,"Über das Projekt","About the project"
-index__index_of_letters,"Briefverzeichnis","Index of letters",
+index__index_of_letters,"Briefverzeichnis","Index of letters"
 index__index_of_letters_text,"In die erschlossenen Korrespondenzen kann über eine tabellarische sowie eine kalendarische Ansicht eingestiegen werden.","The catalogued correspondence can be accessed via a tabular and a calendar view."
 index__index_of_letters_button,"Zum Verzeichnis","To the catalogue"
 index__biograpy_teaser,"Biographische Skizzen zu <a href='philippwilhelm.html'>Philipp Wilhelm</a>, <a href='eleonora.html'>Eleonora</a> und <a href='johannwilhelm.html'>Johann Wilhelm</a> von Pfalz-Neuburg.","Short biographical texts on <a href='philippwilhelm.html'>Philipp Wilhelm</a>, <a href='eleonora.html'>Eleonora</a> and <a href='johannwilhelm.html'>Johann Wilhelm</a> of Palatine-Neuburg."
@@ -29,7 +29,7 @@ navbar__places,Orte und Karte,Places and Map
 navbar__orgs,Institutionen,Institutions
 navbar__search,Suche,Search
 navbar__events,Ereignisse,Events
-navbar_timeline,Zeitleiste,Timeline,
+navbar_timeline,Zeitleiste,Timeline
 navbar_imprint,Impressum,Imprint
 navbar_storymap,Storymap,Storymap
 calendar__legendtitle,Legende (Farben),Legend
@@ -40,3 +40,8 @@ navbar__eleonora,Eleonora Magdalena von Pfalz-Neuburg,Eleonora Magdalena von Pfa
 navbar__johannwilhelm,Johann Wilhelm von Pfalz-Neuburg,Johann Wilhelm von Pfalz-Neuburg.
 navbar_philippwilhelm,Philipp Wilhelm von Pfalz-Neuburg,Philipp Wilhelm von Pfalz-Neuburg
 navbar_gen,Genealogien,Genealogies
+toc_counter_label,"{{count}} von {{total}} Briefen","{{count}} of {{total}} letters"
+listperson_counter_label,"{{count}} von {{total}} Personen","{{count}} of {{total}} persons"
+listplace_counter_label,"{{count}} von {{total}} Orten","{{count}} of {{total}} places"
+listorg_counter_label,"{{count}} von {{total}} Institutionen","{{count}} of {{total}} institutions"
+default_counter_label,"{{count}} von {{total}} Ergebnissen","{{count}} of {{total}} results"

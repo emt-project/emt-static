@@ -11,7 +11,7 @@
         <xsl:value-of select="concat(name($currentNode), '__', $nodeCurrNr)"/>
     </xsl:function>
 
-    <xsl:template match="tei:note">
+    <xsl:template match="tei:note[not(ancestor::tei:div[@type='attachment']/tei:ab)]">
         <xsl:element name="a">
             <xsl:attribute name="name">
                 <xsl:text>fna_</xsl:text>
@@ -211,6 +211,11 @@
                 <xsl:when test="@when-iso">
                     <xsl:attribute name="data-bs-content">
                         <xsl:value-of select="@when-iso"/>
+                    </xsl:attribute>
+                </xsl:when>
+                <xsl:when test="@notBefore and @notAfter">
+                    <xsl:attribute name="data-bs-content">
+                        <xsl:value-of select="concat('liegt zwischen ', @notBefore, ' und ', @notAfter)"/>
                     </xsl:attribute>
                 </xsl:when>
             </xsl:choose>
