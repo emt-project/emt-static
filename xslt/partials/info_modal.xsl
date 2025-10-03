@@ -43,7 +43,7 @@
                             <dd class="ps-2"><small>Beispiel: </small>hab ich nit <span class="unclear"><abbr title="unklare Abkürzung: wahrscheinlich fortschicken">vortsch</abbr></span></dd>
                             <dd class="ps-2">Bei unsicheren Lesarten wird ggf. eine mögliche Lesart via Tooltip angezeigt.</dd>
                             <dt>Chiffren</dt>
-                            <dd class="ps-2"><small>Beispiel: </small>insonderheit <span class="unclear unclear-ciphered">weil Spanien in dieser sac</span></dd>
+                            <dd class="ps-2"><small>Beispiel: </small>insonderheit <span class="unclear-ciphered">weil Spanien in dieser sac</span></dd>
                             <dd class="ps-2">Siehe ausführlich zum Thema Chiffre: <a href="chiffre.html">Zur Chiffre der Kaiserin</a></dd>
                         </dl>
                         <p>Zu den <a href="richtlinien.html">Editionsrichtlinien</a></p>

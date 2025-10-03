@@ -27,7 +27,7 @@
                             <xsl:for-each select="$correspContext/tei:ref[@type = 'withinCollection' and @subtype = 'previous_letter'][1]">
                                 <a href="{concat(substring-before(@target, '.'), '.html')}" class="btn btn-link d-flex align-items-center" title="{normalize-space(.)}">
                                     <i class="bi bi-chevron-left me-1"/>
-                                    <span class="small">Vorheriger Brief</span>
+                                    <span>Vorheriger Brief</span>
                                 </a>
                             </xsl:for-each>
                         </xsl:if>
@@ -35,7 +35,7 @@
                             <xsl:for-each select="$correspContext/tei:ref[@type = 'withinCorrespondence' and @subtype = 'previous_letter'][1]">
                                 <a href="{concat(substring-before(@target, '.'), '.html')}" class="btn btn-link d-flex align-items-center" title="{normalize-space(.)}">
                                     <i class="bi bi-chevron-left me-1"/>
-                                    <span class="small">... in der Korrespondenz</span>
+                                    <span>... in der Korrespondenz</span>
                                 </a>
                             </xsl:for-each>
                         </xsl:if>
@@ -48,7 +48,7 @@
                         <xsl:if test="$correspContext/tei:ref[@type = 'withinCollection' and @subtype = 'next_letter'][1]">
                             <xsl:for-each select="$correspContext/tei:ref[@type = 'withinCollection' and @subtype = 'next_letter'][1]">
                                 <a href="{concat(substring-before(@target, '.'), '.html')}" class="btn btn-link d-flex align-items-center mb-1" title="{normalize-space(.)}">
-                                    <span class="small">Nächster Brief</span>
+                                    <span>Nächster Brief</span>
                                     <i class="bi bi-chevron-right ms-1"/>
                                 </a>
                             </xsl:for-each>
@@ -56,7 +56,7 @@
                         <xsl:if test="$correspContext/tei:ref[@type = 'withinCorrespondence' and @subtype = 'next_letter'][1]">
                             <xsl:for-each select="$correspContext/tei:ref[@type = 'withinCorrespondence' and @subtype = 'next_letter'][1]">
                                 <a href="{concat(substring-before(@target, '.'), '.html')}" class="btn btn-link d-flex align-items-center" title="{normalize-space(.)}">
-                                    <span class="small">... in der Korrespondenz</span>
+                                    <span>... in der Korrespondenz</span>
                                     <i class="bi bi-chevron-right ms-1"/>
                                 </a>
                             </xsl:for-each>

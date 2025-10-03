@@ -1,17 +1,16 @@
 :root {
   --bs-body-color: #4e3619;
-  --bs-body-bg: #F2E8DC;
-
-  --bs-border-width: 0px;
-  /* --bs-link-color: #9a3000;  */
-  --bs-link-color: #CC3600; 
-  --emt-deco-color: #e06b20; 
-  --entity-person-color: #d14b1e;
-  --entity-place-color: #1e6c16;
-  --entity-org-color: #68230a;
-  /* --emt-bg-dark: #e4cdb6; */
+  --bs-body-bg: #f8f3ed;
+  /* --bs-border-width: 0px; */
+  --bs-link-color: #a52208;
+  --bs-link-hover-color: #CC3600;
+  --emt-deco-color: #e06b20;
+  --entity-person-color: #FCA183;
+  --entity-place-color: #9ac494;
+  --entity-org-color: #CBB2AA;
   --emt-bg-dark: #F2AE72;
-
+  --emt-editorial-blue: #1041A2;
+  --emt-editorial-blue2: #1F4D61;
 }
 
 @font-face {
@@ -87,7 +86,8 @@
   margin: 0%;
 }
 
-.button-custom {
+.button-custom,
+.ais-RangeInput-submit .button-custom {
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: larger;
   color: var(--bs-body-color);
@@ -214,9 +214,6 @@ footer a:hover {
 nav {
   background-color: var(--emt-bg-dark)
 }
-/* .navbar {
-  border-bottom: 5px solid var(--emt-deco-color);
-} */
 
 .nav-item {
   font-size: x-large;
@@ -228,11 +225,9 @@ nav {
   font-size: xx-large;
 }
 
-a.nav-link{
+a.nav-link {
   color: var(--bs-body-color);
 }
-
-/* Ensure all navigation elements use the body text color */
 .navbar .nav-link,
 .navbar .dropdown-toggle,
 .navbar .navbar-nav .nav-link,
@@ -241,17 +236,15 @@ a.nav-link{
   color: var(--bs-body-color);
 }
 
-/* Fix hover colors too */
 .navbar .nav-link:hover,
 .navbar .dropdown-toggle:hover,
 .navbar .navbar-nav .nav-link:hover {
   color: black;
 }
 
-/* Fix active state */
 .navbar .nav-link.active,
 .navbar .navbar-nav .nav-link.active,
-.navbar .navbar-nav .nav-item.active > .nav-link {
+.navbar .navbar-nav .nav-item.active>.nav-link {
   color: var(--bs-link-color);
   font-weight: 500;
 }
@@ -261,7 +254,7 @@ a {
 }
 
 a:hover {
-  color: #b84909;
+  color: var(--bs-link-hover-color);
 }
 
 #languageSwitcher {
@@ -297,7 +290,7 @@ a:hover {
 }
 
 .overlay {
-  border: rgba(124, 124, 124, 0.4) 1px solid; 
+  border: rgba(124, 124, 124, 0.4) 1px solid;
   background-color: rgba(245, 200, 37, 0.7);
   margin: -15pt;
   padding: 12pt;
@@ -340,6 +333,10 @@ a:hover {
 .regest-text {
   font-style: italic;
 }
+.regest .badge.rounded-pill{
+  background-color: var(--bs-link-color) !important;
+  color: var(--bs-body-bg);
+}
 
 .entity {
   border-radius: 0.5rem;
@@ -349,53 +346,54 @@ a:hover {
 
 .entity-person {
   background-color: var(--entity-person-color);
-  color: white;
+  /* color: white; */
 }
 
 .entity-place {
   background-color: var(--entity-place-color);
-  color: white;
+  /* color: white; */
 }
 
 .entity-org {
   background-color: var(--entity-org-color);
-  color: white;
+  /* color: white; */
 }
 
 .supplied {
-  background-color: #f2f2f2;
-  color: #0645c1;
+  background-color: #fff;
+  color: var(--emt-editorial-blue)
 }
 
 .unclear {
-  color: #0a6795;
+  color: var(--emt-editorial-blue2);
   text-decoration: underline dotted;
-  cursor: help;
-}
-
-.expan{
-  color: #0645c1;
-  text-decoration: underline dotted;
-  cursor: help;
-}
-
-.add {
-  color: #0645c1; 
-}
-
-.date {
-  color: #b13509; 
   cursor: help;
 }
 
 .unclear-ciphered {
   font-style: italic;
-  color: #0a6795;
+  color: var(--emt-editorial-blue2);
+  cursor: help;
+}
+
+.expan {
+  color: var(--emt-editorial-blue);
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
+.add {
+  color: var(--emt-editorial-blue)
+}
+
+.date {
+  color: #b13509;
+  cursor: help;
 }
 
 .seg-blackening {
   text-decoration: line-through;
-  color: #0645c1;
+  color: var(--emt-editorial-blue)
 }
 
 .image-list-flex-row {
@@ -417,7 +415,7 @@ a:hover {
 
 /* Dropdown styling */
 .dropdown-menu {
-  background-color: #f8f3ec; 
+  background-color: #f8f3ec;
   border: 1px solid #e0d1bc;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -435,7 +433,7 @@ a:hover {
   border-color: #e0d1bc;
 }
 
-.dropdown-item:hover, 
+.dropdown-item:hover,
 .dropdown-item:focus {
   background-color: var(--emt-bg-dark);
 }
@@ -444,8 +442,6 @@ div#map {
   height: 50vh;
 }
 
-
-
 .custom-popover {
   --bs-popover-max-width: 200px;
   --bs-popover-bg: #fff;
@@ -453,10 +449,12 @@ div#map {
   --bs-popover-body-padding-y: .5rem;
   --bs-popover-header-bg: var(--emt-bg-dark);
   --bs-popover-header-color: var(--bs-body-color);
-} 
-.custom-popover ul{
+}
+
+.custom-popover ul {
   padding-left: 1rem;
 }
+
 #sticky-info .btn {
   background-color: var(--bs-link-color);
   color: white;
@@ -467,11 +465,74 @@ div#map {
 }
 
 #sticky-info .btn:hover {
-  background-color: #8a2900; /* Slightly darker on hover */
+  background-color: #8a2900;
+  /* Slightly darker on hover */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
+
 /* Typesense styling */
-.search-group{
+.search-group {
   max-width: 1000px;
   width: 100%;
+}
+#search-field-select,
+.ais-SortBy-select{
+  background-color: #fff;
+}
+
+#search-field-select option:hover,
+.ais-SortBy-select option:hover {
+  background-color: var(--emt-bg-dark);
+}
+
+.ais-RefinementList-labelText,
+.ais-Panel-header,
+.ais-Stats-text ,
+.ais-Snippet{
+  color: var(--bs-body-color)
+}
+
+.ais-CurrentRefinements .ais-CurrentRefinements-item {
+  background-color: var(--bs-link-color);
+}
+
+.ais-RefinementList-item .ais-RefinementList-count {
+  color: #fff;
+  background-color: var(--bs-link-color);
+}
+
+button.ais-ClearRefinements-button,
+button.ais-RangeInput-submit{
+  background-color: transparent;
+  border: var(--bs-link-color) 1px solid;
+  color: var(--bs-link-color);
+}
+
+button.ais-ClearRefinements-button:hover,
+button.ais-RangeInput-submit:hover,
+.ais-Pagination-item--selected .ais-Pagination-link:hover {
+  background-color: var(--bs-link-color);
+  color: #fff;
+  border: var(--bs-link-color) 1px solid;
+}
+
+.ais-Hits-item  .badge {
+  color: var(--bs-body-color);
+}
+
+.ais-Hits-item  .badge:hover {
+ background-color: #ffe3c2;
+  color: var(--bs-link-color);
+}
+
+.ais-Pagination-list .ais-Pagination-link{
+  color: var(--bs-link-color);
+}
+
+.ais-Pagination-list .ais-Pagination-link:hover{
+  color: var(--bs-link-color);
+}
+.ais-Pagination-list .ais-Pagination-item--selected .ais-Pagination-link{
+  background-color: var(--bs-link-color);
+  border-color: var(--bs-link-color)
 }

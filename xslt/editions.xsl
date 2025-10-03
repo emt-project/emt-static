@@ -55,14 +55,12 @@
                             <xsl:with-param name="doc_title" select="$doc_title"/>
                         </xsl:call-template>
 
-                        <div class="regest">
-                            <h4>
+                        <div class="regest fs-5">
                                 <xsl:for-each select=".//tei:ab[@type='abstract-terms']/tei:term">
-                                    <span class="badge rounded-pill text-bg-secondary">
+                                    <span class="badge rounded-pill me-2">
                                         <xsl:value-of select="./text()"/>
                                     </span>
                                 </xsl:for-each>
-                            </h4>
                             <div class="regest-text">
                                 <xsl:apply-templates select=".//tei:abstract[@n='regest']"></xsl:apply-templates>
                             </div>

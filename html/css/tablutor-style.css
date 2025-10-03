@@ -9,7 +9,7 @@
 .tabulator.table:not(.thead-light) .tabulator-header,
 .tabulator.table:not(.thead-light) .tabulator-header .tabulator-col {
     border-color: var(--emt-deco-color);
-    background-color: var(--bs-body-bg);
+    background-color:  var(--tabulator-secondary);
 }
 
 .tabulator-tableholder {
@@ -20,19 +20,23 @@
     background-color: var(--bs-body-bg);
 }
 
+.tabulator .tabulator-headers{
+    background-color: var(--tabulator-secondary);
+}
 
 .tabulator .tabulator-header .tabulator-col .tabulator-col-content {
   font-weight: bold;
   color: #4E3619;
-  background-color: var(--bs-body-bg);
+  background-color: var(--tabulator-secondary);
 }
 
 body div.tabulator-table div.tabulator-row.tabulator-row-even {
-    background-color: var(--tabulator-primary);
+    background-color: var(--tabulator-secondary);
 }
 
 body div.tabulator-table div.tabulator-row.tabulator-row-odd {
-    background-color: var(--tabulator-secondary)
+    background-color: var(--tabulator-primary);
+
 }
 
 

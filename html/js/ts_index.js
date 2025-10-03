@@ -67,8 +67,8 @@ search.addWidgets([
       <h4><a href='${hit.id}.html'>${hit.title}</a></h4>
       <p>${hit._snippetResult.regest.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'regest' }) : ''}</p>
       <p>${hit._snippetResult.full_text.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'full_text' }) : ''}</p>
-      <p>${hit.sender ? html`<a href='${hit.sender.id}.html'><span class="badge rounded-pill m-1 entity-person">${hit.sender.name}</span></a>` : ''} 
-      ${hit.receiver ? html`<a href='${hit.receiver.id}.html'><span class="badge rounded-pill m-1 entity-person">${hit.receiver.name}</span></a>` : ''} ${hit.sent_from ? html`<a href='${hit.sent_from.id}.html'><span class="badge rounded-pill m-1 entity-place">${hit.sent_from.name}</span></a>` : ''}</p>`
+      <p>${hit.sender ? html`<a class="badge rounded-pill text-decoration-none border m-1" href='${hit.sender.id}.html'><span><i class="bi bi-person"></i> ${hit.sender.name}</span></a>` : ''} 
+      ${hit.receiver ? html`<a class="badge rounded-pill text-decoration-none border m-1" href='${hit.receiver.id}.html'><span><i class="bi bi-person"></i> ${hit.receiver.name}</span></a>` : ''} ${hit.sent_from ? html`<a class="badge rounded-pill text-decoration-none border m-1" href='${hit.sent_from.id}.html'><span><i class="bi bi-geo-alt"></i> ${hit.sent_from.name}</span></a>` : ''}</p>`
       }
     },
   }),
@@ -101,7 +101,7 @@ search.addWidgets([
       { label: 'Datum (absteigend)', value: 'emt/sort/date:asc' },
     ],
     cssClasses: {
-      select: 'form-control'
+      select: 'form-select'
     }
   }),
 

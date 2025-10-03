@@ -67,7 +67,7 @@
                                         <label for="ais-sort-by-select" class="me-2">Sortieren nach:</label>
                                         <div id="sort-by"></div>
                                     </div>
-                                    <div id="hits"></div>
+                                    <div id="hits" class="mb-3"></div>
                                     <div id="pagination"></div>
                                 </div>
                             </div>
