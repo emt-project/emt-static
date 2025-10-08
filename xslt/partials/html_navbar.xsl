@@ -109,8 +109,8 @@
                             
                         </ul>
                         <a title="Suche" href="search.html" class="nav-link pe-3 fs-2"><i class="bi bi-search"></i></a>
-                        <button type="button" class="btn btn-outline-secondary nav-link" id="lang-switch-de">DE</button>     
-                        <button type="button" class="btn btn-outline-secondary nav-link ps-3" id="lang-switch-en">EN</button>
+                        <button type="button" class="btn nav-link" id="lang-switch-de">DE</button>     
+                        <button type="button" class="btn nav-link ps-3" id="lang-switch-en">EN</button>
                     </div>
                 </div>
             </nav>

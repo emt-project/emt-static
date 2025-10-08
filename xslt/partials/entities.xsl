@@ -33,7 +33,7 @@
                         <a href="{$selfLink}">Link zur Detailansicht <i class="bi bi-link-45deg"></i></a>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                        <button type="button" class="btn" data-bs-dismiss="modal">Schließen</button>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                         <a href="{$selfLink}">Link zur Detailansicht <i class="bi bi-link-45deg"></i></a>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                        <button type="button" class="btn" data-bs-dismiss="modal">Schließen</button>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                         <a href="{$selfLink}">Link zur Detailansicht <i class="bi bi-link-45deg"></i></a>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                        <button type="button" class="btn" data-bs-dismiss="modal">Schließen</button>
                     </div>
                 </div>
             </div>

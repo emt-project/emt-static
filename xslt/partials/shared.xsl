@@ -101,7 +101,6 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <strong>
             <span>
                 <xsl:if test="@cert">
                     <xsl:attribute name="data-bs-toggle"/>
@@ -133,7 +132,6 @@
                     <xsl:apply-templates/>
                 </xsl:element>
             </span>
-        </strong>
         <xsl:choose>
             <xsl:when test="./following-sibling::text()[1][not(starts-with(., ','))]">
                 <xsl:text>&#32;</xsl:text>
@@ -162,7 +160,7 @@
     <xsl:template match="tei:expan"></xsl:template>
 
     <xsl:template match="tei:unclear[@reason='chiffriert']">
-        <span class="unclear unclear-ciphered">
+        <span class="unclear-ciphered">
             <xsl:apply-templates/>
         </span>
     </xsl:template>

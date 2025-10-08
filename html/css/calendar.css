@@ -1,12 +1,12 @@
 :root {
-    --emt_person_id__9: #d10b0b;
-    --emt_person_id__10: #9b0e66;
-    --emt_person_id__14: #118ab2;
-    --emt_person_id__18: #0d13ba;
-    --emt_person_id__50: #288217;
-    --Brief_erschlossen: #718355;
-    --menioned_letter_pw: #29821769;
-    --mehrere_briefe: #52525b;
+    --emt_person_id__9: #8b0000;
+    --emt_person_id__10: #7d314c;
+    --emt_person_id__14: #006080;
+    --emt_person_id__18:  #1f3a93;
+    --emt_person_id__50:  #008000;
+    --Brief_erschlossen: #294429;
+    --menioned_letter_pw:  #4F824F;
+    --mehrere_briefe: #545454;
 }
 
 :where(acdh-ch-calendar) {
@@ -27,6 +27,7 @@ acdh-ch-calendar-year {
 acdh-ch-calendar caption {
     caption-side: top;
     text-align: center;
+    color: var(--bs-body-color);
 }
 
 @media (min-width: 40rem) {
@@ -94,7 +95,7 @@ acdh-ch-calendar-year td>button[data-event-kinds="menioned_letter_pw"] {
 }
 
 acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
-    --calendar-cell-color: #8b5cf6;
+    --calendar-cell-color: #5611f7;
 }
 
 

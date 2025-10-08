@@ -1,8 +1,15 @@
+:root {
+    --tabulator-primary: var(--bs-body-bg);
+    --tabulator-secondary:  #ede0d1;
+    --tabulator-hover: var(--emt-bg-dark);
+}
+
 /* custom tabulator toc start */
 
 .tabulator.table:not(.thead-light) .tabulator-header,
 .tabulator.table:not(.thead-light) .tabulator-header .tabulator-col {
-    border: 0cm;
+    border-color: var(--emt-deco-color);
+    background-color:  var(--tabulator-secondary);
 }
 
 .tabulator-tableholder {
@@ -13,38 +20,29 @@
     background-color: var(--bs-body-bg);
 }
 
-.tabulator-col {
-    border: 0px;
-    background-color: var(--bs-body-bg);
+.tabulator .tabulator-headers{
+    background-color: var(--tabulator-secondary);
 }
 
-.tabulator-col-content {
-    background-color: var(--bs-body-bg);
-}
-
-.tabulator-row .tabulator-cell {
-    background-color: var(--bs-body-bg);
-}
-
-.tabulator-header-contents {
-    background-color: var(--bs-body-bg);
-}
-
-.tabulator-header-contents .tabulator-headers {
-    background-color: var(--bs-body-bg);
+.tabulator .tabulator-header .tabulator-col .tabulator-col-content {
+  font-weight: bold;
+  color: #4E3619;
+  background-color: var(--tabulator-secondary);
 }
 
 body div.tabulator-table div.tabulator-row.tabulator-row-even {
-    background-color: var(--bs-body-bg);
+    background-color: var(--tabulator-secondary);
 }
 
 body div.tabulator-table div.tabulator-row.tabulator-row-odd {
-    background-color: var(--bs-body-bg);
+    background-color: var(--tabulator-primary);
+
 }
 
-div.tabulator-row.tabulator-row-odd.tabulator-selectable:hover,
-div.tabulator-row.tabulator-row-even.tabulator-selectable:hover {
-    background-color: var(--bs-body-bg);
+
+.tabulator.table .tabulator-row:hover,
+.tabulator.table .tabulator-row:hover .tabulator-cell {
+    background-color: var(--tabulator-hover);
     cursor: pointer;
 }
 

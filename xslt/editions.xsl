@@ -56,13 +56,13 @@
                         </xsl:call-template>
 
                         <div class="regest">
-                            <h4>
+                        <div class="regest-terms fs-5 mb-3">
                                 <xsl:for-each select=".//tei:ab[@type='abstract-terms']/tei:term">
-                                    <span class="badge rounded-pill text-bg-secondary">
+                                    <span class="badge rounded-pill me-2">
                                         <xsl:value-of select="./text()"/>
                                     </span>
                                 </xsl:for-each>
-                            </h4>
+                            </div>
                             <div class="regest-text">
                                 <xsl:apply-templates select=".//tei:abstract[@n='regest']"></xsl:apply-templates>
                             </div>
@@ -187,7 +187,7 @@
                                             </ul>
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                                            <button type="button" class="btn" data-bs-dismiss="modal">Schließen</button>
                                         </div>
                                     </div>
                                 </div>
