@@ -1,7 +1,7 @@
 :root {
   --bs-body-color: #4e3619;
   --bs-body-bg: #f8f3ed;
-  /* --bs-border-width: 0px; */
+  --bs-border-width: 0px;
   --bs-link-color: #a52208;
   --bs-link-hover-color: #CC3600;
   --emt-deco-color: #e06b20;
@@ -10,7 +10,7 @@
   --entity-org-color: #CBB2AA;
   --emt-bg-dark: #F2AE72;
   --emt-editorial-blue: #1041A2;
-  --emt-editorial-blue2: #1F4D61;
+  --emt-editorial-blue2: #005051;
 }
 
 @font-face {
@@ -86,8 +86,7 @@
   margin: 0%;
 }
 
-.button-custom,
-.ais-RangeInput-submit .button-custom {
+.button-custom {
   font-family: "Alegreya Sans SC", sans-serif;
   font-size: larger;
   color: var(--bs-body-color);
@@ -373,7 +372,6 @@ a:hover {
 .unclear-ciphered {
   font-style: italic;
   color: var(--emt-editorial-blue2);
-  cursor: help;
 }
 
 .expan {
@@ -502,7 +500,8 @@ div#map {
 }
 
 button.ais-ClearRefinements-button,
-button.ais-RangeInput-submit{
+button.ais-RangeInput-submit,
+.modal-footer .btn{
   background-color: transparent;
   border: var(--bs-link-color) 1px solid;
   color: var(--bs-link-color);
@@ -510,7 +509,8 @@ button.ais-RangeInput-submit{
 
 button.ais-ClearRefinements-button:hover,
 button.ais-RangeInput-submit:hover,
-.ais-Pagination-item--selected .ais-Pagination-link:hover {
+.ais-Pagination-item--selected .ais-Pagination-link:hover,
+.modal-footer .btn:hover{
   background-color: var(--bs-link-color);
   color: #fff;
   border: var(--bs-link-color) 1px solid;

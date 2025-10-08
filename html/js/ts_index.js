@@ -323,7 +323,6 @@ search.addWidgets([
       cssClasses: {
         form: 'form-inline',
         input: 'form-control',
-        submit: 'button-custom'
       }
     }),
 
@@ -341,9 +340,6 @@ search.addWidgets([
     templates: {
       resetLabel: 'Filter zurücksetzen',
     },
-    cssClasses: {
-      button: 'custom-button'
-    }
   }),
 
 
