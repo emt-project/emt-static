@@ -1,3 +1,4 @@
+let total
 function resizeIconsOnZoom(map, existing_markers_by_coordinates) {
   let first_marker = Object.values(existing_markers_by_coordinates)[0]
   if (!first_marker.getRadius) {
@@ -27,39 +28,31 @@ function fetch_tabulatordata_and_build_table(
   marker_layer
 ) {
   console.log("loading table");
-  if (map_cfg.json_url.length !== 0) {
-    fetch(map_cfg.json_url)
-      .then(function (response) {
-        // json string
-        return response.json();
-      })
-      .then(function (tabulator_data) {
-        // the table will draw all markers on to the empty map
-        table_cfg.tabulator_cfg.data = tabulator_data;
-        let table = build_map_table(table_cfg);
-        populateMapFromTable(
-          table,
-          map,
-          map_cfg.on_row_click_zoom,
-          marker_layer,
-          map_cfg.initial_coordinates,
-          map_cfg.initial_zoom
-        );
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
-  } else {
-    let table = build_map_table(table_cfg);
-    populateMapFromTable(
-      table,
-      map,
-      map_cfg.on_row_click_zoom,
-      marker_layer,
-      map_cfg.initial_coordinates,
-      map_cfg.initial_zoom
-    );
-  }
+  let table = build_map_table(table_cfg);
+  table.on("dataLoaded", function (data) {
+    total = data.length;
+  });
+
+  // Set initial counter text after i18next is initialized
+  i18next.on('initialized', function (options) {
+    const counterText = i18next.t("listplace_counter_label", {
+      count: total,
+      total: total
+    });
+    const counterElement = document.getElementById("table-counter");
+    if (counterElement) {
+      counterElement.innerHTML = counterText;
+    }
+  });
+
+  populateMapFromTable(
+    table,
+    map,
+    map_cfg.on_row_click_zoom,
+    marker_layer,
+    map_cfg.initial_coordinates,
+    map_cfg.initial_zoom
+  );
 }
 
 function zoom_to_point_from_row_data(
@@ -172,6 +165,15 @@ function populateMapFromTable(
           }
         }
       );
+      // update counter
+      const counterText = i18next.t("listplace_counter_label", {
+        count: rows.length,
+        total: total
+      });
+      // Need this because i18next is not initialized this event first fires
+      if (counterText) {
+        document.getElementById("table-counter").innerHTML = counterText;
+      }
     });
     //eventlistener for click on row
     table.on("rowClick", function (event, row) {
@@ -238,4 +240,5 @@ function build_map_and_table(map_cfg, table_cfg, wms_cfg = null, tms_cfg = null)
   marker_layer.addTo(map);
 
   fetch_tabulatordata_and_build_table(map_cfg, map, table_cfg, marker_layer);
+
 }

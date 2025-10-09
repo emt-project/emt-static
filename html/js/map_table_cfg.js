@@ -7,7 +7,6 @@ his simply is passed over to leaflet, consult docs
 for more info */
 const map_cfg = {
   div_id: "map",
-  json_url: "",
   initial_zoom: "5",
   max_zoom: "15",
   min_zoom: "2",
