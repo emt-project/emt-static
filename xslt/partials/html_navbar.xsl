@@ -97,6 +97,10 @@
                                             href="listorg.html" />
                                     </li>
                                     <li>
+                                        <a class="dropdown-item" data-i18n="navbar__attachments"
+                                            href="attachments.html" />
+                                    </li>
+                                    <li>
                                         <a class="dropdown-item" data-i18n="navbar_timeline"
                                         href="timeline.html" />
                                     </li>
