@@ -42,8 +42,9 @@
                                     <th scope="col" tabulator-headerFilter="input">Absender</th>
                                     <th scope="col" tabulator-headerFilter="input">Empfänger</th>
                                     <th scope="col" tabulator-headerFilter="input">Typ</th>
+                                    <th scope="col" tabulator-headerFilter="input" tabulator-visible="false">Inhalt</th>
                                     <th scope="col" tabulator-headerFilter="input" tabulator-visible="false">Sprache</th>
-                                    <th scope="col" tabulator-headerFilter="input" tabulator-visible="false">Seiten</th>
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -60,7 +61,7 @@
                                     <xsl:variable name="attachment_number">
                                         <xsl:number level="any" from="tei:TEI" count="tei:div[@type='attachment']"/>
                                     </xsl:variable>
-                                    
+
                                     <tr>
                                         <td>
                                             <xsl:value-of select="concat(replace($doc_id, '.xml', '.html'), '#attachment__', $attachment_number)" />
@@ -90,22 +91,22 @@
                                             <xsl:value-of select="tei:ab/tei:date/@when-iso"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="tei:ab/tei:placeName/text()"/>
+                                            <xsl:value-of select="tei:ab/tei:placeName//text()"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="tei:ab/tei:persName[@type='sender']/text()"/>
+                                            <xsl:value-of select="string-join(tei:ab/tei:persName[@type='sender']//text(), ', ')"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="tei:ab/tei:persName[@type='recipient']/text()"/>
+                                            <xsl:value-of select="string-join(tei:ab/tei:persName[@type='recipient']//text(), ', ')"/>
                                         </td>
                                         <td>
                                             <xsl:value-of select="tei:ab/tei:note[@type='attachmentType']/text()"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="tei:ab/tei:lang/text()"/>
+                                            <xsl:value-of select="tei:ab/tei:note[@type='content']/text()"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="count(tei:div[@type='page'])"/>
+                                            <xsl:value-of select="tei:ab/tei:lang/text()"/>
                                         </td>
                                     </tr>
                                 </xsl:for-each>
