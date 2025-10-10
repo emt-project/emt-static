@@ -42,9 +42,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install Saxon, Ant and Python
+      - name: Install Saxon and Python
         run: |
-          apt-get update && apt-get install openjdk-11-jre-headless ant -y --no-install-recommend
           ./shellscripts/dl_saxon.sh
           pip install -r requirements.txt
       - name: Fetch data
