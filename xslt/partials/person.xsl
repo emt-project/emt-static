@@ -11,7 +11,7 @@
                     <figure class="figure">
                         <img src="{concat('bio-pics/', .//tei:graphic[1]/@url)}" class="figure-img img-fluid rounded"></img>
                         <figcaption class="figure-caption">
-                            Das <abbr title="{.//tei:caption/text()}">Bild</abbr> wurde automatisiert aus Wikidata übernommen.<br />
+                            Das <abbr title="{.//tei:caption/text()}">Bild</abbr> wurde automatisiert aus Wikidata übernommen.<xsl:element name="br"/>
                         </figcaption>
                     </figure>
                 </div>

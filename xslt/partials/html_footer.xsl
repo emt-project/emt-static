@@ -18,7 +18,7 @@
                         </div>
                         <div class="text-center p-4">
                             Institute for Habsburg and Balkan Studies
-                            <br />
+                            <xsl:element name="br"/>
                             <a href="mailto:katrin.keller@oeaw.ac.at">katrin.keller@oeaw.ac.at</a>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                         </div>
                         <div class="text-center p-4">
                             Austrian Centre for Digital Humanities
-                            <br />
+                            <xsl:element name="br"/>
                             <a href="mailto:acdh-helpdesk@oeaw.ac.at">acdh-helpdesk@oeaw.ac.at</a>
                         </div>
                     </div>

@@ -52,7 +52,7 @@
     </xsl:template>
 
     <xsl:template match="tei:lb">
-        <br/>
+        <xsl:element name="br"/>
     </xsl:template>
     <xsl:template match="tei:unclear">
         <xsl:variable name="reason">

@@ -45,6 +45,7 @@
     </xsl:template>
     
     <xsl:template match="br">
-        <xsl:apply-templates/> <br />
+        <xsl:apply-templates/>
+        <xsl:element name="br"/>
     </xsl:template>
 </xsl:stylesheet>

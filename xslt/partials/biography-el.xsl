@@ -74,8 +74,8 @@
                                 </table>-->
                                 
                                 <xsl:if test="./tei:desc/tei:idno[@type='geonames']">
-                                    <br/>
-                                    <br/>
+                                    <xsl:element name="br"/>
+                                    <xsl:element name="br"/>
                                     <span style="font-weight: bold;">Geonames ID: </span>
                                     <a target="_blank" href="{./tei:desc/tei:idno[@type='geonames']}">
                                         <xsl:value-of select="tokenize(./tei:desc/tei:idno[@type='geonames'], '/')[last()]"/>

@@ -227,7 +227,7 @@
         </div>
     </xsl:template>
     <xsl:template match="tei:lb">
-        <br/>
+        <xsl:element name="br"/>
     </xsl:template>
     <xsl:template match="tei:unclear">
         <abbr title="unclear"><xsl:apply-templates/></abbr>
