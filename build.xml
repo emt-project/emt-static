@@ -82,15 +82,15 @@
         <include name="*.html"/>
         <replacetoken>xmlns="http://www.w3.org/1999/xhtml"</replacetoken>
     </replace>
-    <replace dir="${target}" value="">
+    <replace dir="${target}" value="&lt;br /&gt;">
         <include name="*.html"/>
         <replacetoken>&lt;br &gt;</replacetoken>
     </replace>
-    <replace dir="${target}" value="">
+    <replace dir="${target}" value="&lt;br /&gt;">
         <include name="*.html"/>
         <replacetoken>&lt;br&gt;</replacetoken>
     </replace>
-    <replace dir="${target}" value="&lt;br /&gt;">
+    <replace dir="${target}" value="">
         <include name="*.html"/>
         <replacetoken>&lt;/br&gt;</replacetoken>
     </replace>
