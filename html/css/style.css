@@ -463,8 +463,7 @@ div#map {
 }
 
 #sticky-info .btn:hover {
-  background-color: #8a2900;
-  /* Slightly darker on hover */
+  background-color: var(--bs-link-hover-color);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
@@ -476,6 +475,7 @@ div#map {
 #search-field-select,
 .ais-SortBy-select{
   background-color: #fff;
+  border: 1px solid #c4c8d8;
 }
 
 #search-field-select option:hover,
@@ -516,12 +516,15 @@ button.ais-RangeInput-submit:hover,
   border: var(--bs-link-color) 1px solid;
 }
 
+.ais-Hits-item{
+  background-color: #fff;
+}
 .ais-Hits-item  .badge {
   color: var(--bs-body-color);
 }
 
 .ais-Hits-item  .badge:hover {
- background-color: #ffe3c2;
+ background-color: #F7C497;
   color: var(--bs-link-color);
 }
 
