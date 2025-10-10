@@ -56,7 +56,7 @@
                         </xsl:call-template>
 
                         <div class="regest">
-                        <div class="regest-terms fs-5 mb-3">
+                            <div class="regest-terms fs-5 mb-3">
                                 <xsl:for-each select=".//tei:ab[@type='abstract-terms']/tei:term">
                                     <span class="badge rounded-pill me-2">
                                         <xsl:value-of select="./text()"/>
@@ -236,7 +236,21 @@
         </div>
     </xsl:template>
     <xsl:template match="tei:head">
-        <h2 id="{local:makeId(.)}" class="text-center fs-5 text-decoration-underline my-4">
+        <xsl:variable name="id_value">
+            <xsl:choose>
+                <xsl:when test="parent::tei:div[@type='attachment']">
+                    <xsl:variable name="attachment_number">
+                        <xsl:number level="any" from="tei:TEI" count="tei:div[@type='attachment']"/>
+                    </xsl:variable>
+                    <xsl:value-of select="concat('attachment__', $attachment_number)"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="local:makeId(.)"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+
+        <h2 id="{$id_value}" class="text-center fs-5 text-decoration-underline my-4">
             <xsl:apply-templates/>
         </h2>
     </xsl:template>

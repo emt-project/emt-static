@@ -27,6 +27,7 @@ navbar__register,Register,Register
 navbar__persons,Personen,Person
 navbar__places,Orte und Karte,Places and Map
 navbar__orgs,Institutionen,Institutions
+navbar__attachments,Beilagen,Attachments
 navbar__search,Suche,Search
 navbar__events,Ereignisse,Events
 navbar_timeline,Zeitleiste,Timeline
@@ -44,4 +45,5 @@ toc_counter_label,"{{count}} von {{total}} Briefen","{{count}} of {{total}} lett
 listperson_counter_label,"{{count}} von {{total}} Personen","{{count}} of {{total}} persons"
 listplace_counter_label,"{{count}} von {{total}} Orten","{{count}} of {{total}} places"
 listorg_counter_label,"{{count}} von {{total}} Institutionen","{{count}} of {{total}} institutions"
+attachments_counter_label,"{{count}} von {{total}} Beilagen","{{count}} of {{total}} attachments"
 default_counter_label,"{{count}} von {{total}} Ergebnissen","{{count}} of {{total}} results"
