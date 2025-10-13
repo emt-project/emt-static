@@ -93,9 +93,9 @@
                             <div class="row">
                                 <div class="col-md-12 pe-xl-0 pe-5">
                                     <div class="float-end">
-                                        <h5>
+                                        <span class="fs-5">
                                             <xsl:value-of select="$pbFolio"/>
-                                        </h5>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
