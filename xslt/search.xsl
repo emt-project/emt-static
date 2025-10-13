@@ -32,6 +32,7 @@
                                     <div class="search-group mx-auto">
                                         <div class="d-flex gap-2 align-items-start">
                                             <div id="searchbox" class="flex-grow-1"></div>
+                                            <label for="search-field-select" class="visually-hidden">Suchbereich auswählen</label>
                                             <select id="search-field-select" class="form-select w-auto">
                                                 <option value="full_text,regest" selected="selected">Volltext + Regesten</option>
                                                 <option value="full_text">Nur Volltext</option>
@@ -39,7 +40,7 @@
                                             </select>
                                         </div>
                                         <div id="stats-container" class="mt-2"></div>
-                                        <div id="search-fields-selector" class="mt-3 d-none"></div>                                        <!-- old checkboxes can be removed -->
+                                        <div id="search-fields-selector" class="mt-3 d-none"></div>
                                         <div id="current-refinements" class="mt-2"></div>
                                     </div>
                                 </div>

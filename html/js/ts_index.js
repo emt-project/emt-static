@@ -64,7 +64,7 @@ search.addWidgets([
       empty: "Keine Resultate für <q>{{ query }}</q>",
       item(hit, { html, components }) {
         return html`
-      <h4><a href='${hit.id}.html'>${hit.title}</a></h4>
+      <div class="h5 mb-2"><a href='${hit.id}.html'>${hit.title}</a></div>
       <p>${hit._snippetResult.regest.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'regest' }) : ''}</p>
       <p>${hit._snippetResult.full_text.matchedWords.length > 0 ? components.Snippet({ hit, attribute: 'full_text' }) : ''}</p>
       <p>${hit.sender ? html`<a class="badge rounded-pill text-decoration-none border m-1" href='${hit.sender.id}.html'><span><i class="bi bi-person"></i> ${hit.sender.name}</span></a>` : ''} 
