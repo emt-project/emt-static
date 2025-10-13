@@ -1,8 +1,7 @@
 key,de,en
-index__h1,"Familiensache?","Family matters?"
-index__h2,"Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)","The correspondence of Empress Eleonora Magdalena (1655–1720)"
+index__h1,"Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)","The correspondence of Empress Eleonora Magdalena (1655–1720)"
 index__teaser,"Zwischen 1677 und 1716 gingen eine Unzahl von Briefen hin und her zwischen Wien, Düsseldorf, Neuburg an der Donau und Heidelberg: Kaiserin Eleonora Magdalena korrespondierte mit Vater bzw. Bruder, den Kurfürsten von der Pfalz. Erstmals wird hier die umfangreiche Korrespondenz im Volltext zugänglich gemacht.","Between 1677 and 1716, countless letters went back and forth between Vienna, Düsseldorf, Neuburg an der Donau and Heidelberg: Empress Eleonora Magdalena corresponded with her father and brother, the Elector Palatine. For the first time, the extensive correspondence is made available in full text here."
-index__about_the_project,"Über das Projekt","About the project"
+index__about_the_project,"Über die digitale Edition","About the digital edition"
 index__index_of_letters,"Briefverzeichnis","Index of letters"
 index__index_of_letters_text,"In die erschlossenen Korrespondenzen kann über eine tabellarische sowie eine kalendarische Ansicht eingestiegen werden.","The catalogued correspondence can be accessed via a tabular and a calendar view."
 index__index_of_letters_button,"Zum Verzeichnis","To the catalogue"
@@ -12,9 +11,9 @@ index__blog_button,"Zum Blog","To the blog"
 index__quote_h,Zitierempfehlung,Recommended citation
 index__contact_h,"Kontakt","Contact"
 index__contact_text,"Das Projekt “Familiensache. Dynastische Handlungsspielräume in der Korrespondenz von Kaiserin Eleonora Magdalena von Pfalz-Neuburg (1655–1720)” wird am Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes der Österreichischen Akademie der Wissenschaften durchgeführt und durch den FWF gefördert.","The project “Family Matters. Dynastic agency in the correspondence of Empress Eleonora Magdalena of Palatinate-Neuburg (1655–1720)“ is being carried out at the Institute for Habsburg and Balkan Studies at the Austrian Academy of Sciences and funded by the FWF."
-navbar__brand,Familiensache,"Family matters"
+navbar__brand,Die Korrespondenz,"The correspondence"
 navbar__project,Zur Edition,About the edition
-navbar__about,Über das Projekt,About the project
+navbar__about,Über die digitale Edition,About the digital edition
 navbar__tradition,Überlieferung der Quellen,Tradition of the sources
 navbar__cipher,Chiffre,Cipher
 navbar__edition,Editionsrichtlinien,Edition guidelines

@@ -21,7 +21,7 @@
 
     <xsl:template match="/">
         <xsl:variable name="doc_title">
-            <xsl:value-of select='"Familiensache"'/>
+            <xsl:value-of select='"Die Korrespondenz der Kaiserin Eleonora Magdalena"'/>
         </xsl:variable>
 
 
@@ -52,8 +52,7 @@
                     <div class="row p-3">
                         <div class="col-2"/>
                         <div class="col-8">
-                            <h1 class="display-2 text-center" data-i18n="index__h1"/>
-                            <h2 class="display-5 text-center" data-i18n="index__h2"/>
+                            <h1 class="display-5 text-center" data-i18n="index__h1"/>
                             <p class="text-center fs-5" data-i18n="index__teaser"/>
                             <div class="d-grid gap-2 col-6 mx-auto p-3">
                                 <a href="projekt.html" type="button" class="btn btn-outline-secondary btn-lg button-custom" data-i18n="index__about_the_project"/>
