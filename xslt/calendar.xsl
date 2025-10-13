@@ -44,6 +44,10 @@
                                         <span class="legend-item">Eleonora Magdalena von Pfalz-Neuburg</span>
                                     </li>
                                     <li>
+                                        <span class="dot Brief_erschlossen"></span>
+                                        <span class="legend-item">Eleonora Magdalena von Pfalz-Neuburg (erwähnter Brief)</span>
+                                    </li>
+                                    <li>
                                         <span class="dot emt_person_id__18"></span>
                                         <span class="legend-item">Johann Wilhelm von Pfalz-Neuburg</span>
                                     </li>
@@ -59,10 +63,7 @@
                                         <span class="dot menioned_letter_pw"></span>
                                         <span class="legend-item">Philipp Wilhelm von Pfalz-Neuburg (erwähnter Brief)</span>
                                     </li>
-                                    <li>
-                                        <span class="dot Brief_erschlossen"></span>
-                                        <span class="legend-item">In der Korrespondenz erwähnter Brief</span>
-                                    </li>
+
                                     <li>
                                         <span class="dot mehrere_briefe"></span>
                                         <span class="legend-item">Mehrere Briefe unterschiedlicher AbsenderInnen</span>
