@@ -7,7 +7,7 @@
 
     <xsl:template match="/">
         <xsl:text>\documentclass[a4paper]{article}</xsl:text>
-         <xsl:text>\usepackage{polyglossia}</xsl:text>
+        <xsl:text>\usepackage{polyglossia}</xsl:text>
         <xsl:text>\setmainlanguage{german}</xsl:text>
 
 
@@ -36,11 +36,7 @@
 \title{
 Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)}
 \author{EMT Team}
-\date{today} 
-\makeindex[name=person,title=Personenindex,columnsep=14pt,columns=3] 
-\makeindex[name=place,title=Ortsindex,columnsep=14pt,columns=3]
-\makeindex[name=org,title=Institutionsindex,columnsep=14pt,columns=3]
- \makeindex[name=letter,title=Briefindex,columnsep=14pt,columns=3]
+\date{today} \makeindex[name=person,title=Personenindex,columnsep=14pt,columns=3] \makeindex[name=place,title=Ortsindex,columnsep=14pt,columns=3] \makeindex[name=org,title=Institutionsindex,columnsep=14pt,columns=3] \makeindex[name=letter,title=Briefindex,columnsep=14pt,columns=3]
 \usepackage[hidelinks]{hyperref}
 
 \begin{document}
@@ -59,22 +55,23 @@ Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)}
 \section{
             <xsl:value-of select="$title"/>
 }
-\index[letter]{<xsl:value-of select="$title"/>}
+\index[letter]{<xsl:value-of select="$title"/>
+}
 
-            <xsl:for-each select=".//tei:body//tei:div[@type='page']">
+        <xsl:for-each select=".//tei:body//tei:div[@type='page']">
 
 
 
-                <xsl:for-each select=".//tei:p[normalize-space(.)]">
+            <xsl:for-each select=".//tei:p[normalize-space(.)]">
     \par
-                    <xsl:if test="position()=1">\noindent </xsl:if>
-                    <xsl:apply-templates/>
+                <xsl:if test="position()=1">\noindent </xsl:if>
+                <xsl:apply-templates/>
     \par 
-                </xsl:for-each>
-
-
             </xsl:for-each>
+
+
         </xsl:for-each>
+    </xsl:for-each>
 
 \newpage
 \back\small
@@ -84,32 +81,72 @@ Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)}
 \printindex[letter]
 \end{document}
         
-    </xsl:template>
+</xsl:template>
 
-    <xsl:template match="tei:lb">
-        <xsl:text>\\</xsl:text>
-    </xsl:template>
+<xsl:template match="tei:lb">
+    <xsl:text>\newline </xsl:text>
+</xsl:template>
 
-    <xsl:template match="tei:del">\sout{<xsl:value-of select="."/>}</xsl:template>
-    <xsl:template match="tei:note">
-\footnote{<xsl:apply-templates/>}
-    </xsl:template>
-    <xsl:template match="tei:unclear">
-        <xsl:text>[</xsl:text>
-        <xsl:apply-templates/>
-        <xsl:text>]</xsl:text>
-    </xsl:template>
-    <xsl:template match="tei:choice">
+<xsl:template match="tei:del">\sout{<xsl:value-of select="."/>
+}</xsl:template>
+<xsl:template match="tei:note">
+\footnote{<xsl:apply-templates/>
+}
+</xsl:template>
+<xsl:template match="tei:unclear">
+    <xsl:text>[</xsl:text>
+    <xsl:apply-templates/>
+    <xsl:text>]</xsl:text>
+</xsl:template>
+<xsl:template match="tei:choice">
+    <!-- Add space before if previous sibling is also a choice or other inline element -->
+    <xsl:if test="preceding-sibling::node()[1][self::tei:choice or self::tei:rs or self::tei:unclear]">
+        <xsl:text>&#32;</xsl:text>
+    </xsl:if>
+
     <xsl:text>\textit{</xsl:text>
-        <xsl:apply-templates select="tei:expan"/>
+    <xsl:apply-templates select="tei:expan"/>
     <xsl:text>}</xsl:text>
-    </xsl:template>
-    <xsl:template match="tei:rs">
-        <xsl:variable name="rstype" select="@type"/>
-        <xsl:variable name="rsid" select="substring-after(@ref, '#')"/>
-        <xsl:variable name="ent" select="root()//tei:back//*[@xml:id=$rsid]"/>
-        <xsl:variable name="idxlabel" select="$ent/*[contains(name(), 'Name')][1]"/>
-        <xsl:value-of select="'\index['||$rstype||']{'||$idxlabel||'} '"/>
-        <xsl:apply-templates/>
-    </xsl:template>
+
+    <!-- Add space after if next sibling is also a choice or other inline element -->
+    <xsl:if test="following-sibling::node()[1][self::tei:choice or self::tei:rs or self::tei:unclear]">
+        <xsl:text>&#32;</xsl:text>
+    </xsl:if>
+</xsl:template>
+<xsl:template match="tei:rs">
+    <xsl:variable name="rstype" select="@type"/>
+    <xsl:variable name="rsid" select="substring-after(@ref, '#')"/>
+    <xsl:variable name="ent" select="root()//tei:back//*[@xml:id=$rsid]"/>
+    <xsl:variable name="idxlabel" select="$ent/*[contains(name(), 'Name')][1]"/>
+    <xsl:value-of select="'\index['||$rstype||']{'||$idxlabel||'} '"/>
+    <xsl:apply-templates/>
+</xsl:template>
+
+
+<xsl:template match="text()">
+    <xsl:variable name="text" select="."/>
+    <xsl:if test="normalize-space($text) != ''">
+        <xsl:analyze-string select="$text" regex="[#\$%&amp;_{}~^\\]">
+            <xsl:matching-substring>
+                <xsl:choose>
+                    <xsl:when test=". = '#'">\#</xsl:when>
+                    <xsl:when test=". = '$'">\$</xsl:when>
+                    <xsl:when test=". = '%'">\%</xsl:when>
+                    <xsl:when test=". = '&amp;'">\&amp;</xsl:when>
+                    <xsl:when test=". = '_'">\_</xsl:when>
+                    <xsl:when test=". = '{'">\{</xsl:when>
+                    <xsl:when test=". = '}'">\}</xsl:when>
+                    <xsl:when test=". = '~'">\textasciitilde{}</xsl:when>
+                    <xsl:when test=". = '^'">\textasciicircum{}</xsl:when>
+                    <xsl:when test=". = '\'">\textbackslash{}</xsl:when>
+                </xsl:choose>
+            </xsl:matching-substring>
+            <xsl:non-matching-substring>
+                <xsl:value-of select="."/>
+            </xsl:non-matching-substring>
+        </xsl:analyze-string>
+    </xsl:if>
+</xsl:template>
+
+
 </xsl:stylesheet>
