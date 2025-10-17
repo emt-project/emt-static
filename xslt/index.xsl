@@ -21,7 +21,7 @@
 
     <xsl:template match="/">
         <xsl:variable name="doc_title">
-            <xsl:value-of select='"Die Korrespondenz der Kaiserin Eleonora Magdalena"'/>
+            <xsl:value-of select='"Die Korrespondenz der Kaiserin Eleonora Magdalena von Pfalz-Neuburg"'/>
         </xsl:variable>
 
 
@@ -124,8 +124,8 @@
 
                                 <div class="pt-5 pb-5 text-center">
                                     <h2 class="display-5" data-i18n="index__quote_h" />
-                                    <p class="fs-5">Familiensache? Die Korrespondenz der Kaiserin
-                                        Eleonora Magdalena (1655–1720). Bearbeitet von Katrin
+                                    <p class="fs-5">Die Korrespondenz der Kaiserin
+                                        Eleonora Magdalena (1655–1720) von Pfalz-Neuburg. Bearbeitet von Katrin
                                         Keller, Ines Peper, Dorota Vargová, Anna Spitzbart. Technische Umsetzung
                                         durch Peter Andorfer, Matthias Schlögl, Levente Kiraly. Wien
                                         2024.</p>
