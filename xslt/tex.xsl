@@ -45,33 +45,16 @@ Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)}
 \tableofcontents
 \clearpage
         <xsl:for-each select="collection('../data/editions/?select=*.xml')/tei:TEI">
-            <xsl:sort select="./@xml:id"></xsl:sort>
-            <xsl:variable name="docId">
-                <xsl:value-of select="replace(./@xml:id, '.xml', '')"/>
-            </xsl:variable>
-            <xsl:variable name="title">
-                <xsl:value-of select=".//tei:titleStmt/tei:title[1]/text()"/>
-            </xsl:variable>
-\section{
-            <xsl:value-of select="$title"/>
-}
-\index[letter]{<xsl:value-of select="$title"/>
-}
-
-        <xsl:for-each select=".//tei:body//tei:div[@type='page']">
-
-
-
-            <xsl:for-each select=".//tei:p[normalize-space(.)]">
-    \par
-                <xsl:if test="position()=1">\noindent </xsl:if>
-                <xsl:apply-templates/>
-    \par 
-            </xsl:for-each>
-
-
+            <xsl:if test="not(.//tei:correspContext//tei:ref[@type='withinCollection' and @subtype='previous_letter'])">
+                <!-- This is the first letter, start the chain here -->
+                <xsl:call-template name="process-letter-chain">
+                    <xsl:with-param name="current-letter" select="."/>
+                    <xsl:with-param name="all-letters" select="collection('../data/editions/?select=*.xml')/tei:TEI"/>
+                </xsl:call-template>
+            </xsl:if>
         </xsl:for-each>
-    </xsl:for-each>
+
+
 
 \newpage
 \back\small
@@ -81,6 +64,54 @@ Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)}
 \printindex[letter]
 \end{document}
         
+    </xsl:template>
+
+
+    <xsl:template name="process-letter-chain">
+        <xsl:param name="current-letter"/>
+        <xsl:param name="all-letters"/>
+        <xsl:variable name="docId">
+            <xsl:value-of select="replace($current-letter/@xml:id, '.xml', '')"/>
+        </xsl:variable>
+        <xsl:variable name="title">
+            <xsl:value-of select="$current-letter//tei:titleStmt/tei:title[1]/text()"/>
+        </xsl:variable>
+\section{
+        <xsl:value-of select="$title"/>
+}
+\index[letter]{<xsl:value-of select="$title"/>
+}
+    <xsl:value-of select="string-join((
+     $current-letter//tei:msDesc/tei:msIdentifier/tei:repository,
+     $current-letter//tei:msDesc/tei:msIdentifier/tei:settlement
+  ), ' ')"/>
+    <xsl:text>, </xsl:text>
+    <xsl:value-of select="$current-letter//tei:msDesc/tei:msIdentifier/tei:idno"/>
+    
+    \par
+    <xsl:for-each select="$current-letter//tei:body//tei:div[@type='page']">
+
+        <xsl:for-each select=".//tei:p[normalize-space(.)]">
+    \par
+            <xsl:if test="position()=1">\noindent </xsl:if>
+            <xsl:apply-templates/>
+    \par 
+        </xsl:for-each>
+
+
+    </xsl:for-each>
+
+    <!-- Find next letter using next_letter reference -->
+    <xsl:variable name="next-ref" select="$current-letter//tei:correspContext//tei:ref[@type='withinCollection' and @subtype='next_letter']/@target"/>
+    <xsl:if test="$next-ref">
+        <xsl:variable name="next-letter" select="$all-letters[@xml:id = $next-ref]"/>
+        <xsl:if test="$next-letter">
+            <xsl:call-template name="process-letter-chain">
+                <xsl:with-param name="current-letter" select="$next-letter"/>
+                <xsl:with-param name="all-letters" select="$all-letters"/>
+            </xsl:call-template>
+        </xsl:if>
+    </xsl:if>
 </xsl:template>
 
 <xsl:template match="tei:lb">
@@ -89,14 +120,19 @@ Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)}
 
 <xsl:template match="tei:del">\sout{<xsl:value-of select="."/>
 }</xsl:template>
+<xsl:template match="tei:seg[@type='blackening']">
+    \sout{<xsl:value-of select="."/>
+}
+</xsl:template>
 <xsl:template match="tei:note">
 \footnote{<xsl:apply-templates/>
 }
 </xsl:template>
 <xsl:template match="tei:unclear">
-    <xsl:text>[</xsl:text>
+    <xsl:text>\textit{</xsl:text>
     <xsl:apply-templates/>
-    <xsl:text>]</xsl:text>
+    <xsl:text>}</xsl:text>
+    <xsl:text>[?] </xsl:text>
 </xsl:template>
 <xsl:template match="tei:choice">
     <!-- Add space before if previous sibling is also a choice or other inline element -->
@@ -113,6 +149,16 @@ Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)}
         <xsl:text>&#32;</xsl:text>
     </xsl:if>
 </xsl:template>
+<xsl:template match="tei:supplied">
+    <xsl:text>[</xsl:text>
+    <xsl:apply-templates/>
+    <xsl:text>]</xsl:text>
+</xsl:template>
+<xsl:template match="tei:add">
+    <xsl:text>[</xsl:text>
+    <xsl:apply-templates/>
+    <xsl:text>]</xsl:text>
+</xsl:template>
 <xsl:template match="tei:rs">
     <xsl:variable name="rstype" select="@type"/>
     <xsl:variable name="rsid" select="substring-after(@ref, '#')"/>
@@ -120,6 +166,9 @@ Die Korrespondenz der Kaiserin Eleonora Magdalena (1655–1720)}
     <xsl:variable name="idxlabel" select="$ent/*[contains(name(), 'Name')][1]"/>
     <xsl:value-of select="'\index['||$rstype||']{'||$idxlabel||'} '"/>
     <xsl:apply-templates/>
+    \footnote{
+        <xsl:value-of select="$idxlabel"/>
+    }
 </xsl:template>
 
 
