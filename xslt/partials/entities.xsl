@@ -93,5 +93,7 @@
             </div>
         </div>
     </xsl:template>
-    
+    <xsl:template match="tei:event">
+    <!-- ignore for now -->
+    </xsl:template>
 </xsl:stylesheet>
