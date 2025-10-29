@@ -2,6 +2,7 @@
 *.html
 html/*.html
 html/*.xml
+html/*.pdf
 /saxon
 data/imprint.xml
 /static-search
@@ -16,6 +17,7 @@ data/rss.xml
 html/locales
 html/js-data/calendarData.js
 html/faulty.csv
+tex/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
