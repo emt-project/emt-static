@@ -55,7 +55,9 @@ jobs:
         run: python make_typesense_index.py
       - name: Build
         run: ant
-      - name: write report
+      - name: Create PDFs
+        run: ./make_pdf.sh
+      - name: Write report
         run: python create_report.py
       - name: Setup Pages
         uses: actions/configure-pages@v5
