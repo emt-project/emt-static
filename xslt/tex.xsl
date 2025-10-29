@@ -253,7 +253,7 @@
         </xsl:if>
         <xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>
         <xsl:if test="following-sibling::text()[1][matches(., '^\s')]">
-        <xsl:text>&#32;</xsl:text>
+            <xsl:text>&#32;</xsl:text>
         </xsl:if>
     </xsl:template>
     <xsl:template match="text()">
