@@ -33,19 +33,24 @@
         <xsl:text>\makeindex[name=person,title=Personenindex,columnsep=14pt,columns=3]&#10;</xsl:text>
         <xsl:text>\makeindex[name=place,title=Ortsindex,columnsep=14pt,columns=3]&#10;</xsl:text>
         <xsl:text>\makeindex[name=org,title=Organisationsindex,columnsep=14pt,columns=3]&#10;</xsl:text>
-        <xsl:text>\makeindex[name=letter,title=Briefeindex,columnsep=14pt,columns=2]&#10;</xsl:text>
+        <xsl:text>\makeindex[name=sender,title=Briefe nach Absender,columnsep=14pt,columns=2]&#10;</xsl:text>
+        <xsl:text>\makeindex[name=recipient,title=Briefe nach Empfänger,columnsep=14pt,columns=2]&#10;</xsl:text>
         <xsl:text>&#10;</xsl:text>
         <xsl:text>\begin{document}&#10;</xsl:text>
         <xsl:text>\maketitle&#10;</xsl:text>
         <xsl:text>\clearpage&#10;</xsl:text>
+        <xsl:text>\begin{center}&#10;</xsl:text>
+        <xsl:text>\large&#10;</xsl:text>
         <xsl:text>\section*{Inhaltsverzeichnis}&#10;</xsl:text>
         <xsl:text>\begin{tabular}{@{}l r@{}}&#10;</xsl:text>
         <xsl:text>Briefe &amp; \pageref{letters:start}--\pageref{letters:end} \\&#10;</xsl:text>
         <xsl:text>Personenindex &amp; \pageref{index:person} \\&#10;</xsl:text>
         <xsl:text>Ortsindex &amp; \pageref{index:place} \\&#10;</xsl:text>
         <xsl:text>Organisationsindex &amp; \pageref{index:org} \\&#10;</xsl:text>
-        <xsl:text>Briefeindex &amp; \pageref{index:letter} \\&#10;</xsl:text>
+        <xsl:text>Briefe nach Absender &amp; \pageref{index:sender} \\&#10;</xsl:text>
+        <xsl:text>Briefe nach Empfänger &amp; \pageref{index:recipient} \\&#10;</xsl:text>
         <xsl:text>\end{tabular}&#10;</xsl:text>
+        <xsl:text>\end{center}&#10;</xsl:text>
         <xsl:text>\clearpage&#10;</xsl:text>
         <xsl:text>\label{letters:start}&#10;</xsl:text>
         <xsl:for-each select="collection('../data/editions/?select=*.xml')/tei:TEI">
@@ -69,8 +74,10 @@
         <xsl:text>\printindex[place]&#10;</xsl:text>
         <xsl:text>\label{index:org}&#10;</xsl:text>
         <xsl:text>\printindex[org]&#10;</xsl:text>
-        <xsl:text>\label{index:letter}&#10;</xsl:text>
-        <xsl:text>\printindex[letter]&#10;</xsl:text>
+        <xsl:text>\label{index:sender}&#10;</xsl:text>
+        <xsl:text>\printindex[sender]&#10;</xsl:text>
+        <xsl:text>\label{index:recipient}&#10;</xsl:text>
+        <xsl:text>\printindex[recipient]&#10;</xsl:text>
         <xsl:text>\end{document}&#10;</xsl:text>
     </xsl:template>
 
@@ -128,8 +135,10 @@
             <xsl:value-of select="normalize-space($current-letter//tei:titleStmt/tei:title[1]/text())"/>
         </xsl:variable>
         <xsl:variable name="sender" select="$current-letter//tei:correspDesc/tei:correspAction[@type='sent']/tei:persName"/>
+        <xsl:variable name="recipient" select="$current-letter//tei:correspDesc/tei:correspAction[@type='received']/tei:persName"/>
         <xsl:text>\section*{</xsl:text><xsl:value-of select="$title"/><xsl:text>}&#10;</xsl:text>
-        <xsl:text>\index[letter]{</xsl:text><xsl:value-of select="$sender"/><xsl:text>}&#10;</xsl:text>
+        <xsl:text>\index[sender]{</xsl:text><xsl:value-of select="$sender"/><xsl:text>}&#10;</xsl:text>
+        <xsl:text>\index[recipient]{</xsl:text><xsl:value-of select="$recipient"/><xsl:text>}&#10;</xsl:text>
         <xsl:text>&#10;</xsl:text>
         <xsl:call-template name="process-letter-content">
             <xsl:with-param name="letter" select="$current-letter"/>
@@ -150,8 +159,8 @@
     <xsl:template name="process-letter-content">
         <xsl:param name="letter"/>
         <!-- Metadata section -->
-        <xsl:text>\begin{quote}&#10;</xsl:text>
         <xsl:text>\small&#10;</xsl:text>
+        <xsl:text>\noindent </xsl:text>
         <xsl:text>\textsc{</xsl:text>
         <xsl:value-of select="string-join((
             $letter//tei:msDesc/tei:msIdentifier/tei:repository,
@@ -163,6 +172,7 @@
         <xsl:text>&#10;</xsl:text>
         <xsl:if test="$letter//tei:profileDesc/tei:abstract/tei:ab[@type='abstract-terms']">
             <xsl:text>\\&#10;</xsl:text>
+            <xsl:text>\noindent </xsl:text>
             <xsl:text>Briefattribute: </xsl:text>
             <xsl:for-each select="$letter//tei:profileDesc/tei:abstract/tei:ab[@type='abstract-terms']/tei:term">
                 <xsl:if test="position() > 1"><xsl:text>, </xsl:text></xsl:if>
@@ -170,7 +180,6 @@
             </xsl:for-each>
             <xsl:text>&#10;</xsl:text>
         </xsl:if>
-        <xsl:text>\end{quote}&#10;</xsl:text>
         
         <!-- Regest -->
         <xsl:if test="$letter//tei:profileDesc/tei:abstract[@n='regest']">
