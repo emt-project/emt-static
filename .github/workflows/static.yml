@@ -54,7 +54,11 @@ jobs:
         run: python make_typesense_index.py
       - name: Build
         run: ant
-      - name: write report
+      - name: Install TeX Live (xelatex)
+        run: sudo apt-get update && sudo apt-get install -y texlive-xetex texlive-fonts-recommended
+      - name: Create PDFs
+        run: ./make_pdf.sh
+      - name: Write report
         run: python create_report.py
       - name: Setup Pages
         uses: actions/configure-pages@v5
