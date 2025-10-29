@@ -27,6 +27,9 @@
     <xsl:variable name="teiSource">
         <xsl:value-of select="data(tei:TEI/@xml:id)"/>
     </xsl:variable>
+    <xsl:variable name="pdfLink">
+        <xsl:value-of select="replace($teiSource, '.xml', '.pdf')"/>
+    </xsl:variable>
     <xsl:variable name="link">
         <xsl:value-of select="replace($teiSource, '.xml', '.html')"/>
     </xsl:variable>
