@@ -283,13 +283,13 @@
 
     <xsl:template name="add-space-before">
         <xsl:if test="preceding-sibling::node()[1][
-            self::text()[normalize-space(.) != ''] or
+           ( self::text()[normalize-space(.) != ''] or
             self::tei:expan or
             self::tei:rs or
             self::tei:unclear or
             self::tei:seg[@type='blackening'] or
             self::tei:del or
-            self::tei:date and
+            self::tei:date ) and
             not(self::tei:lb)
         ]">
             <xsl:text>&#32;</xsl:text>
