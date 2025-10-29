@@ -248,7 +248,7 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="tei:add">
-         <xsl:if test="preceding-sibling::text()[1][matches(., '\s$')]">
+        <xsl:if test="preceding-sibling::text()[1][matches(., '\s$')]">
         <xsl:text>&#32;</xsl:text>
         </xsl:if>
         <xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>
