@@ -239,13 +239,13 @@
     </xsl:template>
     <!-- supplied and add require different space handling because they might occur mid-word -->
     <xsl:template match="tei:supplied">
-    <xsl:if test="preceding-sibling::text()[1][matches(., '\s$')]">
-        <xsl:text>&#32;</xsl:text>
-    </xsl:if>
+        <xsl:if test="preceding-sibling::text()[1][matches(., '\s$')]">
+            <xsl:text>&#32;</xsl:text>
+        </xsl:if>
         <xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>
         <xsl:if test="following-sibling::text()[1][matches(., '^\s')]">
-        <xsl:text>&#32;</xsl:text>
-    </xsl:if>
+            <xsl:text>&#32;</xsl:text>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="tei:add">
          <xsl:if test="preceding-sibling::text()[1][matches(., '\s$')]">
