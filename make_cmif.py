@@ -122,6 +122,18 @@ for x in tqdm(files, total=len(files)):
     if item["place_label"] == "o.O.":
         item["place_label"] = False
         item["place_geonames"] = False
+
+    #mentioned persons
+    item["mentioned_persons"] = []
+    for person in doc.any_xpath(".//tei:back//tei:person"):
+        try:
+            item_gnd = person.xpath("./tei:idno[@type='GND']/text()", namespaces=NSMAP)[0]
+        except IndexError:
+            continue
+        item["mentioned_persons"].append({
+                "gnd": item_gnd,
+                "label": person.xpath(".//tei:persName/text()", namespaces=NSMAP)[0]
+            })
     items.append(item)
 
 with open("./data/indices/cmif.xml", "w") as f:

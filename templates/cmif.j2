@@ -19,7 +19,7 @@
             </sourceDesc>
         </fileDesc>
         <profileDesc>
-{% for x in data %}{% if x.doc_id %}
+    {% for x in data %}{% if x.doc_id %}
             <correspDesc ref="{{ domain }}{{ x.doc_id}}" source="#ad5c20cc-31b0-11ed-baad-f50cc1e65b54">
                 <correspAction type="sent">
                     <persName ref="{{ x.sender_gnd }}">{{ x.sender_label }}</persName>{% if x.place_label %}
@@ -29,6 +29,13 @@
                 <correspAction type="received">
                     <persName ref="{{ x.receiver_gnd }}">{{ x.receiver_label }}</persName>
                 </correspAction>
+                {% if x.mentioned_persons %}
+                <note>
+                {% for person in x.mentioned_persons %}
+                <ref type="cmif:mentionsPerson" target="{{ person.gnd }}">{{ person.label }}</ref>
+                {% endfor %}
+                </note>
+                {% endif %}
             </correspDesc>{% endif %}{% endfor %}
         </profileDesc>
         </teiHeader>
