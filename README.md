@@ -26,5 +26,17 @@ To build the app, have a look at `.github/workflows/static.yml`but it basically 
 * To build the image run: `docker build -t emt-static .`
 * To run the container: `docker run -p 80:80 --rm --name emt-static emt-static`
 
+
+## Licenses
+
+This project is released under the [MIT License](LICENSE)
+
+## Third-party JavaScript libraries
+
+The code for all third-party JavaScript libraries used is included in the html/vendor folder, their respective licenses can be found either in a LICENSE.txt file or directly in the header of the .js file
+
+## SAXON-HE
+
+The projects also includes Saxon-HE, which is licensed separately under the Mozilla Public License, Version 2.0 (MPL 2.0). See the dedicated [LICENSE.txt](saxon/notices/LICENSE.txt)
 -----
 build with [DSE-Static-Cookiecutter](https://github.com/acdh-oeaw/dse-static-cookiecutter)

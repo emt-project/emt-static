@@ -38,19 +38,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setu up python
+      - name: Setup python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install Saxon and Python
-        run: |
-          ./shellscripts/dl_saxon.sh
-          pip install -r requirements.txt
+      - name: Install python things
+        run: pip install -r requirements.txt 
       - name: Fetch data
         run: ./fetch_data.sh
       - name: Process Data
         run: ./process.sh
-      - name: fulltext index
+      - name: Fulltext index
         run: python make_typesense_index.py
       - name: Build
         run: ant
