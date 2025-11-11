@@ -14,6 +14,7 @@
     <xsl:import href="./partials/osd-container.xsl"/>
     <xsl:import href="./partials/entities.xsl"/>
     <xsl:import href="./partials/html_title_navigation.xsl"/>
+    <xsl:import href="./partials/zotero_tags.xsl"/>
 
 
     <xsl:variable name="prev">
@@ -44,6 +45,11 @@
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="zoteroMetaTags">
+                    <xsl:with-param name="zoteroTitle" select="$doc_title"/>
+                    <xsl:with-param name="pageId" select="$link"/>
+                    <xsl:with-param name="pdf" select="$pdfLink"/>
                 </xsl:call-template>
                 <script src="vendor/openseadragon-bin-4.1.1/openseadragon.min.js"/>
                 <script src="js/osd_single.js"></script>

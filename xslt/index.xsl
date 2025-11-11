@@ -18,6 +18,7 @@
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
     <xsl:import href="./partials/one_time_alert.xsl"/>
+    <xsl:import href="./partials/zotero_tags.xsl"/>
 
     <xsl:template match="/">
         <xsl:variable name="doc_title">
@@ -30,6 +31,10 @@
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"/>
+                </xsl:call-template>
+                <xsl:call-template name="zoteroMetaTags">
+                    <xsl:with-param name="pageId" select="'index.html'"/>
+                    <xsl:with-param name="pdf" select="'emt.pdf'"/>
                 </xsl:call-template>
             </head>
             <body class="d-flex flex-column h-100">
