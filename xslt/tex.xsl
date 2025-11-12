@@ -136,9 +136,15 @@
         </xsl:variable>
         <xsl:variable name="sender" select="$current-letter//tei:correspDesc/tei:correspAction[@type='sent']/tei:persName"/>
         <xsl:variable name="recipient" select="$current-letter//tei:correspDesc/tei:correspAction[@type='received']/tei:persName"/>
-        <xsl:text>\section*{</xsl:text><xsl:value-of select="$title"/><xsl:text>}&#10;</xsl:text>
-        <xsl:text>\index[sender]{</xsl:text><xsl:value-of select="$sender"/><xsl:text>}&#10;</xsl:text>
-        <xsl:text>\index[recipient]{</xsl:text><xsl:value-of select="$recipient"/><xsl:text>}&#10;</xsl:text>
+        <xsl:text>\section*{</xsl:text>
+        <xsl:value-of select="$title"/>
+        <xsl:text>}&#10;</xsl:text>
+        <xsl:text>\index[sender]{</xsl:text>
+        <xsl:value-of select="$sender"/>
+        <xsl:text>}&#10;</xsl:text>
+        <xsl:text>\index[recipient]{</xsl:text>
+        <xsl:value-of select="$recipient"/>
+        <xsl:text>}&#10;</xsl:text>
         <xsl:text>&#10;</xsl:text>
         <xsl:call-template name="process-letter-content">
             <xsl:with-param name="letter" select="$current-letter"/>
@@ -175,12 +181,14 @@
             <xsl:text>\noindent </xsl:text>
             <xsl:text>Briefattribute: </xsl:text>
             <xsl:for-each select="$letter//tei:profileDesc/tei:abstract/tei:ab[@type='abstract-terms']/tei:term">
-                <xsl:if test="position() > 1"><xsl:text>, </xsl:text></xsl:if>
+                <xsl:if test="position() > 1">
+                    <xsl:text>, </xsl:text>
+                </xsl:if>
                 <xsl:apply-templates select="."/>
             </xsl:for-each>
             <xsl:text>&#10;</xsl:text>
         </xsl:if>
-        
+
         <!-- Regest -->
         <xsl:if test="$letter//tei:profileDesc/tei:abstract[@n='regest']">
             <xsl:text>\par&#10;</xsl:text>
@@ -188,14 +196,18 @@
             <xsl:apply-templates select="$letter//tei:profileDesc/tei:abstract[@n='regest']"/>
             <xsl:text>}&#10;</xsl:text>
         </xsl:if>
-        
+
         <!-- Letter body content -->
         <xsl:for-each select="$letter//tei:body//tei:div[@type='page']">
             <xsl:if test=".//tei:p[normalize-space(.)]">
-                <xsl:text>\hfill \textit{</xsl:text><xsl:value-of select=".//tei:pb/@n"/><xsl:text>}</xsl:text>
+                <xsl:text>\hfill \textit{</xsl:text>
+                <xsl:value-of select=".//tei:pb/@n"/>
+                <xsl:text>}</xsl:text>
                 <xsl:for-each select=".//tei:p[normalize-space(.)]">
                     <xsl:text>\par&#10;</xsl:text>
-                    <xsl:if test="position()=1"><xsl:text>\noindent </xsl:text></xsl:if>
+                    <xsl:if test="position()=1">
+                        <xsl:text>\noindent </xsl:text>
+                    </xsl:if>
                     <xsl:apply-templates/>
                     <xsl:text>\par&#10;</xsl:text>
                 </xsl:for-each>
@@ -209,25 +221,38 @@
 
     <xsl:template match="tei:del">
         <xsl:call-template name="add-space-before"/>
-        <xsl:text>\st{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
+        <xsl:text>\st{</xsl:text>
+        <xsl:apply-templates/>
+        <xsl:text>}</xsl:text>
         <xsl:call-template name="add-space-after"/>
     </xsl:template>
     <xsl:template match="tei:seg[@type='blackening']">
         <xsl:call-template name="add-space-before"/>
-        <xsl:text>\st{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
+        <xsl:text>\st{</xsl:text>
+        <xsl:apply-templates/>
+        <xsl:text>}</xsl:text>
         <xsl:call-template name="add-space-after"/>
     </xsl:template>
     <xsl:template match="tei:note">
-        <xsl:text>\footnote{</xsl:text><xsl:apply-templates/><xsl:text>}</xsl:text>
+        <xsl:text>\footnote{</xsl:text>
+        <xsl:apply-templates/>
+        <xsl:if test="normalize-space(.) != '' and not(ends-with(normalize-space(.), '.'))">
+            <xsl:text>.</xsl:text>
+        </xsl:if>
+        <xsl:text>}</xsl:text>
     </xsl:template>
     <xsl:template match="tei:unclear">
         <xsl:call-template name="add-space-before"/>
-        <xsl:text>\textit{</xsl:text><xsl:apply-templates/><xsl:text>}[?]</xsl:text>
+        <xsl:text>\textit{</xsl:text>
+        <xsl:apply-templates/>
+        <xsl:text>}[?]</xsl:text>
         <xsl:call-template name="add-space-after"/>
     </xsl:template>
     <xsl:template match="tei:choice">
         <xsl:call-template name="add-space-before"/>
-        <xsl:text>\textit{</xsl:text><xsl:apply-templates select="tei:expan"/><xsl:text>}</xsl:text>
+        <xsl:text>\textit{</xsl:text>
+        <xsl:apply-templates select="tei:expan"/>
+        <xsl:text>}</xsl:text>
         <xsl:call-template name="add-space-after"/>
     </xsl:template>
     <xsl:template match="tei:date">
@@ -243,7 +268,51 @@
         <xsl:variable name="idxlabel" select="$ent/*[contains(name(), 'Name')][1]"/>
         <xsl:value-of select="'\index['||$rstype||']{'||$idxlabel||'} '"/>
         <xsl:apply-templates/>
-        <xsl:text>\footnote{</xsl:text><xsl:value-of select="$idxlabel"/><xsl:text>}</xsl:text>
+        <xsl:variable name="footnotetext">
+            <xsl:choose>
+                <xsl:when test="$rstype = 'person'">
+                    <xsl:variable name="birth" select="$ent/tei:birth/tei:date"/>
+                    <xsl:variable name="death" select="$ent/tei:death/tei:date"/>
+                    <xsl:value-of select="$idxlabel"/>
+                    <xsl:if test="$birth or $death">
+                        <xsl:text> (</xsl:text>
+                        <xsl:choose>
+                            <xsl:when test="$birth">
+                                <xsl:value-of select="$birth"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text>?</xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:if test="$birth and $death">
+                            <xsl:text>–</xsl:text>
+                        </xsl:if>
+                        <xsl:choose>
+                            <xsl:when test="$death">
+                                <xsl:value-of select="$death"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text>?</xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:text>)</xsl:text>
+                    </xsl:if>
+                    <xsl:if test="$ent/tei:persName[@type='title']">
+                        <xsl:text>, </xsl:text>
+                        <xsl:for-each select="$ent/tei:persName[@type='title']">
+                            <xsl:if test="position() > 1">
+                                <xsl:text>, </xsl:text>
+                            </xsl:if>
+                            <xsl:value-of select="./tei:roleName"/>
+                        </xsl:for-each>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="$idxlabel"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        <xsl:text>\footnote{</xsl:text><xsl:value-of select="$footnotetext"/><xsl:if test="not(ends-with(normalize-space($footnotetext), '.'))"><xsl:text>.</xsl:text></xsl:if><xsl:text>}</xsl:text>
         <xsl:call-template name="add-space-after"/>
     </xsl:template>
     <!-- supplied and add require different space handling because they might occur mid-word -->
@@ -251,16 +320,20 @@
         <xsl:if test="preceding-sibling::text()[1][matches(., '\s$')]">
             <xsl:text>&#32;</xsl:text>
         </xsl:if>
-        <xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>
+        <xsl:text>[</xsl:text>
+        <xsl:apply-templates/>
+        <xsl:text>]</xsl:text>
         <xsl:if test="following-sibling::text()[1][matches(., '^\s')]">
             <xsl:text>&#32;</xsl:text>
         </xsl:if>
     </xsl:template>
     <xsl:template match="tei:add">
         <xsl:if test="preceding-sibling::text()[1][matches(., '\s$')]">
-        <xsl:text>&#32;</xsl:text>
+            <xsl:text>&#32;</xsl:text>
         </xsl:if>
-        <xsl:text>[</xsl:text><xsl:apply-templates/><xsl:text>]</xsl:text>
+        <xsl:text>[</xsl:text>
+        <xsl:apply-templates/>
+        <xsl:text>]</xsl:text>
         <xsl:if test="following-sibling::text()[1][matches(., '^\s')]">
             <xsl:text>&#32;</xsl:text>
         </xsl:if>
@@ -295,8 +368,7 @@
            ( self::text()[normalize-space(.) != ''] or
             self::tei:expan or
             self::tei:rs or
-            self::tei:unclear or
-            self::tei:seg[@type='blackening'] or
+            self::tei:unclear or self::tei:seg[@type='blackening'] or
             self::tei:del or
             self::tei:date ) and
             not(self::tei:lb)
@@ -323,5 +395,5 @@
         </xsl:if>
     </xsl:template>
 
-    
+
 </xsl:stylesheet>
