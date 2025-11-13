@@ -41,10 +41,11 @@
                                     <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-visible="false" tabulator-download="false">itemid</th>
                                     <th scope="col" tabulator-headerFilter="input" tabulator-minWidth="350">Name</th>
                                     <th scope="col" tabulator-headerFilter="input">Titel</th>
+                                    <th scope="col" tabulator-headerFilter="input" tabulator-visible="false">Funktionsbezeichnungen</th>
                                     <th scope="col" tabulator-headerFilter="input">Lebensdaten</th>
                                     <th scope="col" tabulator-headerFilter="input">Erwähnungen</th>
                                     <th scope="col" tabulator-headerFilter="input">Sender / Empfänger</th>
-                                    <th scope="col" tabulator-headerFilter="input">ID</th>
+                                    <th scope="col" tabulator-headerFilter="input" tabulator-visible="false">ID</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -60,7 +61,10 @@
                                             <xsl:value-of select=".//tei:persName[1]/text()"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="string-join(.//tei:roleName, ', ')"/>
+                                            <xsl:value-of select="string-join(.//tei:persName[@type='title']/tei:roleName, ', ')"/>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of select=".//tei:persName[@type='function']/tei:roleName/text()"/>
                                         </td>
                                         <td>
                                             <xsl:value-of select=".//tei:birth[1]/tei:date[1]/text()"/>
@@ -95,6 +99,7 @@
                 </main>
                 <xsl:call-template name="html_footer"/>
                 <xsl:call-template name="tabulator_js">
+                <xsl:with-param name="addHeaderMenu" select="'true'"/>
                     <xsl:with-param name="counterTranslationKey" select="'listperson_counter_label'"/>
                 </xsl:call-template>
             </body>

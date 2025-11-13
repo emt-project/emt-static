@@ -304,6 +304,11 @@
                             <xsl:value-of select="./tei:roleName"/>
                         </xsl:for-each>
                     </xsl:if>
+                    <xsl:if test="$ent/tei:persName[@type='function']">
+                        <xsl:text>, </xsl:text>
+                        <!-- for function there can only be one-->
+                        <xsl:value-of select="$ent/tei:persName[@type='function']/tei:roleName/text()"/>
+                    </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:value-of select="$idxlabel"/>

@@ -39,13 +39,23 @@
                                 </td>
                             </tr>
                         </xsl:if>
-                        <xsl:if test=".//tei:roleName">
+                        <xsl:if test=".//tei:persName[@type='title']">
                             <tr>
                                 <th>
                                     Titel
                                 </th>
                                 <td>
-                                    <xsl:value-of select="string-join(.//tei:roleName, ', ')"/>
+                                    <xsl:value-of select="string-join(.//tei:persName[@type='title']/tei:roleName, ', ')"/>
+                                </td>
+                            </tr>
+                        </xsl:if>
+                        <xsl:if test=".//tei:persName[@type='function']">
+                            <tr>
+                                <th>
+                                    Funktionsbezeichnungen
+                                </th>
+                                <td>
+                                    <xsl:value-of select=".//tei:persName[@type='function']/tei:roleName/text()"/>
                                 </td>
                             </tr>
                         </xsl:if>
