@@ -256,10 +256,6 @@ a:hover {
   color: var(--bs-link-hover-color);
 }
 
-.entity-table a {
-  word-break: break-all;
-}
-
 #languageSwitcher {
   max-width: 10%;
 }
@@ -414,7 +410,13 @@ a:hover {
   padding: 0.25rem 1rem;
   font-weight: bold;
 }
-
+/*Entity tables*/
+.entity-table {
+  min-width: 300px;
+}
+.entity-table a {
+  word-break: break-all;
+}
 /* Dropdown styling */
 .dropdown-menu {
   background-color: #f8f3ec;
