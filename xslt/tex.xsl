@@ -284,9 +284,7 @@
                                 <xsl:text>?</xsl:text>
                             </xsl:otherwise>
                         </xsl:choose>
-                        <xsl:if test="$birth and $death">
                             <xsl:text>–</xsl:text>
-                        </xsl:if>
                         <xsl:choose>
                             <xsl:when test="$death">
                                 <xsl:value-of select="$death"/>
