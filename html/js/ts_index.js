@@ -425,3 +425,19 @@ if (search.helper && search.helper.state.query) {
 
 
 search.start();
+
+// Make panel headers clickable by treating clicks on the header as clicks on the collapse button
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    const panelHeaders = document.querySelectorAll('.ais-Panel-header');
+    panelHeaders.forEach(header => {
+      header.style.cursor = 'pointer';
+      header.addEventListener('click', (event) => {
+        const collapseButton = header.querySelector('.ais-Panel-collapseButton');
+        if (collapseButton && !event.target.closest('.ais-Panel-collapseButton')) {
+          collapseButton.click();
+        }
+      });
+    });
+  }, 100);
+});
