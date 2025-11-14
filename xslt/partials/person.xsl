@@ -7,7 +7,7 @@
     <xsl:template match="tei:person" name="person_detail">
         <div class="row">
             <xsl:if test="./tei:figure">
-                <div class="col d-flex justify-content-center">
+                <div class="col-md-4 d-flex justify-content-center">
                     <figure class="figure">
                         <img src="{concat('bio-pics/', .//tei:graphic[1]/@url)}" class="figure-img img-fluid rounded"></img>
                         <figcaption class="figure-caption">
@@ -90,7 +90,9 @@
                                 </th>
                                 <td>
                                     <a href="{./tei:idno[@type='URL']}" target="_blank">
+                                    <span class="d-inline-block text-truncate" style="max-width: 30ch;">
                                         <xsl:value-of select="./tei:idno[@type='URL']/text()"/>
+                                    </span>
                                     </a>
                                 </td>
                             </tr>
