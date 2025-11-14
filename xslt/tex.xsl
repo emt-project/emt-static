@@ -107,6 +107,10 @@
         <xsl:text>\usepackage{soul}&#10;</xsl:text>
         <xsl:text>\usepackage{imakeidx}&#10;</xsl:text>
         <xsl:text>\usepackage[hidelinks]{hyperref}&#10;</xsl:text>
+        <xsl:text>\usepackage[hang, flushmargin]{footmisc}&#10;</xsl:text>
+        <xsl:text>\setlength{\footnotemargin}{1em}&#10;</xsl:text>
+        <xsl:text>% we don't want footnote breaks&#10;</xsl:text>
+        <xsl:text>\interfootnotelinepenalty=10000&#10;</xsl:text>
         <xsl:text>\makeatletter&#10;</xsl:text>
         <xsl:text>% we don't want a page break before the first subitem&#10;</xsl:text>
         <xsl:text>% https://tex.stackexchange.com/questions/130169/how-can-i-prevent-a-column-break-before-the-first-sub-entry-in-the-index&#10;</xsl:text>
