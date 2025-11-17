@@ -500,7 +500,8 @@ div#map {
 
 button.ais-ClearRefinements-button,
 button.ais-RangeInput-submit,
-.modal-footer .btn{
+.modal-footer .btn,
+.btn-group .btn{
   background-color: transparent;
   border: var(--bs-link-color) 1px solid;
   color: var(--bs-link-color);
@@ -509,7 +510,9 @@ button.ais-RangeInput-submit,
 button.ais-ClearRefinements-button:hover,
 button.ais-RangeInput-submit:hover,
 .ais-Pagination-item--selected .ais-Pagination-link:hover,
-.modal-footer .btn:hover{
+.modal-footer .btn:hover,
+.btn-group .btn:hover
+{
   background-color: var(--bs-link-color);
   color: #fff;
   border: var(--bs-link-color) 1px solid;
