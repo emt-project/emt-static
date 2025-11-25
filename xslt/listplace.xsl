@@ -90,7 +90,7 @@
                                 </xsl:for-each>
                             </tbody>
                         </table>
-<!--                        <xsl:call-template name="tabulator_dl_buttons">/>-->
+                       <xsl:call-template name="tabulator_dl_buttons"></xsl:call-template>
                     </div>
                 </main>
                 <xsl:call-template name="html_footer"/>
@@ -101,7 +101,6 @@
                 <script>
                     build_map_and_table(map_cfg, table_cfg, wms_cfg=null, tms_cfg=tms_cfg);
                 </script>
-                <!--<xsl:call-template name="tabulator_js"/>-->
             </body>
         </html>
         <xsl:for-each select=".//tei:place[@xml:id]">
@@ -124,17 +123,12 @@
                                 </h1>
                                 
                                 <xsl:if test="./tei:location/tei:geo">
-                                    <div class="row">
-                                        <div class="col-md-4"><div id="map_detail"/></div>
-                                        <div class="col-md-8">
-                                            <xsl:call-template name="place_detail"/>
-                                        </div>
-                                    </div>
-                                
+                                    <xsl:call-template name="place_detail"/>
                                 </xsl:if>
                             </div>
                         </main>
                         <xsl:call-template name="html_footer"/>
+                        <xsl:call-template name="tabulator_js"/>
                         <xsl:if test="./tei:location/tei:geo">
                             <link rel="stylesheet" href="vendor/leaflet/leaflet.css"/>
                             <script src="vendor/leaflet/leaflet.js"></script>

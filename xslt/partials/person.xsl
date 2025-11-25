@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:tei="http://www.tei-c.org/ns/1.0"
-    version="2.0" exclude-result-prefixes="xsl tei xs">
-    
+    xmlns:tei="http://www.tei-c.org/ns/1.0" version="2.0" exclude-result-prefixes="xsl tei xs">
+    <xsl:import href="./mentions.xsl"/>
     <xsl:template match="tei:person" name="person_detail">
         <div class="row">
             <xsl:if test="./tei:figure">
@@ -90,9 +89,9 @@
                                 </th>
                                 <td>
                                     <a href="{./tei:idno[@type='URL']}" target="_blank">
-                                    <span class="d-inline-block text-truncate" style="max-width: 30ch;">
-                                        <xsl:value-of select="./tei:idno[@type='URL']/text()"/>
-                                    </span>
+                                        <span class="d-inline-block text-truncate" style="max-width: 30ch;">
+                                            <xsl:value-of select="./tei:idno[@type='URL']/text()"/>
+                                        </span>
                                     </a>
                                 </td>
                             </tr>
@@ -109,29 +108,13 @@
                                 </td>
                             </tr>
                         </xsl:if>
-                        
-                        <xsl:if test=".//tei:note[@type='mentions']">
-                            <tr>
-                                <th>
-                                    Erwähnt in
-                                </th>
-                                <td>
-                                    <ul>
-                                        <xsl:for-each select=".//tei:note[@type='mentions']">
-                                            <li>
-                                                <a href="{replace(./@target, '.xml', '.html')}">
-                                                    <xsl:value-of select="./text()"/>
-                                                </a>
-                                            </li>
-                                        </xsl:for-each>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </xsl:if>
+
                     </tbody>
                 </table>
-            </div>
-        </div>
-        
+                </div>
+                </div>
+                <xsl:if test=".//tei:note[@type='mentions']">
+                <xsl:call-template name="mentions-table"/>
+                </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

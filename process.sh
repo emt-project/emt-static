@@ -3,7 +3,7 @@ python make_cidoc.py
 python make_qlever_text.py
 add-attributes -g "./data/editions/*.xml" -b "https://id.acdh.oeaw.ac.at.at/emt"
 add-attributes -g "./data/meta/*.xml" -b "https://id.acdh.oeaw.ac.at.at/emt"
-denormalize-indices -f "./data/editions/*.xml" -i "./data/indices/*.xml" -m ".//*[@ref]/@ref | .//*/@source" -x ".//tei:titleStmt/tei:title[@type='main']/text()"
+denormalize-indices -f "./data/editions/*.xml" -i "./data/indices/*.xml" -m ".//*[@ref]/@ref | .//*/@source" -x ".//tei:titleStmt/tei:title[@type='main']/text()" -d ".//tei:correspDesc/tei:correspAction[@type='sent']/tei:date/@when-iso | .//tei:correspDesc/tei:correspAction[@type='sent']/tei:date/@notBefore"
 python rm_listevent.py
 python add_correspContext.py
 python add_revisiondesc_status.py

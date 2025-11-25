@@ -61,8 +61,6 @@
                 });
                 document.getElementById("table-counter").innerHTML = counterText;
             });
-
-
         </script>
     </xsl:template>
 </xsl:stylesheet>

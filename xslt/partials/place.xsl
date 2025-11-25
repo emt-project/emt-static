@@ -2,8 +2,11 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
     version="2.0" exclude-result-prefixes="xsl tei xs">
-
+    <xsl:import href="./mentions.xsl"/>
     <xsl:template match="tei:place" name="place_detail">
+    <div class="row">
+        <div class="col-md-4"><div id="map_detail"/></div>
+        <div class="col-md-8">
         <table class="table entity-table">
             <tbody>
                 <tr>
@@ -100,7 +103,7 @@
                 <xsl:if test=".//tei:location">
                 <tr>
                     <th>
-                        Latitude
+                        Breitengrad
                     </th>
                     <td>
                         <xsl:value-of select="tokenize(./tei:location/tei:geo, '\s')[1]"/>
@@ -110,32 +113,19 @@
                 <xsl:if test=".//tei:location">
                 <tr>
                     <th>
-                        Longitude
+                        Längengrad
                     </th>
                     <td>
                         <xsl:value-of select="tokenize(./tei:location/tei:geo, '\s')[2]"/>
                     </td>
                 </tr>
                 </xsl:if>
-                <xsl:if test="./tei:noteGrp/tei:note[@type='mentions']">
-                <tr>
-                    <th>
-                        Erwähnt in
-                    </th>
-                    <td>
-                        <ul>
-                            <xsl:for-each select=".//tei:note[@type='mentions']">
-                                <li>
-                                    <a href="{replace(./@target, '.xml', '.html')}">
-                                        <xsl:value-of select="./text()"/>
-                                    </a>
-                                </li>
-                            </xsl:for-each>
-                        </ul>
-                    </td>
-                </tr>
-                </xsl:if>
             </tbody>
         </table>
+        </div>
+    </div>
+        <xsl:if test="./tei:noteGrp/tei:note[@type='mentions']">
+                <xsl:call-template name="mentions-table"/>
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>
