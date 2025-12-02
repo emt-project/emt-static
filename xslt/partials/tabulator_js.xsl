@@ -61,6 +61,19 @@
                 });
                 document.getElementById("table-counter").innerHTML = counterText;
             });
+            table.on("tableBuilt", function(){
+                const columns = table.getColumns();
+                const hasMentionsColumn = columns.some(col => {
+                    const field = col.getField();
+                    return field &amp;&amp; field.toLowerCase().includes("erwähnung");
+                });
+                
+                if (hasMentionsColumn) {
+                    table.setSort("erwähnungen", "desc");
+                } else {
+                    table.setSort("datum", "asc");
+                }
+            });
         </script>
     </xsl:template>
 </xsl:stylesheet>
