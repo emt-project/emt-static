@@ -374,6 +374,13 @@ a:hover {
   color: var(--emt-editorial-blue2);
 }
 
+.codename {
+  font-style: italic;
+  color: var(--emt-editorial-blue2);
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
 .expan {
   color: var(--emt-editorial-blue);
   text-decoration: underline dotted;

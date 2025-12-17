@@ -164,6 +164,11 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
+    <xsl:template match="tei:addName[@type='Codename']">
+        <span class="codename" tabindex="0" data-bs-toggle="popover" data-bs-content="Codename für Johann Wilhelm">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
     <xsl:template match="tei:seg[@type='blackening']">
         <span class="seg-blackening">
             <xsl:apply-templates/>
