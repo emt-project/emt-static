@@ -83,7 +83,7 @@
             </button>
         </div>
         <!-- Fixed version of the info modal trigger that shows when scrolling -->
-        <div class="position-fixed bottom-0 end-0 p-2 d-none" id="sticky-info" style="z-index: 1030;">
+        <div class="position-fixed p-2 d-none" id="sticky-info" style="z-index: 1030;">
             <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn rounded-circle shadow">
                 <i class="bi bi-question-lg"></i>
             </button>

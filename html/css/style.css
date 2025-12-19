@@ -459,6 +459,23 @@ div#map {
   padding-left: 1rem;
 }
 
+#sticky-info {
+  bottom: 10%;
+}
+/* Small and medium screens - stick to right side of viewport */
+@media (max-width: 1599px) {
+  #sticky-info {
+    right: 0;
+  }
+}
+
+/* Large screens - position relative to content */
+@media (min-width: 1600px) {
+  #sticky-info {
+    right: calc((100vw - 1600px) / 2);
+  }
+}
+
 #sticky-info .btn {
   background-color: var(--bs-link-color);
   color: white;
