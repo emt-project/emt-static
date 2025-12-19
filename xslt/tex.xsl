@@ -249,7 +249,10 @@
         <xsl:call-template name="add-space-before"/>
         <xsl:text>\textit{</xsl:text>
         <xsl:apply-templates/>
-        <xsl:text>}[?]</xsl:text>
+        <xsl:text>}</xsl:text>
+        <xsl:if test="not(@reason='chiffriert')">
+            <xsl:text>[?]</xsl:text>
+        </xsl:if>
         <xsl:call-template name="add-space-after"/>
     </xsl:template>
     <xsl:template match="tei:choice">
