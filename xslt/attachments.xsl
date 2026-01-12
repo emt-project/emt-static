@@ -88,7 +88,19 @@
                                             </xsl:choose>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="tei:ab/tei:date/@when-iso"/>
+                                            <xsl:choose>
+                                                <xsl:when test="tei:ab/tei:date/@when-iso">
+                                                    <xsl:value-of select="tei:ab/tei:date/@when-iso"/>
+                                                </xsl:when>
+                                                <xsl:when test="tei:ab/tei:date[@notBefore and @notAfter]">
+                                                    <xsl:value-of select="tei:ab/tei:date/@notBefore"/>
+                                                    <xsl:text>/</xsl:text>
+                                                    <xsl:value-of select="tei:ab/tei:date/@notAfter"/>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:text>o.D.</xsl:text>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
                                         </td>
                                         <td>
                                             <xsl:value-of select="tei:ab/tei:placeName//text()"/>

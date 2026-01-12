@@ -64,7 +64,19 @@
                                             <xsl:value-of select=".//tei:correspAction[@type='received']/tei:persName/text()"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="data(.//tei:correspAction[@type='sent']//tei:date/@when-iso)[1]"/>
+                                            <xsl:choose>
+                                                <xsl:when test=".//tei:correspAction[@type='sent']//tei:date/@when-iso">
+                                                    <xsl:value-of select="data(.//tei:correspAction[@type='sent']//tei:date/@when-iso)[1]"/>
+                                                </xsl:when>
+                                                <xsl:when test=".//tei:correspAction[@type='sent']//tei:date[@notBefore and @notAfter]">
+                                                    <xsl:value-of select=".//tei:correspAction[@type='sent']//tei:date/@notBefore"/>
+                                                    <xsl:text>/</xsl:text>
+                                                    <xsl:value-of select =".//tei:correspAction[@type='sent']//tei:date/@notAfter"/>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:text>o.D.</xsl:text>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
                                         </td>
                                         <td>
                                             <xsl:value-of select="data(.//tei:revisionDesc/@n)"/>
