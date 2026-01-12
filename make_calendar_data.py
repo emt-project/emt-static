@@ -15,6 +15,7 @@ out_file = os.path.join(data_dir, "calendarData.json")
 broken = []
 events = []
 sender = set()
+main_sender_ids = ["emt_person_id__9", "emt_person_id__10", "emt_person_id__18", "emt_person_id__50"]
 for x in file_list:
     f_id = os.path.split(x)[1].replace(".xml", ".html")
     item = {"link": f_id}
@@ -49,7 +50,10 @@ for x in file_list:
         except IndexError:
             print(f"### BROKEN: {x}, no .//tei:correspAction[@type='sent']/tei:persName/@ref provided")
             continue
-        item["kind"] = f"{sender_id[1:]}.html"
+        if sender_id[1:] not in main_sender_ids:
+            item["kind"] = "weitere_briefe"
+        else:
+            item["kind"] = f"{sender_id[1:]}.html"
         item["sender"] = {"label": sender_name, "link": f"{sender_id[1:]}.html"}
         events.append(item)
     else:

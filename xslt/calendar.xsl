@@ -63,15 +63,15 @@
                                         <span class="dot menioned_letter_pw"></span>
                                         <span class="legend-item">Philipp Wilhelm von Pfalz-Neuburg (erwähnter Brief)</span>
                                     </li>
-
+                                    <li>
+                                        <span class="dot weitere_briefe"></span>
+                                        <span class="legend-item">Briefe weiterer AbsenderInnen</span>
+                                    </li>
                                     <li>
                                         <span class="dot mehrere_briefe"></span>
                                         <span class="legend-item">Mehrere Briefe unterschiedlicher AbsenderInnen</span>
                                     </li>
-                                    <li>
-                                        <span class="dot emt_person_id__14"></span>
-                                        <span class="legend-item">Franziska Sibylla von Baden-Baden, geb. Sachsen-Lauenburg</span>
-                                    </li>
+
                                 </ul>
                             </acdh-ch-calendar-legend>
                         </div>
