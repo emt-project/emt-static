@@ -105,17 +105,20 @@ for i, ndf in df.groupby("corresp_id"):
         )
         ref.text = f'Korrespondenz mit {x["corresp_names"]}'
         if x["prev"] is not None:
-            prevCorr = ET.SubElement(
-                correspContext,
-                "ref",
-                subtype="previous_letter",
-                type="withinCorrespondence",
-                source=x["corresp_id"],
-                target=x["prev"].split("/")[-1],
-            )
-            prevCorr.text = (
-                "" if x["prev_title"] is None else x["prev_title"]
-            )
+            try:
+                prevCorr = ET.SubElement(
+                    correspContext,
+                    "ref",
+                    subtype="previous_letter",
+                    type="withinCorrespondence",
+                    source=x["corresp_id"],
+                    target=x["prev"].split("/")[-1],
+                )
+                prevCorr.text = (
+                    "" if x["prev_title"] is None else x["prev_title"]
+                )
+            except Exception as e:
+                print(f"### ERROR with prev for{x['prev']}: {e}")
         if x["next"] is not None:
             nextCorr = ET.SubElement(
                 correspContext,
