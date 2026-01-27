@@ -104,9 +104,8 @@ for i, ndf in df.groupby("corresp_id"):
             target=x["corresp_id"],
         )
         ref.text = f'Korrespondenz mit {x["corresp_names"]}'
-        if x["prev"] is not None:
-            try:
-                prevCorr = ET.SubElement(
+        if pd.notna(x["prev"]):
+            prevCorr = ET.SubElement(
                     correspContext,
                     "ref",
                     subtype="previous_letter",
@@ -114,12 +113,10 @@ for i, ndf in df.groupby("corresp_id"):
                     source=x["corresp_id"],
                     target=x["prev"].split("/")[-1],
                 )
-                prevCorr.text = (
-                    "" if x["prev_title"] is None else x["prev_title"]
+            prevCorr.text = (
+                    "" if pd.isna(x["prev_title"]) else x["prev_title"]
                 )
-            except Exception as e:
-                print(f"### ERROR with prev for{x['prev']}: {e}")
-        if x["next"] is not None:
+        if pd.notna(x["next"]):
             nextCorr = ET.SubElement(
                 correspContext,
                 "ref",
@@ -129,9 +126,9 @@ for i, ndf in df.groupby("corresp_id"):
                 target=x["next"].split("/")[-1],
             )
             nextCorr.text = (
-                "" if x["next_title"] is None else x["next_title"]
+                "" if pd.isna(x["next_title"]) else x["next_title"]
             )
-        if x["gen_prev"] is not None:
+        if pd.notna(x["gen_prev"]):
             genPrevCorr = ET.SubElement(
                 correspContext,
                 "ref",
@@ -141,10 +138,10 @@ for i, ndf in df.groupby("corresp_id"):
             )
             genPrevCorr.text = (
                 ""
-                if x["gen_prev_title"] is None
+                if pd.isna(x["gen_prev_title"])
                 else x["gen_prev_title"]
             )
-        if x["gen_next"] is not None:
+        if pd.notna(x["gen_next"]):
             genNextCorr = ET.SubElement(
                 correspContext,
                 "ref",
@@ -154,7 +151,7 @@ for i, ndf in df.groupby("corresp_id"):
             )
             genNextCorr.text = (
                 ""
-                if x["gen_next_title"] is None
+                if pd.isna(x["gen_next_title"])
                 else x["gen_next_title"]
             )
 
