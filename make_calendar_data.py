@@ -9,13 +9,32 @@ from acdh_cidoc_pyutils import extract_begin_end
 
 print("creating calendar data")
 file_list = sorted(glob.glob("./data/editions/*.xml"))
+mentions_data = requests.get(
+    "https://raw.githubusercontent.com/emt-project/emt-entities/refs/heads/main/json_dumps/mentions.json"
+).json()
 data_dir = os.path.join("html", "js-data")
 os.makedirs(data_dir, exist_ok=True)
 out_file = os.path.join(data_dir, "calendarData.json")
 broken = []
 events = []
+owned_mentions = []
 sender = set()
-main_sender_ids = ["emt_person_id__9", "emt_person_id__10", "emt_person_id__18", "emt_person_id__50"]
+main_sender_ids = [
+    "emt_person_id__9",
+    "emt_person_id__10",
+    "emt_person_id__18",
+    "emt_person_id__50",
+]
+mentions_sender_info = {
+    "50": {
+        "label": "erwähnter Brief von Philipp Wilhelm von Pfalz-Neuburg",
+        "kind": "mentioned_letter_pw",
+    },
+    "18": {
+        "label": "erwähnter Brief von Johann Wilhelm von Pfalz-Neuburg",
+        "kind": "mentioned_letter_jw",
+    },
+}
 for x in file_list:
     f_id = os.path.split(x)[1].replace(".xml", ".html")
     item = {"link": f_id}
@@ -48,7 +67,9 @@ for x in file_list:
                 ".//tei:correspAction[@type='sent']/tei:persName/@ref"
             )[0]
         except IndexError:
-            print(f"### BROKEN: {x}, no .//tei:correspAction[@type='sent']/tei:persName/@ref provided")
+            print(
+                f"### BROKEN: {x}, no .//tei:correspAction[@type='sent']/tei:persName/@ref provided"
+            )
             continue
         if sender_id[1:] not in main_sender_ids:
             item["kind"] = "weitere_briefe"
@@ -58,26 +79,45 @@ for x in file_list:
         events.append(item)
     else:
         pass
-    for y in doc.any_xpath("//tei:body//tei:date[@type='letter']"):
-        extra_item = {
-            "link": False,
-            "label": "erwähnter Brief von Philipp Wilhelm von Pfalz-Neuburg"
-        }
-        ex_date = extract_begin_end(y)
-        extra_item["date"] = ex_date[0]
-        extra_item["kind"] = "menioned_letter_pw"
-        extra_item["from"] = ex_date[0]
-        extra_item["to"] = ex_date[1]
-        extra_item["ref_by"] = {"label": title, "link": f_id}
-        extra_item["sender"] = {
-            "label": "erwähnter Brief von Philipp Wilhelm von Pfalz-Neuburg",
-            "link": "pw_brief_erschlossen.html"
-        }
-        events.append(extra_item)
+    # prefix for mentions in the Baserow table
+    br_prefix = "#emt_mention_id__"
+    for y in doc.any_xpath("//tei:body//tei:ref[not(ancestor::tei:note)]"):
+        targets = y.get("target").split()
+        for target in targets:
+            if target.startswith(br_prefix):
+                mention_id = target.removeprefix(br_prefix)
+                if mention_id in mentions_data:
+                    sender_id = str(mentions_data[mention_id]["sender"][0]["id"])
+                    extra_item = {
+                        "link": False,
+                        "label": mentions_sender_info.get(sender_id, {}).get(
+                            "label", "erwähnter Brief"
+                        ),
+                        "kind": mentions_sender_info.get(sender_id, {}).get(
+                            "kind", "mentioned_letter_other"
+                        ),
+                        "ref_by": {"label": title, "link": f_id},
+                    }
+                mention_info = mentions_data[mention_id]
+                if mention_info["when"] is not None:
+                    extra_item["date"] = mention_info["when"]
+                else:
+                    extra_item["from"] = mention_info["not_before"]
+                    extra_item["to"] = mention_info["not_after"]
+                events.append(extra_item)
+            else:
+                owned_mentions.append(
+                    {
+                        "link": target[1:].replace(".xml", ".html"),
+                        "ref_by": {"label": title, "link": f_id},
+                    }
+                )
+
 
 mentioned_letters = requests.get(
     "https://raw.githubusercontent.com/emt-project/emt-entities/refs/heads/main/json_dumps/mentioned_letters.json"
 ).json()  # noqa:
+
 for key, value in mentioned_letters.items():
     try:
         sender = value["sender"][0]["value"].split(", ")[0]
@@ -94,6 +134,11 @@ for key, value in mentioned_letters.items():
     }
     events.append(event)
 
+# add owned mentions within events
+for mention in owned_mentions:
+    for event in events:
+        if event.get("link") == mention["link"]:
+            event["ref_by"] = mention["ref_by"]
 
 with open(out_file, "w", encoding="utf-8") as f:
     json.dump(events, f, ensure_ascii=False, indent=2)

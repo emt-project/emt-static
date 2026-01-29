@@ -42,6 +42,9 @@ function onEventClick(event) {
             li.innerHTML = `
                 <a href="${item.link}">${item.label}</a>
             `
+            if (item.ref_by){
+                li.innerHTML += ` (Erwähnt in: <a href="${item.ref_by.link}">${item.ref_by.label}</a>)`
+            }
         } else if (item.ref_by){
             li.innerHTML = `${item.label} (Erwähnt in: <a href="${item.ref_by.link}">${item.ref_by.label}</a>)`
         }

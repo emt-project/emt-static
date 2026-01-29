@@ -1,11 +1,12 @@
 :root {
     --emt_person_id__9: #8b0000;
     --emt_person_id__10: #7d314c;
-    --weitere_briefe: #006080;
+    --weitere_briefe: #7a6855;
     --emt_person_id__18:  #1f3a93;
     --emt_person_id__50:  #008000;
     --Brief_erschlossen: #ae4d4d;
-    --menioned_letter_pw:  #4F824F;
+    --mentioned_letter_pw:  #4F824F;
+    --mentioned_letter_jw: #3b5998;
     --mehrere_briefe: #545454;
 }
 
@@ -90,8 +91,12 @@ acdh-ch-calendar-year td>button[data-event-kinds="Brief_erschlossen"] {
     --calendar-cell-color: var(--Brief_erschlossen)
 }
 
-acdh-ch-calendar-year td>button[data-event-kinds="menioned_letter_pw"] {
-    --calendar-cell-color: var(--menioned_letter_pw)
+acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_jw"] {
+    --calendar-cell-color: var(--mentioned_letter_jw)
+}
+
+acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_pw"] {
+    --calendar-cell-color: var(--mentioned_letter_pw)
 }
 
 acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
@@ -127,10 +132,14 @@ acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
     background-color: var(--mehrere_briefe)
 }
 
-.menioned_letter_pw {
-    background-color: var(--menioned_letter_pw)
+
+.mentioned_letter_pw {
+    background-color: var(--mentioned_letter_pw)
 }
 
+.mentioned_letter_jw {
+    background-color: var(--mentioned_letter_jw)
+}
 /* the legend */
 .calendar-menu {
     display: flex;
