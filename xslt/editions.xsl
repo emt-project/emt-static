@@ -426,4 +426,6 @@
         </xsl:if>
 
     </xsl:template>
+    <xsl:template match="tei:listBibl[@type='mentionedLetters']/tei:bibl">
+    </xsl:template>
 </xsl:stylesheet>
