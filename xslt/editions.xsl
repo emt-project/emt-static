@@ -327,9 +327,39 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <a href="{replace($href_value, '#', '')}">
-            <xsl:value-of select="."/>
-        </a>
+        <xsl:choose>
+            <xsl:when test="starts-with(@target, '#emt_mention_id')">
+
+                <span tabindex="0" class="mention" data-bs-toggle="popover" data-bs-html="true">
+                    <xsl:variable name="mention-id" select="substring-after(@target, '#')"/>
+                    <xsl:variable name="bibl-entry" select="//tei:bibl[@xml:id=$mention-id]"/>
+                    <xsl:attribute name="data-bs-content">
+                        <xsl:text>Brief datiert </xsl:text>
+                        <xsl:choose>
+                            <xsl:when test="$bibl-entry/tei:date/@when-iso">
+                                <xsl:value-of select="$bibl-entry/tei:date/@when-iso"/>
+                            </xsl:when>
+                            <xsl:when test="$bibl-entry/tei:date/@notBefore and $bibl-entry/tei:date/@notAfter">
+                                <xsl:value-of select="concat('zwischen ', $bibl-entry/tei:date/@notBefore, ' und ', $bibl-entry/tei:date/@notAfter)"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:text>o.D.</xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:text>&lt;br&gt; Absender: </xsl:text>
+                        <xsl:value-of select="$bibl-entry/tei:persName[@role='sender']/text()"/>
+                        <xsl:text>&lt;br&gt; Empfänger: </xsl:text>
+                        <xsl:value-of select="$bibl-entry/tei:persName[@role='recipient']/text()"/>                        
+                    </xsl:attribute>
+                    <xsl:apply-templates/>
+                </span>
+            </xsl:when>
+            <xsl:otherwise>
+                <a href="{replace($href_value, '#', '')}">
+                    <xsl:value-of select="."/>
+                </a>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="tei:lb">

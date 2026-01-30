@@ -391,7 +391,8 @@ a:hover {
   color: var(--emt-editorial-blue)
 }
 
-.date {
+.date,
+.mention {
   color: #b13509;
   cursor: help;
 }
