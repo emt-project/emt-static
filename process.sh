@@ -7,6 +7,7 @@ denormalize-indices -f "./data/editions/*.xml" -i "./data/indices/*.xml" -m ".//
 python rm_listevent.py
 python add_correspContext.py
 python add_revisiondesc_status.py
+python add_mentions_data.py
 python make_calendar_data.py
 python make_cmif.py
 python make_translations.py
