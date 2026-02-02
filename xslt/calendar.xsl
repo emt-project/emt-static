@@ -56,10 +56,6 @@
                                         <span class="legend-item">Johann Wilhelm von Pfalz-Neuburg (erwähnter Brief)</span>
                                     </li>
                                     <li>
-                                        <span class="dot emt_person_id__10"></span>
-                                        <span class="legend-item">Elisabeth Amalie von Pfalz-Neuburg</span>
-                                    </li>
-                                    <li>
                                         <span class="dot emt_person_id__50"></span>
                                         <span class="legend-item">Philipp Wilhelm von Pfalz-Neuburg</span>
                                     </li>
@@ -68,8 +64,8 @@
                                         <span class="legend-item">Philipp Wilhelm von Pfalz-Neuburg (erwähnter Brief)</span>
                                     </li>
                                     <li>
-                                        <span class="dot weitere_briefe"></span>
-                                        <span class="legend-item">Briefe weiterer AbsenderInnen</span>
+                                        <span class="dot drittbriefe"></span>
+                                        <span class="legend-item">Drittbriefe</span>
                                     </li>
                                     <li>
                                         <span class="dot mehrere_briefe"></span>

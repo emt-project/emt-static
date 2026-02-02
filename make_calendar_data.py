@@ -21,7 +21,6 @@ owned_mentions = []
 sender = set()
 main_sender_ids = [
     "emt_person_id__9",
-    "emt_person_id__10",
     "emt_person_id__18",
     "emt_person_id__50",
 ]
@@ -71,8 +70,23 @@ for x in file_list:
                 f"### BROKEN: {x}, no .//tei:correspAction[@type='sent']/tei:persName/@ref provided"
             )
             continue
-        if sender_id[1:] not in main_sender_ids:
-            item["kind"] = "weitere_briefe"
+        # Determine the relevant ID for categorization
+        # If sender is EMT (id 9), use recipient; otherwise use sender
+        if sender_id == "#emt_person_id__9":
+            try:
+                relevant_id = doc.any_xpath(
+                    ".//tei:correspAction[@type='received']/tei:persName/@ref"
+                )[0][1:]
+            except IndexError:
+                print(
+                    f"### BROKEN: {x}, no .//tei:correspAction[@type='received']/tei:persName/@ref provided"
+                )
+                continue
+        else:
+            relevant_id = sender_id[1:]
+        # letters not sent by EMT, JW or PW or by EMT to someone other than JW or PW are categorized as "drittbriefe"      
+        if relevant_id not in main_sender_ids:
+            item["kind"] = "drittbriefe"
         else:
             item["kind"] = f"{sender_id[1:]}.html"
         item["sender"] = {"label": sender_name, "link": f"{sender_id[1:]}.html"}

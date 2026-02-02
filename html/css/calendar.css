@@ -1,7 +1,6 @@
 :root {
     --emt_person_id__9: #8b0000;
-    --emt_person_id__10: #7d314c;
-    --weitere_briefe: #7a6855;
+    --drittbriefe: #7a6855;
     --emt_person_id__18:  #1f3a93;
     --emt_person_id__50:  #008000;
     --Brief_erschlossen: #ae4d4d;
@@ -71,12 +70,8 @@ acdh-ch-calendar-year td>button[data-event-kinds="emt_person_id__9.html"] {
     --calendar-cell-color: var(--emt_person_id__9)
 }
 
-acdh-ch-calendar-year td>button[data-event-kinds="emt_person_id__10.html"] {
-    --calendar-cell-color: var(--emt_person_id__10);
-}
-
-acdh-ch-calendar-year td>button[data-event-kinds="weitere_briefe"] {
-    --calendar-cell-color: var(--weitere_briefe);
+acdh-ch-calendar-year td>button[data-event-kinds="drittbriefe"] {
+    --calendar-cell-color: var(--drittbriefe);
 }
 
 acdh-ch-calendar-year td>button[data-event-kinds="emt_person_id__18.html"] {
@@ -108,12 +103,8 @@ acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
     background-color: var(--emt_person_id__9)
 }
 
-.emt_person_id__10 {
-    background-color: var(--emt_person_id__10)
-}
-
-.weitere_briefe {
-    background-color: var(--weitere_briefe)
+.drittbriefe {
+    background-color: var(--drittbriefe)
 }
 
 .emt_person_id__18 {
