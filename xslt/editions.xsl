@@ -349,7 +349,7 @@
                         <xsl:text>&lt;br&gt; Absender: </xsl:text>
                         <xsl:value-of select="$bibl-entry/tei:persName[@role='sender']/text()"/>
                         <xsl:text>&lt;br&gt; Empfänger: </xsl:text>
-                        <xsl:value-of select="$bibl-entry/tei:persName[@role='recipient']/text()"/>                        
+                        <xsl:value-of select="$bibl-entry/tei:persName[@role='recipient']/text()"/>
                     </xsl:attribute>
                     <xsl:apply-templates/>
                 </span>
@@ -359,6 +359,11 @@
                     <xsl:value-of select="."/>
                 </a>
             </xsl:otherwise>
+        </xsl:choose>
+        <xsl:choose>
+            <xsl:when test="./following-sibling::text()[1][not(starts-with(., ','))]">
+                <xsl:text>&#32;</xsl:text>
+            </xsl:when>
         </xsl:choose>
     </xsl:template>
 
