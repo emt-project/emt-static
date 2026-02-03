@@ -12,7 +12,7 @@ mentions_data = requests.get(
 
 for x in files:
     doc = TeiReader(x)
-    if doc.any_xpath("//tei:body//tei:ref[not(ancestor::tei:note)]"):
+    if doc.any_xpath("//tei:ref[not(ancestor::tei:note) and not(ancestor::tei:correspContext)]"):
         #add a listBibl to the back
         list_bibl = doc.any_xpath("//tei:back/tei:listBibl")
         if len(list_bibl) == 0:
@@ -22,7 +22,7 @@ for x in files:
         else:
             list_bibl = list_bibl[0]
             print(f"listBibl already exists in {x}")
-        for y in doc.any_xpath("//tei:body//tei:ref[not(ancestor::tei:note)]"):
+        for y in doc.any_xpath("//tei:ref[not(ancestor::tei:note) and not(ancestor::tei:correspContext)]"):
             unique_letters = set()
             targets = y.get("target").split()
             # prefix for mentions in the Baserow table

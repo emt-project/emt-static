@@ -99,7 +99,7 @@ for x in file_list:
         pass
     # prefix for mentions in the Baserow table
     br_prefix = "#emt_letter_id__"
-    for y in doc.any_xpath("//tei:body//tei:ref[not(ancestor::tei:note)]"):
+    for y in doc.any_xpath("//tei:ref[not(ancestor::tei:note) and not(ancestor::tei:correspContext)]"):
         targets = y.get("target").split()
         for target in targets:
             if target.startswith(br_prefix):
