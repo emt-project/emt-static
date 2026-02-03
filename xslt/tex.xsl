@@ -291,7 +291,7 @@
                                 <xsl:text>?</xsl:text>
                             </xsl:otherwise>
                         </xsl:choose>
-                            <xsl:text>–</xsl:text>
+                        <xsl:text>–</xsl:text>
                         <xsl:choose>
                             <xsl:when test="$death">
                                 <xsl:value-of select="$death"/>
@@ -322,7 +322,12 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <xsl:text>\footnote{</xsl:text><xsl:value-of select="$footnotetext"/><xsl:if test="not(ends-with(normalize-space($footnotetext), '.'))"><xsl:text>.</xsl:text></xsl:if><xsl:text>}</xsl:text>
+        <xsl:text>\footnote{</xsl:text>
+        <xsl:value-of select="$footnotetext"/>
+        <xsl:if test="not(ends-with(normalize-space($footnotetext), '.'))">
+            <xsl:text>.</xsl:text>
+        </xsl:if>
+        <xsl:text>}</xsl:text>
         <xsl:call-template name="add-space-after"/>
     </xsl:template>
     <!-- supplied and add require different space handling because they might occur mid-word -->
@@ -348,6 +353,33 @@
             <xsl:text>&#32;</xsl:text>
         </xsl:if>
     </xsl:template>
+    <xsl:template match="tei:ref[not(ancestor::tei:note) and not(ancestor::tei:correspContext)]">
+    <xsl:variable name="mention-id" select="substring-after(@target, '#')"/>
+    <xsl:variable name="bibl-entry" select="//tei:bibl[@xml:id=$mention-id]"/>
+    <xsl:apply-templates/>
+    <xsl:if test="$bibl-entry">
+        <xsl:text>\footnote{</xsl:text>
+        <xsl:text>Brief datiert </xsl:text>
+        <xsl:choose>
+            <xsl:when test="$bibl-entry/tei:date/@when-iso">
+                <xsl:value-of select="$bibl-entry/tei:date/@when-iso"/>
+            </xsl:when>
+            <xsl:when test="$bibl-entry/tei:date/@notBefore and $bibl-entry/tei:date/@notAfter">
+                <xsl:value-of select="concat('zwischen ', $bibl-entry/tei:date/@notBefore, ' und ', $bibl-entry/tei:date/@notAfter)"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:text>o.D.</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
+        <xsl:text>; Absender: </xsl:text>
+        <xsl:value-of select="$bibl-entry/tei:persName[@role='sender']/text()"/>
+        <xsl:text>; Empfänger: </xsl:text>
+        <xsl:value-of select="$bibl-entry/tei:persName[@role='recipient']/text()"/>
+        <xsl:text>.</xsl:text>
+        <xsl:text>}</xsl:text>
+    </xsl:if>
+    </xsl:template>
+
     <xsl:template match="text()">
         <xsl:variable name="text" select="normalize-space(.)"/>
         <xsl:if test="$text != ''">
@@ -404,6 +436,4 @@
             <xsl:text>&#32;</xsl:text>
         </xsl:if>
     </xsl:template>
-
-
 </xsl:stylesheet>
