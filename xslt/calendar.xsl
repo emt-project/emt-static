@@ -44,7 +44,7 @@
                                         <span class="legend-item">Eleonora Magdalena von Pfalz-Neuburg</span>
                                     </li>
                                     <li>
-                                        <span class="dot Brief_erschlossen"></span>
+                                        <span class="dot mentioned_letter_emt"></span>
                                         <span class="legend-item">Eleonora Magdalena von Pfalz-Neuburg (erwähnter Brief)</span>
                                     </li>
                                     <li>

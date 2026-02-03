@@ -328,7 +328,7 @@
             </xsl:choose>
         </xsl:variable>
         <xsl:choose>
-            <xsl:when test="starts-with(@target, '#emt_mention_id')">
+            <xsl:when test="starts-with(@target, '#emt_letter_id')">
 
                 <span tabindex="0" class="mention" data-bs-toggle="popover" data-bs-html="true">
                     <xsl:variable name="mention-id" select="substring-after(@target, '#')"/>

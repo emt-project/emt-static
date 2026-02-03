@@ -7,7 +7,7 @@ print("adding mentioned letters")
 
 files = sorted(glob.glob("./data/editions/*.xml", recursive=True))
 mentions_data = requests.get(
-    "https://raw.githubusercontent.com/emt-project/emt-entities/refs/heads/main/json_dumps/mentions.json"
+    "https://raw.githubusercontent.com/emt-project/emt-entities/refs/heads/main/json_dumps/mentioned_letters.json"
 ).json()
 
 for x in files:
@@ -26,7 +26,7 @@ for x in files:
             unique_letters = set()
             targets = y.get("target").split()
             # prefix for mentions in the Baserow table
-            br_prefix = "#emt_mention_id__"
+            br_prefix = "#emt_letter_id__"
             for target in targets:
                 if target.startswith(br_prefix):
                     mention_id = target.removeprefix(br_prefix)

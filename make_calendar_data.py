@@ -9,8 +9,8 @@ from acdh_cidoc_pyutils import extract_begin_end
 
 print("creating calendar data")
 file_list = sorted(glob.glob("./data/editions/*.xml"))
-mentions_data = requests.get(
-    "https://raw.githubusercontent.com/emt-project/emt-entities/refs/heads/main/json_dumps/mentions.json"
+mentioned_letters_data = requests.get(
+    "https://raw.githubusercontent.com/emt-project/emt-entities/refs/heads/main/json_dumps/mentioned_letters.json"
 ).json()
 data_dir = os.path.join("html", "js-data")
 os.makedirs(data_dir, exist_ok=True)
@@ -25,6 +25,10 @@ main_sender_ids = [
     "emt_person_id__50",
 ]
 mentions_sender_info = {
+    "9": {
+        "label": "erwähnter Brief von Eleonora Magdalena von Pfalz-Neuburg",
+        "kind": "mentioned_letter_emt",
+    },
     "50": {
         "label": "erwähnter Brief von Philipp Wilhelm von Pfalz-Neuburg",
         "kind": "mentioned_letter_pw",
@@ -94,14 +98,14 @@ for x in file_list:
     else:
         pass
     # prefix for mentions in the Baserow table
-    br_prefix = "#emt_mention_id__"
+    br_prefix = "#emt_letter_id__"
     for y in doc.any_xpath("//tei:body//tei:ref[not(ancestor::tei:note)]"):
         targets = y.get("target").split()
         for target in targets:
             if target.startswith(br_prefix):
                 mention_id = target.removeprefix(br_prefix)
-                if mention_id in mentions_data:
-                    sender_id = str(mentions_data[mention_id]["sender"][0]["id"])
+                if mention_id in mentioned_letters_data:
+                    sender_id = str(mentioned_letters_data[mention_id]["sender"][0]["id"])
                     extra_item = {
                         "link": False,
                         "label": mentions_sender_info.get(sender_id, {}).get(
@@ -112,7 +116,7 @@ for x in file_list:
                         ),
                         "ref_by": {"label": title, "link": f_id},
                     }
-                mention_info = mentions_data[mention_id]
+                mention_info = mentioned_letters_data[mention_id]
                 if mention_info["when"] is not None:
                     extra_item["date"] = mention_info["when"]
                 else:
@@ -127,26 +131,6 @@ for x in file_list:
                     }
                 )
 
-
-mentioned_letters = requests.get(
-    "https://raw.githubusercontent.com/emt-project/emt-entities/refs/heads/main/json_dumps/mentioned_letters.json"
-).json()  # noqa:
-
-for key, value in mentioned_letters.items():
-    try:
-        sender = value["sender"][0]["value"].split(", ")[0]
-    except IndexError:
-        print(value)
-        continue
-    receiver = value["receiver"][0]["value"].split(", ")[0]
-    date_written = value["date_written"]
-    event = {
-        "link": False,
-        "label": f"Erschlossener Brief – {sender} an {receiver} ({date_written})",
-        "date": value["not_before"],
-        "kind": "Brief_erschlossen",
-    }
-    events.append(event)
 
 # add owned mentions within events
 for mention in owned_mentions:

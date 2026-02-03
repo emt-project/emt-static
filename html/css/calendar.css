@@ -3,7 +3,7 @@
     --drittbriefe: #7a6855;
     --emt_person_id__18:  #04207c;
     --emt_person_id__50:  #025802;
-    --Brief_erschlossen: #ae4d4d;
+    --mentioned_letter_emt: #ae4d4d;
     --mentioned_letter_pw:  #4F824F;
     --mentioned_letter_jw: #3b5998;
     --mehrere_briefe: #545454;
@@ -82,8 +82,8 @@ acdh-ch-calendar-year td>button[data-event-kinds="emt_person_id__50.html"] {
     --calendar-cell-color: var(--emt_person_id__50);
 }
 
-acdh-ch-calendar-year td>button[data-event-kinds="Brief_erschlossen"] {
-    --calendar-cell-color: var(--Brief_erschlossen)
+acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_emt"] {
+    --calendar-cell-color: var(--mentioned_letter_emt)
 }
 
 acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_jw"] {
@@ -115,8 +115,8 @@ acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
     background-color: var(--emt_person_id__50)
 }
 
-.Brief_erschlossen {
-    background-color: var(--Brief_erschlossen)
+.mentioned_letter_emt {
+    background-color: var(--mentioned_letter_emt)
 }
 
 .mehrere_briefe {
