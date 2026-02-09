@@ -72,7 +72,12 @@
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
         <param name="mode" expression="collection"/>
     </xslt>
-    <xslt style="./xslt/tex.xsl"  basedir="./data/editions" destdir="tex" includes="*.xml" extension=".tex">
+    <xslt in="${index}" out="tex/years_tmp.tex" style="./xslt/tex.xsl">
+        <factory name="net.sf.saxon.TransformerFactoryImpl"/>
+        <classpath location="${basedir}/saxon/saxon9he.jar"/>
+        <param name="mode" expression="year"/>
+    </xslt>
+    <xslt style="./xslt/tex.xsl" basedir="./data/editions" destdir="tex" includes="*.xml" extension=".tex">
         <factory name="net.sf.saxon.TransformerFactoryImpl"/>
         <classpath location="${basedir}/saxon/saxon9he.jar"/>
         <param name="mode" expression="document"/>

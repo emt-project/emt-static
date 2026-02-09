@@ -18,6 +18,17 @@
             <xsl:when test="$mode = 'document'">
                 <xsl:apply-templates select="." mode="document"/>
             </xsl:when>
+            <xsl:when test="$mode = 'year'">
+                <!-- Loop through years 1677–1716 and create separate files -->
+                <xsl:for-each select="1677 to 1716">
+                    <xsl:variable name="current-year" select="string(.)"/>
+                    <xsl:result-document href="emt_korrespondenz_{$current-year}.tex">
+                        <xsl:call-template name="generate-year-document">
+                            <xsl:with-param name="year" select="$current-year"/>
+                        </xsl:call-template>
+                    </xsl:result-document>
+                </xsl:for-each>
+            </xsl:when>
             <xsl:otherwise>
                 <xsl:apply-templates select="." mode="collection"/>
             </xsl:otherwise>
@@ -99,6 +110,90 @@
         <xsl:text>&#10;</xsl:text>
         <xsl:text>\end{document}&#10;</xsl:text>
     </xsl:template>
+
+         <xsl:template name="generate-year-document">
+        <xsl:param name="year"/>
+        <xsl:variable name="all-letters" select="collection('../data/editions/?select=*.xml')/tei:TEI"/>
+        <xsl:variable name="year-letters" select="$all-letters[
+            starts-with(.//tei:correspAction[@type='sent']/tei:date/@when-iso, $year) or
+            starts-with(.//tei:correspAction[@type='sent']/tei:date/@notBefore, $year)
+        ]"/>
+        
+        <!-- Only generate content if there are letters for this year -->
+        <xsl:if test="$year-letters">
+            <xsl:call-template name="latex-preamble"/>
+            <xsl:text>\title{&#10;</xsl:text>
+            <xsl:text>Die Korrespondenz der Kaiserin Eleonora Magdalena aus dem Jahr </xsl:text>
+            <xsl:value-of select="$year"/>
+            <xsl:text>}&#10;</xsl:text>
+            <xsl:text>\author{EMT Team}&#10;</xsl:text>
+            <xsl:text>\date{\today}&#10;</xsl:text>
+            <xsl:text>\makeindex[name=person,title=Personenindex,columnsep=14pt,columns=3]&#10;</xsl:text>
+            <xsl:text>\makeindex[name=place,title=Ortsindex,columnsep=14pt,columns=3]&#10;</xsl:text>
+            <xsl:text>\makeindex[name=org,title=Organisationsindex,columnsep=14pt,columns=3]&#10;</xsl:text>
+            <xsl:text>\makeindex[name=sender,title=Briefe nach Absender,columnsep=14pt,columns=2]&#10;</xsl:text>
+            <xsl:text>\makeindex[name=recipient,title=Briefe nach Empfänger,columnsep=14pt,columns=2]&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>\begin{document}&#10;</xsl:text>
+            <xsl:text>\maketitle&#10;</xsl:text>
+            <xsl:text>\clearpage&#10;</xsl:text>
+            <xsl:text>\begin{center}&#10;</xsl:text>
+            <xsl:text>\large&#10;</xsl:text>
+            <xsl:text>\section*{Inhaltsverzeichnis}&#10;</xsl:text>
+            <xsl:text>\begin{tabular}{@{}l r@{}}&#10;</xsl:text>
+            <xsl:text>Briefe &amp; \pageref{letters:start}--\pageref{letters:end} \\&#10;</xsl:text>
+            <xsl:text>Personenindex &amp; \pageref{index:person} \\&#10;</xsl:text>
+            <xsl:text>Ortsindex &amp; \pageref{index:place} \\&#10;</xsl:text>
+            <xsl:text>Organisationsindex &amp; \pageref{index:org} \\&#10;</xsl:text>
+            <xsl:text>Briefe nach Absender &amp; \pageref{index:sender} \\&#10;</xsl:text>
+            <xsl:text>Briefe nach Empfänger &amp; \pageref{index:recipient} \\&#10;</xsl:text>
+            <xsl:text>\end{tabular}&#10;</xsl:text>
+            <xsl:text>\end{center}&#10;</xsl:text>
+            <xsl:text>\clearpage&#10;</xsl:text>
+            <xsl:text>\label{letters:start}&#10;</xsl:text>
+            
+            <!-- Process letters for this year in chronological order -->
+            <xsl:for-each select="$year-letters">
+                <xsl:sort select="(.//tei:correspAction[@type='sent']/tei:date/@when-iso, 
+                                  .//tei:correspAction[@type='sent']/tei:date/@notBefore)[1]"/>
+                <xsl:variable name="current-letter" select="."/>
+                <xsl:variable name="title" select="normalize-space(.//tei:titleStmt/tei:title[1]/text())"/>
+                <xsl:variable name="sender" select=".//tei:correspDesc/tei:correspAction[@type='sent']/tei:persName"/>
+                <xsl:variable name="recipient" select=".//tei:correspDesc/tei:correspAction[@type='received']/tei:persName"/>
+                
+                <xsl:text>\section*{</xsl:text>
+                <xsl:value-of select="$title"/>
+                <xsl:text>}&#10;</xsl:text>
+                <xsl:text>\index[sender]{</xsl:text>
+                <xsl:value-of select="$sender"/>
+                <xsl:text>}&#10;</xsl:text>
+                <xsl:text>\index[recipient]{</xsl:text>
+                <xsl:value-of select="$recipient"/>
+                <xsl:text>}&#10;</xsl:text>
+                <xsl:text>&#10;</xsl:text>
+                
+                <xsl:call-template name="process-letter-content">
+                    <xsl:with-param name="letter" select="$current-letter"/>
+                </xsl:call-template>
+            </xsl:for-each>
+            
+            <xsl:text>\label{letters:end}&#10;</xsl:text>
+            <xsl:text>&#10;</xsl:text>
+            <xsl:text>\newpage&#10;</xsl:text>
+            <xsl:text>\back\small&#10;</xsl:text>
+            <xsl:text>\label{index:person}&#10;</xsl:text>
+            <xsl:text>\printindex[person]&#10;</xsl:text>
+            <xsl:text>\label{index:place}&#10;</xsl:text>
+            <xsl:text>\printindex[place]&#10;</xsl:text>
+            <xsl:text>\label{index:org}&#10;</xsl:text>
+            <xsl:text>\printindex[org]&#10;</xsl:text>
+            <xsl:text>\label{index:sender}&#10;</xsl:text>
+            <xsl:text>\printindex[sender]&#10;</xsl:text>
+            <xsl:text>\label{index:recipient}&#10;</xsl:text>
+            <xsl:text>\printindex[recipient]&#10;</xsl:text>
+            <xsl:text>\end{document}&#10;</xsl:text>
+        </xsl:if>
+    </xsl:template>   
 
     <xsl:template name="latex-preamble">
         <xsl:text>\documentclass[a4paper]{article}&#10;</xsl:text>
@@ -354,30 +449,31 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="tei:ref[not(ancestor::tei:note) and not(ancestor::tei:correspContext)]">
-    <xsl:variable name="mention-id" select="substring-after(@target, '#')"/>
-    <xsl:variable name="bibl-entry" select="//tei:bibl[@xml:id=$mention-id]"/>
-    <xsl:apply-templates/>
-    <xsl:if test="$bibl-entry">
-        <xsl:text>\footnote{</xsl:text>
-        <xsl:text>Brief datiert </xsl:text>
-        <xsl:choose>
-            <xsl:when test="$bibl-entry/tei:date/@when-iso">
-                <xsl:value-of select="$bibl-entry/tei:date/@when-iso"/>
-            </xsl:when>
-            <xsl:when test="$bibl-entry/tei:date/@notBefore and $bibl-entry/tei:date/@notAfter">
-                <xsl:value-of select="concat('zwischen ', $bibl-entry/tei:date/@notBefore, ' und ', $bibl-entry/tei:date/@notAfter)"/>
-            </xsl:when>
-            <xsl:otherwise>
-                <xsl:text>o.D.</xsl:text>
-            </xsl:otherwise>
-        </xsl:choose>
-        <xsl:text>; Absender: </xsl:text>
-        <xsl:value-of select="$bibl-entry/tei:persName[@role='sender']/text()"/>
-        <xsl:text>; Empfänger: </xsl:text>
-        <xsl:value-of select="$bibl-entry/tei:persName[@role='recipient']/text()"/>
-        <xsl:text>.</xsl:text>
-        <xsl:text>}</xsl:text>
-    </xsl:if>
+        <xsl:variable name="mention-id" select="substring-after(@target, '#')"/>
+        <xsl:variable name="bibl-entry" select="//tei:bibl[@xml:id=$mention-id]"/>
+        <xsl:apply-templates/>
+        <xsl:if test="$bibl-entry">
+            <xsl:text>\footnote{</xsl:text>
+            <xsl:text>Brief datiert </xsl:text>
+            <xsl:choose>
+                <xsl:when test="$bibl-entry/tei:date/@when-iso">
+                    <xsl:value-of select="$bibl-entry/tei:date/@when-iso"/>
+                </xsl:when>
+                <xsl:when test="$bibl-entry/tei:date/@notBefore and $bibl-entry/tei:date/@notAfter">
+                    <xsl:value-of select="concat('zwischen ', $bibl-entry/tei:date/@notBefore, ' und ', $bibl-entry/tei:date/@notAfter)"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:text>o.D.</xsl:text>
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:text>; Absender: </xsl:text>
+            <xsl:value-of select="$bibl-entry/tei:persName[@role='sender']/text()"/>
+            <xsl:text>; Empfänger: </xsl:text>
+            <xsl:value-of select="$bibl-entry/tei:persName[@role='recipient']/text()"/>
+            <xsl:text>.</xsl:text>
+            <xsl:text>}</xsl:text>
+        </xsl:if>   
+        <xsl:call-template name="add-space-after"/>
     </xsl:template>
 
     <xsl:template match="text()">

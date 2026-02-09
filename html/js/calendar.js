@@ -5,15 +5,14 @@ import de from "../vendor/calendar-component/i18n/de.js";
 register({});
 // register()
 
+let currentYear = 1696; 
 function createCalendar(i18n, events, onEventClick) {
     const calendar = document.querySelector("acdh-ch-calendar");
-
     if (i18n != null) {
         /** Optionally set locale, defaults to english. */
         calendar.setI18n(i18n);
     }
-
-    calendar.setData({ events, currentYear: 1696 });
+    calendar.setData({ events, currentYear});
 
     calendar.addEventListener("calendar-event-click", onEventClick);
     // const senders = new Map()
@@ -26,7 +25,16 @@ function createCalendar(i18n, events, onEventClick) {
     //         senders.set(false, d.sender.label)
     //     }
     // })
+    calendar.addEventListener("calendar-year-select", (event) => {
+        currentYear = event.detail.year;
+        console.log(currentYear);
+    });
+        document.getElementById("year-pdf-download-btn").addEventListener("click", () => {
+        const pdfUrl = `emt_korrespondenz_${currentYear}.pdf`;
+        window.open(pdfUrl, '_blank');
+    });
 }
+
 
 function onEventClick(event) {
     var myModal = new bootstrap.Modal(document.getElementById("dataModal"), {});

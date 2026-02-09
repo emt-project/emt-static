@@ -29,7 +29,6 @@
                     <a style="padding-left:5px;" href="js-data/calendarData.js">
                         <i class="fas fa-download" title="Data"/>
                     </a>
-
                     <acdh-ch-calendar>
                         <div class="calendar-menu">
                             <label class="p2 text-center fs-2">
@@ -52,7 +51,7 @@
                                         <span class="legend-item">Johann Wilhelm von Pfalz-Neuburg</span>
                                     </li>
                                     <li>
-                                    <span class="dot mentioned_letter_jw"></span>
+                                        <span class="dot mentioned_letter_jw"></span>
                                         <span class="legend-item">Johann Wilhelm von Pfalz-Neuburg (erwähnter Brief)</span>
                                     </li>
                                     <li>
@@ -75,8 +74,15 @@
                                 </ul>
                             </acdh-ch-calendar-legend>
                         </div>
+                        <div class="calendar-container text-center">
+                            <acdh-ch-calendar-year data-variant="sparse"/>
+                            <span>Korrespondenz des Jahres herunterladen: </span>
+                            <button type="button" id="year-pdf-download-btn" class="btn btn-link me-2">
+                                <i class="bi bi-filetype-pdf me-1"></i>
+                                <span>PDF</span>
+                            </button>
+                        </div>
 
-                        <acdh-ch-calendar-year data-variant="sparse"/>
                     </acdh-ch-calendar>
 
                     <div class="modal fade" id="dataModal" tabindex="-1" aria-labelledby="dataModalLabel" aria-hidden="true">
