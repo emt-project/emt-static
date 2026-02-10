@@ -22,7 +22,7 @@ for x in files:
         else:
             list_bibl = list_bibl[0]
             print(f"listBibl already exists in {x}")
-        for y in doc.any_xpath("//tei:ref[not(ancestor::tei:note) and not(ancestor::tei:correspContext)]"):
+        for y in doc.any_xpath("//tei:ref[not(ancestor::tei:note) and not(ancestor::tei:correspContext) and @target]"):
             unique_letters = set()
             targets = y.get("target").split()
             # prefix for mentions in the Baserow table

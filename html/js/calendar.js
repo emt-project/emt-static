@@ -27,7 +27,6 @@ function createCalendar(i18n, events, onEventClick) {
     // })
     calendar.addEventListener("calendar-year-select", (event) => {
         currentYear = event.detail.year;
-        console.log(currentYear);
     });
         document.getElementById("year-pdf-download-btn").addEventListener("click", () => {
         const pdfUrl = `emt_korrespondenz_${currentYear}.pdf`;
