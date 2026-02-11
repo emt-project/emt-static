@@ -200,7 +200,13 @@
         <xsl:text>\usepackage{imakeidx}&#10;</xsl:text>
         <xsl:text>\usepackage[hidelinks]{hyperref}&#10;</xsl:text>
         <xsl:text>\usepackage[hang, flushmargin]{footmisc}&#10;</xsl:text>
-        <xsl:text>\setlength{\footnotemargin}{1em}&#10;</xsl:text>
+        <xsl:text>% Dynamic footnote margin based on number width&#10;</xsl:text>
+        <xsl:text>\makeatletter&#10;</xsl:text>
+        <xsl:text>\renewcommand\@makefntext[1]{%&#10;</xsl:text>
+        <xsl:text>  \setbox\@tempboxa\hbox{\@thefnmark}%&#10;</xsl:text>
+        <xsl:text>  \hangindent\dimexpr\wd\@tempboxa+0.5em\relax&#10;</xsl:text>
+        <xsl:text>  \noindent\hbox to\dimexpr\wd\@tempboxa+0.5em\relax{\@thefnmark\hfil}#1}&#10;</xsl:text>
+        <xsl:text>\makeatother&#10;</xsl:text>
         <xsl:text>% we don't want footnote breaks&#10;</xsl:text>
         <xsl:text>\interfootnotelinepenalty=10000&#10;</xsl:text>
         <xsl:text>\makeatletter&#10;</xsl:text>
@@ -474,36 +480,36 @@
                 <xsl:text>}</xsl:text>
             </xsl:if>
         </xsl:for-each>
-            <xsl:call-template name="add-space-after"/>
-        </xsl:template>
+        <xsl:call-template name="add-space-after"/>
+    </xsl:template>
 
-        <xsl:template match="text()">
-            <xsl:variable name="text" select="normalize-space(.)"/>
-            <xsl:if test="$text != ''">
-                <xsl:analyze-string select="$text" regex="[#\$%&amp;_{}~^\\]">
-                    <xsl:matching-substring>
-                        <xsl:choose>
-                            <xsl:when test=". = '#'">\#</xsl:when>
-                            <xsl:when test=". = '$'">\$</xsl:when>
-                            <xsl:when test=". = '%'">\%</xsl:when>
-                            <xsl:when test=". = '&amp;'">\&amp;</xsl:when>
-                            <xsl:when test=". = '_'">\_</xsl:when>
-                            <xsl:when test=". = '{'">\{</xsl:when>
-                            <xsl:when test=". = '}'">\}</xsl:when>
-                            <xsl:when test=". = '~'">\textasciitilde{}</xsl:when>
-                            <xsl:when test=". = '^'">\textasciicircum{}</xsl:when>
-                            <xsl:when test=". = '\'">\textbackslash{}</xsl:when>
-                        </xsl:choose>
-                    </xsl:matching-substring>
-                    <xsl:non-matching-substring>
-                        <xsl:value-of select="."/>
-                    </xsl:non-matching-substring>
-                </xsl:analyze-string>
-            </xsl:if>
-        </xsl:template>
+    <xsl:template match="text()">
+        <xsl:variable name="text" select="normalize-space(.)"/>
+        <xsl:if test="$text != ''">
+            <xsl:analyze-string select="$text" regex="[#\$%&amp;_{}~^\\]">
+                <xsl:matching-substring>
+                    <xsl:choose>
+                        <xsl:when test=". = '#'">\#</xsl:when>
+                        <xsl:when test=". = '$'">\$</xsl:when>
+                        <xsl:when test=". = '%'">\%</xsl:when>
+                        <xsl:when test=". = '&amp;'">\&amp;</xsl:when>
+                        <xsl:when test=". = '_'">\_</xsl:when>
+                        <xsl:when test=". = '{'">\{</xsl:when>
+                        <xsl:when test=". = '}'">\}</xsl:when>
+                        <xsl:when test=". = '~'">\textasciitilde{}</xsl:when>
+                        <xsl:when test=". = '^'">\textasciicircum{}</xsl:when>
+                        <xsl:when test=". = '\'">\textbackslash{}</xsl:when>
+                    </xsl:choose>
+                </xsl:matching-substring>
+                <xsl:non-matching-substring>
+                    <xsl:value-of select="."/>
+                </xsl:non-matching-substring>
+            </xsl:analyze-string>
+        </xsl:if>
+    </xsl:template>
 
-        <xsl:template name="add-space-before">
-            <xsl:if test="preceding-sibling::node()[1][
+    <xsl:template name="add-space-before">
+        <xsl:if test="preceding-sibling::node()[1][
            ( self::text()[normalize-space(.) != ''] or
             self::tei:expan or
             self::tei:rs or
@@ -512,12 +518,12 @@
             self::tei:date ) and
             not(self::tei:lb)
         ]">
-                <xsl:text>&#32;</xsl:text>
-            </xsl:if>
-        </xsl:template>
+            <xsl:text>&#32;</xsl:text>
+        </xsl:if>
+    </xsl:template>
 
-        <xsl:template name="add-space-after">
-            <xsl:if test="following-sibling::node()[1][
+    <xsl:template name="add-space-after">
+        <xsl:if test="following-sibling::node()[1][
                         (
                         self::text()[
                             normalize-space(.) != '' and
@@ -530,7 +536,7 @@
                         or self::tei:del
                         )
                     ]">
-                <xsl:text>&#32;</xsl:text>
-            </xsl:if>
-        </xsl:template>
-    </xsl:stylesheet>
+            <xsl:text>&#32;</xsl:text>
+        </xsl:if>
+    </xsl:template>
+</xsl:stylesheet>
