@@ -102,34 +102,38 @@ for x in file_list:
     for y in doc.any_xpath("//tei:ref[not(ancestor::tei:note) and not(ancestor::tei:correspContext) and @target]"):
         targets = y.get("target").split()
         for target in targets:
-            if target.startswith(br_prefix):
-                mention_id = target.removeprefix(br_prefix)
-                if mention_id in mentioned_letters_data:
-                    sender_id = str(mentioned_letters_data[mention_id]["sender"][0]["id"])
-                    extra_item = {
-                        "link": False,
-                        "label": mentions_sender_info.get(sender_id, {}).get(
-                            "label", "erwähnter Brief"
-                        ),
-                        "kind": mentions_sender_info.get(sender_id, {}).get(
-                            "kind", "mentioned_letter_other"
-                        ),
-                        "ref_by": {"label": title, "link": f_id},
-                    }
-                mention_info = mentioned_letters_data[mention_id]
-                if mention_info["when"] is not None:
-                    extra_item["date"] = mention_info["when"]
+            try:
+                if target.startswith(br_prefix):
+                    mention_id = target.removeprefix(br_prefix)
+                    if mention_id in mentioned_letters_data:
+                        sender_id = str(mentioned_letters_data[mention_id]["sender"][0]["id"])
+                        extra_item = {
+                            "link": False,
+                            "label": mentions_sender_info.get(sender_id, {}).get(
+                                "label", "erwähnter Brief"
+                            ),
+                            "kind": mentions_sender_info.get(sender_id, {}).get(
+                                "kind", "mentioned_letter_other"
+                            ),
+                            "ref_by": {"label": title, "link": f_id},
+                        }
+                    mention_info = mentioned_letters_data[mention_id]
+                    if mention_info["when"] is not None:
+                        extra_item["date"] = mention_info["when"]
+                    else:
+                        extra_item["from"] = mention_info["not_before"]
+                        extra_item["to"] = mention_info["not_after"]
+                    events.append(extra_item)
                 else:
-                    extra_item["from"] = mention_info["not_before"]
-                    extra_item["to"] = mention_info["not_after"]
-                events.append(extra_item)
-            else:
-                owned_mentions.append(
-                    {
-                        "link": target[1:].replace(".xml", ".html"),
-                        "ref_by": {"label": title, "link": f_id},
-                    }
-                )
+                    owned_mentions.append(
+                        {
+                            "link": target[1:].replace(".xml", ".html"),
+                            "ref_by": {"label": title, "link": f_id},
+                        }
+                    )
+            except Exception as e:
+                print(f"Error processing target '{target}' in file {x}: {e}")
+                continue
 
 
 # add owned mentions within events
