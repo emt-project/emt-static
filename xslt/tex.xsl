@@ -111,14 +111,12 @@
         <xsl:text>\end{document}&#10;</xsl:text>
     </xsl:template>
 
-         <xsl:template name="generate-year-document">
+    <xsl:template name="generate-year-document">
         <xsl:param name="year"/>
         <xsl:variable name="all-letters" select="collection('../data/editions/?select=*.xml')/tei:TEI"/>
-        <xsl:variable name="year-letters" select="$all-letters[
-            starts-with(.//tei:correspAction[@type='sent']/tei:date/@when-iso, $year) or
-            starts-with(.//tei:correspAction[@type='sent']/tei:date/@notBefore, $year)
+        <xsl:variable name="year-letters" select="$all-letters[ starts-with(.//tei:correspAction[@type='sent']/tei:date/@when-iso, $year) or starts-with(.//tei:correspAction[@type='sent']/tei:date/@notBefore, $year)
         ]"/>
-        
+
         <!-- Only generate content if there are letters for this year -->
         <xsl:if test="$year-letters">
             <xsl:call-template name="latex-preamble"/>
@@ -151,16 +149,15 @@
             <xsl:text>\end{center}&#10;</xsl:text>
             <xsl:text>\clearpage&#10;</xsl:text>
             <xsl:text>\label{letters:start}&#10;</xsl:text>
-            
+
             <!-- Process letters for this year in chronological order -->
             <xsl:for-each select="$year-letters">
-                <xsl:sort select="(.//tei:correspAction[@type='sent']/tei:date/@when-iso, 
-                                  .//tei:correspAction[@type='sent']/tei:date/@notBefore)[1]"/>
+                <xsl:sort select="(.//tei:correspAction[@type='sent']/tei:date/@when-iso, .//tei:correspAction[@type='sent']/tei:date/@notBefore)[1]"/>
                 <xsl:variable name="current-letter" select="."/>
                 <xsl:variable name="title" select="normalize-space(.//tei:titleStmt/tei:title[1]/text())"/>
                 <xsl:variable name="sender" select=".//tei:correspDesc/tei:correspAction[@type='sent']/tei:persName"/>
                 <xsl:variable name="recipient" select=".//tei:correspDesc/tei:correspAction[@type='received']/tei:persName"/>
-                
+
                 <xsl:text>\section*{</xsl:text>
                 <xsl:value-of select="$title"/>
                 <xsl:text>}&#10;</xsl:text>
@@ -171,12 +168,12 @@
                 <xsl:value-of select="$recipient"/>
                 <xsl:text>}&#10;</xsl:text>
                 <xsl:text>&#10;</xsl:text>
-                
+
                 <xsl:call-template name="process-letter-content">
                     <xsl:with-param name="letter" select="$current-letter"/>
                 </xsl:call-template>
             </xsl:for-each>
-            
+
             <xsl:text>\label{letters:end}&#10;</xsl:text>
             <xsl:text>&#10;</xsl:text>
             <xsl:text>\newpage&#10;</xsl:text>
@@ -193,7 +190,7 @@
             <xsl:text>\printindex[recipient]&#10;</xsl:text>
             <xsl:text>\end{document}&#10;</xsl:text>
         </xsl:if>
-    </xsl:template>   
+    </xsl:template>
 
     <xsl:template name="latex-preamble">
         <xsl:text>\documentclass[a4paper]{article}&#10;</xsl:text>
@@ -449,60 +446,64 @@
         </xsl:if>
     </xsl:template>
     <xsl:template match="tei:ref[not(ancestor::tei:note) and not(ancestor::tei:correspContext)]">
-        <xsl:variable name="mention-id" select="substring-after(@target, '#')"/>
-        <xsl:variable name="bibl-entry" select="//tei:bibl[@xml:id=$mention-id]"/>
         <xsl:apply-templates/>
-        <xsl:if test="$bibl-entry">
-            <xsl:text>\footnote{</xsl:text>
-            <xsl:text>Brief datiert </xsl:text>
-            <xsl:choose>
-                <xsl:when test="$bibl-entry/tei:date/@when-iso">
-                    <xsl:value-of select="$bibl-entry/tei:date/@when-iso"/>
-                </xsl:when>
-                <xsl:when test="$bibl-entry/tei:date/@notBefore and $bibl-entry/tei:date/@notAfter">
-                    <xsl:value-of select="concat('zwischen ', $bibl-entry/tei:date/@notBefore, ' und ', $bibl-entry/tei:date/@notAfter)"/>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:text>o.D.</xsl:text>
-                </xsl:otherwise>
-            </xsl:choose>
-            <xsl:text>; Absender: </xsl:text>
-            <xsl:value-of select="$bibl-entry/tei:persName[@role='sender']/text()"/>
-            <xsl:text>; Empfänger: </xsl:text>
-            <xsl:value-of select="$bibl-entry/tei:persName[@role='recipient']/text()"/>
-            <xsl:text>.</xsl:text>
-            <xsl:text>}</xsl:text>
-        </xsl:if>   
-        <xsl:call-template name="add-space-after"/>
-    </xsl:template>
+        <xsl:variable name="mentions-list" select="//tei:listBibl"/>
+        <xsl:variable name="targets" select="tokenize(@target, '\s+')"/>
+        <xsl:for-each select="$targets">
+            <xsl:variable name="mention-id" select="substring-after(., '#')"/>
+            <xsl:variable name="bibl-entry" select="$mentions-list/tei:bibl[@xml:id=$mention-id]"/>
+            <xsl:if test="$bibl-entry">
+                <xsl:text>\footnote{</xsl:text>
+                <xsl:text>Brief datiert </xsl:text>
+                <xsl:choose>
+                    <xsl:when test="$bibl-entry/tei:date/@when-iso">
+                        <xsl:value-of select="$bibl-entry/tei:date/@when-iso"/>
+                    </xsl:when>
+                    <xsl:when test="$bibl-entry/tei:date/@notBefore and $bibl-entry/tei:date/@notAfter">
+                        <xsl:value-of select="concat('zwischen ', $bibl-entry/tei:date/@notBefore, ' und ', $bibl-entry/tei:date/@notAfter)"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:text>o.D.</xsl:text>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <xsl:text>; Absender: </xsl:text>
+                <xsl:value-of select="$bibl-entry/tei:persName[@role='sender']/text()"/>
+                <xsl:text>; Empfänger: </xsl:text>
+                <xsl:value-of select="$bibl-entry/tei:persName[@role='recipient']/text()"/>
+                <xsl:text>.</xsl:text>
+                <xsl:text>}</xsl:text>
+            </xsl:if>
+        </xsl:for-each>
+            <xsl:call-template name="add-space-after"/>
+        </xsl:template>
 
-    <xsl:template match="text()">
-        <xsl:variable name="text" select="normalize-space(.)"/>
-        <xsl:if test="$text != ''">
-            <xsl:analyze-string select="$text" regex="[#\$%&amp;_{}~^\\]">
-                <xsl:matching-substring>
-                    <xsl:choose>
-                        <xsl:when test=". = '#'">\#</xsl:when>
-                        <xsl:when test=". = '$'">\$</xsl:when>
-                        <xsl:when test=". = '%'">\%</xsl:when>
-                        <xsl:when test=". = '&amp;'">\&amp;</xsl:when>
-                        <xsl:when test=". = '_'">\_</xsl:when>
-                        <xsl:when test=". = '{'">\{</xsl:when>
-                        <xsl:when test=". = '}'">\}</xsl:when>
-                        <xsl:when test=". = '~'">\textasciitilde{}</xsl:when>
-                        <xsl:when test=". = '^'">\textasciicircum{}</xsl:when>
-                        <xsl:when test=". = '\'">\textbackslash{}</xsl:when>
-                    </xsl:choose>
-                </xsl:matching-substring>
-                <xsl:non-matching-substring>
-                    <xsl:value-of select="."/>
-                </xsl:non-matching-substring>
-            </xsl:analyze-string>
-        </xsl:if>
-    </xsl:template>
+        <xsl:template match="text()">
+            <xsl:variable name="text" select="normalize-space(.)"/>
+            <xsl:if test="$text != ''">
+                <xsl:analyze-string select="$text" regex="[#\$%&amp;_{}~^\\]">
+                    <xsl:matching-substring>
+                        <xsl:choose>
+                            <xsl:when test=". = '#'">\#</xsl:when>
+                            <xsl:when test=". = '$'">\$</xsl:when>
+                            <xsl:when test=". = '%'">\%</xsl:when>
+                            <xsl:when test=". = '&amp;'">\&amp;</xsl:when>
+                            <xsl:when test=". = '_'">\_</xsl:when>
+                            <xsl:when test=". = '{'">\{</xsl:when>
+                            <xsl:when test=". = '}'">\}</xsl:when>
+                            <xsl:when test=". = '~'">\textasciitilde{}</xsl:when>
+                            <xsl:when test=". = '^'">\textasciicircum{}</xsl:when>
+                            <xsl:when test=". = '\'">\textbackslash{}</xsl:when>
+                        </xsl:choose>
+                    </xsl:matching-substring>
+                    <xsl:non-matching-substring>
+                        <xsl:value-of select="."/>
+                    </xsl:non-matching-substring>
+                </xsl:analyze-string>
+            </xsl:if>
+        </xsl:template>
 
-    <xsl:template name="add-space-before">
-        <xsl:if test="preceding-sibling::node()[1][
+        <xsl:template name="add-space-before">
+            <xsl:if test="preceding-sibling::node()[1][
            ( self::text()[normalize-space(.) != ''] or
             self::tei:expan or
             self::tei:rs or
@@ -511,12 +512,12 @@
             self::tei:date ) and
             not(self::tei:lb)
         ]">
-            <xsl:text>&#32;</xsl:text>
-        </xsl:if>
-    </xsl:template>
+                <xsl:text>&#32;</xsl:text>
+            </xsl:if>
+        </xsl:template>
 
-    <xsl:template name="add-space-after">
-        <xsl:if test="following-sibling::node()[1][
+        <xsl:template name="add-space-after">
+            <xsl:if test="following-sibling::node()[1][
                         (
                         self::text()[
                             normalize-space(.) != '' and
@@ -529,7 +530,7 @@
                         or self::tei:del
                         )
                     ]">
-            <xsl:text>&#32;</xsl:text>
-        </xsl:if>
-    </xsl:template>
-</xsl:stylesheet>
+                <xsl:text>&#32;</xsl:text>
+            </xsl:if>
+        </xsl:template>
+    </xsl:stylesheet>
