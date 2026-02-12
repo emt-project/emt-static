@@ -58,6 +58,8 @@ jobs:
         run: ./make_pdf.sh
       - name: Write report
         run: python create_report.py
+      - name: zip and publish data folder
+        run: zip -r ./html/data.zip ./data
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
