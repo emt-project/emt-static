@@ -29,7 +29,7 @@ function createCalendar(i18n, events, onEventClick) {
         currentYear = event.detail.year;
     });
         document.getElementById("year-pdf-download-btn").addEventListener("click", () => {
-        const pdfUrl = `emt_korrespondenz_${currentYear}.pdf`;
+        const pdfUrl = `/emt-pdf/emt_korrespondenz_${currentYear}.pdf`;
         window.open(pdfUrl, '_blank');
     });
 }
