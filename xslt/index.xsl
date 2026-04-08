@@ -34,7 +34,7 @@
                 </xsl:call-template>
                 <xsl:call-template name="zoteroMetaTags">
                     <xsl:with-param name="pageId" select="'index.html'"/>
-                    <xsl:with-param name="pdf" select="/emt-pdf/emt.pdf"/>
+                    <xsl:with-param name="pdf" select="'https://emt-project.github.io/emt-pdf/emt.pdf'"/>
                 </xsl:call-template>
             </head>
             <body class="d-flex flex-column h-100">

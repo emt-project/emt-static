@@ -27,7 +27,7 @@
         <xsl:value-of select="data(tei:TEI/@xml:id)"/>
     </xsl:variable>
     <xsl:variable name="pdfLink">
-        <xsl:value-of select="concat('/emt-pdf/', replace($teiSource, '.xml', '.pdf'))"/>
+        <xsl:value-of select="concat('https://emt-project.github.io/emt-pdf/', replace($teiSource, '.xml', '.pdf'))"/>
     </xsl:variable>
     <xsl:variable name="link">
         <xsl:value-of select="replace($teiSource, '.xml', '.html')"/>
