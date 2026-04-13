@@ -19,7 +19,7 @@ broken = []
 events = []
 owned_mentions = []
 sender = set()
-main_sender_ids = [
+main_correspondent_ids = [
     "emt_person_id__9",
     "emt_person_id__18",
     "emt_person_id__50",
@@ -43,7 +43,7 @@ for x in file_list:
         f_id = os.path.split(x)[1].replace(".xml", ".html")
         item = {"link": f_id}
         doc = TeiReader(x)
-        
+
         title_nodes = doc.any_xpath(
             ".//tei:fileDesc/tei:titleStmt/tei:title[@type='main'][1]//text()"
         )
@@ -64,43 +64,51 @@ for x in file_list:
             item["from"] = dates[0]
             item["to"] = dates[1]
             item["range"] = dates[0] != dates[1]
-            
+
             title = normalize_string(title_node)
             item["label"] = title
-            
-            sender_names = doc.any_xpath(".//tei:correspAction[@type='sent']/tei:persName//text()")
+
+            sender_names = doc.any_xpath(
+                ".//tei:correspAction[@type='sent']/tei:persName//text()"
+            )
             if not sender_names:
                 broken.append(f"missing sender name in file: {x}")
                 continue
             sender_name = normalize_string(sender_names[0])
-            
-            sender_ids = doc.any_xpath(".//tei:correspAction[@type='sent']/tei:persName/@ref")
+
+            sender_ids = doc.any_xpath(
+                ".//tei:correspAction[@type='sent']/tei:persName/@ref"
+            )
             if not sender_ids:
                 broken.append(f"missing sender id in file: {x}")
                 continue
-            sender_id = sender_ids[0]
+            sender_id = sender_ids[0].lstrip("#")
 
-            if sender_id == "#emt_person_id__9":
-                relevant_ids = doc.any_xpath(
-                    ".//tei:correspAction[@type='received']/tei:persName/@ref"
-                )
-                if not relevant_ids:
-                    broken.append(f"missing recipient id in file: {x}")
-                    continue
-                relevant_id = relevant_ids[0][1:]
-            else:
-                relevant_id = sender_id[1:]
-
-            if relevant_id not in main_sender_ids:
+            # everything that is not sent by the main correspondents is categorized as "drittbriefe"
+            sender_is_main = sender_id in main_correspondent_ids
+            if not sender_is_main:
                 item["kind"] = "drittbriefe"
             else:
-                item["kind"] = f"{sender_id[1:]}.html"
-            item["sender"] = {"label": sender_name, "link": f"{sender_id[1:]}.html"}
+                recipient_ids = doc.any_xpath(
+                    ".//tei:correspAction[@type='received']/tei:persName/@ref"
+                )
+                if not recipient_ids:
+                    broken.append(f"missing recipient id in file: {x}")
+                    continue
+                recipient_id = recipient_ids[0].lstrip("#")
+                recipient_is_main = recipient_id in main_correspondent_ids
+                item["kind"] = (
+                    f"{sender_id}.html" if recipient_is_main else "drittbriefe"
+                )
+
+            item["sender"] = {"label": sender_name, "link": f"{sender_id}.html"}
             events.append(item)
 
         # prefix for mentions in the Baserow table
         br_prefix = "#emt_letter_id__"
-        for y in doc.any_xpath("//tei:ref[not(ancestor::tei:note) and not(ancestor::tei:correspContext) and @target]"):
+        for y in doc.any_xpath(
+            "//tei:ref[not(ancestor::tei:note) and not(ancestor::tei:correspContext) and @target]"
+        ):
             target_attr = y.get("target")
             if not target_attr:
                 continue
@@ -110,11 +118,17 @@ for x in file_list:
                     if target.startswith(br_prefix):
                         mention_id = target.removeprefix(br_prefix)
                         if mention_id not in mentioned_letters_data:
-                            print(f"Warning: mention_id '{mention_id}' not found (file: {x})")
+                            print(
+                                f"Warning: mention_id '{mention_id}' not found (file: {x})"
+                            )
                             continue
-                        sender_list = mentioned_letters_data[mention_id].get("sender", [])
+                        sender_list = mentioned_letters_data[mention_id].get(
+                            "sender", []
+                        )
                         if not sender_list:
-                            print(f"Warning: no sender for mention_id '{mention_id}' (file: {x})")
+                            print(
+                                f"Warning: no sender for mention_id '{mention_id}' (file: {x})"
+                            )
                             continue
                         sender_id = str(sender_list[0]["id"])
                         extra_item = {
@@ -130,11 +144,15 @@ for x in file_list:
                         mention_info = mentioned_letters_data[mention_id]
                         if mention_info.get("when"):
                             extra_item["date"] = mention_info["when"]
-                        elif mention_info.get("not_before") and mention_info.get("not_after"):
+                        elif mention_info.get("not_before") and mention_info.get(
+                            "not_after"
+                        ):
                             extra_item["from"] = mention_info["not_before"]
                             extra_item["to"] = mention_info["not_after"]
                         else:
-                            print(f"Warning: no date for mention_id '{mention_id}' (file: {x})")
+                            print(
+                                f"Warning: no date for mention_id '{mention_id}' (file: {x})"
+                            )
                             continue
                         events.append(extra_item)
                     else:
