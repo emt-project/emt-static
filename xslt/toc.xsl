@@ -40,7 +40,7 @@
                             <thead>
                                 <tr>
                                     <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false" tabulator-visible="false">itemId</th>
-                                    <th scope="col" tabulator-headerFilter="input" tabulator-minWidth="350">Sender</th>
+                                    <th scope="col" tabulator-headerFilter="input" tabulator-minWidth="350">Absender</th>
                                     <th scope="col" tabulator-headerFilter="input" tabulator-minWidth="200">Empfänger</th>
                                     <th scope="col" tabulator-headerFilter="input">Datum</th>
                                     <th scope="col" tabulator-headerFilter="input">Erschließungsstand</th>

@@ -5,6 +5,7 @@
         <xsl:param name="addHeaderMenu"/>
         <xsl:param name="counterTranslationKey">default_counter_label</xsl:param>
         <script type="text/javascript" src="vendor/tabulator-tables/js/tabulator.min.js"></script>
+        <script type="text/javascript" src="vendor/sheetJS/xlsx.full.min.js"></script>
         <xsl:if test="$addHeaderMenu = 'true'">
             <script src="tabulator-js/headermenu.js"></script>
         </xsl:if>
@@ -16,7 +17,13 @@
                 };
             </xsl:if>
             var table = new Tabulator("#myTable", config);
-            const counterKey = "<xsl:value-of select="$counterTranslationKey"/>";
+            const counterKey = "<xsl:value-of select="$counterTranslationKey"/>";          
+         
+            //trigger download of data.xslx file
+            document.getElementById("download-xlsx").addEventListener("click", function () {
+                table.download("xlsx", `data.xlsx`);
+                });
+
             //trigger download of data.csv file
             document.getElementById("download-csv").addEventListener("click", function(){
             table.download("csv", "data.csv");
@@ -27,10 +34,12 @@
             table.download("json", "data.json");
             });
             
-            //trigger download of data.html file
+            <!-- //trigger download of data.html file
             document.getElementById("download-html").addEventListener("click", function(){
             table.download("html", "data.html", {style:true});
-            });
+            }); -->
+
+   
             
             // link to detail view on row click
             table.on("rowClick", function(e, row){

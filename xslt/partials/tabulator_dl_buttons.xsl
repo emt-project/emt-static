@@ -4,7 +4,11 @@
     <xsl:template match="/" name="tabulator_dl_buttons">
         <div class="d-flex justify-content-end align-items-center gap-2 mb-2">
             <span class="fs-4" data-i18n="download-table"></span>
-            <div class="btn-group" role="group" aria-label="Download buttons">
+             <div class="btn-group" role="group" aria-label="Download buttons">
+                <button type="button" class="btn" id="download-xlsx" title="Download XLSX">
+                    <i class="bi bi-filetype-xlsx"></i>
+                    <span class="visually-hidden">Download XLSX</span>
+                </button>
                 <button type="button" class="btn" id="download-csv" title="Download CSV">
                     <i class="bi bi-filetype-csv"></i>
                     <span class="visually-hidden">Download CSV</span>
@@ -13,11 +17,7 @@
                     <i class="bi bi-filetype-json"></i>
                     <span class="visually-hidden">Download JSON</span>
                 </button>
-                <button type="button" class="btn" id="download-html" title="Download HTML">
-                    <i class="bi bi-filetype-html"></i>
-                    <span class="visually-hidden">Download HTML</span>
-                </button>
             </div>
-        </div>
-    </xsl:template>
+    </div>
+</xsl:template>
 </xsl:stylesheet>
