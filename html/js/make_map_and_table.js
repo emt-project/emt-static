@@ -208,6 +208,7 @@ function build_map_and_table(map_cfg, table_cfg, wms_cfg = null, tms_cfg = null)
     map_cfg.initial_coordinates,
     map_cfg.initial_zoom
   );
+  map.addControl(new L.Control.FullScreen());
   let tile_layer = L.tileLayer(map_cfg.base_map_url, {
     maxZoom: map_cfg.max_zoom,
     minZoom: map_cfg.min_zoom,

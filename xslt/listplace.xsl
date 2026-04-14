@@ -25,6 +25,7 @@
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
                 <link rel="stylesheet" href="vendor/leaflet/leaflet.css"   />
+                <link rel="stylesheet" href="vendor/leaflet.fullscreen/Control.FullScreen.css"   />
                 <script src="vendor/leaflet/leaflet.js"></script>
             </head>
             
@@ -95,6 +96,7 @@
                 </main>
                 <xsl:call-template name="html_footer"/>
                 <script type="text/javascript" src="vendor/tabulator-tables/js/tabulator.min.js"></script>
+                <script type="text/javascript" src="vendor/leaflet.fullscreen/Control.FullScreen.umd.js"></script>
                 <script src="js/map_table_cfg.js"/>
                 <script src="js/make_map_and_table.js"/>
                 
