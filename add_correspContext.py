@@ -92,43 +92,51 @@ for i, ndf in df.groupby("corresp_id"):
         for existing_corresp_context in doc.any_xpath("//tei:correspContext"):
             existing_corresp_context.getparent().remove(existing_corresp_context)
 
-        try:
-            correspDesc = doc.any_xpath("//tei:correspDesc")[0]
-        except IndexError as e:
-            broken.append([e, x["id"]])
-            continue
+        corresp_desc_list = doc.any_xpath("//tei:correspDesc")
+        if corresp_desc_list:
+            correspDesc = corresp_desc_list[0]
+            has_corresp_desc = True
+        else:
+            profile_desc_list = doc.any_xpath("//tei:profileDesc")
+            if not profile_desc_list:
+                broken.append([ValueError("no correspDesc or profileDesc"), x["id"]])
+                continue
+            correspDesc = ET.SubElement(profile_desc_list[0], "correspDesc")
+            has_corresp_desc = False
+
         correspContext = ET.SubElement(correspDesc, "correspContext")
-        ref = ET.SubElement(
-            correspContext,
-            "ref",
-            type="belongsToCorrespondence",
-            target=x["corresp_id"],
-        )
-        ref.text = f'Korrespondenz mit {x["corresp_names"]}'
-        if pd.notna(x["prev"]):
-            prevCorr = ET.SubElement(
-                    correspContext,
-                    "ref",
-                    subtype="previous_letter",
-                    type="withinCorrespondence",
-                    source=x["corresp_id"],
-                    target=x["prev"].split("/")[-1],
-                )
-            prevCorr.text = (
-                    "" if pd.isna(x["prev_title"]) else x["prev_title"]
-                )
-        if pd.notna(x["next"]):
-            nextCorr = ET.SubElement(
+        if has_corresp_desc:
+            ref = ET.SubElement(
                 correspContext,
                 "ref",
-                subtype="next_letter",
-                type="withinCorrespondence",
-                source=x["corresp_id"],
-                target=x["next"].split("/")[-1],
+                type="belongsToCorrespondence",
+                target=x["corresp_id"],
             )
-            nextCorr.text = (
-                "" if pd.isna(x["next_title"]) else x["next_title"]
-            )
+            ref.text = f'Korrespondenz mit {x["corresp_names"]}'
+            if pd.notna(x["prev"]):
+                prevCorr = ET.SubElement(
+                        correspContext,
+                        "ref",
+                        subtype="previous_letter",
+                        type="withinCorrespondence",
+                        source=x["corresp_id"],
+                        target=x["prev"].split("/")[-1],
+                    )
+                prevCorr.text = (
+                        "" if pd.isna(x["prev_title"]) else x["prev_title"]
+                    )
+            if pd.notna(x["next"]):
+                nextCorr = ET.SubElement(
+                    correspContext,
+                    "ref",
+                    subtype="next_letter",
+                    type="withinCorrespondence",
+                    source=x["corresp_id"],
+                    target=x["next"].split("/")[-1],
+                )
+                nextCorr.text = (
+                    "" if pd.isna(x["next_title"]) else x["next_title"]
+                )
         if pd.notna(x["gen_prev"]):
             genPrevCorr = ET.SubElement(
                 correspContext,
