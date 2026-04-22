@@ -45,6 +45,7 @@ for x in tqdm(files, total=len(files)):
             ]
         )
     ).replace("_#", "-")
+    corresp_names = "?"
     try:
         corresp_names = " und ".join(
             [
