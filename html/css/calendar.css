@@ -53,6 +53,7 @@ acdh-ch-calendar-year-picker div[role="radiogroup"]>label {
 
 :where(acdh-ch-calendar-year td > button[data-event-kinds])::after {
     border-radius: 50%;
+    z-index: 1;
 }
 
 
@@ -84,10 +85,16 @@ acdh-ch-calendar-year td>button[data-event-kinds="emt_person_id__50.html"] {
 
 acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_emt"] {
     /* --calendar-cell-color: color-mix(in srgb, var(--emt_person_id__9) 20%, transparent); */
-    --calendar-cell-color: transparent
+    --calendar-cell-color: transparent;
     outline: 2px solid var(--emt_person_id__9);
     outline-offset: -2px;
     color: inherit;
+    z-index: 1;
+}
+
+acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_emt"]::after {
+    background-color: var(--emt_person_id__9);
+    color: white;
 }
 
 acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_jw"] {
@@ -98,12 +105,22 @@ acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_jw"] {
     color: inherit;
 }
 
+acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_jw"]::after {
+    background-color: var(--emt_person_id__18);
+    color: white;
+}
+
 acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_pw"] {
     /* --calendar-cell-color: color-mix(in srgb, var(--emt_person_id__50) 20%, transparent); */
     --calendar-cell-color: transparent;
     outline: 2px solid var(--emt_person_id__50);
     outline-offset: -2px;
     color: inherit;
+}
+
+acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_pw"]::after {
+    background-color: var(--emt_person_id__50);
+    color: white;
 }
 
 acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
