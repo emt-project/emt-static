@@ -3,9 +3,9 @@
     --drittbriefe: #7a6855;
     --emt_person_id__18:  #04207c;
     --emt_person_id__50:  #025802;
-    --mentioned_letter_emt: #ae4d4d;
+    /* --mentioned_letter_emt: #ae4d4d;
     --mentioned_letter_pw:  #4F824F;
-    --mentioned_letter_jw: #3b5998;
+    --mentioned_letter_jw: #3b5998; */
     --mehrere_briefe: #545454;
 }
 
@@ -83,15 +83,27 @@ acdh-ch-calendar-year td>button[data-event-kinds="emt_person_id__50.html"] {
 }
 
 acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_emt"] {
-    --calendar-cell-color: var(--mentioned_letter_emt)
+    /* --calendar-cell-color: color-mix(in srgb, var(--emt_person_id__9) 20%, transparent); */
+    --calendar-cell-color: transparent
+    outline: 2px solid var(--emt_person_id__9);
+    outline-offset: -2px;
+    color: inherit;
 }
 
 acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_jw"] {
-    --calendar-cell-color: var(--mentioned_letter_jw)
+    /* --calendar-cell-color: color-mix(in srgb, var(--emt_person_id__18) 20%, transparent); */
+    --calendar-cell-color: transparent;
+    outline: 2px solid var(--emt_person_id__18);
+    outline-offset: -2px;
+    color: inherit;
 }
 
 acdh-ch-calendar-year td>button[data-event-kinds="mentioned_letter_pw"] {
-    --calendar-cell-color: var(--mentioned_letter_pw)
+    /* --calendar-cell-color: color-mix(in srgb, var(--emt_person_id__50) 20%, transparent); */
+    --calendar-cell-color: transparent;
+    outline: 2px solid var(--emt_person_id__50);
+    outline-offset: -2px;
+    color: inherit;
 }
 
 acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
@@ -116,7 +128,9 @@ acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
 }
 
 .mentioned_letter_emt {
-    background-color: var(--mentioned_letter_emt)
+    /* background-color: color-mix(in srgb, var(--emt_person_id__9) 20%, transparent); */
+    background-color: transparent;
+    border: 2px solid var(--emt_person_id__9);
 }
 
 .mehrere_briefe {
@@ -125,11 +139,15 @@ acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
 
 
 .mentioned_letter_pw {
-    background-color: var(--mentioned_letter_pw)
+    /* background-color: color-mix(in srgb, var(--emt_person_id__50) 20%, transparent); */
+    background-color: transparent;
+    border: 2px solid var(--emt_person_id__50);
 }
 
 .mentioned_letter_jw {
-    background-color: var(--mentioned_letter_jw)
+    /* background-color: color-mix(in srgb, var(--emt_person_id__18) 20%, transparent); */
+    background-color: transparent;
+    border: 2px solid var(--emt_person_id__18);
 }
 /* the legend */
 .calendar-menu {
