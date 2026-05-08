@@ -96,7 +96,7 @@
                             </li>
                         </ul>
                         <div class="d-flex align-items-center ms-2 gap-3">
-                            <a title="Suche" href="search.html" class="nav-link fs-3">
+                            <a title="Suche" href="search.html" class="btn nav-link fs-3">
                                 <i class="bi bi-search"></i>
                             </a>
                             <div class="dropdown">
