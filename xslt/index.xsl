@@ -91,7 +91,7 @@
                         <div class="row">
                             <div class="col-md-5">
                                 <div class="pt-5 pb-5">
-                                    <h2 class="display-5" data-i18n="navbar__biography" />
+                                    <h2 class="display-5" data-i18n="index__biography" />
                                     <p class="text-start fs-5" data-i18n="[html]index__biograpy_teaser"/>
                                 </div>
                             </div>

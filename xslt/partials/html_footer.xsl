@@ -54,11 +54,14 @@
 
 
 
-            <div class="text-center">
+            <div class="text-center py-2">
                 <a href="{$github_url}">
                     <i aria-hidden="true" class="bi bi-github fs-2"></i>
                     <span class="visually-hidden">GitHub repo</span>
                 </a>
+            </div>
+            <div class="text-center pb-2">
+                <a href="imprint.html" data-i18n="navbar_imprint"/>
             </div>
         </footer>
         <script src="vendor/jquery/jquery-3.6.3.min.js"></script>

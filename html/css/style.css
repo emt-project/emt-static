@@ -214,14 +214,11 @@ nav {
   background-color: var(--emt-bg-dark)
 }
 
-.nav-item {
-  font-size: x-large;
-}
+
 
 .navbar-brand {
   color: var(--bs-body-color);
   font-family: "Roboto Serif";
-  font-size: xx-large;
 }
 
 a.nav-link {
@@ -441,6 +438,14 @@ a:hover {
 .dropdown-item:hover,
 .dropdown-item:focus {
   background-color: var(--emt-bg-dark);
+  color: var(--bs-body-color);
+}
+
+.dropdown-item.active {
+  background-color: transparent;
+  color: var(--bs-body-color);
+  font-weight: 600;
+  border-left: 3px solid var(--emt-deco-color);
 }
 
 div#map {

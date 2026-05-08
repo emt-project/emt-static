@@ -43,14 +43,12 @@ function applyLanguageClasses() {
   const htmlElement = document.documentElement;
 
   if (selectedLang === "de") {
-    deButton.classList.add("fs-2");
-    enButton.classList.remove("fs-2");
-    enButton.classList.add("fs-4");
+    deButton.classList.add("active");
+    enButton.classList.remove("active");
     htmlElement.setAttribute("lang", "de");
   } else if (selectedLang === "en") {
-    enButton.classList.add("fs-2");
-    deButton.classList.remove("fs-2");
-    deButton.classList.add("fs-4");
+    enButton.classList.add("active");
+    deButton.classList.remove("active");
     htmlElement.setAttribute("lang", "en");
   }
 }

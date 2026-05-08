@@ -12,7 +12,7 @@ index__quote_h,Zitierempfehlung,Recommended citation
 index__contact_h,"Kontakt","Contact"
 index__contact_text,"Das Projekt “Familiensache. Dynastische Handlungsspielräume in der Korrespondenz von Kaiserin Eleonora Magdalena von Pfalz-Neuburg (1655–1720)” wird am Institut für die Erforschung der Habsburgermonarchie und des Balkanraumes der Österreichischen Akademie der Wissenschaften durchgeführt und durch den FWF gefördert.","The project “Family Matters. Dynastic agency in the correspondence of Empress Eleonora Magdalena of Palatinate-Neuburg (1655–1720)“ is being carried out at the Institute for Habsburg and Balkan Studies at the Austrian Academy of Sciences and funded by the FWF."
 navbar__brand,Die Korrespondenz,"The correspondence"
-navbar__project,Zur Edition,About the edition
+navbar__project,Zur Edition,About
 navbar__about,Über die digitale Edition,About the digital edition
 navbar__tradition,Überlieferung der Quellen,Tradition of the sources
 navbar__cipher,Chiffre,Cipher
@@ -35,11 +35,14 @@ navbar_storymap,Storymap,Storymap
 calendar__legendtitle,Legende (Farben),Legend
 calendar__legendextant,Brief liegt vor,extant letter
 calendar__legendrefd,Brief wird in einem vorliegenden Brief referenziert,letter referenced by date in another letter
-navbar__biography,Biographien,Biographies
+index__biography,Biographien,Biographies
+navbar__biogen,Biographien & Genealogien,Biographies & Genealogies
 navbar__eleonora,Eleonora Magdalena von Pfalz-Neuburg,Eleonora Magdalena von Pfalz-Neuburg
 navbar__johannwilhelm,Johann Wilhelm von Pfalz-Neuburg,Johann Wilhelm von Pfalz-Neuburg.
 navbar_philippwilhelm,Philipp Wilhelm von Pfalz-Neuburg,Philipp Wilhelm von Pfalz-Neuburg
 navbar_gen,Genealogien,Genealogies
+navbar__publications,Publikationen,Publications
+navbar__howto,Benutzung der Edition,How to use the edition 
 toc_counter_label,"{{count}} von {{total}} Briefen","{{count}} of {{total}} letters"
 listperson_counter_label,"{{count}} von {{total}} Personen","{{count}} of {{total}} persons"
 listplace_counter_label,"{{count}} von {{total}} Orten","{{count}} of {{total}} places"
