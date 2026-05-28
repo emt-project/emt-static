@@ -168,6 +168,11 @@
         <span class="codename" tabindex="0" data-bs-toggle="popover" data-bs-content="Codename für Johann Wilhelm">
             <xsl:apply-templates/>
         </span>
+        <xsl:choose>
+            <xsl:when test="contains(./following-sibling::text()[1], ' ')">
+                <xsl:text>&#32;</xsl:text>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     <xsl:template match="tei:seg[@type='blackening']">
         <span class="seg-blackening">
