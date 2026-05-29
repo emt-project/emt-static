@@ -66,12 +66,9 @@
         <span tabindex="0" class="unclear" data-bs-toggle="popover" data-bs-content="{$reason}">
             <xsl:apply-templates/>
         </span>
-
-        <xsl:choose>
-            <xsl:when test="./following-sibling::node()[1][self::text() = ' ']">
-                <xsl:text>&#32;</xsl:text>
-            </xsl:when>
-        </xsl:choose>
+        <xsl:if test="not(matches(./following-sibling::text()[1], '^\s*[,\.;:!?]'))">
+            <xsl:text>&#32;</xsl:text>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="tei:del">
         <del>
@@ -101,37 +98,37 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-            <span>
-                <xsl:if test="@cert">
-                    <xsl:attribute name="data-bs-toggle"/>
-                    <xsl:attribute name="tabindex">0</xsl:attribute>
-                    <xsl:attribute name="data-bs-toggle">popover</xsl:attribute>
-                    <xsl:attribute name="data-bs-content">Identifizierung fraglich</xsl:attribute>
-                </xsl:if>
-                <xsl:attribute name="class">
-                    <xsl:value-of select="concat('entity entity-', $entityType)"/>
-                </xsl:attribute>
-                <xsl:element name="a">
-                    <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
-                    <xsl:choose>
-                        <xsl:when test="contains($entityRef, ' ')">
-                            <xsl:variable name="rsCnt">
-                                <xsl:number level="any" count="//tei:rs[contains(@ref, ' ')]"/>
-                            </xsl:variable>
-                            <xsl:attribute name="data-bs-target">
-                                <xsl:value-of select="concat(string-join(tokenize($entityRef, ' #')), '--', $rsCnt)"/>
-                            </xsl:attribute>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:attribute name="data-bs-target">
-                                <xsl:value-of select="$entityRef"/>
-                            </xsl:attribute>
-                        </xsl:otherwise>
-                    </xsl:choose>
+        <span>
+            <xsl:if test="@cert">
+                <xsl:attribute name="data-bs-toggle"/>
+                <xsl:attribute name="tabindex">0</xsl:attribute>
+                <xsl:attribute name="data-bs-toggle">popover</xsl:attribute>
+                <xsl:attribute name="data-bs-content">Identifizierung fraglich</xsl:attribute>
+            </xsl:if>
+            <xsl:attribute name="class">
+                <xsl:value-of select="concat('entity entity-', $entityType)"/>
+            </xsl:attribute>
+            <xsl:element name="a">
+                <xsl:attribute name="data-bs-toggle">modal</xsl:attribute>
+                <xsl:choose>
+                    <xsl:when test="contains($entityRef, ' ')">
+                        <xsl:variable name="rsCnt">
+                            <xsl:number level="any" count="//tei:rs[contains(@ref, ' ')]"/>
+                        </xsl:variable>
+                        <xsl:attribute name="data-bs-target">
+                            <xsl:value-of select="concat(string-join(tokenize($entityRef, ' #')), '--', $rsCnt)"/>
+                        </xsl:attribute>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:attribute name="data-bs-target">
+                            <xsl:value-of select="$entityRef"/>
+                        </xsl:attribute>
+                    </xsl:otherwise>
+                </xsl:choose>
 
-                    <xsl:apply-templates/>
-                </xsl:element>
-            </span>
+                <xsl:apply-templates/>
+            </xsl:element>
+        </span>
         <xsl:choose>
             <xsl:when test="./following-sibling::text()[1][not(starts-with(., ','))]">
                 <xsl:text>&#32;</xsl:text>
@@ -163,39 +160,33 @@
         <span class="unclear-ciphered">
             <xsl:apply-templates/>
         </span>
+        <xsl:if test="not(matches(./following-sibling::text()[1], '^\s*[,\.;:!?]'))">
+            <xsl:text>&#32;</xsl:text>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="tei:addName[@type='Codename']">
         <span class="codename" tabindex="0" data-bs-toggle="popover" data-bs-content="Codename für Johann Wilhelm">
             <xsl:apply-templates/>
         </span>
-        <xsl:choose>
-            <xsl:when test="contains(./following-sibling::text()[1], ' ')">
-                <xsl:text>&#32;</xsl:text>
-            </xsl:when>
-        </xsl:choose>
+        <xsl:if test="not(matches(./following-sibling::text()[1], '^\s*[,\.;:!?]'))">
+            <xsl:text>&#32;</xsl:text>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="tei:seg[@type='blackening']">
         <span class="seg-blackening">
             <xsl:apply-templates/>
         </span>
-        <xsl:choose>
-            <xsl:when test="contains(./following-sibling::text()[1], ' ')">
-                <xsl:text>&#32;</xsl:text>
-            </xsl:when>
-        </xsl:choose>
-        <!--<xsl:choose>
-            <xsl:when test="./following-sibling::text()[1][not(starts-with(., ','))]"><xsl:text>&#32;</xsl:text></xsl:when>
-        </xsl:choose>-->
+        <xsl:if test="not(matches(./following-sibling::text()[1], '^\s*[,\.;:!?]'))">
+            <xsl:text>&#32;</xsl:text>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="tei:supplied">
         <span class="supplied">
             <xsl:apply-templates/>
         </span>
-        <xsl:choose>
-            <xsl:when test="./following-sibling::node()[1][self::text() = ' ']">
-                <xsl:text>&#32;</xsl:text>
-            </xsl:when>
-        </xsl:choose>
+        <xsl:if test="not(matches(./following-sibling::text()[1], '^\s*[,\.;:!?]'))">
+            <xsl:text>&#32;</xsl:text>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="tei:add">
         <span class="add">
