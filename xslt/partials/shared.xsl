@@ -184,7 +184,7 @@
         <span class="supplied">
             <xsl:apply-templates/>
         </span>
-        <xsl:if test="not(matches(./following-sibling::text()[1], '^\s*[,\.;:!?]'))">
+        <xsl:if test="./following-sibling::node()[1][self::text() = ' ']">
             <xsl:text>&#32;</xsl:text>
         </xsl:if>
     </xsl:template>
