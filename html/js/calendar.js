@@ -70,7 +70,7 @@ async function request(url) {
     const events = await response.json();
     const expanded = [];
     events.forEach((event) => {
-        if (event.range) {
+        if (event.range && event.kind === "visits") {
             const from = new Date(event.from);
             const to = new Date(event.to);
             for (let d = new Date(from); d <= to; d.setDate(d.getDate() + 1)) {
