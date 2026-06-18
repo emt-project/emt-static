@@ -181,7 +181,9 @@ for mention in owned_mentions:
             event["ref_by"] = mention["ref_by"]
 
 # add visits
-for visit in visits_data:
+for visit in visits_data.values():
+    if not (visit.get("description") and visit.get("from") and visit.get("to")):
+        continue
     visit_item = {
         "link": False,
         "label": visit["description"],
