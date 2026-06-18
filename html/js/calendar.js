@@ -68,9 +68,19 @@ function onEventClick(event) {
 async function request(url) {
     const response = await fetch(url);
     const events = await response.json();
-    return events.map((event) => {
-        return { ...event, date: new Date(event.date) };
+    const expanded = [];
+    events.forEach((event) => {
+        if (event.range) {
+            const from = new Date(event.from);
+            const to = new Date(event.to);
+            for (let d = new Date(from); d <= to; d.setDate(d.getDate() + 1)) {
+                expanded.push({ ...event, date: new Date(d) });
+            }
+        } else {
+            expanded.push({ ...event, date: new Date(event.date) });
+        }
     });
+    return expanded;
 }
 
 try {

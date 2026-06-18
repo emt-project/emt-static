@@ -3,9 +3,6 @@
     --drittbriefe: #7a6855;
     --emt_person_id__18:  #04207c;
     --emt_person_id__50:  #025802;
-    /* --mentioned_letter_emt: #ae4d4d;
-    --mentioned_letter_pw:  #4F824F;
-    --mentioned_letter_jw: #3b5998; */
     --mehrere_briefe: #545454;
 }
 
@@ -67,7 +64,7 @@ acdh-ch-calendar-year td>button[data-event-kinds] {
     --calendar-cell-color: #52525b;
 }
 
-acdh-ch-calendar-year td>button[data-event-kinds="emt_person_id__9.html"] {
+acdh-ch-calendar-year td>button[data-event-kinds~="emt_person_id__9.html"] {
     --calendar-cell-color: var(--emt_person_id__9)
 }
 
@@ -127,6 +124,20 @@ acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
     --calendar-cell-color: #5611f7;
 }
 
+acdh-ch-calendar-year td>button[data-event-kinds="visits"] {
+    --calendar-cell-color: transparent;
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--emt-deco-color);
+
+}
+acdh-ch-calendar-year td>button[data-event-kinds~="visits"]:not([data-event-kinds="visits"]) {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: white;
+}
+
 
 .emt_person_id__9 {
     background-color: var(--emt_person_id__9)
@@ -145,7 +156,6 @@ acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
 }
 
 .mentioned_letter_emt {
-    /* background-color: color-mix(in srgb, var(--emt_person_id__9) 20%, transparent); */
     background-color: transparent;
     border: 2px solid var(--emt_person_id__9);
 }
@@ -156,15 +166,26 @@ acdh-ch-calendar-year td>button[data-event-kinds="unknown"] {
 
 
 .mentioned_letter_pw {
-    /* background-color: color-mix(in srgb, var(--emt_person_id__50) 20%, transparent); */
     background-color: transparent;
     border: 2px solid var(--emt_person_id__50);
 }
 
 .mentioned_letter_jw {
-    /* background-color: color-mix(in srgb, var(--emt_person_id__18) 20%, transparent); */
     background-color: transparent;
     border: 2px solid var(--emt_person_id__18);
+}
+.visits {
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--emt-deco-color);
+}
+.visits_uncertain {
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--emt-deco-color);
 }
 /* the legend */
 .calendar-menu {

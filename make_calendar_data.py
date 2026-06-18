@@ -12,6 +12,9 @@ file_list = sorted(glob.glob("./data/editions/*.xml"))
 mentioned_letters_data = requests.get(
     "https://raw.githubusercontent.com/emt-project/emt-entities/refs/heads/main/json_dumps/mentioned_letters.json"
 ).json()
+visits_data = requests.get(
+    "https://raw.githubusercontent.com/emt-project/emt-entities/refs/heads/main/json_dumps/visits.json"
+).json()
 data_dir = os.path.join("html", "js-data")
 os.makedirs(data_dir, exist_ok=True)
 out_file = os.path.join(data_dir, "calendarData.json")
@@ -177,6 +180,18 @@ for mention in owned_mentions:
         if event.get("link") == mention["link"]:
             event["ref_by"] = mention["ref_by"]
 
+# add visits
+for visit in visits_data:
+    visit_item = {
+        "link": False,
+        "label": visit["description"],
+        "kind": "visits",
+        "date": None,
+        "from": visit["from"],
+        "to": visit["to"],
+    }   
+    events.append(visit_item)
+    
 with open(out_file, "w", encoding="utf-8") as f:
     json.dump(events, f, ensure_ascii=False, indent=2)
 

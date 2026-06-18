@@ -70,7 +70,14 @@
                                         <span class="dot mehrere_briefe"></span>
                                         <span class="legend-item">Mehrere Briefe unterschiedlicher AbsenderInnen</span>
                                     </li>
-
+                                    <li>
+                                        <span class="visits">1</span>
+                                        <span class="legend-item">gemeinsame Aufenthalte</span>
+                                    </li>
+                                    <li>
+                                        <span class="visits_uncertain">2</span>
+                                        <span class="legend-item">unsichere Datierung</span>
+                                    </li>
                                 </ul>
                             </acdh-ch-calendar-legend>
                         </div>
