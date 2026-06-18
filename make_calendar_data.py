@@ -186,11 +186,13 @@ for visit in visits_data.values():
         continue
     visit_item = {
         "link": False,
-        "label": visit["description"],
-        "kind": "visits",
         "date": None,
         "from": visit["from"],
         "to": visit["to"],
+        "range": True,
+        "label": visit["description"],
+        "kind": "visits",
+
     }   
     events.append(visit_item)
     
