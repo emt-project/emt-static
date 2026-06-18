@@ -71,11 +71,11 @@
                                         <span class="legend-item">Mehrere Briefe unterschiedlicher AbsenderInnen</span>
                                     </li>
                                     <li>
-                                        <span class="visits">1</span>
+                                        <span class="visits">13</span>
                                         <span class="legend-item">gemeinsame Aufenthalte</span>
                                     </li>
                                     <li>
-                                        <span class="visits_uncertain">2</span>
+                                        <span class="visits_uncertain">31</span>
                                         <span class="legend-item">unsichere Datierung</span>
                                     </li>
                                 </ul>
