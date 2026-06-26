@@ -39,6 +39,11 @@ except ObjectNotFound:
 current_schema = {
     "name": "emt",
     "enable_nested_fields": True,
+    "metadata": {
+        "owners": ["Peter Andorfer", "Kinga Sramó"],
+        "description": "https://github.com/emt-project/emt-static",
+        "service_ids": [21311],
+    },
     "fields": [
         {"name": "id", "type": "string"},
         {"name": "rec_id", "type": "string"},
