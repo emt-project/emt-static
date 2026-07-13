@@ -118,6 +118,9 @@ const tabulator_cfg = {
   headerFilterLiveFilterDelay: 600,
   responsiveLayout: "collapse",
   langs: langs,
+  columnDefaults: {
+    headerMenu: headerMenu
+  },
   columns: columns,
 };
 

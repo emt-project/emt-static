@@ -44,7 +44,7 @@
                                     <th scope="col" >Erwähnungen</th>
                                     <th scope="col" >lat</th>
                                     <th scope="col" >lng</th>
-                                    <th scope="col" >ID</th>
+                                    <th scope="col" tabulator-visible="false">ID</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -97,6 +97,7 @@
                 <xsl:call-template name="html_footer"/>
                 <script type="text/javascript" src="vendor/tabulator-tables/js/tabulator.min.js"></script>
                 <script type="text/javascript" src="vendor/leaflet.fullscreen/Control.FullScreen.umd.js"></script>
+                <script src="tabulator-js/headermenu.js"/>
                 <script src="js/map_table_cfg.js"/>
                 <script src="js/make_map_and_table.js"/>
                 
@@ -130,7 +131,9 @@
                             </div>
                         </main>
                         <xsl:call-template name="html_footer"/>
-                        <xsl:call-template name="tabulator_js"/>
+                        <xsl:call-template name="tabulator_js">
+                            <xsl:with-param name="addHeaderMenu" select="'true'"/>
+                        </xsl:call-template>
                         <xsl:if test="./tei:location/tei:geo">
                             <link rel="stylesheet" href="vendor/leaflet/leaflet.css"/>
                             <script src="vendor/leaflet/leaflet.js"></script>
