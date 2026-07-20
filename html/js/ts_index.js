@@ -432,8 +432,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const panelHeaders = document.querySelectorAll('.ais-Panel-header');
     panelHeaders.forEach(header => {
       header.style.cursor = 'pointer';
+      const collapseButton = header.querySelector('.ais-Panel-collapseButton');
+      if (collapseButton) {
+        const headerText = header.querySelector('.ais-Panel-headerText')?.textContent?.trim()
+          || header.textContent?.trim()
+          || 'Filter';
+        collapseButton.setAttribute('aria-label', `${headerText} ein-/ausblenden`);
+      }
       header.addEventListener('click', (event) => {
-        const collapseButton = header.querySelector('.ais-Panel-collapseButton');
         if (collapseButton && !event.target.closest('.ais-Panel-collapseButton')) {
           collapseButton.click();
         }
