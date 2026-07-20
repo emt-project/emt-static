@@ -8,7 +8,7 @@
             <xsl:if test="./tei:figure">
                 <div class="col-md-4 d-flex justify-content-center">
                     <figure class="figure">
-                        <img src="{concat('bio-pics/', .//tei:graphic[1]/@url)}" class="figure-img img-fluid rounded"></img>
+                        <img src="{concat('bio-pics/', .//tei:graphic[1]/@url)}" class="figure-img img-fluid rounded" alt="{.//tei:caption/text()}"></img>
                         <figcaption class="figure-caption">
                             Das <abbr title="{.//tei:caption/text()}">Bild</abbr> wurde automatisiert aus Wikidata übernommen.<xsl:element name="br"/>
                         </figcaption>

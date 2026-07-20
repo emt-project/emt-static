@@ -32,6 +32,9 @@
                                         <xsl:attribute name="src">
                                             <xsl:value-of select=".//tei:graphic/@url"/>
                                         </xsl:attribute>
+                                        <xsl:attribute name="alt">
+                                            <xsl:value-of select="normalize-space(.//tei:figure/tei:figDesc[1])"/>
+                                        </xsl:attribute>
                                     </img>
                                     <figcaption><xsl:apply-templates select=".//tei:figure/tei:figDesc[1]"/></figcaption>
                                     <figcaption>(c) <xsl:apply-templates select=".//tei:figure/tei:figDesc[2]"/></figcaption>

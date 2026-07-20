@@ -141,6 +141,9 @@
                         <xsl:attribute name="src">
                             <xsl:value-of select="'img/'||tokenize(data($imgurl), '/')[last()]"/>
                         </xsl:attribute>
+                        <xsl:attribute name="alt">
+                            <xsl:value-of select="normalize-space(.//tei:desc)"/>
+                        </xsl:attribute>
                     </img>
                     <xsl:if test=".//tei:desc">
                         <figcaption class="p-2 pt-1 w-100"><xsl:apply-templates select=".//tei:desc"/></figcaption>
@@ -155,6 +158,9 @@
                     <img class="p-2 pt-1 w-100">
                         <xsl:attribute name="src">
                             <xsl:value-of select="'img/'||tokenize(data($imgurl), '/')[last()]"/>
+                        </xsl:attribute>
+                        <xsl:attribute name="alt">
+                            <xsl:value-of select="normalize-space(.//tei:desc)"/>
                         </xsl:attribute>
                     </img>
                     <xsl:if test=".//tei:desc">

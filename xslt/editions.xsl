@@ -112,7 +112,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div id="{$openSeadragonId}">
-                                        <img id="{$openSeadragonId}-img" src="{normalize-space($facs-url)}" onload="loadImage('{$openSeadragonId}', '{$rotation}')"></img>
+                                        <img id="{$openSeadragonId}-img" src="{normalize-space($facs-url)}" onload="loadImage('{$openSeadragonId}', '{$rotation}')" alt="Faksimile"></img>
                                         <!-- cosy spot for OSD viewer  -->
                                     </div>
                                 </div>
