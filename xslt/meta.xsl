@@ -59,7 +59,7 @@
                         <hr class="hr-custom"/>
                         <p style="text-align:center;">
                             <xsl:for-each select=".//tei:note">
-                                <div class="footnotes">
+                                <div class="footnote">
                                     <xsl:choose>
                                         <xsl:when test=".//ancestor-or-self::tei:div[@xml:lang='en']">
                                             <xsl:attribute name="data-mylang"><xsl:value-of select="'en'"/></xsl:attribute>
@@ -73,28 +73,27 @@
                                         <xsl:number level="any" format="1"
                                             count="tei:note"/>
                                     </xsl:attribute>
-                                    <xsl:element name="a">
+                                    <a>
                                         <xsl:attribute name="name">
                                             <xsl:text>fn</xsl:text>
                                             <xsl:number level="any" format="1"
                                                 count="tei:note"/>
                                         </xsl:attribute>
-                                    </xsl:element>
-                                    <a>
                                         <xsl:attribute name="href">
                                             <xsl:text>#fna_</xsl:text>
                                             <xsl:number level="any" format="1"
                                                 count="tei:note"/>
                                         </xsl:attribute>
-                                        <span
-                                            style="font-size:7pt;vertical-align:super; margin-right: 0.4em">
+                                        <sup class="footnote-number">
                                             <xsl:number level="any" format="1"
                                                 count="tei:note"/>
-                                        </span>
+                                        </sup>
                                     </a>
-                                    <xsl:for-each select="./tei:p">
-                                        <xsl:apply-templates />
-                                    </xsl:for-each>
+                                    <span class="footnote-content">
+                                        <xsl:for-each select="./tei:p">
+                                            <xsl:apply-templates />
+                                        </xsl:for-each>
+                                    </span>
                                 </div>
                             </xsl:for-each>
                         </p>

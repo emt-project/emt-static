@@ -147,9 +147,9 @@
 
                                 <div class="footnote" id="{local:makeId(.)}">
                                     <a name="fn{$note-number}" href="#fna_{$note-number}">
-                                        <span class="footnote-number">
+                                        <sup class="footnote-number">
                                             <xsl:value-of select="$note-number"/>
-                                        </span>
+                                        </sup>
                                     </a>
                                     <span class="footnote-content">
                                         <xsl:apply-templates/>
