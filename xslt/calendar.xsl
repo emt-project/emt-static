@@ -23,9 +23,9 @@
 
                 <xsl:call-template name="nav_bar"/>
 
+                <main class="flex-shrink-0">
                 <div class="container">
-
-                    <h1 class="text-center display-5 p-3"> Kalender</h1>
+                    <h1 class="text-center display-5 p-3">Kalender</h1>
                     <a style="padding-left:5px;" href="js-data/calendarData.js">
                         <i class="fas fa-download" title="Data"/>
                     </a>
@@ -110,6 +110,7 @@
                         </div>
                     </div>
                 </div>
+                </main>
 
                 <xsl:call-template name="html_footer"/>
                 <script type="module" src="js/calendar.js"/>
