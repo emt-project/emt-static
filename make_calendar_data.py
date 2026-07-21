@@ -184,16 +184,20 @@ for mention in owned_mentions:
 for visit in visits_data.values():
     if not (visit.get("description") and visit.get("from") and visit.get("to")):
         continue
+    uncertainty = visit.get("uncertainty", [])
+    uncertainty_value = uncertainty[0]["value"] if uncertainty else None
+    date_text = visit.get("date_text")
+    visit_label = visit["description"] + (f" ({date_text})" if date_text else "")
     visit_item = {
         "link": False,
         "date": None,
         "from": visit["from"],
         "to": visit["to"],
         "range": True,
-        "label": visit["description"],
+        "label": visit_label,
         "kind": "visits",
-
-    }   
+        "uncertainty": uncertainty_value,
+    }
     events.append(visit_item)
     
 with open(out_file, "w", encoding="utf-8") as f:

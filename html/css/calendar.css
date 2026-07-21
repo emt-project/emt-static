@@ -138,6 +138,19 @@ acdh-ch-calendar-year td>button[data-event-kinds~="visits"]:not([data-event-kind
     text-decoration-color: white;
 }
 
+acdh-ch-calendar-year td>button[data-event-kinds="visits_uncertain"] {
+    --calendar-cell-color: transparent;
+    color: inherit;
+    text-decoration: underline dotted;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--emt-deco-color);
+}
+acdh-ch-calendar-year td>button[data-event-kinds~="visits_uncertain"]:not([data-event-kinds="visits_uncertain"]) {
+    text-decoration: underline dotted;
+    text-decoration-thickness: 3px;
+    text-decoration-color: white;
+}
+
 
 .emt_person_id__9 {
     background-color: var(--emt_person_id__9)

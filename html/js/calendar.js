@@ -74,7 +74,20 @@ async function request(url) {
             const from = new Date(event.from);
             const to = new Date(event.to);
             for (let d = new Date(from); d <= to; d.setDate(d.getDate() + 1)) {
-                expanded.push({ ...event, date: new Date(d) });
+                const dateStr = d.toISOString().slice(0, 10);
+                let kind = "visits";
+                if (event.uncertainty) {
+                    const isFrom = dateStr === event.from;
+                    const isTo = dateStr === event.to;
+                    if (
+                        (event.uncertainty === "from" && isFrom) ||
+                        (event.uncertainty === "to" && isTo) ||
+                        (event.uncertainty === "both" && (isFrom || isTo))
+                    ) {
+                        kind = "visits_uncertain";
+                    }
+                }
+                expanded.push({ ...event, date: new Date(d), kind });
             }
         } else {
             expanded.push({ ...event, date: new Date(event.date) });
