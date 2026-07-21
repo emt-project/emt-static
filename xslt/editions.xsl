@@ -110,15 +110,24 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-md-6">
-                                    <div id="{$openSeadragonId}">
-                                        <img id="{$openSeadragonId}-img" src="{normalize-space($facs-url)}" onload="loadImage('{$openSeadragonId}', '{$rotation}')" alt="Faksimile"></img>
-                                        <!-- cosy spot for OSD viewer  -->
-                                    </div>
-                                </div>
-                                <div class="col-md-6 pe-xl-0 pe-5 editionstext">
-                                    <xsl:apply-templates/>
-                                </div>
+                                <xsl:choose>
+                                    <xsl:when test="//tei:facsimile">
+                                        <div class="col-md-6">
+                                            <div id="{$openSeadragonId}">
+                                                <img id="{$openSeadragonId}-img" src="{normalize-space($facs-url)}" onload="loadImage('{$openSeadragonId}', '{$rotation}')" alt="Faksimile"></img>
+                                                <!-- cosy spot for OSD viewer  -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 pe-xl-0 pe-5 editionstext">
+                                            <xsl:apply-templates/>
+                                        </div>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <div class="col-md-6 offset-md-3 pe-xl-0 pe-5 editionstext">
+                                            <xsl:apply-templates/>
+                                        </div>
+                                    </xsl:otherwise>
+                                </xsl:choose>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
