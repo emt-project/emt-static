@@ -322,16 +322,21 @@ a:hover {
 /* linenumbers */
 
 .linenumbers {
+  display: inline-block;
+  min-width: 3ch;
+  text-align: right;
   margin: 0 1.5em 0 0;
+  color: #666;
+  font-size: 0.75em;
+  font-variant-numeric: tabular-nums;
+  text-decoration: none;
 }
 
-.linenumbersTransparent {
-  color: transparent;
-}
-
-.linenumbersVisible,
-.active .linenumbersTransparent {
+.linenumbers.active,
+.transcript-line.active .linenumbers {
   color: #444;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .regest-text {

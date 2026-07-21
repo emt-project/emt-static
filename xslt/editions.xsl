@@ -419,22 +419,8 @@
                     <xsl:attribute name="zone">
                         <xsl:value-of select="$zones/@points"/>
                     </xsl:attribute>
-                    <xsl:choose>
-                        <xsl:when test="($lines mod 5) = 0">
-                            <xsl:attribute name="class">
-                                <xsl:text>linenumbersVisible linenumbers</xsl:text>
-                            </xsl:attribute>
-                            <xsl:attribute name="data-lbnr">
-                                <xsl:value-of select="$lines"/>
-                            </xsl:attribute>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:attribute name="class">
-                                <xsl:text>linenumbersTransparent linenumbers</xsl:text>
-                            </xsl:attribute>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    <xsl:value-of select="format-number($lines, '0000')"/>
+                    <xsl:attribute name="class">linenumbers</xsl:attribute>
+                    <xsl:value-of select="$lines"/>
                 </a>
             </xsl:if>
         </xsl:if>
