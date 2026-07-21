@@ -72,11 +72,11 @@
                                     </li>
                                     <li>
                                         <span class="visits">13</span>
-                                        <span class="legend-item">gemeinsame Aufenthalte</span>
+                                        <span class="legend-item">Aufenthalte am kaiserlichen Hof</span>
                                     </li>
                                     <li>
                                         <span class="visits_uncertain">31</span>
-                                        <span class="legend-item">unsichere Datierung</span>
+                                        <span class="legend-item">Aufenthalte am kaiserlichen Hof (unsichere Datierung)</span>
                                     </li>
                                 </ul>
                             </acdh-ch-calendar-legend>
