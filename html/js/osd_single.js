@@ -1,5 +1,8 @@
 /* function trigger when static html img was loaded */
 
+/* collect each page image URL as viewers load, preserving page order */
+var _sequenceImages = [];
+
 function loadImage(container_id, rotation) {
 
     /* get container holding the image and set height and padding */
@@ -12,13 +15,18 @@ function loadImage(container_id, rotation) {
         url: image.getAttribute("src")
     };
 
+    /* register this page's image alongside its container id for ordering */
+    _sequenceImages.push({ id: container_id, source: imageURL });
+
     // OpenSeaDragon Image Viewer
     var viewer = OpenSeadragon({
         id: container_id,
         prefixUrl: "vendor/openseadragon-bin-4.1.1/images/",
         defaultZoomLevel: 0,
         fitHorizontally: true,
-        tileSources: imageURL,
+        sequenceMode: true,
+        showSequenceControl: true,
+        tileSources: [imageURL],   // single-element array; all pages loaded on fullscreen entry
         degrees: (() => { let rot = parseInt(rotation); return isNaN(rot) ? 0 : rot; })(),
         showRotationControl: true, // Show rotation buttons
         gestureSettingsTouch: {
@@ -27,6 +35,31 @@ function loadImage(container_id, rotation) {
     });
     /* remove static html image element */
     image.remove();
+
+    /* hide sequence nav buttons until fullscreen is entered */
+    if (viewer.pagingControl) {
+        viewer.pagingControl.style.display = 'none';
+    }
+
+    /*
+     * On fullscreen entry: reveal sequence controls and navigate through sequence, starting with current page
+     * On fullscreen exit: hide sequence controls and restore single-page view
+     */
+    viewer.addHandler('full-screen', function(event) {
+        if (event.fullScreen) {
+            // need to sort the images by their container id, otherwise the order might be off because they're added by load order
+            var sorted = _sequenceImages.slice().sort(function(a, b) {
+                return parseInt(a.id.replace('os-id-', '')) - parseInt(b.id.replace('os-id-', ''));
+            });
+            var orderedImages = sorted.map(function(item) { return item.source; });
+            var startIdx = sorted.findIndex(function(item) { return item.source.url === imageURL.url; });
+            if (viewer.pagingControl) viewer.pagingControl.style.display = '';
+            viewer.open(orderedImages, startIdx < 0 ? 0 : startIdx);
+        } else {
+            if (viewer.pagingControl) viewer.pagingControl.style.display = 'none';
+            viewer.open([imageURL], 0);
+        }
+    });
 }
 
 
@@ -213,3 +246,4 @@ function createOverlays() {
         });
     });
 }
+
