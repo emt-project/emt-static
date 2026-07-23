@@ -93,7 +93,7 @@
                                         <a class="dropdown-item" data-i18n="navbar__blog" href="https://kaiserin.hypotheses.org/" />
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" data-i18n="navbar__publications" href="publikationen.html" />
+                                        <a class="dropdown-item" data-i18n="navbar__scholarly_publications" href="publikationen.html" />
                                     </li>
                                 </ul>
                             </li>
