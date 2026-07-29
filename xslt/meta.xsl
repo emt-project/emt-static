@@ -281,4 +281,8 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
+
+    <xsl:template match="tei:idno">
+        <strong><xsl:apply-templates/></strong>
+    </xsl:template>
 </xsl:stylesheet>
