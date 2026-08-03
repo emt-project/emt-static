@@ -584,3 +584,8 @@ button.ais-RangeInput-submit:hover,
   background-color: var(--bs-link-color);
   border-color: var(--bs-link-color)
 }
+
+.bibliography li{
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+}

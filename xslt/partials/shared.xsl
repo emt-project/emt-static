@@ -11,21 +11,21 @@
         <xsl:value-of select="concat(name($currentNode), '__', $nodeCurrNr)"/>
     </xsl:function>
 
-    <xsl:template match="tei:note[not(ancestor::tei:div[@type='attachment']/tei:ab)]">
+    <xsl:template match="tei:note[not(ancestor::tei:div[@type='attachment']/tei:ab) and not(ancestor::tei:biblStruct)]">
         <xsl:element name="a">
             <xsl:attribute name="name">
                 <xsl:text>fna_</xsl:text>
-                <xsl:number level="any" format="1" count="tei:note"/>
+                <xsl:number level="any" format="1" count="tei:note[not(ancestor::tei:biblStruct)]"/>
             </xsl:attribute>
             <xsl:attribute name="href">
                 <xsl:text>#fn</xsl:text>
-                <xsl:number level="any" format="1" count="tei:note"/>
+                <xsl:number level="any" format="1" count="tei:note[not(ancestor::tei:biblStruct)]"/>
             </xsl:attribute>
             <xsl:attribute name="title">
                 <xsl:value-of select="normalize-space(.)"/>
             </xsl:attribute>
             <sup class="footnote-number">
-                <xsl:number level="any" format="1" count="tei:note"/>
+                <xsl:number level="any" format="1" count="tei:note[not(ancestor::tei:biblStruct)]"/>
             </sup>
         </xsl:element>
     </xsl:template>
