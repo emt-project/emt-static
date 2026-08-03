@@ -304,13 +304,13 @@
     <!-- Template for the root element -->
     <xsl:template match="tei:listBibl">
     <ul class="list-unstyled bibliography lh-lg">
-        <xsl:apply-templates select="tei:biblStruct" />
+        <xsl:apply-templates select="tei:biblStruct">
+            <xsl:sort select="(tei:analytic/tei:author[1]/tei:surname | tei:monogr/tei:editor[1]/tei:surname)[1]" lang="de"/>
+        </xsl:apply-templates>
     </ul>
     </xsl:template>
 
    
-
-    <!-- Haupttemplate: Wählt das passende Template basierend auf dem Typ -->
     <xsl:template match="tei:biblStruct">
     <li class="pb-2">
         <xsl:choose>
