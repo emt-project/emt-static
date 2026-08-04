@@ -19,8 +19,8 @@ for x in tqdm(files):
     try:
         regest = extract_fulltext(doc.any_xpath(".//tei:abstract[@n='regest']")[0])
     except IndexError:
-        print(f"problematic TEI Header in file: {x}")
-        continue
+        print(f"No abstract[@n='regest'] element in {x}")
+        regest = ""
     if regest:
         doc_status += "Regest; "
     if not doc_status:
