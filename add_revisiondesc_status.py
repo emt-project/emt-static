@@ -1,3 +1,4 @@
+import copy
 import glob
 from acdh_tei_pyutils.tei import TeiReader
 from acdh_tei_pyutils.utils import extract_fulltext
@@ -10,10 +11,15 @@ print(f"adding revisionDesc @status and @n values for {len(files)} documents")
 for x in tqdm(files):
     doc_status = ""
     doc = TeiReader(x)
-    fulltext = extract_fulltext(doc.any_xpath(".//tei:body")[0])
+    body = doc.any_xpath(".//tei:body")[0]
+    # remove attachments from body for fulltext extraction
+    body_copy = copy.deepcopy(body)
+    for attachment in body_copy.findall(".//tei:div[@type='attachment']", {"tei": "http://www.tei-c.org/ns/1.0"}):
+        attachment.getparent().remove(attachment)
+    fulltext = extract_fulltext(body_copy, ["tei:head"])
     if fulltext:
         doc_status += "Volltext; "
-    rs_tags = doc.any_xpath(".//tei:body//tei:rs")
+    rs_tags = doc.any_xpath(".//tei:body//tei:rs[not(ancestor::tei:div[@type='attachment'])]")
     if rs_tags:
         doc_status += "Entitäten; "
     try:
