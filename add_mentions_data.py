@@ -54,9 +54,9 @@ for x in files:
                             recipient = mention_info["recipient"][0]
                             build_bibl_entry(list_bibl, f"emt_letter_id__{mention_id}", date_attribs, sender, recipient)
                     elif target.endswith(".xml"):
-                        mention_id = target.removeprefix("#").removesuffix(".xml")
+                        mention_id = target.removeprefix("#")
                         if mention_id not in unique_letters:
-                            mentioned_doc_path = f"./data/editions/{mention_id}.xml"
+                            mentioned_doc_path = f"./data/editions/{mention_id}"
                             if not os.path.exists(mentioned_doc_path):
                                 print(f"Referenced file {mentioned_doc_path} does not exist.")
                                 continue
