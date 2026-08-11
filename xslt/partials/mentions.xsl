@@ -9,7 +9,7 @@
                                     <table class="table" id="myTable">
                                         <thead>
                                             <tr>
-                                                <th scope="col" tabulator-headerFilter="input" tabulator-visible="false" tabulator-download="false">itemid</th>
+                                                <th scope="col" tabulator-visible="false" tabulator-download="false">itemid</th>
                                                 <th scope="col" tabulator-headerFilter="input">Brief</th>
                                                 <th scope="col" tabulator-headerFilter="input">Datum</th>
                                             </tr>

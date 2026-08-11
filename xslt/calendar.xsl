@@ -39,44 +39,56 @@
                             <acdh-ch-calendar-legend>
                                 <ul class="list-unstyled">
                                     <li>
-                                        <span class="dot emt_person_id__9"></span>
-                                        <span class="legend-item">Eleonora Magdalena von Pfalz-Neuburg</span>
+                                        <button type="button" class="legend-toggle emt_person_id__9" data-kind="emt_person_id__9.html">
+                                            <span class="legend-item">Eleonora Magdalena von Pfalz-Neuburg</span>
+                                        </button>
                                     </li>
                                     <li>
-                                        <span class="dot mentioned_letter_emt"></span>
-                                        <span class="legend-item">Eleonora Magdalena von Pfalz-Neuburg (erwähnter Brief)</span>
+                                        <button type="button" class="legend-toggle mentioned_letter_emt" data-kind="mentioned_letter_emt">
+                                            <span class="legend-item">Eleonora Magdalena von Pfalz-Neuburg (erwähnter Brief)</span>
+                                        </button>
                                     </li>
                                     <li>
-                                        <span class="dot emt_person_id__18"></span>
-                                        <span class="legend-item">Johann Wilhelm von Pfalz-Neuburg</span>
+                                        <button type="button" class="legend-toggle emt_person_id__18" data-kind="emt_person_id__18.html">
+                                            <span class="legend-item">Johann Wilhelm von Pfalz-Neuburg</span>
+                                        </button>
                                     </li>
                                     <li>
-                                        <span class="dot mentioned_letter_jw"></span>
-                                        <span class="legend-item">Johann Wilhelm von Pfalz-Neuburg (erwähnter Brief)</span>
+                                        <button type="button" class="legend-toggle mentioned_letter_jw" data-kind="mentioned_letter_jw">
+                                            <span class="legend-item">Johann Wilhelm von Pfalz-Neuburg (erwähnter Brief)</span>
+                                        </button>
                                     </li>
                                     <li>
-                                        <span class="dot emt_person_id__50"></span>
-                                        <span class="legend-item">Philipp Wilhelm von Pfalz-Neuburg</span>
+                                        <button type="button" class="legend-toggle emt_person_id__50" data-kind="emt_person_id__50.html">
+                                            <span class="legend-item">Philipp Wilhelm von Pfalz-Neuburg</span>
+                                        </button>
                                     </li>
                                     <li>
-                                        <span class="dot mentioned_letter_pw"></span>
-                                        <span class="legend-item">Philipp Wilhelm von Pfalz-Neuburg (erwähnter Brief)</span>
+                                        <button type="button" class="legend-toggle mentioned_letter_pw" data-kind="mentioned_letter_pw">
+                                            <span class="legend-item">Philipp Wilhelm von Pfalz-Neuburg (erwähnter Brief)</span>
+                                        </button>
                                     </li>
                                     <li>
-                                        <span class="dot drittbriefe"></span>
-                                        <span class="legend-item">Drittbriefe</span>
+                                        <button type="button" class="legend-toggle drittbriefe" data-kind="drittbriefe">
+                                            <!-- <span class="dot drittbriefe"></span> -->
+                                            <span class="legend-item">Drittbriefe</span>
+                                        </button>
                                     </li>
                                     <li>
                                         <span class="dot mehrere_briefe"></span>
                                         <span class="legend-item">Mehrere Briefe unterschiedlicher AbsenderInnen</span>
                                     </li>
                                     <li>
-                                        <span class="visits">13</span>
-                                        <span class="legend-item">Aufenthalte am kaiserlichen Hof</span>
+                                        <button type="button" class="legend-toggle" data-kind="visits">
+                                            <span class="visits">13</span>
+                                            <span class="legend-item">Aufenthalte am kaiserlichen Hof</span>
+                                        </button>
                                     </li>
                                     <li>
-                                        <span class="visits_uncertain">31</span>
-                                        <span class="legend-item">Aufenthalte am kaiserlichen Hof (unsichere Datierung)</span>
+                                        <button type="button" class="legend-toggle" data-kind="visits_uncertain">
+                                            <span class="visits_uncertain">31</span>
+                                            <span class="legend-item">Aufenthalte am kaiserlichen Hof (unsichere Datierung)</span>
+                                        </button>
                                     </li>
                                 </ul>
                             </acdh-ch-calendar-legend>

@@ -38,7 +38,7 @@
                         <table class="table" id="myTable">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-visible="false" tabulator-download="false">itemid</th>
+                                    <th scope="col" tabulator-visible="false" tabulator-download="false">itemid</th>
                                     <th scope="col" tabulator-headerFilter="input" tabulator-minWidth="350">Name</th>
                                     <th scope="col" tabulator-headerFilter="input">Titel</th>
                                     <th scope="col" tabulator-headerFilter="input" tabulator-visible="false">Funktionsbezeichnungen</th>

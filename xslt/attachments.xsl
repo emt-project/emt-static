@@ -34,7 +34,7 @@
                         <table class="table" id="myTable">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false" tabulator-visible="false">itemId</th>
+                                    <th scope="col" tabulator-download="false" tabulator-visible="false">itemid</th>
                                     <th scope="col" tabulator-headerFilter="input" tabulator-minWidth="200">Dokument</th>
                                     <th scope="col" tabulator-headerFilter="input" tabulator-visible="false">Titel</th>
                                     <th scope="col" tabulator-headerFilter="input">Datum</th>
