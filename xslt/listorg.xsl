@@ -41,7 +41,7 @@
                                         <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-visible="false" tabulator-download="false">itemid</th>
                                         <th scope="col" tabulator-headerFilter="input" tabulator-minWidth="350">Name</th>
                                         <th scope="col" tabulator-headerFilter="input">Erwähnungen</th>
-                                        <th scope="col" tabulator-headerFilter="input">ID</th>
+                                        <th scope="col" tabulator-headerFilter="input" tabulator-visible="false">ID</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -71,6 +71,7 @@
                 </main>
                 <xsl:call-template name="html_footer"/>
                 <xsl:call-template name="tabulator_js">
+                     <xsl:with-param name="addHeaderMenu" select="'true'"/>
                     <xsl:with-param name="counterTranslationKey" select="'listorg_counter_label'"/>
                 </xsl:call-template>
             </body>
