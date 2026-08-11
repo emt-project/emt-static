@@ -19,9 +19,6 @@ for x in tqdm(files):
     fulltext = extract_fulltext(body_copy, ["tei:head"])
     if fulltext:
         doc_status += "Volltext; "
-    rs_tags = doc.any_xpath(".//tei:body//tei:rs[not(ancestor::tei:div[@type='attachment'])] | .//tei:abstract[@n='regest']//tei:rs")
-    if rs_tags:
-        doc_status += "Entitäten; "
     try:
         regest = extract_fulltext(doc.any_xpath(".//tei:abstract[@n='regest']")[0])
     except IndexError:
@@ -29,6 +26,9 @@ for x in tqdm(files):
         regest = ""
     if regest:
         doc_status += "Regest; "
+    rs_tags = doc.any_xpath(".//tei:body//tei:rs[not(ancestor::tei:div[@type='attachment'])] | .//tei:abstract[@n='regest']//tei:rs")
+    if rs_tags:
+        doc_status += "Entitäten; "
     if not doc_status:
         doc_status = "in Bearbeitung;"
     doc_status = doc_status.strip()
