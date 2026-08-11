@@ -16,7 +16,7 @@ for x in tqdm(files):
     body_copy = copy.deepcopy(body)
     for attachment in body_copy.findall(".//tei:div[@type='attachment']", {"tei": "http://www.tei-c.org/ns/1.0"}):
         attachment.getparent().remove(attachment)
-    fulltext = extract_fulltext(body_copy, ["tei:head"])
+    fulltext = extract_fulltext(body_copy, ["{http://www.tei-c.org/ns/1.0}head"])
     if fulltext:
         doc_status += "Volltext; "
     try:
