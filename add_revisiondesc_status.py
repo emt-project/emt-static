@@ -19,7 +19,7 @@ for x in tqdm(files):
     fulltext = extract_fulltext(body_copy, ["tei:head"])
     if fulltext:
         doc_status += "Volltext; "
-    rs_tags = doc.any_xpath(".//tei:body//tei:rs[not(ancestor::tei:div[@type='attachment'])]")
+    rs_tags = doc.any_xpath(".//tei:body//tei:rs[not(ancestor::tei:div[@type='attachment'])] | .//tei:abstract[@n='regest']//tei:rs")
     if rs_tags:
         doc_status += "Entitäten; "
     try:
