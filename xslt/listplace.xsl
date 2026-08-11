@@ -131,9 +131,7 @@
                             </div>
                         </main>
                         <xsl:call-template name="html_footer"/>
-                        <xsl:call-template name="tabulator_js">
-                            <xsl:with-param name="addHeaderMenu" select="'true'"/>
-                        </xsl:call-template>
+                        <xsl:call-template name="tabulator_js"/>
                         <xsl:if test="./tei:location/tei:geo">
                             <link rel="stylesheet" href="vendor/leaflet/leaflet.css"/>
                             <script src="vendor/leaflet/leaflet.js"></script>
