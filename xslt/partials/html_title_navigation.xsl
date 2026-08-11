@@ -89,13 +89,14 @@
             </button>
         </div>
 
-        <xsl:for-each select="//tei:msDesc">
-            <p class="text-center small">
+        <p class="text-center small">
+            <xsl:for-each select="//tei:msDesc">
+                <xsl:if test="position() > 1"><br/></xsl:if>
                 <xsl:value-of select="string-join((tei:msIdentifier/tei:repository, tei:msIdentifier/tei:settlement), ' ')"/>
                 <xsl:text>, </xsl:text>
                 <xsl:value-of select="tei:msIdentifier/tei:idno"/>
-            </p>
-        </xsl:for-each>
+            </xsl:for-each>
+        </p>
 
         <!-- Modal -->
         <xsl:call-template name="info_modal"/>
