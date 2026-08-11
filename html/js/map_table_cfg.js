@@ -10,8 +10,8 @@ const map_cfg = {
   initial_zoom: "5",
   max_zoom: "15",
   min_zoom: "2",
-  /* zoom level for a place on the map focused by clicking the corresponding row */
-  on_row_click_zoom: 10,
+  /* zoom level for a place on the map focused by clicking the corresponding icon */
+  focus_zoom: 10,
   initial_coordinates: [47.0708, 15.4386],
   base_map_url:
     "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
@@ -31,7 +31,9 @@ const columns = [
     headerFilter: "input",
     title: "Ortsname",
     field: "Ortsname",
-    formatter: "plaintext",
+    formatter: function (cell) {
+      return cell.getValue() + ' <button type="button" class="btn btn-link p-0 ps-1 zoom-to-point" title="Auf Karte anzeigen"><i class="bi bi-crosshair"></i></button>';
+    },
     resizable: false,
     minWidth: "350"
   },

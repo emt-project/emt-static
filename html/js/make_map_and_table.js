@@ -48,7 +48,7 @@ function fetch_tabulatordata_and_build_table(
   populateMapFromTable(
     table,
     map,
-    map_cfg.on_row_click_zoom,
+    map_cfg.focus_zoom,
     marker_layer,
     map_cfg.initial_coordinates,
     map_cfg.initial_zoom
@@ -105,7 +105,7 @@ function toggle_marker_visibility(marker) {
 function populateMapFromTable(
   table,
   map,
-  on_row_click_zoom,
+  focus_zoom,
   marker_layer,
   initial_coordinates,
   initial_zoom
@@ -127,7 +127,7 @@ function populateMapFromTable(
         zoom_to_point_from_row_data(
           row_data,
           map,
-          on_row_click_zoom,
+          focus_zoom,
           existing_markers_by_coordinates
         );
       } else {
@@ -175,15 +175,29 @@ function populateMapFromTable(
         document.getElementById("table-counter").innerHTML = counterText;
       }
     });
-    //eventlistener for click on row
-    table.on("rowClick", function (event, row) {
-      let row_data = row.getData();
-      zoom_to_point_from_row_data(
-        row_data,
-        map,
-        on_row_click_zoom,
-        existing_markers_by_coordinates
-      );
+    // zoom to marker when clicking the crosshair button in the Ortsname column
+    table.element.addEventListener("click", function (e) {
+      let btn = e.target.closest(".zoom-to-point");
+      if (!btn) return;
+      e.stopPropagation();
+      let row = table.getRow(btn.closest(".tabulator-row"));
+      if (row) {
+        let row_data = row.getData();
+        zoom_to_point_from_row_data(
+          row_data,
+          map,
+          focus_zoom,
+          existing_markers_by_coordinates
+        );
+        map.getContainer().scrollIntoView({ behavior: "smooth" });
+      }
+    });
+    // link to detail view on row click (skip if zoom button was clicked)
+    table.on("rowClick", function (e, row) {
+      if (e.target.closest(".zoom-to-point")) return;
+      var data = row.getData();
+      var url = data["itemid"];
+      window.open(url);
     });
     // enable resizing for icons on map
     resizeIconsOnZoom(map, existing_markers_by_coordinates);
