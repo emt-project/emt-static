@@ -32,6 +32,15 @@ function createCalendar(i18n, events, onEventClick) {
         const pdfUrl = `https://emt-project.github.io/emt-pdf/emt_korrespondenz_${currentYear}.pdf`;
         window.open(pdfUrl, '_blank');
     });
+
+    const calendarEl = document.querySelector("acdh-ch-calendar");
+    document.querySelectorAll('.legend-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const cssClass = `hide-${btn.dataset.kind.replace(/\./g, '_')}`;
+            calendarEl.classList.toggle(cssClass);
+            btn.classList.toggle('inactive');
+        });
+    });
 }
 
 
