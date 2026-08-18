@@ -5,14 +5,14 @@ import de from "../vendor/calendar-component/i18n/de.js";
 register({});
 // register()
 
-let currentYear = 1696; 
+let currentYear = 1696;
 function createCalendar(i18n, events, onEventClick) {
     const calendar = document.querySelector("acdh-ch-calendar");
     if (i18n != null) {
         /** Optionally set locale, defaults to english. */
         calendar.setI18n(i18n);
     }
-    calendar.setData({ events, currentYear});
+    calendar.setData({ events, currentYear });
 
     calendar.addEventListener("calendar-event-click", onEventClick);
     // const senders = new Map()
@@ -28,19 +28,21 @@ function createCalendar(i18n, events, onEventClick) {
     calendar.addEventListener("calendar-year-select", (event) => {
         currentYear = event.detail.year;
     });
-        document.getElementById("year-pdf-download-btn").addEventListener("click", () => {
+    document.getElementById("year-pdf-download-btn").addEventListener("click", () => {
         const pdfUrl = `https://emt-project.github.io/emt-pdf/emt_korrespondenz_${currentYear}.pdf`;
         window.open(pdfUrl, '_blank');
     });
 
     const calendarEl = document.querySelector("acdh-ch-calendar");
-    document.querySelectorAll('.legend-toggle').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const cssClass = `hide-${btn.dataset.kind.replace(/\./g, '_')}`;
-            calendarEl.classList.toggle(cssClass);
-            btn.classList.toggle('inactive');
-        });
+   document.querySelectorAll('.legend-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const cssClass = `hide-${btn.dataset.kind.replace(/\./g, '_')}`;
+        const isNowHidden = calendarEl.classList.toggle(cssClass);
+        if (btn.dataset.label) {
+            btn.title = `${btn.dataset.label} ${isNowHidden ? 'anzeigen' : 'ausblenden'}`;
+        }
     });
+});
 }
 
 
@@ -58,10 +60,10 @@ function onEventClick(event) {
             li.innerHTML = `
                 <a href="${item.link}">${item.label}</a>
             `
-            if (item.ref_by){
+            if (item.ref_by) {
                 li.innerHTML += ` (Erwähnt in: <a href="${item.ref_by.link}">${item.ref_by.label}</a>)`
             }
-        } else if (item.ref_by){
+        } else if (item.ref_by) {
             li.innerHTML = `${item.label} (Erwähnt in: <a href="${item.ref_by.link}">${item.ref_by.label}</a>)`
         }
         else {
