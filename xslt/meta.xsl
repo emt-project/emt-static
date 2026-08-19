@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet 
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    version="2.0" exclude-result-prefixes="xsl tei xs">
-    
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.0" exclude-result-prefixes="xsl tei xs">
+
     <xsl:output encoding="UTF-8" media-type="text/html" method="html" version="5.0" indent="yes" omit-xml-declaration="yes"/>
-    
-    
+
+
     <xsl:import href="./partials/html_navbar.xsl"/>
     <xsl:import href="./partials/html_head.xsl"/>
     <xsl:import href="./partials/html_footer.xsl"/>
     <xsl:import href="./partials/shared.xsl"/>
     <xsl:import href="./partials/listbibl.xsl"/>
-    
-    
+
+
     <xsl:template match="/">
         <xsl:variable name="doc_title">
             <xsl:value-of select=".//tei:title[@type='main'][1]/text()"/>
@@ -28,24 +27,24 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        
-        
-        
+
+
+
         <html class="h-100" lang="de">
-            
+
             <head>
                 <xsl:call-template name="html_head">
                     <xsl:with-param name="html_title" select="$doc_title"></xsl:with-param>
                 </xsl:call-template>
             </head>
-            
+
             <body class="d-flex flex-column h-100">
                 <xsl:call-template name="nav_bar"/>
                 <main>
-                    <div class="{$container-size}">                        
+                    <div class="{$container-size}">
                         <h1 class="display-5 text-center" data-mylang="de">
                             <xsl:value-of select="$doc_title"/>
-                        </h1> 
+                        </h1>
                         <xsl:if test=".//tei:title[@type='main' and @xml:lang='en']">
                             <h1 class="display-5 text-center" data-mylang="en">
                                 <xsl:value-of select=".//tei:title[@type='main' and @xml:lang='en']"/>
@@ -63,31 +62,31 @@
                                 <div class="footnote">
                                     <xsl:choose>
                                         <xsl:when test=".//ancestor-or-self::tei:div[@xml:lang='en']">
-                                            <xsl:attribute name="data-mylang"><xsl:value-of select="'en'"/></xsl:attribute>
+                                            <xsl:attribute name="data-mylang">
+                                                <xsl:value-of select="'en'"/>
+                                            </xsl:attribute>
                                         </xsl:when>
                                         <xsl:otherwise>
-                                            <xsl:attribute name="data-mylang"><xsl:value-of select="'de'"/></xsl:attribute>
+                                            <xsl:attribute name="data-mylang">
+                                                <xsl:value-of select="'de'"/>
+                                            </xsl:attribute>
                                         </xsl:otherwise>
                                     </xsl:choose>
                                     <xsl:attribute name="id">
                                         <xsl:text>fn</xsl:text>
-                                        <xsl:number level="any" format="1"
-                                            count="tei:note[not(ancestor::tei:biblStruct)]"/>
+                                        <xsl:number level="any" format="1" count="tei:note[not(ancestor::tei:biblStruct)]"/>
                                     </xsl:attribute>
                                     <a>
                                         <xsl:attribute name="name">
                                             <xsl:text>fn</xsl:text>
-                                            <xsl:number level="any" format="1"
-                                                count="tei:note[not(ancestor::tei:biblStruct)]"/>
+                                            <xsl:number level="any" format="1" count="tei:note[not(ancestor::tei:biblStruct)]"/>
                                         </xsl:attribute>
                                         <xsl:attribute name="href">
                                             <xsl:text>#fna_</xsl:text>
-                                            <xsl:number level="any" format="1"
-                                                count="tei:note[not(ancestor::tei:biblStruct)]"/>
+                                            <xsl:number level="any" format="1" count="tei:note[not(ancestor::tei:biblStruct)]"/>
                                         </xsl:attribute>
                                         <sup class="footnote-number">
-                                            <xsl:number level="any" format="1"
-                                                count="tei:note[not(ancestor::tei:biblStruct)]"/>
+                                            <xsl:number level="any" format="1" count="tei:note[not(ancestor::tei:biblStruct)]"/>
                                         </sup>
                                     </a>
                                     <span class="footnote-content">
@@ -113,7 +112,7 @@
             </body>
         </html>
     </xsl:template>
-    
+
     <xsl:template match="tei:figure">
         <xsl:variable name="float">
             <xsl:choose>
@@ -146,7 +145,9 @@
                         </xsl:attribute>
                     </img>
                     <xsl:if test=".//tei:desc">
-                        <figcaption class="p-2 pt-1 w-100"><xsl:apply-templates select=".//tei:desc"/></figcaption>
+                        <figcaption class="p-2 pt-1 w-100">
+                            <xsl:apply-templates select=".//tei:desc"/>
+                        </figcaption>
                     </xsl:if>
                 </figure>
             </xsl:when>
@@ -164,41 +165,59 @@
                         </xsl:attribute>
                     </img>
                     <xsl:if test=".//tei:desc">
-                        <figcaption class="p-2 pt-1 w-100"><xsl:apply-templates select=".//tei:desc"/></figcaption>
+                        <figcaption class="p-2 pt-1 w-100">
+                            <xsl:apply-templates select=".//tei:desc"/>
+                        </figcaption>
                     </xsl:if>
                 </figure>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
+
     <xsl:template match="tei:hi[@rend]">
         <xsl:choose>
             <xsl:when test="data(@rend) eq 'italic bold'">
-                <em><bold><xsl:apply-templates/></bold></em>
+                <em>
+                    <bold>
+                        <xsl:apply-templates/>
+                    </bold>
+                </em>
             </xsl:when>
             <xsl:when test="data(@rend) eq 'bold'">
-                <strong><xsl:apply-templates></xsl:apply-templates></strong>
+                <strong>
+                    <xsl:apply-templates></xsl:apply-templates>
+                </strong>
             </xsl:when>
             <xsl:when test="data(@rend) eq 'italic'">
-                <em><xsl:apply-templates></xsl:apply-templates></em>
+                <em>
+                    <xsl:apply-templates></xsl:apply-templates>
+                </em>
             </xsl:when>
             <xsl:when test="data(@rend) eq 'underline'">
-                <u><xsl:apply-templates></xsl:apply-templates></u>
+                <u>
+                    <xsl:apply-templates></xsl:apply-templates>
+                </u>
             </xsl:when>
-            <xsl:otherwise><xsl:apply-templates/></xsl:otherwise>
+            <xsl:otherwise>
+                <xsl:apply-templates/>
+            </xsl:otherwise>
         </xsl:choose>
-        
-        
+
+
     </xsl:template>
-    
+
     <xsl:template match="tei:list">
-        <ul><xsl:apply-templates/></ul>
+        <ul>
+            <xsl:apply-templates/>
+        </ul>
     </xsl:template>
-    
+
     <xsl:template match="tei:item">
-        <li><xsl:apply-templates/></li>
+        <li>
+            <xsl:apply-templates/>
+        </li>
     </xsl:template>
-    
+
     <xsl:template match="tei:head">
         <xsl:variable name="level">
             <xsl:value-of select="count(ancestor-or-self::tei:div)"/>
@@ -210,8 +229,8 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-    
-    
+
+
     <xsl:template match="tei:p">
         <p id="{generate-id()}">
             <xsl:if test="@ana">
@@ -236,10 +255,14 @@
         <xsl:element name="br"/>
     </xsl:template>
     <xsl:template match="tei:unclear">
-        <abbr title="unclear"><xsl:apply-templates/></abbr>
+        <abbr title="unclear">
+            <xsl:apply-templates/>
+        </abbr>
     </xsl:template>
     <xsl:template match="tei:del">
-        <del><xsl:apply-templates/></del>
+        <del>
+            <xsl:apply-templates/>
+        </del>
     </xsl:template>
     <xsl:template match="tei:ref">
         <a>
@@ -260,8 +283,8 @@
             <xsl:apply-templates/>
         </a>
     </xsl:template>
-    
-    
+
+
     <xsl:template match="tei:table">
         <xsl:element name="table">
             <xsl:attribute name="class">
@@ -277,14 +300,37 @@
             <xsl:apply-templates/>
         </xsl:element>
     </xsl:template>
-    <xsl:template match="tei:cell">
-        <xsl:element name="td">
-            <xsl:apply-templates/>
+    <xsl:template match="tei:row[@role='label']">
+        <xsl:element name="thead">
+            <xsl:element name="tr">
+                <xsl:apply-templates/>
+            </xsl:element>
         </xsl:element>
+    </xsl:template>
+    <xsl:template match="tei:cell">
+        <xsl:choose>
+            <xsl:when test="@role='label'">
+                <xsl:element name="th">
+                    <xsl:apply-templates/>
+                </xsl:element>
+            </xsl:when>
+            <xsl:when test="parent::tei:row[@role='label']">
+                <xsl:element name="th">
+                    <xsl:apply-templates/>
+                </xsl:element>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:element name="td">
+                    <xsl:apply-templates/>
+                </xsl:element>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template match="tei:idno">
-        <strong><xsl:apply-templates/></strong>
+        <strong>
+            <xsl:apply-templates/>
+        </strong>
     </xsl:template>
 
 
