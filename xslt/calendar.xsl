@@ -82,7 +82,15 @@
                                 <acdh-ch-calendar-legend>
                                     <div class="legend-panel">
                                         <div class="legend-panel-header">Briefe nach Absender</div>
-                                        <ul class="list-unstyled d-flex flex-column gap-3">
+                                         <div class="btn-group w-100 mb-2" role="group" aria-label="Alle Absender">
+                                            <button type="button" id="show-all-letters" class="btn btn-sm w-100">
+                                                Alle anzeigen
+                                            </button>
+                                            <button type="button" id="hide-all-letters" class="btn btn-sm w-100">
+                                                Alle ausblenden
+                                            </button>
+                                        </div>
+                                        <ul id="sender-panel" class="list-unstyled d-flex flex-column gap-3">
                                             <xsl:call-template name="legend-item">
                                                 <xsl:with-param name="dot-class" select="'emt_person_id__9'"/>
                                                 <xsl:with-param name="label" select="'Eleonora Magdalena'"/>

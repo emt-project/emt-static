@@ -49,6 +49,25 @@ function createCalendar(i18n, allEvents, onEventClick) {
             applyFilter();
         });
     });
+    // add a master toggle button to show/hide all letter kinds
+    const letterToggles = document.querySelectorAll('#sender-panel .legend-toggle');
+    document.getElementById('show-all-letters').addEventListener('click', () => {
+        letterToggles.forEach(btn => {
+            btn.classList.add('active');
+            btn.setAttribute('aria-pressed', 'true');
+            activeKinds.add(btn.dataset.kind);
+        });
+        applyFilter();
+    });
+
+    document.getElementById('hide-all-letters').addEventListener('click', () => {
+        letterToggles.forEach(btn => {
+            btn.classList.remove('active');
+            btn.setAttribute('aria-pressed', 'false');
+            activeKinds.delete(btn.dataset.kind);
+        });
+        applyFilter();
+    });
 }
 
 
