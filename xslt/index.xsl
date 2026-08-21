@@ -59,31 +59,14 @@
                         <div class="col-8">
                             <h1 class="display-5 text-center" data-i18n="index__h1"/>
                             <p class="text-center fs-5" data-i18n="index__teaser"/>
-                            <div class="d-grid gap-2 col-6 mx-auto p-3">
-                                <a href="projekt.html" type="button" class="btn btn-outline-secondary btn-lg button-custom" data-i18n="index__about_the_project"/>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center p-3">
+                                <a href="projekt.html" class="btn btn-outline-secondary btn-lg button-custom" data-i18n="index__about_the_project"></a>
+                                <a href="benutzung.html" class="btn btn-outline-secondary btn-lg button-custom" data-i18n="index__how_to_use"></a>
                             </div>
                         </div>
                         <div class="col-2"/>
                     </div>
 
-                    <!--  Briefverzeichnis   -->
-                    <div class="container">
-                        <hr class="hr-custom"/>
-                        <div class="row">
-                            <div class="col-md-7 p-3">
-                                <img src="img/brief.jpg" class="img-fluid" alt="Bild eines Briefes" />
-                            </div>
-                            <div class="col-md-5">
-                                <div class="pt-5 pb-5 text-end">
-                                    <h2 class="display-5" data-i18n="index__index_of_letters"/>
-                                    <p class="fs-5" data-i18n="index__index_of_letters_text"/>
-                                    <div>
-                                        <a href="toc.html" type="button" class="btn btn-outline-secondary btn-lg button-custom" data-i18n="index__index_of_letters_button"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <!--  Biographien   -->
                     <div class="container">
@@ -100,6 +83,27 @@
                             </div>
                         </div>
                     </div>
+
+                    <!--  Briefverzeichnis   -->
+                    <div class="container">
+                        <hr class="hr-custom"/>
+                        <div class="row">
+                            <div class="col-md-7 p-3">
+                                <img src="img/brief.jpg" class="img-fluid" alt="Bild eines Briefes" />
+                            </div>
+                            <div class="col-md-5">
+                                <div class="pt-5 pb-5 text-end">
+                                    <h2 class="display-5" data-i18n="index__index_of_letters"/>
+                                    <p class="fs-5" data-i18n="index__index_of_letters_text"/>
+                                    <div class="d-flex flex-column gap-2 align-items-end">
+                                        <a href="toc.html" type="button" class="btn btn-outline-secondary btn-lg button-custom" data-i18n="index__index_of_letters_button"/>
+                                        <a href="calendar.html" type="button" class="btn btn-outline-secondary btn-lg button-custom" data-i18n="index__calendar_button"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <!--  Blog   -->
                     <div class="container">

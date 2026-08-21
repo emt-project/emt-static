@@ -99,6 +99,8 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   box-shadow: none;
+  max-width: 400px;
+  width: 100%;
 }
 
 .button-custom:hover {
