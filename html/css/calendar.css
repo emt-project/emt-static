@@ -273,30 +273,3 @@ acdh-ch-calendar-legend {
 .legend-toggle:not(.active) {
     opacity: 0.35;
 }
-
-/* de-highlight calendar cells when a kind is toggled off */
-acdh-ch-calendar.hide-emt_person_id__9_html td > button[data-event-kinds="emt_person_id__9.html"],
-acdh-ch-calendar.hide-emt_person_id__18_html td > button[data-event-kinds="emt_person_id__18.html"],
-acdh-ch-calendar.hide-emt_person_id__50_html td > button[data-event-kinds="emt_person_id__50.html"],
-acdh-ch-calendar.hide-mentioned_letter_emt td > button[data-event-kinds="mentioned_letter_emt"],
-acdh-ch-calendar.hide-mentioned_letter_jw td > button[data-event-kinds="mentioned_letter_jw"],
-acdh-ch-calendar.hide-mentioned_letter_pw td > button[data-event-kinds="mentioned_letter_pw"],
-acdh-ch-calendar.hide-drittbriefe td > button[data-event-kinds="drittbriefe"],
-acdh-ch-calendar.hide-visits td > button[data-event-kinds="visits"],
-acdh-ch-calendar.hide-visits_uncertain td > button[data-event-kinds="visits_uncertain"] {
-    --calendar-cell-color: transparent;
-    color: inherit;
-    outline: none;
-    text-decoration: none;
-    pointer-events: none;
-}
-
-acdh-ch-calendar.hide-emt_person_id__9_html td > button[data-event-kinds="emt_person_id__9.html"]::after,
-acdh-ch-calendar.hide-emt_person_id__18_html td > button[data-event-kinds="emt_person_id__18.html"]::after,
-acdh-ch-calendar.hide-emt_person_id__50_html td > button[data-event-kinds="emt_person_id__50.html"]::after,
-acdh-ch-calendar.hide-mentioned_letter_emt td > button[data-event-kinds="mentioned_letter_emt"]::after,
-acdh-ch-calendar.hide-mentioned_letter_jw td > button[data-event-kinds="mentioned_letter_jw"]::after,
-acdh-ch-calendar.hide-mentioned_letter_pw td > button[data-event-kinds="mentioned_letter_pw"]::after,
-acdh-ch-calendar.hide-drittbriefe td > button[data-event-kinds="drittbriefe"]::after {
-    display: none;
-}
