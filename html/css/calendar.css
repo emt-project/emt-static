@@ -61,10 +61,10 @@ acdh-ch-calendar-year td>* {
 }
 
 acdh-ch-calendar-year td>button[data-event-kinds] {
-    --calendar-cell-color: #52525b;
+    --calendar-cell-color: var(--mehrere_briefe);
 }
 
-acdh-ch-calendar-year td>button[data-event-kinds~="emt_person_id__9.html"] {
+acdh-ch-calendar-year td>button[data-event-kinds="emt_person_id__9.html"] {
     --calendar-cell-color: var(--emt_person_id__9);
 }
 
@@ -132,7 +132,7 @@ acdh-ch-calendar-year td>button[data-event-kinds="visits"] {
     text-decoration-color: var(--emt-deco-color);
 
 }
-acdh-ch-calendar-year td>button[data-event-kinds~="visits"]:not([data-event-kinds="visits"]) {
+acdh-ch-calendar-year td>button[data-event-kinds="visits"]:not([data-event-kinds="visits"]) {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-decoration-color: white;
@@ -145,7 +145,7 @@ acdh-ch-calendar-year td>button[data-event-kinds="visits_uncertain"] {
     text-decoration-thickness: 3px;
     text-decoration-color: var(--emt-deco-color);
 }
-acdh-ch-calendar-year td>button[data-event-kinds~="visits_uncertain"]:not([data-event-kinds="visits_uncertain"]) {
+acdh-ch-calendar-year td>button[data-event-kinds="visits_uncertain"]:not([data-event-kinds="visits_uncertain"]) {
     text-decoration: underline dotted;
     text-decoration-thickness: 3px;
     text-decoration-color: white;
