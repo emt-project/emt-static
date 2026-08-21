@@ -264,6 +264,20 @@
             <xsl:apply-templates/>
         </del>
     </xsl:template>
+    <xsl:template match="tei:listRef">
+        <ul>
+            <xsl:apply-templates/>
+        </ul>
+    </xsl:template>
+    <xsl:template match="tei:listRef">
+        <ul class="list-group">
+            <xsl:for-each select="tei:ref">
+                <li class="list-group-item list-group-item-action">
+                    <xsl:apply-templates select="."/>
+                </li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
     <xsl:template match="tei:ref">
         <a>
             <xsl:if test="@target">
