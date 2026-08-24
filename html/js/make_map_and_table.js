@@ -44,6 +44,21 @@ function fetch_tabulatordata_and_build_table(
       counterElement.innerHTML = counterText;
     }
   });
+  // Event handles for download buttons
+  //trigger download of data.xslx file
+  document.getElementById("download-xlsx").addEventListener("click", function () {
+    table.download("xlsx", `data.xlsx`);
+  });
+
+  //trigger download of data.csv file
+  document.getElementById("download-csv").addEventListener("click", function () {
+    table.download("csv", "data.csv");
+  });
+
+  //trigger download of data.json file
+  document.getElementById("download-json").addEventListener("click", function () {
+    table.download("json", "data.json");
+  });
 
   populateMapFromTable(
     table,

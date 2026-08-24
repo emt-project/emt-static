@@ -98,6 +98,7 @@
                 <xsl:call-template name="html_footer"/>
                 <script type="text/javascript" src="vendor/tabulator-tables/js/tabulator.min.js"></script>
                 <script type="text/javascript" src="vendor/leaflet.fullscreen/Control.FullScreen.umd.js"></script>
+                <script type="text/javascript" src="vendor/sheetJS/xlsx.full.min.js"></script>
                 <script src="tabulator-js/headermenu.js"/>
                 <script src="js/map_table_cfg.js"/>
                 <script src="js/make_map_and_table.js"/>
