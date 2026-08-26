@@ -135,8 +135,8 @@
                                     <h2 class="display-5" data-i18n="index__quote_h" />
                                     <p class="fs-5">Die Korrespondenz der Kaiserin
                                         Eleonora Magdalena (1655–1720) von Pfalz-Neuburg. Bearbeitet von Katrin
-                                        Keller, Ines Peper, Dorota Vargová, Anna Spitzbart. Technische Umsetzung
-                                        durch Peter Andorfer, Matthias Schlögl, Levente Kiraly. Wien
+                                        Keller, Ines Peper, Anna Spitzbart, Dorota Vargová. Technische Umsetzung
+                                        durch Peter Andorfer, Levente Király, Matthias Schlögl, Kinga Sramó. Wien
                                         2024.</p>
                                 </div>
                             </div>
