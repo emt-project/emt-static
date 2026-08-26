@@ -137,7 +137,7 @@
                                             </xsl:call-template>
                                             <li>
                                                 <span class="dot mehrere_briefe"></span>
-                                                <span class="legend-item">Mehrere Briefe unterschiedlicher AbsenderInnen</span>
+                                                <span class="legend-item">Mehrere Briefe</span>
                                             </li>
                                         </ul>
                                     </div>
