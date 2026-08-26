@@ -16,7 +16,6 @@ acdh-ch-calendar {
     display: grid;
     gap: 4rem;
 }
-
 acdh-ch-calendar-year {
 	justify-content: center;
 }

@@ -21,14 +21,20 @@ function createCalendar(i18n, allEvents, onEventClick) {
         calendar.setData({ events: filtered, currentYear });
     }
 
-    applyFilter();
+    function setYearTitle() {
+        document.getElementById("year-title").textContent = currentYear;
+    }
 
+    applyFilter();
+    setYearTitle();
 
     calendar.addEventListener("calendar-event-click", onEventClick);
     calendar.addEventListener("calendar-year-select", (event) => {
         currentYear = event.detail.year;
         applyFilter();
+        setYearTitle();
     });
+   
     document.getElementById("year-pdf-download-btn").addEventListener("click", () => {
         const pdfUrl = `https://emt-project.github.io/emt-pdf/emt_korrespondenz_${currentYear}.pdf`;
         window.open(pdfUrl, '_blank');

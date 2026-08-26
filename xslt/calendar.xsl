@@ -68,21 +68,24 @@
 
                 <main class="flex-shrink-0">
                     <div class="container">
-                        <h1 class="text-center display-5 p-3">Kalender</h1>
-                        <a style="padding-left:5px;" href="js-data/calendarData.js">
-                            <i class="fas fa-download" title="Data"/>
-                        </a>
+                        <div class="d-flex justify-content-center align-items-end p-3">
+                            <h1 class="text-center display-6 mb-0">Kalender</h1>
+                            <a href="js-data/calendarData.json" class="btn btn-link" download="download">
+                                <i class="bi bi-download ms-1" aria-hidden="true"></i>
+                                <span class="visually-hidden">Kalenderdaten als JSON</span>
+                            </a>
+                        </div>
                         <acdh-ch-calendar>
                             <div class="calendar-menu">
-                                <label class="p2 text-center fs-3">
+                                <label class="p2 text-center fs-4">
                                     <span>Jahr</span>
                                 </label>
                                 <acdh-ch-calendar-year-picker/>
-                                <label class="p2 text-center fs-3">Legende / Filter</label>
+                                <label class="p2 text-center fs-4">Legende / Filter</label>
                                 <acdh-ch-calendar-legend>
                                     <div class="legend-panel">
                                         <div class="legend-panel-header">Briefe nach Absender</div>
-                                         <div class="btn-group w-100 mb-2" role="group" aria-label="Alle Absender">
+                                        <div class="btn-group w-100 mb-2" role="group" aria-label="Alle Absender">
                                             <button type="button" id="show-all-letters" class="btn btn-sm w-100">
                                                 Alle anzeigen
                                             </button>
@@ -159,14 +162,16 @@
                                 </acdh-ch-calendar-legend>
                             </div>
                             <div class="calendar-container text-center">
-                                <acdh-ch-calendar-year data-variant="sparse"/>
-                                <div class="mt-4">
-                                    <span>Korrespondenz des Jahres herunterladen: </span>
-                                    <button type="button" id="year-pdf-download-btn" class="btn btn-link me-2">
-                                        <i class="bi bi-filetype-pdf me-1"></i>
+                                <div class="d-flex justify-content-center align-items-end mb-3">
+                                    <h2 class="fs-3 mb-0">
+                                        Jahr <span id="year-title"></span>
+                                    </h2>
+                                    <button type="button" id="year-pdf-download-btn" class="btn btn-link pb-0" title="Korrespondenz des Jahres als PDF">
+                                        <i class="bi bi-filetype-pdf me-1" aria-hidden="true"></i>
                                         <span>PDF</span>
                                     </button>
                                 </div>
+                                <acdh-ch-calendar-year data-variant="sparse"/>
                             </div>
 
                         </acdh-ch-calendar>
