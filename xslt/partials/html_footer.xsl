@@ -3,7 +3,7 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="#all" version="2.0">
     <xsl:template match="/" name="html_footer">
-        <footer class="py-3">
+        <footer class="py-3 mt-3">
 
             <div class="container text-center">
                 <div class="pb-2">
