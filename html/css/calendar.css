@@ -16,6 +16,10 @@ acdh-ch-calendar {
     display: grid;
     gap: 4rem;
 }
+.calendar-container {
+        border: 2pt solid var(--emt-deco-color);
+    border-radius: 8px;
+}
 acdh-ch-calendar-year {
 	justify-content: center;
 }

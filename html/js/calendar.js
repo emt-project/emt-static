@@ -6,13 +6,35 @@ register({});
 // register()
 
 let currentYear = 1696;
+function getDateFromURL() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('date'); // Returns the value of the 'date' parameter
+}
+
+function extractYearFromDate(date) {
+    if (date) {
+        const year = parseInt(date.split("-")[0], 10);
+        if (!isNaN(year) && year >= 1677 && year <= 1716) {
+            return year; // Return the year if it's valid and within the range
+        }
+    }
+    return null;
+}
+function scrollToDate(date) {
+    if (date) {
+        const button = document.querySelector(`button[aria-label="${date}"]`);
+        if (button) {
+            button.scrollIntoView({ behavior: 'smooth', block: 'center' });  
+        }
+    }
+}
+
 function createCalendar(i18n, allEvents, onEventClick) {
     const calendar = document.querySelector("acdh-ch-calendar");
     if (i18n != null) {
         /** Optionally set locale, defaults to english. */
         calendar.setI18n(i18n);
     }
-
 
     const activeKinds = new Set(allEvents.map(e => e.kind));
 
@@ -31,6 +53,9 @@ function createCalendar(i18n, allEvents, onEventClick) {
     calendar.addEventListener("calendar-event-click", onEventClick);
     calendar.addEventListener("calendar-year-select", (event) => {
         currentYear = event.detail.year;
+        const url = new URL(window.location);
+        url.searchParams.set('date', `${currentYear}`);
+        window.history.replaceState({}, '', url);
         applyFilter();
         setYearTitle();
     });
@@ -107,6 +132,7 @@ function onEventClick(event) {
     myModal.show()
 }
 
+
 async function request(url) {
     const response = await fetch(url);
     const events = await response.json();
@@ -139,9 +165,14 @@ async function request(url) {
 }
 
 try {
+    const dateParam= getDateFromURL();
+    if (dateParam){
+        currentYear = extractYearFromDate(dateParam) || currentYear;
+    }
     const events = await request("js-data/calendarData.json");
     createCalendar(de, events, onEventClick);
     console.log("Successfully created calendar.");
+    scrollToDate(dateParam);
 } catch (error) {
     console.error("Failed to create calendar.\n", String(error));
 }

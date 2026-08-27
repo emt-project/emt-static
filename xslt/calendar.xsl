@@ -68,7 +68,7 @@
 
                 <main class="flex-shrink-0">
                     <div class="container">
-                        <div class="d-flex justify-content-center align-items-end p-3">
+                        <div class="d-flex justify-content-center align-items-end p-3 mb-3">
                             <h1 class="text-center display-6 mb-0">Kalender</h1>
                             <a href="js-data/calendarData.json" class="btn btn-link" download="download">
                                 <i class="bi bi-download ms-1" aria-hidden="true"></i>
@@ -161,8 +161,8 @@
                                     </div>
                                 </acdh-ch-calendar-legend>
                             </div>
-                            <div class="calendar-container text-center">
-                                <div class="d-flex justify-content-center align-items-end mb-3">
+                            <div class="calendar-container text-center mb-4">
+                                <div class="d-flex justify-content-center align-items-end my-3">
                                     <h2 class="fs-3 mb-0">
                                         Jahr <span id="year-title"></span>
                                     </h2>
@@ -171,7 +171,7 @@
                                         <span>PDF</span>
                                     </button>
                                 </div>
-                                <acdh-ch-calendar-year data-variant="sparse"/>
+                                <acdh-ch-calendar-year class="pb-3" data-variant="sparse"/>
                             </div>
 
                         </acdh-ch-calendar>
