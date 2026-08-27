@@ -73,14 +73,20 @@
                 <i class="bi bi-question-lg me-1"></i>
                 <span>Markup-Info</span>
             </button>
-            <button type="button" onclick="window.open('{$teiSource}', '_blank')" class="btn btn-link me-2">
+            <button type="button" onclick="window.open('{$teiSource}', '_blank')" class="btn btn-link">
                 <i class="bi bi-filetype-xml me-1"/>
                 <span>TEI/XML</span>
             </button>
-            <button type="button" onclick="window.open('{$pdfLink}', '_blank')" class="btn btn-link me-2">
+            <button type="button" onclick="window.open('{$pdfLink}', '_blank')" class="btn btn-link">
                 <i class="bi bi-filetype-pdf me-1"></i>
                 <span>PDF</span>
             </button>
+            <xsl:if test="$calendarLink">
+                <button type="button"  onclick="location.href='{$calendarLink}'" class="btn btn-link">
+                    <i class="bi bi-calendar-event me-2"></i>
+                    <span>Zum Kalendereintrag</span>
+                </button>
+            </xsl:if>
         </div>
         <!-- Fixed version of the info modal trigger that shows when scrolling -->
         <div class="position-fixed p-2 d-none" id="sticky-info" style="z-index: 1030;">
