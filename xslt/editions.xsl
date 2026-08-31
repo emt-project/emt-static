@@ -29,8 +29,8 @@
     <xsl:variable name="pdfLink">
         <xsl:value-of select="concat('https://emt-project.github.io/emt-pdf/', replace($teiSource, '.xml', '.pdf'))"/>
     </xsl:variable>
-    <xsl:variable name="exactDate" select="tei:TEI//tei:correspAction[@type='sent']/tei:date/@when-iso" />
-    <xsl:variable name="calendarLink" select="if ($exactDate) then concat('calendar.html?date=', $exactDate) else ''" />
+    <xsl:variable name="sendDate" select="data(tei:TEI//tei:correspAction[@type='sent']/tei:date/@when-iso | tei:TEI//tei:correspAction[@type='sent']/tei:date/@notBefore)" />
+    <xsl:variable name="calendarLink" select="if ($sendDate) then concat('calendar.html?date=', $sendDate) else ''" />
     <xsl:variable name="link">
         <xsl:value-of select="replace($teiSource, '.xml', '.html')"/>
     </xsl:variable>
