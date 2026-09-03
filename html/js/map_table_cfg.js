@@ -32,7 +32,12 @@ const columns = [
     title: "Ortsname",
     field: "Ortsname",
     formatter: function (cell) {
-      return cell.getValue() + ' <button type="button" class="btn btn-link p-0 ps-1 zoom-to-point" title="Auf Karte anzeigen"><i class="bi bi-crosshair"></i></button>';
+      const row = cell.getRow().getData();
+      const value = cell.getValue();
+      if (!row.lat && !row.lng) {
+        return value
+      }
+      return value + ' <button type="button" class="btn btn-link p-0 ps-1 zoom-to-point" title="Auf Karte anzeigen"><i class="bi bi-crosshair"></i></button>';
     },
     resizable: false,
     minWidth: "350"

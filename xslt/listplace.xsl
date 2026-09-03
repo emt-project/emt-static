@@ -126,10 +126,8 @@
                                 <h1 class="display-5 text-center">
                                     <xsl:value-of select="$name"/>
                                 </h1>
+                                <xsl:call-template name="place_detail"/>
 
-                                <xsl:if test="./tei:location/tei:geo">
-                                    <xsl:call-template name="place_detail"/>
-                                </xsl:if>
                             </div>
                         </main>
                         <xsl:call-template name="html_footer"/>

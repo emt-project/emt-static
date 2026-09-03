@@ -5,8 +5,11 @@
     <xsl:import href="./mentions.xsl"/>
     <xsl:template match="tei:place" name="place_detail">
     <div class="row">
+        <xsl:if test="./tei:location/tei:geo">
         <div class="col-md-4"><div id="map_detail"/></div>
+        </xsl:if>
         <div class="col-md-8">
+        
         <table class="table entity-table">
             <tbody>
                 <tr>
