@@ -143,7 +143,7 @@
                                     </div>
                                     <div class="legend-panel">
                                         <div class="legend-panel-header">
-                                        Aufenthalte am kaiserlichen Hof
+                                        Treffen von Korrespondenten
                                         </div>
                                         <ul class="list-unstyled d-flex flex-column gap-3">
                                             <xsl:call-template name="legend-item">
