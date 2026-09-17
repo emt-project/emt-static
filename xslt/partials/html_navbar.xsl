@@ -32,6 +32,9 @@
                                         <a class="dropdown-item" data-i18n="navbar__howto" href="benutzung.html" />
                                     </li>
                                     <li>
+                                        <a class="dropdown-item" data-i18n="navbar__moreletters" href="weiterebriefe.html" />
+                                    </li>
+                                    <li>
                                         <hr class="dropdown-divider" />
                                     </li>
                                     <li>
